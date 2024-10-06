@@ -1,0 +1,155 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0-android;net8.0-ios</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>QSearch</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>QSearch</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.mohdzed.qsearch</ApplicationId>
+		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>2.0.4</ApplicationDisplayVersion>
+		<ApplicationVersion>2</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">33.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<ReleaseVersion>1.0</ReleaseVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	  <MtouchLink>SdkOnly</MtouchLink>
+	  <CodesignKey>iPhone Developer</CodesignKey>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	  <MtouchLink>SdkOnly</MtouchLink>
+	  <CodesignKey>Mac Developer</CodesignKey>
+	  <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	  <MtouchLink>SdkOnly</MtouchLink>
+	  <CodesignKey>iPhone Developer</CodesignKey>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <DebugType>portable</DebugType>
+	  <Optimize>false</Optimize>
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+	  <AndroidDexTool>d8</AndroidDexTool>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	  <DebugSymbols>false</DebugSymbols>
+	  <DebugType></DebugType>
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	  <CodesignKey>iPhone Developer</CodesignKey>
+	  <MtouchLink>SdkOnly</MtouchLink>
+	  <CodesignProvision>Automatic</CodesignProvision>
+	  <CodesignEntitlements></CodesignEntitlements>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	  <CodesignKey>Apple Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
+	  <CodesignProvision>Automatic</CodesignProvision>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.9" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.80" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.80" />
+		<PackageReference Include="Xam.Plugin.LatestVersionStore" Version="2.1.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Splash\" />
+	  <None Remove="Resources\Splash\quransplash-1.png" />
+	  <None Remove="Resources\Splash\quransplash-1.svg" />
+	  <None Remove="Resources\Splash\quransplash1.svg" />
+	  <None Remove="Resources\Fonts\Tahoma.ttf" />
+	  <None Remove="Models\" />
+	  <None Remove="Platforms\Android\Resources\drawable\" />
+	  <None Remove="Resources\Fonts\MaterialIcons-Regular.ttf" />
+	  <None Remove="Resources\Fonts\MaterialIconsOutlined-Regular.otf" />
+	  <None Remove="Resources\Images\about.svg" />
+	  <None Remove="Resources\Raw\quran.sqlite" />
+	  <None Remove="Resources\Splash\quransearch-2.svg" />
+	  <None Remove="Resources\Splash\qsearchsplash-2.svg" />
+	  <None Remove="Resources\Splash\qssplash.svg" />
+	  <None Remove="Resources\AppIcon\" />
+	  <None Remove="Resources\AppIcon\appicon.svg" />
+	  <None Remove="Resources\AppIcon\appiconfg.svg" />
+	  <None Remove="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
+	  <None Remove="Resources\Images\qsearch-bkg.svg" />
+	  <None Remove="Resources\Images\qsearch-header.svg" />
+	  <None Remove="Resources\Images\qsearch_header.svg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Resources\Splash\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Platforms\Android\Resources\drawable\" />
+	  <Folder Include="Resources\AppIcon\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Fonts\Tahoma.ttf" />
+	  <BundleResource Include="Resources\Fonts\Tahoma.ttf" />
+	  <BundleResource Include="Resources\Fonts\MaterialIcons-Regular.ttf" />
+	  <BundleResource Include="Resources\Fonts\MaterialIconsOutlined-Regular.otf" />
+	  <BundleResource Include="Resources\Images\about.svg" />
+	  <BundleResource Include="Resources\Raw\quran.sqlite" />
+	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
+	  <BundleResource Include="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
+	  <BundleResource Include="Resources\Images\qsearch_header.svg" />
+	  <BundleResource Include="Resources\Images\qsearch_header.svg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiFont Remove="Resources\Fonts\Tahoma.ttf" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiSplashScreen Include="Resources\Splash\qssplash.svg" color="#799116" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiIcon Include="Resources\AppIcon\appiconfg.svg" />
+	</ItemGroup>
+	<ItemGroup>
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiCss Remove="Resources\Raw\qs.css" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\qs.css" />
+	</ItemGroup>
+</Project>

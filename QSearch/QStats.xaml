@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.QStats"
+             Title="Quranic Stats">
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Clicked="ToolbarItem_Clicked" >
+        <ToolbarItem.IconImageSource>
+          <FontImageSource
+            FontFamily="MaterialIconsOutlined-Regular"
+            Glyph="&#xe5d2;"
+            Color="LightBlue"
+            Size="24"
+              />
+        </ToolbarItem.IconImageSource>
+      </ToolbarItem>
+      </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <Frame HasShadow="True"
+               BorderColor="WhiteSmoke"
+               Margin="3">
+        <Grid HorizontalOptions="Fill">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition  />
+                <RowDefinition  />
+                <RowDefinition  />
+                <RowDefinition  />
+                <RowDefinition  />
+                <RowDefinition  />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200" />
+                <ColumnDefinition Width="*" />
+
+            </Grid.ColumnDefinitions>
+                    <Label
+                        Text="Quran Statistics"
+                        TextColor="Blue"
+                        FontSize="Title"
+                        FontAttributes="Bold"
+                        HorizontalOptions="Center"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        ></Label>
+                    <Label
+                        Text="Total Para/Juz"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Padding="5"
+                        BackgroundColor="WhiteSmoke"
+                        HeightRequest="45"
+                        >
+                    </Label>
+                    <Label
+                        x:Name="lTotalPara"
+                        TextColor="SteelBlue"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="WhiteSmoke"
+                        >
+                    </Label>
+
+                    <Label
+                        Text="Total Surahs"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Padding="5"
+                        HeightRequest="45"
+                        >
+                     </Label>
+                     <Label
+                         x:Name="lTotalSurah"
+                         TextColor="SteelBlue"
+                         FontAttributes="Bold"
+                         FontSize="Large"
+                         HorizontalTextAlignment="Center"
+                         VerticalTextAlignment="Center"
+                         Grid.Row="2"
+                         Grid.Column="1"
+                         >
+                     </Label>
+                    <Label
+                        Text="Total Lines"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Padding="5"
+                        BackgroundColor="WhiteSmoke"
+                        HeightRequest="45"
+                        >
+                    </Label>
+                    <Label
+                        x:Name="lTotalLines"
+                        TextColor="SteelBlue"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        BackgroundColor="WhiteSmoke"
+                        >
+                    </Label>
+                    <Label
+                        Text="Total Sujoods"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Padding="5"
+                        HeightRequest="45"
+                        >
+                    </Label>
+                    <Label
+                        x:Name="lTotalSujood"
+                        TextColor="SteelBlue"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="4"
+                        Grid.Column="1"
+                        >
+                    </Label>
+                    <Label
+                        Text="Makki Surahs"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        Padding="5"
+                        BackgroundColor="WhiteSmoke"
+                        HeightRequest="45"
+                        >
+                    </Label>
+                    <Label
+                        x:Name="lTotalMakki"
+                        TextColor="SteelBlue"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        BackgroundColor="WhiteSmoke"
+                        >
+                    </Label>
+                    <Label
+                        Text="Madni Surahs"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        Padding="5"
+                        HeightRequest="45"
+                        >
+                    </Label>
+                    <Label
+                        x:Name="lTotalMadni"
+                        TextColor="SteelBlue"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="6"
+                        Grid.Column="1"
+                        >
+                    </Label>
+                </Grid>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,141 @@
+.subsections_via_symbols
+.text
+	.align 3
+jit_code_start:
+_mono_aot_SQLitePCLRaw_batteries_v2jit_code_start:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2jit_code_start
+
+	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+.text
+	.align 3
+jit_code_end:
+_mono_aot_SQLitePCLRaw_batteries_v2jit_code_end:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2jit_code_end
+
+	.byte 0,0,0,0
+.no_dead_strip _SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_Init
+.no_dead_strip _SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init
+.no_dead_strip _mono_aot_SQLitePCLRaw_batteries_v2_init_method
+.no_dead_strip _mono_aot_SQLitePCLRaw_batteries_v2_init_method_gshared_mrgctx
+.no_dead_strip _mono_aot_SQLitePCLRaw_batteries_v2_init_method_gshared_this
+.no_dead_strip _mono_aot_SQLitePCLRaw_batteries_v2_init_method_gshared_vtable
+.no_dead_strip _mono_aot_SQLitePCLRaw_batteries_v2_icall_cold_wrapper_264
+
+.text
+	.align 3
+method_addresses:
+_mono_aot_SQLitePCLRaw_batteries_v2method_addresses:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2method_addresses
+	.no_dead_strip method_addresses
+bl _SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_Init
+bl _SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init
+bl method_addresses
+bl _mono_aot_SQLitePCLRaw_batteries_v2_init_method
+bl _mono_aot_SQLitePCLRaw_batteries_v2_init_method_gshared_mrgctx
+bl _mono_aot_SQLitePCLRaw_batteries_v2_init_method_gshared_this
+bl _mono_aot_SQLitePCLRaw_batteries_v2_init_method_gshared_vtable
+bl _mono_aot_SQLitePCLRaw_batteries_v2_icall_cold_wrapper_264
+method_addresses_end:
+
+.section __TEXT, __const
+	.align 3
+unbox_trampolines:
+_mono_aot_SQLitePCLRaw_batteries_v2unbox_trampolines:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2unbox_trampolines
+unbox_trampolines_end:
+_mono_aot_SQLitePCLRaw_batteries_v2unbox_trampolines_end:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2unbox_trampolines_end
+
+	.long 0
+.text
+	.align 3
+unbox_trampoline_addresses:
+_mono_aot_SQLitePCLRaw_batteries_v2unbox_trampoline_addresses:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2unbox_trampoline_addresses
+
+	.long 0
+.section __TEXT, __const
+	.align 3
+unwind_info:
+_mono_aot_SQLitePCLRaw_batteries_v2unwind_info:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2unwind_info
+
+.text
+	.align 4
+plt:
+_mono_aot_SQLitePCLRaw_batteries_v2plt:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2plt
+mono_aot_SQLitePCLRaw_batteries_v2_plt:
+_p_1_plt_SQLitePCLRaw_batteries_v2__jit_icall_mono_threads_state_poll_llvm:
+	.globl _p_1_plt_SQLitePCLRaw_batteries_v2__jit_icall_mono_threads_state_poll_llvm
+.private_extern _p_1_plt_SQLitePCLRaw_batteries_v2__jit_icall_mono_threads_state_poll_llvm
+	.no_dead_strip plt_SQLitePCLRaw_batteries_v2__jit_icall_mono_threads_state_poll
+plt_SQLitePCLRaw_batteries_v2__jit_icall_mono_threads_state_poll:
+_p_1:
+adrp x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGE+0
+add x16, x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGEOFF
+ldr x16, [x16, #200]
+br x16
+.word 87
+_p_2_plt_SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init_llvm:
+	.globl _p_2_plt_SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init_llvm
+.private_extern _p_2_plt_SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init_llvm
+	.no_dead_strip plt_SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init
+plt_SQLitePCLRaw_batteries_v2_SQLitePCL_Batteries_V2_Init:
+_p_2:
+adrp x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGE+0
+add x16, x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGEOFF
+ldr x16, [x16, #208]
+br x16
+.word 90
+_p_3_plt_SQLitePCLRaw_batteries_v2_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
+	.globl _p_3_plt_SQLitePCLRaw_batteries_v2_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+.private_extern _p_3_plt_SQLitePCLRaw_batteries_v2_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+	.no_dead_strip plt_SQLitePCLRaw_batteries_v2_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_SQLitePCLRaw_batteries_v2_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_3:
+adrp x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGE+0
+add x16, x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGEOFF
+ldr x16, [x16, #216]
+br x16
+.word 95
+_p_4_plt_SQLitePCLRaw_batteries_v2_SQLitePCL_raw_SetProvider_SQLitePCL_ISQLite3Provider_llvm:
+	.globl _p_4_plt_SQLitePCLRaw_batteries_v2_SQLitePCL_raw_SetProvider_SQLitePCL_ISQLite3Provider_llvm
+.private_extern _p_4_plt_SQLitePCLRaw_batteries_v2_SQLitePCL_raw_SetProvider_SQLitePCL_ISQLite3Provider_llvm
+	.no_dead_strip plt_SQLitePCLRaw_batteries_v2_SQLitePCL_raw_SetProvider_SQLitePCL_ISQLite3Provider
+plt_SQLitePCLRaw_batteries_v2_SQLitePCL_raw_SetProvider_SQLitePCL_ISQLite3Provider:
+_p_4:
+adrp x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGE+0
+add x16, x16, mono_aot_SQLitePCLRaw_batteries_v2_got@PAGEOFF
+ldr x16, [x16, #224]
+br x16
+.word 103
+plt_end:
+_mono_aot_SQLitePCLRaw_batteries_v2plt_end:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2plt_end
+.section __DATA, __bss
+	.align 3
+jit_got:
+_mono_aot_SQLitePCLRaw_batteries_v2jit_got:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2jit_got
+.lcomm mono_aot_SQLitePCLRaw_batteries_v2_got, 232
+got_end:
+.section __TEXT, __const
+	.align 3
+Lglobals_hash:
+
+	.short 11, 0, 0, 0, 0, 0, 0, 0
+	.short 0, 0, 0, 0, 0, 0, 0, 0
+	.short 0, 0, 0, 0, 0, 0, 0
+.data
+	.align 3
+globals:
+_mono_aot_SQLitePCLRaw_batteries_v2globals:
+	.globl _mono_aot_SQLitePCLRaw_batteries_v2globals
+	.align 3
+	.quad Lglobals_hash
+
+	.long 0,0
+.text
+	.align 3
+mem_end:

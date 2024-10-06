@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = QSearch
+build_property.ProjectDir = /Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/About.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.About.xaml
+build_metadata.AdditionalFiles.TargetPath = About.xaml
+build_metadata.AdditionalFiles.RelativePath = About.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/Options.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.Options.xaml
+build_metadata.AdditionalFiles.TargetPath = Options.xaml
+build_metadata.AdditionalFiles.RelativePath = Options.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/QSearch.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.QSearch.xaml
+build_metadata.AdditionalFiles.TargetPath = QSearch.xaml
+build_metadata.AdditionalFiles.RelativePath = QSearch.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/QStats.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.QStats.xaml
+build_metadata.AdditionalFiles.TargetPath = QStats.xaml
+build_metadata.AdditionalFiles.RelativePath = QStats.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/RPara.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.RPara.xaml
+build_metadata.AdditionalFiles.TargetPath = RPara.xaml
+build_metadata.AdditionalFiles.RelativePath = RPara.xaml
+
+[/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/RSurah.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = QSearch.RSurah.xaml
+build_metadata.AdditionalFiles.TargetPath = RSurah.xaml
+build_metadata.AdditionalFiles.RelativePath = RSurah.xaml

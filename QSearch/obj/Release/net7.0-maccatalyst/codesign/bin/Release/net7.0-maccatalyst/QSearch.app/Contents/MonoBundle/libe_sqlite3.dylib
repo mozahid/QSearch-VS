@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - /Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/bin/Release/net7.0-maccatalyst/QSearch.app/Contents/MonoBundle/libe_sqlite3.dylib

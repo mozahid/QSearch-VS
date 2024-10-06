@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <BundleResource Include="Resources/Fonts/Tahoma.ttf" />
+    <BundleResource Include="Resources/Fonts/Tahoma.ttf" />
+    <BundleResource Include="Resources/Fonts/MaterialIcons-Regular.ttf" />
+    <BundleResource Include="Resources/Fonts/MaterialIconsOutlined-Regular.otf" />
+    <BundleResource Include="Resources/Images/about.svg" />
+    <BundleResource Include="Resources/Raw/quran.sqlite" />
+    <BundleResource Include="/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Release/net7.0-maccatalyst/resizetizer/r/about.png" />
+    <BundleResource Include="/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Release/net7.0-maccatalyst/resizetizer/r/about@2x.png" />
+    <BundleResource Include="/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Release/net7.0-maccatalyst/resizetizer/r/about@3x.png" />
+    <BundleResource Include="/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Release/net7.0-maccatalyst/resizetizer/r/dotnet_bot.png" />
+    <BundleResource Include="/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Release/net7.0-maccatalyst/resizetizer/r/dotnet_bot@2x.png" />
+    <BundleResource Include="/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Release/net7.0-maccatalyst/resizetizer/r/dotnet_bot@3x.png" />
+    <BundleResource Include="obj/Release/net7.0-maccatalyst/resizetizer/f/MaterialIcons-Regular.ttf" />
+    <BundleResource Include="obj/Release/net7.0-maccatalyst/resizetizer/f/MaterialIconsOutlined-Regular.otf" />
+    <BundleResource Include="obj/Release/net7.0-maccatalyst/resizetizer/f/OpenSans-Regular.ttf" />
+    <BundleResource Include="obj/Release/net7.0-maccatalyst/resizetizer/f/OpenSans-Semibold.ttf" />
+  </ItemGroup>
+</Project>

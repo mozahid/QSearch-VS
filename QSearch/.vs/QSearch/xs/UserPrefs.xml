@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{4F2121BF-A3A1-4E6C-A2C1-FC2AF4320D83}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.95" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_23" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.QSearch PreferredExecutionTarget="Android.pixel_5_-_api_23" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="About.xaml">
+    <Files>
+      <File FileName="About.xaml" Line="47" Column="45" />
+      <File FileName="About.xaml.cs" Line="19" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QSearch" expanded="True">
+            <Node name="QSearch" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Platforms" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Images" expanded="True" />
+                <Node name="Splash" expanded="True" />
+              </Node>
+              <Node name="About.xaml" expanded="True" selected="True" />
+              <Node name="Options.xaml" expanded="True" />
+              <Node name="QSearch.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

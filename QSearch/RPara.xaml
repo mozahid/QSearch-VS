@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.RPara"
+             NavigationPage.HasBackButton="False"
+             Title="Recite Para">
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Clicked="ToolbarItem_Clicked" >
+        <ToolbarItem.IconImageSource>
+          <FontImageSource
+            FontFamily="MaterialIconsOutlined-Regular"
+            Glyph="&#xe5d2;"
+            Color="LightBlue"
+            Size="24"
+              />
+        </ToolbarItem.IconImageSource>
+      </ToolbarItem>
+      </ContentPage.ToolbarItems>
+            <VerticalStackLayout>
+                <CollectionView
+                    x:Name="lstView"
+                    DescendantAdded="lstView_DescendantAdded"
+                    HorizontalOptions="Center"
+                    Scrolled="lstView_Scrolled"
+                    Margin="5"
+                    IsGrouped="True"
+                    VerticalScrollBarVisibility="Always" >
+                        <CollectionView.GroupHeaderTemplate>
+                            <DataTemplate>
+                            <Grid HorizontalOptions="Fill" HeightRequest="82">
+                                 <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="3"
+                                        Grid.RowSpan="3"
+                                        Opacity="0.7"
+                                        Source="qsearch_header"
+                                        Aspect="AspectFill" />
+                                <Border
+                                    Grid.Row="0"
+                                    Grid.RowSpan="3"
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="3"
+                                    Stroke="Beige"
+                                    StrokeThickness="3">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="5,5,5,5"/>
+                                    </Border.StrokeShape>
+                                </Border>
+                                <Label
+                                    FontFamily="Tahoma"
+                                    FontSize="Small"
+                                    TextColor="Coral"
+                                    HorizontalOptions="Start"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="2"
+                                    Padding="5,10,0,0">
+                                 <Label.FormattedText>     
+                                    <FormattedString>
+                                        <Span Text="{Binding para_name}" />
+                                        <Span Text="(" />
+                                        <Span Text="{Binding para_no}" />
+                                        <Span Text=")" />
+                                    </FormattedString>
+                                 </Label.FormattedText>
+                                 </Label>
+                                <Label
+                                    FontFamily="NotoArabic"
+                                    FontSize="Small"
+                                    TextColor="Coral"
+                                    HorizontalTextAlignment="End"
+                                    VerticalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    Padding="0,10,5,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding chapter_class}"></Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label
+                                    FontFamily="NotoArabic"
+                                    FontSize="Title"
+                                    FontAttributes="Bold"
+                                    TextColor="Goldenrod"
+                                    HorizontalOptions="Center"
+                                    Grid.Row="1"
+                                    Grid.Column="1">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding chapter_name}" />
+                                            <Span Text="(" FontAttributes="None " FontSize="Small"  />
+                                            <Span Text="{Binding total_verses}"   FontAttributes="None" FontSize="Small"  />
+                                            <Span Text=")" FontAttributes="None" FontSize="Small"  />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>                                   
+                                <Label
+                                    FontFamily="Tahoma"
+                                    FontSize="Micro"
+                                    HorizontalOptions="Start"
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    Padding="10,0,0,5"
+                                    >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                                <Span Text="page # - " />
+                                                <Span Text="{Binding page_no}" />
+                                         </FormattedString>
+                                    </Label.FormattedText>
+
+                                </Label>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.GroupHeaderTemplate>
+                        <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                                <Border
+                                   Background="AliceBlue"
+                                   Stroke="LightGray"
+                                   StrokeThickness="3"
+                                    >
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="5,5,5,5"/>
+                                    </Border.StrokeShape>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            MaxLines="500"
+                                            Text="{Binding verse_arabic}"
+                                            TextType="Html"
+                                            TextColor="Black"
+                                            HorizontalTextAlignment="End">
+                                        </Label>
+                                </Border>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                    <ActivityIndicator x:Name="progInd"
+                           IsRunning="false"
+                           Color="Blue"
+                           HorizontalOptions="Center"
+                    />
+            </VerticalStackLayout>
+</ContentPage>

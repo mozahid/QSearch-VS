@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.About"
+             NavigationPage.HasBackButton="False"
+             Title="About">
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Clicked="ToolbarItem_Clicked">
+        <ToolbarItem.IconImageSource>
+          <FontImageSource
+            FontFamily="MaterialIconsOutlined-Regular"
+            Glyph="&#xe5d2;"
+            Color="White"
+            Size="20"
+              />
+        </ToolbarItem.IconImageSource>
+      </ToolbarItem>
+      </ContentPage.ToolbarItems>
+        <VerticalStackLayout>
+                    <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                        <Image Source="about.png"
+                                HeightRequest="35"
+                                WidthRequest="35"></Image>
+                        <Label
+                            TextColor="Blue"
+                            FontSize="Title"
+                            FontAttributes="Bold">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="About Q-Search" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                     </HorizontalStackLayout>
+                    <Label HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Version " TextColor="Black" FontSize="Small" />
+                                <Span x:Name="ver" TextColor="Black" FontSize="Small" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <BoxView BackgroundColor="Silver"
+                             HeightRequest="1"
+                             HorizontalOptions="Fill"
+                             />
+                    <Grid x:Name="grid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <ScrollView Grid.Row="0" VerticalOptions="FillAndExpand">
+                        <StackLayout Margin="5">
+                                <Frame x:Name="frame1"
+                                        IsVisible="true"
+                                        HasShadow="True"
+                                        BorderColor="Silver">
+                                    <Label
+                                        x:Name="lblAbout"
+                                        BackgroundColor="AliceBlue"
+                                        TextColor="Black"
+                                        FontSize="Medium"
+                                        TextType="Html"
+                                        Padding="5,0,5,0">
+                                        <![CDATA[
+                                            This project has been a humble effort by me to make the Holy Quran search easily accessible, without the need for an internet.
+                                            This application is freely available to all. The translations I have included in the search are the works of <br/><br/>
+                                             <strong>. <span style="color:blue;">Dr. Mustafa Khattab</span></strong><br/>
+                                             <strong>. <span style="color:blue;">Saheeh International</span></strong><br/>
+                                             <strong>. <span style="color:blue;">Mufti Taqi Usmani</span></strong><br/>
+                                             <strong>. <span style="color:blue;">Maulana Maududi</span></strong><br/>
+                                             <strong>. <span style="color:blue;">Dr.Yousuf Ali</span></strong><br/>
+                                            <br/>
+                                            In all earnest, there could be room for improvement, as I have taken up this task to make it as accurate as I can, and
+                                            provide this divine knowledge to people of all relgions. If you would like to leave any feedback, please feel free to reach out
+                                            to me at this address <span style="color:red;"><u>mzahid@gmail.com</u></span>
+                                            <br/>
+                                            <br/>
+                                            Jazak Allah for using this app.
+                                        ]]>
+                                </Label>
+                                </Frame>
+                                <Frame x:Name="frame2"
+                                        IsVisible="false"
+                                        HasShadow="True"
+                                        BorderColor="Silver">
+                                    <Label
+                                        x:Name="lblAbout2"
+                                        BackgroundColor="AliceBlue"
+                                        TextColor="Black"
+                                        FontSize="Medium"                                      
+                                        TextType="Text"
+                                        Padding="5,0,5,0"
+                                        >
+                                        <Label.FormattedText>
+                                            <FormattedString>                                              
+                                                <Span Text="This project has been a humble effort by me to make the Holy Quran search easily accessible, without the need for an internet."></Span>
+                                                <Span Text="This application is freely available to all. The translations I have included in the search are the works of"></Span>
+                                                <Span Text= "&#10;&#10;" />
+                                                <Span Text=". Dr. Mustafa Khattab" FontAttributes="Bold" TextColor="Blue" />
+                                                <Span Text= "&#10;" />
+                                                <Span Text=". Saheeh International" FontAttributes="Bold" TextColor="Blue" />
+                                                <Span Text= "&#10;" />
+                                                <Span Text=". Mufti Taqi Usmani" FontAttributes="Bold" TextColor="Blue" />
+                                                <Span Text= "&#10;" />
+                                                <Span Text=". Maulana Maududi" FontAttributes="Bold" TextColor="Blue" />
+                                                <Span Text= "&#10;" />
+                                                <Span Text=". Dr. Yousuf Ali" FontAttributes="Bold" TextColor="Blue" />
+                                                <Span Text= "&#10;&#10;" />
+                                                <Span Text="In all earnest, there could be room for improvement, as I have taken up this task to make it as accurate as I can, and" />
+                                                <Span Text="provide this divine knowledge to people of all relgions. If you would like to leave any feedback, please feel free to reach out" />
+                                                <Span Text="to me at this address " />
+                                                <Span Text="mzahid@gmail.com" TextDecorations="Underline" TextColor="Red" />
+                                                <Span Text="&#10;&#10;" />
+                                                <Span Text="Jazak Allah for using this app." />
+                                                <Span Text= "&#10;&#10;" />
+                                            </FormattedString>
+
+                                        </Label.FormattedText>
+
+                                    </Label>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+
+                    </Grid>
+
+                 </VerticalStackLayout>
+</ContentPage>

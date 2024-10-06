@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.QSearch"
+             NavigationPage.HasBackButton="False"
+             Title="Q-Search">
+ 
+    <ContentPage.ToolbarItems>
+      <ToolbarItem Clicked="ToolbarItem_Clicked" >
+        <ToolbarItem.IconImageSource>
+          <FontImageSource
+            FontFamily="MaterialIconsOutlined-Regular"
+            Glyph="&#xe5d2;"
+            Color="LightBlue"
+            Size="24"
+            ToolTipProperties.Text="Touch for choices"
+              />
+        </ToolbarItem.IconImageSource>
+      </ToolbarItem>
+      </ContentPage.ToolbarItems>
+    <VerticalStackLayout Spacing="10">
+        <Label 
+            Text="Welcome to Quran Search!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="#799116"
+            FontSize = "24"
+            FontFamily="Tahoma"
+            LineBreakMode="NoWrap"
+            />
+        <HorizontalStackLayout
+            HorizontalOptions="Center"  >
+            <Label
+             Text="Search:"
+             FontFamily="Tahoma"
+             FontSize="Default"
+             VerticalOptions="Center"
+             Padding="5"
+                >
+            </Label>
+            <Entry
+                x:Name="txtSearch"
+                Placeholder="Your search word(s)"
+                PlaceholderColor="SlateBlue"
+                Completed="txtSearch_Completed"
+                TextChanged="txtSearch_TextChanged"
+                HeightRequest="48"
+                WidthRequest="250"
+                Keyboard="Plain"            
+                IsSpellCheckEnabled="False"
+                IsTextPredictionEnabled="False"
+                ClearButtonVisibility="WhileEditing"
+                ReturnType="Search"
+                VerticalOptions="Center"
+                MaxLength="25"
+                FontSize="Medium"
+                Text=""
+                >
+            </Entry>
+            <ActivityIndicator x:Name="progInd" IsRunning="false"
+                   Color="Blue" />
+        </HorizontalStackLayout>
+        <BoxView Color="LightGray"
+                    HeightRequest="2"
+                    HorizontalOptions="Fill" />
+        <HorizontalStackLayout
+                        x:Name="result"
+                        IsVisible="false"
+                        HorizontalOptions="Fill">
+                <Label 
+                        FontSize="Default"
+                        TextColor="Blue"
+                        Text="Total finds:"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"
+                        Margin="5,0,0,0" />
+                <Label x:Name="total"
+                        FontSize="Default"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"
+                        Margin="25,0,0,0" />
+        </HorizontalStackLayout>
+        <CollectionView
+            x:Name="lstView"
+            HorizontalOptions="Center"
+            Margin="5"
+            DescendantAdded="lstView_DescendantAdded"
+            Focused="lstView_Focused"
+            Scrolled="lstView_Scrolled"
+            ItemsSource="{Binding Verses, Mode=OneTime}"
+            VerticalScrollBarVisibility="Always" >
+                <CollectionView.ItemTemplate>
+                <DataTemplate>
+                        <Frame BorderColor="Gray"
+                               CornerRadius="5"
+                               Margin="0,0,0,5">
+                            <VerticalStackLayout BackgroundColor="AliceBlue">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.Background>
+                                        <RadialGradientBrush>
+                                            <GradientStop Color="WhiteSmoke"
+                                                          Offset="0.0" />
+                                            <GradientStop Color="LightSkyBlue"
+                                                          Offset="1.0" />
+                                        </RadialGradientBrush>
+                                    </Grid.Background>
+                                        <Label
+                                               FontSize="Small"
+                                               TextColor="Blue"
+                                               HorizontalOptions="Start"
+                                               Grid.Row="0"
+                                               Grid.Column="0"
+                                               Grid.ColumnSpan="4"
+                                                >
+                                               <Label.FormattedText>     
+                                                   <FormattedString>
+                                                       <Span Text="(" />
+                                                       <Span Text="{Binding para_number}" />
+                                                       <Span Text=")" />
+                                                       <Span Text="{Binding para_name}" />
+                                                   </FormattedString>
+                                               </Label.FormattedText>
+                                        </Label>                    
+                                        <Label
+                                               FontSize="Small"
+                                               FontFamily="NotoArabic"
+                                               TextColor="Blue"
+                                               Text="{Binding class_arabic}"
+                                               HorizontalOptions="End"
+                                               Grid.Row="0"
+                                               Grid.Column="4"
+                                               >
+                                        </Label>
+                                        <Label
+                                               FontSize="Small"
+                                               TextColor="Blue"
+                                               HorizontalOptions="End"
+                                               Grid.Row="0"
+                                               Grid.Column="5"
+                                            >                                       
+                                              <Label.FormattedText>
+                                                  <FormattedString> 
+                                                      <Span Text="(" />
+                                                      <Span Text="{Binding class_english}" />
+                                                      <Span Text=")" />
+                                                  </FormattedString>
+                                              </Label.FormattedText>
+                                        </Label>
+                                        <Label FontSize="Large"
+                                               FontAttributes="Bold"
+                                               FontFamily="NotoArabic"
+                                               TextColor="Goldenrod"
+                                               Grid.Row="1"
+                                               Grid.Column="0"
+                                               Grid.ColumnSpan="6"
+                                               HorizontalOptions="CenterAndExpand"
+                                               Padding="5"
+                                               >
+                                               <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding chapter_name_arabic}" />
+                                                        <Span Text="{Binding chapter_name_english}" />
+                                                       <Span Text="(" />
+                                                       <Span Text="{Binding chapter_number}" />
+                                                       <Span Text=")" />
+                                                    </FormattedString>    
+                                                </Label.FormattedText>
+                                            </Label>
+                                </Grid>                        
+                                <BoxView Color="LightSkyBlue"
+                                         HeightRequest="2"
+                                         HorizontalOptions="Fill" />
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontFamily="NotoArabic"
+                                    FontSize="Large"
+                                    Padding="5"
+                                    Text="{Binding verse_arabic}"
+                                    HorizontalTextAlignment="End"
+                                    LineHeight="1.4"
+                                    TextColor="Green">
+                                </Label>
+                                <BoxView Color="LightSkyBlue"
+                                         HeightRequest="2"
+                                         HorizontalOptions="Fill" />
+                                <Label 
+                                       FontSize="Medium"
+                                       FontAttributes="Bold"
+                                       TextColor="Black"
+                                       Padding="5"
+                                       HorizontalOptions="CenterAndExpand"
+                                       HorizontalTextAlignment="Center"
+                                       LineBreakMode="WordWrap"
+                                       Text="{Binding verse_english}" />
+                            </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+
+</ContentPage>
