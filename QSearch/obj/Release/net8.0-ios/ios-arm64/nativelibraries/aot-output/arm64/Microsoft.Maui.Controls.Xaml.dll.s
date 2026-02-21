@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.14.0 (8.0.1425.11118 @Commit: 1584e493603cfc4e9b36b77d6d4afe97de6363f9)"
 	.asciz "Microsoft.Maui.Controls.Xaml.dll"
 	.asciz ""
 
@@ -126,7 +126,7 @@ _mono_aot_Microsoft_Maui_Controls_Xamljit_code_start:
 Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode:
 .file 1 "/_/src/Controls/src/Xaml/CreateValuesVisitor.cs"
 .loc 1 0 0 prologue_end
-.word 0xd280a010
+.word 0xd280a810
 .word 0x910003f1
 .word 0xcb100231
 .word 0x9100023f
@@ -151,17 +151,18 @@ bl _p_1
 .word 0xf900cfbf
 .word 0xf900d3bf
 .word 0xf900d7bf
+.word 0xf900dbbf
 .word 0xd2800000
 .word 0xf900afa0
 .word 0xf900b3a0
 .word 0xf900b7a0
 .word 0xf900bba0
 .word 0xf900bfa0
-.word 0xf900dbbf
 .word 0xf900dfbf
 .word 0xf900e3bf
 .word 0xf900e7bf
 .word 0xf900ebbf
+.word 0xf900efbf
 .word 0xd2800000
 .word 0xf900a3a0
 .word 0xf900a7a0
@@ -170,8 +171,8 @@ bl _p_1
 .word 0xf90097a0
 .word 0xf9009ba0
 .word 0xf9009fa0
-.word 0xf900efbf
 .word 0xf900f3bf
+.word 0xf900f7bf
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -194,45 +195,45 @@ bl _p_29
 .word 0x3940003e
 .word 0xf9401800
 .word 0xaa0003e1
-.word 0xf900f7a4
-.word 0xf900fba3
+.word 0xf900fba4
+.word 0xf900ffa3
 .word 0xaa0203f9
 .word 0xaa0103f8
 .word 0xb50000e0
-.word 0xf940f7a1
-.word 0xf940fba0
-.word 0xf900f7a1
-.word 0xf900fba0
+.word 0xf940fba1
+.word 0xf940ffa0
+.word 0xf900fba1
+.word 0xf900ffa0
 .word 0xd2800018
 .word 0x14000010
-.word 0xf940f7a0
-.word 0xf9026fa0
 .word 0xf940fba0
-.word 0xf9026ba0
+.word 0xf9028fa0
+.word 0xf940ffa0
+.word 0xf9028ba0
 .word 0xf9400300
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9418c30
+.word 0xf9419030
 .word 0xd63f0200
-.word 0xf9426ba1
-.word 0xf9426fa2
-.word 0xf900f7a2
-.word 0xf900fba1
+.word 0xf9428ba1
+.word 0xf9428fa2
+.word 0xf900fba2
+.word 0xf900ffa1
 .word 0xaa0003f8
-.word 0xf940f7a0
-.word 0xf9026fa0
 .word 0xf940fba0
+.word 0xf9028fa0
+.word 0xf940ffa0
 .word 0xaa1903e1
 .word 0xaa1803e2
 .word 0x910623a3
 bl _p_59
 .word 0xaa0003e1
-.word 0xf9426fa0
-.word 0xf9026ba1
+.word 0xf9428fa0
+.word 0xf9028ba1
 .word 0x91004001
 .word 0xd5033bbf
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xf9000020
 .word 0xd349fc21
 .word 0xd29ffffe
@@ -263,12 +264,12 @@ ldr x2, [x16, #16]
 .word 0xf9401402
 .word 0xf940c7a1
 .word 0xaa0203e0
-.word 0xf9026ba2
+.word 0xf9028ba2
 .word 0xf9400c50
 .word 0xd63f0200
-.word 0xf9426ba0
+.word 0xf9428ba0
 .loc 1 53 0
-.word 0x140005e6
+.word 0x1400061b
 .loc 1 55 0
 .word 0xf940c7a0
 bl _p_27
@@ -363,34 +364,34 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #232]
 .word 0xf9400000
 .word 0xaa0003e1
-.word 0xf900f7a2
-.word 0xf900fba1
+.word 0xf900fba2
+.word 0xf900ffa1
 .word 0xb5000720
-.word 0xf940f7a0
-.word 0xf90273a0
+.word 0xf940fba0
+.word 0xf90293a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #240]
 .word 0xf9400000
-.word 0xf90277a0
+.word 0xf90297a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x5400b480
+.word 0x5400bb20
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #248]
 .word 0xd2801001
 bl _p_29
-.word 0xf9026fa0
-.word 0xf94273a1
-.word 0xf94277a2
+.word 0xf9028fa0
+.word 0xf94293a1
+.word 0xf94297a2
 .word 0xeb1f005f
 .word 0x10000011
-.word 0x5400b2c0
+.word 0x5400b960
 .word 0xd5033bbf
-.word 0xf9426fa0
+.word 0xf9428fa0
 .word 0xf9001002
 .word 0x91008003
 .word 0xd349fc63
@@ -418,18 +419,18 @@ ldr x3, [x16, #264]
 .word 0xf9000c03
 .word 0xf9401442
 .word 0xf9000802
-.word 0xf9026ba0
+.word 0xf9028ba0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x2, [x16, #232]
 .word 0xd5033bbf
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xf9000040
-.word 0xf900f7a1
-.word 0xf900fba0
-.word 0xf940f7a0
-.word 0xf940fba1
+.word 0xf900fba1
+.word 0xf900ffa0
+.word 0xf940fba0
+.word 0xf940ffa1
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -440,7 +441,7 @@ bl _p_460
 .word 0xf94023a0
 .word 0xf9400b41
 .word 0xf94027a2
-.word 0x9106a3a3
+.word 0x9106c3a3
 bl _p_461
 .word 0x53001c00
 .word 0x340000e0
@@ -465,34 +466,34 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #280]
 .word 0xf9400000
 .word 0xaa0003e1
-.word 0xf900f7a2
-.word 0xf900fba1
+.word 0xf900fba2
+.word 0xf900ffa1
 .word 0xb5000720
-.word 0xf940f7a0
-.word 0xf90273a0
+.word 0xf940fba0
+.word 0xf90293a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #240]
 .word 0xf9400000
-.word 0xf90277a0
+.word 0xf90297a0
 .word 0xeb1f001f
 .word 0x10000011
-.word 0x5400a900
+.word 0x5400afa0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #248]
 .word 0xd2801001
 bl _p_29
-.word 0xf9026fa0
-.word 0xf94273a1
-.word 0xf94277a2
+.word 0xf9028fa0
+.word 0xf94293a1
+.word 0xf94297a2
 .word 0xeb1f005f
 .word 0x10000011
-.word 0x5400a740
+.word 0x5400ade0
 .word 0xd5033bbf
-.word 0xf9426fa0
+.word 0xf9428fa0
 .word 0xf9001002
 .word 0x91008003
 .word 0xd349fc63
@@ -520,18 +521,18 @@ ldr x3, [x16, #296]
 .word 0xf9000c03
 .word 0xf9401442
 .word 0xf9000802
-.word 0xf9026ba0
+.word 0xf9028ba0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x2, [x16, #280]
 .word 0xd5033bbf
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xf9000040
-.word 0xf900f7a1
-.word 0xf900fba0
-.word 0xf940f7a0
-.word 0xf940fba1
+.word 0xf900fba1
+.word 0xf900ffa0
+.word 0xf940fba0
+.word 0xf940ffa1
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -542,22 +543,22 @@ bl _p_460
 .word 0xf94023a0
 .word 0xf9400b41
 .word 0xf94027a2
-.word 0x9106a3a3
+.word 0x9106c3a3
 bl _p_461
 .word 0x53001c00
-.word 0x34009f20
+.word 0x3400a5c0
 .word 0x140000d9
 .word 0xaa1803f7
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x5400a060
+.word 0x5400a700
 .word 0x91004321
 .word 0xb9802320
 .word 0xaa0103f6
 .word 0xaa0003f5
 .word 0xb9800821
 .word 0x6b01001f
-.word 0x54009f68
+.word 0x5400a608
 .word 0xf94002c0
 .word 0x2a1503e1
 .word 0xd37ff821
@@ -588,7 +589,7 @@ bl _p_461
 .word 0xf94087a0
 .word 0xeb1f02df
 .word 0x10000011
-.word 0x54009ba0
+.word 0x5400a240
 .word 0x910052c1
 .word 0xb98012c2
 .word 0x2a0203e2
@@ -607,7 +608,7 @@ bl _p_463
 .word 0xaa1803e1
 bl _p_82
 .loc 1 73 0
-.word 0xf940d7a1
+.word 0xf940dba1
 .word 0x910563a0
 bl _p_110
 
@@ -619,14 +620,14 @@ ldr x0, [x16, #304]
 .word 0xaa0003f7
 .word 0xeb1f033f
 .word 0x10000011
-.word 0x54009800
+.word 0x54009ea0
 .word 0x91004321
 .word 0xb9817ba0
 .word 0xaa0103f6
 .word 0xaa0003f5
 .word 0xb9800821
 .word 0x6b01001f
-.word 0x540096c8
+.word 0x54009d68
 .word 0xf94002c0
 .word 0x2a1503e1
 .word 0xd37ff821
@@ -657,7 +658,7 @@ ldr x0, [x16, #304]
 .word 0xf94077a0
 .word 0xeb1f02df
 .word 0x10000011
-.word 0x54009340
+.word 0x540099e0
 .word 0x910052c1
 .word 0xb98012c2
 .word 0x2a0203e2
@@ -678,7 +679,7 @@ bl _p_82
 .word 0xf9400b41
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9419430
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0x910563a0
@@ -692,14 +693,14 @@ ldr x0, [x16, #312]
 .word 0xaa0003f8
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54008f00
+.word 0x540095a0
 .word 0x91004341
 .word 0xb9817ba0
 .word 0xaa0103f7
 .word 0xaa0003f6
 .word 0xb9800821
 .word 0x6b01001f
-.word 0x54008de8
+.word 0x54009488
 .word 0xf94002e0
 .word 0x2a1603e1
 .word 0xd37ff821
@@ -730,7 +731,7 @@ ldr x0, [x16, #312]
 .word 0xf94067a0
 .word 0xeb1f02ff
 .word 0x10000011
-.word 0x54008a40
+.word 0x540090e0
 .word 0x910052e1
 .word 0xb98012e2
 .word 0x2a0203e2
@@ -751,21 +752,21 @@ bl _p_82
 .word 0x14000001
 .word 0x910563a0
 bl _p_85
-.word 0xf9026fa0
+.word 0xf9028fa0
 .word 0xf94027a0
-.word 0xf90273a0
+.word 0xf90293a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #320]
 .word 0xd2801401
 bl _p_29
-.word 0xf9426fa1
-.word 0xf94273a2
-.word 0xf9026ba0
+.word 0xf9428fa1
+.word 0xf94293a2
+.word 0xf9028ba0
 .word 0xd2800003
 bl _p_30
-.word 0xf9426ba0
+.word 0xf9428ba0
 bl _p_27
 .loc 1 80 0
 .word 0xf9400b40
@@ -783,9 +784,9 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #336]
 .word 0xd2800b01
 bl _p_29
-.word 0xf9026ba0
+.word 0xf9028ba0
 bl _p_464
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xf900c3a0
 .loc 1 82 0
 .word 0xf9400b40
@@ -846,21 +847,21 @@ ldr x1, [x16, #376]
 .word 0xb4000e78
 .loc 1 86 0
 .word 0xf94027a0
-.word 0xf9026fa0
+.word 0xf9028fa0
 .word 0xf94023a0
 .word 0xf9400800
-.word 0xf90273a0
+.word 0xf90293a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #384]
 .word 0xd2800301
 bl _p_29
-.word 0xf9426fa1
-.word 0xf94273a2
-.word 0xf9026ba0
+.word 0xf9428fa1
+.word 0xf94293a2
+.word 0xf9028ba0
 bl _p_39
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xaa0003f9
 .loc 1 87 0
 .word 0xf94027a0
@@ -884,15 +885,15 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x1, [x16, #376]
 .word 0xeb01001f
 .word 0x10000011
-.word 0x54007a01
+.word 0x540080a1
 .word 0x3940031e
 .word 0xf9401b00
-.word 0xf9026ba0
+.word 0xf9028ba0
 .word 0xf9400b40
-.word 0xf9026fa0
+.word 0xf9028fa0
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x540078a0
+.word 0x54007f40
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -900,12 +901,12 @@ ldr x0, [x16, #392]
 .word 0xd2801001
 bl _p_29
 .word 0xaa0003e2
-.word 0xf9426fa1
+.word 0xf9428fa1
 .word 0xeb1f035f
 .word 0x10000011
-.word 0x54007700
+.word 0x54007da0
 .word 0xd5033bbf
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xf900105a
 .word 0x91008043
 .word 0xd349fc63
@@ -934,11 +935,11 @@ ldr x4, [x16, #408]
 .word 0xf9401463
 .word 0xf9000843
 .word 0xaa1903e3
-.word 0x9106c3a4
+.word 0x9106e3a4
 bl _p_100
 .word 0xaa0003f9
 .loc 1 89 0
-.word 0xf940dba0
+.word 0xf940dfa0
 .word 0xb40002a0
 .loc 1 91 0
 .word 0xf94023a0
@@ -953,16 +954,16 @@ bl _p_100
 .word 0xaa0003e1
 .word 0x3940003e
 .word 0xf9401402
-.word 0xf940dba1
+.word 0xf940dfa1
 .word 0xaa0203e0
-.word 0xf9026ba2
+.word 0xf9028ba2
 .word 0xf9400c50
 .word 0xd63f0200
-.word 0xf9426ba0
+.word 0xf9428ba0
 .loc 1 94 0
-.word 0x1400036d
+.word 0x140003a2
 .loc 1 96 0
-.word 0xf940dba0
+.word 0xf940dfa0
 bl _p_27
 .loc 1 98 0
 .word 0xb4000119
@@ -983,7 +984,7 @@ bl _p_152
 .word 0xf900c3a0
 .loc 1 103 0
 .word 0x14000097
-.word 0xf9021bbe
+.word 0xf90237be
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -991,14 +992,14 @@ ldr x0, [x16, #56]
 .word 0xf9400011
 .word 0xb4000051
 bl _p_1
-.word 0xf941c7a0
-.word 0xf90247a0
-.word 0xf94247a0
-.word 0xf90257a0
-.word 0xf94247a0
+.word 0xf941e3a0
+.word 0xf90263a0
+.word 0xf94263a0
+.word 0xf90273a0
+.word 0xf94263a0
 .word 0xeb1f001f
 .word 0x54000160
-.word 0xf94247a0
+.word 0xf94263a0
 .word 0xf9400000
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
@@ -1007,34 +1008,34 @@ ldr x1, [x16, #416]
 .word 0xeb01001f
 .word 0x54000041
 .word 0x14000003
-.word 0xf90257bf
+.word 0xf90273bf
 .word 0x14000001
-.word 0xf94257a0
-.word 0xf901d7a0
-.word 0xf941d7a1
-.word 0xf941d7a0
-.word 0xf900f7a1
+.word 0xf94273a0
+.word 0xf901f3a0
+.word 0xf941f3a1
+.word 0xf941f3a0
+.word 0xf900fba1
 .word 0xb5000060
-.word 0xb903b3bf
+.word 0xb903ebbf
 .word 0x14000042
-.word 0xf940f7a0
-.word 0xf900dfa0
+.word 0xf940fba0
+.word 0xf900e3a0
 .loc 1 104 0
-.word 0xf940dfa0
-.word 0xf901e3a0
-.word 0xf941e3a0
+.word 0xf940e3a0
+.word 0xf901ffa0
+.word 0xf941ffa0
 .word 0x3940001e
-.word 0xf941e3a0
+.word 0xf941ffa0
 .word 0xf9401400
-.word 0xf901dfa0
-.word 0xf941dfa0
-.word 0xf9024ba0
-.word 0xf9424ba0
-.word 0xf9025ba0
-.word 0xf9424ba0
+.word 0xf901fba0
+.word 0xf941fba0
+.word 0xf90267a0
+.word 0xf94267a0
+.word 0xf90277a0
+.word 0xf94267a0
 .word 0xeb1f001f
 .word 0x540001a0
-.word 0xf9424ba0
+.word 0xf94267a0
 .word 0xf9400000
 .word 0xf9400000
 .word 0xf9400800
@@ -1045,25 +1046,25 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x1, [x16, #424]
 .word 0xeb01001f
 .word 0x54000060
-.word 0xf9025bbf
+.word 0xf90277bf
 .word 0x14000001
-.word 0xf9425ba0
+.word 0xf94277a0
 .word 0xb50003c0
-.word 0xf940dfa0
-.word 0xf901eba0
-.word 0xf941eba0
+.word 0xf940e3a0
+.word 0xf90207a0
+.word 0xf94207a0
 .word 0x3940001e
-.word 0xf941eba0
+.word 0xf94207a0
 .word 0xf9401400
-.word 0xf901e7a0
-.word 0xf941e7a0
-.word 0xf9024fa0
-.word 0xf9424fa0
-.word 0xf9025fa0
-.word 0xf9424fa0
+.word 0xf90203a0
+.word 0xf94203a0
+.word 0xf9026ba0
+.word 0xf9426ba0
+.word 0xf9027ba0
+.word 0xf9426ba0
 .word 0xeb1f001f
 .word 0x54000160
-.word 0xf9424fa0
+.word 0xf9426ba0
 .word 0xf9400000
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
@@ -1072,25 +1073,25 @@ ldr x1, [x16, #432]
 .word 0xeb01001f
 .word 0x54000041
 .word 0x14000003
-.word 0xf9025fbf
+.word 0xf9027bbf
 .word 0x14000001
-.word 0xf9425fa0
+.word 0xf9427ba0
 .word 0xeb1f001f
 .word 0x9a9f97e0
-.word 0xb903b3a0
+.word 0xb903eba0
 .word 0x14000003
 .word 0xd280003e
-.word 0xb903b3be
-.word 0xb983b3a0
+.word 0xb903ebbe
+.word 0xb983eba0
 .word 0x6b1f001f
 .word 0x9a9f97e0
-.word 0xb903b3a0
-.word 0xb983b3a0
-.word 0xf9421bbe
+.word 0xb903eba0
+.word 0xb983eba0
+.word 0xf94237be
 .word 0xd61f03c0
 .word 0x14000001
-.word 0xf9021fbe
-.word 0xf901c7a0
+.word 0xf9023bbe
+.word 0xf901e3a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1099,17 +1100,17 @@ ldr x0, [x16, #56]
 .word 0xb4000051
 bl _p_1
 .loc 1 106 0
-.word 0xf940dfa0
-.word 0xf901f3a0
-.word 0xf941f3a0
+.word 0xf940e3a0
+.word 0xf9020fa0
+.word 0xf9420fa0
 .word 0x3940001e
-.word 0xf941f3a0
+.word 0xf9420fa0
 .word 0xf9401400
-.word 0xf901efa0
-.word 0xf941efa0
+.word 0xf9020ba0
+.word 0xf9420ba0
 bl _p_27
 .word 0x14000001
-.word 0xf901cba0
+.word 0xf901e7a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1117,32 +1118,32 @@ ldr x0, [x16, #56]
 .word 0xf9400011
 .word 0xb4000051
 bl _p_1
-.word 0xf941cba0
+.word 0xf941e7a0
 .loc 1 108 0
-.word 0xf900e3a0
+.word 0xf900e7a0
 .loc 1 110 0
-.word 0xf940e3a1
+.word 0xf940e7a1
 .word 0xaa0103e0
 .word 0xf9400021
 .word 0xf9404030
 .word 0xd63f0200
-.word 0xf9026fa0
+.word 0xf9028fa0
 .word 0xf94027a0
-.word 0xf90273a0
-.word 0xf940e3a0
-.word 0xf90277a0
+.word 0xf90293a0
+.word 0xf940e7a0
+.word 0xf90297a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #320]
 .word 0xd2801401
 bl _p_29
-.word 0xf9426fa1
-.word 0xf94273a2
-.word 0xf94277a3
-.word 0xf9026ba0
+.word 0xf9428fa1
+.word 0xf94293a2
+.word 0xf94297a3
+.word 0xf9028ba0
 bl _p_30
-.word 0xf9426ba0
+.word 0xf9428ba0
 bl _p_27
 .loc 1 114 0
 .word 0xf94023a0
@@ -1238,37 +1239,37 @@ ldr x1, [x16, #472]
 .word 0xb4002f18
 .loc 1 118 0
 .word 0xf94027a0
-.word 0xf90277a0
+.word 0xf90297a0
 .word 0xf94023a0
 .word 0xf9400800
-.word 0xf9027ba0
+.word 0xf9029ba0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #384]
 .word 0xd2800301
 bl _p_29
-.word 0xf94277a1
-.word 0xf9427ba2
-.word 0xf90273a0
+.word 0xf94297a1
+.word 0xf9429ba2
+.word 0xf90293a0
 bl _p_39
-.word 0xf94273a0
-.word 0xf900e7a0
+.word 0xf94293a0
+.word 0xf900eba0
 .loc 1 120 0
 .word 0xf94023a0
 .word 0xf9400800
-.word 0xf9026fa0
+.word 0xf9028fa0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #480]
 .word 0xd2800401
 bl _p_29
-.word 0xf9426fa1
-.word 0xf9026ba0
+.word 0xf9428fa1
+.word 0xf9028ba0
 .word 0xd2a00002
 bl _p_467
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0xaa0003f9
 .loc 1 121 0
 .word 0xf94027a0
@@ -1324,13 +1325,13 @@ ldr x15, [x16, #520]
 bl _p_251
 .word 0x53001c00
 .word 0x35fffd00
-.word 0xf90177bf
+.word 0xf90193bf
 .word 0x94000005
-.word 0xf94177a0
+.word 0xf94193a0
 .word 0xb4000040
 bl _p_46
 .word 0x1400000c
-.word 0xf9022fbe
+.word 0xf9024bbe
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1339,8 +1340,8 @@ ldr x0, [x16, #56]
 .word 0xb4000051
 bl _p_1
 .word 0x910503a0
-.word 0xf9017ba0
-.word 0xf9422fbe
+.word 0xf90197a0
+.word 0xf9424bbe
 .word 0xd61f03c0
 .loc 1 123 0
 .word 0xf94027a0
@@ -1385,13 +1386,13 @@ ldr x15, [x16, #520]
 bl _p_251
 .word 0x53001c00
 .word 0x35fffd00
-.word 0xf9017fbf
+.word 0xf9019bbf
 .word 0x94000005
-.word 0xf9417fa0
+.word 0xf9419ba0
 .word 0xb4000040
 bl _p_46
 .word 0x1400000c
-.word 0xf90237be
+.word 0xf90253be
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1400,11 +1401,11 @@ ldr x0, [x16, #56]
 .word 0xb4000051
 bl _p_1
 .word 0x9104a3a0
-.word 0xf90183a0
-.word 0xf94237be
+.word 0xf9019fa0
+.word 0xf94253be
 .word 0xd61f03c0
 .loc 1 128 0
-.word 0xf940e7a1
+.word 0xf940eba1
 .word 0xaa1a03e0
 .word 0xf9400342
 
@@ -1417,7 +1418,7 @@ ldr x15, [x16, #528]
 .word 0xf900c3a0
 .loc 1 129 0
 .word 0x14000064
-.word 0xf901cfa0
+.word 0xf901eba0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1425,18 +1426,18 @@ ldr x0, [x16, #56]
 .word 0xf9400011
 .word 0xb4000051
 bl _p_1
-.word 0xf941cfa0
+.word 0xf941eba0
 .loc 1 130 0
-.word 0xf900efa0
+.word 0xf900f3a0
 .loc 1 132 0
-.word 0xf940efa0
-.word 0xf90253a0
-.word 0xf94253a0
-.word 0xf90263a0
-.word 0xf94253a0
+.word 0xf940f3a0
+.word 0xf9026fa0
+.word 0xf9426fa0
+.word 0xf9027fa0
+.word 0xf9426fa0
 .word 0xeb1f001f
 .word 0x540001a0
-.word 0xf94253a0
+.word 0xf9426fa0
 .word 0xf9400000
 .word 0xf9400000
 .word 0xf9400800
@@ -1447,94 +1448,94 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x1, [x16, #424]
 .word 0xeb01001f
 .word 0x54000060
-.word 0xf90263bf
+.word 0xf9027fbf
 .word 0x14000001
-.word 0xf94263a0
-.word 0xf901f7a0
-.word 0xf941f7a1
-.word 0xf941f7a0
-.word 0xf900f7a1
+.word 0xf9427fa0
+.word 0xf90213a0
+.word 0xf94213a1
+.word 0xf94213a0
+.word 0xf900fba1
 .word 0xb50002a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #536]
-.word 0xf9026fa0
-.word 0xf940e7a0
-.word 0xf90273a0
-.word 0xf940efa0
-.word 0xf90277a0
+.word 0xf9028fa0
+.word 0xf940eba0
+.word 0xf90293a0
+.word 0xf940f3a0
+.word 0xf90297a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x0, [x16, #320]
 .word 0xd2801401
 bl _p_29
-.word 0xf9426fa1
-.word 0xf94273a2
-.word 0xf94277a3
-.word 0xf9026ba0
+.word 0xf9428fa1
+.word 0xf94293a2
+.word 0xf94297a3
+.word 0xf9028ba0
 bl _p_178
-.word 0xf9426ba0
+.word 0xf9428ba0
+.word 0xf900fba0
+.word 0xf940fba0
 .word 0xf900f7a0
-.word 0xf940f7a0
-.word 0xf900f3a0
 .loc 1 133 0
 .word 0xf94023a0
-.word 0xf901ffa0
-.word 0xf941ffa0
+.word 0xf9021ba0
+.word 0xf9421ba0
 .word 0xf9400800
-.word 0xf901fba0
-.word 0xf941fba0
-.word 0xf90207a0
-.word 0xf94207a0
+.word 0xf90217a0
+.word 0xf94217a0
+.word 0xf90223a0
+.word 0xf94223a0
 .word 0x3940001e
-.word 0xf94207a0
+.word 0xf94223a0
 .word 0xf9401400
-.word 0xf90203a0
-.word 0xf94203a0
+.word 0xf9021fa0
+.word 0xf9421fa0
 .word 0xb40002a0
 .loc 1 135 0
 .word 0xf94023a0
-.word 0xf9020fa0
-.word 0xf9420fa0
+.word 0xf9022ba0
+.word 0xf9422ba0
 .word 0xf9400800
-.word 0xf9020ba0
-.word 0xf9420ba0
-.word 0xf90217a0
-.word 0xf94217a0
+.word 0xf90227a0
+.word 0xf94227a0
+.word 0xf90233a0
+.word 0xf94233a0
 .word 0x3940001e
-.word 0xf94217a0
+.word 0xf94233a0
 .word 0xf9401400
-.word 0xf90213a0
-.word 0xf94213a2
-.word 0xf940f3a1
+.word 0xf9022fa0
+.word 0xf9422fa2
+.word 0xf940f7a1
 .word 0xaa0203e0
-.word 0xf9026ba2
+.word 0xf9028ba2
 .word 0xf9400c50
 .word 0xd63f0200
-.word 0xf9426ba0
+.word 0xf9428ba0
 .word 0x14000003
 .loc 1 138 0
-.word 0xf940f3a0
+.word 0xf940f7a0
 bl _p_27
 .loc 1 139 0
 bl _p_43
-.word 0xf90267a0
-.word 0xf94267a0
+.word 0xf90283a0
+.word 0xf94283a0
 .word 0xb4000060
-.word 0xf94267a0
+.word 0xf94283a0
 bl _p_27
 .word 0x14000001
 .loc 1 140 0
 .word 0xf94027a0
-.word 0xf90187a0
-.word 0xf94187a0
+.word 0xf901a3a0
+.word 0xf941a3a0
 .word 0x3940001e
-.word 0xf94187a0
+.word 0xf941a3a0
 .word 0xf9401800
-.word 0xf9018ba0
-.word 0xf9418ba0
+.word 0xf901a7a0
+.word 0xf941a7a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1550,21 +1551,21 @@ ldr x15, [x16, #552]
 .word 0x3940001e
 .word 0xf94037a1
 .word 0xf9403ba2
-.word 0x910743a3
+.word 0x910763a3
 bl _p_151
 .word 0x53001c00
 .word 0x35000040
 .loc 1 141 0
-.word 0xf900ebbf
+.word 0xf900efbf
 .loc 1 143 0
 .word 0xf94027a0
-.word 0xf9018fa0
-.word 0xf9418fa0
+.word 0xf901aba0
+.word 0xf941aba0
 .word 0x3940001e
-.word 0xf9418fa0
+.word 0xf941aba0
 .word 0xf9401800
-.word 0xf90193a0
-.word 0xf94193a0
+.word 0xf901afa0
+.word 0xf941afa0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1573,49 +1574,49 @@ ldr x15, [x16, #560]
 bl _p_249
 .loc 1 144 0
 .word 0xf94027a0
-.word 0xf90197a0
-.word 0xf94197a0
+.word 0xf901b3a0
+.word 0xf941b3a0
 .word 0x3940001e
-.word 0xf94197a0
+.word 0xf941b3a0
 .word 0xf9402000
-.word 0xf9019ba0
-.word 0xf9419ba0
-.word 0xf9019fa0
-.word 0xb90343bf
-.word 0xf9419fa0
+.word 0xf901b7a0
+.word 0xf941b7a0
+.word 0xf901bba0
+.word 0xb9037bbf
+.word 0xf941bba0
 .word 0x3940001e
-.word 0xf9419fa0
-.word 0xf9419fa1
+.word 0xf941bba0
+.word 0xf941bba1
 .word 0xb9801c21
 .word 0x11000421
 .word 0xb9001c01
 .word 0xd2800020
 .word 0x6b1f001f
-.word 0xf9419fa0
+.word 0xf941bba0
 .word 0xb9801800
-.word 0xb90343a0
-.word 0xf9419fa0
+.word 0xb9037ba0
+.word 0xf941bba0
 .word 0xb900181f
-.word 0xb98343a0
+.word 0xb9837ba0
 .word 0x6b1f001f
 .word 0x540000cd
-.word 0xf9419fa0
+.word 0xf941bba0
 .word 0xf9400800
-.word 0xb98343a2
+.word 0xb9837ba2
 .word 0xd2a00001
 bl _p_250
 .loc 1 146 0
-.word 0xf940eba0
+.word 0xf940efa0
 .word 0xb4000300
 .loc 1 147 0
 .word 0xf94027a0
-.word 0xf901bfa0
-.word 0xf941bfa0
+.word 0xf901dba0
+.word 0xf941dba0
 .word 0x3940001e
-.word 0xf941bfa0
+.word 0xf941dba0
 .word 0xf9401800
-.word 0xf901c3a0
-.word 0xf941c3a0
+.word 0xf901dfa0
+.word 0xf941dfa0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1624,7 +1625,7 @@ ldr x1, [x16, #544]
 .word 0xf9002fa2
 .word 0xf9400421
 .word 0xf90033a1
-.word 0xf940eba3
+.word 0xf940efa3
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
@@ -1635,22 +1636,22 @@ ldr x15, [x16, #568]
 bl _p_307
 .loc 1 149 0
 .word 0xf94023a0
-.word 0xf901a7a0
-.word 0xf941a7a0
-.word 0xf901aba0
-.word 0xf941aba0
+.word 0xf901c3a0
+.word 0xf941c3a0
+.word 0xf901c7a0
+.word 0xf941c7a0
 .word 0xf9400800
-.word 0xf901afa0
-.word 0xf941afa0
-.word 0xf901b3a0
-.word 0xf941b3a0
+.word 0xf901cba0
+.word 0xf941cba0
+.word 0xf901cfa0
+.word 0xf941cfa0
 .word 0x3940001e
-.word 0xf941b3a0
+.word 0xf941cfa0
 .word 0xf9400800
-.word 0xf901b7a0
-.word 0xf941b7a0
-.word 0xf901bba0
-.word 0xf941bba0
+.word 0xf901d3a0
+.word 0xf941d3a0
+.word 0xf901d7a0
+.word 0xf941d7a0
 .word 0xf94027a1
 .word 0xf940c3a2
 
@@ -1661,13 +1662,13 @@ ldr x15, [x16, #440]
 bl _p_131
 .loc 1 152 0
 .word 0xf940c3a0
-.word 0xf900ffa0
-.word 0xf940ffa0
 .word 0xf90103a0
-.word 0xf940ffa0
+.word 0xf94103a0
+.word 0xf90107a0
+.word 0xf94103a0
 .word 0xeb1f001f
 .word 0x54000180
-.word 0xf940ffa0
+.word 0xf94103a0
 .word 0xf9400000
 .word 0xf9400000
 .word 0xf9400800
@@ -1678,31 +1679,31 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x1, [x16, #576]
 .word 0xeb01001f
 .word 0x54000040
-.word 0xf90103bf
-.word 0xf94103a0
+.word 0xf90107bf
+.word 0xf94107a0
 .word 0xf900cba0
 .word 0xf940cba0
 .word 0xb4000b20
 .word 0xf94027a0
-.word 0xf9014ba0
-.word 0xf9414ba0
+.word 0xf90167a0
+.word 0xf94167a0
 .word 0x3940001e
-.word 0xf9414ba0
+.word 0xf94167a0
 .word 0xf9402c00
-.word 0xf9014fa0
-.word 0xf9414fa0
-.word 0xf90153a0
+.word 0xf9016ba0
+.word 0xf9416ba0
+.word 0xf9016fa0
 .word 0xf9402ba0
-.word 0xf90157a0
-.word 0xf94157a0
-.word 0xf9015ba0
-.word 0xf94157a0
+.word 0xf90173a0
+.word 0xf94173a0
+.word 0xf90177a0
+.word 0xf94173a0
 .word 0xeb1f001f
 .word 0x54000340
-.word 0xf94157a0
+.word 0xf94173a0
 .word 0xf9400000
-.word 0xf9015fa0
-.word 0xf9415fa0
+.word 0xf9017ba0
+.word 0xf9417ba0
 .word 0xb9403000
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
@@ -1710,7 +1711,7 @@ add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x1, [x16, #584]
 .word 0xeb01001f
 .word 0x540001e3
-.word 0xf9415fa0
+.word 0xf9417ba0
 .word 0xf9401000
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
@@ -1725,22 +1726,22 @@ ldr x1, [x16, #584]
 .word 0x1ac22021
 .word 0xa010000
 .word 0xb5000040
-.word 0xf9015bbf
-.word 0xf9415ba0
-.word 0xf90163a0
-.word 0xf94163a1
-.word 0xf94163a0
-.word 0xf94153a2
-.word 0xf900f7a2
-.word 0xf900fba1
+.word 0xf90177bf
+.word 0xf94177a0
+.word 0xf9017fa0
+.word 0xf9417fa1
+.word 0xf9417fa0
+.word 0xf9416fa2
+.word 0xf900fba2
+.word 0xf900ffa1
 .word 0xb50000a0
-.word 0xf940f7a0
-.word 0xf900f7a0
-.word 0xf900fbbf
+.word 0xf940fba0
+.word 0xf900fba0
+.word 0xf900ffbf
 .word 0x1400000f
-.word 0xf940f7a0
-.word 0xf9026ba0
-.word 0xf940fba1
+.word 0xf940fba0
+.word 0xf9028ba0
+.word 0xf940ffa1
 .word 0xaa0103e0
 .word 0xf9400021
 
@@ -1750,102 +1751,159 @@ ldr x15, [x16, #592]
 .word 0x92800ff0
 .word 0xf8706830
 .word 0xd63f0200
-.word 0xf9426ba1
-.word 0xf900f7a1
-.word 0xf900fba0
-.word 0xf940f7a0
-.word 0xf940fba1
+.word 0xf9428ba1
+.word 0xf900fba1
+.word 0xf900ffa0
+.word 0xf940fba0
+.word 0xf940ffa1
 .word 0xeb01001f
 .word 0x54000240
 .loc 1 153 0
 .word 0xf940cba0
 .word 0xf94027a1
-.word 0xf90167a1
-.word 0xf94167a1
+.word 0xf90183a1
+.word 0xf94183a1
 .word 0x3940003e
-.word 0xf94167a1
+.word 0xf94183a1
 .word 0xf9402c21
-.word 0xf9016ba1
-.word 0xf9416ba1
-.word 0xf9016fa1
-.word 0xf9416fa1
+.word 0xf90187a1
+.word 0xf94187a1
+.word 0xf9018ba1
+.word 0xf9418ba1
 .word 0x3940003e
-.word 0xf9416fa1
+.word 0xf9418ba1
 .word 0xf9400821
-.word 0xf90173a1
-.word 0xf94173a1
+.word 0xf9018fa1
+.word 0xf9418fa1
 bl _p_134
-.loc 1 155 0
-.word 0xf94023a0
-.word 0xf90107a0
-.word 0xf94107a0
-.word 0xf9400800
+.loc 1 156 0
+.word 0xf940c3a0
 .word 0xf9010ba0
 .word 0xf9410ba0
 .word 0xf9010fa0
+.word 0xf9410ba0
+.word 0xeb1f001f
+.word 0x54000180
+.word 0xf9410ba0
+.word 0xf9400000
+.word 0xf9400000
+.word 0xf9400800
+.word 0xf9400800
+
+adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
+ldr x1, [x16, #600]
+.word 0xeb01001f
+.word 0x54000040
+.word 0xf9010fbf
 .word 0xf9410fa0
-.word 0x3940001e
-.word 0xf9410fa0
-.word 0xf9401c00
+.word 0xf900cfa0
+.word 0xf940cfa0
+.word 0xb4000400
+.loc 1 157 0
+.word 0xf940cfa0
+.word 0xf94027a1
+.word 0xf90157a1
+.word 0xf94157a1
+.word 0x3940003e
+.word 0xf94157a1
+.word 0xf9402c21
+.word 0xf9015ba1
+.word 0xf9415ba1
+.word 0xf9015fa1
+.word 0xf9415fa1
+.word 0x3940003e
+.word 0xf9415fa1
+.word 0xf9400821
+.word 0xf90163a1
+.word 0xf94163a1
+.word 0xf9028ba1
+.word 0x91026001
+.word 0xd5033bbf
+.word 0xf9428ba0
+.word 0xf9000020
+.word 0xd349fc21
+.word 0xd29ffffe
+.word 0xf2a00ffe
+.word 0x8a1e0021
+
+adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
+add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
+ldr x2, [x16, #16]
+.word 0x8b020021
+.word 0xd280003e
+.word 0x3900003e
+.loc 1 160 0
+.word 0xf94023a0
 .word 0xf90113a0
 .word 0xf94113a0
+.word 0xf9400800
 .word 0xf90117a0
-.word 0xf94117a1
 .word 0xf94117a0
-.word 0xf900f7a1
+.word 0xf9011ba0
+.word 0xf9411ba0
+.word 0x3940001e
+.word 0xf9411ba0
+.word 0xf9401c00
+.word 0xf9011fa0
+.word 0xf9411fa0
+.word 0xf90123a0
+.word 0xf94123a1
+.word 0xf94123a0
+.word 0xf900fba1
 .word 0xb50003a0
 .word 0xf94023a0
-.word 0xf90137a0
-.word 0xf94137a0
-.word 0xf9400800
-.word 0xf9013ba0
-.word 0xf9413ba0
-.word 0xf9013fa0
-.word 0xf9413fa0
-.word 0x3940001e
-.word 0xf9413fa0
-.word 0xf9401800
 .word 0xf90143a0
 .word 0xf94143a0
+.word 0xf9400800
 .word 0xf90147a0
-.word 0xf94147a1
 .word 0xf94147a0
-.word 0xf900f7a1
+.word 0xf9014ba0
+.word 0xf9414ba0
+.word 0x3940001e
+.word 0xf9414ba0
+.word 0xf9401800
+.word 0xf9014fa0
+.word 0xf9414fa0
+.word 0xf90153a0
+.word 0xf94153a1
+.word 0xf94153a0
+.word 0xf900fba1
 .word 0xb5000060
-.word 0xf900f7bf
+.word 0xf900fbbf
 .word 0x14000009
-.word 0xf940f7a0
+.word 0xf940fba0
 .word 0xf9400000
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9418c30
+.word 0xf9419030
 .word 0xd63f0200
-.word 0xf900f7a0
-.word 0xf940f7a0
-.word 0xf9011ba0
-.word 0xf9411ba1
-.word 0xf9411ba0
-.word 0xf900f7a1
+.word 0xf900fba0
+.word 0xf940fba0
+.word 0xf90127a0
+.word 0xf94127a1
+.word 0xf94127a0
+.word 0xf900fba1
 .word 0xb5000060
-.word 0xf900f7bf
+.word 0xf900fbbf
 .word 0x1400000d
-.word 0xf940f7a1
+.word 0xf940fba1
 .word 0xaa0103e0
 .word 0x3940003e
 bl _p_128
-.word 0xf9011fa0
-.word 0xf9411fa0
+.word 0xf9012ba0
+.word 0xf9412ba0
 .word 0x3940001e
-.word 0xf9411fa0
+.word 0xf9412ba0
 .word 0xf9400800
-.word 0xf90123a0
-.word 0xf94123a0
-.word 0xf900f7a0
-.word 0xf940f7a0
-.word 0xf900cfa0
-.loc 1 156 0
-.word 0xf940cfa0
+.word 0xf9012fa0
+.word 0xf9412fa0
+.word 0xf900fba0
+.word 0xf940fba0
+.word 0xf900d3a0
+.loc 1 161 0
+.word 0xf940d3a0
 .word 0xb4000900
 .word 0xf940c3a0
 .word 0xb40008c0
@@ -1858,41 +1916,41 @@ bl _p_69
 .word 0x53001c00
 .word 0x350007c0
 .word 0xf94023a0
-.word 0xf90127a0
-.word 0xf94127a0
-.word 0xf9400800
-.word 0xf9012ba0
-.word 0xf9412ba0
-.word 0xf9012fa0
-.word 0xf9412fa0
-.word 0x3940001e
-.word 0xf9412fa0
-.word 0xf9401800
 .word 0xf90133a0
 .word 0xf94133a0
+.word 0xf9400800
+.word 0xf90137a0
+.word 0xf94137a0
+.word 0xf9013ba0
+.word 0xf9413ba0
+.word 0x3940001e
+.word 0xf9413ba0
+.word 0xf9401800
+.word 0xf9013fa0
+.word 0xf9413fa0
 bl _p_70
-.word 0xf900d3a0
-.word 0xf940d3a0
+.word 0xf900d7a0
+.word 0xf940d7a0
 .word 0xb40005a0
-.loc 1 157 0
+.loc 1 162 0
 .word 0xf940c3a0
-.word 0xf9026ba0
-.word 0xf940d3a0
+.word 0xf9028ba0
+.word 0xf940d7a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #600]
-.word 0xf940cfa2
+ldr x1, [x16, #608]
+.word 0xf940d3a2
 bl _p_28
-.word 0xf90277a0
+.word 0xf90297a0
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x0, [x16, #608]
+ldr x0, [x16, #616]
 .word 0xd2800701
 bl _p_29
-.word 0xf94277a1
-.word 0xf9026fa0
+.word 0xf94297a1
+.word 0xf9028fa0
 .word 0xd2800042
 bl _p_129
 .word 0xf94027a1
@@ -1901,35 +1959,35 @@ bl _p_129
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #616]
+ldr x15, [x16, #624]
 .word 0x928008f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x93407c00
-.word 0xf90273a0
+.word 0xf90293a0
 .word 0xf94027a1
 .word 0xaa0103e0
 .word 0xf9400021
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0x928005f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0x93407c00
 .word 0xaa0003e3
-.word 0xf9426ba0
-.word 0xf9426fa1
-.word 0xf94273a2
+.word 0xf9428ba0
+.word 0xf9428fa1
+.word 0xf94293a2
 bl _p_130
-.loc 1 159 0
+.loc 1 164 0
 .word 0xa9415bb5
 .word 0xa94263b7
 .word 0xa9436bb9
 .word 0x910003bf
 .word 0xa9407bfd
-.word 0xd280a010
+.word 0xd280a810
 .word 0x910003f1
 .word 0x8b100231
 .word 0x9100023f
@@ -1947,11 +2005,11 @@ ldr x0, [x16, #0]
 bl _p_109
 .word 0x910563b9
 .word 0xaa0003f8
-.word 0x17fffafe
+.word 0x17fffac9
 bl _p_87
 bl _p_87
 bl _p_87
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_469
 .word 0xd2800be0
@@ -2039,7 +2097,7 @@ ldr x15, [x16, #592]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #632]
+ldr x1, [x16, #640]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54001d21
@@ -2048,7 +2106,7 @@ ldr x1, [x16, #632]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #640]
+ldr x15, [x16, #648]
 .word 0x3940001e
 .word 0xaa1a03e1
 bl _p_14
@@ -2059,7 +2117,7 @@ bl _p_14
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #648]
+ldr x15, [x16, #656]
 .word 0x928000f0
 .word 0xf8706870
 .word 0xd63f0200
@@ -2088,7 +2146,7 @@ bl _p_1
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #656]
+ldr x1, [x16, #664]
 bl _p_260
 .word 0x53001c00
 .word 0x34000060
@@ -2099,7 +2157,7 @@ bl _p_27
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x0, [x16, #664]
+ldr x0, [x16, #672]
 .word 0xf90097a0
 .word 0xf9401ba0
 .word 0xf9003fa0
@@ -2117,7 +2175,7 @@ ldr x0, [x16, #664]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #632]
+ldr x1, [x16, #640]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x540014c1
@@ -2125,7 +2183,7 @@ ldr x1, [x16, #632]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x2, [x16, #672]
+ldr x2, [x16, #680]
 .word 0xf94097a0
 bl _p_28
 .word 0xf900a7a0
@@ -2253,7 +2311,7 @@ bl _p_27
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #640]
+ldr x15, [x16, #648]
 .word 0x3940001e
 .word 0xaa1a03e1
 bl _p_14
@@ -2268,7 +2326,7 @@ bl _p_14
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #680]
+ldr x1, [x16, #600]
 .word 0xeb01001f
 .word 0x54000040
 .word 0xd2800019
@@ -2290,7 +2348,7 @@ ldr x1, [x16, #680]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #632]
+ldr x1, [x16, #640]
 .word 0xeb01001f
 .word 0x10000011
 .word 0x54000141
@@ -3104,7 +3162,7 @@ ldr x1, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #616]
+ldr x15, [x16, #624]
 .word 0x928008f0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3145,7 +3203,7 @@ ldr x1, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0x928005f0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3205,7 +3263,7 @@ ldr x3, [x16, #16]
 .word 0xf9400c01
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9418c30
+.word 0xf9419030
 .word 0xd63f0200
 .word 0xaa0003f3
 .word 0x3940029e
@@ -3305,7 +3363,7 @@ bl _p_481
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #680]
+ldr x1, [x16, #600]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd2800019
@@ -3397,7 +3455,7 @@ ldr x15, [x16, #720]
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_469
 .word 0xd2800be0
@@ -3601,7 +3659,7 @@ ldr x1, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #616]
+ldr x15, [x16, #624]
 .word 0x928008f0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3642,7 +3700,7 @@ ldr x1, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0x928005f0
 .word 0xf8706830
 .word 0xd63f0200
@@ -3745,7 +3803,7 @@ bl _p_484
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #640]
+ldr x15, [x16, #648]
 .word 0x3940001e
 .word 0xaa1803e1
 bl _p_14
@@ -3819,7 +3877,7 @@ bl _p_481
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x1, [x16, #680]
+ldr x1, [x16, #600]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xd280001a
@@ -4120,7 +4178,7 @@ ldr x1, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #616]
+ldr x15, [x16, #624]
 .word 0x928008f0
 .word 0xf8706830
 .word 0xd63f0200
@@ -4161,7 +4219,7 @@ ldr x1, [x16, #768]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #624]
+ldr x15, [x16, #632]
 .word 0x928005f0
 .word 0xf8706830
 .word 0xd63f0200
@@ -5012,7 +5070,7 @@ ldr x15, [x16, #512]
 
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
-ldr x15, [x16, #640]
+ldr x15, [x16, #648]
 .word 0x3940001e
 bl _p_14
 .word 0xaa0003fa
@@ -5132,7 +5190,7 @@ ldr x15, [x16, #720]
 .word 0x910003bf
 .word 0xa8d77bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_469
 .word 0xd2800be0
@@ -5169,7 +5227,7 @@ bl _p_1
 .loc 4 222 0
 .word 0xaa1803e0
 .word 0xf9400301
-.word 0xf9418c30
+.word 0xf9419030
 .word 0xd63f0200
 .word 0xaa0003f7
 .loc 4 223 0
@@ -5501,7 +5559,7 @@ ldr x0, [x16, #1032]
 .word 0xf90043a0
 .word 0xaa1703e0
 .word 0xf94002e1
-.word 0xf9419030
+.word 0xf9419430
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94043a0
@@ -5541,7 +5599,7 @@ ldr x0, [x16, #1056]
 .word 0xf9003ba0
 .word 0xaa1703e0
 .word 0xf94002e1
-.word 0xf9419030
+.word 0xf9419430
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf9403ba0
@@ -5706,7 +5764,7 @@ ldr x15, [x16, #1080]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1088]
-.word 0x928011f0
+.word 0x928004f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xf90037a0
@@ -5731,7 +5789,7 @@ ldr x15, [x16, #1096]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1104]
-.word 0x928003f0
+.word 0x928002f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xf9404fbe
@@ -6103,7 +6161,7 @@ ldr x15, [x16, #1208]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1216]
-.word 0x928011f0
+.word 0x928004f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xf90017a0
@@ -6126,7 +6184,7 @@ ldr x15, [x16, #1224]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1232]
-.word 0x928003f0
+.word 0x928002f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xf90023a0
@@ -6160,7 +6218,7 @@ ldr x15, [x16, #1248]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1256]
-.word 0x928005f0
+.word 0x928000f0
 .word 0xf8706850
 .word 0xd63f0200
 .loc 5 347 0
@@ -6447,7 +6505,7 @@ ldr x15, [x16, #1272]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1280]
-.word 0x928011f0
+.word 0x928004f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xf900d7a0
@@ -6470,7 +6528,7 @@ ldr x15, [x16, #1288]
 adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x15, [x16, #1296]
-.word 0x928003f0
+.word 0x928002f0
 .word 0xf8706830
 .word 0xd63f0200
 .word 0xaa0003f8
@@ -10060,8 +10118,8 @@ unwind_info:
 _mono_aot_Microsoft_Maui_Controls_Xamlunwind_info:
 	.globl _mono_aot_Microsoft_Maui_Controls_Xamlunwind_info
 
-	.byte 0,37,12,31,0,84,14,128,10,157,160,1,158,159,1,68,13,29,68,149,158,1,150,157,1,68,151,156,1,152,155,1
-	.byte 68,153,154,1,154,153,1,22,12,31,0,68,14,224,2,157,44,158,43,68,13,29,68,152,42,153,41,68,154,40,29,12
+	.byte 0,37,12,31,0,84,14,192,10,157,168,1,158,167,1,68,13,29,68,149,166,1,150,165,1,68,151,164,1,152,163,1
+	.byte 68,153,162,1,154,161,1,22,12,31,0,68,14,224,2,157,44,158,43,68,13,29,68,152,42,153,41,68,154,40,29,12
 	.byte 31,0,68,14,192,1,157,24,158,23,68,13,29,68,149,22,150,21,68,151,20,152,19,68,153,18,154,17,27,12,31,0
 	.byte 68,14,160,1,157,20,158,19,68,13,29,68,150,18,151,17,68,152,16,153,15,68,154,14,34,12,31,0,68,14,160,1
 	.byte 157,20,158,19,68,13,29,68,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12,154,11,29,12,31,0,68
@@ -10089,7 +10147,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 5180
+.word 5134
 _p_2_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_2_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_2_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mini_init_method_rgctx_llvm
@@ -10100,7 +10158,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 5183
+.word 5137
 _p_3_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiPrimaryApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_llvm:
 	.globl _p_3_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiPrimaryApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
 .private_extern _p_3_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiPrimaryApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
@@ -10111,7 +10169,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 5207
+.word 5157
 _p_4_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_SetupXamlDefaults_Microsoft_Maui_Hosting_MauiAppBuilder_llvm:
 	.globl _p_4_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_SetupXamlDefaults_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
 .private_extern _p_4_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_SetupXamlDefaults_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
@@ -10122,7 +10180,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 5223
+.word 5173
 _p_5_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiPrimaryApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_System_Func_2_System_IServiceProvider_TApp_REF_llvm:
 	.globl _p_5_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiPrimaryApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_System_Func_2_System_IServiceProvider_TApp_REF_llvm
 .private_extern _p_5_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiPrimaryApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_System_Func_2_System_IServiceProvider_TApp_REF_llvm
@@ -10133,7 +10191,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 5246
+.word 5192
 _p_6_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_AddControlsHandlers_Microsoft_Maui_Hosting_IMauiHandlersCollection_llvm:
 	.globl _p_6_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_AddControlsHandlers_Microsoft_Maui_Hosting_IMauiHandlersCollection_llvm
 .private_extern _p_6_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_AddControlsHandlers_Microsoft_Maui_Hosting_IMauiHandlersCollection_llvm
@@ -10144,7 +10202,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 5262
+.word 5208
 _p_7_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Register_Microsoft_Maui_Controls_Xaml_ResourcesLoader_llvm:
 	.globl _p_7_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Register_Microsoft_Maui_Controls_Xaml_ResourcesLoader_llvm
 .private_extern _p_7_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Register_Microsoft_Maui_Controls_Xaml_ResourcesLoader_llvm
@@ -10155,7 +10213,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 5267
+.word 5213
 _p_8_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Register_Microsoft_Maui_Controls_Xaml_ValueConverterProvider_llvm:
 	.globl _p_8_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Register_Microsoft_Maui_Controls_Xaml_ValueConverterProvider_llvm
 .private_extern _p_8_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Register_Microsoft_Maui_Controls_Xaml_ValueConverterProvider_llvm
@@ -10166,7 +10224,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 5279
+.word 5225
 _p_9_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_llvm:
 	.globl _p_9_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
 .private_extern _p_9_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
@@ -10177,7 +10235,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 5312
+.word 5254
 _p_10_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Embedding_EmbeddingExtensions_UseMauiEmbedding_Microsoft_Maui_Hosting_MauiAppBuilder_llvm:
 	.globl _p_10_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Embedding_EmbeddingExtensions_UseMauiEmbedding_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
 .private_extern _p_10_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Embedding_EmbeddingExtensions_UseMauiEmbedding_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
@@ -10188,7 +10246,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 5325
+.word 5267
 _p_11_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_System_Func_2_System_IServiceProvider_TApp_REF_llvm:
 	.globl _p_11_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_System_Func_2_System_IServiceProvider_TApp_REF_llvm
 .private_extern _p_11_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_UseMauiApp_TApp_REF_Microsoft_Maui_Hosting_MauiAppBuilder_System_Func_2_System_IServiceProvider_TApp_REF_llvm
@@ -10199,7 +10257,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 5351
+.word 5289
 _p_12_plt_Microsoft_Maui_Controls_Xaml__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_12_plt_Microsoft_Maui_Controls_Xaml__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_12_plt_Microsoft_Maui_Controls_Xaml__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -10210,7 +10268,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 5364
+.word 5302
 _p_13_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_TryGetValue_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type__llvm:
 	.globl _p_13_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_TryGetValue_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type__llvm
 .private_extern _p_13_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_TryGetValue_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type__llvm
@@ -10221,7 +10279,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 5367
+.word 5305
 _p_14_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_get_Item_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_14_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_get_Item_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_14_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_get_Item_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -10232,7 +10290,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 5378
+.word 5316
 _p_15_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_TryGetValue_Microsoft_Maui_Controls_Xaml_INode_object__llvm:
 	.globl _p_15_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_TryGetValue_Microsoft_Maui_Controls_Xaml_INode_object__llvm
 .private_extern _p_15_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_TryGetValue_Microsoft_Maui_Controls_Xaml_INode_object__llvm
@@ -10243,7 +10301,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 5389
+.word 5327
 _p_16_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetPropertyName_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName__llvm:
 	.globl _p_16_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetPropertyName_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName__llvm
 .private_extern _p_16_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetPropertyName_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName__llvm
@@ -10254,7 +10312,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 5400
+.word 5338
 _p_17_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_IsCollectionItem_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_17_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_IsCollectionItem_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_17_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_IsCollectionItem_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -10265,7 +10323,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 5402
+.word 5340
 _p_18_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_get_Item_Microsoft_Maui_Controls_Xaml_IElementNode_llvm:
 	.globl _p_18_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_get_Item_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
 .private_extern _p_18_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_get_Item_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
@@ -10276,7 +10334,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 5404
+.word 5342
 _p_19_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetContentPropertyName_System_Type_llvm:
 	.globl _p_19_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetContentPropertyName_System_Type_llvm
 .private_extern _p_19_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetContentPropertyName_System_Type_llvm
@@ -10287,7 +10345,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 5415
+.word 5353
 _p_20_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_Contains_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_20_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_Contains_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_20_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_Contains_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -10298,7 +10356,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 5417
+.word 5355
 _p_21_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_SetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_object_object_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_21_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_SetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_object_object_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_21_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_SetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_object_object_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_System_Xml_IXmlLineInfo_llvm
@@ -10309,7 +10367,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 5428
+.word 5366
 _p_22_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetRuntimeName_Microsoft_Maui_Controls_Xaml_XmlName_object_object_Microsoft_Maui_Controls_Xaml_ValueNode_llvm:
 	.globl _p_22_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetRuntimeName_Microsoft_Maui_Controls_Xaml_XmlName_object_object_Microsoft_Maui_Controls_Xaml_ValueNode_llvm
 .private_extern _p_22_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetRuntimeName_Microsoft_Maui_Controls_Xaml_XmlName_object_object_Microsoft_Maui_Controls_Xaml_ValueNode_llvm
@@ -10320,7 +10378,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 5430
+.word 5368
 _p_23_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_Equals_string_string_llvm:
 	.globl _p_23_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_Equals_string_string_llvm
 .private_extern _p_23_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_Equals_string_string_llvm
@@ -10331,7 +10389,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 5432
+.word 5370
 _p_24_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_op_Inequality_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_24_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_op_Inequality_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_24_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_op_Inequality_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -10342,7 +10400,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 5435
+.word 5373
 _p_25_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_ProvideValue_object__Microsoft_Maui_Controls_Xaml_ElementNode_object_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_25_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_ProvideValue_object__Microsoft_Maui_Controls_Xaml_ElementNode_object_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_25_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_ProvideValue_object__Microsoft_Maui_Controls_Xaml_ElementNode_object_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -10353,7 +10411,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 5438
+.word 5376
 _p_26_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_object_System_Xml_IXmlLineInfo_System_Exception__object__llvm:
 	.globl _p_26_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_object_System_Xml_IXmlLineInfo_System_Exception__object__llvm
 .private_extern _p_26_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_object_System_Xml_IXmlLineInfo_System_Exception__object__llvm
@@ -10364,7 +10422,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 5440
+.word 5378
 _p_27_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_27_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_27_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_throw_exception_llvm
@@ -10375,7 +10433,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 5442
+.word 5380
 _p_28_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_string_llvm:
 	.globl _p_28_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_string_llvm
 .private_extern _p_28_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_string_llvm
@@ -10386,7 +10444,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 5444
+.word 5382
 _p_29_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_29_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_29_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -10397,7 +10455,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 5449
+.word 5387
 _p_30_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_System_Xml_IXmlLineInfo_System_Exception_llvm:
 	.globl _p_30_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_System_Xml_IXmlLineInfo_System_Exception_llvm
 .private_extern _p_30_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_System_Xml_IXmlLineInfo_System_Exception_llvm
@@ -10408,7 +10466,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 5457
+.word 5395
 _p_31_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeMethods_System_Type_llvm:
 	.globl _p_31_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeMethods_System_Type_llvm
 .private_extern _p_31_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeMethods_System_Type_llvm
@@ -10419,7 +10477,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 5462
+.word 5400
 _p_32_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm:
 	.globl _p_32_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
 .private_extern _p_32_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
@@ -10430,7 +10488,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 5467
+.word 5405
 _p_33_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
 	.globl _p_33_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
 .private_extern _p_33_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
@@ -10441,7 +10499,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 5479
+.word 5417
 _p_34_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_Invoke_object_object___llvm:
 	.globl _p_34_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_Invoke_object_object___llvm
 .private_extern _p_34_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_Invoke_object_object___llvm
@@ -10452,7 +10510,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 5487
+.word 5425
 _p_35_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddToResourceDictionary_Microsoft_Maui_Controls_ResourceDictionary_object_string_System_Xml_IXmlLineInfo_System_Exception__llvm:
 	.globl _p_35_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddToResourceDictionary_Microsoft_Maui_Controls_ResourceDictionary_object_string_System_Xml_IXmlLineInfo_System_Exception__llvm
 .private_extern _p_35_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddToResourceDictionary_Microsoft_Maui_Controls_ResourceDictionary_object_string_System_Xml_IXmlLineInfo_System_Exception__llvm
@@ -10463,7 +10521,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 5492
+.word 5430
 _p_36_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_ContainsKey_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_36_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_ContainsKey_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_36_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_ContainsKey_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -10474,7 +10532,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 5494
+.word 5432
 _p_37_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_get_Item_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_37_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_get_Item_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_37_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_get_Item_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -10485,7 +10543,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 5505
+.word 5443
 _p_38_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm:
 	.globl _p_38_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
 .private_extern _p_38_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
@@ -10496,7 +10554,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 5516
+.word 5454
 _p_39_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider__ctor_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm:
 	.globl _p_39_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider__ctor_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm
 .private_extern _p_39_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider__ctor_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm
@@ -10507,7 +10565,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 5528
+.word 5466
 _p_40_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_ComponentModel_TypeConverter_System_IServiceProvider_System_Exception__llvm:
 	.globl _p_40_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_ComponentModel_TypeConverter_System_IServiceProvider_System_Exception__llvm
 .private_extern _p_40_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_ComponentModel_TypeConverter_System_IServiceProvider_System_Exception__llvm
@@ -10518,7 +10576,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 5531
+.word 5469
 _p_41_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_op_Equality_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_41_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_op_Equality_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_41_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_op_Equality_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -10529,7 +10587,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 5536
+.word 5474
 _p_42_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_SetTemplate_Microsoft_Maui_Controls_ElementTemplate_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_42_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_SetTemplate_Microsoft_Maui_Controls_ElementTemplate_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_42_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_SetTemplate_Microsoft_Maui_Controls_ElementTemplate_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -10540,7 +10598,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 5539
+.word 5477
 _p_43_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_thread_get_undeniable_exception_llvm:
 	.globl _p_43_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_thread_get_undeniable_exception_llvm
 .private_extern _p_43_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_thread_get_undeniable_exception_llvm
@@ -10551,7 +10609,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 5541
+.word 5479
 _p_44_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm:
 	.globl _p_44_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
 .private_extern _p_44_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
@@ -10562,7 +10620,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 5544
+.word 5482
 _p_45_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm:
 	.globl _p_45_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
 .private_extern _p_45_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
@@ -10573,7 +10631,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 5555
+.word 5493
 _p_46_plt_Microsoft_Maui_Controls_Xaml__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_46_plt_Microsoft_Maui_Controls_Xaml__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_46_plt_Microsoft_Maui_Controls_Xaml__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -10584,7 +10642,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 5566
+.word 5504
 _p_47_plt_Microsoft_Maui_Controls_Xaml__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_47_plt_Microsoft_Maui_Controls_Xaml__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_47_plt_Microsoft_Maui_Controls_Xaml__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -10595,7 +10653,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 5569
+.word 5507
 _p_48_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_Contains_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_48_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_Contains_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_48_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_Contains_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -10606,7 +10664,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 5572
+.word 5510
 _p_49_plt_Microsoft_Maui_Controls_Xaml_System_Type_op_Inequality_System_Type_System_Type_llvm:
 	.globl _p_49_plt_Microsoft_Maui_Controls_Xaml_System_Type_op_Inequality_System_Type_System_Type_llvm
 .private_extern _p_49_plt_Microsoft_Maui_Controls_Xaml_System_Type_op_Inequality_System_Type_System_Type_llvm
@@ -10617,7 +10675,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 5583
+.word 5521
 _p_50_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetContentPropertyName_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_llvm:
 	.globl _p_50_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetContentPropertyName_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_llvm
 .private_extern _p_50_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetContentPropertyName_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_llvm
@@ -10628,7 +10686,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 5588
+.word 5526
 _p_51_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_AcceptEmptyServiceProviderAttribute_System_Reflection_MemberInfo_llvm:
 	.globl _p_51_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_AcceptEmptyServiceProviderAttribute_System_Reflection_MemberInfo_llvm
 .private_extern _p_51_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_AcceptEmptyServiceProviderAttribute_System_Reflection_MemberInfo_llvm
@@ -10639,7 +10697,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 5590
+.word 5528
 _p_52_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_get_IProvideValueTarget_llvm:
 	.globl _p_52_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_get_IProvideValueTarget_llvm
 .private_extern _p_52_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_get_IProvideValueTarget_llvm
@@ -10650,7 +10708,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 5602
+.word 5540
 _p_53_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetTargetProperty_object_Microsoft_Maui_Controls_Xaml_XmlName_object_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_53_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetTargetProperty_object_Microsoft_Maui_Controls_Xaml_XmlName_object_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_53_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetTargetProperty_object_Microsoft_Maui_Controls_Xaml_XmlName_object_System_Xml_IXmlLineInfo_llvm
@@ -10661,7 +10719,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 5605
+.word 5543
 _p_54_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm:
 	.globl _p_54_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
 .private_extern _p_54_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
@@ -10672,7 +10730,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 5607
+.word 5545
 _p_55_plt_Microsoft_Maui_Controls_Xaml_System_Type_op_Equality_System_Type_System_Type_llvm:
 	.globl _p_55_plt_Microsoft_Maui_Controls_Xaml_System_Type_op_Equality_System_Type_System_Type_llvm
 .private_extern _p_55_plt_Microsoft_Maui_Controls_Xaml_System_Type_op_Equality_System_Type_System_Type_llvm
@@ -10683,7 +10741,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 5619
+.word 5557
 _p_56_plt_Microsoft_Maui_Controls_Xaml_string_IndexOf_string_System_StringComparison_llvm:
 	.globl _p_56_plt_Microsoft_Maui_Controls_Xaml_string_IndexOf_string_System_StringComparison_llvm
 .private_extern _p_56_plt_Microsoft_Maui_Controls_Xaml_string_IndexOf_string_System_StringComparison_llvm
@@ -10694,7 +10752,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 5624
+.word 5562
 _p_57_plt_Microsoft_Maui_Controls_Xaml_string_Substring_int_int_llvm:
 	.globl _p_57_plt_Microsoft_Maui_Controls_Xaml_string_Substring_int_int_llvm
 .private_extern _p_57_plt_Microsoft_Maui_Controls_Xaml_string_Substring_int_int_llvm
@@ -10705,7 +10763,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 5629
+.word 5567
 _p_58_plt_Microsoft_Maui_Controls_Xaml_string_Substring_int_llvm:
 	.globl _p_58_plt_Microsoft_Maui_Controls_Xaml_string_Substring_int_llvm
 .private_extern _p_58_plt_Microsoft_Maui_Controls_Xaml_string_Substring_int_llvm
@@ -10716,7 +10774,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 5634
+.word 5572
 _p_59_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetElementType_Microsoft_Maui_Controls_Xaml_XmlType_System_Xml_IXmlLineInfo_System_Reflection_Assembly_Microsoft_Maui_Controls_Xaml_XamlParseException__llvm:
 	.globl _p_59_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetElementType_Microsoft_Maui_Controls_Xaml_XmlType_System_Xml_IXmlLineInfo_System_Reflection_Assembly_Microsoft_Maui_Controls_Xaml_XamlParseException__llvm
 .private_extern _p_59_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetElementType_Microsoft_Maui_Controls_Xaml_XmlType_System_Xml_IXmlLineInfo_System_Reflection_Assembly_Microsoft_Maui_Controls_Xaml_XamlParseException__llvm
@@ -10727,7 +10785,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 5639
+.word 5577
 _p_60_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_llvm:
 	.globl _p_60_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_llvm
 .private_extern _p_60_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_llvm
@@ -10738,7 +10796,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 5642
+.word 5580
 _p_61_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsAssembly_llvm:
 	.globl _p_61_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsAssembly_llvm
 .private_extern _p_61_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsAssembly_llvm
@@ -10749,7 +10807,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 5647
+.word 5585
 _p_62_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsPublic_llvm:
 	.globl _p_62_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsPublic_llvm
 .private_extern _p_62_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsPublic_llvm
@@ -10760,7 +10818,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 5652
+.word 5590
 _p_63_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetRealNameAndType_System_Type__string_string__object_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_63_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetRealNameAndType_System_Type__string_string__object_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_63_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetRealNameAndType_System_Type__string_string__object_System_Xml_IXmlLineInfo_llvm
@@ -10771,7 +10829,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 5657
+.word 5595
 _p_64_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetBindableProperty_System_Type_string_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_64_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetBindableProperty_System_Type_string_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_64_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetBindableProperty_System_Type_string_System_Xml_IXmlLineInfo_llvm
@@ -10782,7 +10840,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 5659
+.word 5597
 _p_65_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperties_System_Type_llvm:
 	.globl _p_65_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperties_System_Type_llvm
 .private_extern _p_65_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperties_System_Type_llvm
@@ -10793,7 +10851,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 5661
+.word 5599
 _p_66_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_PropertyInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_PropertyInfo_System_Func_2_System_Reflection_PropertyInfo_bool_llvm:
 	.globl _p_66_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_PropertyInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_PropertyInfo_System_Func_2_System_Reflection_PropertyInfo_bool_llvm
 .private_extern _p_66_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_PropertyInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_PropertyInfo_System_Func_2_System_Reflection_PropertyInfo_bool_llvm
@@ -10804,7 +10862,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 5666
+.word 5604
 _p_67_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_string_object_object_System_Xml_IXmlLineInfo_System_IServiceProvider_System_Exception__llvm:
 	.globl _p_67_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_string_object_object_System_Xml_IXmlLineInfo_System_IServiceProvider_System_Exception__llvm
 .private_extern _p_67_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetPropertyValue_object_Microsoft_Maui_Controls_Xaml_XmlName_string_object_object_System_Xml_IXmlLineInfo_System_IServiceProvider_System_Exception__llvm
@@ -10815,7 +10873,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 5678
+.word 5616
 _p_68_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddToProperty_object_Microsoft_Maui_Controls_Xaml_XmlName_object_string_System_Xml_IXmlLineInfo_System_IServiceProvider_object_System_Exception__llvm:
 	.globl _p_68_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddToProperty_object_Microsoft_Maui_Controls_Xaml_XmlName_object_string_System_Xml_IXmlLineInfo_System_IServiceProvider_object_System_Exception__llvm
 .private_extern _p_68_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddToProperty_object_Microsoft_Maui_Controls_Xaml_XmlName_object_string_System_Xml_IXmlLineInfo_System_IServiceProvider_object_System_Exception__llvm
@@ -10826,7 +10884,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 5680
+.word 5618
 _p_69_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsValueType_llvm:
 	.globl _p_69_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsValueType_llvm
 .private_extern _p_69_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsValueType_llvm
@@ -10837,7 +10895,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 5682
+.word 5620
 _p_70_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlFilePathAttribute_GetFilePathForObject_object_llvm:
 	.globl _p_70_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlFilePathAttribute_GetFilePathForObject_object_llvm
 .private_extern _p_70_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlFilePathAttribute_GetFilePathForObject_object_llvm
@@ -10848,7 +10906,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 5687
+.word 5625
 _p_71_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__TrySetPropertyValueg__registerSourceInfo_32_0_object_string_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__c__DisplayClass32_0__llvm:
 	.globl _p_71_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__TrySetPropertyValueg__registerSourceInfo_32_0_object_string_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__c__DisplayClass32_0__llvm
 .private_extern _p_71_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__TrySetPropertyValueg__registerSourceInfo_32_0_object_string_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__c__DisplayClass32_0__llvm
@@ -10859,7 +10917,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 5690
+.word 5628
 _p_72_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetProperty_object_string_object_System_Xml_IXmlLineInfo_System_IServiceProvider_object_System_Exception__llvm:
 	.globl _p_72_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetProperty_object_string_object_System_Xml_IXmlLineInfo_System_IServiceProvider_object_System_Exception__llvm
 .private_extern _p_72_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetProperty_object_string_object_System_Xml_IXmlLineInfo_System_IServiceProvider_object_System_Exception__llvm
@@ -10870,7 +10928,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 5692
+.word 5630
 _p_73_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetValue_object_Microsoft_Maui_Controls_BindableProperty_bool_object_System_Xml_IXmlLineInfo_System_IServiceProvider_System_Exception__llvm:
 	.globl _p_73_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetValue_object_Microsoft_Maui_Controls_BindableProperty_bool_object_System_Xml_IXmlLineInfo_System_IServiceProvider_System_Exception__llvm
 .private_extern _p_73_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetValue_object_Microsoft_Maui_Controls_BindableProperty_bool_object_System_Xml_IXmlLineInfo_System_IServiceProvider_System_Exception__llvm
@@ -10881,7 +10939,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 5694
+.word 5632
 _p_74_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetBinding_object_Microsoft_Maui_Controls_BindableProperty_string_object_System_Xml_IXmlLineInfo_Microsoft_Maui_Controls_BindingBase__System_Exception__llvm:
 	.globl _p_74_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetBinding_object_Microsoft_Maui_Controls_BindableProperty_string_object_System_Xml_IXmlLineInfo_Microsoft_Maui_Controls_BindingBase__System_Exception__llvm
 .private_extern _p_74_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetBinding_object_Microsoft_Maui_Controls_BindableProperty_string_object_System_Xml_IXmlLineInfo_Microsoft_Maui_Controls_BindingBase__System_Exception__llvm
@@ -10892,7 +10950,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 5696
+.word 5634
 _p_75_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetDynamicResource_object_Microsoft_Maui_Controls_BindableProperty_object_System_Xml_IXmlLineInfo_System_Exception__llvm:
 	.globl _p_75_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetDynamicResource_object_Microsoft_Maui_Controls_BindableProperty_object_System_Xml_IXmlLineInfo_System_Exception__llvm
 .private_extern _p_75_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TrySetDynamicResource_object_Microsoft_Maui_Controls_BindableProperty_object_System_Xml_IXmlLineInfo_System_Exception__llvm
@@ -10903,7 +10961,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 5698
+.word 5636
 _p_76_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryConnectEvent_object_string_bool_object_object_System_Xml_IXmlLineInfo_System_Exception__llvm:
 	.globl _p_76_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryConnectEvent_object_string_bool_object_object_System_Xml_IXmlLineInfo_System_Exception__llvm
 .private_extern _p_76_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryConnectEvent_object_string_bool_object_object_System_Xml_IXmlLineInfo_System_Exception__llvm
@@ -10914,7 +10972,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 5700
+.word 5638
 _p_77_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetProperty_object_string_object__System_Xml_IXmlLineInfo_object_System_Exception__object__llvm:
 	.globl _p_77_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetProperty_object_string_object__System_Xml_IXmlLineInfo_object_System_Exception__object__llvm
 .private_extern _p_77_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetProperty_object_string_object__System_Xml_IXmlLineInfo_object_System_Exception__object__llvm
@@ -10925,7 +10983,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 5702
+.word 5640
 _p_78_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetValue_object_Microsoft_Maui_Controls_BindableProperty_bool_object__System_Xml_IXmlLineInfo_System_Exception__object__llvm:
 	.globl _p_78_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetValue_object_Microsoft_Maui_Controls_BindableProperty_bool_object__System_Xml_IXmlLineInfo_System_Exception__object__llvm
 .private_extern _p_78_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryGetValue_object_Microsoft_Maui_Controls_BindableProperty_bool_object__System_Xml_IXmlLineInfo_System_Exception__object__llvm
@@ -10936,7 +10994,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 5704
+.word 5642
 _p_79_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeEvent_System_Type_string_llvm:
 	.globl _p_79_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeEvent_System_Type_string_llvm
 .private_extern _p_79_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeEvent_System_Type_string_llvm
@@ -10947,7 +11005,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 5706
+.word 5644
 _p_80_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetMethod_string_System_Reflection_BindingFlags_llvm:
 	.globl _p_80_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetMethod_string_System_Reflection_BindingFlags_llvm
 .private_extern _p_80_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetMethod_string_System_Reflection_BindingFlags_llvm
@@ -10958,7 +11016,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 5711
+.word 5649
 _p_81_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm:
 	.globl _p_81_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
 .private_extern _p_81_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
@@ -10969,7 +11027,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 5716
+.word 5654
 _p_82_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm:
 	.globl _p_82_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
 .private_extern _p_82_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
@@ -10980,7 +11038,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 5721
+.word 5659
 _p_83_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_object_object_llvm:
 	.globl _p_83_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_object_object_llvm
 .private_extern _p_83_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_object_object_llvm
@@ -10991,7 +11049,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 5726
+.word 5664
 _p_84_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_System_Type_System_Type_llvm:
 	.globl _p_84_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_System_Type_System_Type_llvm
 .private_extern _p_84_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_System_Type_System_Type_llvm
@@ -11002,7 +11060,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 5738
+.word 5676
 _p_85_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm:
 	.globl _p_85_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
 .private_extern _p_85_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
@@ -11013,7 +11071,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 5750
+.word 5688
 _p_86_plt_Microsoft_Maui_Controls_Xaml_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
 	.globl _p_86_plt_Microsoft_Maui_Controls_Xaml_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
 .private_extern _p_86_plt_Microsoft_Maui_Controls_Xaml_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
@@ -11024,7 +11082,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 5755
+.word 5693
 _p_87_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
 	.globl _p_87_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
 .private_extern _p_87_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
@@ -11035,7 +11093,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 5760
+.word 5698
 _p_88_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_EventInfo_get_EventHandlerType_llvm:
 	.globl _p_88_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_EventInfo_get_EventHandlerType_llvm
 .private_extern _p_88_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_EventInfo_get_EventHandlerType_llvm
@@ -11046,7 +11104,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 5765
+.word 5703
 _p_89_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsStatic_llvm:
 	.globl _p_89_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsStatic_llvm
 .private_extern _p_89_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsStatic_llvm
@@ -11057,7 +11115,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 5770
+.word 5708
 _p_90_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeEvents_System_Type_llvm:
 	.globl _p_90_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeEvents_System_Type_llvm
 .private_extern _p_90_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeEvents_System_Type_llvm
@@ -11068,7 +11126,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 5775
+.word 5713
 _p_91_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_EventInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_EventInfo_System_Func_2_System_Reflection_EventInfo_bool_llvm:
 	.globl _p_91_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_EventInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_EventInfo_System_Func_2_System_Reflection_EventInfo_bool_llvm
 .private_extern _p_91_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_EventInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_EventInfo_System_Func_2_System_Reflection_EventInfo_bool_llvm
@@ -11079,7 +11137,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 5780
+.word 5718
 _p_92_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetMethod_string_llvm:
 	.globl _p_92_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetMethod_string_llvm
 .private_extern _p_92_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetMethod_string_llvm
@@ -11090,7 +11148,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 5792
+.word 5730
 _p_93_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Where_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm:
 	.globl _p_93_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Where_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
 .private_extern _p_93_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Where_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
@@ -11101,7 +11159,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 5797
+.word 5735
 _p_94_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm:
 	.globl _p_94_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm
 .private_extern _p_94_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm
@@ -11112,7 +11170,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 5809
+.word 5747
 _p_95_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetDynamicResource_Microsoft_Maui_Controls_BindableProperty_string_llvm:
 	.globl _p_95_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetDynamicResource_Microsoft_Maui_Controls_BindableProperty_string_llvm
 .private_extern _p_95_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetDynamicResource_Microsoft_Maui_Controls_BindableProperty_string_llvm
@@ -11123,7 +11181,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 5821
+.word 5759
 _p_96_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_Reflection_ParameterInfo_System_IServiceProvider_System_Exception__llvm:
 	.globl _p_96_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_Reflection_ParameterInfo_System_IServiceProvider_System_Exception__llvm
 .private_extern _p_96_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_Reflection_ParameterInfo_System_IServiceProvider_System_Exception__llvm
@@ -11134,7 +11192,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 5826
+.word 5764
 _p_97_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Get_Microsoft_Maui_Controls_Xaml_Internals_INativeBindingService_Microsoft_Maui_Controls_DependencyFetchTarget_llvm:
 	.globl _p_97_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Get_Microsoft_Maui_Controls_Xaml_Internals_INativeBindingService_Microsoft_Maui_Controls_DependencyFetchTarget_llvm
 .private_extern _p_97_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DependencyService_Get_Microsoft_Maui_Controls_Xaml_Internals_INativeBindingService_Microsoft_Maui_Controls_DependencyFetchTarget_llvm
@@ -11145,7 +11203,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 5831
+.word 5769
 _p_98_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetBinding_Microsoft_Maui_Controls_BindableProperty_Microsoft_Maui_Controls_BindingBase_llvm:
 	.globl _p_98_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetBinding_Microsoft_Maui_Controls_BindableProperty_Microsoft_Maui_Controls_BindingBase_llvm
 .private_extern _p_98_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetBinding_Microsoft_Maui_Controls_BindableProperty_Microsoft_Maui_Controls_BindingBase_llvm
@@ -11156,7 +11214,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 5843
+.word 5781
 _p_99_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IProvideValueTarget_System_IServiceProvider_llvm:
 	.globl _p_99_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IProvideValueTarget_System_IServiceProvider_llvm
 .private_extern _p_99_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IProvideValueTarget_System_IServiceProvider_llvm
@@ -11167,7 +11225,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 5848
+.word 5786
 _p_100_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_Reflection_MemberInfo_System_IServiceProvider_System_Exception__llvm:
 	.globl _p_100_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_Reflection_MemberInfo_System_IServiceProvider_System_Exception__llvm
 .private_extern _p_100_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_ConvertTo_object_System_Type_System_Func_1_System_Reflection_MemberInfo_System_IServiceProvider_System_Exception__llvm
@@ -11178,7 +11236,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 5860
+.word 5798
 _p_101_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddValue_Microsoft_Maui_Controls_BindableObject_Microsoft_Maui_Controls_BindableProperty_object_System_IServiceProvider_System_Exception__llvm:
 	.globl _p_101_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddValue_Microsoft_Maui_Controls_BindableObject_Microsoft_Maui_Controls_BindableProperty_object_System_IServiceProvider_System_Exception__llvm
 .private_extern _p_101_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_TryAddValue_Microsoft_Maui_Controls_BindableObject_Microsoft_Maui_Controls_BindableProperty_object_System_IServiceProvider_System_Exception__llvm
@@ -11189,7 +11247,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 5865
+.word 5803
 _p_102_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetValue_Microsoft_Maui_Controls_BindableProperty_object_llvm:
 	.globl _p_102_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetValue_Microsoft_Maui_Controls_BindableProperty_object_llvm
 .private_extern _p_102_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_SetValue_Microsoft_Maui_Controls_BindableProperty_object_llvm
@@ -11200,7 +11258,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 5867
+.word 5805
 _p_103_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_GetValue_Microsoft_Maui_Controls_BindableProperty_llvm:
 	.globl _p_103_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_GetValue_Microsoft_Maui_Controls_BindableProperty_llvm
 .private_extern _p_103_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableObject_GetValue_Microsoft_Maui_Controls_BindableProperty_llvm
@@ -11211,7 +11269,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 5872
+.word 5810
 _p_104_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_PropertyInfo_get_SetMethod_llvm:
 	.globl _p_104_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_PropertyInfo_get_SetMethod_llvm
 .private_extern _p_104_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_PropertyInfo_get_SetMethod_llvm
@@ -11222,7 +11280,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 5877
+.word 5815
 _p_105_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_IsVisibleFrom_System_Reflection_MethodInfo_object_llvm:
 	.globl _p_105_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_IsVisibleFrom_System_Reflection_MethodInfo_object_llvm
 .private_extern _p_105_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_IsVisibleFrom_System_Reflection_MethodInfo_object_llvm
@@ -11233,7 +11291,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 5882
+.word 5820
 _p_106_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_PropertyInfo_get_GetMethod_llvm:
 	.globl _p_106_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_PropertyInfo_get_GetMethod_llvm
 .private_extern _p_106_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_PropertyInfo_get_GetMethod_llvm
@@ -11244,7 +11302,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 5884
+.word 5822
 _p_107_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_107_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_107_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_generic_class_init_llvm
@@ -11255,7 +11313,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 5889
+.word 5827
 _p_108_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetProperty_string_System_Reflection_BindingFlags_llvm:
 	.globl _p_108_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetProperty_string_System_Reflection_BindingFlags_llvm
 .private_extern _p_108_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetProperty_string_System_Reflection_BindingFlags_llvm
@@ -11266,7 +11324,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 5892
+.word 5830
 _p_109_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_109_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_109_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_helper_ldstr_llvm
@@ -11277,7 +11335,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 5897
+.word 5835
 _p_110_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm:
 	.globl _p_110_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
 .private_extern _p_110_plt_Microsoft_Maui_Controls_Xaml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
@@ -11288,7 +11346,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 5900
+.word 5838
 _p_111_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsPublic_llvm:
 	.globl _p_111_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsPublic_llvm
 .private_extern _p_111_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsPublic_llvm
@@ -11299,7 +11357,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 5905
+.word 5843
 _p_112_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsPrivate_llvm:
 	.globl _p_112_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsPrivate_llvm
 .private_extern _p_112_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsPrivate_llvm
@@ -11310,7 +11368,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 5910
+.word 5848
 _p_113_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsAssembly_llvm:
 	.globl _p_113_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsAssembly_llvm
 .private_extern _p_113_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsAssembly_llvm
@@ -11321,7 +11379,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 5915
+.word 5853
 _p_114_plt_Microsoft_Maui_Controls_Xaml_string_op_Equality_string_string_llvm:
 	.globl _p_114_plt_Microsoft_Maui_Controls_Xaml_string_op_Equality_string_string_llvm
 .private_extern _p_114_plt_Microsoft_Maui_Controls_Xaml_string_op_Equality_string_string_llvm
@@ -11332,7 +11390,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 5920
+.word 5858
 _p_115_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsFamily_llvm:
 	.globl _p_115_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsFamily_llvm
 .private_extern _p_115_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsFamily_llvm
@@ -11343,7 +11401,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 5925
+.word 5863
 _p_116_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsFamilyOrAssembly_llvm:
 	.globl _p_116_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsFamilyOrAssembly_llvm
 .private_extern _p_116_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_MethodBase_get_IsFamilyOrAssembly_llvm
@@ -11354,7 +11412,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 5930
+.word 5868
 _p_117_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_StyleSheets_StyleSheet_llvm:
 	.globl _p_117_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_StyleSheets_StyleSheet_llvm
 .private_extern _p_117_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_StyleSheets_StyleSheet_llvm
@@ -11365,7 +11423,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 5935
+.word 5873
 _p_118_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_ResourceDictionary_llvm:
 	.globl _p_118_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_ResourceDictionary_llvm
 .private_extern _p_118_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_ResourceDictionary_llvm
@@ -11376,7 +11434,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 5940
+.word 5878
 _p_119_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_Style_llvm:
 	.globl _p_119_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_Style_llvm
 .private_extern _p_119_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_Microsoft_Maui_Controls_Style_llvm
@@ -11387,7 +11445,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 5945
+.word 5883
 _p_120_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_string_object_llvm:
 	.globl _p_120_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_string_object_llvm
 .private_extern _p_120_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_Add_string_object_llvm
@@ -11398,7 +11456,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 5950
+.word 5888
 _p_121_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetAllRuntimeMethods_System_Type_llvm:
 	.globl _p_121_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetAllRuntimeMethods_System_Type_llvm
 .private_extern _p_121_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor_GetAllRuntimeMethods_System_Type_llvm
@@ -11409,7 +11467,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 5955
+.word 5893
 _p_122_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm:
 	.globl _p_122_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
 .private_extern _p_122_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Func_2_System_Reflection_MethodInfo_bool_llvm
@@ -11420,7 +11478,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 5957
+.word 5895
 _p_123_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_SelectMany_System_Type_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm:
 	.globl _p_123_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_SelectMany_System_Type_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm
 .private_extern _p_123_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_SelectMany_System_Type_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm
@@ -11431,7 +11489,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 5969
+.word 5907
 _p_124_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Concat_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm:
 	.globl _p_124_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Concat_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm
 .private_extern _p_124_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Concat_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_MethodInfo_llvm
@@ -11442,7 +11500,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 5981
+.word 5919
 _p_125_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_RuntimeNamePropertyAttribute_System_Reflection_MemberInfo_llvm:
 	.globl _p_125_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_RuntimeNamePropertyAttribute_System_Reflection_MemberInfo_llvm
 .private_extern _p_125_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_RuntimeNamePropertyAttribute_System_Reflection_MemberInfo_llvm
@@ -11453,7 +11511,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 5993
+.word 5931
 _p_126_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_AddWithResize_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_126_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_AddWithResize_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_126_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_AddWithResize_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -11464,7 +11522,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 6005
+.word 5943
 _p_127_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_GetSourceInfo_object_llvm:
 	.globl _p_127_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_GetSourceInfo_object_llvm
 .private_extern _p_127_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_GetSourceInfo_object_llvm
@@ -11475,7 +11533,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 6022
+.word 5960
 _p_128_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_Assembly_GetName_llvm:
 	.globl _p_128_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_Assembly_GetName_llvm
 .private_extern _p_128_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_Assembly_GetName_llvm
@@ -11486,7 +11544,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 6027
+.word 5965
 _p_129_plt_Microsoft_Maui_Controls_Xaml_System_Uri__ctor_string_System_UriKind_llvm:
 	.globl _p_129_plt_Microsoft_Maui_Controls_Xaml_System_Uri__ctor_string_System_UriKind_llvm
 .private_extern _p_129_plt_Microsoft_Maui_Controls_Xaml_System_Uri__ctor_string_System_UriKind_llvm
@@ -11497,7 +11555,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 6032
+.word 5970
 _p_130_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_RegisterSourceInfo_object_System_Uri_int_int_llvm:
 	.globl _p_130_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_RegisterSourceInfo_object_System_Uri_int_int_llvm
 .private_extern _p_130_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_RegisterSourceInfo_object_System_Uri_int_int_llvm
@@ -11508,7 +11566,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 6037
+.word 5975
 _p_131_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_set_Item_Microsoft_Maui_Controls_Xaml_INode_object_llvm:
 	.globl _p_131_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_set_Item_Microsoft_Maui_Controls_Xaml_INode_object_llvm
 .private_extern _p_131_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object_set_Item_Microsoft_Maui_Controls_Xaml_INode_object_llvm
@@ -11519,7 +11577,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 6042
+.word 5980
 _p_132_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_set_Item_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_llvm:
 	.globl _p_132_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_set_Item_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_llvm
 .private_extern _p_132_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_set_Item_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type_llvm
@@ -11530,7 +11588,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 6053
+.word 5991
 _p_133_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope_GetNameScope_Microsoft_Maui_Controls_BindableObject_llvm:
 	.globl _p_133_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope_GetNameScope_Microsoft_Maui_Controls_BindableObject_llvm
 .private_extern _p_133_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope_GetNameScope_Microsoft_Maui_Controls_BindableObject_llvm
@@ -11541,7 +11599,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 6064
+.word 6002
 _p_134_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope_SetNameScope_Microsoft_Maui_Controls_BindableObject_Microsoft_Maui_Controls_Internals_INameScope_llvm:
 	.globl _p_134_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope_SetNameScope_Microsoft_Maui_Controls_BindableObject_Microsoft_Maui_Controls_Internals_INameScope_llvm
 .private_extern _p_134_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope_SetNameScope_Microsoft_Maui_Controls_BindableObject_Microsoft_Maui_Controls_Internals_INameScope_llvm
@@ -11552,7 +11610,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 6069
+.word 6007
 _p_135_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type_llvm:
 	.globl _p_135_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type_llvm
 .private_extern _p_135_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type_llvm
@@ -11563,7 +11621,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 6074
+.word 6012
 _p_136_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_TypeInfo_get_DeclaredConstructors_llvm:
 	.globl _p_136_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_TypeInfo_get_DeclaredConstructors_llvm
 .private_extern _p_136_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_TypeInfo_get_DeclaredConstructors_llvm
@@ -11574,7 +11632,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 6079
+.word 6017
 _p_137_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_ConstructorInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ConstructorInfo_System_Func_2_System_Reflection_ConstructorInfo_bool_llvm:
 	.globl _p_137_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_ConstructorInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ConstructorInfo_System_Func_2_System_Reflection_ConstructorInfo_bool_llvm
 .private_extern _p_137_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_ConstructorInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ConstructorInfo_System_Func_2_System_Reflection_ConstructorInfo_bool_llvm
@@ -11585,7 +11643,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 6084
+.word 6022
 _p_138_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_ParameterInfo_get_CustomAttributes_llvm:
 	.globl _p_138_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_ParameterInfo_get_CustomAttributes_llvm
 .private_extern _p_138_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_ParameterInfo_get_CustomAttributes_llvm
@@ -11596,7 +11654,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 6096
+.word 6034
 _p_139_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm:
 	.globl _p_139_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
 .private_extern _p_139_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
@@ -11607,7 +11665,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 6101
+.word 6039
 _p_140_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_CustomAttributeTypedArgument_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeTypedArgument_llvm:
 	.globl _p_140_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_CustomAttributeTypedArgument_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeTypedArgument_llvm
 .private_extern _p_140_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Reflection_CustomAttributeTypedArgument_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeTypedArgument_llvm
@@ -11618,7 +11676,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 6113
+.word 6051
 _p_141_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateArgumentsArray_Microsoft_Maui_Controls_Xaml_IElementNode_System_Reflection_ConstructorInfo_llvm:
 	.globl _p_141_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateArgumentsArray_Microsoft_Maui_Controls_Xaml_IElementNode_System_Reflection_ConstructorInfo_llvm
 .private_extern _p_141_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateArgumentsArray_Microsoft_Maui_Controls_Xaml_IElementNode_System_Reflection_ConstructorInfo_llvm
@@ -11629,7 +11687,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 6125
+.word 6063
 _p_142_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_ConstructorInfo_Invoke_object___llvm:
 	.globl _p_142_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_ConstructorInfo_Invoke_object___llvm
 .private_extern _p_142_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_ConstructorInfo_Invoke_object___llvm
@@ -11640,7 +11698,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 6127
+.word 6065
 _p_143_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateArgumentsArray_Microsoft_Maui_Controls_Xaml_IElementNode_llvm:
 	.globl _p_143_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateArgumentsArray_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
 .private_extern _p_143_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateArgumentsArray_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
@@ -11651,7 +11709,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 6132
+.word 6070
 _p_144_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_System_Type_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_string_llvm:
 	.globl _p_144_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_System_Type_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_string_llvm
 .private_extern _p_144_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_System_Type_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Func_2_System_Type_string_llvm
@@ -11662,7 +11720,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 6134
+.word 6072
 _p_145_plt_Microsoft_Maui_Controls_Xaml_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_145_plt_Microsoft_Maui_Controls_Xaml_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_145_plt_Microsoft_Maui_Controls_Xaml_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -11673,7 +11731,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 6146
+.word 6084
 _p_146_plt_Microsoft_Maui_Controls_Xaml_System_MissingMemberException__ctor_string_llvm:
 	.globl _p_146_plt_Microsoft_Maui_Controls_Xaml_System_MissingMemberException__ctor_string_llvm
 .private_extern _p_146_plt_Microsoft_Maui_Controls_Xaml_System_MissingMemberException__ctor_string_llvm
@@ -11684,7 +11742,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 6151
+.word 6089
 _p_147_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_object_System_Type_System_Collections_Generic_IEnumerable_1_object_System_Func_2_object_System_Type_llvm:
 	.globl _p_147_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_object_System_Type_System_Collections_Generic_IEnumerable_1_object_System_Func_2_object_System_Type_llvm
 .private_extern _p_147_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_object_System_Type_System_Collections_Generic_IEnumerable_1_object_System_Func_2_object_System_Type_llvm
@@ -11695,7 +11753,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 6156
+.word 6094
 _p_148_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_llvm:
 	.globl _p_148_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_llvm
 .private_extern _p_148_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_System_Type_System_Collections_Generic_IEnumerable_1_System_Type_llvm
@@ -11706,7 +11764,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 6168
+.word 6106
 _p_149_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_System_Type_object___llvm:
 	.globl _p_149_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_System_Type_object___llvm
 .private_extern _p_149_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_System_Type_object___llvm
@@ -11717,7 +11775,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 6180
+.word 6118
 _p_150_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
 	.globl _p_150_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
 .private_extern _p_150_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
@@ -11728,7 +11786,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 6185
+.word 6123
 _p_151_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_TryGetValue_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__llvm:
 	.globl _p_151_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_TryGetValue_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__llvm
 .private_extern _p_151_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_TryGetValue_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__llvm
@@ -11739,7 +11797,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 6190
+.word 6128
 _p_152_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_System_Type_llvm:
 	.globl _p_152_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_System_Type_llvm
 .private_extern _p_152_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_System_Type_llvm
@@ -11750,7 +11808,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 6201
+.word 6139
 _p_153_plt_Microsoft_Maui_Controls_Xaml_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm:
 	.globl _p_153_plt_Microsoft_Maui_Controls_Xaml_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
 .private_extern _p_153_plt_Microsoft_Maui_Controls_Xaml_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
@@ -11761,7 +11819,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 6206
+.word 6144
 _p_154_plt_Microsoft_Maui_Controls_Xaml_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal__llvm:
 	.globl _p_154_plt_Microsoft_Maui_Controls_Xaml_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal__llvm
 .private_extern _p_154_plt_Microsoft_Maui_Controls_Xaml_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal__llvm
@@ -11772,7 +11830,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 6211
+.word 6149
 _p_155_plt_Microsoft_Maui_Controls_Xaml_System_TimeSpan_TryParse_string_System_IFormatProvider_System_TimeSpan__llvm:
 	.globl _p_155_plt_Microsoft_Maui_Controls_Xaml_System_TimeSpan_TryParse_string_System_IFormatProvider_System_TimeSpan__llvm
 .private_extern _p_155_plt_Microsoft_Maui_Controls_Xaml_System_TimeSpan_TryParse_string_System_IFormatProvider_System_TimeSpan__llvm
@@ -11783,7 +11841,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 6216
+.word 6154
 _p_156_plt_Microsoft_Maui_Controls_Xaml_bool_TryParse_string_bool__llvm:
 	.globl _p_156_plt_Microsoft_Maui_Controls_Xaml_bool_TryParse_string_bool__llvm
 .private_extern _p_156_plt_Microsoft_Maui_Controls_Xaml_bool_TryParse_string_bool__llvm
@@ -11794,7 +11852,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 6221
+.word 6159
 _p_157_plt_Microsoft_Maui_Controls_Xaml_double_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm:
 	.globl _p_157_plt_Microsoft_Maui_Controls_Xaml_double_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
 .private_extern _p_157_plt_Microsoft_Maui_Controls_Xaml_double_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
@@ -11805,7 +11863,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 6226
+.word 6164
 _p_158_plt_Microsoft_Maui_Controls_Xaml_single_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm:
 	.globl _p_158_plt_Microsoft_Maui_Controls_Xaml_single_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm
 .private_extern _p_158_plt_Microsoft_Maui_Controls_Xaml_single_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm
@@ -11816,7 +11874,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 6231
+.word 6169
 _p_159_plt_Microsoft_Maui_Controls_Xaml_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong__llvm:
 	.globl _p_159_plt_Microsoft_Maui_Controls_Xaml_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong__llvm
 .private_extern _p_159_plt_Microsoft_Maui_Controls_Xaml_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong__llvm
@@ -11827,7 +11885,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 6236
+.word 6174
 _p_160_plt_Microsoft_Maui_Controls_Xaml_uint_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm:
 	.globl _p_160_plt_Microsoft_Maui_Controls_Xaml_uint_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm
 .private_extern _p_160_plt_Microsoft_Maui_Controls_Xaml_uint_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm
@@ -11838,7 +11896,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 6241
+.word 6179
 _p_161_plt_Microsoft_Maui_Controls_Xaml_uint16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint16__llvm:
 	.globl _p_161_plt_Microsoft_Maui_Controls_Xaml_uint16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint16__llvm
 .private_extern _p_161_plt_Microsoft_Maui_Controls_Xaml_uint16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint16__llvm
@@ -11849,7 +11907,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 6246
+.word 6184
 _p_162_plt_Microsoft_Maui_Controls_Xaml_byte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_byte__llvm:
 	.globl _p_162_plt_Microsoft_Maui_Controls_Xaml_byte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_byte__llvm
 .private_extern _p_162_plt_Microsoft_Maui_Controls_Xaml_byte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_byte__llvm
@@ -11860,7 +11918,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 6251
+.word 6189
 _p_163_plt_Microsoft_Maui_Controls_Xaml_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long__llvm:
 	.globl _p_163_plt_Microsoft_Maui_Controls_Xaml_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long__llvm
 .private_extern _p_163_plt_Microsoft_Maui_Controls_Xaml_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long__llvm
@@ -11871,7 +11929,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 6256
+.word 6194
 _p_164_plt_Microsoft_Maui_Controls_Xaml_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm:
 	.globl _p_164_plt_Microsoft_Maui_Controls_Xaml_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm
 .private_extern _p_164_plt_Microsoft_Maui_Controls_Xaml_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm
@@ -11882,7 +11940,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 6261
+.word 6199
 _p_165_plt_Microsoft_Maui_Controls_Xaml_int16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int16__llvm:
 	.globl _p_165_plt_Microsoft_Maui_Controls_Xaml_int16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int16__llvm
 .private_extern _p_165_plt_Microsoft_Maui_Controls_Xaml_int16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int16__llvm
@@ -11893,7 +11951,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 6266
+.word 6204
 _p_166_plt_Microsoft_Maui_Controls_Xaml_sbyte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_sbyte__llvm:
 	.globl _p_166_plt_Microsoft_Maui_Controls_Xaml_sbyte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_sbyte__llvm
 .private_extern _p_166_plt_Microsoft_Maui_Controls_Xaml_sbyte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_sbyte__llvm
@@ -11904,7 +11962,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 6271
+.word 6209
 _p_167_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ExpandMarkupsVisitor_ParseExpression_string__System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_167_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ExpandMarkupsVisitor_ParseExpression_string__System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_167_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ExpandMarkupsVisitor_ParseExpression_string__System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -11915,7 +11973,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 6276
+.word 6214
 _p_168_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_set_Item_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_168_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_set_Item_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_168_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_set_Item_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -11926,7 +11984,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 6278
+.word 6216
 _p_169_plt_Microsoft_Maui_Controls_Xaml_string_StartsWith_string_System_StringComparison_llvm:
 	.globl _p_169_plt_Microsoft_Maui_Controls_Xaml_string_StartsWith_string_System_StringComparison_llvm
 .private_extern _p_169_plt_Microsoft_Maui_Controls_Xaml_string_StartsWith_string_System_StringComparison_llvm
@@ -11937,7 +11995,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 6289
+.word 6227
 _p_170_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_MatchMarkup_string__string_int__llvm:
 	.globl _p_170_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_MatchMarkup_string__string_int__llvm
 .private_extern _p_170_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_MatchMarkup_string__string_int__llvm
@@ -11948,7 +12006,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 6294
+.word 6232
 _p_171_plt_Microsoft_Maui_Controls_Xaml_string_TrimStart_llvm:
 	.globl _p_171_plt_Microsoft_Maui_Controls_Xaml_string_TrimStart_llvm
 .private_extern _p_171_plt_Microsoft_Maui_Controls_Xaml_string_TrimStart_llvm
@@ -11959,7 +12017,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 6296
+.word 6234
 _p_172_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_Add_System_Type_object_llvm:
 	.globl _p_172_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_Add_System_Type_object_llvm
 .private_extern _p_172_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_Add_System_Type_object_llvm
@@ -11970,7 +12028,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 6301
+.word 6239
 _p_173_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ExpandMarkupsVisitor_MarkupExpansionParser_Parse_string_string__System_IServiceProvider_llvm:
 	.globl _p_173_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ExpandMarkupsVisitor_MarkupExpansionParser_Parse_string_string__System_IServiceProvider_llvm
 .private_extern _p_173_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ExpandMarkupsVisitor_MarkupExpansionParser_Parse_string_string__System_IServiceProvider_llvm
@@ -11981,7 +12039,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 6304
+.word 6242
 _p_174_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_0_llvm:
 	.globl _p_174_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_0_llvm
 .private_extern _p_174_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_0_llvm
@@ -11992,7 +12050,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 6307
+.word 6245
 _p_175_plt_Microsoft_Maui_Controls_Xaml_string_EndsWith_string_System_StringComparison_llvm:
 	.globl _p_175_plt_Microsoft_Maui_Controls_Xaml_string_EndsWith_string_System_StringComparison_llvm
 .private_extern _p_175_plt_Microsoft_Maui_Controls_Xaml_string_EndsWith_string_System_StringComparison_llvm
@@ -12003,7 +12061,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 6310
+.word 6248
 _p_176_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object__ctor_llvm:
 	.globl _p_176_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object__ctor_llvm
 .private_extern _p_176_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_object__ctor_llvm
@@ -12014,7 +12072,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 6315
+.word 6253
 _p_177_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type__ctor_llvm:
 	.globl _p_177_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type__ctor_llvm
 .private_extern _p_177_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_IElementNode_System_Type__ctor_llvm
@@ -12025,7 +12083,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 6326
+.word 6264
 _p_178_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_System_IServiceProvider_System_Exception_llvm:
 	.globl _p_178_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_System_IServiceProvider_System_Exception_llvm
 .private_extern _p_178_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_System_IServiceProvider_System_Exception_llvm
@@ -12036,7 +12094,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 6337
+.word 6275
 _p_179_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_179_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_179_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_1_llvm
@@ -12047,7 +12105,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 6342
+.word 6280
 _p_180_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_GetNextPiece_System_IServiceProvider_string__char__llvm:
 	.globl _p_180_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_GetNextPiece_System_IServiceProvider_string__char__llvm
 .private_extern _p_180_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_GetNextPiece_System_IServiceProvider_string__char__llvm
@@ -12058,7 +12116,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 6345
+.word 6283
 _p_181_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParsePropertyExpression_string_System_IServiceProvider_string__llvm:
 	.globl _p_181_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParsePropertyExpression_string_System_IServiceProvider_string__llvm
 .private_extern _p_181_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParsePropertyExpression_string_System_IServiceProvider_string__llvm
@@ -12069,7 +12127,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 6347
+.word 6285
 _p_182_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseExpression_string__System_IServiceProvider_llvm:
 	.globl _p_182_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseExpression_string__System_IServiceProvider_llvm
 .private_extern _p_182_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseExpression_string__System_IServiceProvider_llvm
@@ -12080,7 +12138,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 6349
+.word 6287
 _p_183_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder__ctor_llvm:
 	.globl _p_183_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder__ctor_llvm
 .private_extern _p_183_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder__ctor_llvm
@@ -12091,7 +12149,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 6351
+.word 6289
 _p_184_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_get_Chars_int_llvm:
 	.globl _p_184_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_get_Chars_int_llvm
 .private_extern _p_184_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_get_Chars_int_llvm
@@ -12102,7 +12160,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 6356
+.word 6294
 _p_185_plt_Microsoft_Maui_Controls_Xaml_char_IsWhiteSpace_char_llvm:
 	.globl _p_185_plt_Microsoft_Maui_Controls_Xaml_char_IsWhiteSpace_char_llvm
 .private_extern _p_185_plt_Microsoft_Maui_Controls_Xaml_char_IsWhiteSpace_char_llvm
@@ -12113,7 +12171,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 6361
+.word 6299
 _p_186_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_set_Length_int_llvm:
 	.globl _p_186_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_set_Length_int_llvm
 .private_extern _p_186_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_set_Length_int_llvm
@@ -12124,7 +12182,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 6366
+.word 6304
 _p_187_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_Append_char_llvm:
 	.globl _p_187_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_Append_char_llvm
 .private_extern _p_187_plt_Microsoft_Maui_Controls_Xaml_System_Text_StringBuilder_Append_char_llvm
@@ -12135,7 +12193,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 6371
+.word 6309
 _p_188_plt_Microsoft_Maui_Controls_Xaml_string_Split_char_System_StringSplitOptions_llvm:
 	.globl _p_188_plt_Microsoft_Maui_Controls_Xaml_string_Split_char_System_StringSplitOptions_llvm
 .private_extern _p_188_plt_Microsoft_Maui_Controls_Xaml_string_Split_char_System_StringSplitOptions_llvm
@@ -12146,7 +12204,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 6376
+.word 6314
 _p_189_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseProperty_System_IServiceProvider_string__llvm:
 	.globl _p_189_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseProperty_System_IServiceProvider_string__llvm
 .private_extern _p_189_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseProperty_System_IServiceProvider_string__llvm
@@ -12157,7 +12215,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 6381
+.word 6319
 _p_190_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExtensionParser_SetPropertyValue_string_string_object_System_IServiceProvider_llvm:
 	.globl _p_190_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExtensionParser_SetPropertyValue_string_string_object_System_IServiceProvider_llvm
 .private_extern _p_190_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExtensionParser_SetPropertyValue_string_string_object_System_IServiceProvider_llvm
@@ -12168,7 +12226,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 6383
+.word 6321
 _p_191_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnPlatformExtension__ctor_llvm:
 	.globl _p_191_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnPlatformExtension__ctor_llvm
 .private_extern _p_191_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnPlatformExtension__ctor_llvm
@@ -12179,7 +12237,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 6385
+.word 6323
 _p_192_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperty_System_Type_string_llvm:
 	.globl _p_192_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperty_System_Type_string_llvm
 .private_extern _p_192_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeProperty_System_Type_string_llvm
@@ -12190,7 +12248,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 6388
+.word 6326
 _p_193_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IValueConverterProvider_System_IServiceProvider_llvm:
 	.globl _p_193_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IValueConverterProvider_System_IServiceProvider_llvm
 .private_extern _p_193_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IValueConverterProvider_System_IServiceProvider_llvm
@@ -12201,7 +12259,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 6393
+.word 6331
 _p_194_plt_Microsoft_Maui_Controls_Xaml_System_Array_CreateInstance_System_Type_int_llvm:
 	.globl _p_194_plt_Microsoft_Maui_Controls_Xaml_System_Array_CreateInstance_System_Type_int_llvm
 .private_extern _p_194_plt_Microsoft_Maui_Controls_Xaml_System_Array_CreateInstance_System_Type_int_llvm
@@ -12212,7 +12270,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 6405
+.word 6343
 _p_195_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindingBase_set_Mode_Microsoft_Maui_Controls_BindingMode_llvm:
 	.globl _p_195_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindingBase_set_Mode_Microsoft_Maui_Controls_BindingMode_llvm
 .private_extern _p_195_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindingBase_set_Mode_Microsoft_Maui_Controls_BindingMode_llvm
@@ -12223,7 +12281,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 6410
+.word 6348
 _p_196_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindingBase_ThrowIfApplied_llvm:
 	.globl _p_196_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindingBase_ThrowIfApplied_llvm
 .private_extern _p_196_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindingBase_ThrowIfApplied_llvm
@@ -12234,7 +12292,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 6415
+.word 6353
 _p_197_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding__ctor_string_Microsoft_Maui_Controls_BindingMode_Microsoft_Maui_Controls_IValueConverter_object_string_object_llvm:
 	.globl _p_197_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding__ctor_string_Microsoft_Maui_Controls_BindingMode_Microsoft_Maui_Controls_IValueConverter_object_string_object_llvm
 .private_extern _p_197_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding__ctor_string_Microsoft_Maui_Controls_BindingMode_Microsoft_Maui_Controls_IValueConverter_object_string_object_llvm
@@ -12245,7 +12303,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 6420
+.word 6358
 _p_198_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DataTemplate__ctor_System_Type_llvm:
 	.globl _p_198_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DataTemplate__ctor_System_Type_llvm
 .private_extern _p_198_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DataTemplate__ctor_System_Type_llvm
@@ -12256,7 +12314,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 6425
+.word 6363
 _p_199_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource__ctor_llvm:
 	.globl _p_199_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource__ctor_llvm
 .private_extern _p_199_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource__ctor_llvm
@@ -12267,7 +12325,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 6430
+.word 6368
 _p_200_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_FontFamily_string_llvm:
 	.globl _p_200_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_FontFamily_string_llvm
 .private_extern _p_200_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_FontFamily_string_llvm
@@ -12278,7 +12336,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 6435
+.word 6373
 _p_201_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Glyph_string_llvm:
 	.globl _p_201_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Glyph_string_llvm
 .private_extern _p_201_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Glyph_string_llvm
@@ -12289,7 +12347,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 6440
+.word 6378
 _p_202_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Color_Microsoft_Maui_Graphics_Color_llvm:
 	.globl _p_202_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Color_Microsoft_Maui_Graphics_Color_llvm
 .private_extern _p_202_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Color_Microsoft_Maui_Graphics_Color_llvm
@@ -12300,7 +12358,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 6445
+.word 6383
 _p_203_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Size_double_llvm:
 	.globl _p_203_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Size_double_llvm
 .private_extern _p_203_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_FontImageSource_set_Size_double_llvm
@@ -12311,7 +12369,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 6450
+.word 6388
 _p_204_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnIdiomExtension_GetValue_llvm:
 	.globl _p_204_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnIdiomExtension_GetValue_llvm
 .private_extern _p_204_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnIdiomExtension_GetValue_llvm
@@ -12322,7 +12380,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 6455
+.word 6393
 _p_205_plt_Microsoft_Maui_Controls_Xaml_System_Globalization_CultureInfo_get_CurrentUICulture_llvm:
 	.globl _p_205_plt_Microsoft_Maui_Controls_Xaml_System_Globalization_CultureInfo_get_CurrentUICulture_llvm
 .private_extern _p_205_plt_Microsoft_Maui_Controls_Xaml_System_Globalization_CultureInfo_get_CurrentUICulture_llvm
@@ -12333,7 +12391,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 6458
+.word 6396
 _p_206_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceInfo_get_Idiom_llvm:
 	.globl _p_206_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceInfo_get_Idiom_llvm
 .private_extern _p_206_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceInfo_get_Idiom_llvm
@@ -12344,7 +12402,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 6463
+.word 6401
 _p_207_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceIdiom_op_Equality_Microsoft_Maui_Devices_DeviceIdiom_Microsoft_Maui_Devices_DeviceIdiom_llvm:
 	.globl _p_207_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceIdiom_op_Equality_Microsoft_Maui_Devices_DeviceIdiom_Microsoft_Maui_Devices_DeviceIdiom_llvm
 .private_extern _p_207_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceIdiom_op_Equality_Microsoft_Maui_Devices_DeviceIdiom_Microsoft_Maui_Devices_DeviceIdiom_llvm
@@ -12355,7 +12413,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 6468
+.word 6406
 _p_208_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnPlatformExtension_TryGetValueForPlatform_object__llvm:
 	.globl _p_208_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnPlatformExtension_TryGetValueForPlatform_object__llvm
 .private_extern _p_208_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_OnPlatformExtension_TryGetValueForPlatform_object__llvm
@@ -12366,7 +12424,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 6473
+.word 6411
 _p_209_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableProperty_GetDefaultValue_Microsoft_Maui_Controls_BindableObject_llvm:
 	.globl _p_209_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableProperty_GetDefaultValue_Microsoft_Maui_Controls_BindableObject_llvm
 .private_extern _p_209_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_BindableProperty_GetDefaultValue_Microsoft_Maui_Controls_BindableObject_llvm
@@ -12377,7 +12435,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 6476
+.word 6414
 _p_210_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceInfo_get_Platform_llvm:
 	.globl _p_210_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceInfo_get_Platform_llvm
 .private_extern _p_210_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DeviceInfo_get_Platform_llvm
@@ -12388,7 +12446,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 6481
+.word 6419
 _p_211_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DevicePlatform_op_Equality_Microsoft_Maui_Devices_DevicePlatform_Microsoft_Maui_Devices_DevicePlatform_llvm:
 	.globl _p_211_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DevicePlatform_op_Equality_Microsoft_Maui_Devices_DevicePlatform_Microsoft_Maui_Devices_DevicePlatform_llvm
 .private_extern _p_211_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DevicePlatform_op_Equality_Microsoft_Maui_Devices_DevicePlatform_Microsoft_Maui_Devices_DevicePlatform_llvm
@@ -12399,7 +12457,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 6486
+.word 6424
 _p_212_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DevicePlatform_Create_string_llvm:
 	.globl _p_212_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DevicePlatform_Create_string_llvm
 .private_extern _p_212_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Devices_DevicePlatform_Create_string_llvm
@@ -12410,7 +12468,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 6491
+.word 6429
 _p_213_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IReferenceProvider_System_IServiceProvider_llvm:
 	.globl _p_213_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IReferenceProvider_System_IServiceProvider_llvm
 .private_extern _p_213_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_ServiceProviderServiceExtensions_GetService_Microsoft_Maui_Controls_Xaml_IReferenceProvider_System_IServiceProvider_llvm
@@ -12421,7 +12479,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 6496
+.word 6434
 _p_214_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_llvm:
 	.globl _p_214_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_llvm
 .private_extern _p_214_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParseException__ctor_string_llvm
@@ -12432,7 +12490,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 6508
+.word 6446
 _p_215_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource_get_TemplatedParent_llvm:
 	.globl _p_215_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource_get_TemplatedParent_llvm
 .private_extern _p_215_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource_get_TemplatedParent_llvm
@@ -12443,7 +12501,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 6513
+.word 6451
 _p_216_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource_get_Self_llvm:
 	.globl _p_216_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource_get_Self_llvm
 .private_extern _p_216_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource_get_Self_llvm
@@ -12454,7 +12512,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 6518
+.word 6456
 _p_217_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource__ctor_Microsoft_Maui_Controls_RelativeBindingSourceMode_System_Type_int_llvm:
 	.globl _p_217_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource__ctor_Microsoft_Maui_Controls_RelativeBindingSourceMode_System_Type_int_llvm
 .private_extern _p_217_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_RelativeBindingSource__ctor_Microsoft_Maui_Controls_RelativeBindingSourceMode_System_Type_int_llvm
@@ -12465,7 +12523,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 6523
+.word 6461
 _p_218_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
 	.globl _p_218_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
 .private_extern _p_218_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
@@ -12476,7 +12534,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 6548
+.word 6486
 _p_219_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type_llvm:
 	.globl _p_219_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type_llvm
 .private_extern _p_219_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeFields_System_Type_llvm
@@ -12487,7 +12545,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 6564
+.word 6502
 _p_220_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool_llvm:
 	.globl _p_220_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool_llvm
 .private_extern _p_220_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_System_Reflection_FieldInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_FieldInfo_System_Func_2_System_Reflection_FieldInfo_bool_llvm
@@ -12498,7 +12556,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 6569
+.word 6507
 _p_221_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_TryGetResource_string_System_Collections_Generic_IEnumerable_1_object_object__Microsoft_Maui_Controls_ResourceDictionary__llvm:
 	.globl _p_221_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_TryGetResource_string_System_Collections_Generic_IEnumerable_1_object_object__Microsoft_Maui_Controls_ResourceDictionary__llvm
 .private_extern _p_221_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_TryGetResource_string_System_Collections_Generic_IEnumerable_1_object_object__Microsoft_Maui_Controls_ResourceDictionary__llvm
@@ -12509,7 +12567,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 6581
+.word 6519
 _p_222_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Diagnostics_ResourceDictionaryDiagnostics_OnStaticResourceResolved_Microsoft_Maui_Controls_ResourceDictionary_string_object_object_llvm:
 	.globl _p_222_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Diagnostics_ResourceDictionaryDiagnostics_OnStaticResourceResolved_Microsoft_Maui_Controls_ResourceDictionary_string_object_object_llvm
 .private_extern _p_222_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Diagnostics_ResourceDictionaryDiagnostics_OnStaticResourceResolved_Microsoft_Maui_Controls_ResourceDictionary_string_object_object_llvm
@@ -12520,7 +12578,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 6584
+.word 6522
 _p_223_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_CastTo_object_object_llvm:
 	.globl _p_223_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_CastTo_object_object_llvm
 .private_extern _p_223_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_CastTo_object_object_llvm
@@ -12531,7 +12589,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 6587
+.word 6525
 _p_224_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_TryGetApplicationLevelResource_string_object__Microsoft_Maui_Controls_ResourceDictionary__llvm:
 	.globl _p_224_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_TryGetApplicationLevelResource_string_object__Microsoft_Maui_Controls_ResourceDictionary__llvm
 .private_extern _p_224_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_StaticResourceExtension_TryGetApplicationLevelResource_string_object__Microsoft_Maui_Controls_ResourceDictionary__llvm
@@ -12542,7 +12600,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 6590
+.word 6528
 _p_225_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_2_llvm:
 	.globl _p_225_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_2_llvm
 .private_extern _p_225_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_create_corlib_exception_2_llvm
@@ -12553,7 +12611,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 6593
+.word 6531
 _p_226_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_GetImplicitConversionOperator_System_Type_System_Type_System_Type_llvm:
 	.globl _p_226_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_GetImplicitConversionOperator_System_Type_System_Type_System_Type_llvm
 .private_extern _p_226_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeConversionExtensions_GetImplicitConversionOperator_System_Type_System_Type_System_Type_llvm
@@ -12564,7 +12622,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 6596
+.word 6534
 _p_227_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_TryGetValueAndSource_string_object__Microsoft_Maui_Controls_ResourceDictionary__llvm:
 	.globl _p_227_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_TryGetValueAndSource_string_object__Microsoft_Maui_Controls_ResourceDictionary__llvm
 .private_extern _p_227_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_TryGetValueAndSource_string_object__Microsoft_Maui_Controls_ResourceDictionary__llvm
@@ -12575,7 +12633,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 6601
+.word 6539
 _p_228_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Application_get_Resources_llvm:
 	.globl _p_228_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Application_get_Resources_llvm
 .private_extern _p_228_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Application_get_Resources_llvm
@@ -12586,7 +12644,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 6606
+.word 6544
 _p_229_plt_Microsoft_Maui_Controls_Xaml_System_Uri_op_Inequality_System_Uri_System_Uri_llvm:
 	.globl _p_229_plt_Microsoft_Maui_Controls_Xaml_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
 .private_extern _p_229_plt_Microsoft_Maui_Controls_Xaml_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
@@ -12597,7 +12655,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 6611
+.word 6549
 _p_230_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_StyleSheets_StyleSheet_FromReader_System_IO_TextReader_llvm:
 	.globl _p_230_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_StyleSheets_StyleSheet_FromReader_System_IO_TextReader_llvm
 .private_extern _p_230_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_StyleSheets_StyleSheet_FromReader_System_IO_TextReader_llvm
@@ -12608,7 +12666,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 6616
+.word 6554
 _p_231_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
 	.globl _p_231_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
 .private_extern _p_231_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
@@ -12619,7 +12677,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 6621
+.word 6559
 _p_232_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetPathForType_System_Type_llvm:
 	.globl _p_232_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetPathForType_System_Type_llvm
 .private_extern _p_232_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetPathForType_System_Type_llvm
@@ -12630,7 +12688,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 6626
+.word 6564
 _p_233_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_RDSourceTypeConverter_GetResourcePath_System_Uri_string_llvm:
 	.globl _p_233_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_RDSourceTypeConverter_GetResourcePath_System_Uri_string_llvm
 .private_extern _p_233_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_ResourceDictionary_RDSourceTypeConverter_GetResourcePath_System_Uri_string_llvm
@@ -12641,7 +12699,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 6631
+.word 6569
 _p_234_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_StyleSheets_StyleSheet_FromResource_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_234_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_StyleSheets_StyleSheet_FromResource_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_234_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_StyleSheets_StyleSheet_FromResource_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo_llvm
@@ -12652,7 +12710,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 6636
+.word 6574
 _p_235_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding_set_Source_object_llvm:
 	.globl _p_235_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding_set_Source_object_llvm
 .private_extern _p_235_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding_set_Source_object_llvm
@@ -12663,7 +12721,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 6641
+.word 6579
 _p_236_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding_set_Path_string_llvm:
 	.globl _p_236_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding_set_Path_string_llvm
 .private_extern _p_236_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Binding_set_Path_string_llvm
@@ -12674,7 +12732,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 6646
+.word 6584
 _p_237_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef__ctor_llvm:
 	.globl _p_237_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef__ctor_llvm
 .private_extern _p_237_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef__ctor_llvm
@@ -12685,7 +12743,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 6651
+.word 6589
 _p_238_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_get_Item_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_238_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_get_Item_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_238_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_get_Item_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12696,7 +12754,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 6662
+.word 6600
 _p_239_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_set_Item_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_llvm:
 	.globl _p_239_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_set_Item_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_llvm
 .private_extern _p_239_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_set_Item_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_NameScopeRef_llvm
@@ -12707,7 +12765,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 6673
+.word 6611
 _p_240_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope__ctor_llvm:
 	.globl _p_240_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope__ctor_llvm
 .private_extern _p_240_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_NameScope__ctor_llvm
@@ -12718,7 +12776,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 6684
+.word 6622
 _p_241_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsDataTemplate_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_241_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsDataTemplate_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_241_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsDataTemplate_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12729,7 +12787,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 6689
+.word 6627
 _p_242_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsStyle_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_242_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsStyle_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_242_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsStyle_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12740,7 +12798,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 6692
+.word 6630
 _p_243_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsVisualStateGroupList_Microsoft_Maui_Controls_Xaml_ElementNode_llvm:
 	.globl _p_243_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsVisualStateGroupList_Microsoft_Maui_Controls_Xaml_ElementNode_llvm
 .private_extern _p_243_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor_IsVisualStateGroupList_Microsoft_Maui_Controls_Xaml_ElementNode_llvm
@@ -12751,7 +12809,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 6695
+.word 6633
 _p_244_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_244_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_244_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12762,7 +12820,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 6698
+.word 6636
 _p_245_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm:
 	.globl _p_245_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
 .private_extern _p_245_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
@@ -12773,7 +12831,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 6710
+.word 6648
 _p_246_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_246_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_246_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12784,7 +12842,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 6721
+.word 6659
 _p_247_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm:
 	.globl _p_247_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
 .private_extern _p_247_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
@@ -12795,7 +12853,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 6733
+.word 6671
 _p_248_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_INodeExtensions_SkipPrefix_Microsoft_Maui_Controls_Xaml_INode_string_llvm:
 	.globl _p_248_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_INodeExtensions_SkipPrefix_Microsoft_Maui_Controls_Xaml_INode_string_llvm
 .private_extern _p_248_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_INodeExtensions_SkipPrefix_Microsoft_Maui_Controls_Xaml_INode_string_llvm
@@ -12806,7 +12864,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 6744
+.word 6682
 _p_249_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Clear_llvm:
 	.globl _p_249_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Clear_llvm
 .private_extern _p_249_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Clear_llvm
@@ -12817,7 +12875,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 6747
+.word 6685
 _p_250_plt_Microsoft_Maui_Controls_Xaml_System_Array_Clear_System_Array_int_int_llvm:
 	.globl _p_250_plt_Microsoft_Maui_Controls_Xaml_System_Array_Clear_System_Array_int_int_llvm
 .private_extern _p_250_plt_Microsoft_Maui_Controls_Xaml_System_Array_Clear_System_Array_int_int_llvm
@@ -12828,7 +12886,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 6758
+.word 6696
 _p_251_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm:
 	.globl _p_251_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
 .private_extern _p_251_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
@@ -12839,7 +12897,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 6763
+.word 6701
 _p_252_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_Remove_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_252_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_Remove_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_252_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_Remove_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12850,7 +12908,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 6774
+.word 6712
 _p_253_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm:
 	.globl _p_253_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
 .private_extern _p_253_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
@@ -12861,7 +12919,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 6785
+.word 6723
 _p_254_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Remove_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_254_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Remove_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_254_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Remove_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -12872,7 +12930,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 6796
+.word 6734
 _p_255_plt_Microsoft_Maui_Controls_Xaml_string_Split_char___System_StringSplitOptions_llvm:
 	.globl _p_255_plt_Microsoft_Maui_Controls_Xaml_string_Split_char___System_StringSplitOptions_llvm
 .private_extern _p_255_plt_Microsoft_Maui_Controls_Xaml_string_Split_char___System_StringSplitOptions_llvm
@@ -12883,7 +12941,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 6807
+.word 6745
 _p_256_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_256_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_256_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToList_string_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -12894,7 +12952,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 6812
+.word 6750
 _p_257_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_AddRange_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_257_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_AddRange_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_257_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_AddRange_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -12905,7 +12963,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 6824
+.word 6762
 _p_258_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_RemoveAt_int_llvm:
 	.globl _p_258_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_RemoveAt_int_llvm
 .private_extern _p_258_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_RemoveAt_int_llvm
@@ -12916,7 +12974,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 6835
+.word 6773
 _p_259_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_PruneIgnoredNodesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_259_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_PruneIgnoredNodesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_259_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_PruneIgnoredNodesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12927,7 +12985,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 6846
+.word 6784
 _p_260_plt_Microsoft_Maui_Controls_Xaml_string_op_Inequality_string_string_llvm:
 	.globl _p_260_plt_Microsoft_Maui_Controls_Xaml_string_op_Inequality_string_string_llvm
 .private_extern _p_260_plt_Microsoft_Maui_Controls_Xaml_string_op_Inequality_string_string_llvm
@@ -12938,7 +12996,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 6849
+.word 6787
 _p_261_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RemoveDuplicateDesignNodes_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_261_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RemoveDuplicateDesignNodes_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_261_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RemoveDuplicateDesignNodes_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -12949,7 +13007,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 6854
+.word 6792
 _p_262_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsValueOfXDataTypeOrTargetType_12_0_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName__llvm:
 	.globl _p_262_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsValueOfXDataTypeOrTargetType_12_0_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName__llvm
 .private_extern _p_262_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsValueOfXDataTypeOrTargetType_12_0_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName__llvm
@@ -12960,7 +13018,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 6857
+.word 6795
 _p_263_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTypeExtension_12_7_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_ValueNode__llvm:
 	.globl _p_263_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTypeExtension_12_7_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_ValueNode__llvm
 .private_extern _p_263_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTypeExtension_12_7_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_ValueNode__llvm
@@ -12971,7 +13029,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 6860
+.word 6798
 _p_264_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsXDataType_12_2_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_264_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsXDataType_12_2_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_264_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsXDataType_12_2_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -12982,7 +13040,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 6863
+.word 6801
 _p_265_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTargetTypePropertyOfMauiType_12_1_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_265_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTargetTypePropertyOfMauiType_12_1_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_265_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTargetTypePropertyOfMauiType_12_1_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -12993,7 +13051,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 6866
+.word 6804
 _p_266_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsStyle_12_3_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_266_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsStyle_12_3_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_266_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsStyle_12_3_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -13004,7 +13062,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 6869
+.word 6807
 _p_267_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTrigger_12_4_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_267_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTrigger_12_4_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_267_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsTrigger_12_4_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -13015,7 +13073,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 6872
+.word 6810
 _p_268_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsDataTrigger_12_5_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_268_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsDataTrigger_12_5_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_268_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsDataTrigger_12_5_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -13026,7 +13084,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 6875
+.word 6813
 _p_269_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsMultiTrigger_12_6_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_269_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsMultiTrigger_12_6_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_269_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_SimplifyTypeExtensionVisitor__Visitg__IsMultiTrigger_12_6_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -13037,7 +13095,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 6878
+.word 6816
 _p_270_plt_Microsoft_Maui_Controls_Xaml_string_IsNullOrWhiteSpace_string_llvm:
 	.globl _p_270_plt_Microsoft_Maui_Controls_Xaml_string_IsNullOrWhiteSpace_string_llvm
 .private_extern _p_270_plt_Microsoft_Maui_Controls_Xaml_string_IsNullOrWhiteSpace_string_llvm
@@ -13048,7 +13106,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 6881
+.word 6819
 _p_271_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_Parse_string_string__System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_271_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_Parse_string_string__System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_271_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_Parse_string_string__System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm
@@ -13059,7 +13117,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 6886
+.word 6824
 _p_272_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlType_AddWithResize_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_272_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlType_AddWithResize_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_272_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlType_AddWithResize_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -13070,7 +13128,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 6889
+.word 6827
 _p_273_plt_Microsoft_Maui_Controls_Xaml_string_Trim_llvm:
 	.globl _p_273_plt_Microsoft_Maui_Controls_Xaml_string_Trim_llvm
 .private_extern _p_273_plt_Microsoft_Maui_Controls_Xaml_string_Trim_llvm
@@ -13081,7 +13139,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 6906
+.word 6844
 _p_274_plt_Microsoft_Maui_Controls_Xaml_string_LastIndexOf_string_System_StringComparison_llvm:
 	.globl _p_274_plt_Microsoft_Maui_Controls_Xaml_string_LastIndexOf_string_System_StringComparison_llvm
 .private_extern _p_274_plt_Microsoft_Maui_Controls_Xaml_string_LastIndexOf_string_System_StringComparison_llvm
@@ -13092,7 +13150,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 6911
+.word 6849
 _p_275_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_ParseExpression_string_System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_275_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_ParseExpression_string_System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_275_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_ParseExpression_string_System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm
@@ -13103,7 +13161,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 6916
+.word 6854
 _p_276_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_System_Type_llvm:
 	.globl _p_276_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_System_Type_llvm
 .private_extern _p_276_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_System_Type_llvm
@@ -13114,7 +13172,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 6919
+.word 6857
 _p_277_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_llvm:
 	.globl _p_277_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_llvm
 .private_extern _p_277_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_llvm
@@ -13125,7 +13183,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 6922
+.word 6860
 _p_278_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_llvm:
 	.globl _p_278_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_llvm
 .private_extern _p_278_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_llvm
@@ -13136,7 +13194,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 6925
+.word 6863
 _p_279_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_MemberInfo_llvm:
 	.globl _p_279_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_MemberInfo_llvm
 .private_extern _p_279_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_MemberInfo_llvm
@@ -13147,7 +13205,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 6928
+.word 6866
 _p_280_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_Module_llvm:
 	.globl _p_280_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_Module_llvm
 .private_extern _p_280_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_Module_llvm
@@ -13158,7 +13216,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 6940
+.word 6878
 _p_281_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_Assembly_llvm:
 	.globl _p_281_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_Assembly_llvm
 .private_extern _p_281_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttribute_Microsoft_Maui_Controls_Xaml_XamlCompilationAttribute_System_Reflection_Assembly_llvm
@@ -13169,7 +13227,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 6952
+.word 6890
 _p_282_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_object_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_282_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_object_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_282_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_FirstOrDefault_object_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -13180,7 +13238,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 6964
+.word 6902
 _p_283_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_GetXamlForType_System_Type_object_bool__llvm:
 	.globl _p_283_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_GetXamlForType_System_Type_object_bool__llvm
 .private_extern _p_283_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_GetXamlForType_System_Type_object_bool__llvm
@@ -13191,7 +13249,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 6976
+.word 6914
 _p_284_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_bool_llvm:
 	.globl _p_284_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_bool_llvm
 .private_extern _p_284_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_bool_llvm
@@ -13202,7 +13260,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 6979
+.word 6917
 _p_285_plt_Microsoft_Maui_Controls_Xaml_string_Format_string_object_llvm:
 	.globl _p_285_plt_Microsoft_Maui_Controls_Xaml_string_Format_string_object_llvm
 .private_extern _p_285_plt_Microsoft_Maui_Controls_Xaml_string_Format_string_object_llvm
@@ -13213,7 +13271,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 6982
+.word 6920
 _p_286_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool_llvm:
 	.globl _p_286_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool_llvm
 .private_extern _p_286_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool_llvm
@@ -13224,7 +13282,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 6987
+.word 6925
 _p_287_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Create_string_bool_bool_llvm:
 	.globl _p_287_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Create_string_bool_bool_llvm
 .private_extern _p_287_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Create_string_bool_bool_llvm
@@ -13235,7 +13293,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 6990
+.word 6928
 _p_288_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlNodeVisitor__ctor_System_Action_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_TreeVisitingMode_bool_bool_llvm:
 	.globl _p_288_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlNodeVisitor__ctor_System_Action_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_TreeVisitingMode_bool_bool_llvm
 .private_extern _p_288_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlNodeVisitor__ctor_System_Action_2_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_TreeVisitingMode_bool_bool_llvm
@@ -13246,7 +13304,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 6993
+.word 6931
 _p_289_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm:
 	.globl _p_289_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm
 .private_extern _p_289_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_NamescopingVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm
@@ -13257,7 +13315,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 6996
+.word 6934
 _p_290_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_string_TryGetValue_System_Type_string__llvm:
 	.globl _p_290_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_string_TryGetValue_System_Type_string__llvm
 .private_extern _p_290_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_string_TryGetValue_System_Type_string__llvm
@@ -13268,7 +13326,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 6999
+.word 6937
 _p_291_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_ResourceMatchesFilename_System_Reflection_Assembly_string_string_llvm:
 	.globl _p_291_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_ResourceMatchesFilename_System_Reflection_Assembly_string_string_llvm
 .private_extern _p_291_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_ResourceMatchesFilename_System_Reflection_Assembly_string_string_llvm
@@ -13279,7 +13337,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 7010
+.word 6948
 _p_292_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool_llvm:
 	.globl _p_292_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool_llvm
 .private_extern _p_292_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool_llvm
@@ -13290,7 +13348,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 7013
+.word 6951
 _p_293_plt_Microsoft_Maui_Controls_Xaml_string_Compare_string_string_System_StringComparison_llvm:
 	.globl _p_293_plt_Microsoft_Maui_Controls_Xaml_string_Compare_string_string_System_StringComparison_llvm
 .private_extern _p_293_plt_Microsoft_Maui_Controls_Xaml_string_Compare_string_string_System_StringComparison_llvm
@@ -13301,7 +13359,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 7016
+.word 6954
 _p_294_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_string__ctor_llvm:
 	.globl _p_294_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_string__ctor_llvm
 .private_extern _p_294_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_string__ctor_llvm
@@ -13312,7 +13370,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 7021
+.word 6959
 _p_295_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_SequenceEqual_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_295_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_SequenceEqual_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_295_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_SequenceEqual_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -13323,7 +13381,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 7032
+.word 6970
 _p_296_plt_Microsoft_Maui_Controls_Xaml_string_GetHashCode_System_StringComparison_llvm:
 	.globl _p_296_plt_Microsoft_Maui_Controls_Xaml_string_GetHashCode_System_StringComparison_llvm
 .private_extern _p_296_plt_Microsoft_Maui_Controls_Xaml_string_GetHashCode_System_StringComparison_llvm
@@ -13334,7 +13392,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 7044
+.word 6982
 _p_297_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_llvm:
 	.globl _p_297_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_llvm
 .private_extern _p_297_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_llvm
@@ -13345,7 +13403,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 7049
+.word 6987
 _p_298_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_SkipChildren_Microsoft_Maui_Controls_Xaml_IXamlNodeVisitor_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_298_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_SkipChildren_Microsoft_Maui_Controls_Xaml_IXamlNodeVisitor_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_298_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_SkipChildren_Microsoft_Maui_Controls_Xaml_IXamlNodeVisitor_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13356,7 +13414,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 7060
+.word 6998
 _p_299_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_SkipVisitNode_Microsoft_Maui_Controls_Xaml_IXamlNodeVisitor_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_299_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_SkipVisitNode_Microsoft_Maui_Controls_Xaml_IXamlNodeVisitor_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_299_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_SkipVisitNode_Microsoft_Maui_Controls_Xaml_IXamlNodeVisitor_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13367,7 +13425,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 7063
+.word 7001
 _p_300_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_300_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_300_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_ToArray_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13378,7 +13436,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 7066
+.word 7004
 _p_301_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_ToArray_llvm:
 	.globl _p_301_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_ToArray_llvm
 .private_extern _p_301_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_ToArray_llvm
@@ -13389,7 +13447,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 7078
+.word 7016
 _p_302_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_IsDataTemplate_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_302_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_IsDataTemplate_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_302_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode_IsDataTemplate_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13400,7 +13458,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 7089
+.word 7027
 _p_303_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_string_System_Xml_IXmlNamespaceResolver_int_int_llvm:
 	.globl _p_303_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_string_System_Xml_IXmlNamespaceResolver_int_int_llvm
 .private_extern _p_303_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ElementNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_string_System_Xml_IXmlNamespaceResolver_int_int_llvm
@@ -13411,7 +13469,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 7092
+.word 7030
 _p_304_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_GetEnumerator_llvm:
 	.globl _p_304_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_GetEnumerator_llvm
 .private_extern _p_304_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_GetEnumerator_llvm
@@ -13422,7 +13480,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 7095
+.word 7033
 _p_305_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_305_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_305_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13433,7 +13491,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 7106
+.word 7044
 _p_306_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_MoveNext_llvm:
 	.globl _p_306_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_MoveNext_llvm
 .private_extern _p_306_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_MoveNext_llvm
@@ -13444,7 +13502,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 7123
+.word 7061
 _p_307_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Add_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_307_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Add_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_307_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Add_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13455,7 +13513,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 7134
+.word 7072
 _p_308_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ListNode__ctor_System_Collections_Generic_IList_1_Microsoft_Maui_Controls_Xaml_INode_System_Xml_IXmlNamespaceResolver_int_int_llvm:
 	.globl _p_308_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ListNode__ctor_System_Collections_Generic_IList_1_Microsoft_Maui_Controls_Xaml_INode_System_Xml_IXmlNamespaceResolver_int_int_llvm
 .private_extern _p_308_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ListNode__ctor_System_Collections_Generic_IList_1_Microsoft_Maui_Controls_Xaml_INode_System_Xml_IXmlNamespaceResolver_int_int_llvm
@@ -13466,7 +13524,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 7145
+.word 7083
 _p_309_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_Contains_string_llvm:
 	.globl _p_309_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_Contains_string_llvm
 .private_extern _p_309_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_Contains_string_llvm
@@ -13477,7 +13535,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 7148
+.word 7086
 _p_310_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXamlAttributes_System_Xml_XmlReader_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string__llvm:
 	.globl _p_310_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXamlAttributes_System_Xml_XmlReader_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string__llvm
 .private_extern _p_310_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXamlAttributes_System_Xml_XmlReader_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string__llvm
@@ -13488,7 +13546,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 7159
+.word 7097
 _p_311_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_PrefixesToIgnore_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string_llvm:
 	.globl _p_311_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_PrefixesToIgnore_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string_llvm
 .private_extern _p_311_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_PrefixesToIgnore_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string_llvm
@@ -13499,7 +13557,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 7162
+.word 7100
 _p_312_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_IDictionaryExtensions_AddRange_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IDictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_312_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_IDictionaryExtensions_AddRange_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IDictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_312_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_IDictionaryExtensions_AddRange_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IDictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13510,7 +13568,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 7165
+.word 7103
 _p_313_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXamlElementFor_Microsoft_Maui_Controls_Xaml_IElementNode_System_Xml_XmlReader_llvm:
 	.globl _p_313_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXamlElementFor_Microsoft_Maui_Controls_Xaml_IElementNode_System_Xml_XmlReader_llvm
 .private_extern _p_313_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXamlElementFor_Microsoft_Maui_Controls_Xaml_IElementNode_System_Xml_XmlReader_llvm
@@ -13521,7 +13579,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 7177
+.word 7115
 _p_314_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ReadNode_System_Xml_XmlReader_bool_llvm:
 	.globl _p_314_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ReadNode_System_Xml_XmlReader_bool_llvm
 .private_extern _p_314_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ReadNode_System_Xml_XmlReader_bool_llvm
@@ -13532,7 +13590,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 7180
+.word 7118
 _p_315_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetTypeArguments_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_315_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetTypeArguments_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_315_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetTypeArguments_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13543,7 +13601,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 7183
+.word 7121
 _p_316_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Func_2_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_bool_llvm:
 	.globl _p_316_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Func_2_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_bool_llvm
 .private_extern _p_316_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Func_2_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_bool_llvm
@@ -13554,7 +13612,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 7186
+.word 7124
 _p_317_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Func_2_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_bool_llvm:
 	.globl _p_317_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Func_2_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_bool_llvm
 .private_extern _p_317_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Func_2_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_bool_llvm
@@ -13565,7 +13623,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 7198
+.word 7136
 _p_318_plt_Microsoft_Maui_Controls_Xaml_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
 	.globl _p_318_plt_Microsoft_Maui_Controls_Xaml_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
 .private_extern _p_318_plt_Microsoft_Maui_Controls_Xaml_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
@@ -13576,7 +13634,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 7210
+.word 7148
 _p_319_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParsePropertyName_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_319_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParsePropertyName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_319_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParsePropertyName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -13587,7 +13645,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 7218
+.word 7156
 _p_320_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetValueNode_object_System_Xml_XmlReader_llvm:
 	.globl _p_320_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetValueNode_object_System_Xml_XmlReader_llvm
 .private_extern _p_320_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetValueNode_object_System_Xml_XmlReader_llvm
@@ -13598,7 +13656,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 7221
+.word 7159
 _p_321_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_321_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_321_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_System_Collections_Generic_KeyValuePair_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -13609,7 +13667,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 7230
+.word 7168
 _p_322_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlTypeXamlExtensions_GetTypeReference_System_Type_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_string_System_Func_2_System_ValueTuple_3_string_string_string_System_Type_llvm:
 	.globl _p_322_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlTypeXamlExtensions_GetTypeReference_System_Type_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_string_System_Func_2_System_ValueTuple_3_string_string_string_System_Type_llvm
 .private_extern _p_322_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlTypeXamlExtensions_GetTypeReference_System_Type_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_string_System_Func_2_System_ValueTuple_3_string_string_string_System_Type_llvm
@@ -13620,7 +13678,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 7247
+.word 7185
 _p_323_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_string_string_llvm:
 	.globl _p_323_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_string_string_llvm
 .private_extern _p_323_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string_string_string_string_llvm
@@ -13631,7 +13689,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 7259
+.word 7197
 _p_324_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_Microsoft_Maui_Controls_Xaml_XmlType_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_System_Func_2_Microsoft_Maui_Controls_Xaml_XmlType_System_Type_llvm:
 	.globl _p_324_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_Microsoft_Maui_Controls_Xaml_XmlType_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_System_Func_2_Microsoft_Maui_Controls_Xaml_XmlType_System_Type_llvm
 .private_extern _p_324_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Select_Microsoft_Maui_Controls_Xaml_XmlType_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_XmlType_System_Func_2_Microsoft_Maui_Controls_Xaml_XmlType_System_Type_llvm
@@ -13642,7 +13700,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 7264
+.word 7202
 _p_325_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes_llvm:
 	.globl _p_325_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes_llvm
 .private_extern _p_325_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes_llvm
@@ -13653,7 +13711,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 7276
+.word 7214
 _p_326_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsPublic_llvm:
 	.globl _p_326_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsPublic_llvm
 .private_extern _p_326_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsPublic_llvm
@@ -13664,7 +13722,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 7279
+.word 7217
 _p_327_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsNestedPublic_llvm:
 	.globl _p_327_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsNestedPublic_llvm
 .private_extern _p_327_plt_Microsoft_Maui_Controls_Xaml_System_Type_get_IsNestedPublic_llvm
@@ -13675,7 +13733,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 7284
+.word 7222
 _p_328_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_IsVisibleInternal_System_Reflection_Assembly_System_Reflection_Assembly_llvm:
 	.globl _p_328_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_IsVisibleInternal_System_Reflection_Assembly_System_Reflection_Assembly_llvm
 .private_extern _p_328_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_IsVisibleInternal_System_Reflection_Assembly_System_Reflection_Assembly_llvm
@@ -13686,7 +13744,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 7289
+.word 7227
 _p_329_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttributes_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Reflection_Assembly_llvm:
 	.globl _p_329_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttributes_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Reflection_Assembly_llvm
 .private_extern _p_329_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttributes_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Reflection_Assembly_llvm
@@ -13697,7 +13755,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 7292
+.word 7230
 _p_330_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Collections_Generic_IEnumerable_1_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Func_2_System_Runtime_CompilerServices_InternalsVisibleToAttribute_bool_llvm:
 	.globl _p_330_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Collections_Generic_IEnumerable_1_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Func_2_System_Runtime_CompilerServices_InternalsVisibleToAttribute_bool_llvm
 .private_extern _p_330_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Collections_Generic_IEnumerable_1_System_Runtime_CompilerServices_InternalsVisibleToAttribute_System_Func_2_System_Runtime_CompilerServices_InternalsVisibleToAttribute_bool_llvm
@@ -13708,7 +13766,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 7304
+.word 7242
 _p_331_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_Equals_object_llvm:
 	.globl _p_331_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_Equals_object_llvm
 .private_extern _p_331_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_Equals_object_llvm
@@ -13719,7 +13777,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 7316
+.word 7254
 _p_332_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseXmlns_string_string__string__string__string__llvm:
 	.globl _p_332_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseXmlns_string_string__string__string__string__llvm
 .private_extern _p_332_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseXmlns_string_string__string__string__string__llvm
@@ -13730,7 +13788,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 7319
+.word 7257
 _p_333_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseClrNamespace_string_string__string__string__string__llvm:
 	.globl _p_333_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseClrNamespace_string_string__string__string__string__llvm
 .private_extern _p_333_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseClrNamespace_string_string__string__string__string__llvm
@@ -13741,7 +13799,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 7322
+.word 7260
 _p_334_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseUsing_string_string__string__string__string__llvm:
 	.globl _p_334_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseUsing_string_string__string__string__string__llvm
 .private_extern _p_334_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlnsHelper_ParseUsing_string_string__string__string__string__llvm
@@ -13752,7 +13810,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 7325
+.word 7263
 _p_335_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object__ctor_llvm:
 	.globl _p_335_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object__ctor_llvm
 .private_extern _p_335_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object__ctor_llvm
@@ -13763,7 +13821,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 7328
+.word 7266
 _p_336_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IValueConverterProvider_Microsoft_Maui_Controls_Xaml_IValueConverterProvider_llvm:
 	.globl _p_336_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IValueConverterProvider_Microsoft_Maui_Controls_Xaml_IValueConverterProvider_llvm
 .private_extern _p_336_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IValueConverterProvider_Microsoft_Maui_Controls_Xaml_IValueConverterProvider_llvm
@@ -13774,7 +13832,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 7339
+.word 7277
 _p_337_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IXmlLineInfoProvider_Microsoft_Maui_Controls_Xaml_IXmlLineInfoProvider_llvm:
 	.globl _p_337_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IXmlLineInfoProvider_Microsoft_Maui_Controls_Xaml_IXmlLineInfoProvider_llvm
 .private_extern _p_337_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IXmlLineInfoProvider_Microsoft_Maui_Controls_Xaml_IXmlLineInfoProvider_llvm
@@ -13785,7 +13843,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 7342
+.word 7280
 _p_338_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver__ctor_System_Xml_IXmlNamespaceResolver_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_GetTypeFromXmlName_System_Reflection_Assembly_llvm:
 	.globl _p_338_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver__ctor_System_Xml_IXmlNamespaceResolver_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_GetTypeFromXmlName_System_Reflection_Assembly_llvm
 .private_extern _p_338_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver__ctor_System_Xml_IXmlNamespaceResolver_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_GetTypeFromXmlName_System_Reflection_Assembly_llvm
@@ -13796,7 +13854,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 7345
+.word 7283
 _p_339_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IXamlTypeResolver_Microsoft_Maui_Controls_Xaml_IXamlTypeResolver_llvm:
 	.globl _p_339_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IXamlTypeResolver_Microsoft_Maui_Controls_Xaml_IXamlTypeResolver_llvm
 .private_extern _p_339_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IXamlTypeResolver_Microsoft_Maui_Controls_Xaml_IXamlTypeResolver_llvm
@@ -13807,7 +13865,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 7348
+.word 7286
 _p_340_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IRootObjectProvider_Microsoft_Maui_Controls_Xaml_IRootObjectProvider_llvm:
 	.globl _p_340_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IRootObjectProvider_Microsoft_Maui_Controls_Xaml_IRootObjectProvider_llvm
 .private_extern _p_340_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IRootObjectProvider_Microsoft_Maui_Controls_Xaml_IRootObjectProvider_llvm
@@ -13818,7 +13876,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 7351
+.word 7289
 _p_341_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__ctor_object_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_object_llvm:
 	.globl _p_341_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__ctor_object_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_object_llvm
 .private_extern _p_341_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__ctor_object_Microsoft_Maui_Controls_Xaml_INode_Microsoft_Maui_Controls_Xaml_HydrationContext_object_llvm
@@ -13829,7 +13887,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 7354
+.word 7292
 _p_342_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IProvideValueTarget_Microsoft_Maui_Controls_Xaml_IProvideValueTarget_llvm:
 	.globl _p_342_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IProvideValueTarget_Microsoft_Maui_Controls_Xaml_IProvideValueTarget_llvm
 .private_extern _p_342_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_set_IProvideValueTarget_Microsoft_Maui_Controls_Xaml_IProvideValueTarget_llvm
@@ -13840,7 +13898,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 7357
+.word 7295
 _p_343_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_GetService_System_Type_llvm:
 	.globl _p_343_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_GetService_System_Type_llvm
 .private_extern _p_343_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider_GetService_System_Type_llvm
@@ -13851,7 +13909,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 7360
+.word 7298
 _p_344_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_set_Item_System_Type_object_llvm:
 	.globl _p_344_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_set_Item_System_Type_object_llvm
 .private_extern _p_344_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_set_Item_System_Type_object_llvm
@@ -13862,7 +13920,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 7363
+.word 7301
 _p_345_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_TryGetValue_System_Type_object__llvm:
 	.globl _p_345_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_TryGetValue_System_Type_object__llvm
 .private_extern _p_345_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_TryGetValue_System_Type_object__llvm
@@ -13873,7 +13931,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 7374
+.word 7312
 _p_346_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_Add_System_Type_object_llvm:
 	.globl _p_346_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_Add_System_Type_object_llvm
 .private_extern _p_346_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_System_Type_object_Add_System_Type_object_llvm
@@ -13884,7 +13942,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 7385
+.word 7323
 _p_347_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__Microsoft_Maui_Controls_Xaml_IProvideParentValues_get_ParentObjectsd__15__ctor_int_llvm:
 	.globl _p_347_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__Microsoft_Maui_Controls_Xaml_IProvideParentValues_get_ParentObjectsd__15__ctor_int_llvm
 .private_extern _p_347_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__Microsoft_Maui_Controls_Xaml_IProvideParentValues_get_ParentObjectsd__15__ctor_int_llvm
@@ -13895,7 +13953,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 7396
+.word 7334
 _p_348_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_SimpleValueTargetProvider__ctor_object___object_Microsoft_Maui_Controls_Internals_INameScope___bool_llvm:
 	.globl _p_348_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_SimpleValueTargetProvider__ctor_object___object_Microsoft_Maui_Controls_Internals_INameScope___bool_llvm
 .private_extern _p_348_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_SimpleValueTargetProvider__ctor_object___object_Microsoft_Maui_Controls_Internals_INameScope___bool_llvm
@@ -13906,7 +13964,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 7399
+.word 7337
 _p_349_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_Resolve_string_System_IServiceProvider_Microsoft_Maui_Controls_Xaml_XamlParseException__llvm:
 	.globl _p_349_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_Resolve_string_System_IServiceProvider_Microsoft_Maui_Controls_Xaml_XamlParseException__llvm
 .private_extern _p_349_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_Resolve_string_System_IServiceProvider_Microsoft_Maui_Controls_Xaml_XamlParseException__llvm
@@ -13917,7 +13975,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 7402
+.word 7340
 _p_350_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_ParseSingle_string_System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm:
 	.globl _p_350_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_ParseSingle_string_System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm
 .private_extern _p_350_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_TypeArgumentsParser_ParseSingle_string_System_Xml_IXmlNamespaceResolver_System_Xml_IXmlLineInfo_llvm
@@ -13928,7 +13986,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 7405
+.word 7343
 _p_351_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string_TryGetValue_string_string__llvm:
 	.globl _p_351_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string_TryGetValue_string_string__llvm
 .private_extern _p_351_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string_TryGetValue_string_string__llvm
@@ -13939,7 +13997,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 7408
+.word 7346
 _p_352_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string_Add_string_string_llvm:
 	.globl _p_352_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string_Add_string_string_llvm
 .private_extern _p_352_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string_Add_string_string_llvm
@@ -13950,7 +14008,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 7419
+.word 7357
 _p_353_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IEqualityComparer_1_string_llvm:
 	.globl _p_353_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IEqualityComparer_1_string_llvm
 .private_extern _p_353_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IEqualityComparer_1_string_llvm
@@ -13961,7 +14019,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 7430
+.word 7368
 _p_354_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_get_IsEnabled_llvm:
 	.globl _p_354_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_get_IsEnabled_llvm
 .private_extern _p_354_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_get_IsEnabled_llvm
@@ -13972,7 +14030,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 7441
+.word 7379
 _p_355_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Diagnostics_StaticResourceResolvedEventArgs__ctor_Microsoft_Maui_Controls_ResourceDictionary_string_object_object_llvm:
 	.globl _p_355_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Diagnostics_StaticResourceResolvedEventArgs__ctor_Microsoft_Maui_Controls_ResourceDictionary_string_object_object_llvm
 .private_extern _p_355_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Diagnostics_StaticResourceResolvedEventArgs__ctor_Microsoft_Maui_Controls_ResourceDictionary_string_object_object_llvm
@@ -13983,7 +14041,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 7446
+.word 7384
 _p_356_plt_Microsoft_Maui_Controls_Xaml_System_Delegate_Combine_System_Delegate_System_Delegate_llvm:
 	.globl _p_356_plt_Microsoft_Maui_Controls_Xaml_System_Delegate_Combine_System_Delegate_System_Delegate_llvm
 .private_extern _p_356_plt_Microsoft_Maui_Controls_Xaml_System_Delegate_Combine_System_Delegate_System_Delegate_llvm
@@ -13994,7 +14052,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 7449
+.word 7387
 _p_357_plt_Microsoft_Maui_Controls_Xaml_System_Delegate_Remove_System_Delegate_System_Delegate_llvm:
 	.globl _p_357_plt_Microsoft_Maui_Controls_Xaml_System_Delegate_Remove_System_Delegate_System_Delegate_llvm
 .private_extern _p_357_plt_Microsoft_Maui_Controls_Xaml_System_Delegate_Remove_System_Delegate_System_Delegate_llvm
@@ -14005,7 +14063,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 7454
+.word 7392
 _p_358_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeData_get_AttributeType_llvm:
 	.globl _p_358_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeData_get_AttributeType_llvm
 .private_extern _p_358_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeData_get_AttributeType_llvm
@@ -14016,7 +14074,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 7459
+.word 7397
 _p_359_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Contains_string_System_Collections_Generic_IEnumerable_1_string_string_llvm:
 	.globl _p_359_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Contains_string_System_Collections_Generic_IEnumerable_1_string_string_llvm
 .private_extern _p_359_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Contains_string_System_Collections_Generic_IEnumerable_1_string_string_llvm
@@ -14027,7 +14085,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 7464
+.word 7402
 _p_360_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_EventInfo_get_AddMethod_llvm:
 	.globl _p_360_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_EventInfo_get_AddMethod_llvm
 .private_extern _p_360_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_EventInfo_get_AddMethod_llvm
@@ -14038,7 +14096,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 7476
+.word 7414
 _p_361_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeMethod_System_Type_string_System_Type___llvm:
 	.globl _p_361_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeMethod_System_Type_string_System_Type___llvm
 .private_extern _p_361_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_RuntimeReflectionExtensions_GetRuntimeMethod_System_Type_string_System_Type___llvm
@@ -14049,7 +14107,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 7481
+.word 7419
 _p_362_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_HydrationContext__ctor_llvm:
 	.globl _p_362_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_HydrationContext__ctor_llvm
 .private_extern _p_362_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_HydrationContext__ctor_llvm
@@ -14060,7 +14118,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 7486
+.word 7424
 _p_363_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_All_System_Reflection_ParameterInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ParameterInfo_System_Func_2_System_Reflection_ParameterInfo_bool_llvm:
 	.globl _p_363_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_All_System_Reflection_ParameterInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ParameterInfo_System_Func_2_System_Reflection_ParameterInfo_bool_llvm
 .private_extern _p_363_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_All_System_Reflection_ParameterInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ParameterInfo_System_Func_2_System_Reflection_ParameterInfo_bool_llvm
@@ -14071,7 +14129,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 7488
+.word 7426
 _p_364_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm:
 	.globl _p_364_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
 .private_extern _p_364_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
@@ -14082,7 +14140,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 7500
+.word 7438
 _p_365_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseName_string_llvm:
 	.globl _p_365_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseName_string_llvm
 .private_extern _p_365_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_MarkupExpressionParser_ParseName_string_llvm
@@ -14093,7 +14151,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 7512
+.word 7450
 _p_366_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_366_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_366_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_AddWithResize_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -14104,7 +14162,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 7520
+.word 7458
 _p_367_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_TryResolve_Microsoft_Maui_Controls_Xaml_XmlType_System_Type__llvm:
 	.globl _p_367_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_TryResolve_Microsoft_Maui_Controls_Xaml_XmlType_System_Type__llvm
 .private_extern _p_367_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlTypeResolver_TryResolve_Microsoft_Maui_Controls_Xaml_XmlType_System_Type__llvm
@@ -14115,7 +14173,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 7537
+.word 7475
 _p_368_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm:
 	.globl _p_368_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
 .private_extern _p_368_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
@@ -14126,7 +14184,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 7540
+.word 7478
 _p_369_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm:
 	.globl _p_369_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
 .private_extern _p_369_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_MoveNext_llvm
@@ -14137,7 +14195,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 7551
+.word 7489
 _p_370_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsStatic_llvm:
 	.globl _p_370_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsStatic_llvm
 .private_extern _p_370_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_FieldInfo_get_IsStatic_llvm
@@ -14148,7 +14206,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 7562
+.word 7500
 _p_371_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RootNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_System_Xml_IXmlNamespaceResolver_int_int_llvm:
 	.globl _p_371_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RootNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_System_Xml_IXmlNamespaceResolver_int_int_llvm
 .private_extern _p_371_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RootNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_System_Xml_IXmlNamespaceResolver_int_int_llvm
@@ -14159,7 +14217,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 7567
+.word 7505
 _p_372_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetType_string_llvm:
 	.globl _p_372_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetType_string_llvm
 .private_extern _p_372_plt_Microsoft_Maui_Controls_Xaml_System_Type_GetType_string_llvm
@@ -14170,7 +14228,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 7570
+.word 7508
 _p_373_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_IsPublicOrVisibleInternal_System_Type_System_Reflection_Assembly_llvm:
 	.globl _p_373_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_IsPublicOrVisibleInternal_System_Type_System_Reflection_Assembly_llvm
 .private_extern _p_373_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_IsPublicOrVisibleInternal_System_Type_System_Reflection_Assembly_llvm
@@ -14181,7 +14239,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 7575
+.word 7513
 _p_374_plt_Microsoft_Maui_Controls_Xaml_System_Environment_get_CurrentManagedThreadId_llvm:
 	.globl _p_374_plt_Microsoft_Maui_Controls_Xaml_System_Environment_get_CurrentManagedThreadId_llvm
 .private_extern _p_374_plt_Microsoft_Maui_Controls_Xaml_System_Environment_get_CurrentManagedThreadId_llvm
@@ -14192,7 +14250,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 7578
+.word 7516
 _p_375_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__Microsoft_Maui_Controls_Xaml_IProvideParentValues_get_ParentObjectsd__15_System_Collections_Generic_IEnumerable_System_Object_GetEnumerator_llvm:
 	.globl _p_375_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__Microsoft_Maui_Controls_Xaml_IProvideParentValues_get_ParentObjectsd__15_System_Collections_Generic_IEnumerable_System_Object_GetEnumerator_llvm
 .private_extern _p_375_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Internals_XamlValueTargetProvider__Microsoft_Maui_Controls_Xaml_IProvideParentValues_get_ParentObjectsd__15_System_Collections_Generic_IEnumerable_System_Object_GetEnumerator_llvm
@@ -14203,7 +14261,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 7583
+.word 7521
 _p_376_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_thread_interruption_checkpoint_llvm:
 	.globl _p_376_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_thread_interruption_checkpoint_llvm
 .private_extern _p_376_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_thread_interruption_checkpoint_llvm
@@ -14214,7 +14272,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 7586
+.word 7524
 _p_377_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_rethrow_exception_llvm:
 	.globl _p_377_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_rethrow_exception_llvm
 .private_extern _p_377_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_rethrow_exception_llvm
@@ -14225,7 +14283,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 7589
+.word 7527
 _p_378_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm:
 	.globl _p_378_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
 .private_extern _p_378_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
@@ -14236,7 +14294,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 7591
+.word 7529
 _p_379_plt_Microsoft_Maui_Controls_Xaml_System_Array_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName___Microsoft_Maui_Controls_Xaml_XmlName_int_int_llvm:
 	.globl _p_379_plt_Microsoft_Maui_Controls_Xaml_System_Array_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName___Microsoft_Maui_Controls_Xaml_XmlName_int_int_llvm
 .private_extern _p_379_plt_Microsoft_Maui_Controls_Xaml_System_Array_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName___Microsoft_Maui_Controls_Xaml_XmlName_int_int_llvm
@@ -14247,7 +14305,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 7596
+.word 7534
 _p_380_plt_Microsoft_Maui_Controls_Xaml_System_Array_GetLowerBound_int_llvm:
 	.globl _p_380_plt_Microsoft_Maui_Controls_Xaml_System_Array_GetLowerBound_int_llvm
 .private_extern _p_380_plt_Microsoft_Maui_Controls_Xaml_System_Array_GetLowerBound_int_llvm
@@ -14258,7 +14316,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 7611
+.word 7549
 _p_381_plt_Microsoft_Maui_Controls_Xaml_System_Array_Copy_System_Array_int_System_Array_int_int_llvm:
 	.globl _p_381_plt_Microsoft_Maui_Controls_Xaml_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
 .private_extern _p_381_plt_Microsoft_Maui_Controls_Xaml_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
@@ -14269,7 +14327,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 7616
+.word 7554
 _p_382_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm:
 	.globl _p_382_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm
 .private_extern _p_382_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm
@@ -14280,7 +14338,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 7621
+.word 7559
 _p_383_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_383_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_383_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -14291,7 +14349,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 7626
+.word 7564
 _p_384_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm:
 	.globl _p_384_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm
 .private_extern _p_384_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm
@@ -14302,7 +14360,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 7641
+.word 7579
 _p_385_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm:
 	.globl _p_385_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
 .private_extern _p_385_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
@@ -14313,7 +14371,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 7646
+.word 7584
 _p_386_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm:
 	.globl _p_386_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
 .private_extern _p_386_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
@@ -14324,7 +14382,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 7651
+.word 7589
 _p_387_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_Argument_IncompatibleArrayType_llvm:
 	.globl _p_387_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_Argument_IncompatibleArrayType_llvm
 .private_extern _p_387_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_Argument_IncompatibleArrayType_llvm
@@ -14335,7 +14393,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 7666
+.word 7604
 _p_388_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CopyTo_Microsoft_Maui_Controls_Xaml_XmlName___int_llvm:
 	.globl _p_388_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CopyTo_Microsoft_Maui_Controls_Xaml_XmlName___int_llvm
 .private_extern _p_388_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_KeyCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CopyTo_Microsoft_Maui_Controls_Xaml_XmlName___int_llvm
@@ -14346,7 +14404,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 7671
+.word 7609
 _p_389_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_389_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_389_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -14357,7 +14415,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 7686
+.word 7624
 _p_390_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_ContainsValue_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_390_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_ContainsValue_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_390_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_ContainsValue_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -14368,7 +14426,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 7701
+.word 7639
 _p_391_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm:
 	.globl _p_391_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
 .private_extern _p_391_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_GetEnumerator_llvm
@@ -14379,7 +14437,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 7718
+.word 7656
 _p_392_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CopyTo_Microsoft_Maui_Controls_Xaml_INode___int_llvm:
 	.globl _p_392_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CopyTo_Microsoft_Maui_Controls_Xaml_INode___int_llvm
 .private_extern _p_392_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_ValueCollection_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CopyTo_Microsoft_Maui_Controls_Xaml_INode___int_llvm
@@ -14390,7 +14448,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 7733
+.word 7671
 _p_393_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm:
 	.globl _p_393_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm
 .private_extern _p_393_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm
@@ -14401,7 +14459,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 7748
+.word 7686
 _p_394_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm:
 	.globl _p_394_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm
 .private_extern _p_394_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm
@@ -14412,7 +14470,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 7753
+.word 7691
 _p_395_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_MoveNextRare_llvm:
 	.globl _p_395_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_MoveNextRare_llvm
 .private_extern _p_395_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_MoveNextRare_llvm
@@ -14423,7 +14481,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 7758
+.word 7696
 _p_396_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Equals_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_396_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Equals_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_396_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Equals_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -14434,7 +14492,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 7775
+.word 7713
 _p_397_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_INode_CreateComparer_llvm:
 	.globl _p_397_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_INode_CreateComparer_llvm
 .private_extern _p_397_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_INode_CreateComparer_llvm
@@ -14445,7 +14503,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 7799
+.word 7737
 _p_398_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_CreateComparer_llvm:
 	.globl _p_398_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_CreateComparer_llvm
 .private_extern _p_398_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_CreateComparer_llvm
@@ -14456,7 +14514,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 7814
+.word 7752
 _p_399_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_TupleIncorrectType_object_llvm:
 	.globl _p_399_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_TupleIncorrectType_object_llvm
 .private_extern _p_399_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentException_TupleIncorrectType_object_llvm
@@ -14467,7 +14525,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 7829
+.word 7767
 _p_400_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CompareTo_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_400_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CompareTo_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_400_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_CompareTo_System_ValueTuple_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -14478,7 +14536,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 7834
+.word 7772
 _p_401_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_XmlName_get_Default_llvm:
 	.globl _p_401_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_XmlName_get_Default_llvm
 .private_extern _p_401_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_XmlName_get_Default_llvm
@@ -14489,7 +14547,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 7851
+.word 7789
 _p_402_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_INode_get_Default_llvm:
 	.globl _p_402_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_INode_get_Default_llvm
 .private_extern _p_402_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_INode_get_Default_llvm
@@ -14500,7 +14558,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 7873
+.word 7811
 _p_403_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_GetHashCode_llvm:
 	.globl _p_403_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_GetHashCode_llvm
 .private_extern _p_403_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlName_GetHashCode_llvm
@@ -14511,7 +14569,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 7888
+.word 7826
 _p_404_plt_Microsoft_Maui_Controls_Xaml_System_HashCode_Combine_int_int_int_int_llvm:
 	.globl _p_404_plt_Microsoft_Maui_Controls_Xaml_System_HashCode_Combine_int_int_int_int_llvm
 .private_extern _p_404_plt_Microsoft_Maui_Controls_Xaml_System_HashCode_Combine_int_int_int_int_llvm
@@ -14522,7 +14580,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 7900
+.word 7838
 _p_405_plt_Microsoft_Maui_Controls_Xaml_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm:
 	.globl _p_405_plt_Microsoft_Maui_Controls_Xaml_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
 .private_extern _p_405_plt_Microsoft_Maui_Controls_Xaml_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
@@ -14533,7 +14591,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 7916
+.word 7854
 _p_406_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string___llvm:
 	.globl _p_406_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string___llvm
 .private_extern _p_406_plt_Microsoft_Maui_Controls_Xaml_string_Concat_string___llvm
@@ -14544,7 +14602,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 7925
+.word 7863
 _p_407_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_string_new_wrapper_internal_llvm:
 	.globl _p_407_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_string_new_wrapper_internal_llvm
 .private_extern _p_407_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_string_new_wrapper_internal_llvm
@@ -14555,7 +14613,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 7930
+.word 7868
 _p_408_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_get_addr_compiled_method_llvm:
 	.globl _p_408_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_get_addr_compiled_method_llvm
 .private_extern _p_408_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_get_addr_compiled_method_llvm
@@ -14566,7 +14624,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 7933
+.word 7871
 _p_409_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_delegate_begin_invoke_llvm:
 	.globl _p_409_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_delegate_begin_invoke_llvm
 .private_extern _p_409_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_delegate_begin_invoke_llvm
@@ -14577,7 +14635,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 7936
+.word 7874
 _p_410_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_delegate_end_invoke_llvm:
 	.globl _p_410_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_delegate_end_invoke_llvm
 .private_extern _p_410_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_delegate_end_invoke_llvm
@@ -14588,7 +14646,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 7939
+.word 7877
 _p_411_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_string_to_utf8str_llvm:
 	.globl _p_411_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_string_to_utf8str_llvm
 .private_extern _p_411_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_string_to_utf8str_llvm
@@ -14599,7 +14657,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 7942
+.word 7880
 _p_412_plt_Microsoft_Maui_Controls_Xaml__jit_icall_monoeg_g_free_llvm:
 	.globl _p_412_plt_Microsoft_Maui_Controls_Xaml__jit_icall_monoeg_g_free_llvm
 .private_extern _p_412_plt_Microsoft_Maui_Controls_Xaml__jit_icall_monoeg_g_free_llvm
@@ -14610,7 +14668,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 7945
+.word 7883
 _p_413_plt_Microsoft_Maui_Controls_Xaml__jit_icall_ves_icall_string_new_wrapper_llvm:
 	.globl _p_413_plt_Microsoft_Maui_Controls_Xaml__jit_icall_ves_icall_string_new_wrapper_llvm
 .private_extern _p_413_plt_Microsoft_Maui_Controls_Xaml__jit_icall_ves_icall_string_new_wrapper_llvm
@@ -14621,7 +14679,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 7947
+.word 7885
 _p_414_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Maui_IApplication_TApp_REF_Microsoft_Extensions_DependencyInjection_IServiceCollection_llvm:
 	.globl _p_414_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Maui_IApplication_TApp_REF_Microsoft_Extensions_DependencyInjection_IServiceCollection_llvm
 .private_extern _p_414_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Maui_IApplication_TApp_REF_Microsoft_Extensions_DependencyInjection_IServiceCollection_llvm
@@ -14632,7 +14690,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 7957
+.word 7895
 _p_415_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_SetupDefaults_Microsoft_Maui_Hosting_MauiAppBuilder_llvm:
 	.globl _p_415_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_SetupDefaults_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
 .private_extern _p_415_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Hosting_AppHostBuilderExtensions_SetupDefaults_Microsoft_Maui_Hosting_MauiAppBuilder_llvm
@@ -14643,7 +14701,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 7971
+.word 7910
 _p_416_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowIfNull_object_string_llvm:
 	.globl _p_416_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowIfNull_object_string_llvm
 .private_extern _p_416_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowIfNull_object_string_llvm
@@ -14654,7 +14712,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 7976
+.word 7915
 _p_417_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Type_System_Type_llvm:
 	.globl _p_417_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Type_System_Type_llvm
 .private_extern _p_417_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Type_System_Type_llvm
@@ -14665,7 +14723,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 7981
+.word 7920
 _p_418_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Maui_IApplication_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Func_2_System_IServiceProvider_Microsoft_Maui_IApplication_llvm:
 	.globl _p_418_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Maui_IApplication_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Func_2_System_IServiceProvider_Microsoft_Maui_IApplication_llvm
 .private_extern _p_418_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Extensions_DependencyInjection_Extensions_ServiceCollectionDescriptorExtensions_TryAddSingleton_Microsoft_Maui_IApplication_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Func_2_System_IServiceProvider_Microsoft_Maui_IApplication_llvm
@@ -14676,7 +14734,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 7990
+.word 7929
 _p_419_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_419_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_419_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -14687,7 +14745,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 8004
+.word 7944
 _p_420_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_FindValue_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_420_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_FindValue_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_420_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_FindValue_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -14698,7 +14756,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 8021
+.word 7961
 _p_421_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowKeyNotFoundException_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_421_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowKeyNotFoundException_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_421_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowKeyNotFoundException_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -14709,7 +14767,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 8038
+.word 7978
 _p_422_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_int_llvm:
 	.globl _p_422_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_int_llvm
 .private_extern _p_422_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_int_llvm
@@ -14720,7 +14778,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 8054
+.word 7994
 _p_423_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_gc_wbarrier_range_copy_llvm:
 	.globl _p_423_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_gc_wbarrier_range_copy_llvm
 .private_extern _p_423_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_gc_wbarrier_range_copy_llvm
@@ -14731,7 +14789,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 8071
+.word 8011
 _p_424_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_Grow_int_llvm:
 	.globl _p_424_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_Grow_int_llvm
 .private_extern _p_424_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_Grow_int_llvm
@@ -14742,7 +14800,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 8074
+.word 8014
 _p_425_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_TryInsert_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_InsertionBehavior_llvm:
 	.globl _p_425_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_TryInsert_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_InsertionBehavior_llvm
 .private_extern _p_425_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_TryInsert_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_InsertionBehavior_llvm
@@ -14753,7 +14811,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 8091
+.word 8031
 _p_426_plt_Microsoft_Maui_Controls_Xaml_System_Array_Clear_System_Array_llvm:
 	.globl _p_426_plt_Microsoft_Maui_Controls_Xaml_System_Array_Clear_System_Array_llvm
 .private_extern _p_426_plt_Microsoft_Maui_Controls_Xaml_System_Array_Clear_System_Array_llvm
@@ -14764,7 +14822,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 8108
+.word 8048
 _p_427_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm:
 	.globl _p_427_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm
 .private_extern _p_427_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm
@@ -14775,7 +14833,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 8113
+.word 8053
 _p_428_plt_Microsoft_Maui_Controls_Xaml_System_RuntimeType_CreateInstanceOfT_llvm:
 	.globl _p_428_plt_Microsoft_Maui_Controls_Xaml_System_RuntimeType_CreateInstanceOfT_llvm
 .private_extern _p_428_plt_Microsoft_Maui_Controls_Xaml_System_RuntimeType_CreateInstanceOfT_llvm
@@ -14786,7 +14844,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 8118
+.word 8058
 _p_429_plt_Microsoft_Maui_Controls_Xaml_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
 	.globl _p_429_plt_Microsoft_Maui_Controls_Xaml_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
 .private_extern _p_429_plt_Microsoft_Maui_Controls_Xaml_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
@@ -14797,7 +14855,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 8123
+.word 8063
 _p_430_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_int_System_Collections_Generic_IEqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_430_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_int_System_Collections_Generic_IEqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_430_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode__ctor_int_System_Collections_Generic_IEqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -14808,7 +14866,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 8131
+.word 8071
 _p_431_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName__ctor_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_431_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName__ctor_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_431_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_Xaml_XmlName__ctor_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -14819,7 +14877,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 8148
+.word 8088
 _p_432_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName___Microsoft_Maui_Controls_Xaml_XmlName_int_int_llvm:
 	.globl _p_432_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName___Microsoft_Maui_Controls_Xaml_XmlName_int_int_llvm
 .private_extern _p_432_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_EqualityComparer_1_Microsoft_Maui_Controls_Xaml_XmlName_IndexOf_Microsoft_Maui_Controls_Xaml_XmlName___Microsoft_Maui_Controls_Xaml_XmlName_int_int_llvm
@@ -14830,7 +14888,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 8165
+.word 8105
 _p_433_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm:
 	.globl _p_433_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
 .private_extern _p_433_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
@@ -14841,7 +14899,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 8200
+.word 8140
 _p_434_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm:
 	.globl _p_434_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
 .private_extern _p_434_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
@@ -14852,7 +14910,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 8236
+.word 8176
 _p_435_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
 	.globl _p_435_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
 .private_extern _p_435_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
@@ -14863,7 +14921,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 8252
+.word 8192
 _p_436_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm:
 	.globl _p_436_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
 .private_extern _p_436_plt_Microsoft_Maui_Controls_Xaml_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
@@ -14874,7 +14932,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 8286
+.word 8226
 _p_437_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm:
 	.globl _p_437_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm
 .private_extern _p_437_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm
@@ -14885,7 +14943,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 8302
+.word 8242
 _p_438_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm:
 	.globl _p_438_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm
 .private_extern _p_438_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm
@@ -14896,7 +14954,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 8307
+.word 8247
 _p_439_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm:
 	.globl _p_439_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm
 .private_extern _p_439_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm
@@ -14907,7 +14965,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 8312
+.word 8252
 _p_440_plt_Microsoft_Maui_Controls_Xaml_System_SZGenericArrayEnumerator_1_Microsoft_Maui_Controls_Xaml_XmlName_get_Current_llvm:
 	.globl _p_440_plt_Microsoft_Maui_Controls_Xaml_System_SZGenericArrayEnumerator_1_Microsoft_Maui_Controls_Xaml_XmlName_get_Current_llvm
 .private_extern _p_440_plt_Microsoft_Maui_Controls_Xaml_System_SZGenericArrayEnumerator_1_Microsoft_Maui_Controls_Xaml_XmlName_get_Current_llvm
@@ -14918,7 +14976,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 8317
+.word 8257
 _p_441_plt_Microsoft_Maui_Controls_Xaml_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm:
 	.globl _p_441_plt_Microsoft_Maui_Controls_Xaml_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
 .private_extern _p_441_plt_Microsoft_Maui_Controls_Xaml_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
@@ -14929,7 +14987,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 8332
+.word 8272
 _p_442_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_XmlName_CreateComparer_llvm:
 	.globl _p_442_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_XmlName_CreateComparer_llvm
 .private_extern _p_442_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Comparer_1_Microsoft_Maui_Controls_Xaml_XmlName_CreateComparer_llvm
@@ -14940,7 +14998,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 8337
+.word 8277
 _p_443_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_GetKeyNotFoundException_object_llvm:
 	.globl _p_443_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_GetKeyNotFoundException_object_llvm
 .private_extern _p_443_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_GetKeyNotFoundException_object_llvm
@@ -14951,7 +15009,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 8352
+.word 8292
 _p_444_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_set_Capacity_int_llvm:
 	.globl _p_444_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_set_Capacity_int_llvm
 .private_extern _p_444_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_Xaml_XmlName_set_Capacity_int_llvm
@@ -14962,7 +15020,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 8357
+.word 8297
 _p_445_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Resize_int_bool_llvm:
 	.globl _p_445_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Resize_int_bool_llvm
 .private_extern _p_445_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Resize_int_bool_llvm
@@ -14973,7 +15031,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 8374
+.word 8314
 _p_446_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Resize_llvm:
 	.globl _p_446_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Resize_llvm
 .private_extern _p_446_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Resize_llvm
@@ -14984,7 +15042,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 8391
+.word 8331
 _p_447_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm:
 	.globl _p_447_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
 .private_extern _p_447_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_XmlName_llvm
@@ -14995,7 +15053,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 8408
+.word 8348
 _p_448_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Initialize_int_llvm:
 	.globl _p_448_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Initialize_int_llvm
 .private_extern _p_448_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_Initialize_int_llvm
@@ -15006,7 +15064,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 8424
+.word 8364
 _p_449_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm:
 	.globl _p_449_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm
 .private_extern _p_449_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm
@@ -15017,7 +15075,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 8441
+.word 8381
 _p_450_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
 	.globl _p_450_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
 .private_extern _p_450_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
@@ -15028,7 +15086,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 8446
+.word 8386
 _p_451_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Comparer_Compare_object_object_llvm:
 	.globl _p_451_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Comparer_Compare_object_object_llvm
 .private_extern _p_451_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Comparer_Compare_object_object_llvm
@@ -15039,7 +15097,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 8451
+.word 8391
 _p_452_plt_Microsoft_Maui_Controls_Xaml_System_Array_Copy_System_Array_System_Array_int_llvm:
 	.globl _p_452_plt_Microsoft_Maui_Controls_Xaml_System_Array_Copy_System_Array_System_Array_int_llvm
 .private_extern _p_452_plt_Microsoft_Maui_Controls_Xaml_System_Array_Copy_System_Array_System_Array_int_llvm
@@ -15050,7 +15108,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 8456
+.word 8396
 _p_453_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm:
 	.globl _p_453_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
 .private_extern _p_453_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
@@ -15061,7 +15119,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 8461
+.word 8401
 _p_454_plt_Microsoft_Maui_Controls_Xaml_System_Collections_HashHelpers_GetPrime_int_llvm:
 	.globl _p_454_plt_Microsoft_Maui_Controls_Xaml_System_Collections_HashHelpers_GetPrime_int_llvm
 .private_extern _p_454_plt_Microsoft_Maui_Controls_Xaml_System_Collections_HashHelpers_GetPrime_int_llvm
@@ -15072,7 +15130,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 8466
+.word 8406
 _p_455_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_GetAddingDuplicateWithKeyArgumentException_object_llvm:
 	.globl _p_455_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_GetAddingDuplicateWithKeyArgumentException_object_llvm
 .private_extern _p_455_plt_Microsoft_Maui_Controls_Xaml_System_ThrowHelper_GetAddingDuplicateWithKeyArgumentException_object_llvm
@@ -15083,7 +15141,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 8471
+.word 8411
 _p_456_plt_Microsoft_Maui_Controls_Xaml_System_Collections_HashHelpers_ExpandPrime_int_llvm:
 	.globl _p_456_plt_Microsoft_Maui_Controls_Xaml_System_Collections_HashHelpers_ExpandPrime_int_llvm
 .private_extern _p_456_plt_Microsoft_Maui_Controls_Xaml_System_Collections_HashHelpers_ExpandPrime_int_llvm
@@ -15094,7 +15152,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 8476
+.word 8416
 _p_457_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_IsXaml2009LanguagePrimitive_Microsoft_Maui_Controls_Xaml_IElementNode_llvm:
 	.globl _p_457_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_IsXaml2009LanguagePrimitive_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
 .private_extern _p_457_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_IsXaml2009LanguagePrimitive_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
@@ -15105,7 +15163,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 8481
+.word 8421
 _p_458_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateLanguagePrimitive_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm:
 	.globl _p_458_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateLanguagePrimitive_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
 .private_extern _p_458_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateLanguagePrimitive_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
@@ -15116,7 +15174,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 8483
+.word 8423
 _p_459_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateFromFactory_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm:
 	.globl _p_459_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateFromFactory_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
 .private_extern _p_459_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateFromFactory_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
@@ -15127,7 +15185,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 8485
+.word 8425
 _p_460_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_ConstructorInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ConstructorInfo_System_Func_2_System_Reflection_ConstructorInfo_bool_llvm:
 	.globl _p_460_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_ConstructorInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ConstructorInfo_System_Func_2_System_Reflection_ConstructorInfo_bool_llvm
 .private_extern _p_460_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_System_Reflection_ConstructorInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_ConstructorInfo_System_Func_2_System_Reflection_ConstructorInfo_bool_llvm
@@ -15138,7 +15196,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 8487
+.word 8427
 _p_461_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_ValidateCtorArguments_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_string__llvm:
 	.globl _p_461_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_ValidateCtorArguments_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_string__llvm
 .private_extern _p_461_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_ValidateCtorArguments_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_string__llvm
@@ -15149,7 +15207,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 8499
+.word 8439
 _p_462_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateFromParameterizedConstructor_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm:
 	.globl _p_462_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateFromParameterizedConstructor_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
 .private_extern _p_462_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_CreateFromParameterizedConstructor_System_Type_Microsoft_Maui_Controls_Xaml_IElementNode_llvm
@@ -15160,7 +15218,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 8501
+.word 8441
 _p_463_plt_Microsoft_Maui_Controls_Xaml_System_Buffer_Memmove_byte__byte__uintptr_llvm:
 	.globl _p_463_plt_Microsoft_Maui_Controls_Xaml_System_Buffer_Memmove_byte__byte__uintptr_llvm
 .private_extern _p_463_plt_Microsoft_Maui_Controls_Xaml_System_Buffer_Memmove_byte__byte__uintptr_llvm
@@ -15171,7 +15229,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 8503
+.word 8443
 _p_464_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DataTemplate__ctor_llvm:
 	.globl _p_464_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DataTemplate__ctor_llvm
 .private_extern _p_464_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_DataTemplate__ctor_llvm
@@ -15182,7 +15240,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 8508
+.word 8448
 _p_465_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_465_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_465_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_Any_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -15193,7 +15251,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 8513
+.word 8453
 _p_466_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_466_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_466_plt_Microsoft_Maui_Controls_Xaml_System_Linq_Enumerable_First_Microsoft_Maui_Controls_Xaml_INode_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -15204,7 +15262,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 8525
+.word 8465
 _p_467_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_bool_llvm:
 	.globl _p_467_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_bool_llvm
 .private_extern _p_467_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_bool_llvm
@@ -15215,7 +15273,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 8537
+.word 8477
 _p_468_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_get_Values_llvm:
 	.globl _p_468_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_get_Values_llvm
 .private_extern _p_468_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Controls_Xaml_XmlName_Microsoft_Maui_Controls_Xaml_INode_get_Values_llvm
@@ -15226,7 +15284,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 8539
+.word 8479
 _p_469_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_throw_corlib_exception_llvm:
 	.globl _p_469_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_throw_corlib_exception_llvm
 .private_extern _p_469_plt_Microsoft_Maui_Controls_Xaml__jit_icall_mono_arch_throw_corlib_exception_llvm
@@ -15237,7 +15295,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 8550
+.word 8490
 _p_470_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_IsXNameProperty_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_470_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_IsXNameProperty_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_470_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_IsXNameProperty_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -15248,7 +15306,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 8552
+.word 8492
 _p_471_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Element_set_StyleId_string_llvm:
 	.globl _p_471_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Element_set_StyleId_string_llvm
 .private_extern _p_471_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Element_set_StyleId_string_llvm
@@ -15259,7 +15317,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 8555
+.word 8495
 _p_472_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_T_REF_llvm:
 	.globl _p_472_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_T_REF_llvm
 .private_extern _p_472_plt_Microsoft_Maui_Controls_Xaml_System_Activator_CreateInstance_T_REF_llvm
@@ -15270,7 +15328,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 8560
+.word 8500
 _p_473_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetResourceIdForPath_System_Reflection_Assembly_string_llvm:
 	.globl _p_473_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetResourceIdForPath_System_Reflection_Assembly_string_llvm
 .private_extern _p_473_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetResourceIdForPath_System_Reflection_Assembly_string_llvm
@@ -15281,7 +15339,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 8575
+.word 8515
 _p_474_plt_Microsoft_Maui_Controls_Xaml_System_IO_StreamReader__ctor_System_IO_Stream_llvm:
 	.globl _p_474_plt_Microsoft_Maui_Controls_Xaml_System_IO_StreamReader__ctor_System_IO_Stream_llvm
 .private_extern _p_474_plt_Microsoft_Maui_Controls_Xaml_System_IO_StreamReader__ctor_System_IO_Stream_llvm
@@ -15292,7 +15350,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 8580
+.word 8520
 _p_475_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_T_REF_T_REF_string_System_Reflection_Assembly_llvm:
 	.globl _p_475_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_T_REF_T_REF_string_System_Reflection_Assembly_llvm
 .private_extern _p_475_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_T_REF_T_REF_string_System_Reflection_Assembly_llvm
@@ -15303,7 +15361,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 8585
+.word 8525
 _p_476_plt_Microsoft_Maui_Controls_Xaml_System_IO_StringReader__ctor_string_llvm:
 	.globl _p_476_plt_Microsoft_Maui_Controls_Xaml_System_IO_StringReader__ctor_string_llvm
 .private_extern _p_476_plt_Microsoft_Maui_Controls_Xaml_System_IO_StringReader__ctor_string_llvm
@@ -15314,7 +15372,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 8599
+.word 8539
 _p_477_plt_Microsoft_Maui_Controls_Xaml_System_Xml_XmlReader_Create_System_IO_TextReader_llvm:
 	.globl _p_477_plt_Microsoft_Maui_Controls_Xaml_System_Xml_XmlReader_Create_System_IO_TextReader_llvm
 .private_extern _p_477_plt_Microsoft_Maui_Controls_Xaml_System_Xml_XmlReader_Create_System_IO_TextReader_llvm
@@ -15325,7 +15383,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 8604
+.word 8544
 _p_478_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlType__ctor_string_string_System_Collections_Generic_IList_1_Microsoft_Maui_Controls_Xaml_XmlType_llvm:
 	.globl _p_478_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlType__ctor_string_string_System_Collections_Generic_IList_1_Microsoft_Maui_Controls_Xaml_XmlType_llvm
 .private_extern _p_478_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XmlType__ctor_string_string_System_Collections_Generic_IList_1_Microsoft_Maui_Controls_Xaml_XmlType_llvm
@@ -15336,7 +15394,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 8609
+.word 8549
 _p_479_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_RuntimeRootNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_479_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_RuntimeRootNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_479_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_RuntimeRootNode__ctor_Microsoft_Maui_Controls_Xaml_XmlType_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -15347,7 +15405,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 8612
+.word 8552
 _p_480_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXaml_Microsoft_Maui_Controls_Xaml_RootNode_System_Xml_XmlReader_llvm:
 	.globl _p_480_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXaml_Microsoft_Maui_Controls_Xaml_RootNode_System_Xml_XmlReader_llvm
 .private_extern _p_480_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_ParseXaml_Microsoft_Maui_Controls_Xaml_RootNode_System_Xml_XmlReader_llvm
@@ -15358,7 +15416,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 8615
+.word 8555
 _p_481_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Visit_Microsoft_Maui_Controls_Xaml_RootNode_Microsoft_Maui_Controls_Xaml_HydrationContext_bool_llvm:
 	.globl _p_481_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Visit_Microsoft_Maui_Controls_Xaml_RootNode_Microsoft_Maui_Controls_Xaml_HydrationContext_bool_llvm
 .private_extern _p_481_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_Visit_Microsoft_Maui_Controls_Xaml_RootNode_Microsoft_Maui_Controls_Xaml_HydrationContext_bool_llvm
@@ -15369,7 +15427,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 8618
+.word 8558
 _p_482_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_OnChildAdded_Microsoft_Maui_IVisualTreeElement_Microsoft_Maui_IVisualTreeElement_llvm:
 	.globl _p_482_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_OnChildAdded_Microsoft_Maui_IVisualTreeElement_Microsoft_Maui_IVisualTreeElement_llvm
 .private_extern _p_482_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_VisualDiagnostics_OnChildAdded_Microsoft_Maui_IVisualTreeElement_Microsoft_Maui_IVisualTreeElement_llvm
@@ -15380,7 +15438,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 8621
+.word 8561
 _p_483_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetTypeArguments_System_Xml_XmlReader_llvm:
 	.globl _p_483_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetTypeArguments_System_Xml_XmlReader_llvm
 .private_extern _p_483_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlParser_GetTypeArguments_System_Xml_XmlReader_llvm
@@ -15391,7 +15449,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 8626
+.word 8566
 _p_484_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm:
 	.globl _p_484_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm
 .private_extern _p_484_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode_llvm
@@ -15402,7 +15460,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 8629
+.word 8569
 _p_485_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm:
 	.globl _p_485_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm
 .private_extern _p_485_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor__ctor_Microsoft_Maui_Controls_Xaml_HydrationContext_llvm
@@ -15413,7 +15471,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 8631
+.word 8571
 _p_486_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetResourceIdForType_System_Type_llvm:
 	.globl _p_486_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetResourceIdForType_System_Type_llvm
 .private_extern _p_486_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlResourceIdAttribute_GetResourceIdForType_System_Type_llvm
@@ -15424,7 +15482,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 8634
+.word 8574
 _p_487_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_LegacyGetXamlForType_System_Type_llvm:
 	.globl _p_487_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_LegacyGetXamlForType_System_Type_llvm
 .private_extern _p_487_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Xaml_XamlLoader_LegacyGetXamlForType_System_Type_llvm
@@ -15435,7 +15493,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 8639
+.word 8579
 _p_488_plt_Microsoft_Maui_Controls_Xaml_System_Text_RegularExpressions_Regex__ctor_string_System_Text_RegularExpressions_RegexOptions_llvm:
 	.globl _p_488_plt_Microsoft_Maui_Controls_Xaml_System_Text_RegularExpressions_Regex__ctor_string_System_Text_RegularExpressions_RegexOptions_llvm
 .private_extern _p_488_plt_Microsoft_Maui_Controls_Xaml_System_Text_RegularExpressions_Regex__ctor_string_System_Text_RegularExpressions_RegexOptions_llvm
@@ -15446,7 +15504,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 8642
+.word 8582
 _p_489_plt_Microsoft_Maui_Controls_Xaml_System_Text_RegularExpressions_Regex_IsMatch_string_llvm:
 	.globl _p_489_plt_Microsoft_Maui_Controls_Xaml_System_Text_RegularExpressions_Regex_IsMatch_string_llvm
 .private_extern _p_489_plt_Microsoft_Maui_Controls_Xaml_System_Text_RegularExpressions_Regex_IsMatch_string_llvm
@@ -15457,7 +15515,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 8647
+.word 8587
 _p_490_plt_Microsoft_Maui_Controls_Xaml_string_IndexOf_string_llvm:
 	.globl _p_490_plt_Microsoft_Maui_Controls_Xaml_string_IndexOf_string_llvm
 .private_extern _p_490_plt_Microsoft_Maui_Controls_Xaml_string_IndexOf_string_llvm
@@ -15468,7 +15526,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 8652
+.word 8592
 _p_491_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_AddWithResize_string_llvm:
 	.globl _p_491_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
 .private_extern _p_491_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
@@ -15479,7 +15537,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 8657
+.word 8597
 _p_492_plt_Microsoft_Maui_Controls_Xaml_System_AppDomain_GetAssemblies_llvm:
 	.globl _p_492_plt_Microsoft_Maui_Controls_Xaml_System_AppDomain_GetAssemblies_llvm
 .private_extern _p_492_plt_Microsoft_Maui_Controls_Xaml_System_AppDomain_GetAssemblies_llvm
@@ -15490,7 +15548,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 8674
+.word 8614
 _p_493_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttributes_System_Reflection_Assembly_System_Type_llvm:
 	.globl _p_493_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttributes_System_Reflection_Assembly_System_Type_llvm
 .private_extern _p_493_plt_Microsoft_Maui_Controls_Xaml_System_Reflection_CustomAttributeExtensions_GetCustomAttributes_System_Reflection_Assembly_System_Type_llvm
@@ -15501,7 +15559,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 8679
+.word 8619
 _p_494_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_AddWithResize_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_llvm:
 	.globl _p_494_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_AddWithResize_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_llvm
 .private_extern _p_494_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_AddWithResize_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_llvm
@@ -15512,7 +15570,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 8684
+.word 8624
 _p_495_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_XmlnsDefinitionAttribute__ctor_string_string_llvm:
 	.globl _p_495_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_XmlnsDefinitionAttribute__ctor_string_string_llvm
 .private_extern _p_495_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_XmlnsDefinitionAttribute__ctor_string_string_llvm
@@ -15523,7 +15581,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 8701
+.word 8641
 _p_496_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string__ctor_int_llvm:
 	.globl _p_496_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string__ctor_int_llvm
 .private_extern _p_496_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string__ctor_int_llvm
@@ -15534,7 +15592,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 8706
+.word 8646
 _p_497_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_get_Item_int_llvm:
 	.globl _p_497_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_get_Item_int_llvm
 .private_extern _p_497_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_get_Item_int_llvm
@@ -15545,7 +15603,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 8723
+.word 8663
 _p_498_plt_Microsoft_Maui_Controls_Xaml_int_ToString_llvm:
 	.globl _p_498_plt_Microsoft_Maui_Controls_Xaml_int_ToString_llvm
 .private_extern _p_498_plt_Microsoft_Maui_Controls_Xaml_int_ToString_llvm
@@ -15556,7 +15614,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 8734
+.word 8674
 _p_499_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_set_Item_int_string_llvm:
 	.globl _p_499_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_set_Item_int_string_llvm
 .private_extern _p_499_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_set_Item_int_string_llvm
@@ -15567,7 +15625,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 8739
+.word 8679
 _p_500_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_GetEnumerator_llvm:
 	.globl _p_500_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_GetEnumerator_llvm
 .private_extern _p_500_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_string_GetEnumerator_llvm
@@ -15578,7 +15636,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 8756
+.word 8696
 _p_501_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_GetEnumerator_llvm:
 	.globl _p_501_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_GetEnumerator_llvm
 .private_extern _p_501_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_GetEnumerator_llvm
@@ -15589,7 +15647,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 8773
+.word 8713
 _p_502_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_3_string_string_string__ctor_string_string_string_llvm:
 	.globl _p_502_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_3_string_string_string__ctor_string_string_string_llvm
 .private_extern _p_502_plt_Microsoft_Maui_Controls_Xaml_System_ValueTuple_3_string_string_string__ctor_string_string_string_llvm
@@ -15600,7 +15658,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 8790
+.word 8730
 _p_503_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_3_string_string_string_AddWithResize_System_ValueTuple_3_string_string_string_llvm:
 	.globl _p_503_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_3_string_string_string_AddWithResize_System_ValueTuple_3_string_string_string_llvm
 .private_extern _p_503_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_3_string_string_string_AddWithResize_System_ValueTuple_3_string_string_string_llvm
@@ -15611,7 +15669,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 8807
+.word 8747
 _p_504_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_MoveNext_llvm:
 	.globl _p_504_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_MoveNext_llvm
 .private_extern _p_504_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_MoveNext_llvm
@@ -15622,7 +15680,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 8824
+.word 8764
 _p_505_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm:
 	.globl _p_505_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm
 .private_extern _p_505_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm
@@ -15633,7 +15691,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 8841
+.word 8781
 _p_506_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_3_string_string_string_GetEnumerator_llvm:
 	.globl _p_506_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_3_string_string_string_GetEnumerator_llvm
 .private_extern _p_506_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_System_ValueTuple_3_string_string_string_GetEnumerator_llvm
@@ -15644,7 +15702,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 8858
+.word 8798
 _p_507_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_ValueTuple_3_string_string_string_MoveNext_llvm:
 	.globl _p_507_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_ValueTuple_3_string_string_string_MoveNext_llvm
 .private_extern _p_507_plt_Microsoft_Maui_Controls_Xaml_System_Collections_Generic_List_1_Enumerator_System_ValueTuple_3_string_string_string_MoveNext_llvm
@@ -15655,7 +15713,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 8875
+.word 8815
 _p_508_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_get_ResourceProvider2_llvm:
 	.globl _p_508_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_get_ResourceProvider2_llvm
 .private_extern _p_508_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_get_ResourceProvider2_llvm
@@ -15666,7 +15724,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 8892
+.word 8832
 _p_509_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery__ctor_llvm:
 	.globl _p_509_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery__ctor_llvm
 .private_extern _p_509_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery__ctor_llvm
@@ -15677,7 +15735,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 8897
+.word 8837
 _p_510_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_AssemblyName_System_Reflection_AssemblyName_llvm:
 	.globl _p_510_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_AssemblyName_System_Reflection_AssemblyName_llvm
 .private_extern _p_510_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_AssemblyName_System_Reflection_AssemblyName_llvm
@@ -15688,7 +15746,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 8902
+.word 8842
 _p_511_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_ResourcePath_string_llvm:
 	.globl _p_511_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_ResourcePath_string_llvm
 .private_extern _p_511_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_ResourcePath_string_llvm
@@ -15699,7 +15757,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 8907
+.word 8847
 _p_512_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_Alloc_intptr_llvm:
 	.globl _p_512_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_Alloc_intptr_llvm
 .private_extern _p_512_plt_Microsoft_Maui_Controls_Xaml_wrapper_alloc_object_Alloc_intptr_llvm
@@ -15710,7 +15768,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 8912
+.word 8852
 _p_513_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_Instance_object_llvm:
 	.globl _p_513_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_Instance_object_llvm
 .private_extern _p_513_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingQuery_set_Instance_object_llvm
@@ -15721,7 +15779,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 8920
+.word 8860
 _p_514_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingResponse_get_ResourceContent_llvm:
 	.globl _p_514_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingResponse_get_ResourceContent_llvm
 .private_extern _p_514_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingResponse_get_ResourceContent_llvm
@@ -15732,7 +15790,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 8925
+.word 8865
 _p_515_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingResponse_get_UseDesignProperties_llvm:
 	.globl _p_515_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingResponse_get_UseDesignProperties_llvm
 .private_extern _p_515_plt_Microsoft_Maui_Controls_Xaml_Microsoft_Maui_Controls_Internals_ResourceLoader_ResourceLoadingResponse_get_UseDesignProperties_llvm
@@ -15743,7 +15801,7 @@ adrp x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Controls_Xaml_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 8930
+.word 8870
 plt_end:
 _mono_aot_Microsoft_Maui_Controls_Xamlplt_end:
 	.globl _mono_aot_Microsoft_Maui_Controls_Xamlplt_end
@@ -16940,419 +16998,405 @@ LTDIE_23_REFERENCE:
 	.byte 14
 LDIFF_SYM211=LTDIE_23 - Ldebug_info_start
 	.long LDIFF_SYM211
-LTDIE_35:
-
-	.byte 5
-	.asciz "Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider"
-
-	.byte 24,16
-LDIFF_SYM212=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM212
-	.byte 2,35,0,6
-	.asciz "services"
-
-LDIFF_SYM213=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM213
-	.byte 2,35,16,0,7
-	.asciz "Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider"
-
-LDIFF_SYM214=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM214
-LTDIE_35_POINTER:
-
-	.byte 13
-LDIFF_SYM215=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM215
-LTDIE_35_REFERENCE:
-
-	.byte 14
-LDIFF_SYM216=LTDIE_35 - Ldebug_info_start
-	.long LDIFF_SYM216
-LTDIE_37:
-
-	.byte 5
-	.asciz "System_ApplicationException"
-
-	.byte 144,1,16
-LDIFF_SYM217=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM217
-	.byte 2,35,0,0,7
-	.asciz "System_ApplicationException"
-
-LDIFF_SYM218=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM218
-LTDIE_37_POINTER:
-
-	.byte 13
-LDIFF_SYM219=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM219
-LTDIE_37_REFERENCE:
-
-	.byte 14
-LDIFF_SYM220=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM220
 LTDIE_36:
-
-	.byte 5
-	.asciz "System_Reflection_TargetInvocationException"
-
-	.byte 144,1,16
-LDIFF_SYM221=LTDIE_37 - Ldebug_info_start
-	.long LDIFF_SYM221
-	.byte 2,35,0,0,7
-	.asciz "System_Reflection_TargetInvocationException"
-
-LDIFF_SYM222=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM222
-LTDIE_36_POINTER:
-
-	.byte 13
-LDIFF_SYM223=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM223
-LTDIE_36_REFERENCE:
-
-	.byte 14
-LDIFF_SYM224=LTDIE_36 - Ldebug_info_start
-	.long LDIFF_SYM224
-LTDIE_40:
-
-	.byte 5
-	.asciz "System_SystemException"
-
-	.byte 144,1,16
-LDIFF_SYM225=LTDIE_19 - Ldebug_info_start
-	.long LDIFF_SYM225
-	.byte 2,35,0,0,7
-	.asciz "System_SystemException"
-
-LDIFF_SYM226=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM226
-LTDIE_40_POINTER:
-
-	.byte 13
-LDIFF_SYM227=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM227
-LTDIE_40_REFERENCE:
-
-	.byte 14
-LDIFF_SYM228=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM228
-LTDIE_39:
-
-	.byte 5
-	.asciz "System_MemberAccessException"
-
-	.byte 144,1,16
-LDIFF_SYM229=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM229
-	.byte 2,35,0,0,7
-	.asciz "System_MemberAccessException"
-
-LDIFF_SYM230=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM230
-LTDIE_39_POINTER:
-
-	.byte 13
-LDIFF_SYM231=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM231
-LTDIE_39_REFERENCE:
-
-	.byte 14
-LDIFF_SYM232=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM232
-LTDIE_38:
-
-	.byte 5
-	.asciz "System_MissingMemberException"
-
-	.byte 160,1,16
-LDIFF_SYM233=LTDIE_39 - Ldebug_info_start
-	.long LDIFF_SYM233
-	.byte 2,35,0,6
-	.asciz "ClassName"
-
-LDIFF_SYM234=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM234
-	.byte 3,35,144,1,6
-	.asciz "MemberName"
-
-LDIFF_SYM235=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM235
-	.byte 3,35,152,1,0,7
-	.asciz "System_MissingMemberException"
-
-LDIFF_SYM236=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM236
-LTDIE_38_POINTER:
-
-	.byte 13
-LDIFF_SYM237=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM237
-LTDIE_38_REFERENCE:
-
-	.byte 14
-LDIFF_SYM238=LTDIE_38 - Ldebug_info_start
-	.long LDIFF_SYM238
-LTDIE_41:
-
-	.byte 5
-	.asciz "Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor"
-
-	.byte 32,16
-LDIFF_SYM239=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM239
-	.byte 2,35,0,6
-	.asciz "<Context>k__BackingField"
-
-LDIFF_SYM240=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM240
-	.byte 2,35,16,6
-	.asciz "<StopOnResourceDictionary>k__BackingField"
-
-LDIFF_SYM241=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM241
-	.byte 2,35,24,0,7
-	.asciz "Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor"
-
-LDIFF_SYM242=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM242
-LTDIE_41_POINTER:
-
-	.byte 13
-LDIFF_SYM243=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM243
-LTDIE_41_REFERENCE:
-
-	.byte 14
-LDIFF_SYM244=LTDIE_41 - Ldebug_info_start
-	.long LDIFF_SYM244
-	.byte 2
-	.asciz "Microsoft.Maui.Controls.Xaml.CreateValuesVisitor:Visit"
-	.asciz "Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode"
-
-	.byte 1,0
-	.quad Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode
-	.quad Lme_3a
-
-	.byte 2,118,16,3
-	.asciz "this"
-
-LDIFF_SYM245=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM245
-	.byte 3,141,192,0,3
-	.asciz "node"
-
-LDIFF_SYM246=LTDIE_4_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM246
-	.byte 3,141,200,0,3
-	.asciz "parentNode"
-
-LDIFF_SYM247=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM247
-	.byte 3,141,208,0,11
-	.asciz "CS$<>8__locals0"
-
-LDIFF_SYM248=LTDIE_13_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM248
-	.byte 1,106,11
-	.asciz "value"
-
-LDIFF_SYM249=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM249
-	.byte 3,141,128,3,11
-	.asciz "xpe"
-
-LDIFF_SYM250=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM250
-	.byte 3,141,136,3,11
-	.asciz "markup"
-
-LDIFF_SYM251=LTDIE_22_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM251
-	.byte 1,106,11
-	.asciz "bindableValue"
-
-LDIFF_SYM252=LTDIE_23_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM252
-	.byte 3,141,144,3,11
-	.asciz "assemblyName"
-
-LDIFF_SYM253=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM253
-	.byte 3,141,152,3,11
-	.asciz "path"
-
-LDIFF_SYM254=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM254
-	.byte 3,141,160,3,11
-	.asciz "ctorargname"
-
-LDIFF_SYM255=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM255
-	.byte 3,141,168,3,11
-	.asciz "V_8"
-
-LDIFF_SYM256=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM256
-	.byte 3,141,216,2,11
-	.asciz "serviceProvider"
-
-LDIFF_SYM257=LTDIE_35_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM257
-	.byte 1,105,11
-	.asciz "converted"
-
-LDIFF_SYM258=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM258
-	.byte 1,105,11
-	.asciz "exception"
-
-LDIFF_SYM259=LTDIE_19_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM259
-	.byte 3,141,176,3,11
-	.asciz "e"
-
-LDIFF_SYM260=LTDIE_36_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM260
-	.byte 3,141,184,3,11
-	.asciz "mme"
-
-LDIFF_SYM261=LTDIE_38_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM261
-	.byte 3,141,192,3,11
-	.asciz "serviceProvider"
-
-LDIFF_SYM262=LTDIE_35_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM262
-	.byte 3,141,200,3,11
-	.asciz "visitor"
-
-LDIFF_SYM263=LTDIE_41_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM263
-	.byte 1,105,11
-	.asciz "xKey"
-
-LDIFF_SYM264=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM264
-	.byte 3,141,208,3,11
-	.asciz "V_17"
-
-LDIFF_SYM265=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM265
-	.byte 3,141,192,2,11
-	.asciz "cnode"
-
-LDIFF_SYM266=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM266
-	.byte 1,104,11
-	.asciz "V_19"
-
-LDIFF_SYM267=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM267
-	.byte 3,141,168,2,11
-	.asciz "cnode"
-
-LDIFF_SYM268=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM268
-	.byte 1,104,11
-	.asciz "e"
-
-LDIFF_SYM269=LTDIE_19_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM269
-	.byte 3,141,216,3,11
-	.asciz "xamlpe"
-
-LDIFF_SYM270=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM270
-	.byte 3,141,224,3,0
-
-.section __DWARF, __debug_frame,regular,debug
-
-LDIFF_SYM271=Lfde0_end - Lfde0_start
-	.long LDIFF_SYM271
-Lfde0_start:
-
-	.long 0
-	.align 3
-	.quad Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode
-
-LDIFF_SYM272=Lme_3a - Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode
-	.long LDIFF_SYM272
-	.long 0
-	.byte 12,31,0,84,14,128,10,157,160,1,158,159,1,68,13,29,68,149,158,1,150,157,1,68,151,156,1,152,155,1,68,153
-	.byte 154,1,154,153,1
-	.align 3
-Lfde0_end:
-
-.section __DWARF, __debug_info,regular,debug
-LTDIE_42:
-
-	.byte 5
-	.asciz "Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor"
-
-	.byte 32,16
-LDIFF_SYM273=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM273
-	.byte 2,35,0,6
-	.asciz "<Values>k__BackingField"
-
-LDIFF_SYM274=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM274
-	.byte 2,35,16,6
-	.asciz "<Context>k__BackingField"
-
-LDIFF_SYM275=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM275
-	.byte 2,35,24,0,7
-	.asciz "Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor"
-
-LDIFF_SYM276=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM276
-LTDIE_42_POINTER:
-
-	.byte 13
-LDIFF_SYM277=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM277
-LTDIE_42_REFERENCE:
-
-	.byte 14
-LDIFF_SYM278=LTDIE_42 - Ldebug_info_start
-	.long LDIFF_SYM278
-LTDIE_43:
-
-	.byte 5
-	.asciz "Microsoft_Maui_Controls_Xaml_ValueNode"
-
-	.byte 56,16
-LDIFF_SYM279=LTDIE_5 - Ldebug_info_start
-	.long LDIFF_SYM279
-	.byte 2,35,0,6
-	.asciz "<Value>k__BackingField"
-
-LDIFF_SYM280=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM280
-	.byte 2,35,48,0,7
-	.asciz "Microsoft_Maui_Controls_Xaml_ValueNode"
-
-LDIFF_SYM281=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM281
-LTDIE_43_POINTER:
-
-	.byte 13
-LDIFF_SYM282=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM282
-LTDIE_43_REFERENCE:
-
-	.byte 14
-LDIFF_SYM283=LTDIE_43 - Ldebug_info_start
-	.long LDIFF_SYM283
-LTDIE_45:
 
 	.byte 17
 	.asciz "Microsoft_Maui_Controls_IEffectControlProvider"
 
 	.byte 16,7
 	.asciz "Microsoft_Maui_Controls_IEffectControlProvider"
+
+LDIFF_SYM212=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM212
+LTDIE_36_POINTER:
+
+	.byte 13
+LDIFF_SYM213=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM213
+LTDIE_36_REFERENCE:
+
+	.byte 14
+LDIFF_SYM214=LTDIE_36 - Ldebug_info_start
+	.long LDIFF_SYM214
+LTDIE_37:
+
+	.byte 17
+	.asciz "Microsoft_Maui_IElementHandler"
+
+	.byte 16,7
+	.asciz "Microsoft_Maui_IElementHandler"
+
+LDIFF_SYM215=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM215
+LTDIE_37_POINTER:
+
+	.byte 13
+LDIFF_SYM216=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM216
+LTDIE_37_REFERENCE:
+
+	.byte 14
+LDIFF_SYM217=LTDIE_37 - Ldebug_info_start
+	.long LDIFF_SYM217
+LTDIE_38:
+
+	.byte 5
+	.asciz "Microsoft_Maui_Controls_Hosting_EffectsFactory"
+
+	.byte 24,16
+LDIFF_SYM218=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM218
+	.byte 2,35,0,6
+	.asciz "_registeredEffects"
+
+LDIFF_SYM219=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM219
+	.byte 2,35,16,0,7
+	.asciz "Microsoft_Maui_Controls_Hosting_EffectsFactory"
+
+LDIFF_SYM220=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM220
+LTDIE_38_POINTER:
+
+	.byte 13
+LDIFF_SYM221=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM221
+LTDIE_38_REFERENCE:
+
+	.byte 14
+LDIFF_SYM222=LTDIE_38 - Ldebug_info_start
+	.long LDIFF_SYM222
+LTDIE_35:
+
+	.byte 5
+	.asciz "Microsoft_Maui_Controls_Element"
+
+	.byte 160,2,16
+LDIFF_SYM223=LTDIE_23 - Ldebug_info_start
+	.long LDIFF_SYM223
+	.byte 2,35,0,6
+	.asciz "_bindableResources"
+
+LDIFF_SYM224=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM224
+	.byte 2,35,72,6
+	.asciz "_changeHandlers"
+
+LDIFF_SYM225=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM225
+	.byte 2,35,80,6
+	.asciz "_dynamicResources"
+
+LDIFF_SYM226=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM226
+	.byte 2,35,88,6
+	.asciz "_effectControlProvider"
+
+LDIFF_SYM227=LTDIE_36_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM227
+	.byte 2,35,96,6
+	.asciz "_effects"
+
+LDIFF_SYM228=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM228
+	.byte 2,35,104,6
+	.asciz "_id"
+
+LDIFF_SYM229=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM229
+	.byte 3,35,136,2,6
+	.asciz "_parentOverride"
+
+LDIFF_SYM230=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM230
+	.byte 2,35,112,6
+	.asciz "_styleId"
+
+LDIFF_SYM231=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM231
+	.byte 2,35,120,6
+	.asciz "_logicalChildrenReadonly"
+
+LDIFF_SYM232=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM232
+	.byte 3,35,128,1,6
+	.asciz "_internalChildren"
+
+LDIFF_SYM233=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM233
+	.byte 3,35,136,1,6
+	.asciz "<Owned>k__BackingField"
+
+LDIFF_SYM234=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM234
+	.byte 3,35,156,2,6
+	.asciz "_realParent"
+
+LDIFF_SYM235=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM235
+	.byte 3,35,144,1,6
+	.asciz "<IsTemplateRoot>k__BackingField"
+
+LDIFF_SYM236=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM236
+	.byte 3,35,157,2,6
+	.asciz "transientNamescope"
+
+LDIFF_SYM237=LTDIE_12_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM237
+	.byte 3,35,152,1,6
+	.asciz "ChildAdded"
+
+LDIFF_SYM238=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM238
+	.byte 3,35,160,1,6
+	.asciz "ChildRemoved"
+
+LDIFF_SYM239=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM239
+	.byte 3,35,168,1,6
+	.asciz "DescendantAdded"
+
+LDIFF_SYM240=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM240
+	.byte 3,35,176,1,6
+	.asciz "DescendantRemoved"
+
+LDIFF_SYM241=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM241
+	.byte 3,35,184,1,6
+	.asciz "ParentSet"
+
+LDIFF_SYM242=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM242
+	.byte 3,35,192,1,6
+	.asciz "ParentChanging"
+
+LDIFF_SYM243=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM243
+	.byte 3,35,200,1,6
+	.asciz "ParentChanged"
+
+LDIFF_SYM244=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM244
+	.byte 3,35,208,1,6
+	.asciz "_handler"
+
+LDIFF_SYM245=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM245
+	.byte 3,35,216,1,6
+	.asciz "_effectsFactory"
+
+LDIFF_SYM246=LTDIE_38_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM246
+	.byte 3,35,224,1,6
+	.asciz "HandlerChanging"
+
+LDIFF_SYM247=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM247
+	.byte 3,35,232,1,6
+	.asciz "HandlerChanged"
+
+LDIFF_SYM248=LTDIE_34_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM248
+	.byte 3,35,240,1,6
+	.asciz "_previousHandler"
+
+LDIFF_SYM249=LTDIE_37_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM249
+	.byte 3,35,248,1,6
+	.asciz "_styleSelectableNameAndBaseNames"
+
+LDIFF_SYM250=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM250
+	.byte 3,35,128,2,0,7
+	.asciz "Microsoft_Maui_Controls_Element"
+
+LDIFF_SYM251=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM251
+LTDIE_35_POINTER:
+
+	.byte 13
+LDIFF_SYM252=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM252
+LTDIE_35_REFERENCE:
+
+	.byte 14
+LDIFF_SYM253=LTDIE_35 - Ldebug_info_start
+	.long LDIFF_SYM253
+LTDIE_39:
+
+	.byte 5
+	.asciz "Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider"
+
+	.byte 24,16
+LDIFF_SYM254=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM254
+	.byte 2,35,0,6
+	.asciz "services"
+
+LDIFF_SYM255=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM255
+	.byte 2,35,16,0,7
+	.asciz "Microsoft_Maui_Controls_Xaml_Internals_XamlServiceProvider"
+
+LDIFF_SYM256=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM256
+LTDIE_39_POINTER:
+
+	.byte 13
+LDIFF_SYM257=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM257
+LTDIE_39_REFERENCE:
+
+	.byte 14
+LDIFF_SYM258=LTDIE_39 - Ldebug_info_start
+	.long LDIFF_SYM258
+LTDIE_41:
+
+	.byte 5
+	.asciz "System_ApplicationException"
+
+	.byte 144,1,16
+LDIFF_SYM259=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM259
+	.byte 2,35,0,0,7
+	.asciz "System_ApplicationException"
+
+LDIFF_SYM260=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM260
+LTDIE_41_POINTER:
+
+	.byte 13
+LDIFF_SYM261=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM261
+LTDIE_41_REFERENCE:
+
+	.byte 14
+LDIFF_SYM262=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM262
+LTDIE_40:
+
+	.byte 5
+	.asciz "System_Reflection_TargetInvocationException"
+
+	.byte 144,1,16
+LDIFF_SYM263=LTDIE_41 - Ldebug_info_start
+	.long LDIFF_SYM263
+	.byte 2,35,0,0,7
+	.asciz "System_Reflection_TargetInvocationException"
+
+LDIFF_SYM264=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM264
+LTDIE_40_POINTER:
+
+	.byte 13
+LDIFF_SYM265=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM265
+LTDIE_40_REFERENCE:
+
+	.byte 14
+LDIFF_SYM266=LTDIE_40 - Ldebug_info_start
+	.long LDIFF_SYM266
+LTDIE_44:
+
+	.byte 5
+	.asciz "System_SystemException"
+
+	.byte 144,1,16
+LDIFF_SYM267=LTDIE_19 - Ldebug_info_start
+	.long LDIFF_SYM267
+	.byte 2,35,0,0,7
+	.asciz "System_SystemException"
+
+LDIFF_SYM268=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM268
+LTDIE_44_POINTER:
+
+	.byte 13
+LDIFF_SYM269=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM269
+LTDIE_44_REFERENCE:
+
+	.byte 14
+LDIFF_SYM270=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM270
+LTDIE_43:
+
+	.byte 5
+	.asciz "System_MemberAccessException"
+
+	.byte 144,1,16
+LDIFF_SYM271=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM271
+	.byte 2,35,0,0,7
+	.asciz "System_MemberAccessException"
+
+LDIFF_SYM272=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM272
+LTDIE_43_POINTER:
+
+	.byte 13
+LDIFF_SYM273=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM273
+LTDIE_43_REFERENCE:
+
+	.byte 14
+LDIFF_SYM274=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM274
+LTDIE_42:
+
+	.byte 5
+	.asciz "System_MissingMemberException"
+
+	.byte 160,1,16
+LDIFF_SYM275=LTDIE_43 - Ldebug_info_start
+	.long LDIFF_SYM275
+	.byte 2,35,0,6
+	.asciz "ClassName"
+
+LDIFF_SYM276=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM276
+	.byte 3,35,144,1,6
+	.asciz "MemberName"
+
+LDIFF_SYM277=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM277
+	.byte 3,35,152,1,0,7
+	.asciz "System_MissingMemberException"
+
+LDIFF_SYM278=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM278
+LTDIE_42_POINTER:
+
+	.byte 13
+LDIFF_SYM279=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM279
+LTDIE_42_REFERENCE:
+
+	.byte 14
+LDIFF_SYM280=LTDIE_42 - Ldebug_info_start
+	.long LDIFF_SYM280
+LTDIE_45:
+
+	.byte 5
+	.asciz "Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor"
+
+	.byte 32,16
+LDIFF_SYM281=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM281
+	.byte 2,35,0,6
+	.asciz "<Context>k__BackingField"
+
+LDIFF_SYM282=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM282
+	.byte 2,35,16,6
+	.asciz "<StopOnResourceDictionary>k__BackingField"
+
+LDIFF_SYM283=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM283
+	.byte 2,35,24,0,7
+	.asciz "Microsoft_Maui_Controls_Xaml_ApplyPropertiesVisitor"
 
 LDIFF_SYM284=LTDIE_45 - Ldebug_info_start
 	.long LDIFF_SYM284
@@ -17366,258 +17410,282 @@ LTDIE_45_REFERENCE:
 	.byte 14
 LDIFF_SYM286=LTDIE_45 - Ldebug_info_start
 	.long LDIFF_SYM286
-LTDIE_46:
+	.byte 2
+	.asciz "Microsoft.Maui.Controls.Xaml.CreateValuesVisitor:Visit"
+	.asciz "Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode"
 
-	.byte 17
-	.asciz "Microsoft_Maui_IElementHandler"
+	.byte 1,0
+	.quad Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode
+	.quad Lme_3a
 
-	.byte 16,7
-	.asciz "Microsoft_Maui_IElementHandler"
+	.byte 2,118,16,3
+	.asciz "this"
 
-LDIFF_SYM287=LTDIE_46 - Ldebug_info_start
+LDIFF_SYM287=LTDIE_0_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM287
-LTDIE_46_POINTER:
+	.byte 3,141,192,0,3
+	.asciz "node"
 
-	.byte 13
-LDIFF_SYM288=LTDIE_46 - Ldebug_info_start
+LDIFF_SYM288=LTDIE_4_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM288
-LTDIE_46_REFERENCE:
+	.byte 3,141,200,0,3
+	.asciz "parentNode"
 
-	.byte 14
-LDIFF_SYM289=LTDIE_46 - Ldebug_info_start
+LDIFF_SYM289=LTDIE_7_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM289
-LTDIE_47:
+	.byte 3,141,208,0,11
+	.asciz "CS$<>8__locals0"
 
-	.byte 5
-	.asciz "Microsoft_Maui_Controls_Hosting_EffectsFactory"
-
-	.byte 24,16
-LDIFF_SYM290=LTDIE_1 - Ldebug_info_start
+LDIFF_SYM290=LTDIE_13_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM290
-	.byte 2,35,0,6
-	.asciz "_registeredEffects"
+	.byte 1,106,11
+	.asciz "value"
 
 LDIFF_SYM291=LDIE_OBJECT - Ldebug_info_start
 	.long LDIFF_SYM291
-	.byte 2,35,16,0,7
-	.asciz "Microsoft_Maui_Controls_Hosting_EffectsFactory"
+	.byte 3,141,128,3,11
+	.asciz "xpe"
 
-LDIFF_SYM292=LTDIE_47 - Ldebug_info_start
+LDIFF_SYM292=LTDIE_18_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM292
+	.byte 3,141,136,3,11
+	.asciz "markup"
+
+LDIFF_SYM293=LTDIE_22_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM293
+	.byte 1,106,11
+	.asciz "bindableValue"
+
+LDIFF_SYM294=LTDIE_23_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM294
+	.byte 3,141,144,3,11
+	.asciz "iElement"
+
+LDIFF_SYM295=LTDIE_35_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM295
+	.byte 3,141,152,3,11
+	.asciz "assemblyName"
+
+LDIFF_SYM296=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM296
+	.byte 3,141,160,3,11
+	.asciz "path"
+
+LDIFF_SYM297=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM297
+	.byte 3,141,168,3,11
+	.asciz "ctorargname"
+
+LDIFF_SYM298=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM298
+	.byte 3,141,176,3,11
+	.asciz "V_9"
+
+LDIFF_SYM299=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM299
+	.byte 3,141,216,2,11
+	.asciz "serviceProvider"
+
+LDIFF_SYM300=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM300
+	.byte 1,105,11
+	.asciz "converted"
+
+LDIFF_SYM301=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM301
+	.byte 1,105,11
+	.asciz "exception"
+
+LDIFF_SYM302=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM302
+	.byte 3,141,184,3,11
+	.asciz "e"
+
+LDIFF_SYM303=LTDIE_40_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM303
+	.byte 3,141,192,3,11
+	.asciz "mme"
+
+LDIFF_SYM304=LTDIE_42_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM304
+	.byte 3,141,200,3,11
+	.asciz "serviceProvider"
+
+LDIFF_SYM305=LTDIE_39_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM305
+	.byte 3,141,208,3,11
+	.asciz "visitor"
+
+LDIFF_SYM306=LTDIE_45_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM306
+	.byte 1,105,11
+	.asciz "xKey"
+
+LDIFF_SYM307=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM307
+	.byte 3,141,216,3,11
+	.asciz "V_18"
+
+LDIFF_SYM308=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM308
+	.byte 3,141,192,2,11
+	.asciz "cnode"
+
+LDIFF_SYM309=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM309
+	.byte 1,104,11
+	.asciz "V_20"
+
+LDIFF_SYM310=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM310
+	.byte 3,141,168,2,11
+	.asciz "cnode"
+
+LDIFF_SYM311=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM311
+	.byte 1,104,11
+	.asciz "e"
+
+LDIFF_SYM312=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM312
+	.byte 3,141,224,3,11
+	.asciz "xamlpe"
+
+LDIFF_SYM313=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM313
+	.byte 3,141,232,3,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM314=Lfde0_end - Lfde0_start
+	.long LDIFF_SYM314
+Lfde0_start:
+
+	.long 0
+	.align 3
+	.quad Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode
+
+LDIFF_SYM315=Lme_3a - Microsoft_Maui_Controls_Xaml_CreateValuesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ElementNode_Microsoft_Maui_Controls_Xaml_INode
+	.long LDIFF_SYM315
+	.long 0
+	.byte 12,31,0,84,14,192,10,157,168,1,158,167,1,68,13,29,68,149,166,1,150,165,1,68,151,164,1,152,163,1,68,153
+	.byte 162,1,154,161,1
+	.align 3
+Lfde0_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_46:
+
+	.byte 5
+	.asciz "Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor"
+
+	.byte 32,16
+LDIFF_SYM316=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM316
+	.byte 2,35,0,6
+	.asciz "<Values>k__BackingField"
+
+LDIFF_SYM317=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM317
+	.byte 2,35,16,6
+	.asciz "<Context>k__BackingField"
+
+LDIFF_SYM318=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM318
+	.byte 2,35,24,0,7
+	.asciz "Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor"
+
+LDIFF_SYM319=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM319
+LTDIE_46_POINTER:
+
+	.byte 13
+LDIFF_SYM320=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM320
+LTDIE_46_REFERENCE:
+
+	.byte 14
+LDIFF_SYM321=LTDIE_46 - Ldebug_info_start
+	.long LDIFF_SYM321
+LTDIE_47:
+
+	.byte 5
+	.asciz "Microsoft_Maui_Controls_Xaml_ValueNode"
+
+	.byte 56,16
+LDIFF_SYM322=LTDIE_5 - Ldebug_info_start
+	.long LDIFF_SYM322
+	.byte 2,35,0,6
+	.asciz "<Value>k__BackingField"
+
+LDIFF_SYM323=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM323
+	.byte 2,35,48,0,7
+	.asciz "Microsoft_Maui_Controls_Xaml_ValueNode"
+
+LDIFF_SYM324=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM324
 LTDIE_47_POINTER:
 
 	.byte 13
-LDIFF_SYM293=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM293
+LDIFF_SYM325=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM325
 LTDIE_47_REFERENCE:
 
 	.byte 14
-LDIFF_SYM294=LTDIE_47 - Ldebug_info_start
-	.long LDIFF_SYM294
-LTDIE_44:
-
-	.byte 5
-	.asciz "Microsoft_Maui_Controls_Element"
-
-	.byte 152,2,16
-LDIFF_SYM295=LTDIE_23 - Ldebug_info_start
-	.long LDIFF_SYM295
-	.byte 2,35,0,6
-	.asciz "_bindableResources"
-
-LDIFF_SYM296=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM296
-	.byte 2,35,72,6
-	.asciz "_changeHandlers"
-
-LDIFF_SYM297=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM297
-	.byte 2,35,80,6
-	.asciz "_dynamicResources"
-
-LDIFF_SYM298=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM298
-	.byte 2,35,88,6
-	.asciz "_effectControlProvider"
-
-LDIFF_SYM299=LTDIE_45_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM299
-	.byte 2,35,96,6
-	.asciz "_effects"
-
-LDIFF_SYM300=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM300
-	.byte 2,35,104,6
-	.asciz "_id"
-
-LDIFF_SYM301=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM301
-	.byte 3,35,128,2,6
-	.asciz "_parentOverride"
-
-LDIFF_SYM302=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM302
-	.byte 2,35,112,6
-	.asciz "_styleId"
-
-LDIFF_SYM303=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM303
-	.byte 2,35,120,6
-	.asciz "_logicalChildrenReadonly"
-
-LDIFF_SYM304=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM304
-	.byte 3,35,128,1,6
-	.asciz "_internalChildren"
-
-LDIFF_SYM305=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM305
-	.byte 3,35,136,1,6
-	.asciz "<Owned>k__BackingField"
-
-LDIFF_SYM306=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM306
-	.byte 3,35,148,2,6
-	.asciz "_realParent"
-
-LDIFF_SYM307=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM307
-	.byte 3,35,144,1,6
-	.asciz "<IsTemplateRoot>k__BackingField"
-
-LDIFF_SYM308=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM308
-	.byte 3,35,149,2,6
-	.asciz "ChildAdded"
-
-LDIFF_SYM309=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM309
-	.byte 3,35,152,1,6
-	.asciz "ChildRemoved"
-
-LDIFF_SYM310=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM310
-	.byte 3,35,160,1,6
-	.asciz "DescendantAdded"
-
-LDIFF_SYM311=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM311
-	.byte 3,35,168,1,6
-	.asciz "DescendantRemoved"
-
-LDIFF_SYM312=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM312
-	.byte 3,35,176,1,6
-	.asciz "ParentSet"
-
-LDIFF_SYM313=LTDIE_34_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM313
-	.byte 3,35,184,1,6
-	.asciz "ParentChanging"
-
-LDIFF_SYM314=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM314
-	.byte 3,35,192,1,6
-	.asciz "ParentChanged"
-
-LDIFF_SYM315=LTDIE_34_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM315
-	.byte 3,35,200,1,6
-	.asciz "_handler"
-
-LDIFF_SYM316=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM316
-	.byte 3,35,208,1,6
-	.asciz "_effectsFactory"
-
-LDIFF_SYM317=LTDIE_47_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM317
-	.byte 3,35,216,1,6
-	.asciz "HandlerChanging"
-
-LDIFF_SYM318=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM318
-	.byte 3,35,224,1,6
-	.asciz "HandlerChanged"
-
-LDIFF_SYM319=LTDIE_34_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM319
-	.byte 3,35,232,1,6
-	.asciz "_previousHandler"
-
-LDIFF_SYM320=LTDIE_46_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM320
-	.byte 3,35,240,1,6
-	.asciz "_styleSelectableNameAndBaseNames"
-
-LDIFF_SYM321=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM321
-	.byte 3,35,248,1,0,7
-	.asciz "Microsoft_Maui_Controls_Element"
-
-LDIFF_SYM322=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM322
-LTDIE_44_POINTER:
-
-	.byte 13
-LDIFF_SYM323=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM323
-LTDIE_44_REFERENCE:
-
-	.byte 14
-LDIFF_SYM324=LTDIE_44 - Ldebug_info_start
-	.long LDIFF_SYM324
+LDIFF_SYM326=LTDIE_47 - Ldebug_info_start
+	.long LDIFF_SYM326
 LTDIE_48:
 
 	.byte 5
 	.asciz "System_ArgumentException"
 
 	.byte 152,1,16
-LDIFF_SYM325=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM325
+LDIFF_SYM327=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM327
 	.byte 2,35,0,6
 	.asciz "_paramName"
 
-LDIFF_SYM326=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM326
+LDIFF_SYM328=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM328
 	.byte 3,35,144,1,0,7
 	.asciz "System_ArgumentException"
 
-LDIFF_SYM327=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM327
+LDIFF_SYM329=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM329
 LTDIE_48_POINTER:
 
 	.byte 13
-LDIFF_SYM328=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM328
+LDIFF_SYM330=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM330
 LTDIE_48_REFERENCE:
 
 	.byte 14
-LDIFF_SYM329=LTDIE_48 - Ldebug_info_start
-	.long LDIFF_SYM329
+LDIFF_SYM331=LTDIE_48 - Ldebug_info_start
+	.long LDIFF_SYM331
 LTDIE_49:
 
 	.byte 5
 	.asciz "System_Collections_Generic_KeyNotFoundException"
 
 	.byte 144,1,16
-LDIFF_SYM330=LTDIE_40 - Ldebug_info_start
-	.long LDIFF_SYM330
+LDIFF_SYM332=LTDIE_44 - Ldebug_info_start
+	.long LDIFF_SYM332
 	.byte 2,35,0,0,7
 	.asciz "System_Collections_Generic_KeyNotFoundException"
 
-LDIFF_SYM331=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM331
+LDIFF_SYM333=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM333
 LTDIE_49_POINTER:
 
 	.byte 13
-LDIFF_SYM332=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM332
+LDIFF_SYM334=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM334
 LTDIE_49_REFERENCE:
 
 	.byte 14
-LDIFF_SYM333=LTDIE_49 - Ldebug_info_start
-	.long LDIFF_SYM333
+LDIFF_SYM335=LTDIE_49 - Ldebug_info_start
+	.long LDIFF_SYM335
 	.byte 2
 	.asciz "Microsoft.Maui.Controls.Xaml.RegisterXNamesVisitor:Visit"
 	.asciz "Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode"
@@ -17629,52 +17697,52 @@ LDIFF_SYM333=LTDIE_49 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM334=LTDIE_42_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM334
+LDIFF_SYM336=LTDIE_46_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM336
 	.byte 2,141,40,3
 	.asciz "node"
 
-LDIFF_SYM335=LTDIE_43_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM335
+LDIFF_SYM337=LTDIE_47_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM337
 	.byte 2,141,48,3
 	.asciz "parentNode"
 
-LDIFF_SYM336=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM336
+LDIFF_SYM338=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM338
 	.byte 1,106,11
 	.asciz "element"
 
-LDIFF_SYM337=LTDIE_44_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM337
+LDIFF_SYM339=LTDIE_35_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM339
 	.byte 1,106,11
 	.asciz "ae"
 
-LDIFF_SYM338=LTDIE_48_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM338
+LDIFF_SYM340=LTDIE_48_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM340
 	.byte 2,141,56,11
 	.asciz "xpe"
 
-LDIFF_SYM339=LTDIE_18_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM339
+LDIFF_SYM341=LTDIE_18_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM341
 	.byte 3,141,192,0,11
 	.asciz "knfe"
 
-LDIFF_SYM340=LTDIE_49_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM340
+LDIFF_SYM342=LTDIE_49_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM342
 	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM341=Lfde1_end - Lfde1_start
-	.long LDIFF_SYM341
+LDIFF_SYM343=Lfde1_end - Lfde1_start
+	.long LDIFF_SYM343
 Lfde1_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode
 
-LDIFF_SYM342=Lme_13d - Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode
-	.long LDIFF_SYM342
+LDIFF_SYM344=Lme_13d - Microsoft_Maui_Controls_Xaml_RegisterXNamesVisitor_Visit_Microsoft_Maui_Controls_Xaml_ValueNode_Microsoft_Maui_Controls_Xaml_INode
+	.long LDIFF_SYM344
 	.long 0
 	.byte 12,31,0,68,14,224,2,157,44,158,43,68,13,29,68,152,42,153,41,68,154,40
 	.align 3
@@ -17687,265 +17755,265 @@ LTDIE_50:
 	.asciz "Microsoft_Maui_Controls_Xaml_ResourcesLoader"
 
 	.byte 16,16
-LDIFF_SYM343=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM343
+LDIFF_SYM345=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM345
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Maui_Controls_Xaml_ResourcesLoader"
 
-LDIFF_SYM344=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM344
+LDIFF_SYM346=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM346
 LTDIE_50_POINTER:
 
 	.byte 13
-LDIFF_SYM345=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM345
+LDIFF_SYM347=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM347
 LTDIE_50_REFERENCE:
 
 	.byte 14
-LDIFF_SYM346=LTDIE_50 - Ldebug_info_start
-	.long LDIFF_SYM346
+LDIFF_SYM348=LTDIE_50 - Ldebug_info_start
+	.long LDIFF_SYM348
 LTDIE_51:
 
 	.byte 5
 	.asciz "_ResourceLoadingResponse"
 
 	.byte 32,16
-LDIFF_SYM347=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM347
+LDIFF_SYM349=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM349
 	.byte 2,35,0,6
 	.asciz "<ResourceContent>k__BackingField"
 
-LDIFF_SYM348=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM348
+LDIFF_SYM350=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM350
 	.byte 2,35,16,6
 	.asciz "<UseDesignProperties>k__BackingField"
 
-LDIFF_SYM349=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM349
+LDIFF_SYM351=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM351
 	.byte 2,35,24,0,7
 	.asciz "_ResourceLoadingResponse"
 
-LDIFF_SYM350=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM350
+LDIFF_SYM352=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM352
 LTDIE_51_POINTER:
 
 	.byte 13
-LDIFF_SYM351=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM351
+LDIFF_SYM353=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM353
 LTDIE_51_REFERENCE:
 
 	.byte 14
-LDIFF_SYM352=LTDIE_51 - Ldebug_info_start
-	.long LDIFF_SYM352
+LDIFF_SYM354=LTDIE_51 - Ldebug_info_start
+	.long LDIFF_SYM354
 LTDIE_53:
 
 	.byte 5
 	.asciz "System_MarshalByRefObject"
 
 	.byte 16,16
-LDIFF_SYM353=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM353
+LDIFF_SYM355=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM355
 	.byte 2,35,0,0,7
 	.asciz "System_MarshalByRefObject"
 
-LDIFF_SYM354=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM354
+LDIFF_SYM356=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM356
 LTDIE_53_POINTER:
 
 	.byte 13
-LDIFF_SYM355=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM355
+LDIFF_SYM357=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM357
 LTDIE_53_REFERENCE:
 
 	.byte 14
-LDIFF_SYM356=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM356
+LDIFF_SYM358=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM358
 LTDIE_61:
 
 	.byte 5
 	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
 
 	.byte 16,16
-LDIFF_SYM357=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM357
+LDIFF_SYM359=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM359
 	.byte 2,35,0,0,7
 	.asciz "System_Runtime_ConstrainedExecution_CriticalFinalizerObject"
 
-LDIFF_SYM358=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM358
+LDIFF_SYM360=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM360
 LTDIE_61_POINTER:
 
 	.byte 13
-LDIFF_SYM359=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM359
+LDIFF_SYM361=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM361
 LTDIE_61_REFERENCE:
 
 	.byte 14
-LDIFF_SYM360=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM360
+LDIFF_SYM362=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM362
 LTDIE_60:
 
 	.byte 5
 	.asciz "System_Runtime_InteropServices_SafeHandle"
 
 	.byte 32,16
-LDIFF_SYM361=LTDIE_61 - Ldebug_info_start
-	.long LDIFF_SYM361
+LDIFF_SYM363=LTDIE_61 - Ldebug_info_start
+	.long LDIFF_SYM363
 	.byte 2,35,0,6
 	.asciz "handle"
 
-LDIFF_SYM362=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM362
+LDIFF_SYM364=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM364
 	.byte 2,35,16,6
 	.asciz "_state"
 
-LDIFF_SYM363=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM363
+LDIFF_SYM365=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM365
 	.byte 2,35,24,6
 	.asciz "_ownsHandle"
 
-LDIFF_SYM364=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM364
+LDIFF_SYM366=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM366
 	.byte 2,35,28,6
 	.asciz "_fullyInitialized"
 
-LDIFF_SYM365=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM365
+LDIFF_SYM367=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM367
 	.byte 2,35,29,0,7
 	.asciz "System_Runtime_InteropServices_SafeHandle"
 
-LDIFF_SYM366=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM366
+LDIFF_SYM368=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM368
 LTDIE_60_POINTER:
 
 	.byte 13
-LDIFF_SYM367=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM367
+LDIFF_SYM369=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM369
 LTDIE_60_REFERENCE:
 
 	.byte 14
-LDIFF_SYM368=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM368
+LDIFF_SYM370=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM370
 LTDIE_59:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
 
 	.byte 32,16
-LDIFF_SYM369=LTDIE_60 - Ldebug_info_start
-	.long LDIFF_SYM369
+LDIFF_SYM371=LTDIE_60 - Ldebug_info_start
+	.long LDIFF_SYM371
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeHandleZeroOrMinusOneIsInvalid"
 
-LDIFF_SYM370=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM370
+LDIFF_SYM372=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM372
 LTDIE_59_POINTER:
 
 	.byte 13
-LDIFF_SYM371=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM371
+LDIFF_SYM373=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM373
 LTDIE_59_REFERENCE:
 
 	.byte 14
-LDIFF_SYM372=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM372
+LDIFF_SYM374=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM374
 LTDIE_58:
 
 	.byte 5
 	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
 
 	.byte 32,16
-LDIFF_SYM373=LTDIE_59 - Ldebug_info_start
-	.long LDIFF_SYM373
+LDIFF_SYM375=LTDIE_59 - Ldebug_info_start
+	.long LDIFF_SYM375
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Win32_SafeHandles_SafeWaitHandle"
 
-LDIFF_SYM374=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM374
+LDIFF_SYM376=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM376
 LTDIE_58_POINTER:
 
 	.byte 13
-LDIFF_SYM375=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM375
+LDIFF_SYM377=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM377
 LTDIE_58_REFERENCE:
 
 	.byte 14
-LDIFF_SYM376=LTDIE_58 - Ldebug_info_start
-	.long LDIFF_SYM376
+LDIFF_SYM378=LTDIE_58 - Ldebug_info_start
+	.long LDIFF_SYM378
 LTDIE_57:
 
 	.byte 5
 	.asciz "System_Threading_WaitHandle"
 
 	.byte 24,16
-LDIFF_SYM377=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM377
+LDIFF_SYM379=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM379
 	.byte 2,35,0,6
 	.asciz "_waitHandle"
 
-LDIFF_SYM378=LTDIE_58_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM378
+LDIFF_SYM380=LTDIE_58_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM380
 	.byte 2,35,16,0,7
 	.asciz "System_Threading_WaitHandle"
 
-LDIFF_SYM379=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM379
+LDIFF_SYM381=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM381
 LTDIE_57_POINTER:
 
 	.byte 13
-LDIFF_SYM380=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM380
+LDIFF_SYM382=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM382
 LTDIE_57_REFERENCE:
 
 	.byte 14
-LDIFF_SYM381=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM381
+LDIFF_SYM383=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM383
 LTDIE_56:
 
 	.byte 5
 	.asciz "System_Threading_EventWaitHandle"
 
 	.byte 24,16
-LDIFF_SYM382=LTDIE_57 - Ldebug_info_start
-	.long LDIFF_SYM382
+LDIFF_SYM384=LTDIE_57 - Ldebug_info_start
+	.long LDIFF_SYM384
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_EventWaitHandle"
 
-LDIFF_SYM383=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM383
+LDIFF_SYM385=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM385
 LTDIE_56_POINTER:
 
 	.byte 13
-LDIFF_SYM384=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM384
+LDIFF_SYM386=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM386
 LTDIE_56_REFERENCE:
 
 	.byte 14
-LDIFF_SYM385=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM385
+LDIFF_SYM387=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM387
 LTDIE_55:
 
 	.byte 5
 	.asciz "System_Threading_ManualResetEvent"
 
 	.byte 24,16
-LDIFF_SYM386=LTDIE_56 - Ldebug_info_start
-	.long LDIFF_SYM386
+LDIFF_SYM388=LTDIE_56 - Ldebug_info_start
+	.long LDIFF_SYM388
 	.byte 2,35,0,0,7
 	.asciz "System_Threading_ManualResetEvent"
 
-LDIFF_SYM387=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM387
+LDIFF_SYM389=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM389
 LTDIE_55_POINTER:
 
 	.byte 13
-LDIFF_SYM388=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM388
+LDIFF_SYM390=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM390
 LTDIE_55_REFERENCE:
 
 	.byte 14
-LDIFF_SYM389=LTDIE_55 - Ldebug_info_start
-	.long LDIFF_SYM389
+LDIFF_SYM391=LTDIE_55 - Ldebug_info_start
+	.long LDIFF_SYM391
 LTDIE_62:
 
 	.byte 5
@@ -17954,479 +18022,479 @@ LTDIE_62:
 	.byte 88,6
 	.asciz "Prev"
 
-LDIFF_SYM390=LTDIE_62_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM390
+LDIFF_SYM392=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM392
 	.byte 2,35,72,6
 	.asciz "Next"
 
-LDIFF_SYM391=LTDIE_62_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM391
+LDIFF_SYM393=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM393
 	.byte 2,35,80,0,7
 	.asciz "_TaskNode"
 
-LDIFF_SYM392=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM392
+LDIFF_SYM394=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM394
 LTDIE_62_POINTER:
 
 	.byte 13
-LDIFF_SYM393=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM393
+LDIFF_SYM395=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM395
 LTDIE_62_REFERENCE:
 
 	.byte 14
-LDIFF_SYM394=LTDIE_62 - Ldebug_info_start
-	.long LDIFF_SYM394
+LDIFF_SYM396=LTDIE_62 - Ldebug_info_start
+	.long LDIFF_SYM396
 LTDIE_54:
 
 	.byte 5
 	.asciz "System_Threading_SemaphoreSlim"
 
 	.byte 64,16
-LDIFF_SYM395=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM395
+LDIFF_SYM397=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM397
 	.byte 2,35,0,6
 	.asciz "m_currentCount"
 
-LDIFF_SYM396=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM396
+LDIFF_SYM398=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM398
 	.byte 2,35,48,6
 	.asciz "m_maxCount"
 
-LDIFF_SYM397=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM397
+LDIFF_SYM399=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM399
 	.byte 2,35,52,6
 	.asciz "m_waitCount"
 
-LDIFF_SYM398=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM398
+LDIFF_SYM400=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM400
 	.byte 2,35,56,6
 	.asciz "m_countOfWaitersPulsedToWake"
 
-LDIFF_SYM399=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM399
+LDIFF_SYM401=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM401
 	.byte 2,35,60,6
 	.asciz "m_lockObjAndDisposed"
 
-LDIFF_SYM400=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM400
+LDIFF_SYM402=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM402
 	.byte 2,35,16,6
 	.asciz "m_waitHandle"
 
-LDIFF_SYM401=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM401
+LDIFF_SYM403=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM403
 	.byte 2,35,24,6
 	.asciz "m_asyncHead"
 
-LDIFF_SYM402=LTDIE_62_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM402
+LDIFF_SYM404=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM404
 	.byte 2,35,32,6
 	.asciz "m_asyncTail"
 
-LDIFF_SYM403=LTDIE_62_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM403
+LDIFF_SYM405=LTDIE_62_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM405
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_SemaphoreSlim"
 
-LDIFF_SYM404=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM404
+LDIFF_SYM406=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM406
 LTDIE_54_POINTER:
 
 	.byte 13
-LDIFF_SYM405=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM405
+LDIFF_SYM407=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM407
 LTDIE_54_REFERENCE:
 
 	.byte 14
-LDIFF_SYM406=LTDIE_54 - Ldebug_info_start
-	.long LDIFF_SYM406
+LDIFF_SYM408=LTDIE_54 - Ldebug_info_start
+	.long LDIFF_SYM408
 LTDIE_52:
 
 	.byte 5
 	.asciz "System_IO_Stream"
 
 	.byte 24,16
-LDIFF_SYM407=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM407
+LDIFF_SYM409=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM409
 	.byte 2,35,0,6
 	.asciz "_asyncActiveSemaphore"
 
-LDIFF_SYM408=LTDIE_54_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM408
+LDIFF_SYM410=LTDIE_54_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM410
 	.byte 2,35,16,0,7
 	.asciz "System_IO_Stream"
 
-LDIFF_SYM409=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM409
+LDIFF_SYM411=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM411
 LTDIE_52_POINTER:
 
 	.byte 13
-LDIFF_SYM410=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM410
+LDIFF_SYM412=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM412
 LTDIE_52_REFERENCE:
 
 	.byte 14
-LDIFF_SYM411=LTDIE_52 - Ldebug_info_start
-	.long LDIFF_SYM411
+LDIFF_SYM413=LTDIE_52 - Ldebug_info_start
+	.long LDIFF_SYM413
 LTDIE_64:
 
 	.byte 5
 	.asciz "System_IO_TextReader"
 
 	.byte 16,16
-LDIFF_SYM412=LTDIE_53 - Ldebug_info_start
-	.long LDIFF_SYM412
+LDIFF_SYM414=LTDIE_53 - Ldebug_info_start
+	.long LDIFF_SYM414
 	.byte 2,35,0,0,7
 	.asciz "System_IO_TextReader"
 
-LDIFF_SYM413=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM413
+LDIFF_SYM415=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM415
 LTDIE_64_POINTER:
 
 	.byte 13
-LDIFF_SYM414=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM414
+LDIFF_SYM416=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM416
 LTDIE_64_REFERENCE:
 
 	.byte 14
-LDIFF_SYM415=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM415
+LDIFF_SYM417=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM417
 LTDIE_67:
 
 	.byte 5
 	.asciz "System_UInt32"
 
 	.byte 20,16
-LDIFF_SYM416=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM416
+LDIFF_SYM418=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM418
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM417=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM417
+LDIFF_SYM419=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM419
 	.byte 2,35,16,0,7
 	.asciz "System_UInt32"
 
-LDIFF_SYM418=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM418
+LDIFF_SYM420=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM420
 LTDIE_67_POINTER:
 
 	.byte 13
-LDIFF_SYM419=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM419
+LDIFF_SYM421=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM421
 LTDIE_67_REFERENCE:
 
 	.byte 14
-LDIFF_SYM420=LTDIE_67 - Ldebug_info_start
-	.long LDIFF_SYM420
+LDIFF_SYM422=LTDIE_67 - Ldebug_info_start
+	.long LDIFF_SYM422
 LTDIE_66:
 
 	.byte 5
 	.asciz "System_Text_CodePageDataItem"
 
 	.byte 56,16
-LDIFF_SYM421=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM421
+LDIFF_SYM423=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM423
 	.byte 2,35,0,6
 	.asciz "<UIFamilyCodePage>k__BackingField"
 
-LDIFF_SYM422=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM422
+LDIFF_SYM424=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM424
 	.byte 2,35,48,6
 	.asciz "<WebName>k__BackingField"
 
-LDIFF_SYM423=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM423
+LDIFF_SYM425=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM425
 	.byte 2,35,16,6
 	.asciz "<HeaderName>k__BackingField"
 
-LDIFF_SYM424=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM424
+LDIFF_SYM426=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM426
 	.byte 2,35,24,6
 	.asciz "<BodyName>k__BackingField"
 
-LDIFF_SYM425=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM425
+LDIFF_SYM427=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM427
 	.byte 2,35,32,6
 	.asciz "<DisplayName>k__BackingField"
 
-LDIFF_SYM426=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM426
+LDIFF_SYM428=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM428
 	.byte 2,35,40,6
 	.asciz "<Flags>k__BackingField"
 
-LDIFF_SYM427=LDIE_U4 - Ldebug_info_start
-	.long LDIFF_SYM427
+LDIFF_SYM429=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM429
 	.byte 2,35,52,0,7
 	.asciz "System_Text_CodePageDataItem"
 
-LDIFF_SYM428=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM428
+LDIFF_SYM430=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM430
 LTDIE_66_POINTER:
 
 	.byte 13
-LDIFF_SYM429=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM429
+LDIFF_SYM431=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM431
 LTDIE_66_REFERENCE:
 
 	.byte 14
-LDIFF_SYM430=LTDIE_66 - Ldebug_info_start
-	.long LDIFF_SYM430
+LDIFF_SYM432=LTDIE_66 - Ldebug_info_start
+	.long LDIFF_SYM432
 LTDIE_68:
 
 	.byte 5
 	.asciz "System_Text_EncoderFallback"
 
 	.byte 16,16
-LDIFF_SYM431=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM431
+LDIFF_SYM433=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM433
 	.byte 2,35,0,0,7
 	.asciz "System_Text_EncoderFallback"
 
-LDIFF_SYM432=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM432
+LDIFF_SYM434=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM434
 LTDIE_68_POINTER:
 
 	.byte 13
-LDIFF_SYM433=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM433
+LDIFF_SYM435=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM435
 LTDIE_68_REFERENCE:
 
 	.byte 14
-LDIFF_SYM434=LTDIE_68 - Ldebug_info_start
-	.long LDIFF_SYM434
+LDIFF_SYM436=LTDIE_68 - Ldebug_info_start
+	.long LDIFF_SYM436
 LTDIE_69:
 
 	.byte 5
 	.asciz "System_Text_DecoderFallback"
 
 	.byte 16,16
-LDIFF_SYM435=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM435
+LDIFF_SYM437=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM437
 	.byte 2,35,0,0,7
 	.asciz "System_Text_DecoderFallback"
 
-LDIFF_SYM436=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM436
+LDIFF_SYM438=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM438
 LTDIE_69_POINTER:
 
 	.byte 13
-LDIFF_SYM437=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM437
+LDIFF_SYM439=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM439
 LTDIE_69_REFERENCE:
 
 	.byte 14
-LDIFF_SYM438=LTDIE_69 - Ldebug_info_start
-	.long LDIFF_SYM438
+LDIFF_SYM440=LTDIE_69 - Ldebug_info_start
+	.long LDIFF_SYM440
 LTDIE_65:
 
 	.byte 5
 	.asciz "System_Text_Encoding"
 
 	.byte 48,16
-LDIFF_SYM439=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM439
+LDIFF_SYM441=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM441
 	.byte 2,35,0,6
 	.asciz "_codePage"
 
-LDIFF_SYM440=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM440
+LDIFF_SYM442=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM442
 	.byte 2,35,40,6
 	.asciz "_dataItem"
 
-LDIFF_SYM441=LTDIE_66_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM441
+LDIFF_SYM443=LTDIE_66_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM443
 	.byte 2,35,16,6
 	.asciz "_isReadOnly"
 
-LDIFF_SYM442=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM442
+LDIFF_SYM444=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM444
 	.byte 2,35,44,6
 	.asciz "encoderFallback"
 
-LDIFF_SYM443=LTDIE_68_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM443
+LDIFF_SYM445=LTDIE_68_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM445
 	.byte 2,35,24,6
 	.asciz "decoderFallback"
 
-LDIFF_SYM444=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM444
+LDIFF_SYM446=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM446
 	.byte 2,35,32,0,7
 	.asciz "System_Text_Encoding"
 
-LDIFF_SYM445=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM445
+LDIFF_SYM447=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM447
 LTDIE_65_POINTER:
 
 	.byte 13
-LDIFF_SYM446=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM446
+LDIFF_SYM448=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM448
 LTDIE_65_REFERENCE:
 
 	.byte 14
-LDIFF_SYM447=LTDIE_65 - Ldebug_info_start
-	.long LDIFF_SYM447
+LDIFF_SYM449=LTDIE_65 - Ldebug_info_start
+	.long LDIFF_SYM449
 LTDIE_72:
 
 	.byte 5
 	.asciz "System_Text_DecoderNLS"
 
 	.byte 56,16
-LDIFF_SYM448=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM448
+LDIFF_SYM450=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM450
 	.byte 2,35,0,6
 	.asciz "_encoding"
 
-LDIFF_SYM449=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM449
+LDIFF_SYM451=LTDIE_65_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM451
 	.byte 2,35,32,6
 	.asciz "_mustFlush"
 
-LDIFF_SYM450=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM450
+LDIFF_SYM452=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM452
 	.byte 2,35,40,6
 	.asciz "_throwOnOverflow"
 
-LDIFF_SYM451=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM451
+LDIFF_SYM453=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM453
 	.byte 2,35,41,6
 	.asciz "_bytesUsed"
 
-LDIFF_SYM452=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM452
+LDIFF_SYM454=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM454
 	.byte 2,35,44,6
 	.asciz "_leftoverBytes"
 
-LDIFF_SYM453=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM453
+LDIFF_SYM455=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM455
 	.byte 2,35,48,6
 	.asciz "_leftoverByteCount"
 
-LDIFF_SYM454=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM454
+LDIFF_SYM456=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM456
 	.byte 2,35,52,0,7
 	.asciz "System_Text_DecoderNLS"
 
-LDIFF_SYM455=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM455
+LDIFF_SYM457=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM457
 LTDIE_72_POINTER:
 
 	.byte 13
-LDIFF_SYM456=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM456
+LDIFF_SYM458=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM458
 LTDIE_72_REFERENCE:
 
 	.byte 14
-LDIFF_SYM457=LTDIE_72 - Ldebug_info_start
-	.long LDIFF_SYM457
+LDIFF_SYM459=LTDIE_72 - Ldebug_info_start
+	.long LDIFF_SYM459
 LTDIE_71:
 
 	.byte 5
 	.asciz "System_Text_DecoderFallbackBuffer"
 
 	.byte 56,16
-LDIFF_SYM458=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM458
+LDIFF_SYM460=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM460
 	.byte 2,35,0,6
 	.asciz "byteStart"
 
-LDIFF_SYM459=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM459
+LDIFF_SYM461=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM461
 	.byte 2,35,32,6
 	.asciz "charEnd"
 
-LDIFF_SYM460=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM460
+LDIFF_SYM462=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM462
 	.byte 2,35,40,6
 	.asciz "_encoding"
 
-LDIFF_SYM461=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM461
+LDIFF_SYM463=LTDIE_65_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM463
 	.byte 2,35,16,6
 	.asciz "_decoder"
 
-LDIFF_SYM462=LTDIE_72_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM462
+LDIFF_SYM464=LTDIE_72_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM464
 	.byte 2,35,24,6
 	.asciz "_originalByteCount"
 
-LDIFF_SYM463=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM463
+LDIFF_SYM465=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM465
 	.byte 2,35,48,0,7
 	.asciz "System_Text_DecoderFallbackBuffer"
 
-LDIFF_SYM464=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM464
+LDIFF_SYM466=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM466
 LTDIE_71_POINTER:
 
 	.byte 13
-LDIFF_SYM465=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM465
+LDIFF_SYM467=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM467
 LTDIE_71_REFERENCE:
 
 	.byte 14
-LDIFF_SYM466=LTDIE_71 - Ldebug_info_start
-	.long LDIFF_SYM466
+LDIFF_SYM468=LTDIE_71 - Ldebug_info_start
+	.long LDIFF_SYM468
 LTDIE_70:
 
 	.byte 5
 	.asciz "System_Text_Decoder"
 
 	.byte 32,16
-LDIFF_SYM467=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM467
+LDIFF_SYM469=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM469
 	.byte 2,35,0,6
 	.asciz "_fallback"
 
-LDIFF_SYM468=LTDIE_69_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM468
+LDIFF_SYM470=LTDIE_69_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM470
 	.byte 2,35,16,6
 	.asciz "_fallbackBuffer"
 
-LDIFF_SYM469=LTDIE_71_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM469
+LDIFF_SYM471=LTDIE_71_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM471
 	.byte 2,35,24,0,7
 	.asciz "System_Text_Decoder"
 
-LDIFF_SYM470=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM470
+LDIFF_SYM472=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM472
 LTDIE_70_POINTER:
 
 	.byte 13
-LDIFF_SYM471=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM471
+LDIFF_SYM473=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM473
 LTDIE_70_REFERENCE:
 
 	.byte 14
-LDIFF_SYM472=LTDIE_70 - Ldebug_info_start
-	.long LDIFF_SYM472
+LDIFF_SYM474=LTDIE_70 - Ldebug_info_start
+	.long LDIFF_SYM474
 LTDIE_74:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_TaskScheduler"
 
 	.byte 20,16
-LDIFF_SYM473=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM473
+LDIFF_SYM475=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM475
 	.byte 2,35,0,6
 	.asciz "m_taskSchedulerId"
 
-LDIFF_SYM474=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM474
+LDIFF_SYM476=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM476
 	.byte 2,35,16,0,7
 	.asciz "System_Threading_Tasks_TaskScheduler"
 
-LDIFF_SYM475=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM475
+LDIFF_SYM477=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM477
 LTDIE_74_POINTER:
 
 	.byte 13
-LDIFF_SYM476=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM476
+LDIFF_SYM478=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM478
 LTDIE_74_REFERENCE:
 
 	.byte 14
-LDIFF_SYM477=LTDIE_74 - Ldebug_info_start
-	.long LDIFF_SYM477
+LDIFF_SYM479=LTDIE_74 - Ldebug_info_start
+	.long LDIFF_SYM479
 LTDIE_77:
 
 	.byte 17
@@ -18435,404 +18503,404 @@ LTDIE_77:
 	.byte 16,7
 	.asciz "System_Threading_IAsyncLocalValueMap"
 
-LDIFF_SYM478=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM478
+LDIFF_SYM480=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM480
 LTDIE_77_POINTER:
 
 	.byte 13
-LDIFF_SYM479=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM479
+LDIFF_SYM481=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM481
 LTDIE_77_REFERENCE:
 
 	.byte 14
-LDIFF_SYM480=LTDIE_77 - Ldebug_info_start
-	.long LDIFF_SYM480
+LDIFF_SYM482=LTDIE_77 - Ldebug_info_start
+	.long LDIFF_SYM482
 LTDIE_76:
 
 	.byte 5
 	.asciz "System_Threading_ExecutionContext"
 
 	.byte 40,16
-LDIFF_SYM481=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM481
+LDIFF_SYM483=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM483
 	.byte 2,35,0,6
 	.asciz "m_localValues"
 
-LDIFF_SYM482=LTDIE_77_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM482
+LDIFF_SYM484=LTDIE_77_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM484
 	.byte 2,35,16,6
 	.asciz "m_localChangeNotifications"
 
-LDIFF_SYM483=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM483
+LDIFF_SYM485=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM485
 	.byte 2,35,24,6
 	.asciz "m_isFlowSuppressed"
 
-LDIFF_SYM484=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM484
+LDIFF_SYM486=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM486
 	.byte 2,35,32,6
 	.asciz "m_isDefault"
 
-LDIFF_SYM485=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM485
+LDIFF_SYM487=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM487
 	.byte 2,35,33,0,7
 	.asciz "System_Threading_ExecutionContext"
 
-LDIFF_SYM486=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM486
+LDIFF_SYM488=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM488
 LTDIE_76_POINTER:
 
 	.byte 13
-LDIFF_SYM487=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM487
+LDIFF_SYM489=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM489
 LTDIE_76_REFERENCE:
 
 	.byte 14
-LDIFF_SYM488=LTDIE_76 - Ldebug_info_start
-	.long LDIFF_SYM488
+LDIFF_SYM490=LTDIE_76 - Ldebug_info_start
+	.long LDIFF_SYM490
 LTDIE_78:
 
 	.byte 5
 	.asciz "System_Threading_ManualResetEventSlim"
 
 	.byte 40,16
-LDIFF_SYM489=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM489
+LDIFF_SYM491=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM491
 	.byte 2,35,0,6
 	.asciz "m_lock"
 
-LDIFF_SYM490=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM490
+LDIFF_SYM492=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM492
 	.byte 2,35,16,6
 	.asciz "m_eventObj"
 
-LDIFF_SYM491=LTDIE_55_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM491
+LDIFF_SYM493=LTDIE_55_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM493
 	.byte 2,35,24,6
 	.asciz "m_combinedState"
 
-LDIFF_SYM492=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM492
+LDIFF_SYM494=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM494
 	.byte 2,35,32,0,7
 	.asciz "System_Threading_ManualResetEventSlim"
 
-LDIFF_SYM493=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM493
+LDIFF_SYM495=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM495
 LTDIE_78_POINTER:
 
 	.byte 13
-LDIFF_SYM494=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM494
+LDIFF_SYM496=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM496
 LTDIE_78_REFERENCE:
 
 	.byte 14
-LDIFF_SYM495=LTDIE_78 - Ldebug_info_start
-	.long LDIFF_SYM495
+LDIFF_SYM497=LTDIE_78 - Ldebug_info_start
+	.long LDIFF_SYM497
 LTDIE_80:
 
 	.byte 5
 	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
 
 	.byte 32,16
-LDIFF_SYM496=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM496
+LDIFF_SYM498=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM498
 	.byte 2,35,0,6
 	.asciz "_exception"
 
-LDIFF_SYM497=LTDIE_19_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM497
+LDIFF_SYM499=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM499
 	.byte 2,35,16,6
 	.asciz "_dispatchState"
 
-LDIFF_SYM498=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM498
+LDIFF_SYM500=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM500
 	.byte 2,35,24,0,7
 	.asciz "System_Runtime_ExceptionServices_ExceptionDispatchInfo"
 
-LDIFF_SYM499=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM499
+LDIFF_SYM501=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM501
 LTDIE_80_POINTER:
 
 	.byte 13
-LDIFF_SYM500=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM500
+LDIFF_SYM502=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM502
 LTDIE_80_REFERENCE:
 
 	.byte 14
-LDIFF_SYM501=LTDIE_80 - Ldebug_info_start
-	.long LDIFF_SYM501
+LDIFF_SYM503=LTDIE_80 - Ldebug_info_start
+	.long LDIFF_SYM503
 LTDIE_79:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_TaskExceptionHolder"
 
 	.byte 48,16
-LDIFF_SYM502=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM502
+LDIFF_SYM504=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM504
 	.byte 2,35,0,6
 	.asciz "m_task"
 
-LDIFF_SYM503=LTDIE_73_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM503
+LDIFF_SYM505=LTDIE_73_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM505
 	.byte 2,35,16,6
 	.asciz "m_faultExceptions"
 
-LDIFF_SYM504=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM504
+LDIFF_SYM506=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM506
 	.byte 2,35,24,6
 	.asciz "m_cancellationException"
 
-LDIFF_SYM505=LTDIE_80_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM505
+LDIFF_SYM507=LTDIE_80_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM507
 	.byte 2,35,32,6
 	.asciz "m_isHandled"
 
-LDIFF_SYM506=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM506
+LDIFF_SYM508=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM508
 	.byte 2,35,40,0,7
 	.asciz "System_Threading_Tasks_TaskExceptionHolder"
 
-LDIFF_SYM507=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM507
+LDIFF_SYM509=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM509
 LTDIE_79_POINTER:
 
 	.byte 13
-LDIFF_SYM508=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM508
+LDIFF_SYM510=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM510
 LTDIE_79_REFERENCE:
 
 	.byte 14
-LDIFF_SYM509=LTDIE_79 - Ldebug_info_start
-	.long LDIFF_SYM509
+LDIFF_SYM511=LTDIE_79 - Ldebug_info_start
+	.long LDIFF_SYM511
 LTDIE_75:
 
 	.byte 5
 	.asciz "_ContingentProperties"
 
 	.byte 80,16
-LDIFF_SYM510=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM510
+LDIFF_SYM512=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM512
 	.byte 2,35,0,6
 	.asciz "m_capturedContext"
 
-LDIFF_SYM511=LTDIE_76_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM511
+LDIFF_SYM513=LTDIE_76_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM513
 	.byte 2,35,16,6
 	.asciz "m_completionEvent"
 
-LDIFF_SYM512=LTDIE_78_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM512
+LDIFF_SYM514=LTDIE_78_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM514
 	.byte 2,35,24,6
 	.asciz "m_exceptionsHolder"
 
-LDIFF_SYM513=LTDIE_79_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM513
+LDIFF_SYM515=LTDIE_79_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM515
 	.byte 2,35,32,6
 	.asciz "m_cancellationToken"
 
-LDIFF_SYM514=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM514
+LDIFF_SYM516=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM516
 	.byte 2,35,40,6
 	.asciz "m_cancellationRegistration"
 
-LDIFF_SYM515=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM515
+LDIFF_SYM517=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM517
 	.byte 2,35,48,6
 	.asciz "m_internalCancellationRequested"
 
-LDIFF_SYM516=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM516
+LDIFF_SYM518=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM518
 	.byte 2,35,72,6
 	.asciz "m_completionCountdown"
 
-LDIFF_SYM517=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM517
+LDIFF_SYM519=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM519
 	.byte 2,35,76,6
 	.asciz "m_exceptionalChildren"
 
-LDIFF_SYM518=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM518
+LDIFF_SYM520=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM520
 	.byte 2,35,56,6
 	.asciz "m_parent"
 
-LDIFF_SYM519=LTDIE_73_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM519
+LDIFF_SYM521=LTDIE_73_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM521
 	.byte 2,35,64,0,7
 	.asciz "_ContingentProperties"
 
-LDIFF_SYM520=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM520
+LDIFF_SYM522=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM522
 LTDIE_75_POINTER:
 
 	.byte 13
-LDIFF_SYM521=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM521
+LDIFF_SYM523=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM523
 LTDIE_75_REFERENCE:
 
 	.byte 14
-LDIFF_SYM522=LTDIE_75 - Ldebug_info_start
-	.long LDIFF_SYM522
+LDIFF_SYM524=LTDIE_75 - Ldebug_info_start
+	.long LDIFF_SYM524
 LTDIE_73:
 
 	.byte 5
 	.asciz "System_Threading_Tasks_Task"
 
 	.byte 64,16
-LDIFF_SYM523=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM523
+LDIFF_SYM525=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM525
 	.byte 2,35,0,6
 	.asciz "m_taskId"
 
-LDIFF_SYM524=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM524
+LDIFF_SYM526=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM526
 	.byte 2,35,56,6
 	.asciz "m_action"
 
-LDIFF_SYM525=LTDIE_29_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM525
+LDIFF_SYM527=LTDIE_29_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM527
 	.byte 2,35,16,6
 	.asciz "m_stateObject"
 
-LDIFF_SYM526=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM526
+LDIFF_SYM528=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM528
 	.byte 2,35,24,6
 	.asciz "m_taskScheduler"
 
-LDIFF_SYM527=LTDIE_74_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM527
+LDIFF_SYM529=LTDIE_74_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM529
 	.byte 2,35,32,6
 	.asciz "m_stateFlags"
 
-LDIFF_SYM528=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM528
+LDIFF_SYM530=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM530
 	.byte 2,35,60,6
 	.asciz "m_continuationObject"
 
-LDIFF_SYM529=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM529
+LDIFF_SYM531=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM531
 	.byte 2,35,40,6
 	.asciz "m_contingentProperties"
 
-LDIFF_SYM530=LTDIE_75_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM530
+LDIFF_SYM532=LTDIE_75_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM532
 	.byte 2,35,48,0,7
 	.asciz "System_Threading_Tasks_Task"
 
-LDIFF_SYM531=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM531
+LDIFF_SYM533=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM533
 LTDIE_73_POINTER:
 
 	.byte 13
-LDIFF_SYM532=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM532
+LDIFF_SYM534=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM534
 LTDIE_73_REFERENCE:
 
 	.byte 14
-LDIFF_SYM533=LTDIE_73 - Ldebug_info_start
-	.long LDIFF_SYM533
+LDIFF_SYM535=LTDIE_73 - Ldebug_info_start
+	.long LDIFF_SYM535
 LTDIE_63:
 
 	.byte 5
 	.asciz "System_IO_StreamReader"
 
 	.byte 96,16
-LDIFF_SYM534=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM534
+LDIFF_SYM536=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM536
 	.byte 2,35,0,6
 	.asciz "_stream"
 
-LDIFF_SYM535=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM535
+LDIFF_SYM537=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM537
 	.byte 2,35,16,6
 	.asciz "_encoding"
 
-LDIFF_SYM536=LTDIE_65_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM536
+LDIFF_SYM538=LTDIE_65_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM538
 	.byte 2,35,24,6
 	.asciz "_decoder"
 
-LDIFF_SYM537=LTDIE_70_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM537
+LDIFF_SYM539=LTDIE_70_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM539
 	.byte 2,35,32,6
 	.asciz "_byteBuffer"
 
-LDIFF_SYM538=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM538
+LDIFF_SYM540=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM540
 	.byte 2,35,40,6
 	.asciz "_charBuffer"
 
-LDIFF_SYM539=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM539
+LDIFF_SYM541=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM541
 	.byte 2,35,48,6
 	.asciz "_charPos"
 
-LDIFF_SYM540=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM540
+LDIFF_SYM542=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM542
 	.byte 2,35,64,6
 	.asciz "_charLen"
 
-LDIFF_SYM541=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM541
+LDIFF_SYM543=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM543
 	.byte 2,35,68,6
 	.asciz "_byteLen"
 
-LDIFF_SYM542=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM542
+LDIFF_SYM544=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM544
 	.byte 2,35,72,6
 	.asciz "_bytePos"
 
-LDIFF_SYM543=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM543
+LDIFF_SYM545=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM545
 	.byte 2,35,76,6
 	.asciz "_maxCharsPerBuffer"
 
-LDIFF_SYM544=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM544
+LDIFF_SYM546=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM546
 	.byte 2,35,80,6
 	.asciz "_disposed"
 
-LDIFF_SYM545=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM545
+LDIFF_SYM547=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM547
 	.byte 2,35,84,6
 	.asciz "_detectEncoding"
 
-LDIFF_SYM546=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM546
+LDIFF_SYM548=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM548
 	.byte 2,35,85,6
 	.asciz "_checkPreamble"
 
-LDIFF_SYM547=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM547
+LDIFF_SYM549=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM549
 	.byte 2,35,86,6
 	.asciz "_isBlocked"
 
-LDIFF_SYM548=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM548
+LDIFF_SYM550=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM550
 	.byte 2,35,87,6
 	.asciz "_closable"
 
-LDIFF_SYM549=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM549
+LDIFF_SYM551=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM551
 	.byte 2,35,88,6
 	.asciz "_asyncReadTask"
 
-LDIFF_SYM550=LTDIE_73_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM550
+LDIFF_SYM552=LTDIE_73_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM552
 	.byte 2,35,56,0,7
 	.asciz "System_IO_StreamReader"
 
-LDIFF_SYM551=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM551
+LDIFF_SYM553=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM553
 LTDIE_63_POINTER:
 
 	.byte 13
-LDIFF_SYM552=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM552
+LDIFF_SYM554=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM554
 LTDIE_63_REFERENCE:
 
 	.byte 14
-LDIFF_SYM553=LTDIE_63 - Ldebug_info_start
-	.long LDIFF_SYM553
+LDIFF_SYM555=LTDIE_63 - Ldebug_info_start
+	.long LDIFF_SYM555
 	.byte 2
 	.asciz "Microsoft.Maui.Controls.Xaml.ResourcesLoader:CreateFromResource<T_REF>"
 	.asciz "Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_REF_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo"
@@ -18844,72 +18912,72 @@ LDIFF_SYM553=LTDIE_63 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM554=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM554
+LDIFF_SYM556=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM556
 	.byte 3,141,192,0,3
 	.asciz "resourcePath"
 
-LDIFF_SYM555=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM555
+LDIFF_SYM557=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM557
 	.byte 1,104,3
 	.asciz "assembly"
 
-LDIFF_SYM556=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM556
+LDIFF_SYM558=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM558
 	.byte 1,105,3
 	.asciz "lineInfo"
 
-LDIFF_SYM557=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM557
+LDIFF_SYM559=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM559
 	.byte 1,106,11
 	.asciz "rd"
 
-LDIFF_SYM558=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM558
+LDIFF_SYM560=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM560
 	.byte 1,103,11
 	.asciz "resourceLoadingResponse"
 
-LDIFF_SYM559=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM559
+LDIFF_SYM561=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM561
 	.byte 1,101,11
 	.asciz "alternateResource"
 
-LDIFF_SYM560=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM560
+LDIFF_SYM562=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM562
 	.byte 3,141,224,0,11
 	.asciz "resourceId"
 
-LDIFF_SYM561=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM561
+LDIFF_SYM563=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM563
 	.byte 1,102,11
 	.asciz "stream"
 
-LDIFF_SYM562=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM562
+LDIFF_SYM564=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM564
 	.byte 3,141,208,0,11
 	.asciz "reader"
 
-LDIFF_SYM563=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM563
+LDIFF_SYM565=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM565
 	.byte 3,141,216,0,11
 	.asciz "V_6"
 
-LDIFF_SYM564=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM564
+LDIFF_SYM566=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM566
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM565=Lfde2_end - Lfde2_start
-	.long LDIFF_SYM565
+LDIFF_SYM567=Lfde2_end - Lfde2_start
+	.long LDIFF_SYM567
 Lfde2_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_REF_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo
 
-LDIFF_SYM566=Lme_14f - Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_REF_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo
-	.long LDIFF_SYM566
+LDIFF_SYM568=Lme_14f - Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_REF_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo
+	.long LDIFF_SYM568
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,149,22,150,21,68,151,20,152,19,68,153,18,154,17
 	.align 3
@@ -18928,72 +18996,72 @@ Lfde2_end:
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM567=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM567
+LDIFF_SYM569=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM569
 	.byte 0,3
 	.asciz "resourcePath"
 
-LDIFF_SYM568=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM568
+LDIFF_SYM570=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM570
 	.byte 1,103,3
 	.asciz "assembly"
 
-LDIFF_SYM569=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM569
+LDIFF_SYM571=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM571
 	.byte 1,104,3
 	.asciz "target"
 
-LDIFF_SYM570=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM570
+LDIFF_SYM572=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM572
 	.byte 1,105,3
 	.asciz "lineInfo"
 
-LDIFF_SYM571=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM571
+LDIFF_SYM573=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM573
 	.byte 1,106,11
 	.asciz "resourceLoadingResponse"
 
-LDIFF_SYM572=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM572
+LDIFF_SYM574=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM574
 	.byte 1,105,11
 	.asciz "alternateResource"
 
-LDIFF_SYM573=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM573
+LDIFF_SYM575=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM575
 	.byte 1,105,11
 	.asciz "resourceId"
 
-LDIFF_SYM574=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM574
+LDIFF_SYM576=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM576
 	.byte 1,105,11
 	.asciz "stream"
 
-LDIFF_SYM575=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM575
+LDIFF_SYM577=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM577
 	.byte 3,141,192,0,11
 	.asciz "reader"
 
-LDIFF_SYM576=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM576
+LDIFF_SYM578=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM578
 	.byte 3,141,200,0,11
 	.asciz "V_5"
 
-LDIFF_SYM577=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM577
+LDIFF_SYM579=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM579
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM578=Lfde3_end - Lfde3_start
-	.long LDIFF_SYM578
+LDIFF_SYM580=Lfde3_end - Lfde3_start
+	.long LDIFF_SYM580
 Lfde3_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_ResourcesLoader_GetResource_string_System_Reflection_Assembly_object_System_Xml_IXmlLineInfo
 
-LDIFF_SYM579=Lme_150 - Microsoft_Maui_Controls_Xaml_ResourcesLoader_GetResource_string_System_Reflection_Assembly_object_System_Xml_IXmlLineInfo
-	.long LDIFF_SYM579
+LDIFF_SYM581=Lme_150 - Microsoft_Maui_Controls_Xaml_ResourcesLoader_GetResource_string_System_Reflection_Assembly_object_System_Xml_IXmlLineInfo
+	.long LDIFF_SYM581
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,150,18,151,17,68,152,16,153,15,68,154,14
 	.align 3
@@ -19006,135 +19074,135 @@ LTDIE_81:
 	.asciz "_<>c__DisplayClass4_0"
 
 	.byte 24,16
-LDIFF_SYM580=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM580
+LDIFF_SYM582=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM582
 	.byte 2,35,0,6
 	.asciz "view"
 
-LDIFF_SYM581=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM581
+LDIFF_SYM583=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM583
 	.byte 2,35,16,0,7
 	.asciz "_<>c__DisplayClass4_0"
 
-LDIFF_SYM582=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM582
+LDIFF_SYM584=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM584
 LTDIE_81_POINTER:
 
 	.byte 13
-LDIFF_SYM583=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM583
+LDIFF_SYM585=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM585
 LTDIE_81_REFERENCE:
 
 	.byte 14
-LDIFF_SYM584=LTDIE_81 - Ldebug_info_start
-	.long LDIFF_SYM584
+LDIFF_SYM586=LTDIE_81 - Ldebug_info_start
+	.long LDIFF_SYM586
 LTDIE_82:
 
 	.byte 5
 	.asciz "System_IO_StringReader"
 
 	.byte 32,16
-LDIFF_SYM585=LTDIE_64 - Ldebug_info_start
-	.long LDIFF_SYM585
+LDIFF_SYM587=LTDIE_64 - Ldebug_info_start
+	.long LDIFF_SYM587
 	.byte 2,35,0,6
 	.asciz "_s"
 
-LDIFF_SYM586=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM586
+LDIFF_SYM588=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM588
 	.byte 2,35,16,6
 	.asciz "_pos"
 
-LDIFF_SYM587=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM587
+LDIFF_SYM589=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM589
 	.byte 2,35,24,0,7
 	.asciz "System_IO_StringReader"
 
-LDIFF_SYM588=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM588
+LDIFF_SYM590=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM590
 LTDIE_82_POINTER:
 
 	.byte 13
-LDIFF_SYM589=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM589
+LDIFF_SYM591=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM591
 LTDIE_82_REFERENCE:
 
 	.byte 14
-LDIFF_SYM590=LTDIE_82 - Ldebug_info_start
-	.long LDIFF_SYM590
+LDIFF_SYM592=LTDIE_82 - Ldebug_info_start
+	.long LDIFF_SYM592
 LTDIE_83:
 
 	.byte 5
 	.asciz "System_Xml_XmlReader"
 
 	.byte 16,16
-LDIFF_SYM591=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM591
+LDIFF_SYM593=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM593
 	.byte 2,35,0,0,7
 	.asciz "System_Xml_XmlReader"
 
-LDIFF_SYM592=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM592
+LDIFF_SYM594=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM594
 LTDIE_83_POINTER:
 
 	.byte 13
-LDIFF_SYM593=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM593
+LDIFF_SYM595=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM595
 LTDIE_83_REFERENCE:
 
 	.byte 14
-LDIFF_SYM594=LTDIE_83 - Ldebug_info_start
-	.long LDIFF_SYM594
+LDIFF_SYM596=LTDIE_83 - Ldebug_info_start
+	.long LDIFF_SYM596
 LTDIE_85:
 
 	.byte 5
 	.asciz "Microsoft_Maui_Controls_Xaml_RootNode"
 
 	.byte 96,16
-LDIFF_SYM595=LTDIE_4 - Ldebug_info_start
-	.long LDIFF_SYM595
+LDIFF_SYM597=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM597
 	.byte 2,35,0,0,7
 	.asciz "Microsoft_Maui_Controls_Xaml_RootNode"
 
-LDIFF_SYM596=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM596
+LDIFF_SYM598=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM598
 LTDIE_85_POINTER:
 
 	.byte 13
-LDIFF_SYM597=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM597
+LDIFF_SYM599=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM599
 LTDIE_85_REFERENCE:
 
 	.byte 14
-LDIFF_SYM598=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM598
+LDIFF_SYM600=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM600
 LTDIE_84:
 
 	.byte 5
 	.asciz "_RuntimeRootNode"
 
 	.byte 104,16
-LDIFF_SYM599=LTDIE_85 - Ldebug_info_start
-	.long LDIFF_SYM599
+LDIFF_SYM601=LTDIE_85 - Ldebug_info_start
+	.long LDIFF_SYM601
 	.byte 2,35,0,6
 	.asciz "<Root>k__BackingField"
 
-LDIFF_SYM600=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM600
+LDIFF_SYM602=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM602
 	.byte 2,35,96,0,7
 	.asciz "_RuntimeRootNode"
 
-LDIFF_SYM601=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM601
+LDIFF_SYM603=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM603
 LTDIE_84_POINTER:
 
 	.byte 13
-LDIFF_SYM602=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM602
+LDIFF_SYM604=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM604
 LTDIE_84_REFERENCE:
 
 	.byte 14
-LDIFF_SYM603=LTDIE_84 - Ldebug_info_start
-	.long LDIFF_SYM603
+LDIFF_SYM605=LTDIE_84 - Ldebug_info_start
+	.long LDIFF_SYM605
 	.byte 2
 	.asciz "Microsoft.Maui.Controls.Xaml.XamlLoader:Load"
 	.asciz "Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool"
@@ -19146,62 +19214,62 @@ LDIFF_SYM603=LTDIE_84 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "view"
 
-LDIFF_SYM604=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM604
+LDIFF_SYM606=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM606
 	.byte 1,103,3
 	.asciz "xaml"
 
-LDIFF_SYM605=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM605
+LDIFF_SYM607=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM607
 	.byte 1,104,3
 	.asciz "rootAssembly"
 
-LDIFF_SYM606=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM606
+LDIFF_SYM608=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM608
 	.byte 1,105,3
 	.asciz "useDesignProperties"
 
-LDIFF_SYM607=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM607
+LDIFF_SYM609=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM609
 	.byte 1,106,11
 	.asciz "CS$<>8__locals0"
 
-LDIFF_SYM608=LTDIE_81_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM608
+LDIFF_SYM610=LTDIE_81_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM610
 	.byte 1,102,11
 	.asciz "textReader"
 
-LDIFF_SYM609=LTDIE_82_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM609
+LDIFF_SYM611=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM611
 	.byte 3,141,208,0,11
 	.asciz "reader"
 
-LDIFF_SYM610=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM610
+LDIFF_SYM612=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM612
 	.byte 3,141,216,0,11
 	.asciz "rootnode"
 
-LDIFF_SYM611=LTDIE_84_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM611
+LDIFF_SYM613=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM613
 	.byte 1,104,11
 	.asciz "doNotThrow"
 
-LDIFF_SYM612=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM612
+LDIFF_SYM614=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM614
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM613=Lfde4_end - Lfde4_start
-	.long LDIFF_SYM613
+LDIFF_SYM615=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM615
 Lfde4_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool
 
-LDIFF_SYM614=Lme_184 - Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool
-	.long LDIFF_SYM614
+LDIFF_SYM616=Lme_184 - Microsoft_Maui_Controls_Xaml_XamlLoader_Load_object_string_System_Reflection_Assembly_bool
+	.long LDIFF_SYM616
 	.long 0
 	.byte 12,31,0,68,14,160,1,157,20,158,19,68,13,29,68,147,18,148,17,68,149,16,150,15,68,151,14,152,13,68,153,12
 	.byte 154,11
@@ -19221,77 +19289,77 @@ Lfde4_end:
 	.byte 2,118,16,3
 	.asciz "xaml"
 
-LDIFF_SYM615=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM615
+LDIFF_SYM617=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM617
 	.byte 1,104,3
 	.asciz "doNotThrow"
 
-LDIFF_SYM616=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM616
+LDIFF_SYM618=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM618
 	.byte 1,105,3
 	.asciz "useDesignProperties"
 
-LDIFF_SYM617=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM617
+LDIFF_SYM619=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM619
 	.byte 1,106,11
 	.asciz "inflatedView"
 
-LDIFF_SYM618=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM618
+LDIFF_SYM620=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM620
 	.byte 1,103,11
 	.asciz "textreader"
 
-LDIFF_SYM619=LTDIE_82_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM619
+LDIFF_SYM621=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM621
 	.byte 3,141,192,0,11
 	.asciz "reader"
 
-LDIFF_SYM620=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM620
+LDIFF_SYM622=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM622
 	.byte 3,141,200,0,11
 	.asciz "typeArguments"
 
-LDIFF_SYM621=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM621
+LDIFF_SYM623=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM623
 	.byte 1,104,11
 	.asciz "rootnode"
 
-LDIFF_SYM622=LTDIE_84_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM622
+LDIFF_SYM624=LTDIE_84_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM624
 	.byte 1,104,11
 	.asciz "visitorContext"
 
-LDIFF_SYM623=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM623
+LDIFF_SYM625=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM625
 	.byte 1,105,11
 	.asciz "cvv"
 
-LDIFF_SYM624=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM624
+LDIFF_SYM626=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM626
 	.byte 1,105,11
 	.asciz "V_7"
 
-LDIFF_SYM625=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM625
+LDIFF_SYM627=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM627
 	.byte 1,102,11
 	.asciz "V_8"
 
-LDIFF_SYM626=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM626
+LDIFF_SYM628=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM628
 	.byte 1,103,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM627=Lfde5_end - Lfde5_start
-	.long LDIFF_SYM627
+LDIFF_SYM629=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM629
 Lfde5_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlLoader_Create_string_bool_bool
 
-LDIFF_SYM628=Lme_186 - Microsoft_Maui_Controls_Xaml_XamlLoader_Create_string_bool_bool
-	.long LDIFF_SYM628
+LDIFF_SYM630=Lme_186 - Microsoft_Maui_Controls_Xaml_XamlLoader_Create_string_bool_bool
+	.long LDIFF_SYM630
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,68,149,20,150,19,68,151,18,152,17,68,153,16,154,15
 	.align 3
@@ -19306,46 +19374,46 @@ LTDIE_86:
 	.byte 16,7
 	.asciz "Microsoft_Maui_Controls_IResourcesProvider"
 
-LDIFF_SYM629=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM629
+LDIFF_SYM631=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM631
 LTDIE_86_POINTER:
 
 	.byte 13
-LDIFF_SYM630=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM630
+LDIFF_SYM632=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM632
 LTDIE_86_REFERENCE:
 
 	.byte 14
-LDIFF_SYM631=LTDIE_86 - Ldebug_info_start
-	.long LDIFF_SYM631
+LDIFF_SYM633=LTDIE_86 - Ldebug_info_start
+	.long LDIFF_SYM633
 LTDIE_87:
 
 	.byte 5
 	.asciz "_<>c__DisplayClass7_0"
 
 	.byte 24,16
-LDIFF_SYM632=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM632
+LDIFF_SYM634=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM634
 	.byte 2,35,0,6
 	.asciz "rootView"
 
-LDIFF_SYM633=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM633
+LDIFF_SYM635=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM635
 	.byte 2,35,16,0,7
 	.asciz "_<>c__DisplayClass7_0"
 
-LDIFF_SYM634=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM634
+LDIFF_SYM636=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM636
 LTDIE_87_POINTER:
 
 	.byte 13
-LDIFF_SYM635=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM635
+LDIFF_SYM637=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM637
 LTDIE_87_REFERENCE:
 
 	.byte 14
-LDIFF_SYM636=LTDIE_87 - Ldebug_info_start
-	.long LDIFF_SYM636
+LDIFF_SYM638=LTDIE_87 - Ldebug_info_start
+	.long LDIFF_SYM638
 LTDIE_88:
 
 	.byte 17
@@ -19354,18 +19422,18 @@ LTDIE_88:
 	.byte 16,7
 	.asciz "Microsoft_Maui_Controls_Xaml_IElementNode"
 
-LDIFF_SYM637=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM637
+LDIFF_SYM639=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM639
 LTDIE_88_POINTER:
 
 	.byte 13
-LDIFF_SYM638=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM638
+LDIFF_SYM640=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM640
 LTDIE_88_REFERENCE:
 
 	.byte 14
-LDIFF_SYM639=LTDIE_88 - Ldebug_info_start
-	.long LDIFF_SYM639
+LDIFF_SYM641=LTDIE_88 - Ldebug_info_start
+	.long LDIFF_SYM641
 LTDIE_89:
 
 	.byte 17
@@ -19374,51 +19442,51 @@ LTDIE_89:
 	.byte 16,7
 	.asciz "Microsoft_Maui_Controls_Internals_IResourceDictionary"
 
-LDIFF_SYM640=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM640
+LDIFF_SYM642=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM642
 LTDIE_89_POINTER:
 
 	.byte 13
-LDIFF_SYM641=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM641
+LDIFF_SYM643=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM643
 LTDIE_89_REFERENCE:
 
 	.byte 14
-LDIFF_SYM642=LTDIE_89 - Ldebug_info_start
-	.long LDIFF_SYM642
+LDIFF_SYM644=LTDIE_89 - Ldebug_info_start
+	.long LDIFF_SYM644
 LTDIE_90:
 
 	.byte 5
 	.asciz "Microsoft_Maui_Controls_Xaml_ListNode"
 
 	.byte 72,16
-LDIFF_SYM643=LTDIE_5 - Ldebug_info_start
-	.long LDIFF_SYM643
+LDIFF_SYM645=LTDIE_5 - Ldebug_info_start
+	.long LDIFF_SYM645
 	.byte 2,35,0,6
 	.asciz "<XmlName>k__BackingField"
 
-LDIFF_SYM644=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM644
+LDIFF_SYM646=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM646
 	.byte 2,35,48,6
 	.asciz "<CollectionItems>k__BackingField"
 
-LDIFF_SYM645=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM645
+LDIFF_SYM647=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM647
 	.byte 2,35,64,0,7
 	.asciz "Microsoft_Maui_Controls_Xaml_ListNode"
 
-LDIFF_SYM646=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM646
+LDIFF_SYM648=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM648
 LTDIE_90_POINTER:
 
 	.byte 13
-LDIFF_SYM647=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM647
+LDIFF_SYM649=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM649
 LTDIE_90_REFERENCE:
 
 	.byte 14
-LDIFF_SYM648=LTDIE_90 - Ldebug_info_start
-	.long LDIFF_SYM648
+LDIFF_SYM650=LTDIE_90 - Ldebug_info_start
+	.long LDIFF_SYM650
 	.byte 2
 	.asciz "Microsoft.Maui.Controls.Xaml.XamlLoader:LoadResources"
 	.asciz "Microsoft_Maui_Controls_Xaml_XamlLoader_LoadResources_string_Microsoft_Maui_Controls_IResourcesProvider"
@@ -19430,92 +19498,92 @@ LDIFF_SYM648=LTDIE_90 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "xaml"
 
-LDIFF_SYM649=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM649
+LDIFF_SYM651=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM651
 	.byte 1,105,3
 	.asciz "rootView"
 
-LDIFF_SYM650=LTDIE_86_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM650
+LDIFF_SYM652=LTDIE_86_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM652
 	.byte 1,106,11
 	.asciz "CS$<>8__locals0"
 
-LDIFF_SYM651=LTDIE_87_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM651
+LDIFF_SYM653=LTDIE_87_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM653
 	.byte 1,104,11
 	.asciz "textReader"
 
-LDIFF_SYM652=LTDIE_82_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM652
+LDIFF_SYM654=LTDIE_82_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM654
 	.byte 3,141,128,1,11
 	.asciz "reader"
 
-LDIFF_SYM653=LTDIE_83_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM653
+LDIFF_SYM655=LTDIE_83_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM655
 	.byte 3,141,136,1,11
 	.asciz "rootNode"
 
-LDIFF_SYM654=LTDIE_85_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM654
+LDIFF_SYM656=LTDIE_85_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM656
 	.byte 1,106,11
 	.asciz "rNode"
 
-LDIFF_SYM655=LTDIE_88_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM655
+LDIFF_SYM657=LTDIE_88_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM657
 	.byte 1,105,11
 	.asciz "resources"
 
-LDIFF_SYM656=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM656
+LDIFF_SYM658=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM658
 	.byte 3,141,144,1,11
 	.asciz "visitorContext"
 
-LDIFF_SYM657=LTDIE_2_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM657
+LDIFF_SYM659=LTDIE_2_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM659
 	.byte 1,102,11
 	.asciz "cvv"
 
-LDIFF_SYM658=LTDIE_0_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM658
+LDIFF_SYM660=LTDIE_0_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM660
 	.byte 1,105,11
 	.asciz "resourcesEN"
 
-LDIFF_SYM659=LTDIE_4_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM659
+LDIFF_SYM661=LTDIE_4_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM661
 	.byte 1,103,11
 	.asciz "V_9"
 
-LDIFF_SYM660=LTDIE_89_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM660
+LDIFF_SYM662=LTDIE_89_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM662
 	.byte 1,106,11
 	.asciz "resourcesLN"
 
-LDIFF_SYM661=LTDIE_90_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM661
+LDIFF_SYM663=LTDIE_90_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM663
 	.byte 1,103,11
 	.asciz "V_11"
 
-LDIFF_SYM662=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM662
+LDIFF_SYM664=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM664
 	.byte 3,141,232,0,11
 	.asciz "n"
 
-LDIFF_SYM663=LTDIE_7_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM663
+LDIFF_SYM665=LTDIE_7_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM665
 	.byte 1,106,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM664=Lfde6_end - Lfde6_start
-	.long LDIFF_SYM664
+LDIFF_SYM666=Lfde6_end - Lfde6_start
+	.long LDIFF_SYM666
 Lfde6_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlLoader_LoadResources_string_Microsoft_Maui_Controls_IResourcesProvider
 
-LDIFF_SYM665=Lme_187 - Microsoft_Maui_Controls_Xaml_XamlLoader_LoadResources_string_Microsoft_Maui_Controls_IResourcesProvider
-	.long LDIFF_SYM665
+LDIFF_SYM667=Lme_187 - Microsoft_Maui_Controls_Xaml_XamlLoader_LoadResources_string_Microsoft_Maui_Controls_IResourcesProvider
+	.long LDIFF_SYM667
 	.long 0
 	.byte 12,31,0,68,14,240,2,157,46,158,45,68,13,29,68,148,44,149,43,68,150,42,151,41,68,152,40,153,39,68,154,38
 	.align 3
@@ -19534,67 +19602,67 @@ Lfde6_end:
 	.byte 2,118,16,3
 	.asciz "type"
 
-LDIFF_SYM666=LTDIE_14_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM666
+LDIFF_SYM668=LTDIE_14_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM668
 	.byte 1,104,3
 	.asciz "instance"
 
-LDIFF_SYM667=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM667
+LDIFF_SYM669=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM669
 	.byte 1,105,3
 	.asciz "useDesignProperties"
 
-LDIFF_SYM668=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM668
+LDIFF_SYM670=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM670
 	.byte 1,106,11
 	.asciz "xaml"
 
-LDIFF_SYM669=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM669
+LDIFF_SYM671=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM671
 	.byte 1,106,11
 	.asciz "assembly"
 
-LDIFF_SYM670=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM670
+LDIFF_SYM672=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM672
 	.byte 1,103,11
 	.asciz "resourceId"
 
-LDIFF_SYM671=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM671
+LDIFF_SYM673=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM673
 	.byte 1,102,11
 	.asciz "rlr"
 
-LDIFF_SYM672=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM672
+LDIFF_SYM674=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM674
 	.byte 1,105,11
 	.asciz "alternateXaml"
 
-LDIFF_SYM673=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM673
+LDIFF_SYM675=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM675
 	.byte 3,141,208,0,11
 	.asciz "stream"
 
-LDIFF_SYM674=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM674
+LDIFF_SYM676=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM676
 	.byte 3,141,192,0,11
 	.asciz "reader"
 
-LDIFF_SYM675=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM675
+LDIFF_SYM677=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM677
 	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM676=Lfde7_end - Lfde7_start
-	.long LDIFF_SYM676
+LDIFF_SYM678=Lfde7_end - Lfde7_start
+	.long LDIFF_SYM678
 Lfde7_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlLoader_GetXamlForType_System_Type_object_bool_
 
-LDIFF_SYM677=Lme_189 - Microsoft_Maui_Controls_Xaml_XamlLoader_GetXamlForType_System_Type_object_bool_
-	.long LDIFF_SYM677
+LDIFF_SYM679=Lme_189 - Microsoft_Maui_Controls_Xaml_XamlLoader_GetXamlForType_System_Type_object_bool_
+	.long LDIFF_SYM679
 	.long 0
 	.byte 12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,149,22,150,21,68,151,20,152,19,68,153,18,154,17
 	.align 3
@@ -19607,8 +19675,8 @@ LTDIE_92:
 	.asciz "System_Text_RegularExpressions_RegexOptions"
 
 	.byte 4
-LDIFF_SYM678=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM678
+LDIFF_SYM680=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM680
 	.byte 9
 	.asciz "None"
 
@@ -19645,69 +19713,69 @@ LDIFF_SYM678=LDIE_I4 - Ldebug_info_start
 	.byte 128,8,0,7
 	.asciz "System_Text_RegularExpressions_RegexOptions"
 
-LDIFF_SYM679=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM679
+LDIFF_SYM681=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM681
 LTDIE_92_POINTER:
 
 	.byte 13
-LDIFF_SYM680=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM680
+LDIFF_SYM682=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM682
 LTDIE_92_REFERENCE:
 
 	.byte 14
-LDIFF_SYM681=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM681
+LDIFF_SYM683=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM683
 LTDIE_93:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_RegexRunnerFactory"
 
 	.byte 16,16
-LDIFF_SYM682=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM682
+LDIFF_SYM684=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM684
 	.byte 2,35,0,0,7
 	.asciz "System_Text_RegularExpressions_RegexRunnerFactory"
 
-LDIFF_SYM683=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM683
+LDIFF_SYM685=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM685
 LTDIE_93_POINTER:
 
 	.byte 13
-LDIFF_SYM684=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM684
+LDIFF_SYM686=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM686
 LTDIE_93_REFERENCE:
 
 	.byte 14
-LDIFF_SYM685=LTDIE_93 - Ldebug_info_start
-	.long LDIFF_SYM685
+LDIFF_SYM687=LTDIE_93 - Ldebug_info_start
+	.long LDIFF_SYM687
 LTDIE_95:
 
 	.byte 5
 	.asciz "System_Single"
 
 	.byte 20,16
-LDIFF_SYM686=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM686
+LDIFF_SYM688=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM688
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM687=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM687
+LDIFF_SYM689=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM689
 	.byte 2,35,16,0,7
 	.asciz "System_Single"
 
-LDIFF_SYM688=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM688
+LDIFF_SYM690=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM690
 LTDIE_95_POINTER:
 
 	.byte 13
-LDIFF_SYM689=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM689
+LDIFF_SYM691=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM691
 LTDIE_95_REFERENCE:
 
 	.byte 14
-LDIFF_SYM690=LTDIE_95 - Ldebug_info_start
-	.long LDIFF_SYM690
+LDIFF_SYM692=LTDIE_95 - Ldebug_info_start
+	.long LDIFF_SYM692
 LTDIE_96:
 
 	.byte 17
@@ -19716,18 +19784,18 @@ LTDIE_96:
 	.byte 16,7
 	.asciz "System_Collections_ICollection"
 
-LDIFF_SYM691=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM691
+LDIFF_SYM693=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM693
 LTDIE_96_POINTER:
 
 	.byte 13
-LDIFF_SYM692=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM692
+LDIFF_SYM694=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM694
 LTDIE_96_REFERENCE:
 
 	.byte 14
-LDIFF_SYM693=LTDIE_96 - Ldebug_info_start
-	.long LDIFF_SYM693
+LDIFF_SYM695=LTDIE_96 - Ldebug_info_start
+	.long LDIFF_SYM695
 LTDIE_97:
 
 	.byte 17
@@ -19736,256 +19804,271 @@ LTDIE_97:
 	.byte 16,7
 	.asciz "System_Collections_IEqualityComparer"
 
-LDIFF_SYM694=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM694
+LDIFF_SYM696=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM696
 LTDIE_97_POINTER:
 
 	.byte 13
-LDIFF_SYM695=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM695
+LDIFF_SYM697=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM697
 LTDIE_97_REFERENCE:
 
 	.byte 14
-LDIFF_SYM696=LTDIE_97 - Ldebug_info_start
-	.long LDIFF_SYM696
+LDIFF_SYM698=LTDIE_97 - Ldebug_info_start
+	.long LDIFF_SYM698
 LTDIE_94:
 
 	.byte 5
 	.asciz "System_Collections_Hashtable"
 
 	.byte 64,16
-LDIFF_SYM697=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM697
+LDIFF_SYM699=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM699
 	.byte 2,35,0,6
 	.asciz "_buckets"
 
-LDIFF_SYM698=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM698
+LDIFF_SYM700=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM700
 	.byte 2,35,16,6
 	.asciz "_count"
 
-LDIFF_SYM699=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM699
+LDIFF_SYM701=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM701
 	.byte 2,35,40,6
 	.asciz "_occupancy"
 
-LDIFF_SYM700=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM700
+LDIFF_SYM702=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM702
 	.byte 2,35,44,6
 	.asciz "_loadsize"
 
-LDIFF_SYM701=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM701
+LDIFF_SYM703=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM703
 	.byte 2,35,48,6
 	.asciz "_loadFactor"
 
-LDIFF_SYM702=LDIE_R4 - Ldebug_info_start
-	.long LDIFF_SYM702
+LDIFF_SYM704=LDIE_R4 - Ldebug_info_start
+	.long LDIFF_SYM704
 	.byte 2,35,52,6
 	.asciz "_version"
 
-LDIFF_SYM703=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM703
+LDIFF_SYM705=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM705
 	.byte 2,35,56,6
 	.asciz "_isWriterInProgress"
 
-LDIFF_SYM704=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM704
+LDIFF_SYM706=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM706
 	.byte 2,35,60,6
 	.asciz "_keys"
 
-LDIFF_SYM705=LTDIE_96_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM705
+LDIFF_SYM707=LTDIE_96_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM707
 	.byte 2,35,24,6
 	.asciz "_keycomparer"
 
-LDIFF_SYM706=LTDIE_97_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM706
+LDIFF_SYM708=LTDIE_97_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM708
 	.byte 2,35,32,0,7
 	.asciz "System_Collections_Hashtable"
 
-LDIFF_SYM707=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM707
+LDIFF_SYM709=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM709
 LTDIE_94_POINTER:
 
 	.byte 13
-LDIFF_SYM708=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM708
+LDIFF_SYM710=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM710
 LTDIE_94_REFERENCE:
 
 	.byte 14
-LDIFF_SYM709=LTDIE_94 - Ldebug_info_start
-	.long LDIFF_SYM709
+LDIFF_SYM711=LTDIE_94 - Ldebug_info_start
+	.long LDIFF_SYM711
 LTDIE_101:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_Capture"
 
 	.byte 32,16
-LDIFF_SYM710=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM710
+LDIFF_SYM712=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM712
 	.byte 2,35,0,6
 	.asciz "<Index>k__BackingField"
 
-LDIFF_SYM711=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM711
+LDIFF_SYM713=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM713
 	.byte 2,35,24,6
 	.asciz "<Length>k__BackingField"
 
-LDIFF_SYM712=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM712
+LDIFF_SYM714=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM714
 	.byte 2,35,28,6
 	.asciz "<Text>k__BackingField"
 
-LDIFF_SYM713=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM713
+LDIFF_SYM715=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM715
 	.byte 2,35,16,0,7
 	.asciz "System_Text_RegularExpressions_Capture"
 
-LDIFF_SYM714=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM714
+LDIFF_SYM716=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM716
 LTDIE_101_POINTER:
 
 	.byte 13
-LDIFF_SYM715=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM715
+LDIFF_SYM717=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM717
 LTDIE_101_REFERENCE:
 
 	.byte 14
-LDIFF_SYM716=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM716
+LDIFF_SYM718=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM718
 LTDIE_100:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_Group"
 
 	.byte 56,16
-LDIFF_SYM717=LTDIE_101 - Ldebug_info_start
-	.long LDIFF_SYM717
+LDIFF_SYM719=LTDIE_101 - Ldebug_info_start
+	.long LDIFF_SYM719
 	.byte 2,35,0,6
 	.asciz "_caps"
 
-LDIFF_SYM718=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM718
+LDIFF_SYM720=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM720
 	.byte 2,35,32,6
 	.asciz "_capcount"
 
-LDIFF_SYM719=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM719
+LDIFF_SYM721=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM721
 	.byte 2,35,48,6
 	.asciz "<Name>k__BackingField"
 
-LDIFF_SYM720=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM720
+LDIFF_SYM722=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM722
 	.byte 2,35,40,0,7
 	.asciz "System_Text_RegularExpressions_Group"
 
-LDIFF_SYM721=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM721
+LDIFF_SYM723=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM723
 LTDIE_100_POINTER:
 
 	.byte 13
-LDIFF_SYM722=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM722
+LDIFF_SYM724=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM724
 LTDIE_100_REFERENCE:
 
 	.byte 14
-LDIFF_SYM723=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM723
+LDIFF_SYM725=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM725
 LTDIE_102:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_GroupCollection"
 
-	.byte 16,16
-LDIFF_SYM724=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM724
-	.byte 2,35,0,0,7
+	.byte 40,16
+LDIFF_SYM726=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM726
+	.byte 2,35,0,6
+	.asciz "_match"
+
+LDIFF_SYM727=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM727
+	.byte 2,35,16,6
+	.asciz "_captureMap"
+
+LDIFF_SYM728=LTDIE_94_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM728
+	.byte 2,35,24,6
+	.asciz "_groups"
+
+LDIFF_SYM729=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM729
+	.byte 2,35,32,0,7
 	.asciz "System_Text_RegularExpressions_GroupCollection"
 
-LDIFF_SYM725=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM725
+LDIFF_SYM730=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM730
 LTDIE_102_POINTER:
 
 	.byte 13
-LDIFF_SYM726=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM726
+LDIFF_SYM731=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM731
 LTDIE_102_REFERENCE:
 
 	.byte 14
-LDIFF_SYM727=LTDIE_102 - Ldebug_info_start
-	.long LDIFF_SYM727
+LDIFF_SYM732=LTDIE_102 - Ldebug_info_start
+	.long LDIFF_SYM732
 LTDIE_99:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_Match"
 
 	.byte 104,16
-LDIFF_SYM728=LTDIE_100 - Ldebug_info_start
-	.long LDIFF_SYM728
+LDIFF_SYM733=LTDIE_100 - Ldebug_info_start
+	.long LDIFF_SYM733
 	.byte 2,35,0,6
 	.asciz "_groupcoll"
 
-LDIFF_SYM729=LTDIE_102_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM729
+LDIFF_SYM734=LTDIE_102_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM734
 	.byte 2,35,56,6
 	.asciz "_regex"
 
-LDIFF_SYM730=LTDIE_91_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM730
+LDIFF_SYM735=LTDIE_91_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM735
 	.byte 2,35,64,6
 	.asciz "_textbeg"
 
-LDIFF_SYM731=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM731
+LDIFF_SYM736=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM736
 	.byte 2,35,88,6
 	.asciz "_textpos"
 
-LDIFF_SYM732=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM732
+LDIFF_SYM737=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM737
 	.byte 2,35,92,6
 	.asciz "_textend"
 
-LDIFF_SYM733=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM733
+LDIFF_SYM738=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM738
 	.byte 2,35,96,6
 	.asciz "_matches"
 
-LDIFF_SYM734=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM734
+LDIFF_SYM739=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM739
 	.byte 2,35,72,6
 	.asciz "_matchcount"
 
-LDIFF_SYM735=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM735
+LDIFF_SYM740=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM740
 	.byte 2,35,80,6
 	.asciz "_balancing"
 
-LDIFF_SYM736=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM736
+LDIFF_SYM741=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM741
 	.byte 2,35,100,0,7
 	.asciz "System_Text_RegularExpressions_Match"
 
-LDIFF_SYM737=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM737
+LDIFF_SYM742=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM742
 LTDIE_99_POINTER:
 
 	.byte 13
-LDIFF_SYM738=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM738
+LDIFF_SYM743=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM743
 LTDIE_99_REFERENCE:
 
 	.byte 14
-LDIFF_SYM739=LTDIE_99 - Ldebug_info_start
-	.long LDIFF_SYM739
+LDIFF_SYM744=LTDIE_99 - Ldebug_info_start
+	.long LDIFF_SYM744
 LTDIE_103:
 
 	.byte 8
 	.asciz "System_Text_RegularExpressions_RegexRunnerMode"
 
 	.byte 4
-LDIFF_SYM740=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM740
+LDIFF_SYM745=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM745
 	.byte 9
 	.asciz "ExistenceRequired"
 
@@ -19998,260 +20081,260 @@ LDIFF_SYM740=LDIE_I4 - Ldebug_info_start
 	.byte 2,0,7
 	.asciz "System_Text_RegularExpressions_RegexRunnerMode"
 
-LDIFF_SYM741=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM741
+LDIFF_SYM746=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM746
 LTDIE_103_POINTER:
 
 	.byte 13
-LDIFF_SYM742=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM742
+LDIFF_SYM747=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM747
 LTDIE_103_REFERENCE:
 
 	.byte 14
-LDIFF_SYM743=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM743
+LDIFF_SYM748=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM748
 LTDIE_104:
 
 	.byte 5
 	.asciz "System_Int64"
 
 	.byte 24,16
-LDIFF_SYM744=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM744
+LDIFF_SYM749=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM749
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM745=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM745
+LDIFF_SYM750=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM750
 	.byte 2,35,16,0,7
 	.asciz "System_Int64"
 
-LDIFF_SYM746=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM746
+LDIFF_SYM751=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM751
 LTDIE_104_POINTER:
 
 	.byte 13
-LDIFF_SYM747=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM747
+LDIFF_SYM752=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM752
 LTDIE_104_REFERENCE:
 
 	.byte 14
-LDIFF_SYM748=LTDIE_104 - Ldebug_info_start
-	.long LDIFF_SYM748
+LDIFF_SYM753=LTDIE_104 - Ldebug_info_start
+	.long LDIFF_SYM753
 LTDIE_98:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_RegexRunner"
 
 	.byte 120,16
-LDIFF_SYM749=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM749
+LDIFF_SYM754=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM754
 	.byte 2,35,0,6
 	.asciz "runtextbeg"
 
-LDIFF_SYM750=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM750
+LDIFF_SYM755=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM755
 	.byte 2,35,64,6
 	.asciz "runtextend"
 
-LDIFF_SYM751=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM751
+LDIFF_SYM756=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM756
 	.byte 2,35,68,6
 	.asciz "runtextstart"
 
-LDIFF_SYM752=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM752
+LDIFF_SYM757=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM757
 	.byte 2,35,72,6
 	.asciz "runtext"
 
-LDIFF_SYM753=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM753
+LDIFF_SYM758=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM758
 	.byte 2,35,16,6
 	.asciz "runtextpos"
 
-LDIFF_SYM754=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM754
+LDIFF_SYM759=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM759
 	.byte 2,35,76,6
 	.asciz "runtrack"
 
-LDIFF_SYM755=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM755
+LDIFF_SYM760=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM760
 	.byte 2,35,24,6
 	.asciz "runtrackpos"
 
-LDIFF_SYM756=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM756
+LDIFF_SYM761=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM761
 	.byte 2,35,80,6
 	.asciz "runstack"
 
-LDIFF_SYM757=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM757
+LDIFF_SYM762=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM762
 	.byte 2,35,32,6
 	.asciz "runstackpos"
 
-LDIFF_SYM758=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM758
+LDIFF_SYM763=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM763
 	.byte 2,35,84,6
 	.asciz "runcrawl"
 
-LDIFF_SYM759=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM759
+LDIFF_SYM764=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM764
 	.byte 2,35,40,6
 	.asciz "runcrawlpos"
 
-LDIFF_SYM760=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM760
+LDIFF_SYM765=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM765
 	.byte 2,35,88,6
 	.asciz "runtrackcount"
 
-LDIFF_SYM761=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM761
+LDIFF_SYM766=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM766
 	.byte 2,35,92,6
 	.asciz "runmatch"
 
-LDIFF_SYM762=LTDIE_99_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM762
+LDIFF_SYM767=LTDIE_99_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM767
 	.byte 2,35,48,6
 	.asciz "runregex"
 
-LDIFF_SYM763=LTDIE_91_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM763
+LDIFF_SYM768=LTDIE_91_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM768
 	.byte 2,35,56,6
 	.asciz "_mode"
 
-LDIFF_SYM764=LTDIE_103 - Ldebug_info_start
-	.long LDIFF_SYM764
+LDIFF_SYM769=LTDIE_103 - Ldebug_info_start
+	.long LDIFF_SYM769
 	.byte 2,35,96,6
 	.asciz "_timeout"
 
-LDIFF_SYM765=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM765
+LDIFF_SYM770=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM770
 	.byte 2,35,100,6
 	.asciz "_checkTimeout"
 
-LDIFF_SYM766=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM766
+LDIFF_SYM771=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM771
 	.byte 2,35,104,6
 	.asciz "_timeoutOccursAt"
 
-LDIFF_SYM767=LDIE_I8 - Ldebug_info_start
-	.long LDIFF_SYM767
+LDIFF_SYM772=LDIE_I8 - Ldebug_info_start
+	.long LDIFF_SYM772
 	.byte 2,35,112,0,7
 	.asciz "System_Text_RegularExpressions_RegexRunner"
 
-LDIFF_SYM768=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM768
+LDIFF_SYM773=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM773
 LTDIE_98_POINTER:
 
 	.byte 13
-LDIFF_SYM769=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM769
+LDIFF_SYM774=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM774
 LTDIE_98_REFERENCE:
 
 	.byte 14
-LDIFF_SYM770=LTDIE_98 - Ldebug_info_start
-	.long LDIFF_SYM770
+LDIFF_SYM775=LTDIE_98 - Ldebug_info_start
+	.long LDIFF_SYM775
 LTDIE_91:
 
 	.byte 5
 	.asciz "System_Text_RegularExpressions_Regex"
 
 	.byte 88,16
-LDIFF_SYM771=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM771
+LDIFF_SYM776=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM776
 	.byte 2,35,0,6
 	.asciz "pattern"
 
-LDIFF_SYM772=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM772
+LDIFF_SYM777=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM777
 	.byte 2,35,16,6
 	.asciz "roptions"
 
-LDIFF_SYM773=LTDIE_92 - Ldebug_info_start
-	.long LDIFF_SYM773
+LDIFF_SYM778=LTDIE_92 - Ldebug_info_start
+	.long LDIFF_SYM778
 	.byte 2,35,72,6
 	.asciz "factory"
 
-LDIFF_SYM774=LTDIE_93_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM774
+LDIFF_SYM779=LTDIE_93_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM779
 	.byte 2,35,24,6
 	.asciz "caps"
 
-LDIFF_SYM775=LTDIE_94_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM775
+LDIFF_SYM780=LTDIE_94_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM780
 	.byte 2,35,32,6
 	.asciz "capnames"
 
-LDIFF_SYM776=LTDIE_94_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM776
+LDIFF_SYM781=LTDIE_94_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM781
 	.byte 2,35,40,6
 	.asciz "capslist"
 
-LDIFF_SYM777=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM777
+LDIFF_SYM782=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM782
 	.byte 2,35,48,6
 	.asciz "capsize"
 
-LDIFF_SYM778=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM778
+LDIFF_SYM783=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM783
 	.byte 2,35,76,6
 	.asciz "_replref"
 
-LDIFF_SYM779=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM779
+LDIFF_SYM784=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM784
 	.byte 2,35,56,6
 	.asciz "_runner"
 
-LDIFF_SYM780=LTDIE_98_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM780
+LDIFF_SYM785=LTDIE_98_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM785
 	.byte 2,35,64,6
 	.asciz "internalMatchTimeout"
 
-LDIFF_SYM781=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM781
+LDIFF_SYM786=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM786
 	.byte 2,35,80,0,7
 	.asciz "System_Text_RegularExpressions_Regex"
 
-LDIFF_SYM782=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM782
+LDIFF_SYM787=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM787
 LTDIE_91_POINTER:
 
 	.byte 13
-LDIFF_SYM783=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM783
+LDIFF_SYM788=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM788
 LTDIE_91_REFERENCE:
 
 	.byte 14
-LDIFF_SYM784=LTDIE_91 - Ldebug_info_start
-	.long LDIFF_SYM784
+LDIFF_SYM789=LTDIE_91 - Ldebug_info_start
+	.long LDIFF_SYM789
 LTDIE_105:
 
 	.byte 5
 	.asciz "System_Char"
 
 	.byte 18,16
-LDIFF_SYM785=LTDIE_9 - Ldebug_info_start
-	.long LDIFF_SYM785
+LDIFF_SYM790=LTDIE_9 - Ldebug_info_start
+	.long LDIFF_SYM790
 	.byte 2,35,0,6
 	.asciz "m_value"
 
-LDIFF_SYM786=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM786
+LDIFF_SYM791=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM791
 	.byte 2,35,16,0,7
 	.asciz "System_Char"
 
-LDIFF_SYM787=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM787
+LDIFF_SYM792=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM792
 LTDIE_105_POINTER:
 
 	.byte 13
-LDIFF_SYM788=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM788
+LDIFF_SYM793=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM793
 LTDIE_105_REFERENCE:
 
 	.byte 14
-LDIFF_SYM789=LTDIE_105 - Ldebug_info_start
-	.long LDIFF_SYM789
+LDIFF_SYM794=LTDIE_105 - Ldebug_info_start
+	.long LDIFF_SYM794
 	.byte 2
 	.asciz "Microsoft.Maui.Controls.Xaml.XamlLoader:ReadResourceAsXaml"
 	.asciz "Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool"
@@ -20263,72 +20346,72 @@ LDIFF_SYM789=LTDIE_105 - Ldebug_info_start
 	.byte 2,118,16,3
 	.asciz "type"
 
-LDIFF_SYM790=LTDIE_14_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM790
+LDIFF_SYM795=LTDIE_14_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM795
 	.byte 1,103,3
 	.asciz "assembly"
 
-LDIFF_SYM791=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM791
+LDIFF_SYM796=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM796
 	.byte 2,141,40,3
 	.asciz "likelyTargetName"
 
-LDIFF_SYM792=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM792
+LDIFF_SYM797=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM797
 	.byte 1,105,3
 	.asciz "validate"
 
-LDIFF_SYM793=LDIE_BOOLEAN - Ldebug_info_start
-	.long LDIFF_SYM793
+LDIFF_SYM798=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM798
 	.byte 1,106,11
 	.asciz "stream"
 
-LDIFF_SYM794=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM794
+LDIFF_SYM799=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM799
 	.byte 2,141,48,11
 	.asciz "reader"
 
-LDIFF_SYM795=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM795
+LDIFF_SYM800=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM800
 	.byte 2,141,56,11
 	.asciz "xaml"
 
-LDIFF_SYM796=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM796
+LDIFF_SYM801=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM801
 	.byte 1,106,11
 	.asciz "pattern"
 
-LDIFF_SYM797=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM797
+LDIFF_SYM802=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM802
 	.byte 1,105,11
 	.asciz "regex"
 
-LDIFF_SYM798=LTDIE_91_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM798
+LDIFF_SYM803=LTDIE_91_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM803
 	.byte 1,105,11
 	.asciz "firstNonWhitespace"
 
-LDIFF_SYM799=LDIE_CHAR - Ldebug_info_start
-	.long LDIFF_SYM799
+LDIFF_SYM804=LDIE_CHAR - Ldebug_info_start
+	.long LDIFF_SYM804
 	.byte 1,106,11
 	.asciz "V_6"
 
-LDIFF_SYM800=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM800
+LDIFF_SYM805=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM805
 	.byte 1,105,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM801=Lfde8_end - Lfde8_start
-	.long LDIFF_SYM801
+LDIFF_SYM806=Lfde8_end - Lfde8_start
+	.long LDIFF_SYM806
 Lfde8_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool
 
-LDIFF_SYM802=Lme_18c - Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool
-	.long LDIFF_SYM802
+LDIFF_SYM807=Lme_18c - Microsoft_Maui_Controls_Xaml_XamlLoader_ReadResourceAsXaml_System_Type_System_Reflection_Assembly_string_bool
+	.long LDIFF_SYM807
 	.long 0
 	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,68,151,16,68,153,15,154,14
 	.align 3
@@ -20347,67 +20430,67 @@ Lfde8_end:
 	.byte 2,118,16,3
 	.asciz "xmlns"
 
-LDIFF_SYM803=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM803
+LDIFF_SYM808=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM808
 	.byte 2,141,16,11
 	.asciz "prefixes"
 
-LDIFF_SYM804=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM804
+LDIFF_SYM809=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM809
 	.byte 3,141,224,0,11
 	.asciz "V_1"
 
-LDIFF_SYM805=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM805
+LDIFF_SYM810=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM810
 	.byte 3,141,232,0,11
 	.asciz "kvp"
 
-LDIFF_SYM806=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM806
+LDIFF_SYM811=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM811
 	.byte 3,141,208,0,11
 	.asciz "prefix"
 
-LDIFF_SYM807=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM807
+LDIFF_SYM812=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM812
 	.byte 3,141,240,0,11
 	.asciz "targetPlatform"
 
-LDIFF_SYM808=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM808
+LDIFF_SYM813=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM813
 	.byte 3,141,248,0,11
 	.asciz "V_5"
 
-LDIFF_SYM809=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM809
+LDIFF_SYM814=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM814
 	.byte 3,141,128,1,11
 	.asciz "V_6"
 
-LDIFF_SYM810=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM810
+LDIFF_SYM815=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM815
 	.byte 3,141,136,1,11
 	.asciz "V_7"
 
-LDIFF_SYM811=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM811
+LDIFF_SYM816=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM816
 	.byte 3,141,144,1,11
 	.asciz "V_8"
 
-LDIFF_SYM812=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM812
+LDIFF_SYM817=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM817
 	.byte 3,141,200,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM813=Lfde9_end - Lfde9_start
-	.long LDIFF_SYM813
+LDIFF_SYM818=Lfde9_end - Lfde9_start
+	.long LDIFF_SYM818
 Lfde9_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlParser_PrefixesToIgnore_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string
 
-LDIFF_SYM814=Lme_1f0 - Microsoft_Maui_Controls_Xaml_XamlParser_PrefixesToIgnore_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string
-	.long LDIFF_SYM814
+LDIFF_SYM819=Lme_1f0 - Microsoft_Maui_Controls_Xaml_XamlParser_PrefixesToIgnore_System_Collections_Generic_IList_1_System_Collections_Generic_KeyValuePair_2_string_string
+	.long LDIFF_SYM819
 	.long 0
 	.byte 12,31,0,68,14,128,3,157,48,158,47,68,13,29
 	.align 3
@@ -20420,61 +20503,61 @@ LTDIE_107:
 	.asciz "System_Attribute"
 
 	.byte 16,16
-LDIFF_SYM815=LTDIE_1 - Ldebug_info_start
-	.long LDIFF_SYM815
+LDIFF_SYM820=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM820
 	.byte 2,35,0,0,7
 	.asciz "System_Attribute"
 
-LDIFF_SYM816=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM816
+LDIFF_SYM821=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM821
 LTDIE_107_POINTER:
 
 	.byte 13
-LDIFF_SYM817=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM817
+LDIFF_SYM822=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM822
 LTDIE_107_REFERENCE:
 
 	.byte 14
-LDIFF_SYM818=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM818
+LDIFF_SYM823=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM823
 LTDIE_106:
 
 	.byte 5
 	.asciz "Microsoft_Maui_Controls_XmlnsDefinitionAttribute"
 
 	.byte 40,16
-LDIFF_SYM819=LTDIE_107 - Ldebug_info_start
-	.long LDIFF_SYM819
+LDIFF_SYM824=LTDIE_107 - Ldebug_info_start
+	.long LDIFF_SYM824
 	.byte 2,35,0,6
 	.asciz "<XmlNamespace>k__BackingField"
 
-LDIFF_SYM820=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM820
+LDIFF_SYM825=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM825
 	.byte 2,35,16,6
 	.asciz "<ClrNamespace>k__BackingField"
 
-LDIFF_SYM821=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM821
+LDIFF_SYM826=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM826
 	.byte 2,35,24,6
 	.asciz "<AssemblyName>k__BackingField"
 
-LDIFF_SYM822=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM822
+LDIFF_SYM827=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM827
 	.byte 2,35,32,0,7
 	.asciz "Microsoft_Maui_Controls_XmlnsDefinitionAttribute"
 
-LDIFF_SYM823=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM823
+LDIFF_SYM828=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM828
 LTDIE_106_POINTER:
 
 	.byte 13
-LDIFF_SYM824=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM824
+LDIFF_SYM829=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM829
 LTDIE_106_REFERENCE:
 
 	.byte 14
-LDIFF_SYM825=LTDIE_106 - Ldebug_info_start
-	.long LDIFF_SYM825
+LDIFF_SYM830=LTDIE_106 - Ldebug_info_start
+	.long LDIFF_SYM830
 	.byte 2
 	.asciz "Microsoft.Maui.Controls.Xaml.XamlParser:GatherXmlnsDefinitionAttributes"
 	.asciz "Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes"
@@ -20486,52 +20569,52 @@ LDIFF_SYM825=LTDIE_106 - Ldebug_info_start
 	.byte 2,118,16,11
 	.asciz "assemblies"
 
-LDIFF_SYM826=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM826
+LDIFF_SYM831=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM831
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM827=LDIE_SZARRAY - Ldebug_info_start
-	.long LDIFF_SYM827
+LDIFF_SYM832=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM832
 	.byte 2,141,16,11
 	.asciz "V_2"
 
-LDIFF_SYM828=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM828
+LDIFF_SYM833=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM833
 	.byte 2,141,24,11
 	.asciz "assembly"
 
-LDIFF_SYM829=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM829
+LDIFF_SYM834=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM834
 	.byte 2,141,32,11
 	.asciz "V_4"
 
-LDIFF_SYM830=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM830
+LDIFF_SYM835=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM835
 	.byte 2,141,40,11
 	.asciz "attribute"
 
-LDIFF_SYM831=LTDIE_106_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM831
+LDIFF_SYM836=LTDIE_106_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM836
 	.byte 2,141,48,11
 	.asciz "ex"
 
-LDIFF_SYM832=LTDIE_19_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM832
+LDIFF_SYM837=LTDIE_19_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM837
 	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM833=Lfde10_end - Lfde10_start
-	.long LDIFF_SYM833
+LDIFF_SYM838=Lfde10_end - Lfde10_start
+	.long LDIFF_SYM838
 Lfde10_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes
 
-LDIFF_SYM834=Lme_1f2 - Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes
-	.long LDIFF_SYM834
+LDIFF_SYM839=Lme_1f2 - Microsoft_Maui_Controls_Xaml_XamlParser_GatherXmlnsDefinitionAttributes
+	.long LDIFF_SYM839
 	.long 0
 	.byte 12,31,0,68,14,208,1,157,26,158,25,68,13,29
 	.align 3
@@ -20550,157 +20633,157 @@ Lfde10_end:
 	.byte 2,118,16,3
 	.asciz "xmlType"
 
-LDIFF_SYM835=LTDIE_10_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM835
+LDIFF_SYM840=LTDIE_10_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM840
 	.byte 1,103,3
 	.asciz "xmlnsDefinitions"
 
-LDIFF_SYM836=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM836
+LDIFF_SYM841=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM841
 	.byte 1,104,3
 	.asciz "defaultAssemblyName"
 
-LDIFF_SYM837=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM837
+LDIFF_SYM842=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM842
 	.byte 1,105,3
 	.asciz "refFromTypeInfo"
 
-LDIFF_SYM838=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM838
+LDIFF_SYM843=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM843
 	.byte 3,141,208,0,11
 	.asciz "lookupAssemblies"
 
-LDIFF_SYM839=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM839
+LDIFF_SYM844=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM844
 	.byte 1,102,11
 	.asciz "namespaceURI"
 
-LDIFF_SYM840=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM840
+LDIFF_SYM845=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM845
 	.byte 1,101,11
 	.asciz "elementName"
 
-LDIFF_SYM841=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM841
+LDIFF_SYM846=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM846
 	.byte 1,100,11
 	.asciz "typeArguments"
 
-LDIFF_SYM842=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM842
+LDIFF_SYM847=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM847
 	.byte 1,99,11
 	.asciz "lookupNames"
 
-LDIFF_SYM843=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM843
+LDIFF_SYM848=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM848
 	.byte 1,106,11
 	.asciz "potentialTypes"
 
-LDIFF_SYM844=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM844
+LDIFF_SYM849=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM849
 	.byte 1,105,11
 	.asciz "type"
 
-LDIFF_SYM845=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM845
+LDIFF_SYM850=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM850
 	.byte 1,106,11
 	.asciz "V_7"
 
-LDIFF_SYM846=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM846
+LDIFF_SYM851=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM851
 	.byte 3,141,168,3,11
 	.asciz "xmlnsDef"
 
-LDIFF_SYM847=LTDIE_106_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM847
+LDIFF_SYM852=LTDIE_106_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM852
 	.byte 1,104,11
 	.asciz "ns"
 
-LDIFF_SYM848=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM848
+LDIFF_SYM853=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM853
 	.byte 3,141,176,3,11
 	.asciz "asmstring"
 
-LDIFF_SYM849=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM849
+LDIFF_SYM854=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM854
 	.byte 3,141,184,3,11
 	.asciz "V_11"
 
-LDIFF_SYM850=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM850
+LDIFF_SYM855=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM855
 	.byte 3,141,192,3,11
 	.asciz "V_12"
 
-LDIFF_SYM851=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM851
+LDIFF_SYM856=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM856
 	.byte 3,141,200,3,11
 	.asciz "i"
 
-LDIFF_SYM852=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM852
+LDIFF_SYM857=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM857
 	.byte 1,105,11
 	.asciz "name"
 
-LDIFF_SYM853=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM853
+LDIFF_SYM858=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM858
 	.byte 1,104,11
 	.asciz "lastIndex"
 
-LDIFF_SYM854=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM854
+LDIFF_SYM859=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM859
 	.byte 1,103,11
 	.asciz "V_16"
 
-LDIFF_SYM855=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM855
+LDIFF_SYM860=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM860
 	.byte 3,141,208,3,11
 	.asciz "V_17"
 
-LDIFF_SYM856=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM856
+LDIFF_SYM861=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM861
 	.byte 3,141,144,3,11
 	.asciz "typeName"
 
-LDIFF_SYM857=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM857
+LDIFF_SYM862=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM862
 	.byte 1,106,11
 	.asciz "V_19"
 
-LDIFF_SYM858=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM858
+LDIFF_SYM863=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM863
 	.byte 3,141,248,2,11
 	.asciz "xmlnsDefinitionAttribute"
 
-LDIFF_SYM859=LTDIE_106_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM859
+LDIFF_SYM864=LTDIE_106_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM864
 	.byte 1,104,11
 	.asciz "assemblyName"
 
-LDIFF_SYM860=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM860
+LDIFF_SYM865=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM865
 	.byte 1,103,11
 	.asciz "V_22"
 
-LDIFF_SYM861=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM861
+LDIFF_SYM866=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM866
 	.byte 3,141,208,2,11
 	.asciz "typeInfo"
 
-LDIFF_SYM862=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM862
+LDIFF_SYM867=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM867
 	.byte 3,141,184,2,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM863=Lfde11_end - Lfde11_start
-	.long LDIFF_SYM863
+LDIFF_SYM868=Lfde11_end - Lfde11_start
+	.long LDIFF_SYM868
 Lfde11_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_XmlTypeXamlExtensions_GetTypeReference_T_REF_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_string_System_Func_2_System_ValueTuple_3_string_string_string_T_REF
 
-LDIFF_SYM864=Lme_203 - Microsoft_Maui_Controls_Xaml_XmlTypeXamlExtensions_GetTypeReference_T_REF_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_string_System_Func_2_System_ValueTuple_3_string_string_string_T_REF
-	.long LDIFF_SYM864
+LDIFF_SYM869=Lme_203 - Microsoft_Maui_Controls_Xaml_XmlTypeXamlExtensions_GetTypeReference_T_REF_Microsoft_Maui_Controls_Xaml_XmlType_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Controls_XmlnsDefinitionAttribute_string_System_Func_2_System_ValueTuple_3_string_string_string_T_REF
+	.long LDIFF_SYM869
 	.long 0
 	.byte 12,31,0,84,14,128,5,157,80,158,79,68,13,29,68,147,78,148,77,68,149,76,150,75,68,151,74,152,73,68,153,72
 	.byte 154,71
@@ -20720,37 +20803,37 @@ Lfde11_end:
 	.byte 2,118,16,3
 	.asciz "dictionary"
 
-LDIFF_SYM865=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM865
+LDIFF_SYM870=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM870
 	.byte 1,105,3
 	.asciz "collection"
 
-LDIFF_SYM866=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM866
+LDIFF_SYM871=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM871
 	.byte 2,141,40,11
 	.asciz "V_0"
 
-LDIFF_SYM867=LDIE_OBJECT - Ldebug_info_start
-	.long LDIFF_SYM867
+LDIFF_SYM872=LDIE_OBJECT - Ldebug_info_start
+	.long LDIFF_SYM872
 	.byte 2,141,56,11
 	.asciz "kvp"
 
-LDIFF_SYM868=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM868
+LDIFF_SYM873=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM873
 	.byte 1,80,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM869=Lfde12_end - Lfde12_start
-	.long LDIFF_SYM869
+LDIFF_SYM874=Lfde12_end - Lfde12_start
+	.long LDIFF_SYM874
 Lfde12_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_IDictionaryExtensions_AddRange_TKey_GSHAREDVT_TValue_GSHAREDVT_System_Collections_Generic_IDictionary_2_TKey_GSHAREDVT_TValue_GSHAREDVT_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_TKey_GSHAREDVT_TValue_GSHAREDVT
 
-LDIFF_SYM870=Lme_29a - Microsoft_Maui_Controls_Xaml_IDictionaryExtensions_AddRange_TKey_GSHAREDVT_TValue_GSHAREDVT_System_Collections_Generic_IDictionary_2_TKey_GSHAREDVT_TValue_GSHAREDVT_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_TKey_GSHAREDVT_TValue_GSHAREDVT
-	.long LDIFF_SYM870
+LDIFF_SYM875=Lme_29a - Microsoft_Maui_Controls_Xaml_IDictionaryExtensions_AddRange_TKey_GSHAREDVT_TValue_GSHAREDVT_System_Collections_Generic_IDictionary_2_TKey_GSHAREDVT_TValue_GSHAREDVT_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_TKey_GSHAREDVT_TValue_GSHAREDVT
+	.long LDIFF_SYM875
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8
 	.align 3
@@ -20769,72 +20852,72 @@ Lfde12_end:
 	.byte 2,118,16,3
 	.asciz "this"
 
-LDIFF_SYM871=LTDIE_50_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM871
+LDIFF_SYM876=LTDIE_50_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM876
 	.byte 3,141,208,0,3
 	.asciz "resourcePath"
 
-LDIFF_SYM872=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM872
+LDIFF_SYM877=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM877
 	.byte 3,141,216,0,3
 	.asciz "assembly"
 
-LDIFF_SYM873=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM873
+LDIFF_SYM878=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM878
 	.byte 1,105,3
 	.asciz "lineInfo"
 
-LDIFF_SYM874=LTDIE_21_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM874
+LDIFF_SYM879=LTDIE_21_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM879
 	.byte 3,141,224,0,11
 	.asciz "rd"
 
-LDIFF_SYM875=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM875
+LDIFF_SYM880=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM880
 	.byte 1,80,11
 	.asciz "resourceLoadingResponse"
 
-LDIFF_SYM876=LTDIE_51_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM876
+LDIFF_SYM881=LTDIE_51_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM881
 	.byte 1,106,11
 	.asciz "alternateResource"
 
-LDIFF_SYM877=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM877
+LDIFF_SYM882=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM882
 	.byte 1,100,11
 	.asciz "resourceId"
 
-LDIFF_SYM878=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM878
+LDIFF_SYM883=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM883
 	.byte 1,106,11
 	.asciz "stream"
 
-LDIFF_SYM879=LTDIE_52_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM879
+LDIFF_SYM884=LTDIE_52_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM884
 	.byte 3,141,240,0,11
 	.asciz "reader"
 
-LDIFF_SYM880=LTDIE_63_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM880
+LDIFF_SYM885=LTDIE_63_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM885
 	.byte 3,141,248,0,11
 	.asciz "V_6"
 
-LDIFF_SYM881=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM881
+LDIFF_SYM886=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM886
 	.byte 1,80,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM882=Lfde13_end - Lfde13_start
-	.long LDIFF_SYM882
+LDIFF_SYM887=Lfde13_end - Lfde13_start
+	.long LDIFF_SYM887
 Lfde13_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_GSHAREDVT_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo
 
-LDIFF_SYM883=Lme_29b - Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_GSHAREDVT_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo
-	.long LDIFF_SYM883
+LDIFF_SYM888=Lme_29b - Microsoft_Maui_Controls_Xaml_ResourcesLoader_CreateFromResource_T_GSHAREDVT_string_System_Reflection_Assembly_System_Xml_IXmlLineInfo
+	.long LDIFF_SYM888
 	.long 0
 	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,147,26,148,25,68,149,24,150,23,68,151,22,68,153,21,154,20
 	.align 3
@@ -20853,27 +20936,27 @@ Lfde13_end:
 	.byte 2,118,16,3
 	.asciz "view"
 
-LDIFF_SYM884=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM884
+LDIFF_SYM889=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM889
 	.byte 1,80,3
 	.asciz "callingType"
 
-LDIFF_SYM885=LTDIE_14_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM885
+LDIFF_SYM890=LTDIE_14_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM890
 	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM886=Lfde14_end - Lfde14_start
-	.long LDIFF_SYM886
+LDIFF_SYM891=Lfde14_end - Lfde14_start
+	.long LDIFF_SYM891
 Lfde14_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_System_Type
 
-LDIFF_SYM887=Lme_29c - Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_System_Type
-	.long LDIFF_SYM887
+LDIFF_SYM892=Lme_29c - Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_System_Type
+	.long LDIFF_SYM892
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8
 	.align 3
@@ -20892,27 +20975,27 @@ Lfde14_end:
 	.byte 2,118,16,3
 	.asciz "view"
 
-LDIFF_SYM888=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM888
+LDIFF_SYM893=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM893
 	.byte 1,80,3
 	.asciz "xaml"
 
-LDIFF_SYM889=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM889
+LDIFF_SYM894=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM894
 	.byte 2,141,56,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM890=Lfde15_end - Lfde15_start
-	.long LDIFF_SYM890
+LDIFF_SYM895=Lfde15_end - Lfde15_start
+	.long LDIFF_SYM895
 Lfde15_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_string
 
-LDIFF_SYM891=Lme_29d - Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_string
-	.long LDIFF_SYM891
+LDIFF_SYM896=Lme_29d - Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_string
+	.long LDIFF_SYM896
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,151,10,152,9,68,153,8
 	.align 3
@@ -20931,32 +21014,32 @@ Lfde15_end:
 	.byte 2,118,16,3
 	.asciz "view"
 
-LDIFF_SYM892=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM892
+LDIFF_SYM897=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM897
 	.byte 1,80,3
 	.asciz "xaml"
 
-LDIFF_SYM893=LDIE_STRING - Ldebug_info_start
-	.long LDIFF_SYM893
+LDIFF_SYM898=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM898
 	.byte 2,141,56,3
 	.asciz "rootAssembly"
 
-LDIFF_SYM894=LTDIE_3_REFERENCE - Ldebug_info_start
-	.long LDIFF_SYM894
+LDIFF_SYM899=LTDIE_3_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM899
 	.byte 3,141,192,0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM895=Lfde16_end - Lfde16_start
-	.long LDIFF_SYM895
+LDIFF_SYM900=Lfde16_end - Lfde16_start
+	.long LDIFF_SYM900
 Lfde16_start:
 
 	.long 0
 	.align 3
 	.quad Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_string_System_Reflection_Assembly
 
-LDIFF_SYM896=Lme_29e - Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_string_System_Reflection_Assembly
-	.long LDIFF_SYM896
+LDIFF_SYM901=Lme_29e - Microsoft_Maui_Controls_Xaml_Extensions_LoadFromXaml_TXaml_GSHAREDVT_TXaml_GSHAREDVT_string_System_Reflection_Assembly
+	.long LDIFF_SYM901
 	.long 0
 	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,150,10,151,9,68,152,8
 	.align 3

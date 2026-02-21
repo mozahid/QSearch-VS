@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "System.Diagnostics.DiagnosticSource.dll"
 	.asciz ""
 
@@ -1150,7 +1150,7 @@ bl _mini_init_method_rgctx
 .word 0xf90013a0
 .word 0xb9800000
 .word 0xf90013bf
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_17
@@ -1607,7 +1607,7 @@ bl _p_87
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_88
 
@@ -1730,7 +1730,7 @@ ldr x15, [x16, #432]
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_88
 
@@ -2005,7 +2005,7 @@ bl _p_91
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_88
 .word 0xd2800be0
@@ -2283,7 +2283,7 @@ bl _p_91
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_88
 .word 0xd2800be0
@@ -2789,7 +2789,7 @@ ldr x0, [x16, #0]
 .word 0xd28020a1
 bl _p_18
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_17
@@ -3436,7 +3436,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 4275
+.word 4247
 _p_2_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
 	.globl _p_2_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
 .private_extern _p_2_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
@@ -3447,7 +3447,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 4278
+.word 4250
 _p_3_plt_System_Diagnostics_DiagnosticSource_string_Join_string_object___llvm:
 	.globl _p_3_plt_System_Diagnostics_DiagnosticSource_string_Join_string_object___llvm
 .private_extern _p_3_plt_System_Diagnostics_DiagnosticSource_string_Join_string_object___llvm
@@ -3458,7 +3458,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 4286
+.word 4258
 _p_4_plt_System_Diagnostics_DiagnosticSource__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_4_plt_System_Diagnostics_DiagnosticSource__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_4_plt_System_Diagnostics_DiagnosticSource__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -3469,7 +3469,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 4291
+.word 4263
 _p_5_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_monitor_enter_v4_fast_llvm:
 	.globl _p_5_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_monitor_enter_v4_fast_llvm
 .private_extern _p_5_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_monitor_enter_v4_fast_llvm
@@ -3480,7 +3480,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 4294
+.word 4266
 _p_6_plt_System_Diagnostics_DiagnosticSource__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_6_plt_System_Diagnostics_DiagnosticSource__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_6_plt_System_Diagnostics_DiagnosticSource__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -3491,7 +3491,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 4297
+.word 4269
 _p_7_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_monitor_enter_v4_internal_llvm:
 	.globl _p_7_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_monitor_enter_v4_internal_llvm
 .private_extern _p_7_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_monitor_enter_v4_internal_llvm
@@ -3502,7 +3502,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 4300
+.word 4272
 _p_8_plt_System_Diagnostics_DiagnosticSource_System_Threading_Monitor_Exit_object_llvm:
 	.globl _p_8_plt_System_Diagnostics_DiagnosticSource_System_Threading_Monitor_Exit_object_llvm
 .private_extern _p_8_plt_System_Diagnostics_DiagnosticSource_System_Threading_Monitor_Exit_object_llvm
@@ -3513,7 +3513,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 4303
+.word 4275
 _p_9_plt_System_Diagnostics_DiagnosticSource__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_9_plt_System_Diagnostics_DiagnosticSource__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_9_plt_System_Diagnostics_DiagnosticSource__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -3524,7 +3524,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 4308
+.word 4280
 _p_10_plt_System_Diagnostics_DiagnosticSource__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_10_plt_System_Diagnostics_DiagnosticSource__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_10_plt_System_Diagnostics_DiagnosticSource__jit_icall_mini_init_method_rgctx_llvm
@@ -3535,7 +3535,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 4311
+.word 4283
 _p_11_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagEnumerator_1_T_REF__ctor_System_Diagnostics_DiagNode_1_T_REF_llvm:
 	.globl _p_11_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagEnumerator_1_T_REF__ctor_System_Diagnostics_DiagNode_1_T_REF_llvm
 .private_extern _p_11_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagEnumerator_1_T_REF__ctor_System_Diagnostics_DiagNode_1_T_REF_llvm
@@ -3546,7 +3546,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 4329
+.word 4301
 _p_12_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagLinkedList_1_T_REF_GetEnumerator_llvm:
 	.globl _p_12_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagLinkedList_1_T_REF_GetEnumerator_llvm
 .private_extern _p_12_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagLinkedList_1_T_REF_GetEnumerator_llvm
@@ -3557,7 +3557,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 4348
+.word 4320
 _p_13_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_13_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_13_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -3568,7 +3568,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 4362
+.word 4334
 _p_14_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_14_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_14_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_generic_class_init_llvm
@@ -3579,7 +3579,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 4370
+.word 4342
 _p_15_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagEnumerator_1_T_REF_get_Current_llvm:
 	.globl _p_15_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagEnumerator_1_T_REF_get_Current_llvm
 .private_extern _p_15_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagEnumerator_1_T_REF_get_Current_llvm
@@ -3590,7 +3590,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 4373
+.word 4345
 _p_16_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_create_corlib_exception_0_llvm:
 	.globl _p_16_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_create_corlib_exception_0_llvm
 .private_extern _p_16_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_create_corlib_exception_0_llvm
@@ -3601,7 +3601,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 4385
+.word 4357
 _p_17_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_17_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_17_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_throw_exception_llvm
@@ -3612,7 +3612,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 4388
+.word 4360
 _p_18_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_18_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_18_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_helper_ldstr_llvm
@@ -3623,7 +3623,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 4390
+.word 4362
 _p_19_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_19_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_19_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_create_corlib_exception_1_llvm
@@ -3634,7 +3634,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 4393
+.word 4365
 _p_20_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_Add_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_20_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_Add_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_20_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_Add_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -3645,7 +3645,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 4396
+.word 4368
 _p_21_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_MoveTagsToTheArray_llvm:
 	.globl _p_21_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_MoveTagsToTheArray_llvm
 .private_extern _p_21_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_MoveTagsToTheArray_llvm
@@ -3656,7 +3656,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 4398
+.word 4370
 _p_22_plt_System_Diagnostics_DiagnosticSource_System_Array_Resize_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_KeyValuePair_2_string_object____int_llvm:
 	.globl _p_22_plt_System_Diagnostics_DiagnosticSource_System_Array_Resize_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_KeyValuePair_2_string_object____int_llvm
 .private_extern _p_22_plt_System_Diagnostics_DiagnosticSource_System_Array_Resize_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_KeyValuePair_2_string_object____int_llvm
@@ -3667,7 +3667,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 4400
+.word 4372
 _p_23_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentException_DestinationTooShort_llvm:
 	.globl _p_23_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentException_DestinationTooShort_llvm
 .private_extern _p_23_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentException_DestinationTooShort_llvm
@@ -3678,7 +3678,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 4412
+.word 4384
 _p_24_plt_System_Diagnostics_DiagnosticSource_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
 	.globl _p_24_plt_System_Diagnostics_DiagnosticSource_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
 .private_extern _p_24_plt_System_Diagnostics_DiagnosticSource_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
@@ -3689,7 +3689,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 4417
+.word 4389
 _p_25_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
 	.globl _p_25_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
 .private_extern _p_25_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
@@ -3700,7 +3700,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 4422
+.word 4394
 _p_26_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm:
 	.globl _p_26_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
 .private_extern _p_26_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
@@ -3711,7 +3711,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 4427
+.word 4399
 _p_27_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_CopyTo_System_Span_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_27_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_CopyTo_System_Span_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_27_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_CopyTo_System_Span_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -3722,7 +3722,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 4432
+.word 4404
 _p_28_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_IndexOf_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_28_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_IndexOf_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_28_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_IndexOf_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -3733,7 +3733,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 4434
+.word 4406
 _p_29_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_RemoveAt_int_llvm:
 	.globl _p_29_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_RemoveAt_int_llvm
 .private_extern _p_29_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_RemoveAt_int_llvm
@@ -3744,7 +3744,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 4436
+.word 4408
 _p_30_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_gc_wbarrier_range_copy_llvm:
 	.globl _p_30_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_gc_wbarrier_range_copy_llvm
 .private_extern _p_30_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_gc_wbarrier_range_copy_llvm
@@ -3755,7 +3755,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 4438
+.word 4410
 _p_31_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_TagsEqual_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_31_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_TagsEqual_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_31_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_TagsEqual_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -3766,7 +3766,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 4441
+.word 4413
 _p_32_plt_System_Diagnostics_DiagnosticSource_string_op_Inequality_string_string_llvm:
 	.globl _p_32_plt_System_Diagnostics_DiagnosticSource_string_op_Inequality_string_string_llvm
 .private_extern _p_32_plt_System_Diagnostics_DiagnosticSource_string_op_Inequality_string_string_llvm
@@ -3777,7 +3777,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 4443
+.word 4415
 _p_33_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Item_int_llvm:
 	.globl _p_33_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Item_int_llvm
 .private_extern _p_33_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Item_int_llvm
@@ -3788,7 +3788,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 4448
+.word 4420
 _p_34_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper__ctor_System_Span_1_ulong_llvm:
 	.globl _p_34_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper__ctor_System_Span_1_ulong_llvm
 .private_extern _p_34_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper__ctor_System_Span_1_ulong_llvm
@@ -3799,7 +3799,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 4450
+.word 4422
 _p_35_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper_IsSet_int_llvm:
 	.globl _p_35_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper_IsSet_int_llvm
 .private_extern _p_35_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper_IsSet_int_llvm
@@ -3810,7 +3810,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 4452
+.word 4424
 _p_36_plt_System_Diagnostics_DiagnosticSource_string_CompareOrdinal_string_string_llvm:
 	.globl _p_36_plt_System_Diagnostics_DiagnosticSource_string_CompareOrdinal_string_string_llvm
 .private_extern _p_36_plt_System_Diagnostics_DiagnosticSource_string_CompareOrdinal_string_string_llvm
@@ -3821,7 +3821,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 4454
+.word 4426
 _p_37_plt_System_Diagnostics_DiagnosticSource_object_Equals_object_object_llvm:
 	.globl _p_37_plt_System_Diagnostics_DiagnosticSource_object_Equals_object_object_llvm
 .private_extern _p_37_plt_System_Diagnostics_DiagnosticSource_object_Equals_object_object_llvm
@@ -3832,7 +3832,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 4459
+.word 4431
 _p_38_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper_SetBit_int_llvm:
 	.globl _p_38_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper_SetBit_int_llvm
 .private_extern _p_38_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_BitMapper_SetBit_int_llvm
@@ -3843,7 +3843,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 4464
+.word 4436
 _p_39_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
 	.globl _p_39_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
 .private_extern _p_39_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
@@ -3854,7 +3854,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 4466
+.word 4438
 _p_40_plt_System_Diagnostics_DiagnosticSource_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
 	.globl _p_40_plt_System_Diagnostics_DiagnosticSource_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
 .private_extern _p_40_plt_System_Diagnostics_DiagnosticSource_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
@@ -3865,7 +3865,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 4471
+.word 4443
 _p_41_plt_System_Diagnostics_DiagnosticSource__jit_icall___emul_lmul_ovf_un_llvm:
 	.globl _p_41_plt_System_Diagnostics_DiagnosticSource__jit_icall___emul_lmul_ovf_un_llvm
 .private_extern _p_41_plt_System_Diagnostics_DiagnosticSource__jit_icall___emul_lmul_ovf_un_llvm
@@ -3876,7 +3876,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 4479
+.word 4451
 _p_42_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm:
 	.globl _p_42_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
 .private_extern _p_42_plt_System_Diagnostics_DiagnosticSource_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
@@ -3887,7 +3887,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 4481
+.word 4453
 _p_43_plt_System_Diagnostics_DiagnosticSource_System_SpanHelpers_ClearWithoutReferences_byte__uintptr_llvm:
 	.globl _p_43_plt_System_Diagnostics_DiagnosticSource_System_SpanHelpers_ClearWithoutReferences_byte__uintptr_llvm
 .private_extern _p_43_plt_System_Diagnostics_DiagnosticSource_System_SpanHelpers_ClearWithoutReferences_byte__uintptr_llvm
@@ -3898,7 +3898,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 4486
+.word 4458
 _p_44_plt_System_Diagnostics_DiagnosticSource_System_SpanHelpers_ClearWithReferences_intptr__uintptr_llvm:
 	.globl _p_44_plt_System_Diagnostics_DiagnosticSource_System_SpanHelpers_ClearWithReferences_intptr__uintptr_llvm
 .private_extern _p_44_plt_System_Diagnostics_DiagnosticSource_System_SpanHelpers_ClearWithReferences_intptr__uintptr_llvm
@@ -3909,7 +3909,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 4491
+.word 4463
 _p_45_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_45_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_45_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object__ctor_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -3920,7 +3920,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 4496
+.word 4468
 _p_46_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object_Sort_System_Comparison_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_46_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object_Sort_System_Comparison_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_46_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object_Sort_System_Comparison_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -3931,7 +3931,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 4507
+.word 4479
 _p_47_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_MeterListener_GetEnumerator_llvm:
 	.globl _p_47_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_MeterListener_GetEnumerator_llvm
 .private_extern _p_47_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_MeterListener_GetEnumerator_llvm
@@ -3942,7 +3942,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 4518
+.word 4490
 _p_48_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_Enumerator_System_Diagnostics_Metrics_MeterListener_MoveNext_llvm:
 	.globl _p_48_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_Enumerator_System_Diagnostics_Metrics_MeterListener_MoveNext_llvm
 .private_extern _p_48_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_Enumerator_System_Diagnostics_Metrics_MeterListener_MoveNext_llvm
@@ -3953,7 +3953,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 4529
+.word 4501
 _p_49_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_get_InstrumentPublished_llvm:
 	.globl _p_49_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_get_InstrumentPublished_llvm
 .private_extern _p_49_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_get_InstrumentPublished_llvm
@@ -3964,7 +3964,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 4540
+.word 4512
 _p_50_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_AddInstrument_System_Diagnostics_Metrics_Instrument_llvm:
 	.globl _p_50_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_AddInstrument_System_Diagnostics_Metrics_Instrument_llvm
 .private_extern _p_50_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_AddInstrument_System_Diagnostics_Metrics_Instrument_llvm
@@ -3975,7 +3975,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 4542
+.word 4514
 _p_51_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_GetAllListeners_llvm:
 	.globl _p_51_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_GetAllListeners_llvm
 .private_extern _p_51_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_GetAllListeners_llvm
@@ -3986,7 +3986,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 4544
+.word 4516
 _p_52_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_DisableMeasurementEvents_System_Diagnostics_Metrics_Instrument_llvm:
 	.globl _p_52_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_DisableMeasurementEvents_System_Diagnostics_Metrics_Instrument_llvm
 .private_extern _p_52_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterListener_DisableMeasurementEvents_System_Diagnostics_Metrics_Instrument_llvm
@@ -3997,7 +3997,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 4546
+.word 4518
 _p_53_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagLinkedList_1_System_Diagnostics_Metrics_ListenerSubscription_Clear_llvm:
 	.globl _p_53_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagLinkedList_1_System_Diagnostics_Metrics_ListenerSubscription_Clear_llvm
 .private_extern _p_53_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagLinkedList_1_System_Diagnostics_Metrics_ListenerSubscription_Clear_llvm
@@ -4008,7 +4008,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 4548
+.word 4520
 _p_54_plt_System_Diagnostics_DiagnosticSource_System_Type_op_Inequality_System_Type_System_Type_llvm:
 	.globl _p_54_plt_System_Diagnostics_DiagnosticSource_System_Type_op_Inequality_System_Type_System_Type_llvm
 .private_extern _p_54_plt_System_Diagnostics_DiagnosticSource_System_Type_op_Inequality_System_Type_System_Type_llvm
@@ -4019,7 +4019,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 4559
+.word 4531
 _p_55_plt_System_Diagnostics_DiagnosticSource_System_SR_Format_string_object_llvm:
 	.globl _p_55_plt_System_Diagnostics_DiagnosticSource_System_SR_Format_string_object_llvm
 .private_extern _p_55_plt_System_Diagnostics_DiagnosticSource_System_SR_Format_string_object_llvm
@@ -4030,7 +4030,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 4564
+.word 4536
 _p_56_plt_System_Diagnostics_DiagnosticSource_string_Compare_string_string_System_StringComparison_llvm:
 	.globl _p_56_plt_System_Diagnostics_DiagnosticSource_string_Compare_string_string_System_StringComparison_llvm
 .private_extern _p_56_plt_System_Diagnostics_DiagnosticSource_string_Compare_string_string_System_StringComparison_llvm
@@ -4041,7 +4041,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 4566
+.word 4538
 _p_57_plt_System_Diagnostics_DiagnosticSource_System_AppContext_TryGetSwitch_string_bool__llvm:
 	.globl _p_57_plt_System_Diagnostics_DiagnosticSource_System_AppContext_TryGetSwitch_string_bool__llvm
 .private_extern _p_57_plt_System_Diagnostics_DiagnosticSource_System_AppContext_TryGetSwitch_string_bool__llvm
@@ -4052,7 +4052,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 4571
+.word 4543
 _p_58_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter__ctor_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_object_llvm:
 	.globl _p_58_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter__ctor_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_object_llvm
 .private_extern _p_58_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter__ctor_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_object_llvm
@@ -4063,7 +4063,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 4576
+.word 4548
 _p_59_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__ctor_llvm:
 	.globl _p_59_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__ctor_llvm
 .private_extern _p_59_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__ctor_llvm
@@ -4074,7 +4074,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 4578
+.word 4550
 _p_60_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_Initialize_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_object_llvm:
 	.globl _p_60_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_Initialize_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_object_llvm
 .private_extern _p_60_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_Initialize_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_object_llvm
@@ -4085,7 +4085,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 4589
+.word 4561
 _p_61_plt_System_Diagnostics_DiagnosticSource_System_GC_KeepAlive_object_llvm:
 	.globl _p_61_plt_System_Diagnostics_DiagnosticSource_System_GC_KeepAlive_object_llvm
 .private_extern _p_61_plt_System_Diagnostics_DiagnosticSource_System_GC_KeepAlive_object_llvm
@@ -4096,7 +4096,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 4591
+.word 4563
 _p_62_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Meter_AddWithResize_System_Diagnostics_Metrics_Meter_llvm:
 	.globl _p_62_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Meter_AddWithResize_System_Diagnostics_Metrics_Meter_llvm
 .private_extern _p_62_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Meter_AddWithResize_System_Diagnostics_Metrics_Meter_llvm
@@ -4107,7 +4107,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 4599
+.word 4571
 _p_63_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_GetEnumerator_llvm:
 	.globl _p_63_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_GetEnumerator_llvm
 .private_extern _p_63_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_GetEnumerator_llvm
@@ -4118,7 +4118,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 4616
+.word 4588
 _p_64_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_Enumerator_System_Diagnostics_Metrics_Instrument_MoveNext_llvm:
 	.globl _p_64_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_Enumerator_System_Diagnostics_Metrics_Instrument_MoveNext_llvm
 .private_extern _p_64_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_Enumerator_System_Diagnostics_Metrics_Instrument_MoveNext_llvm
@@ -4129,7 +4129,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 4627
+.word 4599
 _p_65_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument_NotifyForUnpublishedInstrument_llvm:
 	.globl _p_65_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument_NotifyForUnpublishedInstrument_llvm
 .private_extern _p_65_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument_NotifyForUnpublishedInstrument_llvm
@@ -4140,7 +4140,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 4638
+.word 4610
 _p_66_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Clear_llvm:
 	.globl _p_66_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Clear_llvm
 .private_extern _p_66_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Clear_llvm
@@ -4151,7 +4151,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 4640
+.word 4612
 _p_67_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Meter_Remove_System_Diagnostics_Metrics_Meter_llvm:
 	.globl _p_67_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Meter_Remove_System_Diagnostics_Metrics_Meter_llvm
 .private_extern _p_67_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Meter_Remove_System_Diagnostics_Metrics_Meter_llvm
@@ -4162,7 +4162,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 4651
+.word 4623
 _p_68_plt_System_Diagnostics_DiagnosticSource_System_Type_op_Equality_System_Type_System_Type_llvm:
 	.globl _p_68_plt_System_Diagnostics_DiagnosticSource_System_Type_op_Equality_System_Type_System_Type_llvm
 .private_extern _p_68_plt_System_Diagnostics_DiagnosticSource_System_Type_op_Equality_System_Type_System_Type_llvm
@@ -4173,7 +4173,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 4662
+.word 4634
 _p_69_plt_System_Diagnostics_DiagnosticSource_string_op_Equality_string_string_llvm:
 	.globl _p_69_plt_System_Diagnostics_DiagnosticSource_string_op_Equality_string_string_llvm
 .private_extern _p_69_plt_System_Diagnostics_DiagnosticSource_string_op_Equality_string_string_llvm
@@ -4184,7 +4184,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 4667
+.word 4639
 _p_70_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagnosticsHelper_CompareTags_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_70_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagnosticsHelper_CompareTags_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_70_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_DiagnosticsHelper_CompareTags_System_Collections_Generic_List_1_System_Collections_Generic_KeyValuePair_2_string_object_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -4195,7 +4195,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 4672
+.word 4644
 _p_71_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_GetCachedInstrument_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_System_Type_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_71_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_GetCachedInstrument_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_System_Type_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_71_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_GetCachedInstrument_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_System_Type_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -4206,7 +4206,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 4674
+.word 4646
 _p_72_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_AddWithResize_System_Diagnostics_Metrics_Instrument_llvm:
 	.globl _p_72_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_AddWithResize_System_Diagnostics_Metrics_Instrument_llvm
 .private_extern _p_72_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_AddWithResize_System_Diagnostics_Metrics_Instrument_llvm
@@ -4217,7 +4217,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 4676
+.word 4648
 _p_73_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_TryGetValue_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__llvm:
 	.globl _p_73_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_TryGetValue_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__llvm
 .private_extern _p_73_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_TryGetValue_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__llvm
@@ -4228,7 +4228,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 4693
+.word 4665
 _p_74_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Add_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_llvm:
 	.globl _p_74_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Add_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_llvm
 .private_extern _p_74_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_Dictionary_2_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Add_string_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_llvm
@@ -4239,7 +4239,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 4710
+.word 4682
 _p_75_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Contains_System_Diagnostics_Metrics_Instrument_llvm:
 	.globl _p_75_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Contains_System_Diagnostics_Metrics_Instrument_llvm
 .private_extern _p_75_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument_Contains_System_Diagnostics_Metrics_Instrument_llvm
@@ -4250,7 +4250,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 4727
+.word 4699
 _p_76_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_InitializeIsSupported_llvm:
 	.globl _p_76_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_InitializeIsSupported_llvm
 .private_extern _p_76_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Meter_InitializeIsSupported_llvm
@@ -4261,7 +4261,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 4738
+.word 4710
 _p_77_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterOptions__ctor_string_llvm:
 	.globl _p_77_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterOptions__ctor_string_llvm
 .private_extern _p_77_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterOptions__ctor_string_llvm
@@ -4272,7 +4272,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 4740
+.word 4712
 _p_78_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_MeterListener__ctor_System_Collections_Generic_IEnumerable_1_System_Diagnostics_Metrics_MeterListener_llvm:
 	.globl _p_78_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_MeterListener__ctor_System_Collections_Generic_IEnumerable_1_System_Diagnostics_Metrics_MeterListener_llvm
 .private_extern _p_78_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_MeterListener__ctor_System_Collections_Generic_IEnumerable_1_System_Diagnostics_Metrics_MeterListener_llvm
@@ -4283,7 +4283,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 4742
+.word 4714
 _p_79_plt_System_Diagnostics_DiagnosticSource__jit_icall_ves_icall_object_new_specific_llvm:
 	.globl _p_79_plt_System_Diagnostics_DiagnosticSource__jit_icall_ves_icall_object_new_specific_llvm
 .private_extern _p_79_plt_System_Diagnostics_DiagnosticSource__jit_icall_ves_icall_object_new_specific_llvm
@@ -4294,7 +4294,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 4753
+.word 4725
 _p_80_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterOptions_set_Name_string_llvm:
 	.globl _p_80_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterOptions_set_Name_string_llvm
 .private_extern _p_80_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_MeterOptions_set_Name_string_llvm
@@ -4305,7 +4305,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 4756
+.word 4728
 _p_81_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_thread_interruption_checkpoint_llvm:
 	.globl _p_81_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_thread_interruption_checkpoint_llvm
 .private_extern _p_81_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_thread_interruption_checkpoint_llvm
@@ -4316,7 +4316,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 4758
+.word 4730
 _p_82_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_rethrow_exception_llvm:
 	.globl _p_82_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_rethrow_exception_llvm
 .private_extern _p_82_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_rethrow_exception_llvm
@@ -4327,7 +4327,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 4761
+.word 4733
 _p_83_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_Alloc_intptr_llvm:
 	.globl _p_83_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_Alloc_intptr_llvm
 .private_extern _p_83_plt_System_Diagnostics_DiagnosticSource_wrapper_alloc_object_Alloc_intptr_llvm
@@ -4338,7 +4338,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 4763
+.word 4735
 _p_84_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument_Publish_llvm:
 	.globl _p_84_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument_Publish_llvm
 .private_extern _p_84_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument_Publish_llvm
@@ -4349,7 +4349,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 4771
+.word 4743
 _p_85_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument__ctor_System_Diagnostics_Metrics_Meter_string_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm:
 	.globl _p_85_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument__ctor_System_Diagnostics_Metrics_Meter_string_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
 .private_extern _p_85_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_Instrument__ctor_System_Diagnostics_Metrics_Meter_string_string_string_System_Collections_Generic_IEnumerable_1_System_Collections_Generic_KeyValuePair_2_string_object_llvm
@@ -4360,7 +4360,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 4773
+.word 4745
 _p_86_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_ListenerSubscription_get_Listener_llvm:
 	.globl _p_86_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_ListenerSubscription_get_Listener_llvm
 .private_extern _p_86_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_ListenerSubscription_get_Listener_llvm
@@ -4371,7 +4371,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 4775
+.word 4747
 _p_87_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_ListenerSubscription_get_State_llvm:
 	.globl _p_87_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_ListenerSubscription_get_State_llvm
 .private_extern _p_87_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_Metrics_ListenerSubscription_get_State_llvm
@@ -4382,7 +4382,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 4777
+.word 4749
 _p_88_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_throw_corlib_exception_llvm:
 	.globl _p_88_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_throw_corlib_exception_llvm
 .private_extern _p_88_plt_System_Diagnostics_DiagnosticSource__jit_icall_mono_arch_throw_corlib_exception_llvm
@@ -4393,7 +4393,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 4779
+.word 4751
 _p_89_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Tags_llvm:
 	.globl _p_89_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Tags_llvm
 .private_extern _p_89_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Tags_llvm
@@ -4404,7 +4404,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 4781
+.word 4753
 _p_90_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Count_llvm:
 	.globl _p_90_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Count_llvm
 .private_extern _p_90_plt_System_Diagnostics_DiagnosticSource_System_Diagnostics_TagList_get_Count_llvm
@@ -4415,7 +4415,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 4783
+.word 4755
 _p_91_plt_System_Diagnostics_DiagnosticSource_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
 	.globl _p_91_plt_System_Diagnostics_DiagnosticSource_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
 .private_extern _p_91_plt_System_Diagnostics_DiagnosticSource_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
@@ -4426,7 +4426,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 4785
+.word 4757
 _p_92_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__ctor_llvm:
 	.globl _p_92_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__ctor_llvm
 .private_extern _p_92_plt_System_Diagnostics_DiagnosticSource_System_Collections_Generic_List_1_System_Diagnostics_Metrics_Instrument__ctor_llvm
@@ -4437,7 +4437,7 @@ adrp x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGE+0
 add x16, x16, mono_aot_System_Diagnostics_DiagnosticSource_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 4793
+.word 4765
 plt_end:
 _mono_aot_System_Diagnostics_DiagnosticSourceplt_end:
 	.globl _mono_aot_System_Diagnostics_DiagnosticSourceplt_end

@@ -7,7 +7,7 @@ _mono_aot_System_Private_Urijit_code_start:
 
 	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 .text
-ut_152:
+ut_156:
 add x0, x0, 16
 b _System_Private_Uri_System_UriCreationOptions_get_DangerousDisablePathAndQueryCanonicalization
 ut_end:
@@ -15,162 +15,162 @@ ut_end:
 _unbox_trampoline_p:
 
 	.long 0
-LDIFF_SYM0=ut_end - ut_152
+LDIFF_SYM0=ut_end - ut_156
 	.long LDIFF_SYM0
-.text
-ut_198:
-add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder__ctor_System_Span_1_char
-.text
-ut_199:
-add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder__ctor_int
-.text
-ut_200:
-add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_get_Length
-.text
-ut_201:
-add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_set_Length_int
-.text
-ut_202:
-add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int
-.text
-ut_203:
-add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_GetPinnableReference
 .text
 ut_204:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_get_Item_int
+b _System_Private_Uri_System_Text_ValueStringBuilder__ctor_System_Span_1_char
 .text
 ut_205:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_ToString
+b _System_Private_Uri_System_Text_ValueStringBuilder__ctor_int
 .text
 ut_206:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_get_RawChars
+b _System_Private_Uri_System_Text_ValueStringBuilder_get_Length
 .text
 ut_207:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_AsSpan
+b _System_Private_Uri_System_Text_ValueStringBuilder_set_Length_int
 .text
 ut_208:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_AsSpan_int
+b _System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int
 .text
 ut_209:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_AsSpan_int_int
+b _System_Private_Uri_System_Text_ValueStringBuilder_GetPinnableReference
 .text
 ut_210:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Append_char
+b _System_Private_Uri_System_Text_ValueStringBuilder_get_Item_int
 .text
 ut_211:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Append_string
+b _System_Private_Uri_System_Text_ValueStringBuilder_ToString
 .text
 ut_212:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_AppendSlow_string
+b _System_Private_Uri_System_Text_ValueStringBuilder_get_RawChars
 .text
 ut_213:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Append_char__int
+b _System_Private_Uri_System_Text_ValueStringBuilder_AsSpan
 .text
 ut_214:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Append_System_ReadOnlySpan_1_char
+b _System_Private_Uri_System_Text_ValueStringBuilder_AsSpan_int
 .text
 ut_215:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_AppendSpan_int
+b _System_Private_Uri_System_Text_ValueStringBuilder_AsSpan_int_int
 .text
 ut_216:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_GrowAndAppend_char
+b _System_Private_Uri_System_Text_ValueStringBuilder_Append_char
 .text
 ut_217:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Grow_int
+b _System_Private_Uri_System_Text_ValueStringBuilder_Append_string
 .text
 ut_218:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Dispose
+b _System_Private_Uri_System_Text_ValueStringBuilder_AppendSlow_string
 .text
 ut_219:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_Append_System_Text_Rune
+b _System_Private_Uri_System_Text_ValueStringBuilder_Append_char__int
 .text
 ut_220:
 add x0, x0, 16
-b _System_Private_Uri_System_Text_ValueStringBuilder_GrowAndAppend_System_Text_Rune
+b _System_Private_Uri_System_Text_ValueStringBuilder_Append_System_ReadOnlySpan_1_char
+.text
+ut_221:
+add x0, x0, 16
+b _System_Private_Uri_System_Text_ValueStringBuilder_AppendSpan_int
+.text
+ut_222:
+add x0, x0, 16
+b _System_Private_Uri_System_Text_ValueStringBuilder_GrowAndAppend_char
 .text
 ut_223:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Uri_Offset_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_System_Text_ValueStringBuilder_Grow_int
 .text
 ut_224:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Uri_Offset_PtrToStructure_intptr_object
+b _System_Private_Uri_System_Text_ValueStringBuilder_Dispose
 .text
 ut_225:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_UriCreationOptions_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_System_Text_ValueStringBuilder_Append_System_Text_Rune
 .text
 ut_226:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_UriCreationOptions_PtrToStructure_intptr_object
-.text
-ut_227:
-add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Span_1_char_StructureToPtr_object_intptr_bool
-.text
-ut_228:
-add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Span_1_char_PtrToStructure_intptr_object
+b _System_Private_Uri_System_Text_ValueStringBuilder_GrowAndAppend_System_Text_Rune
 .text
 ut_229:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_byte_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_wrapper_other_System_Uri_Offset_StructureToPtr_object_intptr_bool
 .text
 ut_230:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_byte_PtrToStructure_intptr_object
+b _System_Private_Uri_wrapper_other_System_Uri_Offset_PtrToStructure_intptr_object
 .text
 ut_231:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_char_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_wrapper_other_System_UriCreationOptions_StructureToPtr_object_intptr_bool
 .text
 ut_232:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_char_PtrToStructure_intptr_object
+b _System_Private_Uri_wrapper_other_System_UriCreationOptions_PtrToStructure_intptr_object
 .text
 ut_233:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Span_1_byte_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_wrapper_other_System_Span_1_char_StructureToPtr_object_intptr_bool
 .text
 ut_234:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Span_1_byte_PtrToStructure_intptr_object
+b _System_Private_Uri_wrapper_other_System_Span_1_char_PtrToStructure_intptr_object
 .text
 ut_235:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Span_1_uint16_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_byte_StructureToPtr_object_intptr_bool
 .text
 ut_236:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_Span_1_uint16_PtrToStructure_intptr_object
+b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_byte_PtrToStructure_intptr_object
 .text
 ut_237:
 add x0, x0, 16
-b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_uint16_StructureToPtr_object_intptr_bool
+b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_char_StructureToPtr_object_intptr_bool
 .text
 ut_238:
+add x0, x0, 16
+b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_char_PtrToStructure_intptr_object
+.text
+ut_239:
+add x0, x0, 16
+b _System_Private_Uri_wrapper_other_System_Span_1_byte_StructureToPtr_object_intptr_bool
+.text
+ut_240:
+add x0, x0, 16
+b _System_Private_Uri_wrapper_other_System_Span_1_byte_PtrToStructure_intptr_object
+.text
+ut_241:
+add x0, x0, 16
+b _System_Private_Uri_wrapper_other_System_Span_1_uint16_StructureToPtr_object_intptr_bool
+.text
+ut_242:
+add x0, x0, 16
+b _System_Private_Uri_wrapper_other_System_Span_1_uint16_PtrToStructure_intptr_object
+.text
+ut_243:
+add x0, x0, 16
+b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_uint16_StructureToPtr_object_intptr_bool
+.text
+ut_244:
 add x0, x0, 16
 b _System_Private_Uri_wrapper_other_System_ReadOnlySpan_1_uint16_PtrToStructure_intptr_object
 .text
@@ -272,6 +272,7 @@ _mono_aot_System_Private_Urijit_code_end:
 .no_dead_strip _System_Private_Uri_System_Uri_op_Equality_System_Uri_System_Uri
 .no_dead_strip _System_Private_Uri_System_Uri_op_Inequality_System_Uri_System_Uri
 .no_dead_strip _System_Private_Uri_System_Uri_Equals_object
+.no_dead_strip _System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string
 .no_dead_strip _System_Private_Uri_System_Uri_ParseScheme_string_System_Uri_Flags__System_UriParser_
 .no_dead_strip _System_Private_Uri_System_Uri_ParseMinimal
 .no_dead_strip _System_Private_Uri_System_Uri_PrivateParseMinimal
@@ -304,6 +305,9 @@ _mono_aot_System_Private_Urijit_code_end:
 .no_dead_strip _System_Private_Uri_System_Uri_TryCreate_string_System_UriKind_System_Uri_
 .no_dead_strip _System_Private_Uri_System_Uri_GetComponents_System_UriComponents_System_UriFormat
 .no_dead_strip _System_Private_Uri_System_Uri_InternalGetComponents_System_UriComponents_System_UriFormat
+.no_dead_strip _System_Private_Uri_System_Uri_IsWellFormedOriginalString
+.no_dead_strip _System_Private_Uri_System_Uri_IsWellFormedUriString_string_System_UriKind
+.no_dead_strip _System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString
 .no_dead_strip _System_Private_Uri_System_Uri_UnescapeDataString_string
 .no_dead_strip _System_Private_Uri_System_Uri_EscapeUriString_string
 .no_dead_strip _System_Private_Uri_System_Uri_EscapeUnescapeIri_string_int_int_System_UriComponents
@@ -361,6 +365,7 @@ _mono_aot_System_Private_Urijit_code_end:
 .no_dead_strip _System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException_
 .no_dead_strip _System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException_
 .no_dead_strip _System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat
+.no_dead_strip _System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri
 .no_dead_strip _System_Private_Uri_System_UriParser_get_Flags
 .no_dead_strip _System_Private_Uri_System_UriParser_NotAny_System_UriSyntaxFlags
 .no_dead_strip _System_Private_Uri_System_UriParser_InFact_System_UriSyntaxFlags
@@ -374,6 +379,7 @@ _mono_aot_System_Private_Urijit_code_end:
 .no_dead_strip _System_Private_Uri_System_UriParser_InternalValidate_System_Uri_System_UriFormatException_
 .no_dead_strip _System_Private_Uri_System_UriParser_InternalResolve_System_Uri_System_Uri_System_UriFormatException_
 .no_dead_strip _System_Private_Uri_System_UriParser_InternalGetComponents_System_Uri_System_UriComponents_System_UriFormat
+.no_dead_strip _System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri
 .no_dead_strip _System_Private_Uri_System_UriParser__cctor
 .no_dead_strip _System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags
 .no_dead_strip _System_Private_Uri_System_SR_Format_string_object
@@ -522,6 +528,7 @@ bl _System_Private_Uri_System_Uri_System_IFormattable_ToString_string_System_IFo
 bl _System_Private_Uri_System_Uri_op_Equality_System_Uri_System_Uri
 bl _System_Private_Uri_System_Uri_op_Inequality_System_Uri_System_Uri
 bl _System_Private_Uri_System_Uri_Equals_object
+bl _System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string
 bl _System_Private_Uri_System_Uri_ParseScheme_string_System_Uri_Flags__System_UriParser_
 bl _System_Private_Uri_System_Uri_ParseMinimal
 bl _System_Private_Uri_System_Uri_PrivateParseMinimal
@@ -554,6 +561,9 @@ bl _System_Private_Uri_System_Uri_CheckForUnicodeOrEscapedUnreserved_string
 bl _System_Private_Uri_System_Uri_TryCreate_string_System_UriKind_System_Uri_
 bl _System_Private_Uri_System_Uri_GetComponents_System_UriComponents_System_UriFormat
 bl _System_Private_Uri_System_Uri_InternalGetComponents_System_UriComponents_System_UriFormat
+bl _System_Private_Uri_System_Uri_IsWellFormedOriginalString
+bl _System_Private_Uri_System_Uri_IsWellFormedUriString_string_System_UriKind
+bl _System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString
 bl _System_Private_Uri_System_Uri_UnescapeDataString_string
 bl _System_Private_Uri_System_Uri_EscapeUriString_string
 bl _System_Private_Uri_System_Uri_EscapeUnescapeIri_string_int_int_System_UriComponents
@@ -611,6 +621,7 @@ bl _System_Private_Uri_System_UriParser_OnNewUri
 bl _System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException_
 bl _System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException_
 bl _System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat
+bl _System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri
 bl _System_Private_Uri_System_UriParser_get_Flags
 bl _System_Private_Uri_System_UriParser_NotAny_System_UriSyntaxFlags
 bl _System_Private_Uri_System_UriParser_InFact_System_UriSyntaxFlags
@@ -624,6 +635,7 @@ bl _System_Private_Uri_System_UriParser_InternalOnNewUri
 bl _System_Private_Uri_System_UriParser_InternalValidate_System_Uri_System_UriFormatException_
 bl _System_Private_Uri_System_UriParser_InternalResolve_System_Uri_System_Uri_System_UriFormatException_
 bl _System_Private_Uri_System_UriParser_InternalGetComponents_System_Uri_System_UriComponents_System_UriFormat
+bl _System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri
 bl _System_Private_Uri_System_UriParser__cctor
 bl _System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags
 bl _System_Private_Uri_System_SR_Format_string_object
@@ -683,11 +695,11 @@ unbox_trampolines:
 _mono_aot_System_Private_Uriunbox_trampolines:
 	.globl _mono_aot_System_Private_Uriunbox_trampolines
 
-	.long 152,198,199,200,201,202,203,204
-	.long 205,206,207,208,209,210,211,212
-	.long 213,214,215,216,217,218,219,220
-	.long 223,224,225,226,227,228,229,230
-	.long 231,232,233,234,235,236,237,238
+	.long 156,204,205,206,207,208,209,210
+	.long 211,212,213,214,215,216,217,218
+	.long 219,220,221,222,223,224,225,226
+	.long 229,230,231,232,233,234,235,236
+	.long 237,238,239,240,241,242,243,244
 unbox_trampolines_end:
 _mono_aot_System_Private_Uriunbox_trampolines_end:
 	.globl _mono_aot_System_Private_Uriunbox_trampolines_end
@@ -698,13 +710,7 @@ _mono_aot_System_Private_Uriunbox_trampolines_end:
 unbox_trampoline_addresses:
 _mono_aot_System_Private_Uriunbox_trampoline_addresses:
 	.globl _mono_aot_System_Private_Uriunbox_trampoline_addresses
-bl ut_152
-bl ut_198
-bl ut_199
-bl ut_200
-bl ut_201
-bl ut_202
-bl ut_203
+bl ut_156
 bl ut_204
 bl ut_205
 bl ut_206
@@ -722,12 +728,12 @@ bl ut_217
 bl ut_218
 bl ut_219
 bl ut_220
+bl ut_221
+bl ut_222
 bl ut_223
 bl ut_224
 bl ut_225
 bl ut_226
-bl ut_227
-bl ut_228
 bl ut_229
 bl ut_230
 bl ut_231
@@ -738,6 +744,12 @@ bl ut_235
 bl ut_236
 bl ut_237
 bl ut_238
+bl ut_239
+bl ut_240
+bl ut_241
+bl ut_242
+bl ut_243
+bl ut_244
 
 	.long 0
 .section __TEXT, __const
@@ -2678,7 +2690,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 1419
+.word 1420
 _p_176_plt_System_Private_Uri_string_op_Equality_string_string_llvm:
 	.globl _p_176_plt_System_Private_Uri_string_op_Equality_string_string_llvm
 .private_extern _p_176_plt_System_Private_Uri_string_op_Equality_string_string_llvm
@@ -2689,7 +2701,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 1424
+.word 1425
 _p_177_plt_System_Private_Uri_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm:
 	.globl _p_177_plt_System_Private_Uri_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm
 .private_extern _p_177_plt_System_Private_Uri_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm
@@ -2700,7 +2712,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 1429
+.word 1430
 _p_178_plt_System_Private_Uri_System_Uri_get_IsFile_llvm:
 	.globl _p_178_plt_System_Private_Uri_System_Uri_get_IsFile_llvm
 .private_extern _p_178_plt_System_Private_Uri_System_Uri_get_IsFile_llvm
@@ -2711,7 +2723,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 1445
+.word 1446
 _p_179_plt_System_Private_Uri_System_UriParser_FindOrFetchAsUnknownV1Syntax_string_llvm:
 	.globl _p_179_plt_System_Private_Uri_System_UriParser_FindOrFetchAsUnknownV1Syntax_string_llvm
 .private_extern _p_179_plt_System_Private_Uri_System_UriParser_FindOrFetchAsUnknownV1Syntax_string_llvm
@@ -2722,7 +2734,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 1447
+.word 1448
 _p_180_plt_System_Private_Uri_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm:
 	.globl _p_180_plt_System_Private_Uri_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
 .private_extern _p_180_plt_System_Private_Uri_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
@@ -2733,7 +2745,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 1450
+.word 1451
 _p_181_plt_System_Private_Uri_string__ctor_char__int_int_llvm:
 	.globl _p_181_plt_System_Private_Uri_string__ctor_char__int_int_llvm
 .private_extern _p_181_plt_System_Private_Uri_string__ctor_char__int_int_llvm
@@ -2744,7 +2756,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 1455
+.word 1456
 _p_182_plt_System_Private_Uri_string_Normalize_System_Text_NormalizationForm_llvm:
 	.globl _p_182_plt_System_Private_Uri_string_Normalize_System_Text_NormalizationForm_llvm
 .private_extern _p_182_plt_System_Private_Uri_string_Normalize_System_Text_NormalizationForm_llvm
@@ -2755,7 +2767,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 1460
+.word 1461
 _p_183_plt_System_Private_Uri_System_UncNameHelper_IsValid_char__int_int__bool_llvm:
 	.globl _p_183_plt_System_Private_Uri_System_UncNameHelper_IsValid_char__int_int__bool_llvm
 .private_extern _p_183_plt_System_Private_Uri_System_UncNameHelper_IsValid_char__int_int__bool_llvm
@@ -2766,7 +2778,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 1465
+.word 1466
 _p_184_plt_System_Private_Uri_System_DomainNameHelper_IsValid_System_ReadOnlySpan_1_char_bool_bool_int__llvm:
 	.globl _p_184_plt_System_Private_Uri_System_DomainNameHelper_IsValid_System_ReadOnlySpan_1_char_bool_bool_int__llvm
 .private_extern _p_184_plt_System_Private_Uri_System_DomainNameHelper_IsValid_System_ReadOnlySpan_1_char_bool_bool_int__llvm
@@ -2777,7 +2789,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 1467
+.word 1468
 _p_185_plt_System_Private_Uri_System_Uri_CheckAuthorityHelperHandleDnsIri_char__int_int_bool_System_Uri_Flags__bool__string__System_ParsingError__llvm:
 	.globl _p_185_plt_System_Private_Uri_System_Uri_CheckAuthorityHelperHandleDnsIri_char__int_int_bool_System_Uri_Flags__bool__string__System_ParsingError__llvm
 .private_extern _p_185_plt_System_Private_Uri_System_Uri_CheckAuthorityHelperHandleDnsIri_char__int_int_bool_System_Uri_Flags__bool__string__System_ParsingError__llvm
@@ -2788,7 +2800,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 1469
+.word 1470
 _p_186_plt_System_Private_Uri_System_IPv6AddressHelper_IsValid_char__int_int__llvm:
 	.globl _p_186_plt_System_Private_Uri_System_IPv6AddressHelper_IsValid_char__int_int__llvm
 .private_extern _p_186_plt_System_Private_Uri_System_IPv6AddressHelper_IsValid_char__int_int__llvm
@@ -2799,7 +2811,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 1471
+.word 1472
 _p_187_plt_System_Private_Uri_System_IriHelper_EscapeUnescapeIri_char__int_int_System_UriComponents_llvm:
 	.globl _p_187_plt_System_Private_Uri_System_IriHelper_EscapeUnescapeIri_char__int_int_System_UriComponents_llvm
 .private_extern _p_187_plt_System_Private_Uri_System_IriHelper_EscapeUnescapeIri_char__int_int_System_UriComponents_llvm
@@ -2810,7 +2822,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 1473
+.word 1474
 _p_188_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_System_Text_ValueStringBuilder__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm:
 	.globl _p_188_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_System_Text_ValueStringBuilder__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm
 .private_extern _p_188_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_System_Text_ValueStringBuilder__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm
@@ -2821,7 +2833,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 1475
+.word 1476
 _p_189_plt_System_Private_Uri_System_Uri_Compress_System_Span_1_char_System_UriParser_llvm:
 	.globl _p_189_plt_System_Private_Uri_System_Uri_Compress_System_Span_1_char_System_UriParser_llvm
 .private_extern _p_189_plt_System_Private_Uri_System_Uri_Compress_System_Span_1_char_System_UriParser_llvm
@@ -2832,7 +2844,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 1478
+.word 1479
 _p_190_plt_System_Private_Uri_System_Uri_UnescapeOnly_char__int_int__char_char_char_llvm:
 	.globl _p_190_plt_System_Private_Uri_System_Uri_UnescapeOnly_char__int_int__char_char_char_llvm
 .private_extern _p_190_plt_System_Private_Uri_System_Uri_UnescapeOnly_char__int_int__char_char_char_llvm
@@ -2843,7 +2855,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 1480
+.word 1481
 _p_191_plt_System_Private_Uri_System_ReadOnlySpan_1_char_ToArray_llvm:
 	.globl _p_191_plt_System_Private_Uri_System_ReadOnlySpan_1_char_ToArray_llvm
 .private_extern _p_191_plt_System_Private_Uri_System_ReadOnlySpan_1_char_ToArray_llvm
@@ -2854,7 +2866,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 1482
+.word 1483
 _p_192_plt_System_Private_Uri_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
 	.globl _p_192_plt_System_Private_Uri_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
 .private_extern _p_192_plt_System_Private_Uri_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
@@ -2865,7 +2877,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 1493
+.word 1494
 _p_193_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm:
 	.globl _p_193_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
 .private_extern _p_193_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
@@ -2876,7 +2888,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 1498
+.word 1499
 _p_194_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm:
 	.globl _p_194_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
 .private_extern _p_194_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
@@ -2887,7 +2899,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 1503
+.word 1504
 _p_195_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm:
 	.globl _p_195_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
 .private_extern _p_195_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
@@ -2898,7 +2910,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 1508
+.word 1509
 _p_196_plt_System_Private_Uri_System_Uri_get_DnsSafeHost_llvm:
 	.globl _p_196_plt_System_Private_Uri_System_Uri_get_DnsSafeHost_llvm
 .private_extern _p_196_plt_System_Private_Uri_System_Uri_get_DnsSafeHost_llvm
@@ -2909,7 +2921,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 1513
+.word 1514
 _p_197_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm:
 	.globl _p_197_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
 .private_extern _p_197_plt_System_Private_Uri_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
@@ -2920,7 +2932,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 1515
+.word 1516
 _p_198_plt_System_Private_Uri_System_Uri_get_Scheme_llvm:
 	.globl _p_198_plt_System_Private_Uri_System_Uri_get_Scheme_llvm
 .private_extern _p_198_plt_System_Private_Uri_System_Uri_get_Scheme_llvm
@@ -2931,7 +2943,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 1520
+.word 1521
 _p_199_plt_System_Private_Uri_string_Concat_string_string_string_llvm:
 	.globl _p_199_plt_System_Private_Uri_string_Concat_string_string_string_llvm
 .private_extern _p_199_plt_System_Private_Uri_string_Concat_string_string_string_llvm
@@ -2942,7 +2954,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 1522
+.word 1523
 _p_200_plt_System_Private_Uri_string_CopyTo_int_char___int_int_llvm:
 	.globl _p_200_plt_System_Private_Uri_string_CopyTo_int_char___int_int_llvm
 .private_extern _p_200_plt_System_Private_Uri_string_CopyTo_int_char___int_int_llvm
@@ -2953,7 +2965,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 1527
+.word 1528
 _p_201_plt_System_Private_Uri_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm:
 	.globl _p_201_plt_System_Private_Uri_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
 .private_extern _p_201_plt_System_Private_Uri_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
@@ -2964,7 +2976,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 1532
+.word 1533
 _p_202_plt_System_Private_Uri_string_Concat_string___llvm:
 	.globl _p_202_plt_System_Private_Uri_string_Concat_string___llvm
 .private_extern _p_202_plt_System_Private_Uri_string_Concat_string___llvm
@@ -2975,7 +2987,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 1541
+.word 1542
 _p_203_plt_System_Private_Uri_System_Uri_get_IsUnc_llvm:
 	.globl _p_203_plt_System_Private_Uri_System_Uri_get_IsUnc_llvm
 .private_extern _p_203_plt_System_Private_Uri_System_Uri_get_IsUnc_llvm
@@ -2986,7 +2998,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 1546
+.word 1547
 _p_204_plt_System_Private_Uri_string_Concat_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_204_plt_System_Private_Uri_string_Concat_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_204_plt_System_Private_Uri_string_Concat_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
@@ -2997,7 +3009,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 1548
+.word 1549
 _p_205_plt_System_Private_Uri_string_IndexOf_char_int_llvm:
 	.globl _p_205_plt_System_Private_Uri_string_IndexOf_char_int_llvm
 .private_extern _p_205_plt_System_Private_Uri_string_IndexOf_char_int_llvm
@@ -3008,7 +3020,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 1553
+.word 1554
 _p_206_plt_System_Private_Uri_System_Uri_ParseScheme_string_System_Uri_Flags__System_UriParser__llvm:
 	.globl _p_206_plt_System_Private_Uri_System_Uri_ParseScheme_string_System_Uri_Flags__System_UriParser__llvm
 .private_extern _p_206_plt_System_Private_Uri_System_Uri_ParseScheme_string_System_Uri_Flags__System_UriParser__llvm
@@ -3019,7 +3031,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 1558
+.word 1559
 _p_207_plt_System_Private_Uri_System_Uri_InitializeUri_System_ParsingError_System_UriKind_System_UriFormatException__llvm:
 	.globl _p_207_plt_System_Private_Uri_System_Uri_InitializeUri_System_ParsingError_System_UriKind_System_UriFormatException__llvm
 .private_extern _p_207_plt_System_Private_Uri_System_Uri_InitializeUri_System_ParsingError_System_UriKind_System_UriFormatException__llvm
@@ -3030,7 +3042,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 1560
+.word 1561
 _p_208_plt_System_Private_Uri_System_UriParser_InternalOnNewUri_llvm:
 	.globl _p_208_plt_System_Private_Uri_System_UriParser_InternalOnNewUri_llvm
 .private_extern _p_208_plt_System_Private_Uri_System_UriParser_InternalOnNewUri_llvm
@@ -3041,7 +3053,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 1562
+.word 1563
 _p_209_plt_System_Private_Uri_System_UriParser_InternalValidate_System_Uri_System_UriFormatException__llvm:
 	.globl _p_209_plt_System_Private_Uri_System_UriParser_InternalValidate_System_Uri_System_UriFormatException__llvm
 .private_extern _p_209_plt_System_Private_Uri_System_UriParser_InternalValidate_System_Uri_System_UriFormatException__llvm
@@ -3052,7 +3064,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 1565
+.word 1566
 _p_210_plt_System_Private_Uri_System_Uri_CheckForUnicodeOrEscapedUnreserved_string_llvm:
 	.globl _p_210_plt_System_Private_Uri_System_Uri_CheckForUnicodeOrEscapedUnreserved_string_llvm
 .private_extern _p_210_plt_System_Private_Uri_System_Uri_CheckForUnicodeOrEscapedUnreserved_string_llvm
@@ -3063,7 +3075,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 1568
+.word 1569
 _p_211_plt_System_Private_Uri_System_Uri_CreateHelper_string_bool_System_UriKind_System_UriFormatException__System_UriCreationOptions__llvm:
 	.globl _p_211_plt_System_Private_Uri_System_Uri_CreateHelper_string_bool_System_UriKind_System_UriFormatException__System_UriCreationOptions__llvm
 .private_extern _p_211_plt_System_Private_Uri_System_Uri_CreateHelper_string_bool_System_UriKind_System_UriFormatException__System_UriCreationOptions__llvm
@@ -3074,7 +3086,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 1570
+.word 1571
 _p_212_plt_System_Private_Uri_System_Uri_GetRelativeSerializationString_System_UriFormat_llvm:
 	.globl _p_212_plt_System_Private_Uri_System_Uri_GetRelativeSerializationString_System_UriFormat_llvm
 .private_extern _p_212_plt_System_Private_Uri_System_Uri_GetRelativeSerializationString_System_UriFormat_llvm
@@ -3085,7 +3097,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 1573
+.word 1574
 _p_213_plt_System_Private_Uri__jit_icall_mono_helper_newobj_mscorlib_llvm:
 	.globl _p_213_plt_System_Private_Uri__jit_icall_mono_helper_newobj_mscorlib_llvm
 .private_extern _p_213_plt_System_Private_Uri__jit_icall_mono_helper_newobj_mscorlib_llvm
@@ -3096,7 +3108,7 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 1576
+.word 1577
 _p_214_plt_System_Private_Uri_System_ArgumentOutOfRangeException__ctor_string_object_string_llvm:
 	.globl _p_214_plt_System_Private_Uri_System_ArgumentOutOfRangeException__ctor_string_object_string_llvm
 .private_extern _p_214_plt_System_Private_Uri_System_ArgumentOutOfRangeException__ctor_string_object_string_llvm
@@ -3107,403 +3119,458 @@ adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 1579
-_p_215_plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm:
-	.globl _p_215_plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm
-.private_extern _p_215_plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int
-plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int:
+.word 1580
+_p_215_plt_System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString_llvm:
+	.globl _p_215_plt_System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString_llvm
+.private_extern _p_215_plt_System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString
+plt_System_Private_Uri_System_Uri_InternalIsWellFormedOriginalString:
 _p_215:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 1584
-_p_216_plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string_llvm:
-	.globl _p_216_plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string_llvm
-.private_extern _p_216_plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string
-plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string:
+.word 1585
+_p_216_plt_System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri_llvm:
+	.globl _p_216_plt_System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri_llvm
+.private_extern _p_216_plt_System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri
+plt_System_Private_Uri_System_UriParser_InternalIsWellFormedOriginalString_System_Uri:
 _p_216:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 1587
-_p_217_plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string__llvm:
-	.globl _p_217_plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string__llvm
-.private_extern _p_217_plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string__llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string_
-plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string_:
+.word 1588
+_p_217_plt_System_Private_Uri_System_Uri_IsWellFormedOriginalString_llvm:
+	.globl _p_217_plt_System_Private_Uri_System_Uri_IsWellFormedOriginalString_llvm
+.private_extern _p_217_plt_System_Private_Uri_System_Uri_IsWellFormedOriginalString_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_IsWellFormedOriginalString
+plt_System_Private_Uri_System_Uri_IsWellFormedOriginalString:
 _p_217:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 1590
-_p_218_plt_System_Private_Uri_string_Trim_char___llvm:
-	.globl _p_218_plt_System_Private_Uri_string_Trim_char___llvm
-.private_extern _p_218_plt_System_Private_Uri_string_Trim_char___llvm
-	.no_dead_strip plt_System_Private_Uri_string_Trim_char__
-plt_System_Private_Uri_string_Trim_char__:
+.word 1591
+_p_218_plt_System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string_llvm:
+	.globl _p_218_plt_System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string_llvm
+.private_extern _p_218_plt_System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string
+plt_System_Private_Uri_System_Uri_CheckForColonInFirstPathSegment_string:
 _p_218:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 1592
-_p_219_plt_System_Private_Uri_System_Uri_UnescapeDataString_string_llvm:
-	.globl _p_219_plt_System_Private_Uri_System_Uri_UnescapeDataString_string_llvm
-.private_extern _p_219_plt_System_Private_Uri_System_Uri_UnescapeDataString_string_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_UnescapeDataString_string
-plt_System_Private_Uri_System_Uri_UnescapeDataString_string:
+.word 1593
+_p_219_plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm:
+	.globl _p_219_plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm
+.private_extern _p_219_plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int
+plt_System_Private_Uri_System_Text_ValueStringBuilder_EnsureCapacity_int:
 _p_219:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 1597
-_p_220_plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents_llvm:
-	.globl _p_220_plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents_llvm
-.private_extern _p_220_plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents
-plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents:
+.word 1595
+_p_220_plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string_llvm:
+	.globl _p_220_plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string_llvm
+.private_extern _p_220_plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string
+plt_System_Private_Uri_System_Uri__ctor_System_Uri_Flags_System_UriParser_string:
 _p_220:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 1599
-_p_221_plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind_llvm:
-	.globl _p_221_plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind_llvm
-.private_extern _p_221_plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind
-plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind:
+.word 1598
+_p_221_plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string__llvm:
+	.globl _p_221_plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string__llvm
+.private_extern _p_221_plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string__llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string_
+plt_System_Private_Uri_System_Uri_GetCombinedString_System_Uri_string_bool_string_:
 _p_221:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
 .word 1601
-_p_222_plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri_llvm:
-	.globl _p_222_plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri_llvm
-.private_extern _p_222_plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri
-plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri:
+_p_222_plt_System_Private_Uri_string_Trim_char___llvm:
+	.globl _p_222_plt_System_Private_Uri_string_Trim_char___llvm
+.private_extern _p_222_plt_System_Private_Uri_string_Trim_char___llvm
+	.no_dead_strip plt_System_Private_Uri_string_Trim_char__
+plt_System_Private_Uri_string_Trim_char__:
 _p_222:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
 .word 1603
-_p_223_plt_System_Private_Uri_System_Uri__ctor_string_llvm:
-	.globl _p_223_plt_System_Private_Uri_System_Uri__ctor_string_llvm
-.private_extern _p_223_plt_System_Private_Uri_System_Uri__ctor_string_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri__ctor_string
-plt_System_Private_Uri_System_Uri__ctor_string:
+_p_223_plt_System_Private_Uri_System_Uri_UnescapeDataString_string_llvm:
+	.globl _p_223_plt_System_Private_Uri_System_Uri_UnescapeDataString_string_llvm
+.private_extern _p_223_plt_System_Private_Uri_System_Uri_UnescapeDataString_string_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_UnescapeDataString_string
+plt_System_Private_Uri_System_Uri_UnescapeDataString_string:
 _p_223:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 1606
-_p_224_plt_System_Private_Uri_System_UriBuilder_get_Uri_llvm:
-	.globl _p_224_plt_System_Private_Uri_System_UriBuilder_get_Uri_llvm
-.private_extern _p_224_plt_System_Private_Uri_System_UriBuilder_get_Uri_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriBuilder_get_Uri
-plt_System_Private_Uri_System_UriBuilder_get_Uri:
+.word 1608
+_p_224_plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents_llvm:
+	.globl _p_224_plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents_llvm
+.private_extern _p_224_plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents
+plt_System_Private_Uri_System_Uri_GetEscapedParts_System_UriComponents:
 _p_224:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 1608
-_p_225_plt_System_Private_Uri_string_Replace_string_string_System_StringComparison_llvm:
-	.globl _p_225_plt_System_Private_Uri_string_Replace_string_string_System_StringComparison_llvm
-.private_extern _p_225_plt_System_Private_Uri_string_Replace_string_string_System_StringComparison_llvm
-	.no_dead_strip plt_System_Private_Uri_string_Replace_string_string_System_StringComparison
-plt_System_Private_Uri_string_Replace_string_string_System_StringComparison:
+.word 1611
+_p_225_plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind_llvm:
+	.globl _p_225_plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind_llvm
+.private_extern _p_225_plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind
+plt_System_Private_Uri_System_Uri__ctor_string_System_UriKind:
 _p_225:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 1611
-_p_226_plt_System_Private_Uri_System_Uri_get_Host_llvm:
-	.globl _p_226_plt_System_Private_Uri_System_Uri_get_Host_llvm
-.private_extern _p_226_plt_System_Private_Uri_System_Uri_get_Host_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_get_Host
-plt_System_Private_Uri_System_Uri_get_Host:
+.word 1613
+_p_226_plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri_llvm:
+	.globl _p_226_plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri_llvm
+.private_extern _p_226_plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri
+plt_System_Private_Uri_System_UriBuilder_SetFieldsFromUri:
 _p_226:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 1616
-_p_227_plt_System_Private_Uri_System_Uri_get_AbsolutePath_llvm:
-	.globl _p_227_plt_System_Private_Uri_System_Uri_get_AbsolutePath_llvm
-.private_extern _p_227_plt_System_Private_Uri_System_Uri_get_AbsolutePath_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_get_AbsolutePath
-plt_System_Private_Uri_System_Uri_get_AbsolutePath:
+.word 1615
+_p_227_plt_System_Private_Uri_System_Uri__ctor_string_llvm:
+	.globl _p_227_plt_System_Private_Uri_System_Uri__ctor_string_llvm
+.private_extern _p_227_plt_System_Private_Uri_System_Uri__ctor_string_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri__ctor_string
+plt_System_Private_Uri_System_Uri__ctor_string:
 _p_227:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
 .word 1618
-_p_228_plt_System_Private_Uri_System_Uri_get_Query_llvm:
-	.globl _p_228_plt_System_Private_Uri_System_Uri_get_Query_llvm
-.private_extern _p_228_plt_System_Private_Uri_System_Uri_get_Query_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_get_Query
-plt_System_Private_Uri_System_Uri_get_Query:
+_p_228_plt_System_Private_Uri_System_UriBuilder_get_Uri_llvm:
+	.globl _p_228_plt_System_Private_Uri_System_UriBuilder_get_Uri_llvm
+.private_extern _p_228_plt_System_Private_Uri_System_UriBuilder_get_Uri_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriBuilder_get_Uri
+plt_System_Private_Uri_System_UriBuilder_get_Uri:
 _p_228:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
 .word 1620
-_p_229_plt_System_Private_Uri_System_Uri_get_Fragment_llvm:
-	.globl _p_229_plt_System_Private_Uri_System_Uri_get_Fragment_llvm
-.private_extern _p_229_plt_System_Private_Uri_System_Uri_get_Fragment_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_get_Fragment
-plt_System_Private_Uri_System_Uri_get_Fragment:
+_p_229_plt_System_Private_Uri_string_Replace_string_string_System_StringComparison_llvm:
+	.globl _p_229_plt_System_Private_Uri_string_Replace_string_string_System_StringComparison_llvm
+.private_extern _p_229_plt_System_Private_Uri_string_Replace_string_string_System_StringComparison_llvm
+	.no_dead_strip plt_System_Private_Uri_string_Replace_string_string_System_StringComparison
+plt_System_Private_Uri_string_Replace_string_string_System_StringComparison:
 _p_229:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 1622
-_p_230_plt_System_Private_Uri_System_Uri_get_UserInfo_llvm:
-	.globl _p_230_plt_System_Private_Uri_System_Uri_get_UserInfo_llvm
-.private_extern _p_230_plt_System_Private_Uri_System_Uri_get_UserInfo_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_get_UserInfo
-plt_System_Private_Uri_System_Uri_get_UserInfo:
+.word 1623
+_p_230_plt_System_Private_Uri_System_Uri_get_Host_llvm:
+	.globl _p_230_plt_System_Private_Uri_System_Uri_get_Host_llvm
+.private_extern _p_230_plt_System_Private_Uri_System_Uri_get_Host_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_get_Host
+plt_System_Private_Uri_System_Uri_get_Host:
 _p_230:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 1624
-_p_231_plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string_llvm:
-	.globl _p_231_plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string_llvm
-.private_extern _p_231_plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string
-plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string:
+.word 1628
+_p_231_plt_System_Private_Uri_System_Uri_get_AbsolutePath_llvm:
+	.globl _p_231_plt_System_Private_Uri_System_Uri_get_AbsolutePath_llvm
+.private_extern _p_231_plt_System_Private_Uri_System_Uri_get_AbsolutePath_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_get_AbsolutePath
+plt_System_Private_Uri_System_Uri_get_AbsolutePath:
 _p_231:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 1626
-_p_232_plt_System_Private_Uri_string_StartsWith_char_llvm:
-	.globl _p_232_plt_System_Private_Uri_string_StartsWith_char_llvm
-.private_extern _p_232_plt_System_Private_Uri_string_StartsWith_char_llvm
-	.no_dead_strip plt_System_Private_Uri_string_StartsWith_char
-plt_System_Private_Uri_string_StartsWith_char:
+.word 1630
+_p_232_plt_System_Private_Uri_System_Uri_get_Query_llvm:
+	.globl _p_232_plt_System_Private_Uri_System_Uri_get_Query_llvm
+.private_extern _p_232_plt_System_Private_Uri_System_Uri_get_Query_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_get_Query
+plt_System_Private_Uri_System_Uri_get_Query:
 _p_232:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 1629
-_p_233_plt_System_Private_Uri_System_UriParser_GetSyntax_string_llvm:
-	.globl _p_233_plt_System_Private_Uri_System_UriParser_GetSyntax_string_llvm
-.private_extern _p_233_plt_System_Private_Uri_System_UriParser_GetSyntax_string_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriParser_GetSyntax_string
-plt_System_Private_Uri_System_UriParser_GetSyntax_string:
+.word 1632
+_p_233_plt_System_Private_Uri_System_Uri_get_Fragment_llvm:
+	.globl _p_233_plt_System_Private_Uri_System_Uri_get_Fragment_llvm
+.private_extern _p_233_plt_System_Private_Uri_System_Uri_get_Fragment_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_get_Fragment
+plt_System_Private_Uri_System_Uri_get_Fragment:
 _p_233:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
 .word 1634
-_p_234_plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr_llvm:
-	.globl _p_234_plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr_llvm
-.private_extern _p_234_plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr_llvm
-	.no_dead_strip plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr
-plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr:
+_p_234_plt_System_Private_Uri_System_Uri_get_UserInfo_llvm:
+	.globl _p_234_plt_System_Private_Uri_System_Uri_get_UserInfo_llvm
+.private_extern _p_234_plt_System_Private_Uri_System_Uri_get_UserInfo_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_get_UserInfo
+plt_System_Private_Uri_System_Uri_get_UserInfo:
 _p_234:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 1637
-_p_235_plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool_llvm:
-	.globl _p_235_plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool_llvm
-.private_extern _p_235_plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool
-plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool:
+.word 1636
+_p_235_plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string_llvm:
+	.globl _p_235_plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string_llvm
+.private_extern _p_235_plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string
+plt_System_Private_Uri_System_UriBuilder_EncodeUserInfo_string:
 _p_235:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 1649
-_p_236_plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int__llvm:
-	.globl _p_236_plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int__llvm
-.private_extern _p_236_plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int__llvm
-	.no_dead_strip plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int_
-plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int_:
+.word 1638
+_p_236_plt_System_Private_Uri_string_StartsWith_char_llvm:
+	.globl _p_236_plt_System_Private_Uri_string_StartsWith_char_llvm
+.private_extern _p_236_plt_System_Private_Uri_string_StartsWith_char_llvm
+	.no_dead_strip plt_System_Private_Uri_string_StartsWith_char
+plt_System_Private_Uri_string_StartsWith_char:
 _p_236:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 1652
-_p_237_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm:
-	.globl _p_237_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm
-.private_extern _p_237_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool
-plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool:
+.word 1641
+_p_237_plt_System_Private_Uri_System_UriParser_GetSyntax_string_llvm:
+	.globl _p_237_plt_System_Private_Uri_System_UriParser_GetSyntax_string_llvm
+.private_extern _p_237_plt_System_Private_Uri_System_UriParser_GetSyntax_string_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_GetSyntax_string
+plt_System_Private_Uri_System_UriParser_GetSyntax_string:
 _p_237:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 1657
-_p_238_plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char_llvm:
-	.globl _p_238_plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char_llvm
-.private_extern _p_238_plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char
-plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char:
+.word 1646
+_p_238_plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr_llvm:
+	.globl _p_238_plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr_llvm
+.private_extern _p_238_plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr_llvm
+	.no_dead_strip plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr
+plt_System_Private_Uri_string_Create_intptr_int_intptr_System_Buffers_SpanAction_2_char_intptr:
 _p_238:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 1660
-_p_239_plt_System_Private_Uri_string_memcpy_byte__byte__int_llvm:
-	.globl _p_239_plt_System_Private_Uri_string_memcpy_byte__byte__int_llvm
-.private_extern _p_239_plt_System_Private_Uri_string_memcpy_byte__byte__int_llvm
-	.no_dead_strip plt_System_Private_Uri_string_memcpy_byte__byte__int
-plt_System_Private_Uri_string_memcpy_byte__byte__int:
+.word 1649
+_p_239_plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool_llvm:
+	.globl _p_239_plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool_llvm
+.private_extern _p_239_plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool
+plt_System_Private_Uri_System_UriHelper_EscapeStringToBuilder_System_ReadOnlySpan_1_char_System_Text_ValueStringBuilder__System_Buffers_SearchValues_1_char_bool:
 _p_239:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 1663
-_p_240_plt_System_Private_Uri_System_Uri_ParseMinimal_llvm:
-	.globl _p_240_plt_System_Private_Uri_System_Uri_ParseMinimal_llvm
-.private_extern _p_240_plt_System_Private_Uri_System_Uri_ParseMinimal_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Uri_ParseMinimal
-plt_System_Private_Uri_System_Uri_ParseMinimal:
+.word 1661
+_p_240_plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int__llvm:
+	.globl _p_240_plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int__llvm
+.private_extern _p_240_plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int__llvm
+	.no_dead_strip plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int_
+plt_System_Private_Uri_System_Text_Rune_DecodeFromUtf16_System_ReadOnlySpan_1_char_System_Text_Rune__int_:
 _p_240:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 1668
-_p_241_plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags_llvm:
-	.globl _p_241_plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags_llvm
-.private_extern _p_241_plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags
-plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags:
+.word 1664
+_p_241_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm:
+	.globl _p_241_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm
+.private_extern _p_241_plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool
+plt_System_Private_Uri_System_UriHelper_UnescapeString_char__int_int_char___int__char_char_char_System_UnescapeMode_System_UriParser_bool:
 _p_241:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 1670
-_p_242_plt_System_Private_Uri_System_Collections_Hashtable__ctor_int_llvm:
-	.globl _p_242_plt_System_Private_Uri_System_Collections_Hashtable__ctor_int_llvm
-.private_extern _p_242_plt_System_Private_Uri_System_Collections_Hashtable__ctor_int_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Collections_Hashtable__ctor_int
-plt_System_Private_Uri_System_Collections_Hashtable__ctor_int:
+.word 1669
+_p_242_plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char_llvm:
+	.globl _p_242_plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char_llvm
+.private_extern _p_242_plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char
+plt_System_Private_Uri_System_UriHelper_IsBidiControlCharacter_char:
 _p_242:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 1673
-_p_243_plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException__llvm:
-	.globl _p_243_plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException__llvm
-.private_extern _p_243_plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException__llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException_
-plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException_:
+.word 1672
+_p_243_plt_System_Private_Uri_string_memcpy_byte__byte__int_llvm:
+	.globl _p_243_plt_System_Private_Uri_string_memcpy_byte__byte__int_llvm
+.private_extern _p_243_plt_System_Private_Uri_string_memcpy_byte__byte__int_llvm
+	.no_dead_strip plt_System_Private_Uri_string_memcpy_byte__byte__int
+plt_System_Private_Uri_string_memcpy_byte__byte__int:
 _p_243:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 1678
-_p_244_plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException__llvm:
-	.globl _p_244_plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException__llvm
-.private_extern _p_244_plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException__llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException_
-plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException_:
+.word 1675
+_p_244_plt_System_Private_Uri_System_Uri_ParseMinimal_llvm:
+	.globl _p_244_plt_System_Private_Uri_System_Uri_ParseMinimal_llvm
+.private_extern _p_244_plt_System_Private_Uri_System_Uri_ParseMinimal_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Uri_ParseMinimal
+plt_System_Private_Uri_System_Uri_ParseMinimal:
 _p_244:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 1681
-_p_245_plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat_llvm:
-	.globl _p_245_plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat_llvm
-.private_extern _p_245_plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat_llvm
-	.no_dead_strip plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat
-plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat:
+.word 1680
+_p_245_plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags_llvm:
+	.globl _p_245_plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags_llvm
+.private_extern _p_245_plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags
+plt_System_Private_Uri_System_UriParser_BuiltInUriParser__ctor_string_int_System_UriSyntaxFlags:
 _p_245:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 1684
-_p_246_plt_System_Private_Uri_string_Join_string_object___llvm:
-	.globl _p_246_plt_System_Private_Uri_string_Join_string_object___llvm
-.private_extern _p_246_plt_System_Private_Uri_string_Join_string_object___llvm
-	.no_dead_strip plt_System_Private_Uri_string_Join_string_object__
-plt_System_Private_Uri_string_Join_string_object__:
+.word 1682
+_p_246_plt_System_Private_Uri_System_Collections_Hashtable__ctor_int_llvm:
+	.globl _p_246_plt_System_Private_Uri_System_Collections_Hashtable__ctor_int_llvm
+.private_extern _p_246_plt_System_Private_Uri_System_Collections_Hashtable__ctor_int_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Collections_Hashtable__ctor_int
+plt_System_Private_Uri_System_Collections_Hashtable__ctor_int:
 _p_246:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 1687
-_p_247_plt_System_Private_Uri_System_Span_1_char_ToString_llvm:
-	.globl _p_247_plt_System_Private_Uri_System_Span_1_char_ToString_llvm
-.private_extern _p_247_plt_System_Private_Uri_System_Span_1_char_ToString_llvm
-	.no_dead_strip plt_System_Private_Uri_System_Span_1_char_ToString
-plt_System_Private_Uri_System_Span_1_char_ToString:
+.word 1685
+_p_247_plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException__llvm:
+	.globl _p_247_plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException__llvm
+.private_extern _p_247_plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException__llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException_
+plt_System_Private_Uri_System_UriParser_InitializeAndValidate_System_Uri_System_UriFormatException_:
 _p_247:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 1692
-_p_248_plt_System_Private_Uri__jit_icall_mini_init_method_rgctx_llvm:
-	.globl _p_248_plt_System_Private_Uri__jit_icall_mini_init_method_rgctx_llvm
-.private_extern _p_248_plt_System_Private_Uri__jit_icall_mini_init_method_rgctx_llvm
-	.no_dead_strip plt_System_Private_Uri__jit_icall_mini_init_method_rgctx
-plt_System_Private_Uri__jit_icall_mini_init_method_rgctx:
+.word 1690
+_p_248_plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException__llvm:
+	.globl _p_248_plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException__llvm
+.private_extern _p_248_plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException__llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException_
+plt_System_Private_Uri_System_UriParser_Resolve_System_Uri_System_Uri_System_UriFormatException_:
 _p_248:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 1709
-_p_249_plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint_llvm:
-	.globl _p_249_plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint_llvm
-.private_extern _p_249_plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint_llvm
-	.no_dead_strip plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint
-plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint:
+.word 1693
+_p_249_plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat_llvm:
+	.globl _p_249_plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat_llvm
+.private_extern _p_249_plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat
+plt_System_Private_Uri_System_UriParser_GetComponents_System_Uri_System_UriComponents_System_UriFormat:
 _p_249:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 1712
-_p_250_plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception_llvm:
-	.globl _p_250_plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception_llvm
-.private_extern _p_250_plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception_llvm
-	.no_dead_strip plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception
-plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception:
+.word 1696
+_p_250_plt_System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri_llvm:
+	.globl _p_250_plt_System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri_llvm
+.private_extern _p_250_plt_System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri_llvm
+	.no_dead_strip plt_System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri
+plt_System_Private_Uri_System_UriParser_IsWellFormedOriginalString_System_Uri:
 _p_250:
 adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 1715
+.word 1699
+_p_251_plt_System_Private_Uri_string_Join_string_object___llvm:
+	.globl _p_251_plt_System_Private_Uri_string_Join_string_object___llvm
+.private_extern _p_251_plt_System_Private_Uri_string_Join_string_object___llvm
+	.no_dead_strip plt_System_Private_Uri_string_Join_string_object__
+plt_System_Private_Uri_string_Join_string_object__:
+_p_251:
+adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
+add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
+ldr x16, [x16, #2200]
+br x16
+.word 1702
+_p_252_plt_System_Private_Uri_System_Span_1_char_ToString_llvm:
+	.globl _p_252_plt_System_Private_Uri_System_Span_1_char_ToString_llvm
+.private_extern _p_252_plt_System_Private_Uri_System_Span_1_char_ToString_llvm
+	.no_dead_strip plt_System_Private_Uri_System_Span_1_char_ToString
+plt_System_Private_Uri_System_Span_1_char_ToString:
+_p_252:
+adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
+add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
+ldr x16, [x16, #2208]
+br x16
+.word 1707
+_p_253_plt_System_Private_Uri__jit_icall_mini_init_method_rgctx_llvm:
+	.globl _p_253_plt_System_Private_Uri__jit_icall_mini_init_method_rgctx_llvm
+.private_extern _p_253_plt_System_Private_Uri__jit_icall_mini_init_method_rgctx_llvm
+	.no_dead_strip plt_System_Private_Uri__jit_icall_mini_init_method_rgctx
+plt_System_Private_Uri__jit_icall_mini_init_method_rgctx:
+_p_253:
+adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
+add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
+ldr x16, [x16, #2216]
+br x16
+.word 1724
+_p_254_plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint_llvm:
+	.globl _p_254_plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint_llvm
+.private_extern _p_254_plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint_llvm
+	.no_dead_strip plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint
+plt_System_Private_Uri__jit_icall_mono_thread_interruption_checkpoint:
+_p_254:
+adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
+add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
+ldr x16, [x16, #2224]
+br x16
+.word 1727
+_p_255_plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception_llvm:
+	.globl _p_255_plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception_llvm
+.private_extern _p_255_plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception_llvm
+	.no_dead_strip plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception
+plt_System_Private_Uri__jit_icall_mono_arch_rethrow_exception:
+_p_255:
+adrp x16, mono_aot_System_Private_Uri_got@PAGE+0
+add x16, x16, mono_aot_System_Private_Uri_got@PAGEOFF
+ldr x16, [x16, #2232]
+br x16
+.word 1730
 plt_end:
 _mono_aot_System_Private_Uriplt_end:
 	.globl _mono_aot_System_Private_Uriplt_end
@@ -3512,7 +3579,7 @@ _mono_aot_System_Private_Uriplt_end:
 jit_got:
 _mono_aot_System_Private_Urijit_got:
 	.globl _mono_aot_System_Private_Urijit_got
-.lcomm mono_aot_System_Private_Uri_got, 2200
+.lcomm mono_aot_System_Private_Uri_got, 2240
 got_end:
 .section __TEXT, __const
 	.align 3

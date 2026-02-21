@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.CommonSearch"
+             Title="CommonSearch">
+    <VerticalStackLayout>
+        <ActivityIndicator 
+                    x:Name="progInd"
+                    IsRunning="False"
+                    IsVisible="False"
+                    Color="Blue"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+            />
+           <CollectionView
+                    x:Name="lstView"
+                    HorizontalOptions="Center"
+                    Margin="3"
+                    VerticalScrollBarVisibility="Always" >
+                        <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                                    <Border
+                                        Background="White"
+                                        Stroke="LightGray"
+                                        StrokeThickness="1"
+                                            >
+                                            <Border.StrokeShape>
+                                                <RoundRectangle CornerRadius="5,5,5,5"/>
+                                            </Border.StrokeShape>
+                                            <Border.Shadow>
+                                                        <Shadow Brush="Gray"
+                                                            Offset="20,20"
+                                                            Radius="40"
+                                                            Opacity="0.8" />
+                                            </Border.Shadow>
+                                        <VerticalStackLayout>
+                                        <Grid HorizontalOptions="Fill" RowSpacing="1" HeightRequest="90">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <Image
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Grid.RowSpan="3"
+                                                Grid.ColumnSpan="3"
+                                                Source="qs_hdr4"
+                                                Aspect="Fill" />
+                                                <Label
+                                                    FontSize="Small"
+                                                    TextColor="SlateBlue"
+                                                    HorizontalOptions="Start"
+                                                    VerticalOptions="Center"
+                                                    Grid.Row="0"
+                                                    Grid.Column="0"
+                                                    Padding="5,10,0,0" >
+                                                    <Label.FormattedText>     
+                                                        <FormattedString>
+                                                            <Span Text="{Binding para_name}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                            <Span Text="(" />
+                                                            <Span Text="{Binding para_number}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                            <Span Text=")" />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>                    
+                                                <Label
+                                                    FontSize="Small"
+                                                    FontFamily="NotoArabic"
+                                                    TextColor="SlateBlue"
+                                                    FontAttributes="Bold"
+                                                    HorizontalOptions="End"
+                                                    VerticalOptions="Center"
+                                                    Grid.Row="0"
+                                                    Grid.Column="2"
+                                                    Padding="0,10,5,0"
+                                                    >
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding class_arabic}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                            <Span Text="("  />
+                                                            <Span Text="{Binding class_english}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                            <Span Text=")"  />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Label 
+                                                    FontFamily="NotoArabic"
+                                                    TextColor="Goldenrod"
+                                                    Grid.Row="1"
+                                                    Grid.Column="0"
+                                                    Grid.ColumnSpan="3"
+                                                    HorizontalOptions="Center" >
+                                                    <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="{Binding chapter_name_arabic}" FontAttributes="Bold" FontSize="Large" />
+                                                            </FormattedString>    
+                                                        </Label.FormattedText>
+                                                    </Label>
+                                                    <Label 
+                                                        FontSize="Small"
+                                                        FontFamily="NotoArabic"
+                                                        TextColor="SlateBlue"
+                                                        Grid.Row="2"
+                                                        Grid.Column="0"
+                                                        HorizontalOptions="Start"
+                                                        Margin="5,0,0,0"
+                                                    >
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="{Binding chapter_name_english}" BackgroundColor="WhiteSmoke"/>
+                                                            </FormattedString>    
+                                                        </Label.FormattedText>
+                                                    </Label>
+                                                    <Label 
+                                                        FontSize="Medium"
+                                                        FontAttributes="Bold"
+                                                        FontFamily="Tahoma"
+                                                        Grid.Row="2"
+                                                        Grid.Column="1"
+                                                        HorizontalOptions="Center"
+                                                        Margin="0,3,0,3">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="{Binding prophet}" TextColor="White" BackgroundColor="Green"/>
+                                                            </FormattedString>    
+                                                        </Label.FormattedText>
+                                                    </Label>                                                    
+                                                    <Label
+                                                            HorizontalOptions="End"
+                                                            Grid.Row="2"
+                                                            Grid.Column="2"
+                                                            Padding="0,0,10,0"
+                                                            >
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                        <Span Text="Chapter # - " FontSize="Micro" BackgroundColor="WhiteSmoke" />
+                                                                        <Span Text="{Binding chapter_number}" FontSize="Small" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                    </Label>
+                                            </Grid>
+                                            <Label
+                                                FontAttributes="Bold"
+                                                HorizontalTextAlignment="End"
+                                                Margin="0,0,0,1"
+                                                >
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_arabic}" FontFamily="{Binding font}" TextColor="Maroon" FontSize="Large" />
+                                                        <Span Text="{Binding verse_arabic_end}" TextColor="White" FontSize="Title" BackgroundColor="Red" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+                                            <Label 
+                                                FontSize="Medium"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"
+                                                TextType="Text"
+                                                LineBreakMode="WordWrap"
+                                                Margin="0,0,0,3"
+                                                Text="{Binding verse_english}" />
+                                            <Label 
+                                                FontSize="Medium"
+                                                FontAttributes="Bold,Italic"
+                                                TextType="Html"
+                                                TextColor="Teal"
+                                                LineBreakMode="WordWrap"
+                                                Text="{Binding tafsir}" />                                            
+                                            <Label Text="&#10;" />
+                                    </VerticalStackLayout>
+                                </Border> 
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

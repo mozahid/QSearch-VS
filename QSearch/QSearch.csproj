@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net8.0-android;net8.0-ios</TargetFrameworks>
+		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
@@ -14,83 +14,108 @@
 		<!-- Display name -->
 		<ApplicationTitle>QSearch</ApplicationTitle>
 
+
 		<!-- App Identifier -->
 		<ApplicationId>com.mohdzed.qsearch</ApplicationId>
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>2.0.4</ApplicationDisplayVersion>
-		<ApplicationVersion>2</ApplicationVersion>
-
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">33.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<ApplicationDisplayVersion>6.3.0</ApplicationDisplayVersion>
+		<ApplicationVersion>15.3.0</ApplicationVersion>
+		<!-- Android Only-->
+		<AndroidVersionCode>33</AndroidVersionCode>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<ReleaseVersion>1.0</ReleaseVersion>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	  <MtouchLink>SdkOnly</MtouchLink>
-	  <CodesignKey>iPhone Developer</CodesignKey>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-maccatalyst|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	  <MtouchLink>SdkOnly</MtouchLink>
-	  <CodesignKey>Mac Developer</CodesignKey>
-	  <PackageSigningKey>3rd Party Mac Developer Installer</PackageSigningKey>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	  <MtouchLink>SdkOnly</MtouchLink>
-	  <CodesignKey>iPhone Developer</CodesignKey>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>-->
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 	  <DebugType>portable</DebugType>
 	  <Optimize>false</Optimize>
 	  <WarningLevel>4</WarningLevel>
+	  <RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm64;android-arm;android-x64;android-x86</RuntimeIdentifiers>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
-	  <AndroidDexTool>d8</AndroidDexTool>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-	  <DebugSymbols>false</DebugSymbols>
-	  <DebugType></DebugType>
-	  <WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
-	  <CodesignKey>iPhone Developer</CodesignKey>
-	  <MtouchLink>SdkOnly</MtouchLink>
+	  <CodesignKey>iPhone Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
 	  <CodesignProvision>Automatic</CodesignProvision>
-	  <CodesignEntitlements></CodesignEntitlements>
+	  <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
+	  <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
+	   <MtouchOptimizePNGs>true</MtouchOptimizePNGs>
+	   <MtouchInterpreter>all</MtouchInterpreter>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	  <CodesignKey>Apple Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
-	  <CodesignProvision>Automatic</CodesignProvision>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-maccatalyst|AnyCPU'">
+	  	<MtouchLink>SdkOnly</MtouchLink>
+		<EnableCodeSigning>True</EnableCodeSigning>
+  		<EnablePackageSigning>true</EnablePackageSigning>
+  		<CreatePackage>true</CreatePackage>
+	  	<CodesignKey>Apple Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
+	  	<CodesignProvision>Automatic</CodesignProvision>
+	  	<EnablePackageSigning>true</EnablePackageSigning>
+		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
+		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-ios|AnyCPU'">
+		<EnableCodeSigning>true</EnableCodeSigning>
+		<CodesignRequireProvisioningProfile>true</CodesignRequireProvisioningProfile>
+		<DisableCodesignVerification>true</DisableCodesignVerification>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
+	  <AndroidSigningKeyStore>/Users/MZee/Library/Developer/Xamarin/Keystore/MyQSearch/MyQSearch.keystore</AndroidSigningKeyStore>
+	  <AndroidSigningKeyAlias>myqsearch</AndroidSigningKeyAlias>
+	  <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
+	  <RunAOTCompilation>true</RunAOTCompilation> 
+	  <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+	  <PublishTrimmed>true</PublishTrimmed>
+	  <StripDebugSymbols>true</StripDebugSymbols>
+	  <Optimize>true</Optimize>
+	  <AndroidLinkMode>SdkOnly</AndroidLinkMode> 
+	  <AndroidLinkTool>r8</AndroidLinkTool>
+	  <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
+	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+	  <RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm64;android-arm;android-x64;android-x86</RuntimeIdentifiers>
+	</PropertyGroup>
+	<!-- <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-maccatalyst'">
+	<ApplicationTitle>Your App Name</ApplicationTitle>
+	<RuntimeIdentifier>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifier>
+	</PropertyGroup> -->
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common.Java8" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Ktx" Version="2.9.4" />
+	  <PackageReference Include="Xamarin.AndroidX.SavedState.SavedState.Ktx" Version="1.3.3" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\tick_mark.svg" />
+	</ItemGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
-
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
-
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="13.0.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+		<PackageReference Include="Sentry.Maui" Version="5.16.2" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
-		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.9" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.80" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.80" />
-		<PackageReference Include="Xam.Plugin.LatestVersionStore" Version="2.1.2" />
+		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.11" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.10" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.10" />
+
 	</ItemGroup>
 
 	<ItemGroup>
@@ -114,7 +139,13 @@
 	  <None Remove="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
 	  <None Remove="Resources\Images\qsearch-bkg.svg" />
 	  <None Remove="Resources\Images\qsearch-header.svg" />
-	  <None Remove="Resources\Images\qsearch_header.svg" />
+	  <None Remove="Resources\Images\tick_mark.svg" />
+	  <None Remove="Resources\Images\tick_mark1.svg" />
+	  <None Remove="Resources\Images\tick_mark1.png" />
+	  <None Remove="Resources\Fonts\AlQuran-IndoPak-by-QuranWBW.v.4.2.2-WL.ttf" />
+	  <None Remove="Resources\Fonts\Lateef-Bold.ttf" />
+	  <None Remove="Resources\Fonts\AlQalam.ttf" />
+	  <None Remove="Resources\Images\qsearch_hdr4.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Splash\" />
@@ -124,18 +155,21 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="Resources\Fonts\Tahoma.ttf" />
-	  <BundleResource Include="Resources\Fonts\Tahoma.ttf" />
 	  <BundleResource Include="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <BundleResource Include="Resources\Fonts\MaterialIconsOutlined-Regular.otf" />
-	  <BundleResource Include="Resources\Images\about.svg" />
 	  <BundleResource Include="Resources\Raw\quran.sqlite" />
 	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
 	  <BundleResource Include="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
-	  <BundleResource Include="Resources\Images\qsearch_header.svg" />
-	  <BundleResource Include="Resources\Images\qsearch_header.svg" />
+	  <BundleResource Include="Resources\Images\tick_mark.svg" />
+	  <BundleResource Include="Resources\Images\tick_mark1.svg" />
+	  <BundleResource Include="Resources\Fonts\IndoPak.ttf" />
+	  <BundleResource Include="Resources\Fonts\Lateef-Bold.ttf" />
+	  <BundleResource Include="Resources\Fonts\AlQalam.ttf" />
+	  <BundleResource Include="Resources\Images\qsearch_hdr4.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiFont Remove="Resources\Fonts\Tahoma.ttf" />
+	  <MauiFont Remove="Resources\Fonts\AlQuran-IndoPak-by-QuranWBW.v.4.2.2-WL.ttf" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiSplashScreen Include="Resources\Splash\qssplash.svg" color="#799116" />
@@ -152,4 +186,5 @@
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\qs.css" />
 	</ItemGroup>
+
 </Project>

@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "Microsoft.Maui.Graphics.dll"
 	.asciz ""
 
@@ -1109,7 +1109,7 @@ bl _p_242
 .word 0xf94013a0
 .word 0xf90047a0
 .word 0xf94017a0
-bl _p_771
+bl _p_770
 .word 0xaa0003e2
 .word 0xf94047a0
 .word 0xaa0203e1
@@ -1168,22 +1168,22 @@ ldr x0, [x16, #200]
 .word 0x1400000c
 .loc 1 43 0
 .word 0xf94013a0
-bl _p_772
+bl _p_771
 .loc 1 44 0
 .word 0x14000009
 .loc 1 46 0
 .word 0xf94013a0
-bl _p_772
+bl _p_771
 .loc 1 47 0
 .word 0x14000006
 .loc 1 49 0
 .word 0xf94013a0
-bl _p_773
+bl _p_772
 .loc 1 50 0
 .word 0x14000003
 .loc 1 52 0
 .word 0xf94013a0
-bl _p_774
+bl _p_773
 .loc 1 38 0
 .word 0xf94013a0
 .word 0xf9400801
@@ -1274,7 +1274,7 @@ ldr x15, [x16, #208]
 .word 0xf94013a0
 .word 0xf9401000
 .word 0xb9803ba1
-bl _p_775
+bl _p_774
 .loc 1 67 0
 .word 0xf9401ba0
 .word 0xf90047a0
@@ -1291,7 +1291,7 @@ bl _p_3
 .word 0xf9404ba2
 .word 0xf90043a0
 .word 0xd2800023
-bl _p_776
+bl _p_775
 .word 0xf94043a0
 .word 0xa9416bb9
 .word 0x910003bf
@@ -1421,7 +1421,7 @@ bl _p_1
 .word 0x39410000
 .word 0x35000520
 .loc 3 72 0
-bl _p_777
+bl _p_776
 .loc 3 74 0
 .word 0xf90013bf
 .word 0x9400001a
@@ -1630,14 +1630,14 @@ ldr x2, [x16, #16]
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #248]
-bl _p_778
+bl _p_777
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #256]
 .word 0x9100c3a0
-bl _p_779
+bl _p_778
 .word 0xf9002bbf
 .word 0x94000035
 .word 0xf9402ba0
@@ -1679,7 +1679,7 @@ bl _p_24
 .word 0x34000080
 .word 0xaa1a03e0
 .word 0xb9804ba1
-bl _p_668
+bl _p_667
 .loc 4 41 0
 .word 0xf9400fa0
 .word 0xf9401001
@@ -1743,7 +1743,7 @@ bl _p_1
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #264]
-bl _p_780
+bl _p_779
 bl _p_82
 .word 0xf90043a0
 .word 0xf94043a0
@@ -1765,14 +1765,14 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #272]
 .word 0xaa1a03e1
-bl _p_781
+bl _p_780
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
-bl _p_782
+bl _p_781
 
 Lme_52c:
 .text
@@ -1931,14 +1931,14 @@ ldr x2, [x16, #16]
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #288]
-bl _p_783
+bl _p_782
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #256]
 .word 0x9100c3a0
-bl _p_779
+bl _p_778
 .word 0xf9002bbf
 .word 0x94000035
 .word 0xf9402ba0
@@ -1980,7 +1980,7 @@ bl _p_24
 .word 0x34000080
 .word 0xaa1a03e0
 .word 0xb9804ba1
-bl _p_668
+bl _p_667
 .loc 5 41 0
 .word 0xf9400fa0
 .word 0xf9400c01
@@ -2044,7 +2044,7 @@ bl _p_1
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #264]
-bl _p_780
+bl _p_779
 bl _p_82
 .word 0xf90043a0
 .word 0xf94043a0
@@ -2066,14 +2066,14 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #272]
 .word 0xaa1a03e1
-bl _p_781
+bl _p_780
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
-bl _p_782
+bl _p_781
 
 Lme_53e:
 .text
@@ -2245,14 +2245,14 @@ ldr x2, [x16, #16]
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #304]
-bl _p_784
+bl _p_783
 .word 0xaa0003e1
 
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #256]
 .word 0x9100c3a0
-bl _p_779
+bl _p_778
 .word 0xf9002bbf
 .word 0x94000035
 .word 0xf9402ba0
@@ -2294,7 +2294,7 @@ bl _p_24
 .word 0x34000080
 .word 0xaa1a03e0
 .word 0xb9804ba1
-bl _p_668
+bl _p_667
 .loc 6 29 0
 .word 0xf9400fa0
 .word 0xf9401001
@@ -2358,7 +2358,7 @@ bl _p_1
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #264]
-bl _p_780
+bl _p_779
 bl _p_82
 .word 0xf90043a0
 .word 0xf94043a0
@@ -2380,14 +2380,14 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x15, [x16, #272]
 .word 0xaa1a03e1
-bl _p_781
+bl _p_780
 .word 0xf9400bba
 .word 0x910003bf
 .word 0xa8ca7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
-bl _p_782
+bl _p_781
 
 Lme_594:
 .text
@@ -2450,7 +2450,7 @@ bl _mini_init_method_rgctx
 .word 0xf9002fa0
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xf9401fa1
 .word 0xf940182f
 .word 0xf9401fa1
@@ -2685,7 +2685,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf90023a0
@@ -2727,7 +2727,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x54000280
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804341
 .word 0x8b010321
 .word 0xf90023a0
@@ -2770,9 +2770,9 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
-bl _p_782
+bl _p_781
 
 Lme_5c2:
 .text
@@ -3053,7 +3053,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804341
 .word 0x8b010321
 .word 0xf9002ba0
@@ -3077,7 +3077,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f8
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_786
+bl _p_785
 .word 0x1e204000
 .word 0xbd0047a0
 .loc 7 87 0
@@ -3122,7 +3122,7 @@ bl _p_786
 .word 0x54000280
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804b41
 .word 0x8b010321
 .word 0xf9002ba0
@@ -3147,7 +3147,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa1a03e0
 .word 0xbd4043a0
 .word 0x3940035e
-bl _p_787
+bl _p_786
 .loc 7 95 0
 .word 0xf94017a0
 .word 0xf9401fa1
@@ -3226,7 +3226,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf94023a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b21
 .word 0x8b010301
 .word 0xf9002ba0
@@ -3250,7 +3250,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f6
 .word 0xaa1603e0
 .word 0x394002de
-bl _p_788
+bl _p_787
 .word 0xeb0002ff
 .word 0x54000660
 .loc 7 110 0
@@ -3272,7 +3272,7 @@ bl _p_788
 .word 0x54000280
 .word 0xf94023a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804321
 .word 0x8b010301
 .word 0xf9002ba0
@@ -3297,7 +3297,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa1803e0
 .word 0xf9401fa1
 .word 0x3940031e
-bl _p_789
+bl _p_788
 .loc 7 111 0
 .word 0xf9401ba0
 .word 0xf9401321
@@ -3380,7 +3380,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803341
 .word 0x8b010321
 .word 0xf9002ba0
@@ -3405,7 +3405,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa1a03e0
 .word 0xbd4043a0
 .word 0x3940035e
-bl _p_790
+bl _p_789
 .loc 7 122 0
 .word 0xa94167b8
 .word 0xf94013ba
@@ -3483,7 +3483,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf9002ba0
@@ -3507,7 +3507,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f7
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_788
+bl _p_787
 .word 0xaa0003f7
 .word 0xf9401ba0
 .word 0xf9400b41
@@ -3527,7 +3527,7 @@ bl _p_788
 .word 0x54000280
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804341
 .word 0x8b010321
 .word 0xf9002ba0
@@ -3551,7 +3551,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f6
 .word 0xaa1603e0
 .word 0x394002de
-bl _p_791
+bl _p_790
 .word 0x1e204000
 .word 0xfd0027a0
 .word 0xf9401ba0
@@ -3572,7 +3572,7 @@ bl _p_791
 .word 0x54000280
 .word 0xf9401fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804b41
 .word 0x8b010321
 .word 0xf9002ba0
@@ -3596,7 +3596,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f9
 .word 0xaa1903e0
 .word 0x3940033e
-bl _p_792
+bl _p_791
 .word 0x1e204001
 .word 0xf9401fa0
 .word 0xf9401800
@@ -3837,7 +3837,7 @@ bl _mini_init_method_rgctx
 .word 0x9e6703c1
 .word 0xbd4033a0
 .word 0x1e211800
-bl _p_793
+bl _p_792
 .word 0x1e204000
 .word 0xbd0053a0
 .loc 7 161 0
@@ -3854,7 +3854,7 @@ bl _p_793
 .word 0x9e6703c1
 .word 0xbd402ba0
 .word 0x1e211800
-bl _p_793
+bl _p_792
 .word 0x1e204000
 .word 0xbd0057a0
 .loc 7 165 0
@@ -4066,7 +4066,7 @@ bl _p_1
 .word 0x540002a0
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9804b41
 .word 0x8b010321
 .word 0xf90023a0
@@ -4109,7 +4109,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x540002a0
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9805341
 .word 0x8b010321
 .word 0xf90023a0
@@ -4231,7 +4231,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x540002a0
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9805b41
 .word 0x8b010321
 .word 0xf90023a0
@@ -4274,7 +4274,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x540002a0
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9806341
 .word 0x8b010321
 .word 0xf90023a0
@@ -4351,9 +4351,9 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
-bl _p_782
+bl _p_781
 
 Lme_5e9:
 .text
@@ -4423,7 +4423,7 @@ bl _mini_init_method_rgctx
 .word 0x540002a0
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9805341
 .word 0x8b010321
 .word 0xf90023a0
@@ -4466,7 +4466,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x540002a0
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9805b41
 .word 0x8b010321
 .word 0xf90023a0
@@ -4612,9 +4612,9 @@ bl _mono_gsharedvt_value_copy
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
-bl _p_782
+bl _p_781
 
 Lme_5ed:
 .text
@@ -4813,7 +4813,7 @@ bl _mini_init_method_rgctx
 .word 0xb90153bf
 .word 0xb90157bf
 .word 0xbd4033a0
-bl _p_794
+bl _p_793
 .word 0x1e204000
 .word 0xbd015ba0
 .loc 7 272 0
@@ -4836,7 +4836,7 @@ bl _p_794
 .word 0x54000280
 .word 0xf9409fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803341
 .word 0x8b010321
 .word 0xf900b3a0
@@ -4861,12 +4861,12 @@ bl _mono_gsharedvt_value_copy
 .word 0x910503a8
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_795
+bl _p_794
 .loc 7 273 0
 .word 0x910483a8
 .word 0xbd403ba0
 .word 0xbd4043a1
-bl _p_796
+bl _p_795
 .word 0x910503a8
 .word 0x910423a0
 .word 0xf94093a1
@@ -4909,7 +4909,7 @@ bl _p_9
 .word 0xbd4043a1
 .word 0x1e214021
 .word 0x910243a8
-bl _p_796
+bl _p_795
 .word 0x910503a8
 .word 0x9101e3a0
 .word 0xf9404ba1
@@ -4945,7 +4945,7 @@ bl _p_9
 .word 0x54000280
 .word 0xf9409fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf900b3a0
@@ -5049,7 +5049,7 @@ bl _mini_init_method_rgctx
 .word 0xb900b3bf
 .word 0xb900b7bf
 .word 0xbd4033a0
-bl _p_794
+bl _p_793
 .word 0x1e204000
 .word 0xbd00bba0
 .loc 7 285 0
@@ -5072,7 +5072,7 @@ bl _p_794
 .word 0x54000280
 .word 0xf9404fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803341
 .word 0x8b010321
 .word 0xf90063a0
@@ -5097,7 +5097,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x910283a8
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_795
+bl _p_794
 .loc 7 286 0
 .word 0x910203a8
 .word 0xbd40bba0
@@ -5137,7 +5137,7 @@ bl _p_9
 .word 0x54000280
 .word 0xf9404fa0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf90063a0
@@ -5254,7 +5254,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf94053a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803341
 .word 0x8b010321
 .word 0xf90063a0
@@ -5279,12 +5279,12 @@ bl _mono_gsharedvt_value_copy
 .word 0x9102a3a8
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_795
+bl _p_794
 .loc 7 295 0
 .word 0x910223a8
 .word 0xbd4033a0
 .word 0xbd403ba1
-bl _p_797
+bl _p_796
 .word 0x9102a3a8
 .word 0x9101c3a0
 .word 0xf94047a1
@@ -5320,7 +5320,7 @@ bl _p_9
 .word 0x54000280
 .word 0xf94053a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf90063a0
@@ -5437,7 +5437,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf94053a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803341
 .word 0x8b010321
 .word 0xf90063a0
@@ -5462,12 +5462,12 @@ bl _mono_gsharedvt_value_copy
 .word 0x9102a3a8
 .word 0xaa1803e0
 .word 0x3940031e
-bl _p_795
+bl _p_794
 .loc 7 304 0
 .word 0x910223a8
 .word 0xbd4033a0
 .word 0xbd403ba1
-bl _p_796
+bl _p_795
 .word 0x9102a3a8
 .word 0x9101c3a0
 .word 0xf94047a1
@@ -5503,7 +5503,7 @@ bl _p_9
 .word 0x54000280
 .word 0xf94053a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf90063a0
@@ -5613,7 +5613,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf94077a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803341
 .word 0x8b010321
 .word 0xf9007ba0
@@ -5666,7 +5666,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x54000280
 .word 0xf94077a0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803b41
 .word 0x8b010321
 .word 0xf9007ba0
@@ -5691,7 +5691,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x9102e3a8
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_795
+bl _p_794
 .word 0x910283a8
 .word 0x910223a0
 .word 0xf9406ba1
@@ -6032,7 +6032,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf9402ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9802b01
 .word 0x8b0102e1
 .word 0xf90033a0
@@ -6069,7 +6069,7 @@ bl _mono_gsharedvt_value_copy
 .word 0x54000280
 .word 0xf9402ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9803301
 .word 0x8b0102e1
 .word 0xf90033a0
@@ -6093,7 +6093,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xaa0003f5
 .word 0xaa1603e0
 .word 0xaa1503e1
-bl _p_798
+bl _p_797
 .word 0x53001c00
 .word 0x340000a0
 .loc 8 149 0
@@ -6111,7 +6111,7 @@ bl _p_363
 .word 0xaa1a03e0
 .word 0xaa1803e1
 .word 0x910163a2
-bl _p_799
+bl _p_798
 .word 0xaa0003f7
 .word 0xb40000b7
 .word 0xf9402fa0
@@ -6128,7 +6128,7 @@ ldr x1, [x16, #584]
 .word 0xaa1803e3
 .word 0xd2a00004
 .word 0xd2a00005
-bl _p_800
+bl _p_799
 .word 0xaa0003fa
 .word 0xaa1603e0
 .word 0xaa1903e1
@@ -6349,7 +6349,7 @@ bl _mini_init_method_rgctx
 .word 0x54000280
 .word 0xf9401ba0
 .word 0xf9401400
-bl _p_785
+bl _p_784
 .word 0xb9802b21
 .word 0x8b010301
 .word 0xf90043a0
@@ -6387,7 +6387,7 @@ bl _p_284
 .word 0xaa1a03e0
 .word 0xaa1803e1
 .word 0x910163a2
-bl _p_799
+bl _p_798
 .word 0xaa0003fa
 .word 0xb400009a
 .word 0xf9402fa0
@@ -6403,7 +6403,7 @@ ldr x1, [x16, #600]
 .word 0xaa1803e3
 .word 0xd2a00004
 .word 0xd2a00005
-bl _p_800
+bl _p_799
 .word 0x14000001
 .word 0xf90033bf
 .word 0x94000005
@@ -6452,7 +6452,7 @@ ldr x2, [x16, #16]
 .word 0xf9401fa0
 .word 0xf94023a1
 .word 0xf9402ba2
-bl _p_801
+bl _p_800
 .word 0xf94037be
 .word 0xd61f03c0
 .word 0xa94163b7
@@ -10095,7 +10095,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 6731
+.word 6715
 _p_2_plt_Microsoft_Maui_Graphics__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_2_plt_Microsoft_Maui_Graphics__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_2_plt_Microsoft_Maui_Graphics__jit_icall_mini_init_method_rgctx_llvm
@@ -10106,7 +10106,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 6734
+.word 6718
 _p_3_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_3_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_3_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -10117,7 +10117,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 6737
+.word 6721
 _p_4_plt_Microsoft_Maui_Graphics__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_4_plt_Microsoft_Maui_Graphics__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_4_plt_Microsoft_Maui_Graphics__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -10128,7 +10128,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 6745
+.word 6729
 _p_5_plt_Microsoft_Maui_Graphics__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_5_plt_Microsoft_Maui_Graphics__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_5_plt_Microsoft_Maui_Graphics__jit_icall_mono_generic_class_init_llvm
@@ -10139,7 +10139,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 6748
+.word 6732
 _p_6_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_TState_REF_EnsureStrokePatternSet_llvm:
 	.globl _p_6_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_TState_REF_EnsureStrokePatternSet_llvm
 .private_extern _p_6_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_TState_REF_EnsureStrokePatternSet_llvm
@@ -10150,7 +10150,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 6766
+.word 6750
 _p_7_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_TState_REF_Pop_llvm:
 	.globl _p_7_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_TState_REF_Pop_llvm
 .private_extern _p_7_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_TState_REF_Pop_llvm
@@ -10161,7 +10161,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 6786
+.word 6770
 _p_8_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_TState_REF_Push_TState_REF_llvm:
 	.globl _p_8_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_TState_REF_Push_TState_REF_llvm
 .private_extern _p_8_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_TState_REF_Push_TState_REF_llvm
@@ -10172,7 +10172,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 6800
+.word 6784
 _p_9_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_op_Multiply_System_Numerics_Matrix3x2_System_Numerics_Matrix3x2_llvm:
 	.globl _p_9_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_op_Multiply_System_Numerics_Matrix3x2_System_Numerics_Matrix3x2_llvm
 .private_extern _p_9_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_op_Multiply_System_Numerics_Matrix3x2_System_Numerics_Matrix3x2_llvm
@@ -10183,7 +10183,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 6814
+.word 6798
 _p_10_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateRotation_single_llvm:
 	.globl _p_10_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateRotation_single_llvm
 .private_extern _p_10_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateRotation_single_llvm
@@ -10194,7 +10194,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 6819
+.word 6803
 _p_11_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_Transform_System_Numerics_Matrix3x2_llvm:
 	.globl _p_11_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_Transform_System_Numerics_Matrix3x2_llvm
 .private_extern _p_11_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_Transform_System_Numerics_Matrix3x2_llvm
@@ -10205,7 +10205,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 6824
+.word 6808
 _p_12_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractPattern__ctor_single_single_single_single_llvm:
 	.globl _p_12_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractPattern__ctor_single_single_single_single_llvm
 .private_extern _p_12_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractPattern__ctor_single_single_single_single_llvm
@@ -10216,7 +10216,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 6827
+.word 6811
 _p_13_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractPattern__ctor_single_single_llvm:
 	.globl _p_13_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractPattern__ctor_single_single_llvm
 .private_extern _p_13_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractPattern__ctor_single_single_llvm
@@ -10227,7 +10227,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 6829
+.word 6813
 _p_14_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetPointOnArc_single_llvm:
 	.globl _p_14_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetPointOnArc_single_llvm
 .private_extern _p_14_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetPointOnArc_single_llvm
@@ -10238,7 +10238,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 6831
+.word 6815
 _p_15_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowNotSupportedException_llvm:
 	.globl _p_15_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowNotSupportedException_llvm
 .private_extern _p_15_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowNotSupportedException_llvm
@@ -10249,7 +10249,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 6833
+.word 6817
 _p_16_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetPointAtAngle_single_single_single_single_llvm:
 	.globl _p_16_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetPointAtAngle_single_single_single_single_llvm
 .private_extern _p_16_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetPointAtAngle_single_single_single_single_llvm
@@ -10260,7 +10260,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 6838
+.word 6822
 _p_17_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_llvm:
 	.globl _p_17_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_llvm
 .private_extern _p_17_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_llvm
@@ -10271,7 +10271,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 6840
+.word 6824
 _p_18_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_MoveTo_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_18_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_MoveTo_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_18_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_MoveTo_Microsoft_Maui_Graphics_PointF_llvm
@@ -10282,7 +10282,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 6843
+.word 6827
 _p_19_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_LineTo_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_19_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_LineTo_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_19_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_LineTo_Microsoft_Maui_Graphics_PointF_llvm
@@ -10293,7 +10293,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 6846
+.word 6830
 _p_20_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetCenter_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_20_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetCenter_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_20_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_GetCenter_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
@@ -10304,7 +10304,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 6849
+.word 6833
 _p_21_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm:
 	.globl _p_21_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
 .private_extern _p_21_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
@@ -10315,7 +10315,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 6851
+.word 6835
 _p_22_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_object_new_specific_llvm:
 	.globl _p_22_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_object_new_specific_llvm
 .private_extern _p_22_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_object_new_specific_llvm
@@ -10326,7 +10326,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 6856
+.word 6840
 _p_23_plt_Microsoft_Maui_Graphics_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_llvm:
 	.globl _p_23_plt_Microsoft_Maui_Graphics_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_llvm
 .private_extern _p_23_plt_Microsoft_Maui_Graphics_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_llvm
@@ -10337,7 +10337,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 6859
+.word 6843
 _p_24_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_24_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_24_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -10348,7 +10348,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 6864
+.word 6848
 _p_25_plt_Microsoft_Maui_Graphics__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_25_plt_Microsoft_Maui_Graphics__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_25_plt_Microsoft_Maui_Graphics__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -10359,7 +10359,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 6867
+.word 6851
 _p_26_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_single_single_single_single_llvm:
 	.globl _p_26_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_single_single_single_single_llvm
 .private_extern _p_26_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_single_single_single_single_llvm
@@ -10370,7 +10370,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 6870
+.word 6854
 _p_27_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_single_single_single_single_single_single_single_single_bool_llvm:
 	.globl _p_27_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_single_single_single_single_single_single_single_single_bool_llvm
 .private_extern _p_27_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_single_single_single_single_single_single_single_single_bool_llvm
@@ -10381,7 +10381,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 6873
+.word 6857
 _p_28_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_Microsoft_Maui_Graphics_RectF_single_single_single_single_bool_llvm:
 	.globl _p_28_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_Microsoft_Maui_Graphics_RectF_single_single_single_single_bool_llvm
 .private_extern _p_28_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_Microsoft_Maui_Graphics_RectF_single_single_single_single_bool_llvm
@@ -10392,7 +10392,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 6876
+.word 6860
 _p_29_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_Microsoft_Maui_Graphics_RectF_single_single_llvm:
 	.globl _p_29_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_Microsoft_Maui_Graphics_RectF_single_single_llvm
 .private_extern _p_29_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_Microsoft_Maui_Graphics_RectF_single_single_llvm
@@ -10403,7 +10403,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 6879
+.word 6863
 _p_30_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_FillPath_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PathF_llvm:
 	.globl _p_30_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_FillPath_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PathF_llvm
 .private_extern _p_30_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_FillPath_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_PathF_llvm
@@ -10414,7 +10414,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 6882
+.word 6866
 _p_31_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF__ctor_single_single_single_single_llvm:
 	.globl _p_31_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF__ctor_single_single_single_single_llvm
 .private_extern _p_31_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF__ctor_single_single_single_single_llvm
@@ -10425,7 +10425,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 6884
+.word 6868
 _p_32_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPattern_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_IPattern_Microsoft_Maui_Graphics_Color_llvm:
 	.globl _p_32_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPattern_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_IPattern_Microsoft_Maui_Graphics_Color_llvm
 .private_extern _p_32_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPattern_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_IPattern_Microsoft_Maui_Graphics_Color_llvm
@@ -10436,7 +10436,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 6887
+.word 6871
 _p_33_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PatternExtensions_AsPaint_Microsoft_Maui_Graphics_IPattern_Microsoft_Maui_Graphics_Color_llvm:
 	.globl _p_33_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PatternExtensions_AsPaint_Microsoft_Maui_Graphics_IPattern_Microsoft_Maui_Graphics_Color_llvm
 .private_extern _p_33_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PatternExtensions_AsPaint_Microsoft_Maui_Graphics_IPattern_Microsoft_Maui_Graphics_Color_llvm
@@ -10447,7 +10447,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 6890
+.word 6874
 _p_34_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_op_Implicit_Microsoft_Maui_Graphics_Rect_llvm:
 	.globl _p_34_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_op_Implicit_Microsoft_Maui_Graphics_Rect_llvm
 .private_extern _p_34_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_op_Implicit_Microsoft_Maui_Graphics_Rect_llvm
@@ -10458,7 +10458,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 6893
+.word 6877
 _p_35_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_DeconstructScales_System_Numerics_Matrix3x2__single__single__single__llvm:
 	.globl _p_35_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_DeconstructScales_System_Numerics_Matrix3x2__single__single__single__llvm
 .private_extern _p_35_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_DeconstructScales_System_Numerics_Matrix3x2__single__single__single__llvm
@@ -10469,7 +10469,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 6896
+.word 6880
 _p_36_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm:
 	.globl _p_36_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
 .private_extern _p_36_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
@@ -10480,7 +10480,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 6899
+.word 6883
 _p_37_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm:
 	.globl _p_37_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
 .private_extern _p_37_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
@@ -10491,7 +10491,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 6904
+.word 6888
 _p_38_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_single_single_llvm:
 	.globl _p_38_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_single_single_llvm
 .private_extern _p_38_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_single_single_llvm
@@ -10502,7 +10502,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 6909
+.word 6893
 _p_39_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm:
 	.globl _p_39_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
 .private_extern _p_39_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
@@ -10513,7 +10513,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 6921
+.word 6905
 _p_40_plt_Microsoft_Maui_Graphics_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
 	.globl _p_40_plt_Microsoft_Maui_Graphics_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
 .private_extern _p_40_plt_Microsoft_Maui_Graphics_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
@@ -10524,7 +10524,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 6926
+.word 6910
 _p_41_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
 	.globl _p_41_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
 .private_extern _p_41_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
@@ -10535,7 +10535,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 6931
+.word 6915
 _p_42_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToInt_llvm:
 	.globl _p_42_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToInt_llvm
 .private_extern _p_42_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToInt_llvm
@@ -10546,7 +10546,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 6936
+.word 6920
 _p_43_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
 	.globl _p_43_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
 .private_extern _p_43_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
@@ -10557,7 +10557,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 6939
+.word 6923
 _p_44_plt_Microsoft_Maui_Graphics_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm:
 	.globl _p_44_plt_Microsoft_Maui_Graphics_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
 .private_extern _p_44_plt_Microsoft_Maui_Graphics_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
@@ -10568,7 +10568,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 6947
+.word 6931
 _p_45_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_single_llvm:
 	.globl _p_45_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_single_llvm
 .private_extern _p_45_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_single_llvm
@@ -10579,7 +10579,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 6956
+.word 6940
 _p_46_plt_Microsoft_Maui_Graphics_string_Concat_string___llvm:
 	.globl _p_46_plt_Microsoft_Maui_Graphics_string_Concat_string___llvm
 .private_extern _p_46_plt_Microsoft_Maui_Graphics_string_Concat_string___llvm
@@ -10590,7 +10590,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 6959
+.word 6943
 _p_47_plt_Microsoft_Maui_Graphics_string_Concat_string_string_string_string_llvm:
 	.globl _p_47_plt_Microsoft_Maui_Graphics_string_Concat_string_string_string_string_llvm
 .private_extern _p_47_plt_Microsoft_Maui_Graphics_string_Concat_string_string_string_string_llvm
@@ -10601,7 +10601,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 6964
+.word 6948
 _p_48_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromArgb_string_llvm:
 	.globl _p_48_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromArgb_string_llvm
 .private_extern _p_48_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromArgb_string_llvm
@@ -10612,7 +10612,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 6969
+.word 6953
 _p_49_plt_Microsoft_Maui_Graphics_int_ToString_string_llvm:
 	.globl _p_49_plt_Microsoft_Maui_Graphics_int_ToString_string_llvm
 .private_extern _p_49_plt_Microsoft_Maui_Graphics_int_ToString_string_llvm
@@ -10623,7 +10623,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 6972
+.word 6956
 _p_50_plt_Microsoft_Maui_Graphics_string_Concat_string_string_llvm:
 	.globl _p_50_plt_Microsoft_Maui_Graphics_string_Concat_string_string_llvm
 .private_extern _p_50_plt_Microsoft_Maui_Graphics_string_Concat_string_string_llvm
@@ -10634,7 +10634,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 6977
+.word 6961
 _p_51_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgba_byte__byte__byte__byte__llvm:
 	.globl _p_51_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgba_byte__byte__byte__byte__llvm
 .private_extern _p_51_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgba_byte__byte__byte__byte__llvm
@@ -10645,7 +10645,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 6982
+.word 6966
 _p_52_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHsl_single__single__single__llvm:
 	.globl _p_52_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHsl_single__single__single__llvm
 .private_extern _p_52_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHsl_single__single__single__llvm
@@ -10656,7 +10656,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 6985
+.word 6969
 _p_53_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsla_single_single_single_single_llvm:
 	.globl _p_53_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsla_single_single_single_single_llvm
 .private_extern _p_53_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsla_single_single_single_single_llvm
@@ -10667,7 +10667,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 6988
+.word 6972
 _p_54_plt_Microsoft_Maui_Graphics__jit_icall___emul_rrem_llvm:
 	.globl _p_54_plt_Microsoft_Maui_Graphics__jit_icall___emul_rrem_llvm
 .private_extern _p_54_plt_Microsoft_Maui_Graphics__jit_icall___emul_rrem_llvm
@@ -10678,7 +10678,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 6991
+.word 6975
 _p_55_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_double_double_double_double_llvm:
 	.globl _p_55_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_double_double_double_double_llvm
 .private_extern _p_55_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_double_double_double_double_llvm
@@ -10689,7 +10689,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 6993
+.word 6977
 _p_56_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_byte_byte_byte_byte_llvm:
 	.globl _p_56_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_byte_byte_byte_byte_llvm
 .private_extern _p_56_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_byte_byte_byte_byte_llvm
@@ -10700,7 +10700,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 6996
+.word 6980
 _p_57_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_single_single_single_single_llvm:
 	.globl _p_57_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_single_single_single_single_llvm
 .private_extern _p_57_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_single_single_single_single_llvm
@@ -10711,7 +10711,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 6999
+.word 6983
 _p_58_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_58_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_58_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromRgba_System_ReadOnlySpan_1_char_llvm
@@ -10722,7 +10722,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 7002
+.word 6986
 _p_59_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromArgb_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_59_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromArgb_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_59_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromArgb_System_ReadOnlySpan_1_char_llvm
@@ -10733,7 +10733,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 7005
+.word 6989
 _p_60_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ParseInt_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_60_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ParseInt_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_60_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ParseInt_System_ReadOnlySpan_1_char_llvm
@@ -10744,7 +10744,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 7008
+.word 6992
 _p_61_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm:
 	.globl _p_61_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
 .private_extern _p_61_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
@@ -10755,7 +10755,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 7011
+.word 6995
 _p_62_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ConvertToRgb_single_single_single_single__single__single__llvm:
 	.globl _p_62_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ConvertToRgb_single_single_single_single__single__single__llvm
 .private_extern _p_62_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ConvertToRgb_single_single_single_single__single__single__llvm
@@ -10766,7 +10766,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 7016
+.word 7000
 _p_63_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsva_single_single_single_single_llvm:
 	.globl _p_63_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsva_single_single_single_single_llvm
 .private_extern _p_63_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsva_single_single_single_single_llvm
@@ -10777,7 +10777,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 7019
+.word 7003
 _p_64_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParse_string_Microsoft_Maui_Graphics_Color__llvm:
 	.globl _p_64_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParse_string_Microsoft_Maui_Graphics_Color__llvm
 .private_extern _p_64_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParse_string_Microsoft_Maui_Graphics_Color__llvm
@@ -10788,7 +10788,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 7022
+.word 7006
 _p_65_plt_Microsoft_Maui_Graphics__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_65_plt_Microsoft_Maui_Graphics__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_65_plt_Microsoft_Maui_Graphics__jit_icall_mono_helper_ldstr_llvm
@@ -10799,7 +10799,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 7025
+.word 7009
 _p_66_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm:
 	.globl _p_66_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
 .private_extern _p_66_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
@@ -10810,7 +10810,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 7028
+.word 7012
 _p_67_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_System_Type_System_Type_llvm:
 	.globl _p_67_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_System_Type_System_Type_llvm
 .private_extern _p_67_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_System_Type_System_Type_llvm
@@ -10821,7 +10821,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 7033
+.word 7017
 _p_68_plt_Microsoft_Maui_Graphics_System_InvalidOperationException__ctor_string_llvm:
 	.globl _p_68_plt_Microsoft_Maui_Graphics_System_InvalidOperationException__ctor_string_llvm
 .private_extern _p_68_plt_Microsoft_Maui_Graphics_System_InvalidOperationException__ctor_string_llvm
@@ -10832,7 +10832,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 7045
+.word 7029
 _p_69_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_69_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_69_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_exception_llvm
@@ -10843,7 +10843,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 7050
+.word 7034
 _p_70_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParse_System_ReadOnlySpan_1_char_Microsoft_Maui_Graphics_Color__llvm:
 	.globl _p_70_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParse_System_ReadOnlySpan_1_char_Microsoft_Maui_Graphics_Color__llvm
 .private_extern _p_70_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParse_System_ReadOnlySpan_1_char_Microsoft_Maui_Graphics_Color__llvm
@@ -10854,7 +10854,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 7052
+.word 7036
 _p_71_plt_Microsoft_Maui_Graphics_System_MemoryExtensions_StartsWith_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm:
 	.globl _p_71_plt_Microsoft_Maui_Graphics_System_MemoryExtensions_StartsWith_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
 .private_extern _p_71_plt_Microsoft_Maui_Graphics_System_MemoryExtensions_StartsWith_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
@@ -10865,7 +10865,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 7055
+.word 7039
 _p_72_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_GetNamedColor_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_72_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_GetNamedColor_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_72_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_GetNamedColor_System_ReadOnlySpan_1_char_llvm
@@ -10876,7 +10876,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 7060
+.word 7044
 _p_73_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseThreeColorRanges_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__llvm:
 	.globl _p_73_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseThreeColorRanges_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__llvm
 .private_extern _p_73_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseThreeColorRanges_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__llvm
@@ -10887,7 +10887,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 7063
+.word 7047
 _p_74_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseColorValue_System_ReadOnlySpan_1_char_int_bool_double__llvm:
 	.globl _p_74_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseColorValue_System_ReadOnlySpan_1_char_int_bool_double__llvm
 .private_extern _p_74_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseColorValue_System_ReadOnlySpan_1_char_int_bool_double__llvm
@@ -10898,7 +10898,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 7066
+.word 7050
 _p_75_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsv_single_single_single_llvm:
 	.globl _p_75_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsv_single_single_single_llvm
 .private_extern _p_75_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsv_single_single_single_llvm
@@ -10909,7 +10909,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 7069
+.word 7053
 _p_76_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseFourColorRanges_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__llvm:
 	.globl _p_76_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseFourColorRanges_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__llvm
 .private_extern _p_76_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseFourColorRanges_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__System_ReadOnlySpan_1_char__llvm
@@ -10920,7 +10920,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 7072
+.word 7056
 _p_77_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseOpacity_System_ReadOnlySpan_1_char_double__llvm:
 	.globl _p_77_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseOpacity_System_ReadOnlySpan_1_char_double__llvm
 .private_extern _p_77_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseOpacity_System_ReadOnlySpan_1_char_double__llvm
@@ -10931,7 +10931,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 7075
+.word 7059
 _p_78_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsla_double_double_double_double_llvm:
 	.globl _p_78_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsla_double_double_double_double_llvm
 .private_extern _p_78_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromHsla_double_double_double_double_llvm
@@ -10942,7 +10942,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 7078
+.word 7062
 _p_79_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_single_single_single_llvm:
 	.globl _p_79_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_single_single_single_llvm
 .private_extern _p_79_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_single_single_single_llvm
@@ -10953,7 +10953,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 7081
+.word 7065
 _p_80_plt_Microsoft_Maui_Graphics_char_IsWhiteSpace_char_llvm:
 	.globl _p_80_plt_Microsoft_Maui_Graphics_char_IsWhiteSpace_char_llvm
 .private_extern _p_80_plt_Microsoft_Maui_Graphics_char_IsWhiteSpace_char_llvm
@@ -10964,7 +10964,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 7084
+.word 7068
 _p_81_plt_Microsoft_Maui_Graphics_System_MemoryExtensions__Trimg__TrimFallback_219_0_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_81_plt_Microsoft_Maui_Graphics_System_MemoryExtensions__Trimg__TrimFallback_219_0_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_81_plt_Microsoft_Maui_Graphics_System_MemoryExtensions__Trimg__TrimFallback_219_0_System_ReadOnlySpan_1_char_llvm
@@ -10975,7 +10975,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 7089
+.word 7073
 _p_82_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_get_undeniable_exception_llvm:
 	.globl _p_82_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_get_undeniable_exception_llvm
 .private_extern _p_82_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_get_undeniable_exception_llvm
@@ -10986,7 +10986,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 7094
+.word 7078
 _p_83_plt_Microsoft_Maui_Graphics_System_MemoryExtensions_ToLowerInvariant_System_ReadOnlySpan_1_char_System_Span_1_char_llvm:
 	.globl _p_83_plt_Microsoft_Maui_Graphics_System_MemoryExtensions_ToLowerInvariant_System_ReadOnlySpan_1_char_System_Span_1_char_llvm
 .private_extern _p_83_plt_Microsoft_Maui_Graphics_System_MemoryExtensions_ToLowerInvariant_System_ReadOnlySpan_1_char_System_Span_1_char_llvm
@@ -10997,7 +10997,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 7097
+.word 7081
 _p_84_plt_Microsoft_Maui_Graphics_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm:
 	.globl _p_84_plt_Microsoft_Maui_Graphics_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
 .private_extern _p_84_plt_Microsoft_Maui_Graphics_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
@@ -11008,7 +11008,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 7106
+.word 7090
 _p_85_plt_Microsoft_Maui_Graphics_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm:
 	.globl _p_85_plt_Microsoft_Maui_Graphics_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
 .private_extern _p_85_plt_Microsoft_Maui_Graphics_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
@@ -11019,7 +11019,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 7122
+.word 7106
 _p_86_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm:
 	.globl _p_86_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
 .private_extern _p_86_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
@@ -11030,7 +11030,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 7127
+.word 7111
 _p_87_plt_Microsoft_Maui_Graphics__jit_icall___emul_lmul_ovf_un_llvm:
 	.globl _p_87_plt_Microsoft_Maui_Graphics__jit_icall___emul_lmul_ovf_un_llvm
 .private_extern _p_87_plt_Microsoft_Maui_Graphics__jit_icall___emul_lmul_ovf_un_llvm
@@ -11041,7 +11041,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 7132
+.word 7116
 _p_88_plt_Microsoft_Maui_Graphics_System_SpanHelpers_IndexOf_char_char__char_int_llvm:
 	.globl _p_88_plt_Microsoft_Maui_Graphics_System_SpanHelpers_IndexOf_char_char__char_int_llvm
 .private_extern _p_88_plt_Microsoft_Maui_Graphics_System_SpanHelpers_IndexOf_char_char__char_int_llvm
@@ -11052,7 +11052,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 7134
+.word 7118
 _p_89_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOf_char_char__char_int_llvm:
 	.globl _p_89_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOf_char_char__char_int_llvm
 .private_extern _p_89_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOf_char_char__char_int_llvm
@@ -11063,7 +11063,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 7150
+.word 7134
 _p_90_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm:
 	.globl _p_90_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
 .private_extern _p_90_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
@@ -11074,7 +11074,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 7186
+.word 7170
 _p_91_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm:
 	.globl _p_91_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
 .private_extern _p_91_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
@@ -11085,7 +11085,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 7222
+.word 7206
 _p_92_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
 	.globl _p_92_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
 .private_extern _p_92_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
@@ -11096,7 +11096,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 7258
+.word 7242
 _p_93_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm:
 	.globl _p_93_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
 .private_extern _p_93_plt_Microsoft_Maui_Graphics_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
@@ -11107,7 +11107,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 7292
+.word 7276
 _p_94_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm:
 	.globl _p_94_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
 .private_extern _p_94_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
@@ -11118,7 +11118,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 7308
+.word 7292
 _p_95_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm:
 	.globl _p_95_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
 .private_extern _p_95_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
@@ -11129,7 +11129,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 7324
+.word 7308
 _p_96_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
 	.globl _p_96_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
 .private_extern _p_96_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
@@ -11140,7 +11140,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 7340
+.word 7324
 _p_97_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm:
 	.globl _p_97_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
 .private_extern _p_97_plt_Microsoft_Maui_Graphics_System_SpanHelpers_LastIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
@@ -11151,7 +11151,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 7356
+.word 7340
 _p_98_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseDouble_System_ReadOnlySpan_1_char_double__llvm:
 	.globl _p_98_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseDouble_System_ReadOnlySpan_1_char_double__llvm
 .private_extern _p_98_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_TryParseDouble_System_ReadOnlySpan_1_char_double__llvm
@@ -11162,7 +11162,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 7372
+.word 7356
 _p_99_plt_Microsoft_Maui_Graphics_double_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm:
 	.globl _p_99_plt_Microsoft_Maui_Graphics_double_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
 .private_extern _p_99_plt_Microsoft_Maui_Graphics_double_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
@@ -11173,7 +11173,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 7375
+.word 7359
 _p_100_plt_Microsoft_Maui_Graphics_int_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_100_plt_Microsoft_Maui_Graphics_int_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_100_plt_Microsoft_Maui_Graphics_int_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -11184,7 +11184,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 7380
+.word 7364
 _p_101_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_System_Numerics_Vector4_llvm:
 	.globl _p_101_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_System_Numerics_Vector4_llvm
 .private_extern _p_101_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color__ctor_System_Numerics_Vector4_llvm
@@ -11195,7 +11195,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 7385
+.word 7369
 _p_102_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromUint_uint_llvm:
 	.globl _p_102_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromUint_uint_llvm
 .private_extern _p_102_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_FromUint_uint_llvm
@@ -11206,7 +11206,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 7388
+.word 7372
 _p_103_plt_Microsoft_Maui_Graphics_string_Equals_string_System_StringComparison_llvm:
 	.globl _p_103_plt_Microsoft_Maui_Graphics_string_Equals_string_System_StringComparison_llvm
 .private_extern _p_103_plt_Microsoft_Maui_Graphics_string_Equals_string_System_StringComparison_llvm
@@ -11217,7 +11217,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 7391
+.word 7375
 _p_104_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Font_Equals_Microsoft_Maui_Graphics_IFont_llvm:
 	.globl _p_104_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Font_Equals_Microsoft_Maui_Graphics_IFont_llvm
 .private_extern _p_104_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Font_Equals_Microsoft_Maui_Graphics_IFont_llvm
@@ -11228,7 +11228,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 7396
+.word 7380
 _p_105_plt_Microsoft_Maui_Graphics_System_ValueTuple_3_string_int_Microsoft_Maui_Graphics_FontStyleType_GetHashCode_llvm:
 	.globl _p_105_plt_Microsoft_Maui_Graphics_System_ValueTuple_3_string_int_Microsoft_Maui_Graphics_FontStyleType_GetHashCode_llvm
 .private_extern _p_105_plt_Microsoft_Maui_Graphics_System_ValueTuple_3_string_int_Microsoft_Maui_Graphics_FontStyleType_GetHashCode_llvm
@@ -11239,7 +11239,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 7409
+.word 7393
 _p_106_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Font_op_Equality_Microsoft_Maui_Graphics_Font_Microsoft_Maui_Graphics_Font_llvm:
 	.globl _p_106_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Font_op_Equality_Microsoft_Maui_Graphics_Font_Microsoft_Maui_Graphics_Font_llvm
 .private_extern _p_106_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Font_op_Equality_Microsoft_Maui_Graphics_Font_Microsoft_Maui_Graphics_Font_llvm
@@ -11250,7 +11250,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 7426
+.word 7410
 _p_107_plt_Microsoft_Maui_Graphics_System_Enum_Equals_object_llvm:
 	.globl _p_107_plt_Microsoft_Maui_Graphics_System_Enum_Equals_object_llvm
 .private_extern _p_107_plt_Microsoft_Maui_Graphics_System_Enum_Equals_object_llvm
@@ -11261,7 +11261,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 7429
+.word 7413
 _p_108_plt_Microsoft_Maui_Graphics_string_GetHashCode_System_StringComparison_llvm:
 	.globl _p_108_plt_Microsoft_Maui_Graphics_string_GetHashCode_System_StringComparison_llvm
 .private_extern _p_108_plt_Microsoft_Maui_Graphics_string_GetHashCode_System_StringComparison_llvm
@@ -11272,7 +11272,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 7434
+.word 7418
 _p_109_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_FontSource_Equals_Microsoft_Maui_Graphics_FontSource_llvm:
 	.globl _p_109_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_FontSource_Equals_Microsoft_Maui_Graphics_FontSource_llvm
 .private_extern _p_109_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_FontSource_Equals_Microsoft_Maui_Graphics_FontSource_llvm
@@ -11283,7 +11283,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 7439
+.word 7423
 _p_110_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_FontSource_op_Equality_Microsoft_Maui_Graphics_FontSource_Microsoft_Maui_Graphics_FontSource_llvm:
 	.globl _p_110_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_FontSource_op_Equality_Microsoft_Maui_Graphics_FontSource_Microsoft_Maui_Graphics_FontSource_llvm
 .private_extern _p_110_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_FontSource_op_Equality_Microsoft_Maui_Graphics_FontSource_Microsoft_Maui_Graphics_FontSource_llvm
@@ -11294,7 +11294,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 7442
+.word 7426
 _p_111_plt_Microsoft_Maui_Graphics_System_MathF_Atan2_single_single_llvm:
 	.globl _p_111_plt_Microsoft_Maui_Graphics_System_MathF_Atan2_single_single_llvm
 .private_extern _p_111_plt_Microsoft_Maui_Graphics_System_MathF_Atan2_single_single_llvm
@@ -11305,7 +11305,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 7445
+.word 7429
 _p_112_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_IsBetween_single_single_single_llvm:
 	.globl _p_112_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_IsBetween_single_single_single_llvm
 .private_extern _p_112_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_IsBetween_single_single_single_llvm
@@ -11316,7 +11316,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 7450
+.word 7434
 _p_113_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_SameSide_single_single_single_single_single_single_single_single_llvm:
 	.globl _p_113_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_SameSide_single_single_single_single_single_single_single_single_llvm
 .private_extern _p_113_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_SameSide_single_single_single_single_single_single_single_single_llvm
@@ -11327,7 +11327,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 7453
+.word 7437
 _p_114_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintGradientStop__ctor_Microsoft_Maui_Graphics_PaintGradientStop_llvm:
 	.globl _p_114_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintGradientStop__ctor_Microsoft_Maui_Graphics_PaintGradientStop_llvm
 .private_extern _p_114_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintGradientStop__ctor_Microsoft_Maui_Graphics_PaintGradientStop_llvm
@@ -11338,7 +11338,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 7456
+.word 7440
 _p_115_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_StartColorIndex_llvm:
 	.globl _p_115_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_StartColorIndex_llvm
 .private_extern _p_115_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_StartColorIndex_llvm
@@ -11349,7 +11349,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 7459
+.word 7443
 _p_116_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_EndColorIndex_llvm:
 	.globl _p_116_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_EndColorIndex_llvm
 .private_extern _p_116_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_EndColorIndex_llvm
@@ -11360,7 +11360,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 7462
+.word 7446
 _p_117_plt_Microsoft_Maui_Graphics_System_Array_Copy_System_Array_System_Array_int_llvm:
 	.globl _p_117_plt_Microsoft_Maui_Graphics_System_Array_Copy_System_Array_System_Array_int_llvm
 .private_extern _p_117_plt_Microsoft_Maui_Graphics_System_Array_Copy_System_Array_System_Array_int_llvm
@@ -11371,7 +11371,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 7465
+.word 7449
 _p_118_plt_Microsoft_Maui_Graphics_System_Array_Sort_Microsoft_Maui_Graphics_PaintGradientStop_Microsoft_Maui_Graphics_PaintGradientStop___llvm:
 	.globl _p_118_plt_Microsoft_Maui_Graphics_System_Array_Sort_Microsoft_Maui_Graphics_PaintGradientStop_Microsoft_Maui_Graphics_PaintGradientStop___llvm
 .private_extern _p_118_plt_Microsoft_Maui_Graphics_System_Array_Sort_Microsoft_Maui_Graphics_PaintGradientStop_Microsoft_Maui_Graphics_PaintGradientStop___llvm
@@ -11382,7 +11382,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 7470
+.word 7454
 _p_119_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_GetColorAt_single_llvm:
 	.globl _p_119_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_GetColorAt_single_llvm
 .private_extern _p_119_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_GetColorAt_single_llvm
@@ -11393,7 +11393,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 7482
+.word 7466
 _p_120_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_AddOffset_single_Microsoft_Maui_Graphics_Color_llvm:
 	.globl _p_120_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_AddOffset_single_Microsoft_Maui_Graphics_Color_llvm
 .private_extern _p_120_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_AddOffset_single_Microsoft_Maui_Graphics_Color_llvm
@@ -11404,7 +11404,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 7485
+.word 7469
 _p_121_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_set_GradientStops_Microsoft_Maui_Graphics_PaintGradientStop___llvm:
 	.globl _p_121_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_set_GradientStops_Microsoft_Maui_Graphics_PaintGradientStop___llvm
 .private_extern _p_121_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_set_GradientStops_Microsoft_Maui_Graphics_PaintGradientStop___llvm
@@ -11415,7 +11415,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 7488
+.word 7472
 _p_122_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_GetFactor_single_single_single_llvm:
 	.globl _p_122_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_GetFactor_single_single_single_llvm
 .private_extern _p_122_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_GetFactor_single_single_single_llvm
@@ -11426,7 +11426,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 7491
+.word 7475
 _p_123_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_BlendStartAndEndColors_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_Color_single_llvm:
 	.globl _p_123_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_BlendStartAndEndColors_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_Color_single_llvm
 .private_extern _p_123_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_BlendStartAndEndColors_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_Color_single_llvm
@@ -11437,7 +11437,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 7494
+.word 7478
 _p_124_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_StartColor_llvm:
 	.globl _p_124_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_StartColor_llvm
 .private_extern _p_124_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_StartColor_llvm
@@ -11448,7 +11448,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 7497
+.word 7481
 _p_125_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_EndColor_llvm:
 	.globl _p_125_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_EndColor_llvm
 .private_extern _p_125_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint_get_EndColor_llvm
@@ -11459,7 +11459,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 7500
+.word 7484
 _p_126_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_Color_llvm:
 	.globl _p_126_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_Color_llvm
 .private_extern _p_126_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_Color_llvm
@@ -11470,7 +11470,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 7503
+.word 7487
 _p_127_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InvariantExtensions_ToInvariantString_int_llvm:
 	.globl _p_127_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InvariantExtensions_ToInvariantString_int_llvm
 .private_extern _p_127_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InvariantExtensions_ToInvariantString_int_llvm
@@ -11481,7 +11481,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 7515
+.word 7499
 _p_128_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream__ctor_llvm:
 	.globl _p_128_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream__ctor_llvm
 .private_extern _p_128_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream__ctor_llvm
@@ -11492,7 +11492,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 7518
+.word 7502
 _p_129_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream_ToArray_llvm:
 	.globl _p_129_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream_ToArray_llvm
 .private_extern _p_129_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream_ToArray_llvm
@@ -11503,7 +11503,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 7523
+.word 7507
 _p_130_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__llvm:
 	.globl _p_130_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__llvm
 .private_extern _p_130_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__llvm
@@ -11514,7 +11514,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 7528
+.word 7512
 _p_131_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___InitializeTaskAsPromise_llvm:
 	.globl _p_131_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___InitializeTaskAsPromise_llvm
 .private_extern _p_131_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___InitializeTaskAsPromise_llvm
@@ -11525,7 +11525,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 7544
+.word 7528
 _p_132_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions_AsBytes_Microsoft_Maui_Graphics_IImage_Microsoft_Maui_Graphics_ImageFormat_single_llvm:
 	.globl _p_132_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions_AsBytes_Microsoft_Maui_Graphics_IImage_Microsoft_Maui_Graphics_ImageFormat_single_llvm
 .private_extern _p_132_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions_AsBytes_Microsoft_Maui_Graphics_IImage_Microsoft_Maui_Graphics_ImageFormat_single_llvm
@@ -11536,7 +11536,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 7561
+.word 7545
 _p_133_plt_Microsoft_Maui_Graphics_System_Convert_ToBase64String_byte___llvm:
 	.globl _p_133_plt_Microsoft_Maui_Graphics_System_Convert_ToBase64String_byte___llvm
 .private_extern _p_133_plt_Microsoft_Maui_Graphics_System_Convert_ToBase64String_byte___llvm
@@ -11547,7 +11547,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 7564
+.word 7548
 _p_134_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream__ctor_byte___llvm:
 	.globl _p_134_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream__ctor_byte___llvm
 .private_extern _p_134_plt_Microsoft_Maui_Graphics_System_IO_MemoryStream__ctor_byte___llvm
@@ -11558,7 +11558,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 7569
+.word 7553
 _p_135_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Insets__ctor_double_double_double_double_llvm:
 	.globl _p_135_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Insets__ctor_double_double_double_double_llvm
 .private_extern _p_135_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Insets__ctor_double_double_double_double_llvm
@@ -11569,7 +11569,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 7574
+.word 7558
 _p_136_plt_Microsoft_Maui_Graphics_double_ToString_System_IFormatProvider_llvm:
 	.globl _p_136_plt_Microsoft_Maui_Graphics_double_ToString_System_IFormatProvider_llvm
 .private_extern _p_136_plt_Microsoft_Maui_Graphics_double_ToString_System_IFormatProvider_llvm
@@ -11580,7 +11580,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 7577
+.word 7561
 _p_137_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_double_double_llvm:
 	.globl _p_137_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_double_double_llvm
 .private_extern _p_137_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_double_double_llvm
@@ -11591,7 +11591,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 7582
+.word 7566
 _p_138_plt_Microsoft_Maui_Graphics_string_Split_char_System_StringSplitOptions_llvm:
 	.globl _p_138_plt_Microsoft_Maui_Graphics_string_Split_char_System_StringSplitOptions_llvm
 .private_extern _p_138_plt_Microsoft_Maui_Graphics_string_Split_char_System_StringSplitOptions_llvm
@@ -11602,7 +11602,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 7594
+.word 7578
 _p_139_plt_Microsoft_Maui_Graphics_double_Parse_string_System_IFormatProvider_llvm:
 	.globl _p_139_plt_Microsoft_Maui_Graphics_double_Parse_string_System_IFormatProvider_llvm
 .private_extern _p_139_plt_Microsoft_Maui_Graphics_double_Parse_string_System_IFormatProvider_llvm
@@ -11613,7 +11613,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 7599
+.word 7583
 _p_140_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InsetsF__ctor_single_single_single_single_llvm:
 	.globl _p_140_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InsetsF__ctor_single_single_single_single_llvm
 .private_extern _p_140_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InsetsF__ctor_single_single_single_single_llvm
@@ -11624,7 +11624,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 7604
+.word 7588
 _p_141_plt_Microsoft_Maui_Graphics_single_ToString_System_IFormatProvider_llvm:
 	.globl _p_141_plt_Microsoft_Maui_Graphics_single_ToString_System_IFormatProvider_llvm
 .private_extern _p_141_plt_Microsoft_Maui_Graphics_single_ToString_System_IFormatProvider_llvm
@@ -11635,7 +11635,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 7607
+.word 7591
 _p_142_plt_Microsoft_Maui_Graphics_single_Parse_string_System_IFormatProvider_llvm:
 	.globl _p_142_plt_Microsoft_Maui_Graphics_single_Parse_string_System_IFormatProvider_llvm
 .private_extern _p_142_plt_Microsoft_Maui_Graphics_single_Parse_string_System_IFormatProvider_llvm
@@ -11646,7 +11646,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 7612
+.word 7596
 _p_143_plt_Microsoft_Maui_Graphics_char_ToString_llvm:
 	.globl _p_143_plt_Microsoft_Maui_Graphics_char_ToString_llvm
 .private_extern _p_143_plt_Microsoft_Maui_Graphics_char_ToString_llvm
@@ -11657,7 +11657,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 7617
+.word 7601
 _p_144_plt_Microsoft_Maui_Graphics_int_ToString_System_IFormatProvider_llvm:
 	.globl _p_144_plt_Microsoft_Maui_Graphics_int_ToString_System_IFormatProvider_llvm
 .private_extern _p_144_plt_Microsoft_Maui_Graphics_int_ToString_System_IFormatProvider_llvm
@@ -11668,7 +11668,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 7622
+.word 7606
 _p_145_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint__ctor_llvm:
 	.globl _p_145_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint__ctor_llvm
 .private_extern _p_145_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint__ctor_llvm
@@ -11679,7 +11679,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 7627
+.word 7611
 _p_146_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint__ctor_Microsoft_Maui_Graphics_GradientPaint_llvm:
 	.globl _p_146_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint__ctor_Microsoft_Maui_Graphics_GradientPaint_llvm
 .private_extern _p_146_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GradientPaint__ctor_Microsoft_Maui_Graphics_GradientPaint_llvm
@@ -11690,7 +11690,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 7630
+.word 7614
 _p_147_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_WithScale_System_Numerics_Matrix3x2_System_Numerics_Vector2_llvm:
 	.globl _p_147_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_WithScale_System_Numerics_Matrix3x2_System_Numerics_Vector2_llvm
 .private_extern _p_147_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_WithScale_System_Numerics_Matrix3x2_System_Numerics_Vector2_llvm
@@ -11701,7 +11701,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 7633
+.word 7617
 _p_148_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_GetScale_System_Numerics_Matrix3x2__llvm:
 	.globl _p_148_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_GetScale_System_Numerics_Matrix3x2__llvm
 .private_extern _p_148_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_GetScale_System_Numerics_Matrix3x2__llvm
@@ -11712,7 +11712,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 7636
+.word 7620
 _p_149_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_CreateMatrix3x2_System_Numerics_Vector2_single_System_Numerics_Vector2_llvm:
 	.globl _p_149_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_CreateMatrix3x2_System_Numerics_Vector2_single_System_Numerics_Vector2_llvm
 .private_extern _p_149_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Matrix3x2Extensions_CreateMatrix3x2_System_Numerics_Vector2_single_System_Numerics_Vector2_llvm
@@ -11723,7 +11723,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 7639
+.word 7623
 _p_150_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintPattern_get_Width_llvm:
 	.globl _p_150_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintPattern_get_Width_llvm
 .private_extern _p_150_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintPattern_get_Width_llvm
@@ -11734,7 +11734,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 7642
+.word 7626
 _p_151_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintPattern_get_Height_llvm:
 	.globl _p_151_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintPattern_get_Height_llvm
 .private_extern _p_151_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PaintPattern_get_Height_llvm
@@ -11745,7 +11745,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 7645
+.word 7629
 _p_152_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_ComputeSvgArc_single_single_single_bool_bool_single_single_single_single_llvm:
 	.globl _p_152_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_ComputeSvgArc_single_single_single_bool_bool_single_single_single_single_llvm
 .private_extern _p_152_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_ComputeSvgArc_single_single_single_bool_bool_single_single_single_single_llvm
@@ -11756,7 +11756,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 7648
+.word 7632
 _p_153_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_DrawArc_Microsoft_Maui_Graphics_PathF_single_single_single_single_single_single_single_llvm:
 	.globl _p_153_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_DrawArc_Microsoft_Maui_Graphics_PathF_single_single_single_single_single_single_single_llvm
 .private_extern _p_153_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_DrawArc_Microsoft_Maui_Graphics_PathF_single_single_single_single_single_single_single_llvm
@@ -11767,7 +11767,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 7651
+.word 7635
 _p_154_plt_Microsoft_Maui_Graphics_System_MathF_Acos_single_llvm:
 	.globl _p_154_plt_Microsoft_Maui_Graphics_System_MathF_Acos_single_llvm
 .private_extern _p_154_plt_Microsoft_Maui_Graphics_System_MathF_Acos_single_llvm
@@ -11778,7 +11778,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 7654
+.word 7638
 _p_155_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadTo_single_single_single_single_llvm:
 	.globl _p_155_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadTo_single_single_single_single_llvm
 .private_extern _p_155_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadTo_single_single_single_single_llvm
@@ -11789,7 +11789,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 7659
+.word 7643
 _p_156_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_BuildPath_string_llvm:
 	.globl _p_156_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_BuildPath_string_llvm
 .private_extern _p_156_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_BuildPath_string_llvm
@@ -11800,7 +11800,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 7662
+.word 7646
 _p_157_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Pop_llvm:
 	.globl _p_157_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Pop_llvm
 .private_extern _p_157_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Pop_llvm
@@ -11811,7 +11811,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 7665
+.word 7649
 _p_158_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ParseFloat_string_llvm:
 	.globl _p_158_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ParseFloat_string_llvm
 .private_extern _p_158_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ParseFloat_string_llvm
@@ -11822,7 +11822,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 7676
+.word 7660
 _p_159_plt_Microsoft_Maui_Graphics__jit_icall_mono_helper_newobj_mscorlib_llvm:
 	.globl _p_159_plt_Microsoft_Maui_Graphics__jit_icall_mono_helper_newobj_mscorlib_llvm
 .private_extern _p_159_plt_Microsoft_Maui_Graphics__jit_icall_mono_helper_newobj_mscorlib_llvm
@@ -11833,7 +11833,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 7679
+.word 7663
 _p_160_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_System_Exception_llvm:
 	.globl _p_160_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_System_Exception_llvm
 .private_extern _p_160_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_System_Exception_llvm
@@ -11844,7 +11844,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 7682
+.word 7666
 _p_161_plt_Microsoft_Maui_Graphics_single_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm:
 	.globl _p_161_plt_Microsoft_Maui_Graphics_single_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm
 .private_extern _p_161_plt_Microsoft_Maui_Graphics_single_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm
@@ -11855,7 +11855,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 7687
+.word 7671
 _p_162_plt_Microsoft_Maui_Graphics_string_Split_char___llvm:
 	.globl _p_162_plt_Microsoft_Maui_Graphics_string_Split_char___llvm
 .private_extern _p_162_plt_Microsoft_Maui_Graphics_string_Split_char___llvm
@@ -11866,7 +11866,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 7692
+.word 7676
 _p_163_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_GetNumbersOnly_string_llvm:
 	.globl _p_163_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_GetNumbersOnly_string_llvm
 .private_extern _p_163_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_GetNumbersOnly_string_llvm
@@ -11877,7 +11877,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 7697
+.word 7681
 _p_164_plt_Microsoft_Maui_Graphics_string_Concat_string_string_string_llvm:
 	.globl _p_164_plt_Microsoft_Maui_Graphics_string_Concat_string_string_string_llvm
 .private_extern _p_164_plt_Microsoft_Maui_Graphics_string_Concat_string_string_string_llvm
@@ -11888,7 +11888,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 7700
+.word 7684
 _p_165_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_165_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_165_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_1_llvm
@@ -11899,7 +11899,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 7705
+.word 7689
 _p_166_plt_Microsoft_Maui_Graphics_System_Text_StringBuilder__ctor_int_llvm:
 	.globl _p_166_plt_Microsoft_Maui_Graphics_System_Text_StringBuilder__ctor_int_llvm
 .private_extern _p_166_plt_Microsoft_Maui_Graphics_System_Text_StringBuilder__ctor_int_llvm
@@ -11910,7 +11910,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 7708
+.word 7692
 _p_167_plt_Microsoft_Maui_Graphics_char_IsDigit_char_llvm:
 	.globl _p_167_plt_Microsoft_Maui_Graphics_char_IsDigit_char_llvm
 .private_extern _p_167_plt_Microsoft_Maui_Graphics_char_IsDigit_char_llvm
@@ -11921,7 +11921,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 7713
+.word 7697
 _p_168_plt_Microsoft_Maui_Graphics_System_Text_StringBuilder_Append_char_llvm:
 	.globl _p_168_plt_Microsoft_Maui_Graphics_System_Text_StringBuilder_Append_char_llvm
 .private_extern _p_168_plt_Microsoft_Maui_Graphics_System_Text_StringBuilder_Append_char_llvm
@@ -11932,7 +11932,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 7718
+.word 7702
 _p_169_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Clear_llvm:
 	.globl _p_169_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Clear_llvm
 .private_extern _p_169_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Clear_llvm
@@ -11943,7 +11943,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 7723
+.word 7707
 _p_170_plt_Microsoft_Maui_Graphics_string_Replace_string_string_System_StringComparison_llvm:
 	.globl _p_170_plt_Microsoft_Maui_Graphics_string_Replace_string_string_System_StringComparison_llvm
 .private_extern _p_170_plt_Microsoft_Maui_Graphics_string_Replace_string_string_System_StringComparison_llvm
@@ -11954,7 +11954,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 7734
+.word 7718
 _p_171_plt_Microsoft_Maui_Graphics_System_Text_RegularExpressions_Regex_Replace_string_string_string_llvm:
 	.globl _p_171_plt_Microsoft_Maui_Graphics_System_Text_RegularExpressions_Regex_Replace_string_string_string_llvm
 .private_extern _p_171_plt_Microsoft_Maui_Graphics_System_Text_RegularExpressions_Regex_Replace_string_string_string_llvm
@@ -11965,7 +11965,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 7739
+.word 7723
 _p_172_plt_Microsoft_Maui_Graphics_string_memcpy_byte__byte__int_llvm:
 	.globl _p_172_plt_Microsoft_Maui_Graphics_string_memcpy_byte__byte__int_llvm
 .private_extern _p_172_plt_Microsoft_Maui_Graphics_string_memcpy_byte__byte__int_llvm
@@ -11976,7 +11976,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 7744
+.word 7728
 _p_173_plt_Microsoft_Maui_Graphics_string_Split_char___System_StringSplitOptions_llvm:
 	.globl _p_173_plt_Microsoft_Maui_Graphics_string_Split_char___System_StringSplitOptions_llvm
 .private_extern _p_173_plt_Microsoft_Maui_Graphics_string_Split_char___System_StringSplitOptions_llvm
@@ -11987,7 +11987,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 7749
+.word 7733
 _p_174_plt_Microsoft_Maui_Graphics_char_IsLetter_char_llvm:
 	.globl _p_174_plt_Microsoft_Maui_Graphics_char_IsLetter_char_llvm
 .private_extern _p_174_plt_Microsoft_Maui_Graphics_char_IsLetter_char_llvm
@@ -11998,7 +11998,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 7754
+.word 7738
 _p_175_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Push_string_llvm:
 	.globl _p_175_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Push_string_llvm
 .private_extern _p_175_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Push_string_llvm
@@ -12009,7 +12009,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 7759
+.word 7743
 _p_176_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InvariantExtensions_ToInvariantString_char_llvm:
 	.globl _p_176_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InvariantExtensions_ToInvariantString_char_llvm
 .private_extern _p_176_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_InvariantExtensions_ToInvariantString_char_llvm
@@ -12020,7 +12020,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 7770
+.word 7754
 _p_177_plt_Microsoft_Maui_Graphics_string_Substring_int_llvm:
 	.globl _p_177_plt_Microsoft_Maui_Graphics_string_Substring_int_llvm
 .private_extern _p_177_plt_Microsoft_Maui_Graphics_string_Substring_int_llvm
@@ -12031,7 +12031,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 7773
+.word 7757
 _p_178_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_IsCommand_char_llvm:
 	.globl _p_178_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_IsCommand_char_llvm
 .private_extern _p_178_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_IsCommand_char_llvm
@@ -12042,7 +12042,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 7778
+.word 7762
 _p_179_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HandleCommand_string_llvm:
 	.globl _p_179_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HandleCommand_string_llvm
 .private_extern _p_179_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HandleCommand_string_llvm
@@ -12053,7 +12053,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 7781
+.word 7765
 _p_180_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Closed_llvm:
 	.globl _p_180_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Closed_llvm
 .private_extern _p_180_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Closed_llvm
@@ -12064,7 +12064,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 7784
+.word 7768
 _p_181_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Close_llvm:
 	.globl _p_181_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Close_llvm
 .private_extern _p_181_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Close_llvm
@@ -12075,7 +12075,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 7787
+.word 7771
 _p_182_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HandleCommand_char_System_Nullable_1_char_llvm:
 	.globl _p_182_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HandleCommand_char_System_Nullable_1_char_llvm
 .private_extern _p_182_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HandleCommand_char_System_Nullable_1_char_llvm
@@ -12086,7 +12086,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 7790
+.word 7774
 _p_183_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Peek_llvm:
 	.globl _p_183_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Peek_llvm
 .private_extern _p_183_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_string_Peek_llvm
@@ -12097,7 +12097,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 7793
+.word 7777
 _p_184_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ClosePath_llvm:
 	.globl _p_184_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ClosePath_llvm
 .private_extern _p_184_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ClosePath_llvm
@@ -12108,7 +12108,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 7804
+.word 7788
 _p_185_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_VerticalLineTo_bool_llvm:
 	.globl _p_185_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_VerticalLineTo_bool_llvm
 .private_extern _p_185_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_VerticalLineTo_bool_llvm
@@ -12119,7 +12119,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 7807
+.word 7791
 _p_186_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HorizontalLineTo_bool_llvm:
 	.globl _p_186_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HorizontalLineTo_bool_llvm
 .private_extern _p_186_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_HorizontalLineTo_bool_llvm
@@ -12130,7 +12130,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 7810
+.word 7794
 _p_187_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ArcTo_bool_llvm:
 	.globl _p_187_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ArcTo_bool_llvm
 .private_extern _p_187_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ArcTo_bool_llvm
@@ -12141,7 +12141,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 7813
+.word 7797
 _p_188_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_SmoothCurveTo_bool_llvm:
 	.globl _p_188_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_SmoothCurveTo_bool_llvm
 .private_extern _p_188_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_SmoothCurveTo_bool_llvm
@@ -12152,7 +12152,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 7816
+.word 7800
 _p_189_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_CurveTo_bool_llvm:
 	.globl _p_189_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_CurveTo_bool_llvm
 .private_extern _p_189_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_CurveTo_bool_llvm
@@ -12163,7 +12163,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 7819
+.word 7803
 _p_190_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ReflectiveQuadTo_bool_System_Nullable_1_char_llvm:
 	.globl _p_190_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ReflectiveQuadTo_bool_System_Nullable_1_char_llvm
 .private_extern _p_190_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_ReflectiveQuadTo_bool_System_Nullable_1_char_llvm
@@ -12174,7 +12174,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 7822
+.word 7806
 _p_191_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_QuadTo_bool_llvm:
 	.globl _p_191_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_QuadTo_bool_llvm
 .private_extern _p_191_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_QuadTo_bool_llvm
@@ -12185,7 +12185,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 7825
+.word 7809
 _p_192_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_LineTo_bool_llvm:
 	.globl _p_192_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_LineTo_bool_llvm
 .private_extern _p_192_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_LineTo_bool_llvm
@@ -12196,7 +12196,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 7828
+.word 7812
 _p_193_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_MoveTo_bool_llvm:
 	.globl _p_193_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_MoveTo_bool_llvm
 .private_extern _p_193_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_MoveTo_bool_llvm
@@ -12207,7 +12207,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 7831
+.word 7815
 _p_194_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_get_NextValue_llvm:
 	.globl _p_194_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_get_NextValue_llvm
 .private_extern _p_194_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_get_NextValue_llvm
@@ -12218,7 +12218,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 7834
+.word 7818
 _p_195_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewPoint_single_single_bool_bool_llvm:
 	.globl _p_195_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewPoint_single_single_bool_bool_llvm
 .private_extern _p_195_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewPoint_single_single_bool_bool_llvm
@@ -12229,7 +12229,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 7837
+.word 7821
 _p_196_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_FirstPoint_llvm:
 	.globl _p_196_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_FirstPoint_llvm
 .private_extern _p_196_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_FirstPoint_llvm
@@ -12240,7 +12240,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 7840
+.word 7824
 _p_197_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_LastPoint_llvm:
 	.globl _p_197_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_LastPoint_llvm
 .private_extern _p_197_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_LastPoint_llvm
@@ -12251,7 +12251,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 7843
+.word 7827
 _p_198_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Equals_object_llvm:
 	.globl _p_198_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Equals_object_llvm
 .private_extern _p_198_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Equals_object_llvm
@@ -12262,7 +12262,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 7846
+.word 7830
 _p_199_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewHorizontalPoint_single_bool_bool_llvm:
 	.globl _p_199_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewHorizontalPoint_single_bool_bool_llvm
 .private_extern _p_199_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewHorizontalPoint_single_bool_bool_llvm
@@ -12273,7 +12273,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 7849
+.word 7833
 _p_200_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewVerticalPoint_single_bool_bool_llvm:
 	.globl _p_200_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewVerticalPoint_single_bool_bool_llvm
 .private_extern _p_200_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_NewVerticalPoint_single_bool_bool_llvm
@@ -12284,7 +12284,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 7852
+.word 7836
 _p_201_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_CurveTo_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_201_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_CurveTo_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_201_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_CurveTo_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
@@ -12295,7 +12295,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 7855
+.word 7839
 _p_202_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadTo_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_202_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadTo_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_202_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadTo_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
@@ -12306,7 +12306,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 7858
+.word 7842
 _p_203_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Offset_single_single_llvm:
 	.globl _p_203_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Offset_single_single_llvm
 .private_extern _p_203_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Offset_single_single_llvm
@@ -12317,7 +12317,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 7861
+.word 7845
 _p_204_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_GetOppositePoint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_204_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_GetOppositePoint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_204_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_GetOppositePoint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
@@ -12328,7 +12328,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 7864
+.word 7848
 _p_205_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_get_NextBoolValue_llvm:
 	.globl _p_205_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_get_NextBoolValue_llvm
 .private_extern _p_205_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathBuilder_get_NextBoolValue_llvm
@@ -12339,7 +12339,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 7867
+.word 7851
 _p_206_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_206_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_206_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_Microsoft_Maui_Graphics_PointF_llvm
@@ -12350,7 +12350,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 7870
+.word 7854
 _p_207_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_SVGArcTo_Microsoft_Maui_Graphics_PathF_single_single_single_bool_bool_single_single_single_single_llvm:
 	.globl _p_207_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_SVGArcTo_Microsoft_Maui_Graphics_PathF_single_single_single_bool_bool_single_single_single_single_llvm
 .private_extern _p_207_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathArcExtensions_SVGArcTo_Microsoft_Maui_Graphics_PathF_single_single_single_bool_bool_single_single_single_single_llvm
@@ -12361,7 +12361,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 7873
+.word 7857
 _p_208_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetPointsForSegment_int_llvm:
 	.globl _p_208_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetPointsForSegment_int_llvm
 .private_extern _p_208_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetPointsForSegment_int_llvm
@@ -12372,7 +12372,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 7876
+.word 7860
 _p_209_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
 	.globl _p_209_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
 .private_extern _p_209_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
@@ -12383,7 +12383,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 7879
+.word 7863
 _p_210_plt_Microsoft_Maui_Graphics_System_IO_StringWriter__ctor_llvm:
 	.globl _p_210_plt_Microsoft_Maui_Graphics_System_IO_StringWriter__ctor_llvm
 .private_extern _p_210_plt_Microsoft_Maui_Graphics_System_IO_StringWriter__ctor_llvm
@@ -12394,7 +12394,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 7884
+.word 7868
 _p_211_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathExtensions_WritePoint_System_IO_StringWriter_Microsoft_Maui_Graphics_PointF_single_llvm:
 	.globl _p_211_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathExtensions_WritePoint_System_IO_StringWriter_Microsoft_Maui_Graphics_PointF_single_llvm
 .private_extern _p_211_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathExtensions_WritePoint_System_IO_StringWriter_Microsoft_Maui_Graphics_PointF_single_llvm
@@ -12405,7 +12405,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 7889
+.word 7873
 _p_212_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_Microsoft_Maui_Graphics_PathF_llvm:
 	.globl _p_212_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_Microsoft_Maui_Graphics_PathF_llvm
 .private_extern _p_212_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_Microsoft_Maui_Graphics_PathF_llvm
@@ -12416,7 +12416,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 7892
+.word 7876
 _p_213_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Transform_System_Numerics_Matrix3x2_llvm:
 	.globl _p_213_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Transform_System_Numerics_Matrix3x2_llvm
 .private_extern _p_213_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Transform_System_Numerics_Matrix3x2_llvm
@@ -12427,7 +12427,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 7895
+.word 7879
 _p_214_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm:
 	.globl _p_214_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm
 .private_extern _p_214_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm
@@ -12438,7 +12438,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 7898
+.word 7882
 _p_215_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Graphics_PathOperation_MoveNext_llvm:
 	.globl _p_215_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Graphics_PathOperation_MoveNext_llvm
 .private_extern _p_215_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Graphics_PathOperation_MoveNext_llvm
@@ -12449,7 +12449,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 7909
+.word 7893
 _p_216_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_RemoveAt_int_llvm:
 	.globl _p_216_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_RemoveAt_int_llvm
 .private_extern _p_216_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_RemoveAt_int_llvm
@@ -12460,7 +12460,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 7920
+.word 7904
 _p_217_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_AddWithResize_bool_llvm:
 	.globl _p_217_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_AddWithResize_bool_llvm
 .private_extern _p_217_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_AddWithResize_bool_llvm
@@ -12471,7 +12471,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 7935
+.word 7919
 _p_218_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_AddRange_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PathOperation_llvm:
 	.globl _p_218_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_AddRange_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PathOperation_llvm
 .private_extern _p_218_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_AddRange_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PathOperation_llvm
@@ -12482,7 +12482,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 7952
+.word 7936
 _p_219_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF__ctor_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_219_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF__ctor_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_219_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF__ctor_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PointF_llvm
@@ -12493,7 +12493,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 7963
+.word 7947
 _p_220_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_AddRange_System_Collections_Generic_IEnumerable_1_single_llvm:
 	.globl _p_220_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_AddRange_System_Collections_Generic_IEnumerable_1_single_llvm
 .private_extern _p_220_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_AddRange_System_Collections_Generic_IEnumerable_1_single_llvm
@@ -12504,7 +12504,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 7974
+.word 7958
 _p_221_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_AddRange_System_Collections_Generic_IEnumerable_1_bool_llvm:
 	.globl _p_221_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_AddRange_System_Collections_Generic_IEnumerable_1_bool_llvm
 .private_extern _p_221_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_AddRange_System_Collections_Generic_IEnumerable_1_bool_llvm
@@ -12515,7 +12515,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 7985
+.word 7969
 _p_222_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool__ctor_System_Collections_Generic_IEnumerable_1_bool_llvm:
 	.globl _p_222_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool__ctor_System_Collections_Generic_IEnumerable_1_bool_llvm
 .private_extern _p_222_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool__ctor_System_Collections_Generic_IEnumerable_1_bool_llvm
@@ -12526,7 +12526,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 7996
+.word 7980
 _p_223_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_MoveTo_single_single_llvm:
 	.globl _p_223_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_MoveTo_single_single_llvm
 .private_extern _p_223_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_MoveTo_single_single_llvm
@@ -12537,7 +12537,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 8007
+.word 7991
 _p_224_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21__ctor_int_llvm:
 	.globl _p_224_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21__ctor_int_llvm
 .private_extern _p_224_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21__ctor_int_llvm
@@ -12548,7 +12548,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 8010
+.word 7994
 _p_225_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23__ctor_int_llvm:
 	.globl _p_225_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23__ctor_int_llvm
 .private_extern _p_225_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23__ctor_int_llvm
@@ -12559,7 +12559,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 8013
+.word 7997
 _p_226_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_set_Item_int_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_226_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_set_Item_int_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_226_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_set_Item_int_Microsoft_Maui_Graphics_PointF_llvm
@@ -12570,7 +12570,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 8016
+.word 8000
 _p_227_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Invalidate_llvm:
 	.globl _p_227_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Invalidate_llvm
 .private_extern _p_227_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_Invalidate_llvm
@@ -12581,7 +12581,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 8027
+.word 8011
 _p_228_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_set_Item_int_single_llvm:
 	.globl _p_228_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_set_Item_int_single_llvm
 .private_extern _p_228_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_set_Item_int_single_llvm
@@ -12592,7 +12592,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 8030
+.word 8014
 _p_229_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_set_Item_int_bool_llvm:
 	.globl _p_229_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_set_Item_int_bool_llvm
 .private_extern _p_229_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_set_Item_int_bool_llvm
@@ -12603,7 +12603,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 8041
+.word 8025
 _p_230_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_AddWithResize_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_230_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_AddWithResize_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_230_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_AddWithResize_Microsoft_Maui_Graphics_PointF_llvm
@@ -12614,7 +12614,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 8055
+.word 8039
 _p_231_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_AddWithResize_Microsoft_Maui_Graphics_PathOperation_llvm:
 	.globl _p_231_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_AddWithResize_Microsoft_Maui_Graphics_PathOperation_llvm
 .private_extern _p_231_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_AddWithResize_Microsoft_Maui_Graphics_PathOperation_llvm
@@ -12625,7 +12625,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 8075
+.word 8059
 _p_232_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_RemoveAt_int_llvm:
 	.globl _p_232_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_RemoveAt_int_llvm
 .private_extern _p_232_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_RemoveAt_int_llvm
@@ -12636,7 +12636,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 8092
+.word 8076
 _p_233_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentPointIndex_int_llvm:
 	.globl _p_233_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentPointIndex_int_llvm
 .private_extern _p_233_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentPointIndex_int_llvm
@@ -12647,7 +12647,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 8103
+.word 8087
 _p_234_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_Insert_int_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_234_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_Insert_int_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_234_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_Insert_int_Microsoft_Maui_Graphics_PointF_llvm
@@ -12658,7 +12658,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 8106
+.word 8090
 _p_235_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_Insert_int_Microsoft_Maui_Graphics_PathOperation_llvm:
 	.globl _p_235_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_Insert_int_Microsoft_Maui_Graphics_PathOperation_llvm
 .private_extern _p_235_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_Insert_int_Microsoft_Maui_Graphics_PathOperation_llvm
@@ -12669,7 +12669,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 8117
+.word 8101
 _p_236_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AddArc_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_single_bool_llvm:
 	.globl _p_236_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AddArc_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_single_bool_llvm
 .private_extern _p_236_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AddArc_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_single_bool_llvm
@@ -12680,7 +12680,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 8128
+.word 8112
 _p_237_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_AddWithResize_single_llvm:
 	.globl _p_237_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_AddWithResize_single_llvm
 .private_extern _p_237_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_AddWithResize_single_llvm
@@ -12691,7 +12691,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 8136
+.word 8120
 _p_238_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_RemoveRange_int_int_llvm:
 	.globl _p_238_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_RemoveRange_int_int_llvm
 .private_extern _p_238_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_RemoveRange_int_int_llvm
@@ -12702,7 +12702,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 8153
+.word 8137
 _p_239_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_RemoveRange_int_int_llvm:
 	.globl _p_239_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_RemoveRange_int_int_llvm
 .private_extern _p_239_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_RemoveRange_int_int_llvm
@@ -12713,7 +12713,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 8164
+.word 8148
 _p_240_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_RemoveRange_int_int_llvm:
 	.globl _p_240_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_RemoveRange_int_int_llvm
 .private_extern _p_240_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_RemoveRange_int_int_llvm
@@ -12724,7 +12724,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 8175
+.word 8159
 _p_241_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_RemoveRange_int_int_llvm:
 	.globl _p_241_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_RemoveRange_int_int_llvm
 .private_extern _p_241_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_RemoveRange_int_int_llvm
@@ -12735,7 +12735,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 8186
+.word 8170
 _p_242_plt_Microsoft_Maui_Graphics_System_Array_Clear_System_Array_int_int_llvm:
 	.globl _p_242_plt_Microsoft_Maui_Graphics_System_Array_Clear_System_Array_int_int_llvm
 .private_extern _p_242_plt_Microsoft_Maui_Graphics_System_Array_Clear_System_Array_int_int_llvm
@@ -12746,7 +12746,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 8197
+.word 8181
 _p_243_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_RemoveAllAfter_int_int_int_int_llvm:
 	.globl _p_243_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_RemoveAllAfter_int_int_int_int_llvm
 .private_extern _p_243_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_RemoveAllAfter_int_int_int_int_llvm
@@ -12757,7 +12757,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 8202
+.word 8186
 _p_244_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_RemoveAt_int_llvm:
 	.globl _p_244_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_RemoveAt_int_llvm
 .private_extern _p_244_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_RemoveAt_int_llvm
@@ -12768,7 +12768,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 8205
+.word 8189
 _p_245_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_RemoveAt_int_llvm:
 	.globl _p_245_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_RemoveAt_int_llvm
 .private_extern _p_245_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_RemoveAt_int_llvm
@@ -12779,7 +12779,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 8216
+.word 8200
 _p_246_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetRotatedPoint_int_Microsoft_Maui_Graphics_PointF_single_llvm:
 	.globl _p_246_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetRotatedPoint_int_Microsoft_Maui_Graphics_PointF_single_llvm
 .private_extern _p_246_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetRotatedPoint_int_Microsoft_Maui_Graphics_PointF_single_llvm
@@ -12790,7 +12790,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 8227
+.word 8211
 _p_247_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_CurveTo_single_single_single_single_single_single_llvm:
 	.globl _p_247_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_CurveTo_single_single_single_single_single_single_llvm
 .private_extern _p_247_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_CurveTo_single_single_single_single_single_single_llvm
@@ -12801,7 +12801,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 8230
+.word 8214
 _p_248_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_LineTo_single_single_llvm:
 	.globl _p_248_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_LineTo_single_single_llvm
 .private_extern _p_248_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_LineTo_single_single_llvm
@@ -12812,7 +12812,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 8233
+.word 8217
 _p_249_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_RotatePoint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_llvm:
 	.globl _p_249_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_RotatePoint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_llvm
 .private_extern _p_249_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_RotatePoint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_llvm
@@ -12823,7 +12823,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 8236
+.word 8220
 _p_250_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathF_AddWithResize_Microsoft_Maui_Graphics_PathF_llvm:
 	.globl _p_250_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathF_AddWithResize_Microsoft_Maui_Graphics_PathF_llvm
 .private_extern _p_250_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathF_AddWithResize_Microsoft_Maui_Graphics_PathF_llvm
@@ -12834,7 +12834,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 8242
+.word 8226
 _p_251_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_Reverse_llvm:
 	.globl _p_251_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_Reverse_llvm
 .private_extern _p_251_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_Reverse_llvm
@@ -12845,7 +12845,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 8259
+.word 8243
 _p_252_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single__ctor_System_Collections_Generic_IEnumerable_1_single_llvm:
 	.globl _p_252_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single__ctor_System_Collections_Generic_IEnumerable_1_single_llvm
 .private_extern _p_252_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single__ctor_System_Collections_Generic_IEnumerable_1_single_llvm
@@ -12856,7 +12856,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 8270
+.word 8254
 _p_253_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_Reverse_llvm:
 	.globl _p_253_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_Reverse_llvm
 .private_extern _p_253_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_single_Reverse_llvm
@@ -12867,7 +12867,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 8281
+.word 8265
 _p_254_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_Reverse_llvm:
 	.globl _p_254_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_Reverse_llvm
 .private_extern _p_254_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_bool_Reverse_llvm
@@ -12878,7 +12878,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 8292
+.word 8276
 _p_255_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation__ctor_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PathOperation_llvm:
 	.globl _p_255_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation__ctor_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PathOperation_llvm
 .private_extern _p_255_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation__ctor_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_PathOperation_llvm
@@ -12889,7 +12889,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 8303
+.word 8287
 _p_256_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_Reverse_llvm:
 	.globl _p_256_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_Reverse_llvm
 .private_extern _p_256_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_Reverse_llvm
@@ -12900,7 +12900,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 8314
+.word 8298
 _p_257_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_set_Item_int_Microsoft_Maui_Graphics_PathOperation_llvm:
 	.globl _p_257_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_set_Item_int_Microsoft_Maui_Graphics_PathOperation_llvm
 .private_extern _p_257_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_set_Item_int_Microsoft_Maui_Graphics_PathOperation_llvm
@@ -12911,7 +12911,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 8325
+.word 8309
 _p_258_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_System_Collections_Generic_List_1_single_System_Collections_Generic_List_1_bool_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_int_llvm:
 	.globl _p_258_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_System_Collections_Generic_List_1_single_System_Collections_Generic_List_1_bool_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_int_llvm
 .private_extern _p_258_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__ctor_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_System_Collections_Generic_List_1_single_System_Collections_Generic_List_1_bool_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PathOperation_int_llvm
@@ -12922,7 +12922,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 8336
+.word 8320
 _p_259_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendEllipse_single_single_single_single_llvm:
 	.globl _p_259_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendEllipse_single_single_single_single_llvm
 .private_extern _p_259_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendEllipse_single_single_single_single_llvm
@@ -12933,7 +12933,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 8339
+.word 8323
 _p_260_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendCircle_single_single_single_llvm:
 	.globl _p_260_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendCircle_single_single_single_llvm
 .private_extern _p_260_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendCircle_single_single_single_llvm
@@ -12944,7 +12944,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 8342
+.word 8326
 _p_261_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRectangle_single_single_single_single_bool_llvm:
 	.globl _p_261_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRectangle_single_single_single_single_bool_llvm
 .private_extern _p_261_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRectangle_single_single_single_single_bool_llvm
@@ -12955,7 +12955,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 8345
+.word 8329
 _p_262_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_single_single_single_single_single_bool_llvm:
 	.globl _p_262_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_single_single_single_single_single_bool_llvm
 .private_extern _p_262_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_AppendRoundedRectangle_single_single_single_single_single_bool_llvm
@@ -12966,7 +12966,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 8348
+.word 8332
 _p_263_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_ClampCornerRadius_single_single_single_llvm:
 	.globl _p_263_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_ClampCornerRadius_single_single_single_llvm
 .private_extern _p_263_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_ClampCornerRadius_single_single_single_llvm
@@ -12977,7 +12977,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 8351
+.word 8335
 _p_264_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_ReleaseNative_llvm:
 	.globl _p_264_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_ReleaseNative_llvm
 .private_extern _p_264_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_ReleaseNative_llvm
@@ -12988,7 +12988,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 8354
+.word 8338
 _p_265_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Item_int_llvm:
 	.globl _p_265_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Item_int_llvm
 .private_extern _p_265_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Item_int_llvm
@@ -12999,7 +12999,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 8357
+.word 8341
 _p_266_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Equals_object_single_llvm:
 	.globl _p_266_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Equals_object_single_llvm
 .private_extern _p_266_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_Equals_object_single_llvm
@@ -13010,7 +13010,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 8360
+.word 8344
 _p_267_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetArcAngle_int_llvm:
 	.globl _p_267_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetArcAngle_int_llvm
 .private_extern _p_267_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetArcAngle_int_llvm
@@ -13021,7 +13021,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 8363
+.word 8347
 _p_268_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_get_PathBoundingBox_llvm:
 	.globl _p_268_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_get_PathBoundingBox_llvm
 .private_extern _p_268_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_get_PathBoundingBox_llvm
@@ -13032,7 +13032,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 8366
+.word 8350
 _p_269_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsRectangleF_CoreGraphics_CGRect_llvm:
 	.globl _p_269_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsRectangleF_CoreGraphics_CGRect_llvm
 .private_extern _p_269_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsRectangleF_CoreGraphics_CGRect_llvm
@@ -13043,7 +13043,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 8371
+.word 8355
 _p_270_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_llvm:
 	.globl _p_270_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_llvm
 .private_extern _p_270_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_llvm
@@ -13054,7 +13054,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 8374
+.word 8358
 _p_271_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_set_PlatformPath_object_llvm:
 	.globl _p_271_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_set_PlatformPath_object_llvm
 .private_extern _p_271_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_set_PlatformPath_object_llvm
@@ -13065,7 +13065,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 8377
+.word 8361
 _p_272_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetFlattenedPath_single_bool_llvm:
 	.globl _p_272_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetFlattenedPath_single_bool_llvm
 .private_extern _p_272_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetFlattenedPath_single_bool_llvm
@@ -13076,7 +13076,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 8380
+.word 8364
 _p_273_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_0_llvm:
 	.globl _p_273_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_0_llvm
 .private_extern _p_273_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_0_llvm
@@ -13087,7 +13087,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 8383
+.word 8367
 _p_274_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadToCubic_int_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_274_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadToCubic_int_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_274_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_QuadToCubic_int_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_llvm
@@ -13098,7 +13098,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 8386
+.word 8370
 _p_275_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_FlattenCubicSegment_int_double_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_275_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_FlattenCubicSegment_int_double_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_275_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_FlattenCubicSegment_int_double_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_llvm
@@ -13109,7 +13109,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 8389
+.word 8373
 _p_276_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm:
 	.globl _p_276_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm
 .private_extern _p_276_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm
@@ -13120,7 +13120,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 8392
+.word 8376
 _p_277_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Graphics_PointF_MoveNext_llvm:
 	.globl _p_277_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Graphics_PointF_MoveNext_llvm
 .private_extern _p_277_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Enumerator_Microsoft_Maui_Graphics_PointF_MoveNext_llvm
@@ -13131,7 +13131,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 8403
+.word 8387
 _p_278_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_FlattenArc_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_single_bool_single_llvm:
 	.globl _p_278_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_FlattenArc_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_single_bool_single_llvm
 .private_extern _p_278_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_FlattenArc_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_single_single_bool_single_llvm
@@ -13142,7 +13142,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 8414
+.word 8398
 _p_279_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Points_llvm:
 	.globl _p_279_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Points_llvm
 .private_extern _p_279_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_Points_llvm
@@ -13153,7 +13153,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 8417
+.word 8401
 _p_280_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener__ctor_single_single_single_single_single_single_bool_llvm:
 	.globl _p_280_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener__ctor_single_single_single_single_single_single_bool_llvm
 .private_extern _p_280_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener__ctor_single_single_single_single_single_single_bool_llvm
@@ -13164,7 +13164,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 8420
+.word 8404
 _p_281_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_CreateFlattenedPath_single_llvm:
 	.globl _p_281_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_CreateFlattenedPath_single_llvm
 .private_extern _p_281_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ArcFlattener_CreateFlattenedPath_single_llvm
@@ -13175,7 +13175,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 8422
+.word 8406
 _p_282_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_DeCasteljau_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_int_single_llvm:
 	.globl _p_282_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_DeCasteljau_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_int_single_llvm
 .private_extern _p_282_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_DeCasteljau_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_PointF_int_single_llvm
@@ -13186,7 +13186,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 8424
+.word 8408
 _p_283_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PatternPaint_set_Pattern_Microsoft_Maui_Graphics_IPattern_llvm:
 	.globl _p_283_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PatternPaint_set_Pattern_Microsoft_Maui_Graphics_IPattern_llvm
 .private_extern _p_283_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PatternPaint_set_Pattern_Microsoft_Maui_Graphics_IPattern_llvm
@@ -13197,7 +13197,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 8427
+.word 8411
 _p_284_plt_Microsoft_Maui_Graphics_System_Threading_Thread_get_CurrentThread_llvm:
 	.globl _p_284_plt_Microsoft_Maui_Graphics_System_Threading_Thread_get_CurrentThread_llvm
 .private_extern _p_284_plt_Microsoft_Maui_Graphics_System_Threading_Thread_get_CurrentThread_llvm
@@ -13208,7 +13208,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 8430
+.word 8414
 _p_285_plt_Microsoft_Maui_Graphics_System_Threading_Thread_get_CurrentCulture_llvm:
 	.globl _p_285_plt_Microsoft_Maui_Graphics_System_Threading_Thread_get_CurrentCulture_llvm
 .private_extern _p_285_plt_Microsoft_Maui_Graphics_System_Threading_Thread_get_CurrentCulture_llvm
@@ -13219,7 +13219,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 8435
+.word 8419
 _p_286_plt_Microsoft_Maui_Graphics_System_Globalization_CultureInfo_get_Name_llvm:
 	.globl _p_286_plt_Microsoft_Maui_Graphics_System_Globalization_CultureInfo_get_Name_llvm
 .private_extern _p_286_plt_Microsoft_Maui_Graphics_System_Globalization_CultureInfo_get_Name_llvm
@@ -13230,7 +13230,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 8440
+.word 8424
 _p_287_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__llvm:
 	.globl _p_287_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__llvm
 .private_extern _p_287_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__llvm
@@ -13241,7 +13241,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 8445
+.word 8429
 _p_288_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions_AsBytes_Microsoft_Maui_Graphics_IPdfPage_llvm:
 	.globl _p_288_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions_AsBytes_Microsoft_Maui_Graphics_IPdfPage_llvm
 .private_extern _p_288_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions_AsBytes_Microsoft_Maui_Graphics_IPdfPage_llvm
@@ -13252,7 +13252,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 8461
+.word 8445
 _p_289_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_DrawingCommand_ToArray_llvm:
 	.globl _p_289_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_DrawingCommand_ToArray_llvm
 .private_extern _p_289_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_DrawingCommand_ToArray_llvm
@@ -13263,7 +13263,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 8464
+.word 8448
 _p_290_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_StandardPicture__ctor_single_single_single_single_Microsoft_Maui_Graphics_DrawingCommand___string_llvm:
 	.globl _p_290_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_StandardPicture__ctor_single_single_single_single_Microsoft_Maui_Graphics_DrawingCommand___string_llvm
 .private_extern _p_290_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_StandardPicture__ctor_single_single_single_single_Microsoft_Maui_Graphics_DrawingCommand___string_llvm
@@ -13274,7 +13274,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 8475
+.word 8459
 _p_291_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_DrawingCommand_AddWithResize_Microsoft_Maui_Graphics_DrawingCommand_llvm:
 	.globl _p_291_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_DrawingCommand_AddWithResize_Microsoft_Maui_Graphics_DrawingCommand_llvm
 .private_extern _p_291_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_DrawingCommand_AddWithResize_Microsoft_Maui_Graphics_DrawingCommand_llvm
@@ -13285,7 +13285,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 8481
+.word 8465
 _p_292_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyTo_System_IO_Stream_llvm:
 	.globl _p_292_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyTo_System_IO_Stream_llvm
 .private_extern _p_292_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyTo_System_IO_Stream_llvm
@@ -13296,7 +13296,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 8498
+.word 8482
 _p_293_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__llvm:
 	.globl _p_293_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__llvm
 .private_extern _p_293_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__llvm
@@ -13307,7 +13307,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 8503
+.word 8487
 _p_294_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_InitializeTaskAsPromise_llvm:
 	.globl _p_294_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_InitializeTaskAsPromise_llvm
 .private_extern _p_294_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_InitializeTaskAsPromise_llvm
@@ -13318,7 +13318,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 8519
+.word 8503
 _p_295_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__llvm:
 	.globl _p_295_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__llvm
 .private_extern _p_295_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__llvm
@@ -13329,7 +13329,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 8536
+.word 8520
 _p_296_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions_SaveAsBytes_Microsoft_Maui_Graphics_IPictureWriter_Microsoft_Maui_Graphics_IPicture_llvm:
 	.globl _p_296_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions_SaveAsBytes_Microsoft_Maui_Graphics_IPictureWriter_Microsoft_Maui_Graphics_IPicture_llvm
 .private_extern _p_296_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions_SaveAsBytes_Microsoft_Maui_Graphics_IPictureWriter_Microsoft_Maui_Graphics_IPicture_llvm
@@ -13340,7 +13340,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 8552
+.word 8536
 _p_297_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_single_single_single_single_llvm:
 	.globl _p_297_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_single_single_single_single_llvm
 .private_extern _p_297_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_single_single_single_single_llvm
@@ -13351,7 +13351,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 8555
+.word 8539
 _p_298_plt_Microsoft_Maui_Graphics_string_Format_string_object___llvm:
 	.globl _p_298_plt_Microsoft_Maui_Graphics_string_Format_string_object___llvm
 .private_extern _p_298_plt_Microsoft_Maui_Graphics_string_Format_string_object___llvm
@@ -13362,7 +13362,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 8560
+.word 8544
 _p_299_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Equals_Microsoft_Maui_Graphics_RectF_llvm:
 	.globl _p_299_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Equals_Microsoft_Maui_Graphics_RectF_llvm
 .private_extern _p_299_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Equals_Microsoft_Maui_Graphics_RectF_llvm
@@ -13373,7 +13373,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 8565
+.word 8549
 _p_300_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_op_Equality_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm:
 	.globl _p_300_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_op_Equality_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm
 .private_extern _p_300_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_op_Equality_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm
@@ -13384,7 +13384,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 8568
+.word 8552
 _p_301_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Contains_single_single_llvm:
 	.globl _p_301_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Contains_single_single_llvm
 .private_extern _p_301_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Contains_single_single_llvm
@@ -13395,7 +13395,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 8571
+.word 8555
 _p_302_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Union_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm:
 	.globl _p_302_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Union_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm
 .private_extern _p_302_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Union_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm
@@ -13406,7 +13406,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 8574
+.word 8558
 _p_303_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_FromLTRB_single_single_single_single_llvm:
 	.globl _p_303_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_FromLTRB_single_single_single_single_llvm
 .private_extern _p_303_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_FromLTRB_single_single_single_single_llvm
@@ -13417,7 +13417,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 8577
+.word 8561
 _p_304_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Intersect_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm:
 	.globl _p_304_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Intersect_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm
 .private_extern _p_304_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Intersect_Microsoft_Maui_Graphics_RectF_Microsoft_Maui_Graphics_RectF_llvm
@@ -13428,7 +13428,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 8580
+.word 8564
 _p_305_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Inflate_single_single_llvm:
 	.globl _p_305_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Inflate_single_single_llvm
 .private_extern _p_305_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Inflate_single_single_llvm
@@ -13439,7 +13439,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 8583
+.word 8567
 _p_306_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Offset_single_single_llvm:
 	.globl _p_306_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Offset_single_single_llvm
 .private_extern _p_306_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_Offset_single_single_llvm
@@ -13450,7 +13450,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 8586
+.word 8570
 _p_307_plt_Microsoft_Maui_Graphics_System_MathF_Round_single_llvm:
 	.globl _p_307_plt_Microsoft_Maui_Graphics_System_MathF_Round_single_llvm
 .private_extern _p_307_plt_Microsoft_Maui_Graphics_System_MathF_Round_single_llvm
@@ -13461,7 +13461,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 8589
+.word 8573
 _p_308_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect__ctor_double_double_double_double_llvm:
 	.globl _p_308_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect__ctor_double_double_double_double_llvm
 .private_extern _p_308_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect__ctor_double_double_double_double_llvm
@@ -13472,7 +13472,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 8594
+.word 8578
 _p_309_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_double_double_double_double_llvm:
 	.globl _p_309_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_double_double_double_double_llvm
 .private_extern _p_309_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_double_double_double_double_llvm
@@ -13483,7 +13483,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 8597
+.word 8581
 _p_310_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Equals_Microsoft_Maui_Graphics_Rect_llvm:
 	.globl _p_310_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Equals_Microsoft_Maui_Graphics_Rect_llvm
 .private_extern _p_310_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Equals_Microsoft_Maui_Graphics_Rect_llvm
@@ -13494,7 +13494,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 8602
+.word 8586
 _p_311_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_op_Equality_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm:
 	.globl _p_311_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_op_Equality_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm
 .private_extern _p_311_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_op_Equality_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm
@@ -13505,7 +13505,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 8605
+.word 8589
 _p_312_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Contains_double_double_llvm:
 	.globl _p_312_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Contains_double_double_llvm
 .private_extern _p_312_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Contains_double_double_llvm
@@ -13516,7 +13516,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 8608
+.word 8592
 _p_313_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Union_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm:
 	.globl _p_313_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Union_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm
 .private_extern _p_313_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Union_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm
@@ -13527,7 +13527,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 8611
+.word 8595
 _p_314_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_FromLTRB_double_double_double_double_llvm:
 	.globl _p_314_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_FromLTRB_double_double_double_double_llvm
 .private_extern _p_314_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_FromLTRB_double_double_double_double_llvm
@@ -13538,7 +13538,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 8614
+.word 8598
 _p_315_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Intersect_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm:
 	.globl _p_315_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Intersect_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm
 .private_extern _p_315_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Intersect_Microsoft_Maui_Graphics_Rect_Microsoft_Maui_Graphics_Rect_llvm
@@ -13549,7 +13549,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 8617
+.word 8601
 _p_316_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Inflate_double_double_llvm:
 	.globl _p_316_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Inflate_double_double_llvm
 .private_extern _p_316_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Inflate_double_double_llvm
@@ -13560,7 +13560,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 8620
+.word 8604
 _p_317_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Offset_double_double_llvm:
 	.globl _p_317_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Offset_double_double_llvm
 .private_extern _p_317_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_Offset_double_double_llvm
@@ -13571,7 +13571,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 8623
+.word 8607
 _p_318_plt_Microsoft_Maui_Graphics_System_Math_Round_double_llvm:
 	.globl _p_318_plt_Microsoft_Maui_Graphics_System_Math_Round_double_llvm
 .private_extern _p_318_plt_Microsoft_Maui_Graphics_System_Math_Round_double_llvm
@@ -13582,7 +13582,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 8626
+.word 8610
 _p_319_plt_Microsoft_Maui_Graphics_double_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm:
 	.globl _p_319_plt_Microsoft_Maui_Graphics_double_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
 .private_extern _p_319_plt_Microsoft_Maui_Graphics_double_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
@@ -13593,7 +13593,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 8631
+.word 8615
 _p_320_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_Equals_Microsoft_Maui_Graphics_Size_llvm:
 	.globl _p_320_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_Equals_Microsoft_Maui_Graphics_Size_llvm
 .private_extern _p_320_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_Equals_Microsoft_Maui_Graphics_Size_llvm
@@ -13604,7 +13604,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 8636
+.word 8620
 _p_321_plt_Microsoft_Maui_Graphics_string_Format_string_object_object_llvm:
 	.globl _p_321_plt_Microsoft_Maui_Graphics_string_Format_string_object_object_llvm
 .private_extern _p_321_plt_Microsoft_Maui_Graphics_string_Format_string_object_object_llvm
@@ -13615,7 +13615,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 8639
+.word 8623
 _p_322_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_Equals_Microsoft_Maui_Graphics_SizeF_llvm:
 	.globl _p_322_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_Equals_Microsoft_Maui_Graphics_SizeF_llvm
 .private_extern _p_322_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_Equals_Microsoft_Maui_Graphics_SizeF_llvm
@@ -13626,7 +13626,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 8644
+.word 8628
 _p_323_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_op_Equality_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
 	.globl _p_323_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_op_Equality_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
 .private_extern _p_323_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_op_Equality_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
@@ -13637,7 +13637,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 8647
+.word 8631
 _p_324_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_op_Equality_Microsoft_Maui_Graphics_Point_Microsoft_Maui_Graphics_Point_llvm:
 	.globl _p_324_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_op_Equality_Microsoft_Maui_Graphics_Point_Microsoft_Maui_Graphics_Point_llvm
 .private_extern _p_324_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_op_Equality_Microsoft_Maui_Graphics_Point_Microsoft_Maui_Graphics_Point_llvm
@@ -13648,7 +13648,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 8650
+.word 8634
 _p_325_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathExtensions_AsScaledPath_Microsoft_Maui_Graphics_PathF_single_single_llvm:
 	.globl _p_325_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathExtensions_AsScaledPath_Microsoft_Maui_Graphics_PathF_single_single_llvm
 .private_extern _p_325_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathExtensions_AsScaledPath_Microsoft_Maui_Graphics_PathF_single_single_llvm
@@ -13659,7 +13659,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 8653
+.word 8637
 _p_326_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Push_single_llvm:
 	.globl _p_326_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Push_single_llvm
 .private_extern _p_326_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Push_single_llvm
@@ -13670,7 +13670,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 8656
+.word 8640
 _p_327_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Clear_llvm:
 	.globl _p_327_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Clear_llvm
 .private_extern _p_327_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Clear_llvm
@@ -13681,7 +13681,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 8667
+.word 8651
 _p_328_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Pop_llvm:
 	.globl _p_328_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Pop_llvm
 .private_extern _p_328_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_single_Pop_llvm
@@ -13692,7 +13692,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 8678
+.word 8662
 _p_329_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
 	.globl _p_329_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
 .private_extern _p_329_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
@@ -13703,7 +13703,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 8689
+.word 8673
 _p_330_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextExtensions_CreateParagraphRun_Microsoft_Maui_Graphics_Text_IAttributedText_int_int_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm:
 	.globl _p_330_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextExtensions_CreateParagraphRun_Microsoft_Maui_Graphics_Text_IAttributedText_int_int_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm
 .private_extern _p_330_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextExtensions_CreateParagraphRun_Microsoft_Maui_Graphics_Text_IAttributedText_int_int_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm
@@ -13714,7 +13714,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 8701
+.word 8685
 _p_331_plt_Microsoft_Maui_Graphics_System_Linq_Enumerable_ToList_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_331_plt_Microsoft_Maui_Graphics_System_Linq_Enumerable_ToList_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_331_plt_Microsoft_Maui_Graphics_System_Linq_Enumerable_ToList_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13725,7 +13725,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 8704
+.word 8688
 _p_332_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedText_AddWithResize_Microsoft_Maui_Graphics_Text_IAttributedText_llvm:
 	.globl _p_332_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedText_AddWithResize_Microsoft_Maui_Graphics_Text_IAttributedText_llvm
 .private_extern _p_332_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedText_AddWithResize_Microsoft_Maui_Graphics_Text_IAttributedText_llvm
@@ -13736,7 +13736,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 8719
+.word 8703
 _p_333_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
 	.globl _p_333_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
 .private_extern _p_333_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
@@ -13747,7 +13747,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 8736
+.word 8720
 _p_334_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Intersects_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_int_llvm:
 	.globl _p_334_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Intersects_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_int_llvm
 .private_extern _p_334_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Intersects_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_int_llvm
@@ -13758,7 +13758,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 8741
+.word 8725
 _p_335_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_GetEnd_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_335_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_GetEnd_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_335_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_GetEnd_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13769,7 +13769,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 8744
+.word 8728
 _p_336_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_AttributedTextBlock_AddWithResize_Microsoft_Maui_Graphics_Text_AttributedTextBlock_llvm:
 	.globl _p_336_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_AttributedTextBlock_AddWithResize_Microsoft_Maui_Graphics_Text_AttributedTextBlock_llvm
 .private_extern _p_336_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_AttributedTextBlock_AddWithResize_Microsoft_Maui_Graphics_Text_AttributedTextBlock_llvm
@@ -13780,7 +13780,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 8750
+.word 8734
 _p_337_plt_Microsoft_Maui_Graphics_string_Substring_int_int_llvm:
 	.globl _p_337_plt_Microsoft_Maui_Graphics_string_Substring_int_int_llvm
 .private_extern _p_337_plt_Microsoft_Maui_Graphics_string_Substring_int_int_llvm
@@ -13791,7 +13791,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 8767
+.word 8751
 _p_338_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm:
 	.globl _p_338_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm
 .private_extern _p_338_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm
@@ -13802,7 +13802,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 8772
+.word 8756
 _p_339_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_Union_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm:
 	.globl _p_339_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_Union_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
 .private_extern _p_339_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_Union_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
@@ -13813,7 +13813,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 8784
+.word 8768
 _p_340_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_AddWithResize_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_340_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_AddWithResize_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_340_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_AddWithResize_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13824,7 +13824,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 8790
+.word 8774
 _p_341_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_RemoveAt_int_llvm:
 	.globl _p_341_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_RemoveAt_int_llvm
 .private_extern _p_341_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_RemoveAt_int_llvm
@@ -13835,7 +13835,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 8807
+.word 8791
 _p_342_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_set_Item_int_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_342_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_set_Item_int_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_342_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_set_Item_int_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13846,7 +13846,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 8818
+.word 8802
 _p_343_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Sort_System_Collections_Generic_IComparer_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_343_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Sort_System_Collections_Generic_IComparer_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_343_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Sort_System_Collections_Generic_IComparer_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13857,7 +13857,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 8829
+.word 8813
 _p_344_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_IntersectsExactly_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_344_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_IntersectsExactly_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_344_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_IntersectsExactly_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13868,7 +13868,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 8840
+.word 8824
 _p_345_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Intersects_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_345_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Intersects_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_345_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Intersects_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13879,7 +13879,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 8843
+.word 8827
 _p_346_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_CalculatedIntersections_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_346_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_CalculatedIntersections_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_346_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_CalculatedIntersections_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13890,7 +13890,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 8846
+.word 8830
 _p_347_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_InsertRange_int_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm:
 	.globl _p_347_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_InsertRange_int_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
 .private_extern _p_347_plt_Microsoft_Maui_Graphics_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_InsertRange_int_System_Collections_Generic_IEnumerable_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_llvm
@@ -13901,7 +13901,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 8849
+.word 8833
 _p_348_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextExtensions_OptimizeRuns_Microsoft_Maui_Graphics_Text_IAttributedText_llvm:
 	.globl _p_348_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextExtensions_OptimizeRuns_Microsoft_Maui_Graphics_Text_IAttributedText_llvm
 .private_extern _p_348_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextExtensions_OptimizeRuns_Microsoft_Maui_Graphics_Text_IAttributedText_llvm
@@ -13912,7 +13912,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 8860
+.word 8844
 _p_349_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm:
 	.globl _p_349_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
 .private_extern _p_349_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
@@ -13923,7 +13923,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 8863
+.word 8847
 _p_350_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm:
 	.globl _p_350_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
 .private_extern _p_350_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
@@ -13934,7 +13934,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 8866
+.word 8850
 _p_351_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetFloatAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_single_llvm:
 	.globl _p_351_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetFloatAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_single_llvm
 .private_extern _p_351_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetFloatAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_single_llvm
@@ -13945,7 +13945,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 8869
+.word 8853
 _p_352_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetFloatAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_single_single_llvm:
 	.globl _p_352_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetFloatAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_single_single_llvm
 .private_extern _p_352_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetFloatAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_single_single_llvm
@@ -13956,7 +13956,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 8872
+.word 8856
 _p_353_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetBoolAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_bool_llvm:
 	.globl _p_353_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetBoolAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_bool_llvm
 .private_extern _p_353_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetBoolAttribute_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_bool_llvm
@@ -13967,7 +13967,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 8875
+.word 8859
 _p_354_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetBoolAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_bool_bool_llvm:
 	.globl _p_354_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetBoolAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_bool_bool_llvm
 .private_extern _p_354_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetBoolAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_bool_bool_llvm
@@ -13978,7 +13978,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 8878
+.word 8862
 _p_355_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetEnumAttribute_Microsoft_Maui_Graphics_Text_MarkerType_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_Microsoft_Maui_Graphics_Text_MarkerType_llvm:
 	.globl _p_355_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetEnumAttribute_Microsoft_Maui_Graphics_Text_MarkerType_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_Microsoft_Maui_Graphics_Text_MarkerType_llvm
 .private_extern _p_355_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_GetEnumAttribute_Microsoft_Maui_Graphics_Text_MarkerType_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_Microsoft_Maui_Graphics_Text_MarkerType_llvm
@@ -13989,7 +13989,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 8881
+.word 8865
 _p_356_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetEnumAttribute_Microsoft_Maui_Graphics_Text_MarkerType_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_Microsoft_Maui_Graphics_Text_MarkerType_Microsoft_Maui_Graphics_Text_MarkerType_llvm:
 	.globl _p_356_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetEnumAttribute_Microsoft_Maui_Graphics_Text_MarkerType_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_Microsoft_Maui_Graphics_Text_MarkerType_Microsoft_Maui_Graphics_Text_MarkerType_llvm
 .private_extern _p_356_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_SetEnumAttribute_Microsoft_Maui_Graphics_Text_MarkerType_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_Microsoft_Maui_Graphics_Text_MarkerType_Microsoft_Maui_Graphics_Text_MarkerType_llvm
@@ -14000,7 +14000,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 8893
+.word 8877
 _p_357_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributes__ctor_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm:
 	.globl _p_357_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributes__ctor_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
 .private_extern _p_357_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributes__ctor_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_Collections_Generic_IReadOnlyDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
@@ -14011,7 +14011,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 8905
+.word 8889
 _p_358_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string__ctor_llvm:
 	.globl _p_358_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string__ctor_llvm
 .private_extern _p_358_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string__ctor_llvm
@@ -14022,7 +14022,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 8908
+.word 8892
 _p_359_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string__ctor_System_Collections_Generic_IDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm:
 	.globl _p_359_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string__ctor_System_Collections_Generic_IDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
 .private_extern _p_359_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string__ctor_System_Collections_Generic_IDictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
@@ -14033,7 +14033,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 8919
+.word 8903
 _p_360_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_set_Item_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm:
 	.globl _p_360_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_set_Item_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
 .private_extern _p_360_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_set_Item_Microsoft_Maui_Graphics_Text_TextAttribute_string_llvm
@@ -14044,7 +14044,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 8930
+.word 8914
 _p_361_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Remove_Microsoft_Maui_Graphics_Text_TextAttribute_llvm:
 	.globl _p_361_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Remove_Microsoft_Maui_Graphics_Text_TextAttribute_llvm
 .private_extern _p_361_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Remove_Microsoft_Maui_Graphics_Text_TextAttribute_llvm
@@ -14055,7 +14055,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 8941
+.word 8925
 _p_362_plt_Microsoft_Maui_Graphics_int_TryParse_string_int__llvm:
 	.globl _p_362_plt_Microsoft_Maui_Graphics_int_TryParse_string_int__llvm
 .private_extern _p_362_plt_Microsoft_Maui_Graphics_int_TryParse_string_int__llvm
@@ -14066,7 +14066,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 8952
+.word 8936
 _p_363_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_RemoveAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_llvm:
 	.globl _p_363_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_RemoveAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_llvm
 .private_extern _p_363_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributesExtensions_RemoveAttribute_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_Microsoft_Maui_Graphics_Text_TextAttribute_llvm
@@ -14077,7 +14077,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 8957
+.word 8941
 _p_364_plt_Microsoft_Maui_Graphics_single_TryParse_string_single__llvm:
 	.globl _p_364_plt_Microsoft_Maui_Graphics_single_TryParse_string_single__llvm
 .private_extern _p_364_plt_Microsoft_Maui_Graphics_single_TryParse_string_single__llvm
@@ -14088,7 +14088,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 8960
+.word 8944
 _p_365_plt_Microsoft_Maui_Graphics_bool_TryParse_string_bool__llvm:
 	.globl _p_365_plt_Microsoft_Maui_Graphics_bool_TryParse_string_bool__llvm
 .private_extern _p_365_plt_Microsoft_Maui_Graphics_bool_TryParse_string_bool__llvm
@@ -14099,7 +14099,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 8965
+.word 8949
 _p_366_plt_Microsoft_Maui_Graphics_string_StartsWith_string_System_StringComparison_llvm:
 	.globl _p_366_plt_Microsoft_Maui_Graphics_string_StartsWith_string_System_StringComparison_llvm
 .private_extern _p_366_plt_Microsoft_Maui_Graphics_string_StartsWith_string_System_StringComparison_llvm
@@ -14110,7 +14110,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 8970
+.word 8954
 _p_367_plt_Microsoft_Maui_Graphics_int_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_367_plt_Microsoft_Maui_Graphics_int_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_367_plt_Microsoft_Maui_Graphics_int_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -14121,7 +14121,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 8975
+.word 8959
 _p_368_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_char_char_llvm:
 	.globl _p_368_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_char_char_llvm
 .private_extern _p_368_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_char_char_llvm
@@ -14132,7 +14132,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 8980
+.word 8964
 _p_369_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string_TryGetValue_string_string__llvm:
 	.globl _p_369_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string_TryGetValue_string_string__llvm
 .private_extern _p_369_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string_TryGetValue_string_string__llvm
@@ -14143,7 +14143,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 8992
+.word 8976
 _p_370_plt_Microsoft_Maui_Graphics_string_ToUpperInvariant_llvm:
 	.globl _p_370_plt_Microsoft_Maui_Graphics_string_ToUpperInvariant_llvm
 .private_extern _p_370_plt_Microsoft_Maui_Graphics_string_ToUpperInvariant_llvm
@@ -14154,7 +14154,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 9003
+.word 8987
 _p_371_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IEqualityComparer_1_string_llvm:
 	.globl _p_371_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IEqualityComparer_1_string_llvm
 .private_extern _p_371_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string__ctor_System_Collections_Generic_IEqualityComparer_1_string_llvm
@@ -14165,7 +14165,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 9008
+.word 8992
 _p_372_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string_Add_string_string_llvm:
 	.globl _p_372_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string_Add_string_string_llvm
 .private_extern _p_372_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Dictionary_2_string_string_Add_string_string_llvm
@@ -14176,7 +14176,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 9019
+.word 9003
 _p_373_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_Read_System_IO_TextReader_llvm:
 	.globl _p_373_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_Read_System_IO_TextReader_llvm
 .private_extern _p_373_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_Read_System_IO_TextReader_llvm
@@ -14187,7 +14187,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 9030
+.word 9014
 _p_374_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadRun_llvm:
 	.globl _p_374_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadRun_llvm
 .private_extern _p_374_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadRun_llvm
@@ -14198,7 +14198,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 9033
+.word 9017
 _p_375_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadBool_string_llvm:
 	.globl _p_375_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadBool_string_llvm
 .private_extern _p_375_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadBool_string_llvm
@@ -14209,7 +14209,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 9036
+.word 9020
 _p_376_plt_Microsoft_Maui_Graphics_System_Convert_FromBase64String_string_llvm:
 	.globl _p_376_plt_Microsoft_Maui_Graphics_System_Convert_FromBase64String_string_llvm
 .private_extern _p_376_plt_Microsoft_Maui_Graphics_System_Convert_FromBase64String_string_llvm
@@ -14220,7 +14220,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 9039
+.word 9023
 _p_377_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributes__ctor_llvm:
 	.globl _p_377_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributes__ctor_llvm
 .private_extern _p_377_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributes__ctor_llvm
@@ -14231,7 +14231,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 9044
+.word 9028
 _p_378_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadInt_string_int_llvm:
 	.globl _p_378_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadInt_string_int_llvm
 .private_extern _p_378_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ReadInt_string_int_llvm
@@ -14242,7 +14242,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 9047
+.word 9031
 _p_379_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_get_HasAttributes_llvm:
 	.globl _p_379_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_get_HasAttributes_llvm
 .private_extern _p_379_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_get_HasAttributes_llvm
@@ -14253,7 +14253,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 9050
+.word 9034
 _p_380_plt_Microsoft_Maui_Graphics_System_Enum_TryParse_Microsoft_Maui_Graphics_Text_TextAttribute_System_ReadOnlySpan_1_char_bool_bool_Microsoft_Maui_Graphics_Text_TextAttribute__llvm:
 	.globl _p_380_plt_Microsoft_Maui_Graphics_System_Enum_TryParse_Microsoft_Maui_Graphics_Text_TextAttribute_System_ReadOnlySpan_1_char_bool_bool_Microsoft_Maui_Graphics_Text_TextAttribute__llvm
 .private_extern _p_380_plt_Microsoft_Maui_Graphics_System_Enum_TryParse_Microsoft_Maui_Graphics_Text_TextAttribute_System_ReadOnlySpan_1_char_bool_bool_Microsoft_Maui_Graphics_Text_TextAttribute__llvm
@@ -14264,7 +14264,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 9058
+.word 9042
 _p_381_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ParseBool_string_llvm:
 	.globl _p_381_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ParseBool_string_llvm
 .private_extern _p_381_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ParseBool_string_llvm
@@ -14275,7 +14275,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 9073
+.word 9057
 _p_382_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ParseInt_string_int_llvm:
 	.globl _p_382_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ParseInt_string_int_llvm
 .private_extern _p_382_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ParseInt_string_int_llvm
@@ -14286,7 +14286,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 9076
+.word 9060
 _p_383_plt_Microsoft_Maui_Graphics_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm:
 	.globl _p_383_plt_Microsoft_Maui_Graphics_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm
 .private_extern _p_383_plt_Microsoft_Maui_Graphics_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm
@@ -14297,7 +14297,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 9079
+.word 9063
 _p_384_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_Write_Microsoft_Maui_Graphics_Text_IAttributedText_System_IO_TextWriter_llvm:
 	.globl _p_384_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_Write_Microsoft_Maui_Graphics_Text_IAttributedText_System_IO_TextWriter_llvm
 .private_extern _p_384_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_Write_Microsoft_Maui_Graphics_Text_IAttributedText_System_IO_TextWriter_llvm
@@ -14308,7 +14308,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 9084
+.word 9068
 _p_385_plt_Microsoft_Maui_Graphics_string_IndexOf_string_System_StringComparison_llvm:
 	.globl _p_385_plt_Microsoft_Maui_Graphics_string_IndexOf_string_System_StringComparison_llvm
 .private_extern _p_385_plt_Microsoft_Maui_Graphics_string_IndexOf_string_System_StringComparison_llvm
@@ -14319,7 +14319,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 9087
+.word 9071
 _p_386_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_WriteRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_llvm:
 	.globl _p_386_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_WriteRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_llvm
 .private_extern _p_386_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_WriteRun_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_llvm
@@ -14330,7 +14330,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 9092
+.word 9076
 _p_387_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_Write_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_IO_TextWriter_llvm:
 	.globl _p_387_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_Write_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_IO_TextWriter_llvm
 .private_extern _p_387_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_Write_Microsoft_Maui_Graphics_Text_ITextAttributes_Microsoft_Maui_Graphics_Text_TextAttribute_string_System_IO_TextWriter_llvm
@@ -14341,7 +14341,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 9095
+.word 9079
 _p_388_plt_Microsoft_Maui_Graphics_string_Equals_string_string_System_StringComparison_llvm:
 	.globl _p_388_plt_Microsoft_Maui_Graphics_string_Equals_string_string_System_StringComparison_llvm
 .private_extern _p_388_plt_Microsoft_Maui_Graphics_string_Equals_string_string_System_StringComparison_llvm
@@ -14352,7 +14352,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 9098
+.word 9082
 _p_389_plt_Microsoft_Maui_Graphics_System_Enum_ToString_llvm:
 	.globl _p_389_plt_Microsoft_Maui_Graphics_System_Enum_ToString_llvm
 .private_extern _p_389_plt_Microsoft_Maui_Graphics_System_Enum_ToString_llvm
@@ -14363,7 +14363,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 9103
+.word 9087
 _p_390_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_WriteAttribute_System_IO_TextWriter_string_string_llvm:
 	.globl _p_390_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_WriteAttribute_System_IO_TextWriter_string_string_llvm
 .private_extern _p_390_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextWriter_WriteAttribute_System_IO_TextWriter_string_string_llvm
@@ -14374,7 +14374,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 9108
+.word 9092
 _p_391_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas__ctor_System_Func_1_CoreGraphics_CGColorSpace_llvm:
 	.globl _p_391_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas__ctor_System_Func_1_CoreGraphics_CGColorSpace_llvm
 .private_extern _p_391_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas__ctor_System_Func_1_CoreGraphics_CGColorSpace_llvm
@@ -14385,7 +14385,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 9111
+.word 9095
 _p_392_plt_Microsoft_Maui_Graphics_UIKit_UIView_SetNeedsDisplay_llvm:
 	.globl _p_392_plt_Microsoft_Maui_Graphics_UIKit_UIView_SetNeedsDisplay_llvm
 .private_extern _p_392_plt_Microsoft_Maui_Graphics_UIKit_UIView_SetNeedsDisplay_llvm
@@ -14396,7 +14396,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 9114
+.word 9098
 _p_393_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_op_Implicit_Microsoft_Maui_Graphics_RectF_llvm:
 	.globl _p_393_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_op_Implicit_Microsoft_Maui_Graphics_RectF_llvm
 .private_extern _p_393_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_op_Implicit_Microsoft_Maui_Graphics_RectF_llvm
@@ -14407,7 +14407,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 9119
+.word 9103
 _p_394_plt_Microsoft_Maui_Graphics_UIKit_UIView_SetNeedsDisplayInRect_CoreGraphics_CGRect_llvm:
 	.globl _p_394_plt_Microsoft_Maui_Graphics_UIKit_UIView_SetNeedsDisplayInRect_CoreGraphics_CGRect_llvm
 .private_extern _p_394_plt_Microsoft_Maui_Graphics_UIKit_UIView_SetNeedsDisplayInRect_CoreGraphics_CGRect_llvm
@@ -14418,7 +14418,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 9122
+.word 9106
 _p_395_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreateDeviceRGB_llvm:
 	.globl _p_395_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreateDeviceRGB_llvm
 .private_extern _p_395_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreateDeviceRGB_llvm
@@ -14429,7 +14429,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 9127
+.word 9111
 _p_396_plt_Microsoft_Maui_Graphics_CoreGraphics_CGBitmapContext__ctor_intptr_intptr_intptr_intptr_intptr_CoreGraphics_CGColorSpace_CoreGraphics_CGBitmapFlags_llvm:
 	.globl _p_396_plt_Microsoft_Maui_Graphics_CoreGraphics_CGBitmapContext__ctor_intptr_intptr_intptr_intptr_intptr_CoreGraphics_CGColorSpace_CoreGraphics_CGBitmapFlags_llvm
 .private_extern _p_396_plt_Microsoft_Maui_Graphics_CoreGraphics_CGBitmapContext__ctor_intptr_intptr_intptr_intptr_intptr_CoreGraphics_CGColorSpace_CoreGraphics_CGBitmapFlags_llvm
@@ -14440,7 +14440,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 9132
+.word 9116
 _p_397_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_op_Equality_ObjCRuntime_DisposableObject_ObjCRuntime_DisposableObject_llvm:
 	.globl _p_397_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_op_Equality_ObjCRuntime_DisposableObject_ObjCRuntime_DisposableObject_llvm
 .private_extern _p_397_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_op_Equality_ObjCRuntime_DisposableObject_ObjCRuntime_DisposableObject_llvm
@@ -14451,7 +14451,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 9137
+.word 9121
 _p_398_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColorSpace_CoreGraphics_CGColorSpace_llvm:
 	.globl _p_398_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColorSpace_CoreGraphics_CGColorSpace_llvm
 .private_extern _p_398_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColorSpace_CoreGraphics_CGColorSpace_llvm
@@ -14462,7 +14462,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 9142
+.word 9126
 _p_399_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColorSpace_CoreGraphics_CGColorSpace_llvm:
 	.globl _p_399_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColorSpace_CoreGraphics_CGColorSpace_llvm
 .private_extern _p_399_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColorSpace_CoreGraphics_CGColorSpace_llvm
@@ -14473,7 +14473,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 9147
+.word 9131
 _p_400_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_set_Context_CoreGraphics_CGContext_llvm:
 	.globl _p_400_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_set_Context_CoreGraphics_CGContext_llvm
 .private_extern _p_400_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_set_Context_CoreGraphics_CGContext_llvm
@@ -14484,7 +14484,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 9152
+.word 9136
 _p_401_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetPatternPhase_CoreGraphics_CGSize_llvm:
 	.globl _p_401_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetPatternPhase_CoreGraphics_CGSize_llvm
 .private_extern _p_401_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetPatternPhase_CoreGraphics_CGSize_llvm
@@ -14495,7 +14495,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 9155
+.word 9139
 _p_402_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Scale_single_single_llvm:
 	.globl _p_402_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Scale_single_single_llvm
 .private_extern _p_402_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Scale_single_single_llvm
@@ -14506,7 +14506,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 9160
+.word 9144
 _p_403_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Translate_single_single_llvm:
 	.globl _p_403_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Translate_single_single_llvm
 .private_extern _p_403_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Translate_single_single_llvm
@@ -14517,7 +14517,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 9171
+.word 9155
 _p_404_plt_Microsoft_Maui_Graphics_CoreGraphics_CGBitmapContext_ToImage_llvm:
 	.globl _p_404_plt_Microsoft_Maui_Graphics_CoreGraphics_CGBitmapContext_ToImage_llvm
 .private_extern _p_404_plt_Microsoft_Maui_Graphics_CoreGraphics_CGBitmapContext_ToImage_llvm
@@ -14528,7 +14528,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 9182
+.word 9166
 _p_405_plt_Microsoft_Maui_Graphics_UIKit_UIImage_FromImage_CoreGraphics_CGImage_llvm:
 	.globl _p_405_plt_Microsoft_Maui_Graphics_UIKit_UIImage_FromImage_CoreGraphics_CGImage_llvm
 .private_extern _p_405_plt_Microsoft_Maui_Graphics_UIKit_UIImage_FromImage_CoreGraphics_CGImage_llvm
@@ -14539,7 +14539,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 9187
+.word 9171
 _p_406_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext_get_UIImage_llvm:
 	.globl _p_406_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext_get_UIImage_llvm
 .private_extern _p_406_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext_get_UIImage_llvm
@@ -14550,7 +14550,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 9192
+.word 9176
 _p_407_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext_get_PlatformImage_llvm:
 	.globl _p_407_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext_get_PlatformImage_llvm
 .private_extern _p_407_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext_get_PlatformImage_llvm
@@ -14561,7 +14561,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 9195
+.word 9179
 _p_408_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_op_Inequality_ObjCRuntime_DisposableObject_ObjCRuntime_DisposableObject_llvm:
 	.globl _p_408_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_op_Inequality_ObjCRuntime_DisposableObject_ObjCRuntime_DisposableObject_llvm
 .private_extern _p_408_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_op_Inequality_ObjCRuntime_DisposableObject_ObjCRuntime_DisposableObject_llvm
@@ -14572,7 +14572,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 9198
+.word 9182
 _p_409_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_Dispose_llvm:
 	.globl _p_409_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_Dispose_llvm
 .private_extern _p_409_plt_Microsoft_Maui_Graphics_ObjCRuntime_DisposableObject_Dispose_llvm
@@ -14583,7 +14583,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 9203
+.word 9187
 _p_410_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsPNG_llvm:
 	.globl _p_410_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsPNG_llvm
 .private_extern _p_410_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsPNG_llvm
@@ -14594,7 +14594,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 9208
+.word 9192
 _p_411_plt_Microsoft_Maui_Graphics_Foundation_NSData_AsStream_llvm:
 	.globl _p_411_plt_Microsoft_Maui_Graphics_Foundation_NSData_AsStream_llvm
 .private_extern _p_411_plt_Microsoft_Maui_Graphics_Foundation_NSData_AsStream_llvm
@@ -14605,7 +14605,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 9213
+.word 9197
 _p_412_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_CoreGraphics_CGRect_llvm:
 	.globl _p_412_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_CoreGraphics_CGRect_llvm
 .private_extern _p_412_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_CoreGraphics_CGRect_llvm
@@ -14616,7 +14616,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 9218
+.word 9202
 _p_413_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformGraphicsView_set_Drawable_Microsoft_Maui_Graphics_IDrawable_llvm:
 	.globl _p_413_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformGraphicsView_set_Drawable_Microsoft_Maui_Graphics_IDrawable_llvm
 .private_extern _p_413_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformGraphicsView_set_Drawable_Microsoft_Maui_Graphics_IDrawable_llvm
@@ -14627,7 +14627,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 9223
+.word 9207
 _p_414_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformGraphicsView_set_Renderer_Microsoft_Maui_Graphics_Platform_IGraphicsRenderer_llvm:
 	.globl _p_414_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformGraphicsView_set_Renderer_Microsoft_Maui_Graphics_Platform_IGraphicsRenderer_llvm
 .private_extern _p_414_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformGraphicsView_set_Renderer_Microsoft_Maui_Graphics_Platform_IGraphicsRenderer_llvm
@@ -14638,7 +14638,7 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 9226
+.word 9210
 _p_415_plt_Microsoft_Maui_Graphics_UIKit_UIColor_get_White_llvm:
 	.globl _p_415_plt_Microsoft_Maui_Graphics_UIKit_UIColor_get_White_llvm
 .private_extern _p_415_plt_Microsoft_Maui_Graphics_UIKit_UIColor_get_White_llvm
@@ -14649,4253 +14649,4242 @@ adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 9229
-_p_416_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_BackgroundColor_UIKit_UIColor_llvm:
-	.globl _p_416_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_BackgroundColor_UIKit_UIColor_llvm
-.private_extern _p_416_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_BackgroundColor_UIKit_UIColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_set_BackgroundColor_UIKit_UIColor
-plt_Microsoft_Maui_Graphics_UIKit_UIView_set_BackgroundColor_UIKit_UIColor:
+.word 9213
+_p_416_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_llvm:
+	.globl _p_416_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_llvm
+.private_extern _p_416_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor
+plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor:
 _p_416:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 9234
-_p_417_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_llvm:
-	.globl _p_417_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_llvm
-.private_extern _p_417_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor
-plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor:
+.word 9218
+_p_417_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle_llvm:
+	.globl _p_417_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle_llvm
+.private_extern _p_417_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle
+plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle:
 _p_417:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 9239
-_p_418_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle_llvm:
-	.globl _p_418_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle_llvm
-.private_extern _p_418_plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle
-plt_Microsoft_Maui_Graphics_UIKit_UIView__ctor_ObjCRuntime_NativeHandle:
+.word 9223
+_p_418_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor_llvm:
+	.globl _p_418_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor_llvm
+.private_extern _p_418_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor:
 _p_418:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 9244
-_p_419_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor_llvm:
-	.globl _p_419_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor_llvm
-.private_extern _p_419_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_DirectRenderer__ctor:
+.word 9228
+_p_419_plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView_llvm:
+	.globl _p_419_plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView_llvm
+.private_extern _p_419_plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView
+plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView:
 _p_419:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 9249
-_p_420_plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView_llvm:
-	.globl _p_420_plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView_llvm
-.private_extern _p_420_plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView
-plt_Microsoft_Maui_Graphics_UIKit_UIView_WillMoveToSuperview_UIKit_UIView:
+.word 9231
+_p_420_plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect_llvm:
+	.globl _p_420_plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect_llvm
+.private_extern _p_420_plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect:
 _p_420:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 9252
-_p_421_plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect_llvm:
-	.globl _p_421_plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect_llvm
-.private_extern _p_421_plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_UIKit_UIView_Draw_CoreGraphics_CGRect:
+.word 9236
+_p_421_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext_llvm:
+	.globl _p_421_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext_llvm
+.private_extern _p_421_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext:
 _p_421:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 9257
-_p_422_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext_llvm:
-	.globl _p_422_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext_llvm
-.private_extern _p_422_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetCurrentContext:
+.word 9241
+_p_422_plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds_llvm:
+	.globl _p_422_plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds_llvm
+.private_extern _p_422_plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds
+plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds:
 _p_422:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 9262
-_p_423_plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds_llvm:
-	.globl _p_423_plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds_llvm
-.private_extern _p_423_plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds
-plt_Microsoft_Maui_Graphics_UIKit_UIView_get_Bounds:
+.word 9246
+_p_423_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect_llvm:
+	.globl _p_423_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect_llvm
+.private_extern _p_423_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect:
 _p_423:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 9267
-_p_424_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect_llvm:
-	.globl _p_424_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect_llvm
-.private_extern _p_424_plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_UIKit_UIView_set_Bounds_CoreGraphics_CGRect:
+.word 9251
+_p_424_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size_llvm:
+	.globl _p_424_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size_llvm
+.private_extern _p_424_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size:
 _p_424:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 9272
-_p_425_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size_llvm:
-	.globl _p_425_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size_llvm
-.private_extern _p_425_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Size:
+.word 9256
+_p_425_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool_llvm:
+	.globl _p_425_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool_llvm
+.private_extern _p_425_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool:
 _p_425:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 9277
-_p_426_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool_llvm:
-	.globl _p_426_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool_llvm
-.private_extern _p_426_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_single_single_bool:
+.word 9261
+_p_426_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int_llvm:
+	.globl _p_426_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int_llvm
+.private_extern _p_426_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int:
 _p_426:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 9282
-_p_427_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int_llvm:
-	.globl _p_427_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int_llvm
-.private_extern _p_427_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformBitmapExportContext__ctor_int_int_single_int_int:
+.word 9264
+_p_427_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width_llvm:
+	.globl _p_427_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width_llvm
+.private_extern _p_427_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width:
 _p_427:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 9285
-_p_428_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width_llvm:
-	.globl _p_428_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width_llvm
-.private_extern _p_428_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Width:
+.word 9267
+_p_428_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height_llvm:
+	.globl _p_428_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height_llvm
+.private_extern _p_428_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height:
 _p_428:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 9288
-_p_429_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height_llvm:
-	.globl _p_429_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height_llvm
-.private_extern _p_429_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_get_Height:
+.word 9270
+_p_429_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single_llvm:
+	.globl _p_429_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single_llvm
+.private_extern _p_429_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single:
 _p_429:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 9291
-_p_430_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single_llvm:
-	.globl _p_430_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single_llvm
-.private_extern _p_430_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_CreateData_Microsoft_Maui_Graphics_ImageFormat_single:
+.word 9273
+_p_430_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__llvm:
+	.globl _p_430_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__llvm
+.private_extern _p_430_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_:
 _p_430:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 9294
-_p_431_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__llvm:
-	.globl _p_431_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__llvm
-.private_extern _p_431_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_:
+.word 9276
+_p_431_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise_llvm:
+	.globl _p_431_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise_llvm
+.private_extern _p_431_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise:
 _p_431:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 9297
-_p_432_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise_llvm:
-	.globl _p_432_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise_llvm
-.private_extern _p_432_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_InitializeTaskAsPromise:
+.word 9292
+_p_432_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2_llvm:
+	.globl _p_432_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2_llvm
+.private_extern _p_432_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2
+plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2:
 _p_432:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 9313
-_p_433_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2_llvm:
-	.globl _p_433_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2_llvm
-.private_extern _p_433_plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2
-plt_Microsoft_Maui_Graphics__jit_icall_mono_create_corlib_exception_2:
+.word 9297
+_p_433_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat_llvm:
+	.globl _p_433_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat_llvm
+.private_extern _p_433_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat:
 _p_433:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 9318
-_p_434_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat_llvm:
-	.globl _p_434_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat_llvm
-.private_extern _p_434_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Microsoft_Maui_Graphics_ImageFormat_Microsoft_Maui_Graphics_ImageFormat:
+.word 9300
+_p_434_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_llvm:
+	.globl _p_434_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_llvm
+.private_extern _p_434_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Exception__ctor_string
+plt_Microsoft_Maui_Graphics_System_Exception__ctor_string:
 _p_434:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 9321
-_p_435_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_llvm:
-	.globl _p_435_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_llvm
-.private_extern _p_435_plt_Microsoft_Maui_Graphics_System_Exception__ctor_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Exception__ctor_string
-plt_Microsoft_Maui_Graphics_System_Exception__ctor_string:
+.word 9312
+_p_435_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_435_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_435_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat:
 _p_435:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 9333
-_p_436_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_436_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_436_plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_AsJPEG_System_Runtime_InteropServices_NFloat:
+.word 9317
+_p_436_plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose_llvm:
+	.globl _p_436_plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose_llvm
+.private_extern _p_436_plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose
+plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose:
 _p_436:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 9338
-_p_437_plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose_llvm:
-	.globl _p_437_plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose_llvm
-.private_extern _p_437_plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose
-plt_Microsoft_Maui_Graphics_Foundation_NSObject_Dispose:
+.word 9322
+_p_437_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream_llvm:
+	.globl _p_437_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream_llvm
+.private_extern _p_437_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream
+plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream:
 _p_437:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 9343
-_p_438_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream_llvm:
-	.globl _p_438_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream_llvm
-.private_extern _p_438_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream
-plt_Microsoft_Maui_Graphics_Foundation_NSData_FromStream_System_IO_Stream:
+.word 9327
+_p_438_plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData_llvm:
+	.globl _p_438_plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData_llvm
+.private_extern _p_438_plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData:
 _p_438:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 9348
-_p_439_plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData_llvm:
-	.globl _p_439_plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData_llvm
-.private_extern _p_439_plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_LoadFromData_Foundation_NSData:
+.word 9332
+_p_439_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single_llvm:
+	.globl _p_439_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single_llvm
+.private_extern _p_439_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single:
 _p_439:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 9353
-_p_440_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single_llvm:
-	.globl _p_440_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single_llvm
-.private_extern _p_440_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfExportContext__ctor_single_single:
+.word 9337
+_p_440_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor_llvm:
+	.globl _p_440_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor_llvm
+.private_extern _p_440_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor:
 _p_440:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 9358
-_p_441_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor_llvm:
-	.globl _p_441_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor_llvm
-.private_extern _p_441_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary__ctor:
+.word 9340
+_p_441_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary_llvm:
+	.globl _p_441_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
+.private_extern _p_441_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary:
 _p_441:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 9361
-_p_442_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary_llvm:
-	.globl _p_442_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
-.private_extern _p_442_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFPage_CoreGraphics_CGRect_Foundation_NSDictionary:
+.word 9345
+_p_442_plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName_llvm:
+	.globl _p_442_plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName_llvm
+.private_extern _p_442_plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName
+plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName:
 _p_442:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 9366
-_p_443_plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName_llvm:
-	.globl _p_443_plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName_llvm
-.private_extern _p_443_plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName
-plt_Microsoft_Maui_Graphics_System_IO_Path_GetTempFileName:
+.word 9350
+_p_443_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary_llvm:
+	.globl _p_443_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
+.private_extern _p_443_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary:
 _p_443:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 9371
-_p_444_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary_llvm:
-	.globl _p_444_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
-.private_extern _p_444_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginPDFContext_string_CoreGraphics_CGRect_Foundation_NSDictionary:
+.word 9355
+_p_444_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close_llvm:
+	.globl _p_444_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close_llvm
+.private_extern _p_444_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close:
 _p_444:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 9376
-_p_445_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close_llvm:
-	.globl _p_445_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close_llvm
-.private_extern _p_445_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext_Close:
+.word 9360
+_p_445_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string_llvm:
+	.globl _p_445_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string_llvm
+.private_extern _p_445_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string
+plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string:
 _p_445:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 9381
-_p_446_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string_llvm:
-	.globl _p_446_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string_llvm
-.private_extern _p_446_plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string
-plt_Microsoft_Maui_Graphics_Foundation_NSData_FromFile_string:
+.word 9363
+_p_446_plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string_llvm:
+	.globl _p_446_plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string_llvm
+.private_extern _p_446_plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string
+plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string:
 _p_446:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 9384
-_p_447_plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string_llvm:
-	.globl _p_447_plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string_llvm
-.private_extern _p_447_plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string
-plt_Microsoft_Maui_Graphics_System_IO_File_Exists_string:
+.word 9368
+_p_447_plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string_llvm:
+	.globl _p_447_plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string_llvm
+.private_extern _p_447_plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string
+plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string:
 _p_447:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 9389
-_p_448_plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string_llvm:
-	.globl _p_448_plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string_llvm
-.private_extern _p_448_plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string
-plt_Microsoft_Maui_Graphics_System_IO_File_Delete_string:
+.word 9373
+_p_448_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single_llvm:
+	.globl _p_448_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single_llvm
+.private_extern _p_448_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single:
 _p_448:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 9394
-_p_449_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single_llvm:
-	.globl _p_449_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single_llvm
-.private_extern _p_449_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformPdfExportContext__ctor_single_single:
+.word 9378
+_p_449_plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string_llvm:
+	.globl _p_449_plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string_llvm
+.private_extern _p_449_plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string
+plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string:
 _p_449:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 9399
-_p_450_plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string_llvm:
-	.globl _p_450_plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string_llvm
-.private_extern _p_450_plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string
-plt_Microsoft_Maui_Graphics_Foundation_NSString__ctor_string:
+.word 9381
+_p_450_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_450_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_450_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
 _p_450:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 9402
-_p_451_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_451_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_451_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToPlatformFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
+.word 9386
+_p_451_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor_llvm:
+	.globl _p_451_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor_llvm
+.private_extern _p_451_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor:
 _p_451:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 9407
-_p_452_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor_llvm:
-	.globl _p_452_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor_llvm
-.private_extern _p_452_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes__ctor:
+.word 9389
+_p_452_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont_llvm:
+	.globl _p_452_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont_llvm
+.private_extern _p_452_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont:
 _p_452:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 9410
-_p_453_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont_llvm:
-	.globl _p_453_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont_llvm
-.private_extern _p_453_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributes_set_Font_UIKit_UIFont:
+.word 9394
+_p_453_plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext_llvm:
+	.globl _p_453_plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext_llvm
+.private_extern _p_453_plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext
+plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext:
 _p_453:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 9415
-_p_454_plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext_llvm:
-	.globl _p_454_plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext_llvm
-.private_extern _p_454_plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext
-plt_Microsoft_Maui_Graphics_UIKit_NSExtendedStringDrawing_GetBoundingRect_Foundation_NSString_CoreGraphics_CGSize_Foundation_NSStringDrawingOptions_UIKit_UIStringAttributes_Foundation_NSStringDrawingContext:
+.word 9399
+_p_454_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_454_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_454_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
 _p_454:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 9420
-_p_455_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_455_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_455_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultPlatformFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
+.word 9404
+_p_455_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor_llvm:
+	.globl _p_455_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor_llvm
+.private_extern _p_455_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor:
 _p_455:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 9425
-_p_456_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor_llvm:
-	.globl _p_456_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor_llvm
-.private_extern _p_456_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath__ctor:
+.word 9407
+_p_456_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect_llvm:
+	.globl _p_456_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect_llvm
+.private_extern _p_456_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect:
 _p_456:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 9428
-_p_457_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect_llvm:
-	.globl _p_457_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect_llvm
-.private_extern _p_457_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddRect_CoreGraphics_CGRect:
+.word 9412
+_p_457_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath_llvm:
+	.globl _p_457_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath_llvm
+.private_extern _p_457_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath:
 _p_457:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 9433
-_p_458_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath_llvm:
-	.globl _p_458_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath_llvm
-.private_extern _p_458_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_CloseSubpath:
+.word 9417
+_p_458_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_llvm:
+	.globl _p_458_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_llvm
+.private_extern _p_458_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string:
 _p_458:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 9438
-_p_459_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_llvm:
-	.globl _p_459_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_llvm
-.private_extern _p_459_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string:
+.word 9422
+_p_459_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor_llvm:
+	.globl _p_459_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor_llvm
+.private_extern _p_459_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor:
 _p_459:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 9443
-_p_460_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor_llvm:
-	.globl _p_460_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor_llvm
-.private_extern _p_460_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes__ctor:
+.word 9427
+_p_460_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_460_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_460_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
 _p_460:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 9448
-_p_461_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_461_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_461_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCTFont_Microsoft_Maui_Graphics_IFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
+.word 9432
+_p_461_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont_llvm:
+	.globl _p_461_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont_llvm
+.private_extern _p_461_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont:
 _p_461:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 9453
-_p_462_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont_llvm:
-	.globl _p_462_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont_llvm
-.private_extern _p_462_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_Font_CoreText_CTFont:
+.word 9435
+_p_462_plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings_llvm:
+	.globl _p_462_plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings_llvm
+.private_extern _p_462_plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings
+plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings:
 _p_462:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 9456
-_p_463_plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings_llvm:
-	.globl _p_463_plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings_llvm
-.private_extern _p_463_plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings
-plt_Microsoft_Maui_Graphics_CoreText_CTParagraphStyle__ctor_CoreText_CTParagraphStyleSettings:
+.word 9440
+_p_463_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle_llvm:
+	.globl _p_463_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle_llvm
+.private_extern _p_463_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle:
 _p_463:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 9461
-_p_464_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle_llvm:
-	.globl _p_464_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle_llvm
-.private_extern _p_464_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ParagraphStyle_CoreText_CTParagraphStyle:
+.word 9445
+_p_464_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm:
+	.globl _p_464_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
+.private_extern _p_464_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange:
 _p_464:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 9466
-_p_465_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm:
-	.globl _p_465_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
-.private_extern _p_465_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_SetAttributes_CoreText_CTStringAttributes_Foundation_NSRange:
+.word 9450
+_p_465_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString_llvm:
+	.globl _p_465_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString_llvm
+.private_extern _p_465_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString
+plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString:
 _p_465:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 9471
-_p_466_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString_llvm:
-	.globl _p_466_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString_llvm
-.private_extern _p_466_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString
-plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter__ctor_Foundation_NSAttributedString:
+.word 9455
+_p_466_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath_llvm:
+	.globl _p_466_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath_llvm
+.private_extern _p_466_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath:
 _p_466:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 9476
-_p_467_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath_llvm:
-	.globl _p_467_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath_llvm
-.private_extern _p_467_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFramesetter_CoreGraphics_CGPath:
+.word 9460
+_p_467_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_467_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_467_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
 _p_467:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 9481
-_p_468_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_468_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_468_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCTFont_System_Nullable_1_System_Runtime_InteropServices_NFloat:
+.word 9463
+_p_468_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes_llvm:
+	.globl _p_468_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes_llvm
+.private_extern _p_468_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes
+plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes:
 _p_468:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 9484
-_p_469_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes_llvm:
-	.globl _p_469_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes_llvm
-.private_extern _p_469_plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes
-plt_Microsoft_Maui_Graphics_CoreText_CTFramesetter_GetFrame_Foundation_NSRange_CoreGraphics_CGPath_CoreText_CTFrameAttributes:
+.word 9466
+_p_469_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame_llvm:
+	.globl _p_469_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame_llvm
+.private_extern _p_469_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame:
 _p_469:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 9487
-_p_470_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame_llvm:
-	.globl _p_470_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame_llvm
-.private_extern _p_470_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformStringSizeService_GetTextSize_CoreText_CTFrame:
+.word 9471
+_p_470_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines_llvm:
+	.globl _p_470_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines_llvm
+.private_extern _p_470_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines
+plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines:
 _p_470:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 9492
-_p_471_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines_llvm:
-	.globl _p_471_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines_llvm
-.private_extern _p_471_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines
-plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLines:
+.word 9474
+_p_471_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint___llvm:
+	.globl _p_471_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint___llvm
+.private_extern _p_471_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint__
+plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint__:
 _p_471:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 9495
-_p_472_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint___llvm:
-	.globl _p_472_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint___llvm
-.private_extern _p_472_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint__
-plt_Microsoft_Maui_Graphics_CoreText_CTFrame_GetLineOrigins_Foundation_NSRange_CoreGraphics_CGPoint__:
+.word 9479
+_p_472_plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm:
+	.globl _p_472_plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
+.private_extern _p_472_plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_
+plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_:
 _p_472:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 9500
-_p_473_plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm:
-	.globl _p_473_plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
-.private_extern _p_473_plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_
-plt_Microsoft_Maui_Graphics_CoreText_CTLine_GetTypographicBounds_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_:
+.word 9484
+_p_473_plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm:
+	.globl _p_473_plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
+.private_extern _p_473_plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_
+plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_:
 _p_473:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 9505
-_p_474_plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm:
-	.globl _p_474_plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
-.private_extern _p_474_plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_
-plt_Microsoft_Maui_Graphics_UIKit_UIColor_GetRGBA_System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat__System_Runtime_InteropServices_NFloat_:
+.word 9489
+_p_474_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_474_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_474_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat:
 _p_474:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 9510
-_p_475_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_475_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_475_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHexString_System_Runtime_InteropServices_NFloat:
+.word 9494
+_p_475_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool_llvm:
+	.globl _p_475_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool_llvm
+.private_extern _p_475_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool:
 _p_475:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 9515
-_p_476_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool_llvm:
-	.globl _p_476_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool_llvm
-.private_extern _p_476_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIImageExtensions_ScaleImage_UIKit_UIImage_CoreGraphics_CGSize_bool:
+.word 9497
+_p_476_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize_llvm:
+	.globl _p_476_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize_llvm
+.private_extern _p_476_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize:
 _p_476:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 9518
-_p_477_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize_llvm:
-	.globl _p_477_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize_llvm
-.private_extern _p_477_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContext_CoreGraphics_CGSize:
+.word 9500
+_p_477_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize_llvm:
+	.globl _p_477_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize_llvm
+.private_extern _p_477_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize:
 _p_477:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 9521
-_p_478_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize_llvm:
-	.globl _p_478_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize_llvm
-.private_extern _p_478_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_CoreGraphics_CGPoint_CoreGraphics_CGSize:
+.word 9505
+_p_478_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect_llvm:
+	.globl _p_478_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect_llvm
+.private_extern _p_478_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect:
 _p_478:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 9526
-_p_479_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect_llvm:
-	.globl _p_479_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect_llvm
-.private_extern _p_479_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGRect:
+.word 9510
+_p_479_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm:
+	.globl _p_479_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm
+.private_extern _p_479_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext:
 _p_479:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 9531
-_p_480_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm:
-	.globl _p_480_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm
-.private_extern _p_480_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_GetImageFromCurrentImageContext:
+.word 9515
+_p_480_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext_llvm:
+	.globl _p_480_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext_llvm
+.private_extern _p_480_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext:
 _p_480:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 9536
-_p_481_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext_llvm:
-	.globl _p_481_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext_llvm
-.private_extern _p_481_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndImageContext:
+.word 9520
+_p_481_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation_llvm:
+	.globl _p_481_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation_llvm
+.private_extern _p_481_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation:
 _p_481:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 9541
-_p_482_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation_llvm:
-	.globl _p_482_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation_llvm
-.private_extern _p_482_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_Orientation:
+.word 9525
+_p_482_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale_llvm:
+	.globl _p_482_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale_llvm
+.private_extern _p_482_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale:
 _p_482:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 9546
-_p_483_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale_llvm:
-	.globl _p_483_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale_llvm
-.private_extern _p_483_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CurrentScale:
+.word 9530
+_p_483_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_483_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_483_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat:
 _p_483:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 9551
-_p_484_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_484_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_484_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_BeginImageContextWithOptions_CoreGraphics_CGSize_bool_System_Runtime_InteropServices_NFloat:
+.word 9535
+_p_484_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint_llvm:
+	.globl _p_484_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint_llvm
+.private_extern _p_484_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint:
 _p_484:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 9556
-_p_485_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint_llvm:
-	.globl _p_485_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint_llvm
-.private_extern _p_485_plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_Draw_CoreGraphics_CGPoint:
+.word 9540
+_p_485_plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_485_plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_485_plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_485:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 9561
-_p_486_plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_486_plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_486_plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_UIKit_UIColor_FromRGBA_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9545
+_p_486_plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath_llvm:
+	.globl _p_486_plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath_llvm
+.private_extern _p_486_plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath
+plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath:
 _p_486:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 9566
-_p_487_plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath_llvm:
-	.globl _p_487_plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath_llvm
-.private_extern _p_487_plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath
-plt_Microsoft_Maui_Graphics_UIKit_UIBezierPath_FromPath_CoreGraphics_CGPath:
+.word 9550
+_p_487_plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView_llvm:
+	.globl _p_487_plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView_llvm
+.private_extern _p_487_plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView
+plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView:
 _p_487:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 9571
-_p_488_plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView_llvm:
-	.globl _p_488_plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView_llvm
-.private_extern _p_488_plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView
-plt_Microsoft_Maui_Graphics_UIKit_UIEvent_TouchesForView_UIKit_UIView:
+.word 9555
+_p_488_plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count_llvm:
+	.globl _p_488_plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count_llvm
+.private_extern _p_488_plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count
+plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count:
 _p_488:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 9576
-_p_489_plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count_llvm:
-	.globl _p_489_plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count_llvm
-.private_extern _p_489_plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count
-plt_Microsoft_Maui_Graphics_Foundation_NSSet_get_Count:
+.word 9560
+_p_489_plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch_llvm:
+	.globl _p_489_plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch_llvm
+.private_extern _p_489_plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch
+plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch:
 _p_489:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 9581
-_p_490_plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch_llvm:
-	.globl _p_490_plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch_llvm
-.private_extern _p_490_plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch
-plt_Microsoft_Maui_Graphics_Foundation_NSSet_ToArray_UIKit_UITouch:
+.word 9565
+_p_490_plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView_llvm:
+	.globl _p_490_plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView_llvm
+.private_extern _p_490_plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView
+plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView:
 _p_490:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 9586
-_p_491_plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView_llvm:
-	.globl _p_491_plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView_llvm
-.private_extern _p_491_plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView
-plt_Microsoft_Maui_Graphics_UIKit_UITouch_LocationInView_UIKit_UIView:
+.word 9577
+_p_491_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont_llvm:
+	.globl _p_491_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont_llvm
+.private_extern _p_491_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont:
 _p_491:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 9598
-_p_492_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont_llvm:
-	.globl _p_492_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont_llvm
-.private_extern _p_492_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_GetDefaultCGFont:
+.word 9582
+_p_492_plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string_llvm:
+	.globl _p_492_plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string_llvm
+.private_extern _p_492_plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string:
 _p_492:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 9603
-_p_493_plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string_llvm:
-	.globl _p_493_plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string_llvm
-.private_extern _p_493_plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGFont_CreateWithFontName_string:
+.word 9585
+_p_493_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions_llvm:
+	.globl _p_493_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions_llvm
+.private_extern _p_493_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions
+plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions:
 _p_493:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 9606
-_p_494_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions_llvm:
-	.globl _p_494_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions_llvm
-.private_extern _p_494_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions
-plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_string_System_Runtime_InteropServices_NFloat_CoreText_CTFontOptions:
+.word 9590
+_p_494_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize_llvm:
+	.globl _p_494_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize_llvm
+.private_extern _p_494_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize
+plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize:
 _p_494:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 9611
-_p_495_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize_llvm:
-	.globl _p_495_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize_llvm
-.private_extern _p_495_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize
-plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_SystemFontSize:
+.word 9595
+_p_495_plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_495_plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_495_plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat:
 _p_495:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 9616
-_p_496_plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_496_plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_496_plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_UIKit_UIFont_FromName_string_System_Runtime_InteropServices_NFloat:
+.word 9600
+_p_496_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName_llvm:
+	.globl _p_496_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName_llvm
+.private_extern _p_496_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName:
 _p_496:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 9621
-_p_497_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName_llvm:
-	.globl _p_497_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName_llvm
-.private_extern _p_497_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_get_DefaultFontName:
+.word 9605
+_p_497_plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_497_plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_497_plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat:
 _p_497:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 9626
-_p_498_plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_498_plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_498_plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_UIKit_UIFont_SystemFontOfSize_System_Runtime_InteropServices_NFloat:
+.word 9608
+_p_498_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name_llvm:
+	.globl _p_498_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name_llvm
+.private_extern _p_498_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name
+plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name:
 _p_498:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 9629
-_p_499_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name_llvm:
-	.globl _p_499_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name_llvm
-.private_extern _p_499_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name
-plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_Name:
+.word 9613
+_p_499_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale_llvm:
+	.globl _p_499_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale_llvm
+.private_extern _p_499_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale
+plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale:
 _p_499:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 9634
-_p_500_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale_llvm:
-	.globl _p_500_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale_llvm
-.private_extern _p_500_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale
-plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_CurrentLocale:
+.word 9618
+_p_500_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier_llvm:
+	.globl _p_500_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier_llvm
+.private_extern _p_500_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier
+plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier:
 _p_500:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 9639
-_p_501_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier_llvm:
-	.globl _p_501_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier_llvm
-.private_extern _p_501_plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier
-plt_Microsoft_Maui_Graphics_Foundation_NSLocale_get_Identifier:
+.word 9623
+_p_501_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string_llvm:
+	.globl _p_501_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string_llvm
+.private_extern _p_501_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string
+plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string:
 _p_501:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 9644
-_p_502_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string_llvm:
-	.globl _p_502_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string_llvm
-.private_extern _p_502_plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string
-plt_Microsoft_Maui_Graphics_CoreText_CTFont__ctor_CoreText_CTFontUIFontType_System_Runtime_InteropServices_NFloat_string:
+.word 9628
+_p_502_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction_llvm:
+	.globl _p_502_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction_llvm
+.private_extern _p_502_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction:
 _p_502:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 9649
-_p_503_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction_llvm:
-	.globl _p_503_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction_llvm
-.private_extern _p_503_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_Apply_CoreGraphics_CGPath_ApplierFunction:
+.word 9633
+_p_503_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single_llvm:
+	.globl _p_503_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single_llvm
+.private_extern _p_503_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single:
 _p_503:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 9654
-_p_504_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single_llvm:
-	.globl _p_504_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single_llvm
-.private_extern _p_504_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGPath_Microsoft_Maui_Graphics_PathF_single_single_single_single:
+.word 9638
+_p_504_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes_llvm:
+	.globl _p_504_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes_llvm
+.private_extern _p_504_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes:
 _p_504:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 9659
-_p_505_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes_llvm:
-	.globl _p_505_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes_llvm
-.private_extern _p_505_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_get_SegmentTypes:
+.word 9641
+_p_505_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_505_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_505_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_505:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 9662
-_p_506_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_506_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_506_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeTranslation_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9644
+_p_506_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_506_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_506_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_506:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 9665
-_p_507_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_507_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_507_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeScale_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9649
+_p_507_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform_llvm:
+	.globl _p_507_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform_llvm
+.private_extern _p_507_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform:
 _p_507:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 9670
-_p_508_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform_llvm:
-	.globl _p_508_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform_llvm
-.private_extern _p_508_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_CoreGraphics_CGAffineTransform:
+.word 9654
+_p_508_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm:
+	.globl _p_508_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
+.private_extern _p_508_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool:
 _p_508:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 9675
-_p_509_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm:
-	.globl _p_509_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
-.private_extern _p_509_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddArc_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool:
+.word 9659
+_p_509_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_509_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_509_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_509:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 9680
-_p_510_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_510_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_510_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9664
+_p_510_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_510_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_510_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_510:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 9685
-_p_511_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_511_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_511_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddQuadCurveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9669
+_p_511_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_511_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_511_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_511:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 9690
-_p_512_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_512_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_512_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9674
+_p_512_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_512_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_512_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_512:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 9695
-_p_513_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_513_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_513_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_MoveToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9679
+_p_513_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int__llvm:
+	.globl _p_513_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int__llvm
+.private_extern _p_513_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int_:
 _p_513:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 9700
-_p_514_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int__llvm:
-	.globl _p_514_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int__llvm
-.private_extern _p_514_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF_GetSegmentInfo_int_int__int__int_:
+.word 9684
+_p_514_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_514_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_514_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_514:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 9705
-_p_515_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_515_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_515_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9687
+_p_515_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_515_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_515_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_515:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 9708
-_p_516_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_516_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_516_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGColor__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9692
+_p_516_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_516_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_516_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_516:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 9713
-_p_517_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_517_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_517_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_MoveTo_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9697
+_p_517_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_517_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_517_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_517:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 9718
-_p_518_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_518_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_518_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArcToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9702
+_p_518_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath_llvm:
+	.globl _p_518_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath_llvm
+.private_extern _p_518_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath:
 _p_518:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 9723
-_p_519_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath_llvm:
-	.globl _p_519_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath_llvm
-.private_extern _p_519_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ClosePath:
+.word 9707
+_p_519_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_519_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_519_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_519:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 9728
-_p_520_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_520_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_520_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9712
+_p_520_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_520_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_520_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_520:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 9733
-_p_521_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_521_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_521_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetStrokeColor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9717
+_p_521_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService_llvm:
+	.globl _p_521_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService_llvm
+.private_extern _p_521_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService:
 _p_521:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 9738
-_p_522_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService_llvm:
-	.globl _p_522_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService_llvm
-.private_extern _p_522_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_ICanvasStateService_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_Microsoft_Maui_Graphics_IStringSizeService:
+.word 9722
+_p_522_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_522_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_522_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat:
 _p_522:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 9743
-_p_523_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_523_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_523_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineWidth_System_Runtime_InteropServices_NFloat:
+.word 9733
+_p_523_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_523_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_523_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat:
 _p_523:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 9754
-_p_524_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_524_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_524_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetMiterLimit_System_Runtime_InteropServices_NFloat:
+.word 9738
+_p_524_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_524_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_524_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat:
 _p_524:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 9759
-_p_525_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_525_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_525_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetAlpha_System_Runtime_InteropServices_NFloat:
+.word 9743
+_p_525_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap_llvm:
+	.globl _p_525_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap_llvm
+.private_extern _p_525_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap:
 _p_525:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 9764
-_p_526_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap_llvm:
-	.globl _p_526_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap_llvm
-.private_extern _p_526_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineCap_CoreGraphics_CGLineCap:
+.word 9748
+_p_526_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin_llvm:
+	.globl _p_526_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin_llvm
+.private_extern _p_526_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin:
 _p_526:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 9769
-_p_527_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin_llvm:
-	.globl _p_527_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin_llvm
-.private_extern _p_527_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineJoin_CoreGraphics_CGLineJoin:
+.word 9753
+_p_527_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm:
+	.globl _p_527_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm
+.private_extern _p_527_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode:
 _p_527:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 9774
-_p_528_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm:
-	.globl _p_528_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm
-.private_extern _p_528_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetBlendMode_CoreGraphics_CGBlendMode:
+.word 9758
+_p_528_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int_llvm:
+	.globl _p_528_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int_llvm
+.private_extern _p_528_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int:
 _p_528:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 9779
-_p_529_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int_llvm:
-	.globl _p_529_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int_llvm
-.private_extern _p_529_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___int:
+.word 9763
+_p_529_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___llvm:
+	.globl _p_529_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___llvm
+.private_extern _p_529_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat__
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat__:
 _p_529:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 9784
-_p_530_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___llvm:
-	.globl _p_530_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___llvm
-.private_extern _p_530_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat__
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetLineDash_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat__:
+.word 9768
+_p_530_plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat___llvm:
+	.globl _p_530_plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat___llvm
+.private_extern _p_530_plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat__
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat__:
 _p_530:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 9789
-_p_531_plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat___llvm:
-	.globl _p_531_plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat___llvm
-.private_extern _p_531_plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat__
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGGradient__ctor_CoreGraphics_CGColorSpace_System_Runtime_InteropServices_NFloat___System_Runtime_InteropServices_NFloat__:
+.word 9773
+_p_531_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_531_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_531_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_531:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 9794
-_p_532_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_532_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_532_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddLineToPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9778
+_p_532_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath_llvm:
+	.globl _p_532_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath_llvm
+.private_extern _p_532_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath:
 _p_532:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 9799
-_p_533_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath_llvm:
-	.globl _p_533_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath_llvm
-.private_extern _p_533_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokePath:
+.word 9783
+_p_533_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool_llvm:
+	.globl _p_533_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool_llvm
+.private_extern _p_533_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool:
 _p_533:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 9804
-_p_534_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool_llvm:
-	.globl _p_534_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool_llvm
-.private_extern _p_534_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShouldAntialias_bool:
+.word 9788
+_p_534_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect_llvm:
+	.globl _p_534_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect_llvm
+.private_extern _p_534_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect:
 _p_534:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 9809
-_p_535_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect_llvm:
-	.globl _p_535_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect_llvm
-.private_extern _p_535_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidX_CoreGraphics_CGRect:
+.word 9793
+_p_535_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect_llvm:
+	.globl _p_535_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect_llvm
+.private_extern _p_535_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect:
 _p_535:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 9814
-_p_536_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect_llvm:
-	.globl _p_536_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect_llvm
-.private_extern _p_536_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMidY_CoreGraphics_CGRect:
+.word 9798
+_p_536_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath_llvm:
+	.globl _p_536_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath_llvm
+.private_extern _p_536_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath:
 _p_536:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 9819
-_p_537_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath_llvm:
-	.globl _p_537_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath_llvm
-.private_extern _p_537_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddPath_CoreGraphics_CGPath:
+.word 9803
+_p_537_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm:
+	.globl _p_537_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
+.private_extern _p_537_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool:
 _p_537:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 9824
-_p_538_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm:
-	.globl _p_538_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
-.private_extern _p_538_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddArc_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_bool:
+.word 9808
+_p_538_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath_llvm:
+	.globl _p_538_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath_llvm
+.private_extern _p_538_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath:
 _p_538:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 9829
-_p_539_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath_llvm:
-	.globl _p_539_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath_llvm
-.private_extern _p_539_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillPath:
+.word 9813
+_p_539_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm:
+	.globl _p_539_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
+.private_extern _p_539_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action:
 _p_539:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 9834
-_p_540_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm:
-	.globl _p_540_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
-.private_extern _p_540_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithImage_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action:
+.word 9818
+_p_540_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm:
+	.globl _p_540_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
+.private_extern _p_540_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action:
 _p_540:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 9839
-_p_541_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm:
-	.globl _p_541_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
-.private_extern _p_541_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithPattern_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Action:
+.word 9821
+_p_541_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool_llvm:
+	.globl _p_541_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool_llvm
+.private_extern _p_541_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool:
 _p_541:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 9842
-_p_542_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool_llvm:
-	.globl _p_542_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool_llvm
-.private_extern _p_542_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_FillWithGradient_System_Func_1_bool:
+.word 9824
+_p_542_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState_llvm:
+	.globl _p_542_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState_llvm
+.private_extern _p_542_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState:
 _p_542:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 9845
-_p_543_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState_llvm:
-	.globl _p_543_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState_llvm
-.private_extern _p_543_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SaveState:
+.word 9827
+_p_543_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient_llvm:
+	.globl _p_543_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient_llvm
+.private_extern _p_543_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient:
 _p_543:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 9848
-_p_544_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient_llvm:
-	.globl _p_544_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient_llvm
-.private_extern _p_544_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawGradient:
+.word 9832
+_p_544_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState_llvm:
+	.globl _p_544_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState_llvm
+.private_extern _p_544_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState:
 _p_544:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 9853
-_p_545_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState_llvm:
-	.globl _p_545_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState_llvm
-.private_extern _p_545_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RestoreState:
+.word 9835
+_p_545_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip_llvm:
+	.globl _p_545_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip_llvm
+.private_extern _p_545_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip:
 _p_545:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 9856
-_p_546_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip_llvm:
-	.globl _p_546_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip_llvm
-.private_extern _p_546_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_Clip:
+.word 9840
+_p_546_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single_llvm:
+	.globl _p_546_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single_llvm
+.private_extern _p_546_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single:
 _p_546:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 9861
-_p_547_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single_llvm:
-	.globl _p_547_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single_llvm
-.private_extern _p_547_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_WithAlpha_single:
+.word 9845
+_p_547_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect_llvm:
+	.globl _p_547_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect_llvm
+.private_extern _p_547_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect:
 _p_547:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 9866
-_p_548_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect_llvm:
-	.globl _p_548_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect_llvm
-.private_extern _p_548_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeRect_CoreGraphics_CGRect:
+.word 9848
+_p_548_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions_llvm:
+	.globl _p_548_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions_llvm
+.private_extern _p_548_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions:
 _p_548:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 9869
-_p_549_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions_llvm:
-	.globl _p_549_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions_llvm
-.private_extern _p_549_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawRadialGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPoint_System_Runtime_InteropServices_NFloat_CoreGraphics_CGGradientDrawingOptions:
+.word 9853
+_p_549_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint_llvm:
+	.globl _p_549_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint_llvm
+.private_extern _p_549_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint:
 _p_549:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 9874
-_p_550_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint_llvm:
-	.globl _p_550_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint_llvm
-.private_extern _p_550_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetDistance_CoreGraphics_CGPoint_CoreGraphics_CGPoint:
+.word 9858
+_p_550_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions_llvm:
+	.globl _p_550_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions_llvm
+.private_extern _p_550_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions:
 _p_550:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 9879
-_p_551_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions_llvm:
-	.globl _p_551_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions_llvm
-.private_extern _p_551_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawLinearGradient_CoreGraphics_CGGradient_CoreGraphics_CGPoint_CoreGraphics_CGPoint_CoreGraphics_CGGradientDrawingOptions:
+.word 9861
+_p_551_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage_llvm:
+	.globl _p_551_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage_llvm
+.private_extern _p_551_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage
+plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage:
 _p_551:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 9882
-_p_552_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage_llvm:
-	.globl _p_552_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage_llvm
-.private_extern _p_552_plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage
-plt_Microsoft_Maui_Graphics_UIKit_UIImage_get_CGImage:
+.word 9866
+_p_552_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_552_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_552_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_552:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 9887
-_p_553_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_553_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_553_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_TranslateCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9871
+_p_553_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_553_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_553_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_553:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 9892
-_p_554_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_554_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_554_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ScaleCTM_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 9876
+_p_554_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm:
+	.globl _p_554_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm
+.private_extern _p_554_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage:
 _p_554:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 9897
-_p_555_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm:
-	.globl _p_555_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm
-.private_extern _p_555_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawImage_CoreGraphics_CGRect_CoreGraphics_CGImage:
+.word 9881
+_p_555_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect_llvm:
+	.globl _p_555_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect_llvm
+.private_extern _p_555_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect:
 _p_555:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 9902
-_p_556_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect_llvm:
-	.globl _p_556_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect_llvm
-.private_extern _p_556_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillRect_CoreGraphics_CGRect:
+.word 9886
+_p_556_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace_llvm:
+	.globl _p_556_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace_llvm
+.private_extern _p_556_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace:
 _p_556:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 9907
-_p_557_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace_llvm:
-	.globl _p_557_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace_llvm
-.private_extern _p_557_plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGColorSpace_CreatePattern_CoreGraphics_CGColorSpace:
+.word 9891
+_p_557_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2__llvm:
+	.globl _p_557_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2__llvm
+.private_extern _p_557_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2_:
 _p_557:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 9912
-_p_558_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2__llvm:
-	.globl _p_558_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2__llvm
-.private_extern _p_558_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsCGAffineTransform_System_Numerics_Matrix3x2_:
+.word 9896
+_p_558_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_llvm:
+	.globl _p_558_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_llvm
+.private_extern _p_558_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform:
 _p_558:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 9917
-_p_559_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_llvm:
-	.globl _p_559_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_llvm
-.private_extern _p_559_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Multiply_CoreGraphics_CGAffineTransform:
+.word 9899
+_p_559_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern_llvm:
+	.globl _p_559_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern_llvm
+.private_extern _p_559_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern:
 _p_559:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 9920
-_p_560_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern_llvm:
-	.globl _p_560_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern_llvm
-.private_extern _p_560_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPattern__ctor_CoreGraphics_CGRect_CoreGraphics_CGAffineTransform_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_CoreGraphics_CGPatternTiling_bool_CoreGraphics_CGPattern_DrawPattern:
+.word 9904
+_p_560_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat___llvm:
+	.globl _p_560_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat___llvm
+.private_extern _p_560_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat__
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat__:
 _p_560:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 9925
-_p_561_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat___llvm:
-	.globl _p_561_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat___llvm
-.private_extern _p_561_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat__
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFillPattern_CoreGraphics_CGPattern_System_Runtime_InteropServices_NFloat__:
+.word 9909
+_p_561_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single_llvm:
+	.globl _p_561_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single_llvm
+.private_extern _p_561_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single:
 _p_561:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 9930
-_p_562_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single_llvm:
-	.globl _p_562_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single_llvm
-.private_extern _p_562_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AddRoundedRectangle_CoreGraphics_CGContext_single_single_single_single_single:
+.word 9914
+_p_562_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode_llvm:
+	.globl _p_562_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode_llvm
+.private_extern _p_562_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode:
 _p_562:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 9935
-_p_563_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode_llvm:
-	.globl _p_563_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode_llvm
-.private_extern _p_563_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_DrawPath_CoreGraphics_CGPathDrawingMode:
+.word 9917
+_p_563_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect_llvm:
+	.globl _p_563_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect_llvm
+.private_extern _p_563_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect:
 _p_563:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 9938
-_p_564_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect_llvm:
-	.globl _p_564_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect_llvm
-.private_extern _p_564_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_StrokeEllipseInRect_CoreGraphics_CGRect:
+.word 9922
+_p_564_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect_llvm:
+	.globl _p_564_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect_llvm
+.private_extern _p_564_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect:
 _p_564:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 9943
-_p_565_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect_llvm:
-	.globl _p_565_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect_llvm
-.private_extern _p_565_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_FillEllipseInRect_CoreGraphics_CGRect:
+.word 9927
+_p_565_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox_llvm:
+	.globl _p_565_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox_llvm
+.private_extern _p_565_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox:
 _p_565:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 9948
-_p_566_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox_llvm:
-	.globl _p_566_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox_llvm
-.private_extern _p_566_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_GetClipBoundingBox:
+.word 9932
+_p_566_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip_llvm:
+	.globl _p_566_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip_llvm
+.private_extern _p_566_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip:
 _p_566:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 9953
-_p_567_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip_llvm:
-	.globl _p_567_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip_llvm
-.private_extern _p_567_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOClip:
+.word 9937
+_p_567_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath_llvm:
+	.globl _p_567_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath_llvm
+.private_extern _p_567_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath:
 _p_567:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 9958
-_p_568_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath_llvm:
-	.globl _p_568_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath_llvm
-.private_extern _p_568_plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGPath_op_Equality_CoreGraphics_CGPath_CoreGraphics_CGPath:
+.word 9942
+_p_568_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF_llvm:
+	.globl _p_568_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF_llvm
+.private_extern _p_568_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF:
 _p_568:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 9963
-_p_569_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF_llvm:
-	.globl _p_569_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF_llvm
-.private_extern _p_569_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_GetPlatformPath_Microsoft_Maui_Graphics_PathF:
+.word 9947
+_p_569_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect_llvm:
+	.globl _p_569_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect_llvm
+.private_extern _p_569_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect:
 _p_569:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 9968
-_p_570_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect_llvm:
-	.globl _p_570_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect_llvm
-.private_extern _p_570_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddRect_CoreGraphics_CGRect:
+.word 9950
+_p_570_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath_llvm:
+	.globl _p_570_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath_llvm
+.private_extern _p_570_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath:
 _p_570:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 9971
-_p_571_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath_llvm:
-	.globl _p_571_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath_llvm
-.private_extern _p_571_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_EOFillPath:
+.word 9955
+_p_571_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single_llvm:
+	.globl _p_571_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single_llvm
+.private_extern _p_571_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single:
 _p_571:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 9976
-_p_572_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single_llvm:
-	.globl _p_572_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single_llvm
-.private_extern _p_572_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_GetStringSize_string_Microsoft_Maui_Graphics_IFont_single:
+.word 9960
+_p_572_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single_llvm:
+	.globl _p_572_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single_llvm
+.private_extern _p_572_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single:
 _p_572:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 9981
-_p_573_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single_llvm:
-	.globl _p_573_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single_llvm
-.private_extern _p_573_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawString_string_single_single:
+.word 9971
+_p_573_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color_llvm:
+	.globl _p_573_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color_llvm
+.private_extern _p_573_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color:
 _p_573:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 9992
-_p_574_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color_llvm:
-	.globl _p_574_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color_llvm
-.private_extern _p_574_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_SetFillColor_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Color:
+.word 9974
+_p_574_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont_llvm:
+	.globl _p_574_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont_llvm
+.private_extern _p_574_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont:
 _p_574:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 9995
-_p_575_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont_llvm:
-	.globl _p_575_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont_llvm
-.private_extern _p_575_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_FontExtensions_ToCGFont_Microsoft_Maui_Graphics_IFont:
+.word 9977
+_p_575_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont_llvm:
+	.globl _p_575_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont_llvm
+.private_extern _p_575_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont:
 _p_575:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 9998
-_p_576_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont_llvm:
-	.globl _p_576_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont_llvm
-.private_extern _p_576_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFont_CoreGraphics_CGFont:
+.word 9980
+_p_576_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_576_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_576_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat:
 _p_576:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 10001
-_p_577_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_577_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_577_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetFontSize_System_Runtime_InteropServices_NFloat:
+.word 9985
+_p_577_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode_llvm:
+	.globl _p_577_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode_llvm
+.private_extern _p_577_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode:
 _p_577:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 10006
-_p_578_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode_llvm:
-	.globl _p_578_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode_llvm
-.private_extern _p_578_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetTextDrawingMode_CoreGraphics_CGTextDrawingMode:
+.word 9990
+_p_578_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform_llvm:
+	.globl _p_578_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform_llvm
+.private_extern _p_578_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform:
 _p_578:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 10011
-_p_579_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform_llvm:
-	.globl _p_579_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform_llvm
-.private_extern _p_579_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_set_TextMatrix_CoreGraphics_CGAffineTransform:
+.word 9995
+_p_579_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string_llvm:
+	.globl _p_579_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string_llvm
+.private_extern _p_579_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string:
 _p_579:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 10016
-_p_580_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string_llvm:
-	.globl _p_580_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string_llvm
-.private_extern _p_580_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ShowTextAtPoint_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_string:
+.word 10000
+_p_580_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single_llvm:
+	.globl _p_580_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single_llvm
+.private_extern _p_580_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single:
 _p_580:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 10021
-_p_581_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single_llvm:
-	.globl _p_581_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single_llvm
-.private_extern _p_581_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawStringInPlatformPath_CoreGraphics_CGPath_string_Microsoft_Maui_Graphics_HorizontalAlignment_Microsoft_Maui_Graphics_VerticalAlignment_Microsoft_Maui_Graphics_TextFlow_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_single_single:
+.word 10005
+_p_581_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm:
+	.globl _p_581_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
+.private_extern _p_581_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single:
 _p_581:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 10026
-_p_582_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm:
-	.globl _p_582_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
-.private_extern _p_582_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGRect_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single:
+.word 10008
+_p_582_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity_llvm:
+	.globl _p_582_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity_llvm
+.private_extern _p_582_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity:
 _p_582:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 10029
-_p_583_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity_llvm:
-	.globl _p_583_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity_llvm
-.private_extern _p_583_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_MakeIdentity:
+.word 10011
+_p_583_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix_llvm:
+	.globl _p_583_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix_llvm
+.private_extern _p_583_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix:
 _p_583:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 10032
-_p_584_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix_llvm:
-	.globl _p_584_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix_llvm
-.private_extern _p_584_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_get_TextMatrix:
+.word 10016
+_p_584_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_584_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_584_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_584:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 10037
-_p_585_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_585_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_585_plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGAffineTransform_Translate_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 10021
+_p_585_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor_llvm:
+	.globl _p_585_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor_llvm
+.private_extern _p_585_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor:
 _p_585:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 10042
-_p_586_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor_llvm:
-	.globl _p_586_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor_llvm
-.private_extern _p_586_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColor_CoreGraphics_CGColor:
+.word 10026
+_p_586_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext_llvm:
+	.globl _p_586_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext_llvm
+.private_extern _p_586_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext
+plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext:
 _p_586:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 10047
-_p_587_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext_llvm:
-	.globl _p_587_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext_llvm
-.private_extern _p_587_plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext
-plt_Microsoft_Maui_Graphics_CoreText_CTFrame_Draw_CoreGraphics_CGContext:
+.word 10031
+_p_587_plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric_llvm:
+	.globl _p_587_plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric_llvm
+.private_extern _p_587_plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric
+plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric:
 _p_587:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 10052
-_p_588_plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric_llvm:
-	.globl _p_588_plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric_llvm
-.private_extern _p_588_plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric
-plt_Microsoft_Maui_Graphics_CoreText_CTFont_get_DescentMetric:
+.word 10036
+_p_588_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm:
+	.globl _p_588_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
+.private_extern _p_588_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single:
 _p_588:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 10057
-_p_589_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm:
-	.globl _p_589_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
-.private_extern _p_589_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawAttributedText_CoreGraphics_CGContext_Microsoft_Maui_Graphics_Text_IAttributedText_CoreGraphics_CGPath_Microsoft_Maui_Graphics_IFont_single_Microsoft_Maui_Graphics_Color_Microsoft_Maui_Graphics_TextFlow_single_single:
+.word 10041
+_p_589_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect_llvm:
+	.globl _p_589_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect_llvm
+.private_extern _p_589_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect:
 _p_589:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 10062
-_p_590_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect_llvm:
-	.globl _p_590_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect_llvm
-.private_extern _p_590_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGRectExtensions_GetMinY_CoreGraphics_CGRect:
+.word 10044
+_p_590_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_llvm:
+	.globl _p_590_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_llvm
+.private_extern _p_590_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex:
 _p_590:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 10065
-_p_591_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_llvm:
-	.globl _p_591_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_llvm
-.private_extern _p_591_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToHex:
+.word 10049
+_p_591_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm:
+	.globl _p_591_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
+.private_extern _p_591_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool:
 _p_591:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 10070
-_p_592_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm:
-	.globl _p_592_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
-.private_extern _p_592_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AsNSAttributedString_Microsoft_Maui_Graphics_Text_IAttributedText_Microsoft_Maui_Graphics_IFont_single_string_bool:
+.word 10052
+_p_592_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor_llvm:
+	.globl _p_592_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor_llvm
+.private_extern _p_592_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor:
 _p_592:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 10073
-_p_593_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor_llvm:
-	.globl _p_593_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor_llvm
-.private_extern _p_593_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_SetShadow_CoreGraphics_CGSize_System_Runtime_InteropServices_NFloat_CoreGraphics_CGColor:
+.word 10055
+_p_593_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_593_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_593_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat:
 _p_593:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 10076
-_p_594_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_594_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_594_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_RotateCTM_System_Runtime_InteropServices_NFloat:
+.word 10060
+_p_594_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform_llvm:
+	.globl _p_594_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform_llvm
+.private_extern _p_594_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform:
 _p_594:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 10081
-_p_595_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform_llvm:
-	.globl _p_595_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform_llvm
-.private_extern _p_595_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_ConcatCTM_CoreGraphics_CGAffineTransform:
+.word 10065
+_p_595_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState_llvm:
+	.globl _p_595_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState_llvm
+.private_extern _p_595_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState:
 _p_595:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 10086
-_p_596_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState_llvm:
-	.globl _p_596_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState_llvm
-.private_extern _p_596_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_SaveState:
+.word 10070
+_p_596_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState_llvm:
+	.globl _p_596_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState_llvm
+.private_extern _p_596_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState:
 _p_596:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 10091
-_p_597_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState_llvm:
-	.globl _p_597_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState_llvm
-.private_extern _p_597_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_ResetState:
+.word 10081
+_p_597_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState_llvm:
+	.globl _p_597_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState_llvm
+.private_extern _p_597_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState:
 _p_597:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 10102
-_p_598_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState_llvm:
-	.globl _p_598_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState_llvm
-.private_extern _p_598_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_AbstractCanvas_1_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_RestoreState:
+.word 10092
+_p_598_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect_llvm:
+	.globl _p_598_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect_llvm
+.private_extern _p_598_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect:
 _p_598:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 10113
-_p_599_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect_llvm:
-	.globl _p_599_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect_llvm
-.private_extern _p_599_plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGContext_AddEllipseInRect_CoreGraphics_CGRect:
+.word 10103
+_p_599_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_599_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_599_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_599:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 10124
-_p_600_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_600_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_600_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CgContextExtensions_AddRoundedRectangle_CoreGraphics_CGContext_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 10108
+_p_600_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
+	.globl _p_600_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+.private_extern _p_600_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
+plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
 _p_600:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 10129
-_p_601_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm:
-	.globl _p_601_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-.private_extern _p_601_plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat
-plt_Microsoft_Maui_Graphics_CoreGraphics_CGRect__ctor_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat_System_Runtime_InteropServices_NFloat:
+.word 10111
+_p_601_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_llvm:
+	.globl _p_601_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_llvm
+.private_extern _p_601_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor:
 _p_601:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 10132
-_p_602_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_llvm:
-	.globl _p_602_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_llvm
-.private_extern _p_602_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor:
+.word 10116
+_p_602_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState_llvm:
+	.globl _p_602_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState_llvm
+.private_extern _p_602_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState:
 _p_602:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 10137
-_p_603_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState_llvm:
-	.globl _p_603_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState_llvm
-.private_extern _p_603_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState__ctor_Microsoft_Maui_Graphics_CanvasState:
+.word 10119
+_p_603_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_llvm:
+	.globl _p_603_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_llvm
+.private_extern _p_603_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor:
 _p_603:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 10140
-_p_604_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_llvm:
-	.globl _p_604_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_llvm
-.private_extern _p_604_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor:
+.word 10122
+_p_604_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_llvm:
+	.globl _p_604_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_llvm
+.private_extern _p_604_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState:
 _p_604:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 10143
-_p_605_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_llvm:
-	.globl _p_605_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_llvm
-.private_extern _p_605_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvasState__ctor_Microsoft_Maui_Graphics_Platform_PlatformCanvasState:
+.word 10125
+_p_605_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat_llvm:
+	.globl _p_605_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat_llvm
+.private_extern _p_605_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat:
 _p_605:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 10146
-_p_606_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat_llvm:
-	.globl _p_606_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat_llvm
-.private_extern _p_606_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage_FromStream_System_IO_Stream_Microsoft_Maui_Graphics_ImageFormat:
+.word 10128
+_p_606_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string_llvm:
+	.globl _p_606_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string_llvm
+.private_extern _p_606_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string:
 _p_606:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 10149
-_p_607_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string_llvm:
-	.globl _p_607_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string_llvm
-.private_extern _p_607_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_GetDefaultAttributes_Microsoft_Maui_Graphics_IFont_single_string:
+.word 10131
+_p_607_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes_llvm:
+	.globl _p_607_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes_llvm
+.private_extern _p_607_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes:
 _p_607:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 10152
-_p_608_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes_llvm:
-	.globl _p_608_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes_llvm
-.private_extern _p_608_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString__ctor_string_CoreText_CTStringAttributes:
+.word 10134
+_p_608_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm:
+	.globl _p_608_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
+.private_extern _p_608_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool:
 _p_608:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 10155
-_p_609_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm:
-	.globl _p_609_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
-.private_extern _p_609_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_HandleRun_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_IAttributedTextRun_Microsoft_Maui_Graphics_IFont_single_string_bool:
+.word 10139
+_p_609_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm:
+	.globl _p_609_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
+.private_extern _p_609_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool:
 _p_609:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 10160
-_p_610_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm:
-	.globl _p_610_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
-.private_extern _p_610_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_AttributedTextExtensions_AddAttributes_Foundation_NSMutableAttributedString_Microsoft_Maui_Graphics_Text_ITextAttributes_int_int_Microsoft_Maui_Graphics_IFont_single_string_bool:
+.word 10142
+_p_610_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string_llvm:
+	.globl _p_610_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string_llvm
+.private_extern _p_610_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string:
 _p_610:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 10163
-_p_611_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string_llvm:
-	.globl _p_611_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string_llvm
-.private_extern _p_611_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextColors_Parse_string:
+.word 10145
+_p_611_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single___llvm:
+	.globl _p_611_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single___llvm
+.private_extern _p_611_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single__
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single__:
 _p_611:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 10166
-_p_612_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single___llvm:
-	.globl _p_612_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single___llvm
-.private_extern _p_612_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single__
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_CGColorExtensions_ToCGColor_single__:
+.word 10148
+_p_612_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_612_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_612_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_612:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 10169
-_p_613_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_613_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_613_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBold_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10151
+_p_613_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_613_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_613_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_613:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 10172
-_p_614_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_614_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_614_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetItalic_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10154
+_p_614_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_614_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_614_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_614:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 10175
-_p_615_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_615_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_615_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetUnderline_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10157
+_p_615_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_615_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_615_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_615:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 10178
-_p_616_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_616_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_616_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetForegroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10160
+_p_616_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool_llvm:
+	.globl _p_616_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool_llvm
+.private_extern _p_616_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool:
 _p_616:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 10181
-_p_617_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool_llvm:
-	.globl _p_617_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool_llvm
-.private_extern _p_617_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_ForegroundColorFromContext_bool:
+.word 10163
+_p_617_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_617_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_617_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_617:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 10184
-_p_618_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_618_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_618_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetBackgroundColor_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10168
+_p_618_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm:
+	.globl _p_618_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
+.private_extern _p_618_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange:
 _p_618:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 10189
-_p_619_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm:
-	.globl _p_619_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
-.private_extern _p_619_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_CoreText_CTStringAttributes_Foundation_NSRange:
+.word 10171
+_p_619_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_619_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_619_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_619:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 10192
-_p_620_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_620_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_620_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSuperscript_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10176
+_p_620_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
+	.globl _p_620_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+.private_extern _p_620_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes:
 _p_620:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 10197
-_p_621_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm:
-	.globl _p_621_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-.private_extern _p_621_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_GetSubscript_Microsoft_Maui_Graphics_Text_ITextAttributes:
+.word 10179
+_p_621_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange_llvm:
+	.globl _p_621_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange_llvm
+.private_extern _p_621_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange:
 _p_621:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 10200
-_p_622_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange_llvm:
-	.globl _p_622_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange_llvm
-.private_extern _p_622_plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableAttributedString_AddAttributes_Foundation_NSDictionary_Foundation_NSRange:
+.word 10182
+_p_622_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset_llvm:
+	.globl _p_622_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset_llvm
+.private_extern _p_622_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset:
 _p_622:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 10203
-_p_623_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset_llvm:
-	.globl _p_623_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset_llvm
-.private_extern _p_623_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BaselineOffset:
+.word 10187
+_p_623_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single_llvm:
+	.globl _p_623_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single_llvm
+.private_extern _p_623_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single
+plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single:
 _p_623:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 10208
-_p_624_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single_llvm:
-	.globl _p_624_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single_llvm
-.private_extern _p_624_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single
-plt_Microsoft_Maui_Graphics_Foundation_NSNumber_FromFloat_single:
+.word 10192
+_p_624_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject_llvm:
+	.globl _p_624_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject_llvm
+.private_extern _p_624_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject
+plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject:
 _p_624:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 10213
-_p_625_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject_llvm:
-	.globl _p_625_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject_llvm
-.private_extern _p_625_plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject
-plt_Microsoft_Maui_Graphics_Foundation_NSMutableDictionary_Add_Foundation_NSObject_Foundation_NSObject:
+.word 10197
+_p_625_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor_llvm:
+	.globl _p_625_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor_llvm
+.private_extern _p_625_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor:
 _p_625:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 10218
-_p_626_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor_llvm:
-	.globl _p_626_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor_llvm
-.private_extern _p_626_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_BackgroundColor_CoreGraphics_CGColor:
+.word 10202
+_p_626_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle_llvm:
+	.globl _p_626_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle_llvm
+.private_extern _p_626_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle
+plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle:
 _p_626:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 10223
-_p_627_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle_llvm:
-	.globl _p_627_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle_llvm
-.private_extern _p_627_plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle
-plt_Microsoft_Maui_Graphics_CoreText_CTStringAttributes_set_UnderlineStyle_System_Nullable_1_CoreText_CTUnderlineStyle:
+.word 10207
+_p_627_plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits_llvm:
+	.globl _p_627_plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits_llvm
+.private_extern _p_627_plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits
+plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits:
 _p_627:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 10228
-_p_628_plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits_llvm:
-	.globl _p_628_plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits_llvm
-.private_extern _p_628_plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits
-plt_Microsoft_Maui_Graphics_CoreText_CTFont_WithSymbolicTraits_System_Runtime_InteropServices_NFloat_CoreText_CTFontSymbolicTraits_CoreText_CTFontSymbolicTraits:
+.word 10212
+_p_628_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter_llvm:
+	.globl _p_628_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter_llvm
+.private_extern _p_628_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter:
 _p_628:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 10233
-_p_629_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter_llvm:
-	.globl _p_629_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter_llvm
-.private_extern _p_629_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_CreateRuns_Foundation_NSAttributedString_System_IO_TextWriter:
+.word 10217
+_p_629_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length_llvm:
+	.globl _p_629_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length_llvm
+.private_extern _p_629_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length
+plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length:
 _p_629:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 10238
-_p_630_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length_llvm:
-	.globl _p_630_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length_llvm
-.private_extern _p_630_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length
-plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Length:
+.word 10220
+_p_630_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback_llvm:
+	.globl _p_630_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback_llvm
+.private_extern _p_630_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback
+plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback:
 _p_630:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 10241
-_p_631_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback_llvm:
-	.globl _p_631_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback_llvm
-.private_extern _p_631_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback
-plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_EnumerateAttributes_Foundation_NSRange_Foundation_NSAttributedStringEnumeration_Foundation_NSAttributedRangeCallback:
+.word 10225
+_p_631_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr_llvm:
+	.globl _p_631_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr_llvm
+.private_extern _p_631_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr
+plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr:
 _p_631:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 10246
-_p_632_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr_llvm:
-	.globl _p_632_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr_llvm
-.private_extern _p_632_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr
-plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_Substring_intptr_intptr:
+.word 10230
+_p_632_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value_llvm:
+	.globl _p_632_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value_llvm
+.private_extern _p_632_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value
+plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value:
 _p_632:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 10251
-_p_633_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value_llvm:
-	.globl _p_633_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value_llvm
-.private_extern _p_633_plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value
-plt_Microsoft_Maui_Graphics_Foundation_NSAttributedString_get_Value:
+.word 10235
+_p_633_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font_llvm:
+	.globl _p_633_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font_llvm
+.private_extern _p_633_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font:
 _p_633:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 10256
-_p_634_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font_llvm:
-	.globl _p_634_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font_llvm
-.private_extern _p_634_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_Font:
+.word 10240
+_p_634_plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject__llvm:
+	.globl _p_634_plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject__llvm
+.private_extern _p_634_plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject_
+plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject_:
 _p_634:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 10261
-_p_635_plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject__llvm:
-	.globl _p_635_plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject__llvm
-.private_extern _p_635_plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject_
-plt_Microsoft_Maui_Graphics_Foundation_NSDictionary_TryGetValue_Foundation_NSObject_Foundation_NSObject_:
+.word 10245
+_p_635_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle_llvm:
+	.globl _p_635_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle_llvm
+.private_extern _p_635_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle:
 _p_635:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 10266
-_p_636_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle_llvm:
-	.globl _p_636_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle_llvm
-.private_extern _p_636_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_UnderlineStyle:
+.word 10250
+_p_636_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle_llvm:
+	.globl _p_636_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle_llvm
+.private_extern _p_636_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle:
 _p_636:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 10271
-_p_637_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle_llvm:
-	.globl _p_637_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle_llvm
-.private_extern _p_637_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_StrikethroughStyle:
+.word 10255
+_p_637_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor_llvm:
+	.globl _p_637_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor_llvm
+.private_extern _p_637_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor:
 _p_637:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 10276
-_p_638_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor_llvm:
-	.globl _p_638_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor_llvm
-.private_extern _p_638_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_ForegroundColor:
+.word 10260
+_p_638_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor_llvm:
+	.globl _p_638_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor_llvm
+.private_extern _p_638_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor
+plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor:
 _p_638:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 10281
-_p_639_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor_llvm:
-	.globl _p_639_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor_llvm
-.private_extern _p_639_plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor
-plt_Microsoft_Maui_Graphics_UIKit_UIStringAttributeKey_get_BackgroundColor:
+.word 10265
+_p_639_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor_llvm:
+	.globl _p_639_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor_llvm
+.private_extern _p_639_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor:
 _p_639:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 10286
-_p_640_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor_llvm:
-	.globl _p_640_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor_llvm
-.private_extern _p_640_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_UIColorExtensions_ToHex_UIKit_UIColor:
+.word 10270
+_p_640_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm:
+	.globl _p_640_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
+.private_extern _p_640_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string:
 _p_640:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 10291
-_p_641_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm:
-	.globl _p_641_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
-.private_extern _p_641_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBackgroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string:
+.word 10273
+_p_641_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm:
+	.globl _p_641_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
+.private_extern _p_641_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string:
 _p_641:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 10294
-_p_642_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm:
-	.globl _p_642_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
-.private_extern _p_642_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetForegroundColor_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string:
+.word 10276
+_p_642_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value_llvm:
+	.globl _p_642_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value_llvm
+.private_extern _p_642_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value
+plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value:
 _p_642:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 10297
-_p_643_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value_llvm:
-	.globl _p_643_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value_llvm
-.private_extern _p_643_plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value
-plt_Microsoft_Maui_Graphics_Foundation_NSNumber_get_Int32Value:
+.word 10279
+_p_643_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
+	.globl _p_643_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+.private_extern _p_643_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
 _p_643:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 10300
-_p_644_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
-	.globl _p_644_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-.private_extern _p_644_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetStrikethrough_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
+.word 10284
+_p_644_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
+	.globl _p_644_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+.private_extern _p_644_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
 _p_644:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 10305
-_p_645_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
-	.globl _p_645_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-.private_extern _p_645_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetUnderline_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
+.word 10287
+_p_645_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize_llvm:
+	.globl _p_645_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize_llvm
+.private_extern _p_645_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize
+plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize:
 _p_645:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 10308
-_p_646_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize_llvm:
-	.globl _p_646_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize_llvm
-.private_extern _p_646_plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize
-plt_Microsoft_Maui_Graphics_UIKit_UIFont_get_PointSize:
+.word 10290
+_p_646_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single_llvm:
+	.globl _p_646_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single_llvm
+.private_extern _p_646_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single:
 _p_646:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 10311
-_p_647_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single_llvm:
-	.globl _p_647_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single_llvm
-.private_extern _p_647_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontSize_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_single:
+.word 10295
+_p_647_plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison_llvm:
+	.globl _p_647_plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison_llvm
+.private_extern _p_647_plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison
+plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison:
 _p_647:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 10316
-_p_648_plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison_llvm:
-	.globl _p_648_plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison_llvm
-.private_extern _p_648_plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison
-plt_Microsoft_Maui_Graphics_string_Contains_string_System_StringComparison:
+.word 10298
+_p_648_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
+	.globl _p_648_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+.private_extern _p_648_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
 _p_648:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 10319
-_p_649_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
-	.globl _p_649_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-.private_extern _p_649_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetBold_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
+.word 10303
+_p_649_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
+	.globl _p_649_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+.private_extern _p_649_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
 _p_649:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 10324
-_p_650_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm:
-	.globl _p_650_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-.private_extern _p_650_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetItalic_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_bool:
+.word 10306
+_p_650_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm:
+	.globl _p_650_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
+.private_extern _p_650_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string:
 _p_650:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 10327
-_p_651_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm:
-	.globl _p_651_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
-.private_extern _p_651_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_TextAttributeExtensions_SetFontName_System_Collections_Generic_Dictionary_2_Microsoft_Maui_Graphics_Text_TextAttribute_string_string:
+.word 10309
+_p_651_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string_llvm:
+	.globl _p_651_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string_llvm
+.private_extern _p_651_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string:
 _p_651:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 10330
-_p_652_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string_llvm:
-	.globl _p_652_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string_llvm
-.private_extern _p_652_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_Parse_string:
+.word 10312
+_p_652_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool_llvm:
+	.globl _p_652_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool_llvm
+.private_extern _p_652_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool:
 _p_652:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 10333
-_p_653_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool_llvm:
-	.globl _p_653_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool_llvm
-.private_extern _p_653_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Color_ToRgbaHex_bool:
+.word 10315
+_p_653_plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection_llvm:
+	.globl _p_653_plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection_llvm
+.private_extern _p_653_plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection
+plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection:
 _p_653:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 10336
-_p_654_plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection_llvm:
-	.globl _p_654_plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection_llvm
-.private_extern _p_654_plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection
-plt_Microsoft_Maui_Graphics_System_ComponentModel_TypeConverter_StandardValuesCollection__ctor_System_Collections_ICollection:
+.word 10318
+_p_654_plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type_llvm:
+	.globl _p_654_plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type_llvm
+.private_extern _p_654_plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type
+plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type:
 _p_654:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 10339
-_p_655_plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type_llvm:
-	.globl _p_655_plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type_llvm
-.private_extern _p_655_plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type
-plt_Microsoft_Maui_Graphics_System_Type_op_Equality_System_Type_System_Type:
+.word 10323
+_p_655_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF__llvm:
+	.globl _p_655_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF__llvm
+.private_extern _p_655_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF_:
 _p_655:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 10344
-_p_656_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF__llvm:
-	.globl _p_656_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF__llvm
-.private_extern _p_656_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PointF_TryParse_string_Microsoft_Maui_Graphics_PointF_:
+.word 10328
+_p_656_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point__llvm:
+	.globl _p_656_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point__llvm
+.private_extern _p_656_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point_:
 _p_656:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 10349
-_p_657_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point__llvm:
-	.globl _p_657_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point__llvm
-.private_extern _p_657_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Point_TryParse_string_Microsoft_Maui_Graphics_Point_:
+.word 10331
+_p_657_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF__llvm:
+	.globl _p_657_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF__llvm
+.private_extern _p_657_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF_:
 _p_657:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 10352
-_p_658_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF__llvm:
-	.globl _p_658_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF__llvm
-.private_extern _p_658_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_RectF_TryParse_string_Microsoft_Maui_Graphics_RectF_:
+.word 10334
+_p_658_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect__llvm:
+	.globl _p_658_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect__llvm
+.private_extern _p_658_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect_:
 _p_658:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 10355
-_p_659_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect__llvm:
-	.globl _p_659_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect__llvm
-.private_extern _p_659_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Rect_TryParse_string_Microsoft_Maui_Graphics_Rect_:
+.word 10337
+_p_659_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF__llvm:
+	.globl _p_659_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF__llvm
+.private_extern _p_659_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF_:
 _p_659:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 10358
-_p_660_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF__llvm:
-	.globl _p_660_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF__llvm
-.private_extern _p_660_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_SizeF_TryParse_string_Microsoft_Maui_Graphics_SizeF_:
+.word 10340
+_p_660_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size__llvm:
+	.globl _p_660_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size__llvm
+.private_extern _p_660_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size_
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size_:
 _p_660:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 10361
-_p_661_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size__llvm:
-	.globl _p_661_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size__llvm
-.private_extern _p_661_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size_
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Size_TryParse_string_Microsoft_Maui_Graphics_Size_:
+.word 10343
+_p_661_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
+	.globl _p_661_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+.private_extern _p_661_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_661:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 10364
-_p_662_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
-	.globl _p_662_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
-.private_extern _p_662_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 10346
+_p_662_plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId_llvm:
+	.globl _p_662_plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId_llvm
+.private_extern _p_662_plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId
+plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId:
 _p_662:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 10367
-_p_663_plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId_llvm:
-	.globl _p_663_plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId_llvm
-.private_extern _p_663_plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId
-plt_Microsoft_Maui_Graphics_System_Environment_get_CurrentManagedThreadId:
+.word 10357
+_p_663_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm:
+	.globl _p_663_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm
+.private_extern _p_663_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator:
 _p_663:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 10378
-_p_664_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm:
-	.globl _p_664_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm
-.private_extern _p_664_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_Pointsd__23_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PointF_GetEnumerator:
+.word 10362
+_p_664_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm:
+	.globl _p_664_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm
+.private_extern _p_664_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator:
 _p_664:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 10383
-_p_665_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm:
-	.globl _p_665_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm
-.private_extern _p_665_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PathF__get_SegmentTypesd__21_System_Collections_Generic_IEnumerable_Microsoft_Maui_Graphics_PathOperation_GetEnumerator:
+.word 10365
+_p_665_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
+	.globl _p_665_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
+.private_extern _p_665_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF:
 _p_665:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 10386
-_p_666_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm:
-	.globl _p_666_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
-.private_extern _p_666_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasExtensions_SetFillPaint_Microsoft_Maui_Graphics_ICanvas_Microsoft_Maui_Graphics_Paint_Microsoft_Maui_Graphics_PointF_Microsoft_Maui_Graphics_PointF:
+.word 10368
+_p_666_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture_llvm:
+	.globl _p_666_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture_llvm
+.private_extern _p_666_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture:
 _p_666:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 10389
-_p_667_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture_llvm:
-	.globl _p_667_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture_llvm
-.private_extern _p_667_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetResult_Microsoft_Maui_Graphics_IPicture:
+.word 10371
+_p_667_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm:
+	.globl _p_667_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm
+.private_extern _p_667_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions:
 _p_667:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 10392
-_p_668_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm:
-	.globl _p_668_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm
-.private_extern _p_668_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions:
+.word 10382
+_p_668_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream_llvm:
+	.globl _p_668_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream_llvm
+.private_extern _p_668_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream
+plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream:
 _p_668:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 10403
-_p_669_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream_llvm:
-	.globl _p_669_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream_llvm
-.private_extern _p_669_plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream
-plt_Microsoft_Maui_Graphics_System_IO_Stream_CopyToAsync_System_IO_Stream:
+.word 10387
+_p_669_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture__llvm:
+	.globl _p_669_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture__llvm
+.private_extern _p_669_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture_
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture_:
 _p_669:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 10408
-_p_670_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture__llvm:
-	.globl _p_670_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture__llvm
-.private_extern _p_670_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture_
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_GetStateMachineBox_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1__System_Threading_Tasks_Task_1_Microsoft_Maui_Graphics_IPicture_:
+.word 10392
+_p_670_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
+	.globl _p_670_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
+.private_extern _p_670_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox:
 _p_670:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 10413
-_p_671_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
-	.globl _p_671_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
-.private_extern _p_671_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox:
+.word 10411
+_p_671_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception_llvm:
+	.globl _p_671_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception_llvm
+.private_extern _p_671_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception:
 _p_671:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 10432
-_p_672_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception_llvm:
-	.globl _p_672_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception_llvm
-.private_extern _p_672_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetException_System_Exception:
+.word 10430
+_p_672_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
+	.globl _p_672_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+.private_extern _p_672_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_672:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 10451
-_p_673_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
-	.globl _p_673_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
-.private_extern _p_673_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_Microsoft_Maui_Graphics_IPicture_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 10441
+_p_673_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult_llvm:
+	.globl _p_673_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult_llvm
+.private_extern _p_673_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult:
 _p_673:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 10462
-_p_674_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult_llvm:
-	.globl _p_674_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult_llvm
-.private_extern _p_674_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetResult:
+.word 10452
+_p_674_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm:
+	.globl _p_674_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
+.private_extern _p_674_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_:
 _p_674:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 10473
-_p_675_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm:
-	.globl _p_675_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
-.private_extern _p_675_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_GetStateMachineBox_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12__System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_:
+.word 10457
+_p_675_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
+	.globl _p_675_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
+.private_extern _p_675_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox:
 _p_675:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 10478
-_p_676_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
-	.globl _p_676_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
-.private_extern _p_676_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox:
+.word 10474
+_p_676_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception_llvm:
+	.globl _p_676_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception_llvm
+.private_extern _p_676_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception:
 _p_676:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 10495
-_p_677_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception_llvm:
-	.globl _p_677_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception_llvm
-.private_extern _p_677_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetException_System_Exception:
+.word 10491
+_p_677_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
+	.globl _p_677_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+.private_extern _p_677_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_677:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 10512
-_p_678_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
-	.globl _p_678_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
-.private_extern _p_678_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
+.word 10496
+_p_678_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint_llvm:
+	.globl _p_678_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint_llvm
+.private_extern _p_678_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint:
 _p_678:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 10517
-_p_679_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint_llvm:
-	.globl _p_679_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint_llvm
-.private_extern _p_679_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_GraphicsExtensions_AsPointF_CoreGraphics_CGPoint:
+.word 10501
+_p_679_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern_llvm:
+	.globl _p_679_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern_llvm
+.private_extern _p_679_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern:
 _p_679:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 10522
-_p_680_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern_llvm:
-	.globl _p_680_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern_llvm
-.private_extern _p_680_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformCanvas_DrawPatternCallback_CoreGraphics_CGContext_Microsoft_Maui_Graphics_IPattern:
+.word 10504
+_p_680_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange_llvm:
+	.globl _p_680_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange_llvm
+.private_extern _p_680_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange:
 _p_680:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 10525
-_p_681_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange_llvm:
-	.globl _p_681_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange_llvm
-.private_extern _p_681_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_NSAttributedStringExtension_HandleAttributes_System_Collections_Generic_IList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_System_IO_TextWriter_Foundation_NSAttributedString_Foundation_NSDictionary_Foundation_NSRange:
+.word 10507
+_p_681_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint_llvm:
+	.globl _p_681_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint_llvm
+.private_extern _p_681_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint
+plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint:
 _p_681:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 10528
-_p_682_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint_llvm:
-	.globl _p_682_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint_llvm
-.private_extern _p_682_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint
-plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_interruption_checkpoint:
+.word 10510
+_p_682_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception_llvm:
+	.globl _p_682_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception_llvm
+.private_extern _p_682_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception
+plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception:
 _p_682:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 10531
-_p_683_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception_llvm:
-	.globl _p_683_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception_llvm
-.private_extern _p_683_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception
-plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_rethrow_exception:
+.word 10513
+_p_683_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm:
+	.globl _p_683_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
+.private_extern _p_683_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise
+plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
 _p_683:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 10534
-_p_684_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm:
-	.globl _p_684_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
-.private_extern _p_684_plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise
-plt_Microsoft_Maui_Graphics__jit_icall_mono_thread_force_interruption_checkpoint_noraise:
+.word 10515
+_p_684_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal_llvm:
+	.globl _p_684_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal_llvm
+.private_extern _p_684_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal
+plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal:
 _p_684:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 10536
-_p_685_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal_llvm:
-	.globl _p_685_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal_llvm
-.private_extern _p_685_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal
-plt_Microsoft_Maui_Graphics__jit_icall_mono_string_new_wrapper_internal:
+.word 10518
+_p_685_plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method_llvm:
+	.globl _p_685_plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method_llvm
+.private_extern _p_685_plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method
+plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method:
 _p_685:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 10539
-_p_686_plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method_llvm:
-	.globl _p_686_plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method_llvm
-.private_extern _p_686_plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method
-plt_Microsoft_Maui_Graphics__jit_icall_mono_get_addr_compiled_method:
+.word 10521
+_p_686_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke_llvm:
+	.globl _p_686_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke_llvm
+.private_extern _p_686_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke
+plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke:
 _p_686:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 10542
-_p_687_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke_llvm:
-	.globl _p_687_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke_llvm
-.private_extern _p_687_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke
-plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_begin_invoke:
+.word 10524
+_p_687_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke_llvm:
+	.globl _p_687_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke_llvm
+.private_extern _p_687_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke
+plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke:
 _p_687:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 10545
-_p_688_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke_llvm:
-	.globl _p_688_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke_llvm
-.private_extern _p_688_plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke
-plt_Microsoft_Maui_Graphics__jit_icall_mono_delegate_end_invoke:
+.word 10527
+_p_688_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str_llvm:
+	.globl _p_688_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str_llvm
+.private_extern _p_688_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str
+plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str:
 _p_688:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 10548
-_p_689_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str_llvm:
-	.globl _p_689_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str_llvm
-.private_extern _p_689_plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str
-plt_Microsoft_Maui_Graphics__jit_icall_mono_string_to_utf8str:
+.word 10530
+_p_689_plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free_llvm:
+	.globl _p_689_plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free_llvm
+.private_extern _p_689_plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free
+plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free:
 _p_689:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 10551
-_p_690_plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free_llvm:
-	.globl _p_690_plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free_llvm
-.private_extern _p_690_plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free
-plt_Microsoft_Maui_Graphics__jit_icall_monoeg_g_free:
+.word 10533
+_p_690_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper_llvm:
+	.globl _p_690_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper_llvm
+.private_extern _p_690_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper
+plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper:
 _p_690:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 10554
-_p_691_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper_llvm:
-	.globl _p_691_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper_llvm
-.private_extern _p_691_plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper
-plt_Microsoft_Maui_Graphics__jit_icall_ves_icall_string_new_wrapper:
+.word 10535
+_p_691_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack_llvm:
+	.globl _p_691_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack_llvm
+.private_extern _p_691_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack
+plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack:
 _p_691:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 10556
-_p_692_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack_llvm:
-	.globl _p_692_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack_llvm
-.private_extern _p_692_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack
-plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_ThrowForEmptyStack:
+.word 10538
+_p_692_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF_llvm:
+	.globl _p_692_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF_llvm
+.private_extern _p_692_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF
+plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF:
 _p_692:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 10559
-_p_693_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF_llvm:
-	.globl _p_693_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF_llvm
-.private_extern _p_693_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF
-plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_PushWithResize_T_REF:
+.word 10552
+_p_693_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture_llvm:
+	.globl _p_693_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture_llvm
+.private_extern _p_693_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture
+plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture:
 _p_693:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 10573
-_p_694_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture_llvm:
-	.globl _p_694_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture_llvm
-.private_extern _p_694_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture
-plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_Capture:
+.word 10566
+_p_694_plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy_llvm:
+	.globl _p_694_plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy_llvm
+.private_extern _p_694_plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy
+plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy:
 _p_694:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 10587
-_p_695_plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy_llvm:
-	.globl _p_695_plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy_llvm
-.private_extern _p_695_plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy
-plt_Microsoft_Maui_Graphics__jit_icall_mono_gc_wbarrier_range_copy:
+.word 10571
+_p_695_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_llvm:
+	.globl _p_695_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_llvm
+.private_extern _p_695_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext:
 _p_695:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 10592
-_p_696_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_llvm:
-	.globl _p_696_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_llvm
-.private_extern _p_696_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext:
+.word 10574
+_p_696_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm:
+	.globl _p_696_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
+.private_extern _p_696_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread:
 _p_696:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 10595
-_p_697_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm:
-	.globl _p_697_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
-.private_extern _p_697_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread:
+.word 10577
+_p_697_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm:
+	.globl _p_697_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
+.private_extern _p_697_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object
+plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object:
 _p_697:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 10598
-_p_698_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm:
-	.globl _p_698_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
-.private_extern _p_698_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object
-plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object:
+.word 10592
+_p_698_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm:
+	.globl _p_698_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
+.private_extern _p_698_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object
+plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object:
 _p_698:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 10613
-_p_699_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm:
-	.globl _p_699_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
-.private_extern _p_699_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object
-plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object:
+.word 10597
+_p_699_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_llvm:
+	.globl _p_699_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_llvm
+.private_extern _p_699_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext:
 _p_699:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 10618
-_p_700_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_llvm:
-	.globl _p_700_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_llvm
-.private_extern _p_700_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext:
+.word 10602
+_p_700_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm:
+	.globl _p_700_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
+.private_extern _p_700_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread:
 _p_700:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 10623
-_p_701_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm:
-	.globl _p_701_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
-.private_extern _p_701_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_MoveNext_System_Threading_Thread:
+.word 10605
+_p_701_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_llvm:
+	.globl _p_701_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_llvm
+.private_extern _p_701_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext:
 _p_701:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 10626
-_p_702_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_llvm:
-	.globl _p_702_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_llvm
-.private_extern _p_702_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext:
+.word 10620
+_p_702_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread_llvm:
+	.globl _p_702_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread_llvm
+.private_extern _p_702_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread:
 _p_702:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 10641
-_p_703_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread_llvm:
-	.globl _p_703_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread_llvm
-.private_extern _p_703_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_Microsoft_Maui_Graphics_IPicture_Microsoft_Maui_Graphics_PictureReaderExtensions__ReadAsyncd__1_MoveNext_System_Threading_Thread:
+.word 10623
+_p_703_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_llvm:
+	.globl _p_703_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_llvm
+.private_extern _p_703_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext:
 _p_703:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 10644
-_p_704_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_llvm:
-	.globl _p_704_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_llvm
-.private_extern _p_704_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext:
+.word 10638
+_p_704_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread_llvm:
+	.globl _p_704_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread_llvm
+.private_extern _p_704_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread:
 _p_704:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 10659
-_p_705_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread_llvm:
-	.globl _p_705_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread_llvm
-.private_extern _p_705_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_byte___Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_MoveNext_System_Threading_Thread:
+.word 10641
+_p_705_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm:
+	.globl _p_705_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm
+.private_extern _p_705_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
 _p_705:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 10662
-_p_706_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm:
-	.globl _p_706_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm
-.private_extern _p_706_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompleted_System_Action:
+.word 10656
+_p_706_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool_llvm:
+	.globl _p_706_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool_llvm
+.private_extern _p_706_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool:
 _p_706:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 10677
-_p_707_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool_llvm:
-	.globl _p_707_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool_llvm
-.private_extern _p_707_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_TaskAwaiter_UnsafeOnCompletedInternal_System_Threading_Tasks_Task_System_Runtime_CompilerServices_IAsyncStateMachineBox_bool:
+.word 10661
+_p_707_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm:
+	.globl _p_707_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm
+.private_extern _p_707_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_707:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 10682
-_p_708_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm:
-	.globl _p_708_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm
-.private_extern _p_708_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
+.word 10666
+_p_708_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task_llvm:
+	.globl _p_708_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task_llvm
+.private_extern _p_708_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task:
 _p_708:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 10687
-_p_709_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task_llvm:
-	.globl _p_709_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task_llvm
-.private_extern _p_709_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncMethodBuilderCore_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_System_Threading_Tasks_Task:
+.word 10671
+_p_709_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise_llvm:
+	.globl _p_709_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise_llvm
+.private_extern _p_709_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise:
 _p_709:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 10692
-_p_710_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise_llvm:
-	.globl _p_710_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise_llvm
-.private_extern _p_710_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_InitializeTaskAsPromise:
+.word 10676
+_p_710_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm:
+	.globl _p_710_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
+.private_extern _p_710_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
 _p_710:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 10697
-_p_711_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm:
-	.globl _p_711_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
-.private_extern _p_711_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetExistingTaskResult_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
+.word 10691
+_p_711_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm:
+	.globl _p_711_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
+.private_extern _p_711_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
 _p_711:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 10712
-_p_712_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm:
-	.globl _p_712_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
-.private_extern _p_712_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromResult_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
+.word 10706
+_p_712_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult_llvm:
+	.globl _p_712_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult_llvm
+.private_extern _p_712_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
 _p_712:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 10727
-_p_713_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult_llvm:
-	.globl _p_713_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult_llvm
-.private_extern _p_713_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_TrySetResult_System_Threading_Tasks_VoidTaskResult:
+.word 10722
+_p_713_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource_llvm:
+	.globl _p_713_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource_llvm
+.private_extern _p_713_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource
+plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource:
 _p_713:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 10743
-_p_714_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource_llvm:
-	.globl _p_714_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource_llvm
-.private_extern _p_714_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource
-plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowInvalidOperationException_System_ExceptionResource:
+.word 10737
+_p_714_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm:
+	.globl _p_714_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
+.private_extern _p_714_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_:
 _p_714:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 10758
-_p_715_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm:
-	.globl _p_715_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
-.private_extern _p_715_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Threading_Tasks_VoidTaskResult_SetException_System_Exception_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_:
+.word 10742
+_p_715_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm:
+	.globl _p_715_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm
+.private_extern _p_715_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object:
 _p_715:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 10763
-_p_716_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm:
-	.globl _p_716_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm
-.private_extern _p_716_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_object:
+.word 10753
+_p_716_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object_llvm:
+	.globl _p_716_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object_llvm
+.private_extern _p_716_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object:
 _p_716:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 10774
-_p_717_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object_llvm:
-	.globl _p_717_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object_llvm
-.private_extern _p_717_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetException_object:
+.word 10758
+_p_717_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm:
+	.globl _p_717_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm
+.private_extern _p_717_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_717:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 10779
-_p_718_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm:
-	.globl _p_718_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm
-.private_extern _p_718_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
+.word 10763
+_p_718_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
+	.globl _p_718_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
+.private_extern _p_718_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_718:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 10784
-_p_719_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
-	.globl _p_719_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
-.private_extern _p_719_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+.word 10768
+_p_719_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
+	.globl _p_719_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+.private_extern _p_719_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_719:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 10789
-_p_720_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
-	.globl _p_720_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-.private_extern _p_720_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 10773
+_p_720_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
+	.globl _p_720_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+.private_extern _p_720_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_720:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 10794
-_p_721_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
-	.globl _p_721_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-.private_extern _p_721_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 10788
+_p_721_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
+	.globl _p_721_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+.private_extern _p_721_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_721:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 10809
-_p_722_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
-	.globl _p_722_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-.private_extern _p_722_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 10793
+_p_722_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm:
+	.globl _p_722_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
+.private_extern _p_722_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool:
 _p_722:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 10814
-_p_723_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm:
-	.globl _p_723_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
-.private_extern _p_723_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ScheduleAndStart_bool:
+.word 10808
+_p_723_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm:
+	.globl _p_723_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm
+.private_extern _p_723_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
 _p_723:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 10829
-_p_724_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm:
-	.globl _p_724_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm
-.private_extern _p_724_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
+.word 10813
+_p_724_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations_llvm:
+	.globl _p_724_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations_llvm
+.private_extern _p_724_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations:
 _p_724:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 10834
-_p_725_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations_llvm:
-	.globl _p_725_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations_llvm
-.private_extern _p_725_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FinishContinuations:
+.word 10818
+_p_725_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask_llvm:
+	.globl _p_725_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask_llvm
+.private_extern _p_725_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask:
 _p_725:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 10839
-_p_726_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask_llvm:
-	.globl _p_726_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask_llvm
-.private_extern _p_726_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_NotifyParentIfPotentiallyAttachedTask:
+.word 10823
+_p_726_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm:
+	.globl _p_726_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm
+.private_extern _p_726_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
 _p_726:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 10844
-_p_727_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm:
-	.globl _p_727_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm
-.private_extern _p_727_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
+.word 10828
+_p_727_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool_llvm:
+	.globl _p_727_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool_llvm
+.private_extern _p_727_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
 _p_727:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 10849
-_p_728_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool_llvm:
-	.globl _p_728_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool_llvm
-.private_extern _p_728_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_GetResultCore_bool:
+.word 10833
+_p_728_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm:
+	.globl _p_728_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm
+.private_extern _p_728_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
 _p_728:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 10854
-_p_729_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm:
-	.globl _p_729_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm
-.private_extern _p_729_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
+.word 10848
+_p_729_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm:
+	.globl _p_729_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm
+.private_extern _p_729_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
 _p_729:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 10869
-_p_730_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm:
-	.globl _p_730_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm
-.private_extern _p_730_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
+.word 10853
+_p_730_plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
+	.globl _p_730_plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
+.private_extern _p_730_plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
+plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_730:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 10874
-_p_731_plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
-	.globl _p_731_plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
-.private_extern _p_731_plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
-plt_Microsoft_Maui_Graphics_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
+.word 10858
+_p_731_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken_llvm:
+	.globl _p_731_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
+.private_extern _p_731_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken:
 _p_731:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 10879
-_p_732_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken_llvm:
-	.globl _p_732_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
-.private_extern _p_732_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_WaitAsync_uint_System_TimeProvider_System_Threading_CancellationToken:
+.word 10866
+_p_732_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument_llvm:
+	.globl _p_732_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument_llvm
+.private_extern _p_732_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument:
 _p_732:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 10887
-_p_733_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument_llvm:
-	.globl _p_733_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument_llvm
-.private_extern _p_733_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ValidateTimeout_System_TimeSpan_System_ExceptionArgument:
+.word 10881
+_p_733_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken_llvm:
+	.globl _p_733_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
+.private_extern _p_733_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken:
 _p_733:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 10902
-_p_734_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken_llvm:
-	.globl _p_734_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
-.private_extern _p_734_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_uint_System_TimeProvider_System_Threading_CancellationToken:
+.word 10886
+_p_734_plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor_llvm:
+	.globl _p_734_plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor_llvm
+.private_extern _p_734_plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor
+plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor:
 _p_734:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 10907
-_p_735_plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor_llvm:
-	.globl _p_735_plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor_llvm
-.private_extern _p_735_plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor
-plt_Microsoft_Maui_Graphics_System_TimeoutException__ctor:
+.word 10901
+_p_735_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception_llvm:
+	.globl _p_735_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception_llvm
+.private_extern _p_735_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception:
 _p_735:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 10922
-_p_736_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception_llvm:
-	.globl _p_736_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception_llvm
-.private_extern _p_736_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromException_System_Threading_Tasks_VoidTaskResult_System_Exception:
+.word 10906
+_p_736_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_llvm:
+	.globl _p_736_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_llvm
+.private_extern _p_736_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken:
 _p_736:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 10927
-_p_737_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_llvm:
-	.globl _p_737_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_llvm
-.private_extern _p_737_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_FromCanceled_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken:
+.word 10922
+_p_737_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm:
+	.globl _p_737_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
+.private_extern _p_737_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_737:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 10943
-_p_738_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm:
-	.globl _p_738_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
-.private_extern _p_738_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_ContinueWith_System_Action_1_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 10938
+_p_738_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm:
+	.globl _p_738_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm
+.private_extern _p_738_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
 _p_738:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 10959
-_p_739_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm:
-	.globl _p_739_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm
-.private_extern _p_739_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions__llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
+.word 10953
+_p_739_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_llvm:
+	.globl _p_739_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_llvm
+.private_extern _p_739_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
 _p_739:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 10974
-_p_740_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_llvm:
-	.globl _p_740_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_llvm
-.private_extern _p_740_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_ContinuationTaskFromResultTask_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions:
+.word 10958
+_p_740_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm:
+	.globl _p_740_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
+.private_extern _p_740_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_740:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 10979
-_p_741_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm:
-	.globl _p_741_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
-.private_extern _p_741_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
+.word 10973
+_p_741_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm:
+	.globl _p_741_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
+.private_extern _p_741_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
 _p_741:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 10994
-_p_742_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm:
-	.globl _p_742_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
-.private_extern _p_742_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_TaskCache_CreateCacheableTask_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_VoidTaskResult:
+.word 10978
+_p_742_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
+	.globl _p_742_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+.private_extern _p_742_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_742:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 10999
-_p_743_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
-	.globl _p_743_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-.private_extern _p_743_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_StartNew_System_Threading_Tasks_Task_System_Func_1_System_Threading_Tasks_VoidTaskResult_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
+.word 10994
+_p_743_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_llvm:
+	.globl _p_743_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_llvm
+.private_extern _p_743_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext:
 _p_743:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 11015
-_p_744_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_llvm:
-	.globl _p_744_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_llvm
-.private_extern _p_744_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext:
+.word 11009
+_p_744_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread_llvm:
+	.globl _p_744_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread_llvm
+.private_extern _p_744_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread:
 _p_744:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 11030
-_p_745_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread_llvm:
-	.globl _p_745_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread_llvm
-.private_extern _p_745_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_Microsoft_Maui_Graphics_Platform_PlatformImage__SaveAsyncd__12_MoveNext_System_Threading_Thread:
+.word 11012
+_p_745_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread_llvm:
+	.globl _p_745_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread_llvm
+.private_extern _p_745_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread:
 _p_745:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 11033
-_p_746_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread_llvm:
-	.globl _p_746_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread_llvm
-.private_extern _p_746_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_Threading_Tasks_VoidTaskResult_System_Runtime_CompilerServices_IAsyncStateMachine_MoveNext_System_Threading_Thread:
+.word 11027
+_p_746_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int_llvm:
+	.globl _p_746_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int_llvm
+.private_extern _p_746_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int
+plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int:
 _p_746:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 11048
-_p_747_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int_llvm:
-	.globl _p_747_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int_llvm
-.private_extern _p_747_plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int
-plt_Microsoft_Maui_Graphics_System_Collections_Generic_Stack_1_T_REF_Grow_int:
+.word 11042
+_p_747_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult_llvm:
+	.globl _p_747_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult_llvm
+.private_extern _p_747_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
 _p_747:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 11063
-_p_748_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult_llvm:
-	.globl _p_748_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult_llvm
-.private_extern _p_748_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_System_Threading_Tasks_VoidTaskResult:
+.word 11056
+_p_748_plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128_llvm:
+	.globl _p_748_plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128_llvm
+.private_extern _p_748_plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128
+plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128:
 _p_748:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 11077
-_p_749_plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128_llvm:
-	.globl _p_749_plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128_llvm
-.private_extern _p_749_plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128
-plt_Microsoft_Maui_Graphics_System_UInt128_op_Equality_System_UInt128_System_UInt128:
+.word 11071
+_p_749_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
+	.globl _p_749_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
+.private_extern _p_749_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_749:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 11092
-_p_750_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
-	.globl _p_750_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
-.private_extern _p_750_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult__ctor_bool_System_Threading_Tasks_VoidTaskResult_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
+.word 11076
+_p_750_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
+	.globl _p_750_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
+.private_extern _p_750_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument
+plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument:
 _p_750:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 11097
-_p_751_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
-	.globl _p_751_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
-.private_extern _p_751_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument
-plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument:
+.word 11091
+_p_751_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool_llvm:
+	.globl _p_751_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool_llvm
+.private_extern _p_751_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool:
 _p_751:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 11112
-_p_752_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool_llvm:
-	.globl _p_752_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool_llvm
-.private_extern _p_752_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_AddCompletionAction_System_Threading_Tasks_ITaskCompletionAction_bool:
+.word 11096
+_p_752_plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object_llvm:
+	.globl _p_752_plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object_llvm
+.private_extern _p_752_plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object
+plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object:
 _p_752:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 11117
-_p_753_plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object_llvm:
-	.globl _p_753_plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object_llvm
-.private_extern _p_753_plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object
-plt_Microsoft_Maui_Graphics_System_Threading_CancellationToken_UnsafeRegister_System_Action_2_object_System_Threading_CancellationToken_object:
+.word 11101
+_p_753_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup_llvm:
+	.globl _p_753_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup_llvm
+.private_extern _p_753_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup:
 _p_753:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 11122
-_p_754_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup_llvm:
-	.globl _p_754_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup_llvm
-.private_extern _p_754_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_CancellationPromise_1_System_Threading_Tasks_VoidTaskResult_Cleanup:
+.word 11106
+_p_754_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow_llvm:
+	.globl _p_754_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow_llvm
+.private_extern _p_754_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow
+plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow:
 _p_754:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 11127
-_p_755_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow_llvm:
-	.globl _p_755_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow_llvm
-.private_extern _p_755_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow
-plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_SuppressFlow:
+.word 11121
+_p_755_plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double_llvm:
+	.globl _p_755_plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double_llvm
+.private_extern _p_755_plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double
+plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double:
 _p_755:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 11142
-_p_756_plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double_llvm:
-	.globl _p_756_plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double_llvm
-.private_extern _p_756_plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double
-plt_Microsoft_Maui_Graphics_System_TimeSpan_FromMilliseconds_double:
+.word 11126
+_p_756_plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan_llvm:
+	.globl _p_756_plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan_llvm
+.private_extern _p_756_plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan
+plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan:
 _p_756:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 11147
-_p_757_plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan_llvm:
-	.globl _p_757_plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan_llvm
-.private_extern _p_757_plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan
-plt_Microsoft_Maui_Graphics_System_TimeProvider_CreateTimer_System_Threading_TimerCallback_object_System_TimeSpan_System_TimeSpan:
+.word 11131
+_p_757_plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool_llvm:
+	.globl _p_757_plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool_llvm
+.private_extern _p_757_plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool
+plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool:
 _p_757:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 11152
-_p_758_plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool_llvm:
-	.globl _p_758_plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool_llvm
-.private_extern _p_758_plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool
-plt_Microsoft_Maui_Graphics_System_Threading_TimerQueueTimer__ctor_System_Threading_TimerCallback_object_uint_uint_bool:
+.word 11136
+_p_758_plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose_llvm:
+	.globl _p_758_plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose_llvm
+.private_extern _p_758_plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose
+plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose:
 _p_758:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 11157
-_p_759_plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose_llvm:
-	.globl _p_759_plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose_llvm
-.private_extern _p_759_plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose
-plt_Microsoft_Maui_Graphics_System_Threading_AsyncFlowControl_Dispose:
+.word 11141
+_p_759_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status_llvm:
+	.globl _p_759_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status_llvm
+.private_extern _p_759_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status:
 _p_759:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 11162
-_p_760_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status_llvm:
-	.globl _p_760_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status_llvm
-.private_extern _p_760_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_Status:
+.word 11146
+_p_760_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken_llvm:
+	.globl _p_760_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken_llvm
+.private_extern _p_760_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken:
 _p_760:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 11167
-_p_761_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken_llvm:
-	.globl _p_761_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken_llvm
-.private_extern _p_761_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_get_CancellationToken:
+.word 11151
+_p_761_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo_llvm:
+	.globl _p_761_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo_llvm
+.private_extern _p_761_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo:
 _p_761:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 11172
-_p_762_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo_llvm:
-	.globl _p_762_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo_llvm
-.private_extern _p_762_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetCancellationExceptionDispatchInfo:
+.word 11156
+_p_762_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos_llvm:
+	.globl _p_762_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos_llvm
+.private_extern _p_762_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos:
 _p_762:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 11177
-_p_763_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos_llvm:
-	.globl _p_763_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos_llvm
-.private_extern _p_763_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_GetExceptionDispatchInfos:
+.word 11161
+_p_763_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result_llvm:
+	.globl _p_763_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result_llvm
+.private_extern _p_763_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result:
 _p_763:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 11182
-_p_764_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result_llvm:
-	.globl _p_764_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result_llvm
-.private_extern _p_764_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_1_System_Threading_Tasks_VoidTaskResult_get_Result:
+.word 11166
+_p_764_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult_llvm:
+	.globl _p_764_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult_llvm
+.private_extern _p_764_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult:
 _p_764:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 11187
-_p_765_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult_llvm:
-	.globl _p_765_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult_llvm
-.private_extern _p_765_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetResult:
+.word 11181
+_p_765_plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose_llvm:
+	.globl _p_765_plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose_llvm
+.private_extern _p_765_plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose
+plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose:
 _p_765:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 11202
-_p_766_plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose_llvm:
-	.globl _p_766_plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose_llvm
-.private_extern _p_766_plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose
-plt_Microsoft_Maui_Graphics_System_Threading_CancellationTokenRegistration_Dispose:
+.word 11186
+_p_766_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object_llvm:
+	.globl _p_766_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object_llvm
+.private_extern _p_766_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object:
 _p_766:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 11207
-_p_767_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object_llvm:
-	.globl _p_767_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object_llvm
-.private_extern _p_767_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_RemoveContinuation_object:
+.word 11191
+_p_767_plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int_llvm:
+	.globl _p_767_plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int_llvm
+.private_extern _p_767_plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int
+plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int:
 _p_767:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 11212
-_p_768_plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int_llvm:
-	.globl _p_768_plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int_llvm
-.private_extern _p_768_plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int
-plt_Microsoft_Maui_Graphics_System_Array_Resize_T_REF_T_REF____int:
+.word 11196
+_p_768_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm:
+	.globl _p_768_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
+.private_extern _p_768_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
+plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
 _p_768:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 11217
-_p_769_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm:
-	.globl _p_769_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
-.private_extern _p_769_plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource
-plt_Microsoft_Maui_Graphics_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource:
+.word 11211
+_p_769_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_llvm:
+	.globl _p_769_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_llvm
+.private_extern _p_769_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken
+plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken:
 _p_769:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 11232
-_p_770_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_llvm:
-	.globl _p_770_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_llvm
-.private_extern _p_770_plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken
-plt_Microsoft_Maui_Graphics_System_Threading_Tasks_Task_TrySetCanceled_System_Threading_CancellationToken:
+.word 11216
+_p_770_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader_llvm:
+	.globl _p_770_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader_llvm
+.private_extern _p_770_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader
+plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader:
 _p_770:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 11237
-_p_771_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader_llvm:
-	.globl _p_771_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader_llvm
-.private_extern _p_771_plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader
-plt_Microsoft_Maui_Graphics_System_Xml_XmlReader_Create_System_IO_TextReader:
+.word 11221
+_p_771_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText_llvm:
+	.globl _p_771_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText_llvm
+.private_extern _p_771_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText:
 _p_771:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 11242
-_p_772_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText_llvm:
-	.globl _p_772_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText_llvm
-.private_extern _p_772_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_HandleText:
+.word 11226
+_p_772_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted_llvm:
+	.globl _p_772_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted_llvm
+.private_extern _p_772_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted:
 _p_772:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 11247
-_p_773_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted_llvm:
-	.globl _p_773_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted_llvm
-.private_extern _p_773_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementStarted:
+.word 11229
+_p_773_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded_llvm:
+	.globl _p_773_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded_llvm
+.private_extern _p_773_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded:
 _p_773:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 11250
-_p_774_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded_llvm:
-	.globl _p_774_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded_llvm
-.private_extern _p_774_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_XmlAttributedTextReader_ElementEnded:
+.word 11232
+_p_774_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm:
+	.globl _p_774_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm
+.private_extern _p_774_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int:
 _p_774:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 11253
-_p_775_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm:
-	.globl _p_775_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm
-.private_extern _p_775_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedTextRunExtensions_Optimize_System_Collections_Generic_List_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_int:
+.word 11235
+_p_775_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool_llvm:
+	.globl _p_775_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool_llvm
+.private_extern _p_775_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool:
 _p_775:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 11256
-_p_776_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool_llvm:
-	.globl _p_776_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool_llvm
-.private_extern _p_776_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_Text_AttributedText__ctor_string_System_Collections_Generic_IReadOnlyList_1_Microsoft_Maui_Graphics_Text_IAttributedTextRun_bool:
+.word 11238
+_p_776_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent_llvm:
+	.globl _p_776_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent_llvm
+.private_extern _p_776_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent
+plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent:
 _p_776:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 11259
-_p_777_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent_llvm:
-	.globl _p_777_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent_llvm
-.private_extern _p_777_plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent
-plt_Microsoft_Maui_Graphics_UIKit_UIGraphics_EndPDFContent:
+.word 11241
+_p_777_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm:
+	.globl _p_777_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
+.private_extern _p_777_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___:
 _p_777:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 11262
-_p_778_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm:
-	.globl _p_778_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
-.private_extern _p_778_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_ImageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___:
+.word 11246
+_p_778_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
+	.globl _p_778_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
+.private_extern _p_778_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox:
 _p_778:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 11267
-_p_779_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
-	.globl _p_779_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
-.private_extern _p_779_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_System_Runtime_CompilerServices_TaskAwaiter__System_Runtime_CompilerServices_IAsyncStateMachineBox:
+.word 11265
+_p_779_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception_llvm:
+	.globl _p_779_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception_llvm
+.private_extern _p_779_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception:
 _p_779:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 11286
-_p_780_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception_llvm:
-	.globl _p_780_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception_llvm
-.private_extern _p_780_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetException_System_Exception:
+.word 11284
+_p_780_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte___llvm:
+	.globl _p_780_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte___llvm
+.private_extern _p_780_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte__
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte__:
 _p_780:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 11305
-_p_781_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte___llvm:
-	.globl _p_781_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte___llvm
-.private_extern _p_781_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte__
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___SetResult_byte__:
+.word 11295
+_p_781_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception_llvm:
+	.globl _p_781_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception_llvm
+.private_extern _p_781_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception
+plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception:
 _p_781:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 11316
-_p_782_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception_llvm:
-	.globl _p_782_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception_llvm
-.private_extern _p_782_plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception
-plt_Microsoft_Maui_Graphics__jit_icall_mono_arch_throw_corlib_exception:
+.word 11306
+_p_782_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm:
+	.globl _p_782_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
+.private_extern _p_782_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___:
 _p_782:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 11327
-_p_783_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm:
-	.globl _p_783_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
-.private_extern _p_783_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte____llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2_Microsoft_Maui_Graphics_PdfPageExtensions__AsBytesAsyncd__2__System_Threading_Tasks_Task_1_byte___:
+.word 11308
+_p_783_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte____llvm:
+	.globl _p_783_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte____llvm
+.private_extern _p_783_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte____llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte___
+plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte___:
 _p_783:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 11329
-_p_784_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte____llvm:
-	.globl _p_784_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte____llvm
-.private_extern _p_784_plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte____llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte___
-plt_Microsoft_Maui_Graphics_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_byte___GetStateMachineBox_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1_Microsoft_Maui_Graphics_PictureWriterExtensions__SaveAsBytesAsyncd__1__System_Threading_Tasks_Task_1_byte___:
+.word 11327
+_p_784_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr_llvm:
+	.globl _p_784_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr_llvm
+.private_extern _p_784_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr
+plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr:
 _p_784:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 11348
-_p_785_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr_llvm:
-	.globl _p_785_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr_llvm
-.private_extern _p_785_plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr
-plt_Microsoft_Maui_Graphics_wrapper_alloc_object_Alloc_intptr:
+.word 11346
+_p_785_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale_llvm:
+	.globl _p_785_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale_llvm
+.private_extern _p_785_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale:
 _p_785:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 11367
-_p_786_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale_llvm:
-	.globl _p_786_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale_llvm
-.private_extern _p_786_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Scale:
+.word 11354
+_p_786_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single_llvm:
+	.globl _p_786_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single_llvm
+.private_extern _p_786_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single:
 _p_786:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 11375
-_p_787_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single_llvm:
-	.globl _p_787_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single_llvm
-.private_extern _p_787_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeSize_single:
+.word 11357
+_p_787_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern_llvm:
+	.globl _p_787_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern_llvm
+.private_extern _p_787_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern:
 _p_787:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 11378
-_p_788_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern_llvm:
-	.globl _p_788_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern_llvm
-.private_extern _p_788_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashPattern:
+.word 11360
+_p_788_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single___llvm:
+	.globl _p_788_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single___llvm
+.private_extern _p_788_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single___llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single__
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single__:
 _p_788:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 11381
-_p_789_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single___llvm:
-	.globl _p_789_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single___llvm
-.private_extern _p_789_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single___llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single__
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashPattern_single__:
+.word 11363
+_p_789_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single_llvm:
+	.globl _p_789_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single_llvm
+.private_extern _p_789_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single:
 _p_789:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 11384
-_p_790_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single_llvm:
-	.globl _p_790_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single_llvm
-.private_extern _p_790_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_set_StrokeDashOffset_single:
+.word 11366
+_p_790_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset_llvm:
+	.globl _p_790_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset_llvm
+.private_extern _p_790_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset:
 _p_790:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 11387
-_p_791_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset_llvm:
-	.globl _p_791_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset_llvm
-.private_extern _p_791_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeDashOffset:
+.word 11369
+_p_791_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize_llvm:
+	.globl _p_791_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize_llvm
+.private_extern _p_791_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize:
 _p_791:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 11390
-_p_792_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize_llvm:
-	.globl _p_792_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize_llvm
-.private_extern _p_792_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_StrokeSize:
+.word 11372
+_p_792_plt_Microsoft_Maui_Graphics_System_Math_Abs_single_llvm:
+	.globl _p_792_plt_Microsoft_Maui_Graphics_System_Math_Abs_single_llvm
+.private_extern _p_792_plt_Microsoft_Maui_Graphics_System_Math_Abs_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Math_Abs_single
+plt_Microsoft_Maui_Graphics_System_Math_Abs_single:
 _p_792:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 11393
-_p_793_plt_Microsoft_Maui_Graphics_System_Math_Abs_single_llvm:
-	.globl _p_793_plt_Microsoft_Maui_Graphics_System_Math_Abs_single_llvm
-.private_extern _p_793_plt_Microsoft_Maui_Graphics_System_Math_Abs_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Math_Abs_single
-plt_Microsoft_Maui_Graphics_System_Math_Abs_single:
+.word 11375
+_p_793_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single_llvm:
+	.globl _p_793_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single_llvm
+.private_extern _p_793_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single:
 _p_793:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 11396
-_p_794_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single_llvm:
-	.globl _p_794_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single_llvm
-.private_extern _p_794_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_GeometryUtil_DegreesToRadians_single:
+.word 11380
+_p_794_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform_llvm:
+	.globl _p_794_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform_llvm
+.private_extern _p_794_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform
+plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform:
 _p_794:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 11401
-_p_795_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform_llvm:
-	.globl _p_795_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform_llvm
-.private_extern _p_795_plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform
-plt_Microsoft_Maui_Graphics_Microsoft_Maui_Graphics_CanvasState_get_Transform:
+.word 11383
+_p_795_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single_llvm:
+	.globl _p_795_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single_llvm
+.private_extern _p_795_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single
+plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single:
 _p_795:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 11404
-_p_796_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single_llvm:
-	.globl _p_796_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single_llvm
-.private_extern _p_796_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single
-plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateTranslation_single_single:
+.word 11386
+_p_796_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single_llvm:
+	.globl _p_796_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single_llvm
+.private_extern _p_796_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single
+plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single:
 _p_796:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 11407
-_p_797_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single_llvm:
-	.globl _p_797_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single_llvm
-.private_extern _p_797_plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single
-plt_Microsoft_Maui_Graphics_System_Numerics_Matrix3x2_CreateScale_single_single:
+.word 11391
+_p_797_plt_Microsoft_Maui_Graphics_object_Equals_object_object_llvm:
+	.globl _p_797_plt_Microsoft_Maui_Graphics_object_Equals_object_object_llvm
+.private_extern _p_797_plt_Microsoft_Maui_Graphics_object_Equals_object_object_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_object_Equals_object_object
+plt_Microsoft_Maui_Graphics_object_Equals_object_object:
 _p_797:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 11412
-_p_798_plt_Microsoft_Maui_Graphics_object_Equals_object_object_llvm:
-	.globl _p_798_plt_Microsoft_Maui_Graphics_object_Equals_object_object_llvm
-.private_extern _p_798_plt_Microsoft_Maui_Graphics_object_Equals_object_object_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_object_Equals_object_object
-plt_Microsoft_Maui_Graphics_object_Equals_object_object:
+.word 11396
+_p_798_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast_llvm:
+	.globl _p_798_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
+.private_extern _p_798_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast
+plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast:
 _p_798:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 11417
-_p_799_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast_llvm:
-	.globl _p_799_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
-.private_extern _p_799_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast
-plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_fast:
+.word 11401
+_p_799_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_llvm:
+	.globl _p_799_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_llvm
+.private_extern _p_799_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call
+plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call:
 _p_799:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 11422
-_p_800_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_llvm:
-	.globl _p_800_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_llvm
-.private_extern _p_800_plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call
-plt_Microsoft_Maui_Graphics__jit_icall_mono_gsharedvt_constrained_call:
+.word 11404
+_p_800_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm:
+	.globl _p_800_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm
+.private_extern _p_800_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm
+	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext
+plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext:
 _p_800:
 adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
 add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 11425
-_p_801_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm:
-	.globl _p_801_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm
-.private_extern _p_801_plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm
-	.no_dead_strip plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext
-plt_Microsoft_Maui_Graphics_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext:
-_p_801:
-adrp x16, mono_aot_Microsoft_Maui_Graphics_got@PAGE+4096
-add x16, x16, mono_aot_Microsoft_Maui_Graphics_got@PAGEOFF
-ldr x16, [x16, #2920]
-br x16
-.word 11428
+.word 11407
 plt_end:
 _mono_aot_Microsoft_Maui_Graphicsplt_end:
 	.globl _mono_aot_Microsoft_Maui_Graphicsplt_end
@@ -18904,7 +18893,7 @@ _mono_aot_Microsoft_Maui_Graphicsplt_end:
 jit_got:
 _mono_aot_Microsoft_Maui_Graphicsjit_got:
 	.globl _mono_aot_Microsoft_Maui_Graphicsjit_got
-.lcomm mono_aot_Microsoft_Maui_Graphics_got, 7024
+.lcomm mono_aot_Microsoft_Maui_Graphics_got, 7016
 got_end:
 .section __TEXT, __const
 	.align 3

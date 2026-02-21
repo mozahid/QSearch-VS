@@ -4,7 +4,31 @@
     <ReferenceNativeSymbol Include="_SystemNative_Log">
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_SystemNative_ConvertErrorPalToPlatform">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_SystemNative_StrErrorR">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_SystemNative_GetDomainName">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_SystemNative_InterfaceNameToIndex">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_AppleCryptoNative_DigestFree">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_AppleCryptoNative_DigestCreate">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_AppleCryptoNative_DigestUpdate">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_AppleCryptoNative_DigestFinal">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_AppleCryptoNative_DigestReset">
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_GlobalizationNative_GetLatestJapaneseEra">
@@ -140,12 +164,6 @@
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_SystemNative_ConvertErrorPlatformToPal">
-      <SymbolType>Function</SymbolType>
-    </ReferenceNativeSymbol>
-    <ReferenceNativeSymbol Include="_SystemNative_ConvertErrorPalToPlatform">
-      <SymbolType>Function</SymbolType>
-    </ReferenceNativeSymbol>
-    <ReferenceNativeSymbol Include="_SystemNative_StrErrorR">
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_SystemNative_GetErrNo">
@@ -308,6 +326,9 @@
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_xamarin_find_protocol_wrapper_type">
+      <SymbolType>Function</SymbolType>
+    </ReferenceNativeSymbol>
+    <ReferenceNativeSymbol Include="_xamarin_is_user_type">
       <SymbolType>Function</SymbolType>
     </ReferenceNativeSymbol>
     <ReferenceNativeSymbol Include="_xamarin_log">

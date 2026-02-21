@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "System.Collections.Concurrent.dll"
 	.asciz ""
 
@@ -607,7 +607,7 @@ bl _p_6
 .word 0xf2a04000
 bl _mono_create_corlib_exception_2
 bl _p_4
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_75
 .word 0xd2801140
@@ -1454,21 +1454,6 @@ bl _p_1
 .word 0x9101e3a2
 .word 0xd63f0060
 .word 0xf9004ba0
-.word 0xf9401300
-.word 0xd1000400
-.word 0x8b0002c0
-.word 0xf9400000
-.word 0xb9407ba1
-.word 0x93407c21
-.word 0xb9801802
-.word 0xeb01005f
-.word 0x10000011
-.word 0x54002329
-.word 0xd37ef421
-.word 0x8b010000
-.word 0x91008000
-.word 0xb9800000
-.word 0x340020c0
 .word 0xb9407ba0
 .word 0x93407c00
 .word 0xb9801a61
@@ -1538,7 +1523,7 @@ bl _p_30
 .word 0xf9404fa0
 .word 0xb4000040
 bl _p_28
-.word 0x17ffff99
+.word 0x17ffffa8
 .word 0xd280001a
 .word 0xf9404ba0
 .word 0xf9400013
@@ -1550,7 +1535,7 @@ ldr x0, [x16, #56]
 .word 0xf9400011
 .word 0xb4000051
 bl _p_1
-.word 0xf9401700
+.word 0xf9401300
 .word 0xd1000400
 .word 0x8b000260
 .word 0xb9800000
@@ -1578,12 +1563,12 @@ bl _p_1
 .word 0xf9400c00
 .word 0xd63f0000
 .word 0xf9005ba0
-.word 0xf9401b00
+.word 0xf9401700
 .word 0xd1000400
 .word 0x8b000261
 .word 0xb9805b00
 .word 0x8b0002e0
-.word 0xf9401f02
+.word 0xf9401b02
 .word 0xf9402b03
 .word 0xd63f0060
 .word 0xf9405ba0
@@ -1601,8 +1586,8 @@ bl _p_1
 .word 0x53001c15
 .word 0xaa1503e0
 .word 0x350001a0
-.word 0xf9401f01
-.word 0xf9402302
+.word 0xf9401b01
+.word 0xf9401f02
 .word 0xf9402fa0
 .word 0xd63f0040
 .word 0xd2a00000
@@ -1614,7 +1599,7 @@ bl _p_1
 bl _p_28
 .word 0x1400007d
 .word 0xb50002fa
-.word 0xf9402700
+.word 0xf9402300
 .word 0xd1000400
 .word 0x8b000260
 .word 0xf9400000
@@ -1637,7 +1622,7 @@ ldr x2, [x16, #16]
 .word 0xd280003e
 .word 0x3900003e
 .word 0x14000019
-.word 0xf9402700
+.word 0xf9402300
 .word 0xd1000400
 .word 0x8b000260
 .word 0xf9400000
@@ -1645,7 +1630,7 @@ ldr x2, [x16, #16]
 .word 0xd5033bbf
 .word 0xd5033bbf
 .word 0xd5033bbf
-.word 0xf9402700
+.word 0xf9402300
 .word 0xd1000400
 .word 0x8b000341
 .word 0xd5033bbf
@@ -1662,24 +1647,24 @@ ldr x2, [x16, #16]
 .word 0x8b020021
 .word 0xd280003e
 .word 0x3900003e
-.word 0xf9401b00
+.word 0xf9401700
 .word 0xd1000400
 .word 0x8b000261
 .word 0xb9806300
 .word 0x8b0002e0
-.word 0xf9401f02
+.word 0xf9401b02
 .word 0xf9402b03
 .word 0xd63f0060
 .word 0xb9806300
 .word 0x8b0002e1
 .word 0xf9402fa0
-.word 0xf9401f02
+.word 0xf9401b02
 .word 0xf9402b02
 .word 0xf9403ba2
 .word 0xf9400c42
 .word 0xf9401842
 bl _mono_gsharedvt_value_copy
-.word 0xf9401300
+.word 0xf9402700
 .word 0xd1000400
 .word 0x8b0002c0
 .word 0xf9400000
@@ -1704,7 +1689,7 @@ bl _mono_gsharedvt_value_copy
 bl _p_28
 .word 0x14000025
 .word 0xaa1303fa
-.word 0xf9402700
+.word 0xf9402300
 .word 0xd1000400
 .word 0x8b000260
 .word 0xf9400000
@@ -1734,8 +1719,8 @@ bl _p_1
 bl _p_31
 .word 0xf94053be
 .word 0xd61f03c0
-.word 0xf9401f01
-.word 0xf9402302
+.word 0xf9401b01
+.word 0xf9401f02
 .word 0xf9402fa0
 .word 0xd63f0040
 .word 0xd2a00000
@@ -2526,7 +2511,7 @@ bl _p_1
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_75
 .word 0xd2801140
@@ -3947,7 +3932,7 @@ bl _mono_gsharedvt_value_copy
 .word 0xd2801840
 .word 0xaa1103e1
 bl _p_75
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_75
 
@@ -4404,7 +4389,7 @@ bl _p_1
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_75
 .word 0xd2801840
@@ -6500,7 +6485,7 @@ ldr x0, [x16, #0]
 .word 0xd2806701
 bl _p_6
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_4
@@ -7190,7 +7175,7 @@ bl _p_1
 .word 0x910003bf
 .word 0xa8cf7bfd
 .word 0xd65f03c0
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_75
 .word 0xd2801140
@@ -10058,7 +10043,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 12913
+.word 12909
 _p_2_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_string_llvm:
 	.globl _p_2_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_string_llvm
 .private_extern _p_2_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_string_llvm
@@ -10069,7 +10054,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 12916
+.word 12912
 _p_3_plt_System_Collections_Concurrent__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_3_plt_System_Collections_Concurrent__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_3_plt_System_Collections_Concurrent__jit_icall_mono_create_corlib_exception_1_llvm
@@ -10080,7 +10065,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 12918
+.word 12914
 _p_4_plt_System_Collections_Concurrent__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_4_plt_System_Collections_Concurrent__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_4_plt_System_Collections_Concurrent__jit_icall_mono_arch_throw_exception_llvm
@@ -10091,7 +10076,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 12921
+.word 12917
 _p_5_plt_System_Collections_Concurrent__jit_icall_mono_create_corlib_exception_2_llvm:
 	.globl _p_5_plt_System_Collections_Concurrent__jit_icall_mono_create_corlib_exception_2_llvm
 .private_extern _p_5_plt_System_Collections_Concurrent__jit_icall_mono_create_corlib_exception_2_llvm
@@ -10102,7 +10087,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 12923
+.word 12919
 _p_6_plt_System_Collections_Concurrent__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_6_plt_System_Collections_Concurrent__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_6_plt_System_Collections_Concurrent__jit_icall_mono_helper_ldstr_llvm
@@ -10113,7 +10098,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 12926
+.word 12922
 _p_7_plt_System_Collections_Concurrent_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
 	.globl _p_7_plt_System_Collections_Concurrent_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
 .private_extern _p_7_plt_System_Collections_Concurrent_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
@@ -10124,7 +10109,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 12929
+.word 12925
 _p_8_plt_System_Collections_Concurrent_string_Join_string_object___llvm:
 	.globl _p_8_plt_System_Collections_Concurrent_string_Join_string_object___llvm
 .private_extern _p_8_plt_System_Collections_Concurrent_string_Join_string_object___llvm
@@ -10135,7 +10120,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 12937
+.word 12933
 _p_9_plt_System_Collections_Concurrent__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_9_plt_System_Collections_Concurrent__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_9_plt_System_Collections_Concurrent__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -10146,7 +10131,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 12942
+.word 12938
 _p_10_plt_System_Collections_Concurrent_System_Collections_HashHelpers_IsPrime_int_llvm:
 	.globl _p_10_plt_System_Collections_Concurrent_System_Collections_HashHelpers_IsPrime_int_llvm
 .private_extern _p_10_plt_System_Collections_Concurrent_System_Collections_HashHelpers_IsPrime_int_llvm
@@ -10157,7 +10142,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 12945
+.word 12941
 _p_11_plt_System_Collections_Concurrent__jit_icall_ves_icall_object_new_specific_llvm:
 	.globl _p_11_plt_System_Collections_Concurrent__jit_icall_ves_icall_object_new_specific_llvm
 .private_extern _p_11_plt_System_Collections_Concurrent__jit_icall_ves_icall_object_new_specific_llvm
@@ -10168,7 +10153,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 12947
+.word 12943
 _p_12_plt_System_Collections_Concurrent__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_12_plt_System_Collections_Concurrent__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_12_plt_System_Collections_Concurrent__jit_icall_mini_init_method_rgctx_llvm
@@ -10179,7 +10164,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 12950
+.word 12946
 _p_13_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF__ctor_int_int_bool_System_Collections_Generic_IEqualityComparer_1_TKey_REF_llvm:
 	.globl _p_13_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF__ctor_int_int_bool_System_Collections_Generic_IEqualityComparer_1_TKey_REF_llvm
 .private_extern _p_13_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF__ctor_int_int_bool_System_Collections_Generic_IEqualityComparer_1_TKey_REF_llvm
@@ -10190,7 +10175,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 12977
+.word 12973
 _p_14_plt_System_Collections_Concurrent__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_14_plt_System_Collections_Concurrent__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_14_plt_System_Collections_Concurrent__jit_icall_mono_generic_class_init_llvm
@@ -10201,7 +10186,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 12991
+.word 12987
 _p_15_plt_System_Collections_Concurrent_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm:
 	.globl _p_15_plt_System_Collections_Concurrent_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
 .private_extern _p_15_plt_System_Collections_Concurrent_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
@@ -10212,7 +10197,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 12994
+.word 12990
 _p_16_plt_System_Collections_Concurrent_System_Collections_HashHelpers_GetPrime_int_llvm:
 	.globl _p_16_plt_System_Collections_Concurrent_System_Collections_HashHelpers_GetPrime_int_llvm
 .private_extern _p_16_plt_System_Collections_Concurrent_System_Collections_HashHelpers_GetPrime_int_llvm
@@ -10223,7 +10208,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 13009
+.word 13005
 _p_17_plt_System_Collections_Concurrent_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_17_plt_System_Collections_Concurrent_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_17_plt_System_Collections_Concurrent_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -10234,7 +10219,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 13011
+.word 13007
 _p_18_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF__ctor_System_Collections_Concurrent_ConcurrentDictionary_2_VolatileNode_TKey_REF_TValue_REF___object___int___System_Collections_Generic_IEqualityComparer_1_TKey_REF_llvm:
 	.globl _p_18_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF__ctor_System_Collections_Concurrent_ConcurrentDictionary_2_VolatileNode_TKey_REF_TValue_REF___object___int___System_Collections_Generic_IEqualityComparer_1_TKey_REF_llvm
 .private_extern _p_18_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF__ctor_System_Collections_Concurrent_ConcurrentDictionary_2_VolatileNode_TKey_REF_TValue_REF___object___int___System_Collections_Generic_IEqualityComparer_1_TKey_REF_llvm
@@ -10245,7 +10230,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 13024
+.word 13020
 _p_19_plt_System_Collections_Concurrent_System_Collections_Generic_EqualityComparer_1_TKey_REF_CreateComparer_llvm:
 	.globl _p_19_plt_System_Collections_Concurrent_System_Collections_Generic_EqualityComparer_1_TKey_REF_CreateComparer_llvm
 .private_extern _p_19_plt_System_Collections_Concurrent_System_Collections_Generic_EqualityComparer_1_TKey_REF_CreateComparer_llvm
@@ -10256,7 +10241,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 13049
+.word 13045
 _p_20_plt_System_Collections_Concurrent_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm:
 	.globl _p_20_plt_System_Collections_Concurrent_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm
 .private_extern _p_20_plt_System_Collections_Concurrent_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm
@@ -10267,7 +10252,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 13064
+.word 13060
 _p_21_plt_System_Collections_Concurrent_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
 	.globl _p_21_plt_System_Collections_Concurrent_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
 .private_extern _p_21_plt_System_Collections_Concurrent_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
@@ -10278,7 +10263,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 13069
+.word 13065
 _p_22_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryAddInternal_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_TKey_REF_System_Nullable_1_int_TValue_REF_bool_bool_TValue_REF__llvm:
 	.globl _p_22_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryAddInternal_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_TKey_REF_System_Nullable_1_int_TValue_REF_bool_bool_TValue_REF__llvm
 .private_extern _p_22_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryAddInternal_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_TKey_REF_System_Nullable_1_int_TValue_REF_bool_bool_TValue_REF__llvm
@@ -10289,7 +10274,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 13077
+.word 13073
 _p_23_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowKeyNullException_llvm:
 	.globl _p_23_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowKeyNullException_llvm
 .private_extern _p_23_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowKeyNullException_llvm
@@ -10300,7 +10285,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 13091
+.word 13087
 _p_24_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryGetValue_TKey_REF_TValue_REF__llvm:
 	.globl _p_24_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryGetValue_TKey_REF_TValue_REF__llvm
 .private_extern _p_24_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryGetValue_TKey_REF_TValue_REF__llvm
@@ -10311,7 +10296,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 13093
+.word 13089
 _p_25_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemoveInternal_TKey_REF_TValue_REF__bool_TValue_REF_llvm:
 	.globl _p_25_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemoveInternal_TKey_REF_TValue_REF__bool_TValue_REF_llvm
 .private_extern _p_25_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemoveInternal_TKey_REF_TValue_REF__bool_TValue_REF_llvm
@@ -10322,7 +10307,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 13107
+.word 13103
 _p_26_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_string_string_llvm:
 	.globl _p_26_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_string_string_llvm
 .private_extern _p_26_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_string_string_llvm
@@ -10333,7 +10318,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 13121
+.word 13117
 _p_27_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_v4_fast_llvm:
 	.globl _p_27_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_v4_fast_llvm
 .private_extern _p_27_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_v4_fast_llvm
@@ -10344,7 +10329,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 13123
+.word 13119
 _p_28_plt_System_Collections_Concurrent__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_28_plt_System_Collections_Concurrent__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_28_plt_System_Collections_Concurrent__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -10355,7 +10340,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 13126
+.word 13122
 _p_29_plt_System_Collections_Concurrent_System_Collections_Generic_EqualityComparer_1_TValue_REF_CreateComparer_llvm:
 	.globl _p_29_plt_System_Collections_Concurrent_System_Collections_Generic_EqualityComparer_1_TValue_REF_CreateComparer_llvm
 .private_extern _p_29_plt_System_Collections_Concurrent_System_Collections_Generic_EqualityComparer_1_TValue_REF_CreateComparer_llvm
@@ -10366,7 +10351,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 13140
+.word 13136
 _p_30_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_v4_internal_llvm:
 	.globl _p_30_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_v4_internal_llvm
 .private_extern _p_30_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_v4_internal_llvm
@@ -10377,7 +10362,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 13155
+.word 13151
 _p_31_plt_System_Collections_Concurrent_System_Threading_Monitor_Exit_object_llvm:
 	.globl _p_31_plt_System_Collections_Concurrent_System_Threading_Monitor_Exit_object_llvm
 .private_extern _p_31_plt_System_Collections_Concurrent_System_Threading_Monitor_Exit_object_llvm
@@ -10388,7 +10373,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 13158
+.word 13154
 _p_32_plt_System_Collections_Concurrent__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_32_plt_System_Collections_Concurrent__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_32_plt_System_Collections_Concurrent__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -10399,7 +10384,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 13163
+.word 13159
 _p_33_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AcquireAllLocks_int__llvm:
 	.globl _p_33_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AcquireAllLocks_int__llvm
 .private_extern _p_33_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AcquireAllLocks_int__llvm
@@ -10410,7 +10395,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 13166
+.word 13162
 _p_34_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AreAllBucketsEmpty_llvm:
 	.globl _p_34_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AreAllBucketsEmpty_llvm
 .private_extern _p_34_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AreAllBucketsEmpty_llvm
@@ -10421,7 +10406,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 13180
+.word 13176
 _p_35_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_ReleaseLocks_int_llvm:
 	.globl _p_35_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_ReleaseLocks_int_llvm
 .private_extern _p_35_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_ReleaseLocks_int_llvm
@@ -10432,7 +10417,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 13194
+.word 13190
 _p_36_plt_System_Collections_Concurrent_System_ArgumentNullException_ThrowIfNull_object_string_llvm:
 	.globl _p_36_plt_System_Collections_Concurrent_System_ArgumentNullException_ThrowIfNull_object_string_llvm
 .private_extern _p_36_plt_System_Collections_Concurrent_System_ArgumentNullException_ThrowIfNull_object_string_llvm
@@ -10443,7 +10428,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 13208
+.word 13204
 _p_37_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GetCountNoLocks_llvm:
 	.globl _p_37_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GetCountNoLocks_llvm
 .private_extern _p_37_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GetCountNoLocks_llvm
@@ -10454,7 +10439,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 13213
+.word 13209
 _p_38_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToPairs_System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_REF___int_llvm:
 	.globl _p_38_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToPairs_System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_REF___int_llvm
 .private_extern _p_38_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToPairs_System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_REF___int_llvm
@@ -10465,7 +10450,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 13227
+.word 13223
 _p_39_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GrowTable_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_bool_bool_llvm:
 	.globl _p_39_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GrowTable_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_bool_bool_llvm
 .private_extern _p_39_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GrowTable_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_bool_bool_llvm
@@ -10476,7 +10461,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 13241
+.word 13237
 _p_40_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_Node_TKey_REF_TValue_REF__ctor_TKey_REF_TValue_REF_int_System_Collections_Concurrent_ConcurrentDictionary_2_Node_TKey_REF_TValue_REF_llvm:
 	.globl _p_40_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_Node_TKey_REF_TValue_REF__ctor_TKey_REF_TValue_REF_int_System_Collections_Concurrent_ConcurrentDictionary_2_Node_TKey_REF_TValue_REF_llvm
 .private_extern _p_40_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_Node_TKey_REF_TValue_REF__ctor_TKey_REF_TValue_REF_int_System_Collections_Concurrent_ConcurrentDictionary_2_Node_TKey_REF_TValue_REF_llvm
@@ -10487,7 +10472,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 13260
+.word 13256
 _p_41_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_ThrowKeyNotFoundException_TKey_REF_llvm:
 	.globl _p_41_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_ThrowKeyNotFoundException_TKey_REF_llvm
 .private_extern _p_41_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_ThrowKeyNotFoundException_TKey_REF_llvm
@@ -10498,7 +10483,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 13274
+.word 13270
 _p_42_plt_System_Collections_Concurrent_System_SR_Format_string_object_llvm:
 	.globl _p_42_plt_System_Collections_Concurrent_System_SR_Format_string_object_llvm
 .private_extern _p_42_plt_System_Collections_Concurrent_System_SR_Format_string_object_llvm
@@ -10509,7 +10494,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 13288
+.word 13284
 _p_43_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryGetValueInternal_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_TKey_REF_int_TValue_REF__llvm:
 	.globl _p_43_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryGetValueInternal_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_TKey_REF_int_TValue_REF__llvm
 .private_extern _p_43_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryGetValueInternal_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_TKey_REF_int_TValue_REF__llvm
@@ -10520,7 +10505,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 13290
+.word 13286
 _p_44_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryAdd_TKey_REF_TValue_REF_llvm:
 	.globl _p_44_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryAdd_TKey_REF_TValue_REF_llvm
 .private_extern _p_44_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryAdd_TKey_REF_TValue_REF_llvm
@@ -10531,7 +10516,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 13304
+.word 13300
 _p_45_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemove_TKey_REF_TValue_REF__llvm:
 	.globl _p_45_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemove_TKey_REF_TValue_REF__llvm
 .private_extern _p_45_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemove_TKey_REF_TValue_REF__llvm
@@ -10542,7 +10527,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 13318
+.word 13314
 _p_46_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GetValues_llvm:
 	.globl _p_46_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GetValues_llvm
 .private_extern _p_46_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_GetValues_llvm
@@ -10553,7 +10538,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 13332
+.word 13328
 _p_47_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemove_System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_REF_llvm:
 	.globl _p_47_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemove_System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_REF_llvm
 .private_extern _p_47_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_TryRemove_System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_REF_llvm
@@ -10564,7 +10549,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 13346
+.word 13342
 _p_48_plt_System_Collections_Concurrent_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
 	.globl _p_48_plt_System_Collections_Concurrent_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
 .private_extern _p_48_plt_System_Collections_Concurrent_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
@@ -10575,7 +10560,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 13360
+.word 13356
 _p_49_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowValueNullException_llvm:
 	.globl _p_49_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowValueNullException_llvm
 .private_extern _p_49_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowValueNullException_llvm
@@ -10586,7 +10571,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 13368
+.word 13364
 _p_50_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_set_Item_TKey_REF_TValue_REF_llvm:
 	.globl _p_50_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_set_Item_TKey_REF_TValue_REF_llvm
 .private_extern _p_50_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_set_Item_TKey_REF_TValue_REF_llvm
@@ -10597,7 +10582,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 13370
+.word 13366
 _p_51_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToObjects_object___int_llvm:
 	.globl _p_51_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToObjects_object___int_llvm
 .private_extern _p_51_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToObjects_object___int_llvm
@@ -10608,7 +10593,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 13384
+.word 13380
 _p_52_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToEntries_System_Collections_DictionaryEntry___int_llvm:
 	.globl _p_52_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToEntries_System_Collections_DictionaryEntry___int_llvm
 .private_extern _p_52_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_CopyToEntries_System_Collections_DictionaryEntry___int_llvm
@@ -10619,7 +10604,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 13398
+.word 13394
 _p_53_plt_System_Collections_Concurrent_System_SpanHelpers_IndexOfAnyExcept_int_int__int_int_llvm:
 	.globl _p_53_plt_System_Collections_Concurrent_System_SpanHelpers_IndexOfAnyExcept_int_int__int_int_llvm
 .private_extern _p_53_plt_System_Collections_Concurrent_System_SpanHelpers_IndexOfAnyExcept_int_int__int_int_llvm
@@ -10630,7 +10615,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 13412
+.word 13408
 _p_54_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_Negate_1_long_long__long_int_llvm:
 	.globl _p_54_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_Negate_1_long_long__long_int_llvm
 .private_extern _p_54_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_Negate_1_long_long__long_int_llvm
@@ -10641,7 +10626,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 13448
+.word 13444
 _p_55_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_Negate_1_int_int__int_int_llvm:
 	.globl _p_55_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_Negate_1_int_int__int_int_llvm
 .private_extern _p_55_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_Negate_1_int_int__int_int_llvm
@@ -10652,7 +10637,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 13479
+.word 13475
 _p_56_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_Negate_1_int16_int16__int16_int_llvm:
 	.globl _p_56_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_Negate_1_int16_int16__int16_int_llvm
 .private_extern _p_56_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_Negate_1_int16_int16__int16_int_llvm
@@ -10663,7 +10648,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 13515
+.word 13511
 _p_57_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_Negate_1_byte_byte__byte_int_llvm:
 	.globl _p_57_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_Negate_1_byte_byte__byte_int_llvm
 .private_extern _p_57_plt_System_Collections_Concurrent_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_Negate_1_byte_byte__byte_int_llvm
@@ -10674,7 +10659,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 13549
+.word 13545
 _p_58_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm:
 	.globl _p_58_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
 .private_extern _p_58_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
@@ -10685,7 +10670,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 13565
+.word 13561
 _p_59_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_fast_llvm:
 	.globl _p_59_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_fast_llvm
 .private_extern _p_59_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_fast_llvm
@@ -10696,7 +10681,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 13570
+.word 13566
 _p_60_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AcquirePostFirstLock_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_int__llvm:
 	.globl _p_60_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AcquirePostFirstLock_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_int__llvm
 .private_extern _p_60_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_TKey_REF_TValue_REF_AcquirePostFirstLock_System_Collections_Concurrent_ConcurrentDictionary_2_Tables_TKey_REF_TValue_REF_int__llvm
@@ -10707,7 +10692,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 13573
+.word 13569
 _p_61_plt_System_Collections_Concurrent_System_Array_Copy_System_Array_System_Array_int_llvm:
 	.globl _p_61_plt_System_Collections_Concurrent_System_Array_Copy_System_Array_System_Array_int_llvm
 .private_extern _p_61_plt_System_Collections_Concurrent_System_Array_Copy_System_Array_System_Array_int_llvm
@@ -10718,7 +10703,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 13587
+.word 13583
 _p_62_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_internal_llvm:
 	.globl _p_62_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_internal_llvm
 .private_extern _p_62_plt_System_Collections_Concurrent__jit_icall_mono_monitor_enter_internal_llvm
@@ -10729,7 +10714,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 13592
+.word 13588
 _p_63_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_TValue_REF__ctor_System_Collections_Generic_IList_1_TValue_REF_llvm:
 	.globl _p_63_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_TValue_REF__ctor_System_Collections_Generic_IList_1_TValue_REF_llvm
 .private_extern _p_63_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_TValue_REF__ctor_System_Collections_Generic_IList_1_TValue_REF_llvm
@@ -10740,7 +10725,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 13602
+.word 13598
 _p_64_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_TValue_REF_get_Empty_llvm:
 	.globl _p_64_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_TValue_REF_get_Empty_llvm
 .private_extern _p_64_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_TValue_REF_get_Empty_llvm
@@ -10751,7 +10736,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 13617
+.word 13613
 _p_65_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_DictionaryEnumerator_TKey_REF_TValue_REF_get_Entry_llvm:
 	.globl _p_65_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_DictionaryEnumerator_TKey_REF_TValue_REF_get_Entry_llvm
 .private_extern _p_65_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionary_2_DictionaryEnumerator_TKey_REF_TValue_REF_get_Entry_llvm
@@ -10762,7 +10747,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 13656
+.word 13652
 _p_66_plt_System_Collections_Concurrent_System_RuntimeType_get_IsActualEnum_llvm:
 	.globl _p_66_plt_System_Collections_Concurrent_System_RuntimeType_get_IsActualEnum_llvm
 .private_extern _p_66_plt_System_Collections_Concurrent_System_RuntimeType_get_IsActualEnum_llvm
@@ -10773,7 +10758,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 13670
+.word 13666
 _p_67_plt_System_Collections_Concurrent_System_Type_op_Equality_System_Type_System_Type_llvm:
 	.globl _p_67_plt_System_Collections_Concurrent_System_Type_op_Equality_System_Type_System_Type_llvm
 .private_extern _p_67_plt_System_Collections_Concurrent_System_Type_op_Equality_System_Type_System_Type_llvm
@@ -10784,7 +10769,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 13675
+.word 13671
 _p_68_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionaryTypeProps_1_T_REF_IsWriteAtomicPrivate_llvm:
 	.globl _p_68_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionaryTypeProps_1_T_REF_IsWriteAtomicPrivate_llvm
 .private_extern _p_68_plt_System_Collections_Concurrent_System_Collections_Concurrent_ConcurrentDictionaryTypeProps_1_T_REF_IsWriteAtomicPrivate_llvm
@@ -10795,7 +10780,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 13680
+.word 13676
 _p_69_plt_System_Collections_Concurrent_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm:
 	.globl _p_69_plt_System_Collections_Concurrent_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
 .private_extern _p_69_plt_System_Collections_Concurrent_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
@@ -10806,7 +10791,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 13692
+.word 13688
 _p_70_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
 	.globl _p_70_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
 .private_extern _p_70_plt_System_Collections_Concurrent_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
@@ -10817,7 +10802,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 13697
+.word 13693
 _p_71_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_T_REF__ctor_System_Collections_Generic_IList_1_T_REF_llvm:
 	.globl _p_71_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_T_REF__ctor_System_Collections_Generic_IList_1_T_REF_llvm
 .private_extern _p_71_plt_System_Collections_Concurrent_System_Collections_ObjectModel_ReadOnlyCollection_1_T_REF__ctor_System_Collections_Generic_IList_1_T_REF_llvm
@@ -10828,7 +10813,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 13702
+.word 13698
 _p_72_plt_System_Collections_Concurrent_object__ctor_llvm:
 	.globl _p_72_plt_System_Collections_Concurrent_object__ctor_llvm
 .private_extern _p_72_plt_System_Collections_Concurrent_object__ctor_llvm
@@ -10839,7 +10824,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 13717
+.word 13713
 _p_73_plt_System_Collections_Concurrent_System_Type_get_IsValueType_llvm:
 	.globl _p_73_plt_System_Collections_Concurrent_System_Type_get_IsValueType_llvm
 .private_extern _p_73_plt_System_Collections_Concurrent_System_Type_get_IsValueType_llvm
@@ -10850,7 +10835,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 13722
+.word 13718
 _p_74_plt_System_Collections_Concurrent_wrapper_alloc_object_Alloc_intptr_llvm:
 	.globl _p_74_plt_System_Collections_Concurrent_wrapper_alloc_object_Alloc_intptr_llvm
 .private_extern _p_74_plt_System_Collections_Concurrent_wrapper_alloc_object_Alloc_intptr_llvm
@@ -10861,7 +10846,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 13727
+.word 13723
 _p_75_plt_System_Collections_Concurrent__jit_icall_mono_arch_throw_corlib_exception_llvm:
 	.globl _p_75_plt_System_Collections_Concurrent__jit_icall_mono_arch_throw_corlib_exception_llvm
 .private_extern _p_75_plt_System_Collections_Concurrent__jit_icall_mono_arch_throw_corlib_exception_llvm
@@ -10872,7 +10857,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 13735
+.word 13731
 _p_76_plt_System_Collections_Concurrent__jit_icall_mono_gsharedvt_constrained_call_fast_llvm:
 	.globl _p_76_plt_System_Collections_Concurrent__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
 .private_extern _p_76_plt_System_Collections_Concurrent__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
@@ -10883,7 +10868,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 13737
+.word 13733
 _p_77_plt_System_Collections_Concurrent__jit_icall_mono_gsharedvt_constrained_call_llvm:
 	.globl _p_77_plt_System_Collections_Concurrent__jit_icall_mono_gsharedvt_constrained_call_llvm
 .private_extern _p_77_plt_System_Collections_Concurrent__jit_icall_mono_gsharedvt_constrained_call_llvm
@@ -10894,7 +10879,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 13740
+.word 13736
 _p_78_plt_System_Collections_Concurrent_System_Math_Max_int_int_llvm:
 	.globl _p_78_plt_System_Collections_Concurrent_System_Math_Max_int_int_llvm
 .private_extern _p_78_plt_System_Collections_Concurrent_System_Math_Max_int_int_llvm
@@ -10905,7 +10890,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 13743
+.word 13739
 _p_79_plt_System_Collections_Concurrent_System_Collections_DictionaryEntry__ctor_object_object_llvm:
 	.globl _p_79_plt_System_Collections_Concurrent_System_Collections_DictionaryEntry__ctor_object_object_llvm
 .private_extern _p_79_plt_System_Collections_Concurrent_System_Collections_DictionaryEntry__ctor_object_object_llvm
@@ -10916,7 +10901,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 13748
+.word 13744
 _p_80_plt_System_Collections_Concurrent_System_Collections_Generic_KeyNotFoundException__ctor_string_llvm:
 	.globl _p_80_plt_System_Collections_Concurrent_System_Collections_Generic_KeyNotFoundException__ctor_string_llvm
 .private_extern _p_80_plt_System_Collections_Concurrent_System_Collections_Generic_KeyNotFoundException__ctor_string_llvm
@@ -10927,7 +10912,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 13753
+.word 13749
 _p_81_plt_System_Collections_Concurrent_System_Nullable_1_int__ctor_int_llvm:
 	.globl _p_81_plt_System_Collections_Concurrent_System_Nullable_1_int__ctor_int_llvm
 .private_extern _p_81_plt_System_Collections_Concurrent_System_Nullable_1_int__ctor_int_llvm
@@ -10938,7 +10923,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 13758
+.word 13754
 _p_82_plt_System_Collections_Concurrent__jit_icall_mono_object_castclass_unbox_llvm:
 	.globl _p_82_plt_System_Collections_Concurrent__jit_icall_mono_object_castclass_unbox_llvm
 .private_extern _p_82_plt_System_Collections_Concurrent__jit_icall_mono_object_castclass_unbox_llvm
@@ -10949,7 +10934,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 13775
+.word 13771
 _p_83_plt_System_Collections_Concurrent_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetUnderlyingEqualityComparer_llvm:
 	.globl _p_83_plt_System_Collections_Concurrent_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetUnderlyingEqualityComparer_llvm
 .private_extern _p_83_plt_System_Collections_Concurrent_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetUnderlyingEqualityComparer_llvm
@@ -10960,7 +10945,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 13778
+.word 13774
 _p_84_plt_System_Collections_Concurrent_System_Environment_get_ProcessorCount_llvm:
 	.globl _p_84_plt_System_Collections_Concurrent_System_Environment_get_ProcessorCount_llvm
 .private_extern _p_84_plt_System_Collections_Concurrent_System_Environment_get_ProcessorCount_llvm
@@ -10971,7 +10956,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 13783
+.word 13779
 _p_85_plt_System_Collections_Concurrent_System_Diagnostics_Tracing_EventSource_IsEnabled_llvm:
 	.globl _p_85_plt_System_Collections_Concurrent_System_Diagnostics_Tracing_EventSource_IsEnabled_llvm
 .private_extern _p_85_plt_System_Collections_Concurrent_System_Diagnostics_Tracing_EventSource_IsEnabled_llvm
@@ -10982,7 +10967,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 13788
+.word 13784
 _p_86_plt_System_Collections_Concurrent_System_Collections_HashHelpers_FastMod_uint_uint_ulong_llvm:
 	.globl _p_86_plt_System_Collections_Concurrent_System_Collections_HashHelpers_FastMod_uint_uint_ulong_llvm
 .private_extern _p_86_plt_System_Collections_Concurrent_System_Collections_HashHelpers_FastMod_uint_uint_ulong_llvm
@@ -10993,7 +10978,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 13793
+.word 13789
 _p_87_plt_System_Collections_Concurrent_intptr_get_Size_llvm:
 	.globl _p_87_plt_System_Collections_Concurrent_intptr_get_Size_llvm
 .private_extern _p_87_plt_System_Collections_Concurrent_intptr_get_Size_llvm
@@ -11004,7 +10989,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 13795
+.word 13791
 _p_88_plt_System_Collections_Concurrent_System_Collections_HashHelpers_GetFastModMultiplier_uint_llvm:
 	.globl _p_88_plt_System_Collections_Concurrent_System_Collections_HashHelpers_GetFastModMultiplier_uint_llvm
 .private_extern _p_88_plt_System_Collections_Concurrent_System_Collections_HashHelpers_GetFastModMultiplier_uint_llvm
@@ -11015,7 +11000,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 13800
+.word 13796
 _p_89_plt_System_Collections_Concurrent_System_Type_GetTypeCode_System_Type_llvm:
 	.globl _p_89_plt_System_Collections_Concurrent_System_Type_GetTypeCode_System_Type_llvm
 .private_extern _p_89_plt_System_Collections_Concurrent_System_Type_GetTypeCode_System_Type_llvm
@@ -11026,7 +11011,7 @@ adrp x16, mono_aot_System_Collections_Concurrent_got@PAGE+0
 add x16, x16, mono_aot_System_Collections_Concurrent_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 13802
+.word 13798
 plt_end:
 _mono_aot_System_Collections_Concurrentplt_end:
 	.globl _mono_aot_System_Collections_Concurrentplt_end
