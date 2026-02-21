@@ -2,13 +2,26 @@
 
 public partial class App : Application
 {
-	public App()
-	{
-        InitializeComponent();
+    /// <summary>
+    ///  obsoleted in .NET 9
+    /// </summary>
+    //public App()
+    //{
+        //InitializeComponent();
 
-		MainPage = new AppShell();
-    
+        //MainPage = new AppShell();
+        //Task.Run(async () => { await CopyFileToAppDataDirectory("quran.sqlite"); });
+    //}
+    public App()
+    {
+        InitializeComponent();
+        var MainPage = Application.Current.Windows.FirstOrDefault()?.Page;
         Task.Run(async () => { await CopyFileToAppDataDirectory("quran.sqlite"); });
+    }
+
+    protected override Window CreateWindow(IActivationState? activationState)
+    {
+        return new Window(new AppShell());
     }
     /// <summary>
     /// on startup
@@ -18,9 +31,9 @@ public partial class App : Application
         base.OnStart();
         if (DeviceInfo.Current.Platform == DevicePlatform.Android)
         {
-            if (!OperatingSystem.IsAndroidVersionAtLeast(33))
+            if (!OperatingSystem.IsAndroidVersionAtLeast(21))
             {
-                await MainPage.DisplayAlert("Q-Search", "Android 13 or later devices are supported only!", "Ok");
+                await Application.Current.Windows[0].Page.DisplayAlertAsync("Q-Search", "Android 5 or later devices are supported only!", "Ok");
                 Application.Current.Quit();
             }
         }
@@ -28,7 +41,7 @@ public partial class App : Application
         {
             if (!OperatingSystem.IsIOSVersionAtLeast(15))
             {
-                await MainPage.DisplayAlert("Q-Search", "iOS 15 or later devices are supported only!", "Ok");
+                await Application.Current.Windows[0].Page.DisplayAlertAsync("Q-Search", "iOS 15 or later devices are supported only!", "Ok");
                 Application.Current.Quit();
             }
         }
@@ -45,7 +58,7 @@ public partial class App : Application
 
         // Create an output filename
         string targetFile = Path.Combine(FileSystem.Current.AppDataDirectory, filename);
-        /// delete the file first
+        // delete the file first //
         if (File.Exists(targetFile))
         {
             File.Delete(targetFile);

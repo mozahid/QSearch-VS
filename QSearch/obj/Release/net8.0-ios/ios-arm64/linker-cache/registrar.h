@@ -15,14 +15,181 @@
 #import <CoreLocation/CoreLocation.h>
 #import <SafariServices/SafariServices.h>
 #import <ContactsUI/ContactsUI.h>
+#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
 #import <LinkPresentation/LinkPresentation.h>
+#import <UserNotifications/UserNotifications.h>
+#import <Speech/Speech.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <Intents/Intents.h>
+#import <CoreSpotlight/CoreSpotlight.h>
 #import <Contacts/Contacts.h>
 #import <CloudKit/CloudKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @class Microsoft_Maui_MauiUIApplicationDelegate;
 @class AppDelegate;
+@class Microsoft_iOS__UIKit_UIGestureRecognizerDelegate;
+@class CommunityToolkit_Maui_Behaviors_TouchBehavior_TouchUITapGestureRecognizer_TouchUITapGestureRecognizerDelegate;
+@class CommunityToolkit_Maui_Behaviors_TouchBehavior_TouchUITapGestureRecognizer;
+@class CommunityToolkit_Maui_Core_Views_AlertView;
+@class CommunityToolkit_Maui_Core_Views_PaddedButton;
+@class CommunityToolkit_Maui_Core_Views_PaddedLabel;
+@class CommunityToolkit_Maui_Core_Views_RoundedView;
+@class PlatformGraphicsView;
+@class Microsoft_Maui_Platform_PlatformTouchGraphicsView;
+@class CommunityToolkit_Maui_Core_Views_MauiDrawingView;
+@class Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate;
+@class Microsoft_iOS__UIKit_UIPopoverPresentationControllerDelegate;
+@class CommunityToolkit_Maui_Core_Views_MauiPopup_PopoverDelegate;
+@class CommunityToolkit_Maui_Core_Views_MauiPopup;
+@class CommunityToolkit_Maui_Core_Views_PopupExtensions_TransparentPopoverBackgroundView;
+@class Microsoft_Maui_Platform_MauiView;
+@class Microsoft_Maui_Platform_ContentView;
+@protocol UIAccessibilityContainer;
+@class CommunityToolkit_Maui_Core_Views_MauiSemanticOrderView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CellTableViewCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TemplatedCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselTemplatedCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewController_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewController;
+@class Microsoft_iOS__UIKit_UICollectionViewDelegateFlowLayout;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewDelegator_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewDelegator;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewLayout;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewLayout;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_VisualElementRenderer_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewRenderer_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_StructuredItemsViewRenderer_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewRenderer_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewRenderer_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CollectionViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_DefaultCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_GridViewLayout;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_StructuredItemsViewController_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewController_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewController_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewDelegator_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewDelegator_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_HeightConstrainedTemplatedCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_HorizontalCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_HorizontalDefaultCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_HorizontalDefaultSupplementalView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_HorizontalSupplementaryView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ListViewLayout;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_WidthConstrainedTemplatedCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_VerticalCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_VerticalDefaultCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_VerticalDefaultSupplementalView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_VerticalSupplementaryView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_iOS7ButtonContainer;
+@class Microsoft_iOS__UIKit_UIApplicationDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsApplicationDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NativeViewWrapperRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PlatformRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_UIActivityIndicatorViewDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ActivityIndicatorRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_BoxRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ButtonRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CheckBoxRendererBase_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CheckBoxRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NoCaretField;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_DatePickerRendererBase_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_DatePickerRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EditorRendererBase_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EditorRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryRendererBase_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsCAKeyFrameAnimation;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsCheckBox;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsUIImageView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_IndicatorViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsPageControl;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_HeaderWrapperView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsRefreshControl;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PageContainer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ReadOnlyField;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PickerRendererBase_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PickerRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ProgressBarRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_RefreshViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ScrollViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SearchBarRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SliderRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_StepperRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SwitchRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ChildViewController;
+@class Microsoft_iOS__UIKit_UIScrollViewDelegate;
+@class Microsoft_iOS__UIKit_UITableViewSource;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TableViewModelRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_UnEvenTableViewModelRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TableViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TimePickerRendererBase_1;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TimePickerRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_UIContainerCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_UIContainerView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EllipseRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EllipseView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_LineRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_LineView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PathRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PathView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolygonRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolygonView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolylineRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolylineView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_RectangleRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_RectangleView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeLayer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewCellRenderer_ViewTableCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ContextActionsCell_MoreActionSheetController;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ContextActionsCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ContextScrollViewDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_DragAndDropDelegate_CustomLocalStateData;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_DragAndDropDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_Platform_DefaultRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselPageRenderer_CarouselPageContainer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselPageRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EditorRendererBase_1_FormsUITextView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FrameRenderer_FrameView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FrameRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ImageButtonRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ImageRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_LabelRenderer_FormsLabel;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_LabelRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ListViewRenderer_ListViewDataSource;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ListViewRenderer_UnevenListViewDataSource;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ListViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsUITableViewController;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NavigationRenderer_FormsNavigationBar;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NavigationRenderer_Container;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NavigationRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PageRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PhoneFlyoutPageRenderer_ChildViewController;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PhoneFlyoutPageRenderer;
+@class Microsoft_iOS__UIKit_UIPickerViewModel;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_PickerRendererBase_1_PickerSource;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_SwipeViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TabbedRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EventedViewController_FlyoutView;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EventedViewController;
+@class Microsoft_iOS__UIKit_UISplitViewControllerDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TabletFlyoutPageRenderer_InnerDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_TabletFlyoutPageRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_WkWebViewRenderer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryCellRenderer_EntryCellTableViewCell;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_ContextActionsCell_SelectGestureRecognizer;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NavigationRenderer_SecondaryToolbar;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_NavigationRenderer_ParentingViewController;
+@class Microsoft_iOS__WebKit_WKNavigationDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_WkWebViewRenderer_CustomWebViewNavigationDelegate;
+@class Microsoft_iOS__WebKit_WKUIDelegate;
+@class Microsoft_Maui_Controls_Compatibility_Platform_iOS_WkWebViewRenderer_CustomWebViewUIDelegate;
 @class Microsoft_Maui_Platform_ModalWrapper;
 @class Microsoft_Maui_Controls_Platform_ControlsModalWrapper;
 @class Microsoft_Maui_Controls_Platform_Compatibility_UIContainerView;
@@ -36,7 +203,6 @@
 @class Microsoft_Maui_Controls_Handlers_Items_CarouselTemplatedCell;
 @class Microsoft_Maui_Controls_Handlers_Items_ItemsViewController_1;
 @class Microsoft_Maui_Controls_Handlers_Items_CarouselViewController;
-@class Microsoft_iOS__UIKit_UICollectionViewDelegateFlowLayout;
 @class Microsoft_Maui_Controls_Handlers_Items_ItemsViewDelegator_2;
 @class Microsoft_Maui_Controls_Handlers_Items_CarouselViewDelegator;
 @class Microsoft_Maui_Controls_Handlers_Items_ItemsViewLayout;
@@ -68,8 +234,6 @@
 @class Microsoft_Maui_Controls_Handlers_Compatibility_iOS7ButtonContainer;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_HeaderWrapperView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_FormsRefreshControl;
-@class Microsoft_iOS__UIKit_UIScrollViewDelegate;
-@class Microsoft_iOS__UIKit_UITableViewSource;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_TableViewModelRenderer;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_UnEvenTableViewModelRenderer;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_TableViewRenderer;
@@ -84,7 +248,6 @@
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellFlyoutContentRenderer;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellFlyoutRenderer;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellPageRendererTracker_TitleViewContainer;
-@class Microsoft_iOS__UIKit_UIGestureRecognizerDelegate;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellSectionRenderer_GestureDelegate;
 @class Microsoft_iOS__UIKit_UINavigationControllerDelegate;
 @class Microsoft_Maui_Controls_Platform_Compatibility_ShellSectionRenderer_NavDelegate;
@@ -97,8 +260,6 @@
 @class Microsoft_Maui_Controls_Handlers_Items_MauiCollectionView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_PhoneFlyoutPageRenderer_ChildViewController;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_PhoneFlyoutPageRenderer;
-@class Microsoft_Maui_Platform_MauiView;
-@class Microsoft_Maui_Platform_ContentView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_FrameRenderer_FrameView;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_FrameRenderer;
 @class Microsoft_Maui_Controls_Handlers_Compatibility_ContextActionsCell_MoreActionSheetController;
@@ -129,7 +290,6 @@
 @class Microsoft_Maui_Platform_ContainerViewController;
 @class Microsoft_Maui_Platform_LayoutView;
 @class Microsoft_Maui_Platform_MauiActivityIndicator;
-@class PlatformGraphicsView;
 @class Microsoft_Maui_Platform_MauiBoxView;
 @class Microsoft_Maui_Platform_MauiCALayer;
 @class Microsoft_Maui_Platform_MauiCheckBox;
@@ -147,8 +307,10 @@
 @class Microsoft_Maui_Platform_MauiWebViewNavigationDelegate;
 @class Microsoft_Maui_Platform_PageViewController;
 @class Microsoft_Maui_Platform_SemanticSwitchContentView;
+@class Microsoft_Maui_Platform_StaticCAGradientLayer;
+@class Microsoft_Maui_Platform_StaticCALayer;
+@class Microsoft_Maui_Platform_StaticCAShapeLayer;
 @class Microsoft_Maui_Platform_WrapperView;
-@class Microsoft_iOS__UIKit_UIPickerViewModel;
 @class Microsoft_Maui_Handlers_PickerSource;
 @class Microsoft_Maui_Handlers_SwipeItemButton;
 @class Microsoft_Maui_MauiUISceneDelegate;
@@ -159,13 +321,10 @@
 @class Microsoft_Maui_Platform_MauiTimePicker;
 @class Microsoft_Maui_Platform_MauiUIContextMenuInteraction_FlyoutUIContextMenuInteractionDelegate;
 @class Microsoft_Maui_Platform_MauiUIContextMenuInteraction;
-@class Microsoft_iOS__WebKit_WKUIDelegate;
 @class Microsoft_Maui_Platform_MauiWebViewUIDelegate;
 @class Microsoft_Maui_Platform_MauiWKWebView;
-@class Microsoft_Maui_Platform_PlatformTouchGraphicsView;
 @class Microsoft_Maui_WindowOverlay_PassthroughView;
 @class Microsoft_Maui_Authentication_AuthManager;
-@class Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate;
 @class Microsoft_Maui_ApplicationModel_UIPresentationControllerDelegate;
 @class Microsoft_iOS__UIKit_UIActivityItemSource;
 @class Microsoft_Maui_ApplicationModel_DataTransfer_ShareActivityItemSource;
@@ -185,6 +344,7 @@
 @class Foundation_NSDispatcher;
 @class __MonoMac_NSActionDispatcher;
 @class __MonoMac_NSSynchronizationContextDispatcher;
+@class __Xamarin_NSTimerActionDispatcher;
 @class Foundation_NSAsyncDispatcher;
 @class __MonoMac_NSAsyncActionDispatcher;
 @class __MonoMac_NSAsyncSynchronizationContextDispatcher;
@@ -195,6 +355,7 @@
 @class Microsoft_iOS__UIKit_UISearchResultsUpdating;
 @class __NSObject_Disposer;
 @class __XamarinObjectObserver;
+@class CoreAnimation_CAAnimation__CAAnimationDelegate;
 @class System_Net_Http_NSUrlSessionHandler_WrappedNSInputStream;
 @class UIKit_UIBarButtonItem_Callback;
 @class UIKit_UIBarItem_UIBarItemAppearance;
@@ -215,6 +376,7 @@
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
+@class UIKit_UIDocumentPickerViewController__UIDocumentPickerDelegate;
 @class UIKit_UISwitch_UISwitchAppearance;
 @class UIKit_UITabBar_UITabBarAppearance;
 @class UIKit_UITabBarController__UITabBarControllerDelegate;
@@ -254,6 +416,953 @@
 @end
 
 @interface AppDelegate : Microsoft_Maui_MauiUIApplicationDelegate<UIApplicationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIGestureRecognizerDelegate : NSObject<UIGestureRecognizerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_AlertView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_PaddedButton : UIButton {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_PaddedLabel : UILabel {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(CGSize) intrinsicContentSize;
+	-(void) drawTextInRect:(CGRect)p0;
+	-(CGRect) textRectForBounds:(CGRect)p0 limitedToNumberOfLines:(void *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_RoundedView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) drawRect:(CGRect)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface PlatformGraphicsView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) willMoveToSuperview:(UIView *)p0;
+	-(void) drawRect:(CGRect)p0;
+	-(CGRect) bounds;
+	-(void) setBounds:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Platform_PlatformTouchGraphicsView : PlatformGraphicsView {
+}
+	-(void) layoutSubviews;
+	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_MauiDrawingView : Microsoft_Maui_Platform_PlatformTouchGraphicsView {
+}
+	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIPopoverPresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate, UIPopoverPresentationControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_MauiPopup : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewWillTransitionToSize:(CGSize)p0 withTransitionCoordinator:(id)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Platform_MauiView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) safeAreaInsetsDidChange;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) layoutSubviews;
+	-(void) setNeedsLayout;
+	-(void) didMoveToWindow;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Platform_ContentView : Microsoft_Maui_Platform_MauiView {
+}
+	-(void) layoutSubviews;
+	-(void) willRemoveSubview:(UIView *)p0;
+	-(id) init;
+@end
+
+@protocol UIAccessibilityContainer
+@end
+
+@interface CommunityToolkit_Maui_Core_Views_MauiSemanticOrderView : Microsoft_Maui_Platform_ContentView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CellTableViewCell : UITableViewCell {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewCell : UICollectionViewCell {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TemplatedCell : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewCell {
+}
+	-(UICollectionViewLayoutAttributes *) preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)p0;
+	-(BOOL) isSelected;
+	-(void) setSelected:(BOOL)p0;
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselTemplatedCell : Microsoft_Maui_Controls_Compatibility_Platform_iOS_TemplatedCell {
+}
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewController_1 : UICollectionViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UICollectionViewCell *) collectionView:(UICollectionView *)p0 cellForItemAtIndexPath:(NSIndexPath *)p1;
+	-(void *) collectionView:(UICollectionView *)p0 numberOfItemsInSection:(void *)p1;
+	-(void) viewDidLoad;
+	-(void) viewWillAppear:(BOOL)p0;
+	-(void) viewWillLayoutSubviews;
+	-(void *) numberOfSectionsInCollectionView:(UICollectionView *)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewController : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewController_1 {
+}
+	-(UICollectionViewCell *) collectionView:(UICollectionView *)p0 cellForItemAtIndexPath:(NSIndexPath *)p1;
+	-(void *) collectionView:(UICollectionView *)p0 numberOfItemsInSection:(void *)p1;
+	-(void) viewDidLoad;
+	-(void) viewWillLayoutSubviews;
+	-(void) viewDidLayoutSubviews;
+	-(void) scrollViewWillBeginDragging:(UIScrollView *)p0;
+	-(void) scrollViewDidEndDragging:(UIScrollView *)p0 willDecelerate:(BOOL)p1;
+@end
+
+@interface Microsoft_iOS__UIKit_UICollectionViewDelegateFlowLayout : NSObject<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewDelegator_2 : NSObject<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) scrollViewDidScroll:(UIScrollView *)p0;
+	-(UIEdgeInsets) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 insetForSectionAtIndex:(void *)p2;
+	-(CGFloat) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 minimumInteritemSpacingForSectionAtIndex:(void *)p2;
+	-(CGFloat) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 minimumLineSpacingForSectionAtIndex:(void *)p2;
+	-(void) collectionView:(UICollectionView *)p0 didEndDisplayingCell:(UICollectionViewCell *)p1 forItemAtIndexPath:(NSIndexPath *)p2;
+	-(CGSize) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 sizeForItemAtIndexPath:(NSIndexPath *)p2;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewDelegator : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewDelegator_2<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
+}
+	-(void) scrollViewDidScroll:(UIScrollView *)p0;
+	-(void) scrollViewDidEndScrollingAnimation:(UIScrollView *)p0;
+	-(void) scrollViewDidEndDecelerating:(UIScrollView *)p0;
+	-(void) scrollViewWillBeginDragging:(UIScrollView *)p0;
+	-(void) scrollViewDidEndDragging:(UIScrollView *)p0 willDecelerate:(BOOL)p1;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewLayout : UICollectionViewFlowLayout {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) flipsHorizontallyInOppositeLayoutDirection;
+	-(BOOL) shouldInvalidateLayoutForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)p0 withOriginalAttributes:(UICollectionViewLayoutAttributes *)p1;
+	-(CGPoint) targetContentOffsetForProposedContentOffset:(CGPoint)p0 withScrollingVelocity:(CGPoint)p1;
+	-(UICollectionViewLayoutInvalidationContext *) invalidationContextForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)p0 withOriginalAttributes:(UICollectionViewLayoutAttributes *)p1;
+	-(void) prepareLayout;
+	-(void) prepareForCollectionViewUpdates:(NSArray *)p0;
+	-(CGPoint) targetContentOffsetForProposedContentOffset:(CGPoint)p0;
+	-(void) finalizeCollectionViewUpdates;
+	-(BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewLayout : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewLayout {
+}
+	-(void) prepareForCollectionViewUpdates:(NSArray *)p0;
+	-(void) finalizeCollectionViewUpdates;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_VisualElementRenderer_1 : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIColor *) backgroundColor;
+	-(void) setBackgroundColor:(UIColor *)p0;
+	-(BOOL) canBecomeFirstResponder;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_VisualElementRenderer_1 {
+}
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewRenderer_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CarouselViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_StructuredItemsViewRenderer_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewRenderer_2 {
+}
+	-(void) layoutSubviews;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewRenderer_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_StructuredItemsViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewRenderer_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CollectionViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_DefaultCell : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewCell {
+}
+	-(id) initWithFrame:(CGRect)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_GridViewLayout : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewLayout {
+}
+	-(CGSize) collectionViewContentSize;
+	-(NSArray *) layoutAttributesForElementsInRect:(CGRect)p0;
+	-(UICollectionViewLayoutInvalidationContext *) invalidationContextForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *)p0 withOriginalAttributes:(UICollectionViewLayoutAttributes *)p1;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_StructuredItemsViewController_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewController_1 {
+}
+	-(void) viewWillLayoutSubviews;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewController_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_StructuredItemsViewController_1 {
+}
+	-(void) collectionView:(UICollectionView *)p0 didSelectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) collectionView:(UICollectionView *)p0 didDeselectItemAtIndexPath:(NSIndexPath *)p1;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewController_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewController_1 {
+}
+	-(UICollectionReusableView *) collectionView:(UICollectionView *)p0 viewForSupplementaryElementOfKind:(NSString *)p1 atIndexPath:(NSIndexPath *)p2;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewDelegator_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewDelegator_2<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
+}
+	-(void) collectionView:(UICollectionView *)p0 didSelectItemAtIndexPath:(NSIndexPath *)p1;
+	-(void) collectionView:(UICollectionView *)p0 didDeselectItemAtIndexPath:(NSIndexPath *)p1;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_GroupableItemsViewDelegator_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_SelectableItemsViewDelegator_2<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
+}
+	-(CGSize) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 referenceSizeForHeaderInSection:(void *)p2;
+	-(CGSize) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 referenceSizeForFooterInSection:(void *)p2;
+	-(void) scrollViewDidEndScrollingAnimation:(UIScrollView *)p0;
+	-(UIEdgeInsets) collectionView:(UICollectionView *)p0 layout:(UICollectionViewLayout *)p1 insetForSectionAtIndex:(void *)p2;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ListViewLayout : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ItemsViewLayout {
+}
+@end
+
+@interface Microsoft_iOS__UIKit_UIApplicationDelegate : NSObject<UIApplicationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_NativeViewWrapperRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_UIActivityIndicatorViewDelegate : UIActivityIndicatorView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) drawRect:(CGRect)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ActivityIndicatorRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_BoxRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_VisualElementRenderer_1 {
+}
+	-(void) drawRect:(CGRect)p0;
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ButtonRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) drawRect:(CGRect)p0;
+	-(void) layoutSubviews;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CheckBoxRendererBase_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) layoutSubviews;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_CheckBoxRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_CheckBoxRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_DatePickerRendererBase_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_DatePickerRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_DatePickerRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EditorRendererBase_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EditorRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_EditorRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryRendererBase_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsCAKeyFrameAnimation : CAKeyframeAnimation {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsCheckBox : UIButton {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) isEnabled;
+	-(void) setEnabled:(BOOL)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsUIImageView : UIImageView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIImage *) image;
+	-(void) setImage:(UIImage *)p0;
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(BOOL) isAnimating;
+	-(void) startAnimating;
+	-(void) stopAnimating;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_IndicatorViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_FormsRefreshControl : UIRefreshControl {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) isHidden;
+	-(void) setHidden:(BOOL)p0;
+	-(void) beginRefreshing;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PickerRendererBase_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PickerRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_PickerRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ProgressBarRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_RefreshViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ScrollViewRenderer : UIScrollView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SearchBarRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SliderRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_StepperRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SwitchRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIScrollViewDelegate : NSObject<UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UITableViewSource : NSObject<UIScrollViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TableViewModelRenderer : NSObject<UIScrollViewDelegate> {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UITableViewCell *) tableView:(UITableView *)p0 cellForRowAtIndexPath:(NSIndexPath *)p1;
+	-(CGFloat) tableView:(UITableView *)p0 heightForHeaderInSection:(void *)p1;
+	-(UIView *) tableView:(UITableView *)p0 viewForHeaderInSection:(void *)p1;
+	-(void) tableView:(UITableView *)p0 willDisplayHeaderView:(UIView *)p1 forSection:(void *)p2;
+	-(void *) numberOfSectionsInTableView:(UITableView *)p0;
+	-(void) tableView:(UITableView *)p0 didSelectRowAtIndexPath:(NSIndexPath *)p1;
+	-(void *) tableView:(UITableView *)p0 numberOfRowsInSection:(void *)p1;
+	-(NSArray *) sectionIndexTitlesForTableView:(UITableView *)p0;
+	-(NSString *) tableView:(UITableView *)p0 titleForHeaderInSection:(void *)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_UnEvenTableViewModelRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_TableViewModelRenderer<UIScrollViewDelegate> {
+}
+	-(CGFloat) tableView:(UITableView *)p0 heightForRowAtIndexPath:(NSIndexPath *)p1;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TableViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) layoutSubviews;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TimePickerRendererBase_1 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TimePickerRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_TimePickerRendererBase_1 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_UIContainerCell : UITableViewCell {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_UIContainerView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) willMoveToSuperview:(UIView *)p0;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EllipseRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EllipseView : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_LineRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_LineView : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PathRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PathView : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolygonRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolygonView : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolylineRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PolylineView : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_RectangleRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_RectangleView : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeView {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ShapeLayer : CALayer {
+}
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) drawInContext:(id)p0;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_FrameRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_VisualElementRenderer_1 {
+}
+	-(void) addSubview:(UIView *)p0;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(void) layoutSubviews;
+	-(void) drawRect:(CGRect)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ImageButtonRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(CGSize) sizeThatFits:(CGSize)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ImageRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_LabelRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) layoutSubviews;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_ListViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) layoutSubviews;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_NavigationRenderer : UINavigationController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) didRotateFromInterfaceOrientation:(NSInteger)p0;
+	-(NSArray *) popToRootViewControllerAnimated:(BOOL)p0;
+	-(UIViewController *) popViewControllerAnimated:(BOOL)p0;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewWillAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(UIViewController *) childViewControllerForStatusBarHidden;
+	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PageRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) loadView;
+	-(void) viewWillLayoutSubviews;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewSafeAreaInsetsDidChange;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLoad;
+	-(void) viewWillDisappear:(BOOL)p0;
+	-(NSInteger) preferredStatusBarUpdateAnimation;
+	-(void) traitCollectionDidChange:(UITraitCollection *)p0;
+	-(BOOL) prefersStatusBarHidden;
+	-(BOOL) prefersHomeIndicatorAutoHidden;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_PhoneFlyoutPageRenderer : UIViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(void) willRotateToInterfaceOrientation:(NSInteger)p0 duration:(double)p1;
+	-(UIViewController *) childViewControllerForStatusBarHidden;
+	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UIPickerViewModel : NSObject<UIPickerViewDataSource, UIPickerViewDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_SwipeViewRenderer : Microsoft_Maui_Controls_Compatibility_Platform_iOS_ViewRenderer_2 {
+}
+	-(void) willMoveToWindow:(UIWindow *)p0;
+	-(void) layoutSubviews;
+	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
+	-(UIView *) hitTest:(CGPoint)p0 withEvent:(UIEvent *)p1;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TabbedRenderer : UITabBarController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(UIViewController *) selectedViewController;
+	-(void) setSelectedViewController:(UIViewController *)p0;
+	-(void) didRotateFromInterfaceOrientation:(NSInteger)p0;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLayoutSubviews;
+	-(UIViewController *) childViewControllerForStatusBarHidden;
+	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EventedViewController_FlyoutView : UIView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__UIKit_UISplitViewControllerDelegate : NSObject<UISplitViewControllerDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_TabletFlyoutPageRenderer : UISplitViewController {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) viewDidAppear:(BOOL)p0;
+	-(void) viewDidDisappear:(BOOL)p0;
+	-(void) viewDidLayoutSubviews;
+	-(void) viewDidLoad;
+	-(void) viewWillDisappear:(BOOL)p0;
+	-(void) viewWillLayoutSubviews;
+	-(UIViewController *) childViewControllerForStatusBarHidden;
+	-(UIViewController *) childViewControllerForHomeIndicatorAutoHidden;
+	-(void) viewWillTransitionToSize:(CGSize)p0 withTransitionCoordinator:(id)p1;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_WkWebViewRenderer : WKWebView {
+}
+	-(void) release;
+	-(id) retain;
+	-(GCHandle) xamarinGetGCHandle;
+	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
+	-(enum XamarinGCHandleFlags) xamarinGetFlags;
+	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) didMoveToWindow;
+	-(void) layoutSubviews;
+	-(BOOL) conformsToProtocol:(void *)p0;
+	-(id) init;
+@end
+
+@interface Microsoft_Maui_Controls_Compatibility_Platform_iOS_EntryCellRenderer_EntryCellTableViewCell : Microsoft_Maui_Controls_Compatibility_Platform_iOS_CellTableViewCell {
+}
+	-(void) layoutSubviews;
+@end
+
+@interface Microsoft_iOS__WebKit_WKNavigationDelegate : NSObject<WKNavigationDelegate> {
+}
+	-(id) init;
+@end
+
+@interface Microsoft_iOS__WebKit_WKUIDelegate : NSObject<WKUIDelegate> {
 }
 	-(id) init;
 @end
@@ -383,11 +1492,6 @@
 	-(void) viewDidLayoutSubviews;
 	-(void) scrollViewWillBeginDragging:(UIScrollView *)p0;
 	-(void) scrollViewDidEndDragging:(UIScrollView *)p0 willDecelerate:(BOOL)p1;
-@end
-
-@interface Microsoft_iOS__UIKit_UICollectionViewDelegateFlowLayout : NSObject<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
-}
-	-(id) init;
 @end
 
 @interface Microsoft_Maui_Controls_Handlers_Items_ItemsViewDelegator_2 : NSObject<UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate> {
@@ -549,16 +1653,6 @@
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
-@interface Microsoft_iOS__UIKit_UIScrollViewDelegate : NSObject<UIScrollViewDelegate> {
-}
-	-(id) init;
-@end
-
-@interface Microsoft_iOS__UIKit_UITableViewSource : NSObject<UIScrollViewDelegate> {
-}
-	-(id) init;
-@end
-
 @interface Microsoft_Maui_Controls_Handlers_Compatibility_TableViewModelRenderer : NSObject<UIScrollViewDelegate> {
 }
 	-(void) release;
@@ -645,11 +1739,6 @@
 	-(void) willMoveToSuperview:(UIView *)p0;
 	-(CGSize) intrinsicContentSize;
 	-(CGSize) sizeThatFits:(CGSize)p0;
-@end
-
-@interface Microsoft_iOS__UIKit_UIGestureRecognizerDelegate : NSObject<UIGestureRecognizerDelegate> {
-}
-	-(id) init;
 @end
 
 @interface Microsoft_iOS__UIKit_UINavigationControllerDelegate : NSObject<UINavigationControllerDelegate> {
@@ -775,30 +1864,6 @@
 	-(id) init;
 @end
 
-@interface Microsoft_Maui_Platform_MauiView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	-(void) safeAreaInsetsDidChange;
-	-(CGSize) sizeThatFits:(CGSize)p0;
-	-(void) layoutSubviews;
-	-(void) setNeedsLayout;
-	-(void) didMoveToWindow;
-	-(BOOL) conformsToProtocol:(void *)p0;
-	-(id) init;
-@end
-
-@interface Microsoft_Maui_Platform_ContentView : Microsoft_Maui_Platform_MauiView {
-}
-	-(void) layoutSubviews;
-	-(void) willRemoveSubview:(UIView *)p0;
-	-(id) init;
-@end
-
 @interface Microsoft_Maui_Controls_Handlers_Compatibility_FrameRenderer : Microsoft_Maui_Controls_Handlers_Compatibility_VisualElementRenderer_1 {
 }
 	-(void) addSubview:(UIView *)p0;
@@ -807,6 +1872,7 @@
 	-(CGSize) sizeThatFits:(CGSize)p0;
 	-(void) drawRect:(CGRect)p0;
 	-(void) setNeedsLayout;
+	-(void) didMoveToWindow;
 	-(id) init;
 @end
 
@@ -926,21 +1992,6 @@
 	-(BOOL) conformsToProtocol:(void *)p0;
 @end
 
-@interface PlatformGraphicsView : UIView {
-}
-	-(void) release;
-	-(id) retain;
-	-(GCHandle) xamarinGetGCHandle;
-	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
-	-(enum XamarinGCHandleFlags) xamarinGetFlags;
-	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
-	-(void) willMoveToSuperview:(UIView *)p0;
-	-(void) drawRect:(CGRect)p0;
-	-(CGRect) bounds;
-	-(void) setBounds:(CGRect)p0;
-	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
 @interface Microsoft_Maui_Platform_MauiBoxView : PlatformGraphicsView {
 }
 	-(void) didMoveToWindow;
@@ -953,6 +2004,7 @@
 	-(bool) xamarinSetGCHandle: (GCHandle) gchandle flags: (enum XamarinGCHandleFlags) flags;
 	-(enum XamarinGCHandleFlags) xamarinGetFlags;
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
+	-(void) addAnimation:(CAAnimation *)p0 forKey:(NSString *)p1;
 	-(void) layoutSublayers;
 	-(void) drawInContext:(id)p0;
 	-(BOOL) conformsToProtocol:(void *)p0;
@@ -1162,11 +2214,6 @@
 	-(id) init;
 @end
 
-@interface Microsoft_iOS__UIKit_UIPickerViewModel : NSObject<UIPickerViewDataSource, UIPickerViewDelegate> {
-}
-	-(id) init;
-@end
-
 @interface Microsoft_Maui_Handlers_PickerSource : NSObject<UIPickerViewDataSource, UIPickerViewDelegate> {
 }
 	-(void) release;
@@ -1243,11 +2290,6 @@
 }
 @end
 
-@interface Microsoft_iOS__WebKit_WKUIDelegate : NSObject<WKUIDelegate> {
-}
-	-(id) init;
-@end
-
 @interface Microsoft_Maui_Platform_MauiWebViewUIDelegate : NSObject<WKUIDelegate> {
 }
 	-(void) release;
@@ -1273,21 +2315,6 @@
 	-(void) xamarinSetFlags: (enum XamarinGCHandleFlags) flags;
 	-(void) didMoveToWindow;
 	-(BOOL) conformsToProtocol:(void *)p0;
-@end
-
-@interface Microsoft_Maui_Platform_PlatformTouchGraphicsView : PlatformGraphicsView {
-}
-	-(void) layoutSubviews;
-	-(void) touchesBegan:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) touchesMoved:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) touchesEnded:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(void) touchesCancelled:(NSSet *)p0 withEvent:(UIEvent *)p1;
-	-(id) init;
-@end
-
-@interface Microsoft_iOS__UIKit_UIAdaptivePresentationControllerDelegate : NSObject<UIAdaptivePresentationControllerDelegate> {
-}
-	-(id) init;
 @end
 
 @interface Microsoft_iOS__UIKit_UIActivityItemSource : NSObject<UIActivityItemSource> {
@@ -1410,6 +2437,7 @@
 @interface UIKit_UISwitch_UISwitchAppearance : UIKit_UIControl_UIControlAppearance {
 }
 	-(UIColor *) onTintColor;
+	-(UIColor *) thumbTintColor;
 @end
 
 @interface UIKit_UITabBar_UITabBarAppearance : UIKit_UIView_UIViewAppearance {

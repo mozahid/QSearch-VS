@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "SQLitePCLRaw.provider.sqlite3.dll"
 	.asciz ""
 
@@ -880,7 +880,7 @@ bl _p_75
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 bl _p_19
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_56
 .word 0xd2801140
@@ -1068,7 +1068,7 @@ bl _p_76
 .word 0xa8ca7bfd
 .word 0xd65f03c0
 bl _p_19
-.word 0xd2801ee0
+.word 0xd2801f00
 .word 0xaa1103e1
 bl _p_56
 .word 0xd2801140

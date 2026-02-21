@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "SQLite-net.dll"
 	.asciz ""
 
@@ -2932,13 +2932,13 @@ bl _p_184
 .word 0xaa1503e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9416430
+.word 0xf9416830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x340002e0
 .word 0xaa1503e0
 .word 0xf94002a1
-.word 0xf9414030
+.word 0xf9414430
 .word 0xd63f0200
 
 adrp x16, mono_aot_SQLite_net_got@PAGE+0
@@ -2949,7 +2949,7 @@ bl _p_161
 .word 0x340001a0
 .word 0xaa1503e0
 .word 0xf94002a1
-.word 0xf9413c30
+.word 0xf9414030
 .word 0xd63f0200
 .word 0xb9801801
 .word 0xeb1f003f
@@ -3972,7 +3972,7 @@ bl _p_35
 .word 0x14000541
 .word 0xaa1503e0
 .word 0xf94002a1
-.word 0xf9412030
+.word 0xf9412430
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x3500a760
@@ -5360,7 +5360,7 @@ bl _p_35
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -5447,13 +5447,13 @@ bl _p_184
 .word 0x53001c16
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9416430
+.word 0xf9416830
 .word 0xd63f0200
 .word 0x53001c00
 .word 0x340001a0
 .word 0xaa1a03e0
 .word 0xf9400341
-.word 0xf9414030
+.word 0xf9414430
 .word 0xd63f0200
 
 adrp x16, mono_aot_SQLite_net_got@PAGE+0
@@ -5558,7 +5558,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -5711,7 +5711,7 @@ ldr x3, [x16, #16]
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -6364,7 +6364,7 @@ ldr x0, [x16, #0]
 .word 0xd281dfc1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -6638,7 +6638,7 @@ bl _p_26
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 
@@ -7322,7 +7322,7 @@ ldr x26, [x16, #1208]
 .word 0xaa1803e1
 bl _p_39
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -7334,7 +7334,7 @@ ldr x0, [x16, #0]
 .word 0xd281dfc1
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -7905,11 +7905,11 @@ ldr x0, [x16, #0]
 .word 0xd2820041
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -8022,7 +8022,7 @@ bl _p_672
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf9419030
+.word 0xf9419430
 .word 0xd63f0200
 
 adrp x16, mono_aot_SQLite_net_got@PAGE+0
@@ -10576,7 +10576,7 @@ bl _p_88
 .word 0xaa1a03e1
 bl _p_39
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -10977,7 +10977,7 @@ bl _p_319
 .word 0xf94053a0
 bl _p_39
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -10994,7 +10994,7 @@ ldr x0, [x16, #0]
 .word 0xd2821501
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -11005,7 +11005,7 @@ ldr x0, [x16, #0]
 .word 0xd2826681
 bl _p_26
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -11246,7 +11246,7 @@ bl _p_319
 .word 0xf94023a0
 bl _p_39
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -11396,7 +11396,7 @@ bl _p_319
 .word 0xf9401ba0
 bl _p_39
 .word 0xaa0003e1
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_28
@@ -12595,7 +12595,7 @@ ldr x15, [x16, #2144]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -13049,7 +13049,7 @@ ldr x15, [x16, #2200]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -13174,7 +13174,7 @@ ldr x15, [x16, #2200]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -13293,7 +13293,7 @@ ldr x15, [x16, #2200]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -13427,7 +13427,7 @@ ldr x15, [x16, #2200]
 .word 0x910003bf
 .word 0xa8c57bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -14043,7 +14043,7 @@ ldr x15, [x16, #2288]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -15518,7 +15518,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -15655,7 +15655,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -16269,7 +16269,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -16356,7 +16356,7 @@ ldr x4, [x16, #16]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 .word 0xd2800be0
@@ -17707,7 +17707,7 @@ bl _mini_init_method_rgctx
 .word 0xf90013a0
 .word 0xb9800000
 .word 0xf90013bf
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_28
@@ -18400,7 +18400,7 @@ bl _p_1
 .word 0x910003bf
 .word 0xa8c77bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_645
 
@@ -18545,7 +18545,7 @@ bl _mini_init_method_rgctx
 .word 0xf90013a0
 .word 0xb9800000
 .word 0xf90013bf
-.word 0xd2801c40
+.word 0xd2801c60
 .word 0xf2a04000
 bl _mono_create_corlib_exception_0
 bl _p_28
@@ -26292,7 +26292,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 40414
+.word 40056
 _p_2_plt_SQLite_net__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_2_plt_SQLite_net__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_2_plt_SQLite_net__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -26303,7 +26303,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 40417
+.word 40059
 _p_3_plt_SQLite_net_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_3_plt_SQLite_net_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_3_plt_SQLite_net_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -26314,7 +26314,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 40420
+.word 40062
 _p_4_plt_SQLite_net_SQLite_SQLiteException__ctor_SQLite_SQLite3_Result_string_llvm:
 	.globl _p_4_plt_SQLite_net_SQLite_SQLiteException__ctor_SQLite_SQLite3_Result_string_llvm
 .private_extern _p_4_plt_SQLite_net_SQLite_SQLiteException__ctor_SQLite_SQLite3_Result_string_llvm
@@ -26325,7 +26325,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 40428
+.word 40070
 _p_5_plt_SQLite_net_SQLite_NotNullConstraintViolationException__ctor_SQLite_SQLite3_Result_string_SQLite_TableMapping_object_llvm:
 	.globl _p_5_plt_SQLite_net_SQLite_NotNullConstraintViolationException__ctor_SQLite_SQLite3_Result_string_SQLite_TableMapping_object_llvm
 .private_extern _p_5_plt_SQLite_net_SQLite_NotNullConstraintViolationException__ctor_SQLite_SQLite3_Result_string_SQLite_TableMapping_object_llvm
@@ -26336,7 +26336,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 40430
+.word 40072
 _p_6_plt_SQLite_net_System_Linq_Enumerable_Where_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_bool_llvm:
 	.globl _p_6_plt_SQLite_net_System_Linq_Enumerable_Where_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_bool_llvm
 .private_extern _p_6_plt_SQLite_net_System_Linq_Enumerable_Where_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_bool_llvm
@@ -26347,7 +26347,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 40432
+.word 40074
 _p_7_plt_SQLite_net_SQLite_NotNullConstraintViolationException__ctor_SQLite_SQLite3_Result_string_llvm:
 	.globl _p_7_plt_SQLite_net_SQLite_NotNullConstraintViolationException__ctor_SQLite_SQLite3_Result_string_llvm
 .private_extern _p_7_plt_SQLite_net_SQLite_NotNullConstraintViolationException__ctor_SQLite_SQLite3_Result_string_llvm
@@ -26358,7 +26358,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 40444
+.word 40086
 _p_8_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping__ctor_llvm:
 	.globl _p_8_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping__ctor_llvm
 .private_extern _p_8_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping__ctor_llvm
@@ -26369,7 +26369,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 40446
+.word 40088
 _p_9_plt_SQLite_net_SQLitePCL_Batteries_V2_Init_llvm:
 	.globl _p_9_plt_SQLite_net_SQLitePCL_Batteries_V2_Init_llvm
 .private_extern _p_9_plt_SQLite_net_SQLitePCL_Batteries_V2_Init_llvm
@@ -26380,7 +26380,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 40457
+.word 40099
 _p_10_plt_SQLite_net_SQLite_SQLiteConnectionString__ctor_string_SQLite_SQLiteOpenFlags_bool_object_System_Action_1_SQLite_SQLiteConnection_System_Action_1_SQLite_SQLiteConnection_string_string_bool_llvm:
 	.globl _p_10_plt_SQLite_net_SQLite_SQLiteConnectionString__ctor_string_SQLite_SQLiteOpenFlags_bool_object_System_Action_1_SQLite_SQLiteConnection_System_Action_1_SQLite_SQLiteConnection_string_string_bool_llvm
 .private_extern _p_10_plt_SQLite_net_SQLite_SQLiteConnectionString__ctor_string_SQLite_SQLiteOpenFlags_bool_object_System_Action_1_SQLite_SQLiteConnection_System_Action_1_SQLite_SQLiteConnection_string_string_bool_llvm
@@ -26391,7 +26391,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 40462
+.word 40104
 _p_11_plt_SQLite_net_SQLite_SQLiteConnection__ctor_SQLite_SQLiteConnectionString_llvm:
 	.globl _p_11_plt_SQLite_net_SQLite_SQLiteConnection__ctor_SQLite_SQLiteConnectionString_llvm
 .private_extern _p_11_plt_SQLite_net_SQLite_SQLiteConnection__ctor_SQLite_SQLiteConnectionString_llvm
@@ -26402,7 +26402,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 40465
+.word 40107
 _p_12_plt_SQLite_net_System_Random__ctor_llvm:
 	.globl _p_12_plt_SQLite_net_System_Random__ctor_llvm
 .private_extern _p_12_plt_SQLite_net_System_Random__ctor_llvm
@@ -26413,7 +26413,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 40467
+.word 40109
 _p_13_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand__ctor_llvm:
 	.globl _p_13_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand__ctor_llvm
 .private_extern _p_13_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand__ctor_llvm
@@ -26424,7 +26424,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 40472
+.word 40114
 _p_14_plt_SQLite_net_SQLite_SQLiteConnection_set_DatabasePath_string_llvm:
 	.globl _p_14_plt_SQLite_net_SQLite_SQLiteConnection_set_DatabasePath_string_llvm
 .private_extern _p_14_plt_SQLite_net_SQLite_SQLiteConnection_set_DatabasePath_string_llvm
@@ -26435,7 +26435,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 40483
+.word 40125
 _p_15_plt_SQLite_net_SQLite_SQLite3_LibVersionNumber_llvm:
 	.globl _p_15_plt_SQLite_net_SQLite_SQLite3_LibVersionNumber_llvm
 .private_extern _p_15_plt_SQLite_net_SQLite_SQLite3_LibVersionNumber_llvm
@@ -26446,7 +26446,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 40485
+.word 40127
 _p_16_plt_SQLite_net_SQLite_SQLiteConnection_set_LibVersionNumber_int_llvm:
 	.globl _p_16_plt_SQLite_net_SQLite_SQLiteConnection_set_LibVersionNumber_int_llvm
 .private_extern _p_16_plt_SQLite_net_SQLite_SQLiteConnection_set_LibVersionNumber_int_llvm
@@ -26457,7 +26457,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 40488
+.word 40130
 _p_17_plt_SQLite_net_SQLite_SQLite3_Open_string_SQLitePCL_sqlite3__int_string_llvm:
 	.globl _p_17_plt_SQLite_net_SQLite_SQLite3_Open_string_SQLitePCL_sqlite3__int_string_llvm
 .private_extern _p_17_plt_SQLite_net_SQLite_SQLite3_Open_string_SQLitePCL_sqlite3__int_string_llvm
@@ -26468,7 +26468,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 40490
+.word 40132
 _p_18_plt_SQLite_net_SQLite_SQLiteConnection_set_Handle_SQLitePCL_sqlite3_llvm:
 	.globl _p_18_plt_SQLite_net_SQLite_SQLiteConnection_set_Handle_SQLitePCL_sqlite3_llvm
 .private_extern _p_18_plt_SQLite_net_SQLite_SQLiteConnection_set_Handle_SQLitePCL_sqlite3_llvm
@@ -26479,7 +26479,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 40493
+.word 40135
 _p_19_plt_SQLite_net_SQLite_SQLiteConnection_set_StoreDateTimeAsTicks_bool_llvm:
 	.globl _p_19_plt_SQLite_net_SQLite_SQLiteConnection_set_StoreDateTimeAsTicks_bool_llvm
 .private_extern _p_19_plt_SQLite_net_SQLite_SQLiteConnection_set_StoreDateTimeAsTicks_bool_llvm
@@ -26490,7 +26490,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 40495
+.word 40137
 _p_20_plt_SQLite_net_SQLite_SQLiteConnection_set_StoreTimeSpanAsTicks_bool_llvm:
 	.globl _p_20_plt_SQLite_net_SQLite_SQLiteConnection_set_StoreTimeSpanAsTicks_bool_llvm
 .private_extern _p_20_plt_SQLite_net_SQLite_SQLiteConnection_set_StoreTimeSpanAsTicks_bool_llvm
@@ -26501,7 +26501,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 40497
+.word 40139
 _p_21_plt_SQLite_net_SQLite_SQLiteConnection_set_DateTimeStringFormat_string_llvm:
 	.globl _p_21_plt_SQLite_net_SQLite_SQLiteConnection_set_DateTimeStringFormat_string_llvm
 .private_extern _p_21_plt_SQLite_net_SQLite_SQLiteConnection_set_DateTimeStringFormat_string_llvm
@@ -26512,7 +26512,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 40499
+.word 40141
 _p_22_plt_SQLite_net_SQLite_SQLiteConnection_set_DateTimeStyle_System_Globalization_DateTimeStyles_llvm:
 	.globl _p_22_plt_SQLite_net_SQLite_SQLiteConnection_set_DateTimeStyle_System_Globalization_DateTimeStyles_llvm
 .private_extern _p_22_plt_SQLite_net_SQLite_SQLiteConnection_set_DateTimeStyle_System_Globalization_DateTimeStyles_llvm
@@ -26523,7 +26523,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 40501
+.word 40143
 _p_23_plt_SQLite_net_System_TimeSpan_FromSeconds_double_llvm:
 	.globl _p_23_plt_SQLite_net_System_TimeSpan_FromSeconds_double_llvm
 .private_extern _p_23_plt_SQLite_net_System_TimeSpan_FromSeconds_double_llvm
@@ -26534,7 +26534,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 40503
+.word 40145
 _p_24_plt_SQLite_net_SQLite_SQLiteConnection_set_BusyTimeout_System_TimeSpan_llvm:
 	.globl _p_24_plt_SQLite_net_SQLite_SQLiteConnection_set_BusyTimeout_System_TimeSpan_llvm
 .private_extern _p_24_plt_SQLite_net_SQLite_SQLiteConnection_set_BusyTimeout_System_TimeSpan_llvm
@@ -26545,7 +26545,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 40508
+.word 40150
 _p_25_plt_SQLite_net_SQLite_SQLiteConnection_set_Tracer_System_Action_1_string_llvm:
 	.globl _p_25_plt_SQLite_net_SQLite_SQLiteConnection_set_Tracer_System_Action_1_string_llvm
 .private_extern _p_25_plt_SQLite_net_SQLite_SQLiteConnection_set_Tracer_System_Action_1_string_llvm
@@ -26556,7 +26556,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 40510
+.word 40152
 _p_26_plt_SQLite_net__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_26_plt_SQLite_net__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_26_plt_SQLite_net__jit_icall_mono_helper_ldstr_llvm
@@ -26567,7 +26567,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 40512
+.word 40154
 _p_27_plt_SQLite_net__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_27_plt_SQLite_net__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_27_plt_SQLite_net__jit_icall_mono_create_corlib_exception_1_llvm
@@ -26578,7 +26578,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 40515
+.word 40157
 _p_28_plt_SQLite_net__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_28_plt_SQLite_net__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_28_plt_SQLite_net__jit_icall_mono_arch_throw_exception_llvm
@@ -26589,7 +26589,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 40518
+.word 40160
 _p_29_plt_SQLite_net_SQLite_SQLiteConnection_SetKey_byte___llvm:
 	.globl _p_29_plt_SQLite_net_SQLite_SQLiteConnection_SetKey_byte___llvm
 .private_extern _p_29_plt_SQLite_net_SQLite_SQLiteConnection_SetKey_byte___llvm
@@ -26600,7 +26600,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 40520
+.word 40162
 _p_30_plt_SQLite_net_SQLite_SQLiteConnection_SetKey_string_llvm:
 	.globl _p_30_plt_SQLite_net_SQLite_SQLiteConnection_SetKey_string_llvm
 .private_extern _p_30_plt_SQLite_net_SQLite_SQLiteConnection_SetKey_string_llvm
@@ -26611,7 +26611,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 40522
+.word 40164
 _p_31_plt_SQLite_net_SQLite_SQLiteConnection_get_DatabasePath_llvm:
 	.globl _p_31_plt_SQLite_net_SQLite_SQLiteConnection_get_DatabasePath_llvm
 .private_extern _p_31_plt_SQLite_net_SQLite_SQLiteConnection_get_DatabasePath_llvm
@@ -26622,7 +26622,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 40524
+.word 40166
 _p_32_plt_SQLite_net_string_Format_string_object_object_llvm:
 	.globl _p_32_plt_SQLite_net_string_Format_string_object_object_llvm
 .private_extern _p_32_plt_SQLite_net_string_Format_string_object_object_llvm
@@ -26633,7 +26633,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 40526
+.word 40168
 _p_33_plt_SQLite_net_SQLite_SQLiteException_New_SQLite_SQLite3_Result_string_llvm:
 	.globl _p_33_plt_SQLite_net_SQLite_SQLiteException_New_SQLite_SQLite3_Result_string_llvm
 .private_extern _p_33_plt_SQLite_net_SQLite_SQLiteException_New_SQLite_SQLite3_Result_string_llvm
@@ -26644,7 +26644,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 40531
+.word 40173
 _p_34_plt_SQLite_net_SQLite_SQLiteConnection_ExecuteScalar_string_string_object___llvm:
 	.globl _p_34_plt_SQLite_net_SQLite_SQLiteConnection_ExecuteScalar_string_string_object___llvm
 .private_extern _p_34_plt_SQLite_net_SQLite_SQLiteConnection_ExecuteScalar_string_string_object___llvm
@@ -26655,7 +26655,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 40533
+.word 40175
 _p_35_plt_SQLite_net__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_35_plt_SQLite_net__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_35_plt_SQLite_net__jit_icall_mono_generic_class_init_llvm
@@ -26666,7 +26666,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 40545
+.word 40187
 _p_36_plt_SQLite_net_string_Replace_string_string_llvm:
 	.globl _p_36_plt_SQLite_net_string_Replace_string_string_llvm
 .private_extern _p_36_plt_SQLite_net_string_Replace_string_string_llvm
@@ -26677,7 +26677,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 40548
+.word 40190
 _p_37_plt_SQLite_net_string_Concat_string_string_string_llvm:
 	.globl _p_37_plt_SQLite_net_string_Concat_string_string_string_llvm
 .private_extern _p_37_plt_SQLite_net_string_Concat_string_string_string_llvm
@@ -26688,7 +26688,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 40553
+.word 40195
 _p_38_plt_SQLite_net_SQLite_SQLiteConnection_Quote_string_llvm:
 	.globl _p_38_plt_SQLite_net_SQLite_SQLiteConnection_Quote_string_llvm
 .private_extern _p_38_plt_SQLite_net_SQLite_SQLiteConnection_Quote_string_llvm
@@ -26699,7 +26699,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 40558
+.word 40200
 _p_39_plt_SQLite_net_string_Concat_string_string_llvm:
 	.globl _p_39_plt_SQLite_net_string_Concat_string_string_llvm
 .private_extern _p_39_plt_SQLite_net_string_Concat_string_string_llvm
@@ -26710,7 +26710,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 40560
+.word 40202
 _p_40_plt_SQLite_net_System_Linq_Enumerable_Select_byte_string_System_Collections_Generic_IEnumerable_1_byte_System_Func_2_byte_string_llvm:
 	.globl _p_40_plt_SQLite_net_System_Linq_Enumerable_Select_byte_string_System_Collections_Generic_IEnumerable_1_byte_System_Func_2_byte_string_llvm
 .private_extern _p_40_plt_SQLite_net_System_Linq_Enumerable_Select_byte_string_System_Collections_Generic_IEnumerable_1_byte_System_Func_2_byte_string_llvm
@@ -26721,7 +26721,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 40565
+.word 40207
 _p_41_plt_SQLite_net_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_41_plt_SQLite_net_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_41_plt_SQLite_net_string_Join_string_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -26732,7 +26732,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 40577
+.word 40219
 _p_42_plt_SQLite_net__jit_icall_mono_create_corlib_exception_2_llvm:
 	.globl _p_42_plt_SQLite_net__jit_icall_mono_create_corlib_exception_2_llvm
 .private_extern _p_42_plt_SQLite_net__jit_icall_mono_create_corlib_exception_2_llvm
@@ -26743,7 +26743,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 40582
+.word 40224
 _p_43_plt_SQLite_net_SQLite_SQLiteConnection_get_Handle_llvm:
 	.globl _p_43_plt_SQLite_net_SQLite_SQLiteConnection_get_Handle_llvm
 .private_extern _p_43_plt_SQLite_net_SQLite_SQLiteConnection_get_Handle_llvm
@@ -26754,7 +26754,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 40585
+.word 40227
 _p_44_plt_SQLite_net_SQLite_SQLite3_EnableLoadExtension_SQLitePCL_sqlite3_int_llvm:
 	.globl _p_44_plt_SQLite_net_SQLite_SQLite3_EnableLoadExtension_SQLitePCL_sqlite3_int_llvm
 .private_extern _p_44_plt_SQLite_net_SQLite_SQLite3_EnableLoadExtension_SQLitePCL_sqlite3_int_llvm
@@ -26765,7 +26765,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 40587
+.word 40229
 _p_45_plt_SQLite_net_SQLite_SQLite3_GetErrmsg_SQLitePCL_sqlite3_llvm:
 	.globl _p_45_plt_SQLite_net_SQLite_SQLite3_GetErrmsg_SQLitePCL_sqlite3_llvm
 .private_extern _p_45_plt_SQLite_net_SQLite_SQLite3_GetErrmsg_SQLitePCL_sqlite3_llvm
@@ -26776,7 +26776,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 40590
+.word 40232
 _p_46_plt_SQLite_net_System_TimeSpan_get_TotalMilliseconds_llvm:
 	.globl _p_46_plt_SQLite_net_System_TimeSpan_get_TotalMilliseconds_llvm
 .private_extern _p_46_plt_SQLite_net_System_TimeSpan_get_TotalMilliseconds_llvm
@@ -26787,7 +26787,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 40593
+.word 40235
 _p_47_plt_SQLite_net_SQLite_SQLite3_BusyTimeout_SQLitePCL_sqlite3_int_llvm:
 	.globl _p_47_plt_SQLite_net_SQLite_SQLite3_BusyTimeout_SQLitePCL_sqlite3_int_llvm
 .private_extern _p_47_plt_SQLite_net_SQLite_SQLite3_BusyTimeout_SQLitePCL_sqlite3_int_llvm
@@ -26798,7 +26798,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 40598
+.word 40240
 _p_48_plt_SQLite_net__jit_icall_mono_monitor_enter_v4_fast_llvm:
 	.globl _p_48_plt_SQLite_net__jit_icall_mono_monitor_enter_v4_fast_llvm
 .private_extern _p_48_plt_SQLite_net__jit_icall_mono_monitor_enter_v4_fast_llvm
@@ -26809,7 +26809,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 40601
+.word 40243
 _p_49_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping__ctor_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_llvm:
 	.globl _p_49_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping__ctor_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_llvm
 .private_extern _p_49_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping__ctor_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_llvm
@@ -26820,7 +26820,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 40604
+.word 40246
 _p_50_plt_SQLite_net__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_50_plt_SQLite_net__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_50_plt_SQLite_net__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -26831,7 +26831,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 40615
+.word 40257
 _p_51_plt_SQLite_net_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
 	.globl _p_51_plt_SQLite_net_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
 .private_extern _p_51_plt_SQLite_net_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
@@ -26842,7 +26842,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 40618
+.word 40260
 _p_52_plt_SQLite_net__jit_icall_mono_monitor_enter_v4_internal_llvm:
 	.globl _p_52_plt_SQLite_net__jit_icall_mono_monitor_enter_v4_internal_llvm
 .private_extern _p_52_plt_SQLite_net__jit_icall_mono_monitor_enter_v4_internal_llvm
@@ -26853,7 +26853,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 40623
+.word 40265
 _p_53_plt_SQLite_net_System_Threading_Monitor_Exit_object_llvm:
 	.globl _p_53_plt_SQLite_net_System_Threading_Monitor_Exit_object_llvm
 .private_extern _p_53_plt_SQLite_net_System_Threading_Monitor_Exit_object_llvm
@@ -26864,7 +26864,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 40626
+.word 40268
 _p_54_plt_SQLite_net__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_54_plt_SQLite_net__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_54_plt_SQLite_net__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -26875,7 +26875,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 40631
+.word 40273
 _p_55_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_TryGetValue_string_SQLite_TableMapping__llvm:
 	.globl _p_55_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_TryGetValue_string_SQLite_TableMapping__llvm
 .private_extern _p_55_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_TryGetValue_string_SQLite_TableMapping__llvm
@@ -26886,7 +26886,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 40634
+.word 40276
 _p_56_plt_SQLite_net_SQLite_TableMapping__ctor_System_Type_SQLite_CreateFlags_llvm:
 	.globl _p_56_plt_SQLite_net_SQLite_TableMapping__ctor_System_Type_SQLite_CreateFlags_llvm
 .private_extern _p_56_plt_SQLite_net_SQLite_TableMapping__ctor_System_Type_SQLite_CreateFlags_llvm
@@ -26897,7 +26897,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 40645
+.word 40287
 _p_57_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_Add_string_SQLite_TableMapping_llvm:
 	.globl _p_57_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_Add_string_SQLite_TableMapping_llvm
 .private_extern _p_57_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_Add_string_SQLite_TableMapping_llvm
@@ -26908,7 +26908,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 40648
+.word 40290
 _p_58_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_set_Item_string_SQLite_TableMapping_llvm:
 	.globl _p_58_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_set_Item_string_SQLite_TableMapping_llvm
 .private_extern _p_58_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_TableMapping_set_Item_string_SQLite_TableMapping_llvm
@@ -26919,7 +26919,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 40659
+.word 40301
 _p_59_plt_SQLite_net__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_59_plt_SQLite_net__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_59_plt_SQLite_net__jit_icall_mini_init_method_rgctx_llvm
@@ -26930,7 +26930,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 40670
+.word 40312
 _p_60_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_System_Type_SQLite_CreateFlags_llvm:
 	.globl _p_60_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_System_Type_SQLite_CreateFlags_llvm
 .private_extern _p_60_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_System_Type_SQLite_CreateFlags_llvm
@@ -26941,7 +26941,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 40673
+.word 40315
 _p_61_plt_SQLite_net_SQLite_SQLiteConnection_DropTable_SQLite_TableMapping_llvm:
 	.globl _p_61_plt_SQLite_net_SQLite_SQLiteConnection_DropTable_SQLite_TableMapping_llvm
 .private_extern _p_61_plt_SQLite_net_SQLite_SQLiteConnection_DropTable_SQLite_TableMapping_llvm
@@ -26952,7 +26952,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 40676
+.word 40318
 _p_62_plt_SQLite_net_string_Format_string_object_llvm:
 	.globl _p_62_plt_SQLite_net_string_Format_string_object_llvm
 .private_extern _p_62_plt_SQLite_net_string_Format_string_object_llvm
@@ -26963,7 +26963,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 40679
+.word 40321
 _p_63_plt_SQLite_net_SQLite_SQLiteConnection_Execute_string_object___llvm:
 	.globl _p_63_plt_SQLite_net_SQLite_SQLiteConnection_Execute_string_object___llvm
 .private_extern _p_63_plt_SQLite_net_SQLite_SQLiteConnection_Execute_string_object___llvm
@@ -26974,7 +26974,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 40684
+.word 40326
 _p_64_plt_SQLite_net_SQLite_SQLiteConnection_CreateTable_System_Type_SQLite_CreateFlags_llvm:
 	.globl _p_64_plt_SQLite_net_SQLite_SQLiteConnection_CreateTable_System_Type_SQLite_CreateFlags_llvm
 .private_extern _p_64_plt_SQLite_net_SQLite_SQLiteConnection_CreateTable_System_Type_SQLite_CreateFlags_llvm
@@ -26985,7 +26985,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 40687
+.word 40329
 _p_65_plt_SQLite_net_SQLite_SQLiteConnection_GetTableInfo_string_llvm:
 	.globl _p_65_plt_SQLite_net_SQLite_SQLiteConnection_GetTableInfo_string_llvm
 .private_extern _p_65_plt_SQLite_net_SQLite_SQLiteConnection_GetTableInfo_string_llvm
@@ -26996,7 +26996,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 40690
+.word 40332
 _p_66_plt_SQLite_net_SQLite_SQLiteConnection_MigrateTable_SQLite_TableMapping_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_llvm:
 	.globl _p_66_plt_SQLite_net_SQLite_SQLiteConnection_MigrateTable_SQLite_TableMapping_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_llvm
 .private_extern _p_66_plt_SQLite_net_SQLite_SQLiteConnection_MigrateTable_SQLite_TableMapping_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_llvm
@@ -27007,7 +27007,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+0
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 40693
+.word 40335
 _p_67_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo__ctor_llvm:
 	.globl _p_67_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo__ctor_llvm
 .private_extern _p_67_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo__ctor_llvm
@@ -27018,7 +27018,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 40696
+.word 40338
 _p_68_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_TryGetValue_string_SQLite_SQLiteConnection_IndexInfo__llvm:
 	.globl _p_68_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_TryGetValue_string_SQLite_SQLiteConnection_IndexInfo__llvm
 .private_extern _p_68_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_TryGetValue_string_SQLite_SQLiteConnection_IndexInfo__llvm
@@ -27029,7 +27029,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 40707
+.word 40349
 _p_69_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_AddWithResize_SQLite_SQLiteConnection_IndexedColumn_llvm:
 	.globl _p_69_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_AddWithResize_SQLite_SQLiteConnection_IndexedColumn_llvm
 .private_extern _p_69_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_AddWithResize_SQLite_SQLiteConnection_IndexedColumn_llvm
@@ -27040,7 +27040,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 40718
+.word 40360
 _p_70_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Add_string_SQLite_SQLiteConnection_IndexInfo_llvm:
 	.globl _p_70_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Add_string_SQLite_SQLiteConnection_IndexInfo_llvm
 .private_extern _p_70_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Add_string_SQLite_SQLiteConnection_IndexInfo_llvm
@@ -27051,7 +27051,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 40735
+.word 40377
 _p_71_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_string_SQLite_SQLiteConnection_IndexInfo_GetEnumerator_llvm:
 	.globl _p_71_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_string_SQLite_SQLiteConnection_IndexInfo_GetEnumerator_llvm
 .private_extern _p_71_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_string_SQLite_SQLiteConnection_IndexInfo_GetEnumerator_llvm
@@ -27062,7 +27062,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 40746
+.word 40388
 _p_72_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo_MoveNext_llvm:
 	.globl _p_72_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo_MoveNext_llvm
 .private_extern _p_72_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo_MoveNext_llvm
@@ -27073,7 +27073,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 40757
+.word 40399
 _p_73_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_get_Item_string_llvm:
 	.globl _p_73_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_get_Item_string_llvm
 .private_extern _p_73_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_get_Item_string_llvm
@@ -27084,7 +27084,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 40768
+.word 40410
 _p_74_plt_SQLite_net_System_Linq_Enumerable_OrderBy_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_llvm:
 	.globl _p_74_plt_SQLite_net_System_Linq_Enumerable_OrderBy_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_llvm
 .private_extern _p_74_plt_SQLite_net_System_Linq_Enumerable_OrderBy_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_llvm
@@ -27095,7 +27095,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 40779
+.word 40421
 _p_75_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_SQLiteConnection_IndexedColumn_string_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm:
 	.globl _p_75_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_SQLiteConnection_IndexedColumn_string_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
 .private_extern _p_75_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_SQLiteConnection_IndexedColumn_string_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
@@ -27106,7 +27106,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 40791
+.word 40433
 _p_76_plt_SQLite_net_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_76_plt_SQLite_net_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_76_plt_SQLite_net_System_Linq_Enumerable_ToArray_string_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -27117,7 +27117,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 40803
+.word 40445
 _p_77_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_string___bool_llvm:
 	.globl _p_77_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_string___bool_llvm
 .private_extern _p_77_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_string___bool_llvm
@@ -27128,7 +27128,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 40815
+.word 40457
 _p_78_plt_SQLite_net_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
 	.globl _p_78_plt_SQLite_net_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
 .private_extern _p_78_plt_SQLite_net_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
@@ -27139,7 +27139,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 40818
+.word 40460
 _p_79_plt_SQLite_net_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm:
 	.globl _p_79_plt_SQLite_net_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
 .private_extern _p_79_plt_SQLite_net_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
@@ -27150,7 +27150,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 40826
+.word 40468
 _p_80_plt_SQLite_net_string_Concat_string___llvm:
 	.globl _p_80_plt_SQLite_net_string_Concat_string___llvm
 .private_extern _p_80_plt_SQLite_net_string_Concat_string___llvm
@@ -27161,7 +27161,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 40835
+.word 40477
 _p_81_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableMapping_Column_string_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_string_llvm:
 	.globl _p_81_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableMapping_Column_string_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_string_llvm
 .private_extern _p_81_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableMapping_Column_string_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_string_llvm
@@ -27172,7 +27172,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 40840
+.word 40482
 _p_82_plt_SQLite_net_string_Join_string_string___llvm:
 	.globl _p_82_plt_SQLite_net_string_Join_string_string___llvm
 .private_extern _p_82_plt_SQLite_net_string_Join_string_string___llvm
@@ -27183,7 +27183,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 40852
+.word 40494
 _p_83_plt_SQLite_net_SQLite_SQLiteConnection_CreateTables_SQLite_CreateFlags_System_Type___llvm:
 	.globl _p_83_plt_SQLite_net_SQLite_SQLiteConnection_CreateTables_SQLite_CreateFlags_System_Type___llvm
 .private_extern _p_83_plt_SQLite_net_SQLite_SQLiteConnection_CreateTables_SQLite_CreateFlags_System_Type___llvm
@@ -27194,7 +27194,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 40857
+.word 40499
 _p_84_plt_SQLite_net_SQLite_CreateTablesResult__ctor_llvm:
 	.globl _p_84_plt_SQLite_net_SQLite_CreateTablesResult__ctor_llvm
 .private_extern _p_84_plt_SQLite_net_SQLite_CreateTablesResult__ctor_llvm
@@ -27205,7 +27205,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 40860
+.word 40502
 _p_85_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_CreateTableResult_set_Item_System_Type_SQLite_CreateTableResult_llvm:
 	.globl _p_85_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_CreateTableResult_set_Item_System_Type_SQLite_CreateTableResult_llvm
 .private_extern _p_85_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_CreateTableResult_set_Item_System_Type_SQLite_CreateTableResult_llvm
@@ -27216,7 +27216,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 40863
+.word 40505
 _p_86_plt_SQLite_net_string_Format_string_object___llvm:
 	.globl _p_86_plt_SQLite_net_string_Format_string_object___llvm
 .private_extern _p_86_plt_SQLite_net_string_Format_string_object___llvm
@@ -27227,7 +27227,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 40874
+.word 40516
 _p_87_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_string_bool_llvm:
 	.globl _p_87_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_string_bool_llvm
 .private_extern _p_87_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_string_bool_llvm
@@ -27238,7 +27238,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 40879
+.word 40521
 _p_88_plt_SQLite_net_System_Linq_Expressions_MemberExpression_get_Member_llvm:
 	.globl _p_88_plt_SQLite_net_System_Linq_Expressions_MemberExpression_get_Member_llvm
 .private_extern _p_88_plt_SQLite_net_System_Linq_Expressions_MemberExpression_get_Member_llvm
@@ -27249,7 +27249,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 40882
+.word 40524
 _p_89_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_T_REF_SQLite_CreateFlags_llvm:
 	.globl _p_89_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_T_REF_SQLite_CreateFlags_llvm
 .private_extern _p_89_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_T_REF_SQLite_CreateFlags_llvm
@@ -27260,7 +27260,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 40899
+.word 40541
 _p_90_plt_SQLite_net_SQLite_TableMapping_FindColumnWithPropertyName_string_llvm:
 	.globl _p_90_plt_SQLite_net_SQLite_TableMapping_FindColumnWithPropertyName_string_llvm
 .private_extern _p_90_plt_SQLite_net_SQLite_TableMapping_FindColumnWithPropertyName_string_llvm
@@ -27271,7 +27271,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 40915
+.word 40557
 _p_91_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_bool_llvm:
 	.globl _p_91_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_bool_llvm
 .private_extern _p_91_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string_bool_llvm
@@ -27282,7 +27282,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 40918
+.word 40560
 _p_92_plt_SQLite_net_SQLite_SQLiteConnection_Query_SQLite_SQLiteConnection_ColumnInfo_string_object___llvm:
 	.globl _p_92_plt_SQLite_net_SQLite_SQLiteConnection_Query_SQLite_SQLiteConnection_ColumnInfo_string_object___llvm
 .private_extern _p_92_plt_SQLite_net_SQLite_SQLiteConnection_Query_SQLite_SQLiteConnection_ColumnInfo_string_object___llvm
@@ -27293,7 +27293,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 40921
+.word 40563
 _p_93_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_GetEnumerator_llvm:
 	.globl _p_93_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_GetEnumerator_llvm
 .private_extern _p_93_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_GetEnumerator_llvm
@@ -27304,7 +27304,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 40933
+.word 40575
 _p_94_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_AddWithResize_SQLite_TableMapping_Column_llvm:
 	.globl _p_94_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_AddWithResize_SQLite_TableMapping_Column_llvm
 .private_extern _p_94_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_AddWithResize_SQLite_TableMapping_Column_llvm
@@ -27315,7 +27315,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 40947
+.word 40589
 _p_95_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_ColumnInfo_MoveNext_llvm:
 	.globl _p_95_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_ColumnInfo_MoveNext_llvm
 .private_extern _p_95_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_ColumnInfo_MoveNext_llvm
@@ -27326,7 +27326,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 40966
+.word 40608
 _p_96_plt_SQLite_net_string_Compare_string_string_System_StringComparison_llvm:
 	.globl _p_96_plt_SQLite_net_string_Compare_string_string_System_StringComparison_llvm
 .private_extern _p_96_plt_SQLite_net_string_Compare_string_string_System_StringComparison_llvm
@@ -27337,7 +27337,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 40977
+.word 40619
 _p_97_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_GetEnumerator_llvm:
 	.globl _p_97_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_GetEnumerator_llvm
 .private_extern _p_97_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_GetEnumerator_llvm
@@ -27348,7 +27348,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 40982
+.word 40624
 _p_98_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_TableMapping_Column_MoveNext_llvm:
 	.globl _p_98_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_TableMapping_Column_MoveNext_llvm
 .private_extern _p_98_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_TableMapping_Column_MoveNext_llvm
@@ -27359,7 +27359,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 40993
+.word 40635
 _p_99_plt_SQLite_net_SQLite_SQLiteConnection_get_StoreDateTimeAsTicks_llvm:
 	.globl _p_99_plt_SQLite_net_SQLite_SQLiteConnection_get_StoreDateTimeAsTicks_llvm
 .private_extern _p_99_plt_SQLite_net_SQLite_SQLiteConnection_get_StoreDateTimeAsTicks_llvm
@@ -27370,7 +27370,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 41004
+.word 40646
 _p_100_plt_SQLite_net_SQLite_SQLiteConnection_get_StoreTimeSpanAsTicks_llvm:
 	.globl _p_100_plt_SQLite_net_SQLite_SQLiteConnection_get_StoreTimeSpanAsTicks_llvm
 .private_extern _p_100_plt_SQLite_net_SQLite_SQLiteConnection_get_StoreTimeSpanAsTicks_llvm
@@ -27381,7 +27381,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 41006
+.word 40648
 _p_101_plt_SQLite_net_SQLite_Orm_SqlDecl_SQLite_TableMapping_Column_bool_bool_llvm:
 	.globl _p_101_plt_SQLite_net_SQLite_Orm_SqlDecl_SQLite_TableMapping_Column_bool_bool_llvm
 .private_extern _p_101_plt_SQLite_net_SQLite_Orm_SqlDecl_SQLite_TableMapping_Column_bool_bool_llvm
@@ -27392,7 +27392,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 41008
+.word 40650
 _p_102_plt_SQLite_net_string_Concat_string_string_string_string_llvm:
 	.globl _p_102_plt_SQLite_net_string_Concat_string_string_string_string_llvm
 .private_extern _p_102_plt_SQLite_net_string_Concat_string_string_string_string_llvm
@@ -27403,7 +27403,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 41011
+.word 40653
 _p_103_plt_SQLite_net_SQLite_SQLiteCommand__ctor_SQLite_SQLiteConnection_llvm:
 	.globl _p_103_plt_SQLite_net_SQLite_SQLiteCommand__ctor_SQLite_SQLiteConnection_llvm
 .private_extern _p_103_plt_SQLite_net_SQLite_SQLiteCommand__ctor_SQLite_SQLiteConnection_llvm
@@ -27414,7 +27414,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 41016
+.word 40658
 _p_104_plt_SQLite_net_SQLite_SQLiteCommand_Bind_object_llvm:
 	.globl _p_104_plt_SQLite_net_SQLite_SQLiteCommand_Bind_object_llvm
 .private_extern _p_104_plt_SQLite_net_SQLite_SQLiteCommand_Bind_object_llvm
@@ -27425,7 +27425,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 41019
+.word 40661
 _p_105_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator_llvm:
 	.globl _p_105_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator_llvm
 .private_extern _p_105_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_object_GetEnumerator_llvm
@@ -27436,7 +27436,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 41022
+.word 40664
 _p_106_plt_SQLite_net_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext_llvm:
 	.globl _p_106_plt_SQLite_net_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext_llvm
 .private_extern _p_106_plt_SQLite_net_System_Collections_Generic_Dictionary_2_Enumerator_string_object_MoveNext_llvm
@@ -27447,7 +27447,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 41033
+.word 40675
 _p_107_plt_SQLite_net_SQLite_SQLiteCommand_Bind_string_object_llvm:
 	.globl _p_107_plt_SQLite_net_SQLite_SQLiteCommand_Bind_string_object_llvm
 .private_extern _p_107_plt_SQLite_net_SQLite_SQLiteCommand_Bind_string_object_llvm
@@ -27458,7 +27458,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 41044
+.word 40686
 _p_108_plt_SQLite_net_SQLite_SQLiteConnection_CreateCommand_string_object___llvm:
 	.globl _p_108_plt_SQLite_net_SQLite_SQLiteConnection_CreateCommand_string_object___llvm
 .private_extern _p_108_plt_SQLite_net_SQLite_SQLiteConnection_CreateCommand_string_object___llvm
@@ -27469,7 +27469,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 41047
+.word 40689
 _p_109_plt_SQLite_net_SQLite_SQLiteConnection_get_TimeExecution_llvm:
 	.globl _p_109_plt_SQLite_net_SQLite_SQLiteConnection_get_TimeExecution_llvm
 .private_extern _p_109_plt_SQLite_net_SQLite_SQLiteConnection_get_TimeExecution_llvm
@@ -27480,7 +27480,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 41050
+.word 40692
 _p_110_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteNonQuery_llvm:
 	.globl _p_110_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteNonQuery_llvm
 .private_extern _p_110_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteNonQuery_llvm
@@ -27491,7 +27491,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 41052
+.word 40694
 _p_111_plt_SQLite_net_System_Diagnostics_Stopwatch_Stop_llvm:
 	.globl _p_111_plt_SQLite_net_System_Diagnostics_Stopwatch_Stop_llvm
 .private_extern _p_111_plt_SQLite_net_System_Diagnostics_Stopwatch_Stop_llvm
@@ -27502,7 +27502,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 41055
+.word 40697
 _p_112_plt_SQLite_net_System_Diagnostics_Stopwatch_get_ElapsedMilliseconds_llvm:
 	.globl _p_112_plt_SQLite_net_System_Diagnostics_Stopwatch_get_ElapsedMilliseconds_llvm
 .private_extern _p_112_plt_SQLite_net_System_Diagnostics_Stopwatch_get_ElapsedMilliseconds_llvm
@@ -27513,7 +27513,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 41060
+.word 40702
 _p_113_plt_SQLite_net_SQLite_SQLiteConnection_get_Tracer_llvm:
 	.globl _p_113_plt_SQLite_net_SQLite_SQLiteConnection_get_Tracer_llvm
 .private_extern _p_113_plt_SQLite_net_SQLite_SQLiteConnection_get_Tracer_llvm
@@ -27524,7 +27524,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 41065
+.word 40707
 _p_114_plt_SQLite_net_System_Diagnostics_Stopwatch_Start_llvm:
 	.globl _p_114_plt_SQLite_net_System_Diagnostics_Stopwatch_Start_llvm
 .private_extern _p_114_plt_SQLite_net_System_Diagnostics_Stopwatch_Start_llvm
@@ -27535,7 +27535,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 41067
+.word 40709
 _p_115_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_T_REF_llvm:
 	.globl _p_115_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_T_REF_llvm
 .private_extern _p_115_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_T_REF_llvm
@@ -27546,7 +27546,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 41084
+.word 40726
 _p_116_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_T_REF_llvm:
 	.globl _p_116_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_T_REF_llvm
 .private_extern _p_116_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_T_REF_llvm
@@ -27557,7 +27557,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 41112
+.word 40754
 _p_117_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQueryScalars_T_REF_llvm:
 	.globl _p_117_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQueryScalars_T_REF_llvm
 .private_extern _p_117_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQueryScalars_T_REF_llvm
@@ -27568,7 +27568,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 41140
+.word 40782
 _p_118_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm:
 	.globl _p_118_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm
 .private_extern _p_118_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm
@@ -27579,7 +27579,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 41156
+.word 40798
 _p_119_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_llvm:
 	.globl _p_119_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_llvm
 .private_extern _p_119_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_llvm
@@ -27590,7 +27590,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 41184
+.word 40826
 _p_120_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_object_SQLite_TableMapping_llvm:
 	.globl _p_120_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_object_SQLite_TableMapping_llvm
 .private_extern _p_120_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_object_SQLite_TableMapping_llvm
@@ -27601,7 +27601,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 41200
+.word 40842
 _p_121_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_object_SQLite_TableMapping_llvm:
 	.globl _p_121_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_object_SQLite_TableMapping_llvm
 .private_extern _p_121_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_object_SQLite_TableMapping_llvm
@@ -27612,7 +27612,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 41212
+.word 40854
 _p_122_plt_SQLite_net_SQLite_TableQuery_1_T_REF__ctor_SQLite_SQLiteConnection_llvm:
 	.globl _p_122_plt_SQLite_net_SQLite_TableQuery_1_T_REF__ctor_SQLite_SQLiteConnection_llvm
 .private_extern _p_122_plt_SQLite_net_SQLite_TableQuery_1_T_REF__ctor_SQLite_SQLiteConnection_llvm
@@ -27623,7 +27623,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 41243
+.word 40885
 _p_123_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___llvm:
 	.globl _p_123_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___llvm
 .private_extern _p_123_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___llvm
@@ -27634,7 +27634,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 41274
+.word 40916
 _p_124_plt_SQLite_net_System_Linq_Enumerable_First_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm:
 	.globl _p_124_plt_SQLite_net_System_Linq_Enumerable_First_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm
 .private_extern _p_124_plt_SQLite_net_System_Linq_Enumerable_First_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm
@@ -27645,7 +27645,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 41290
+.word 40932
 _p_125_plt_SQLite_net_SQLite_SQLiteConnection_Query_SQLite_TableMapping_string_object___llvm:
 	.globl _p_125_plt_SQLite_net_SQLite_SQLiteConnection_Query_SQLite_TableMapping_string_object___llvm
 .private_extern _p_125_plt_SQLite_net_SQLite_SQLiteConnection_Query_SQLite_TableMapping_string_object___llvm
@@ -27656,7 +27656,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 41306
+.word 40948
 _p_126_plt_SQLite_net_System_Linq_Enumerable_First_object_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_126_plt_SQLite_net_System_Linq_Enumerable_First_object_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_126_plt_SQLite_net_System_Linq_Enumerable_First_object_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -27667,7 +27667,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 41309
+.word 40951
 _p_127_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_llvm:
 	.globl _p_127_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_llvm
 .private_extern _p_127_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_llvm
@@ -27678,7 +27678,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 41333
+.word 40975
 _p_128_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_128_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_128_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -27689,7 +27689,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 41356
+.word 40998
 _p_129_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_llvm:
 	.globl _p_129_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_llvm
 .private_extern _p_129_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_llvm
@@ -27700,7 +27700,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 41375
+.word 41017
 _p_130_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___0_llvm:
 	.globl _p_130_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___0_llvm
 .private_extern _p_130_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___0_llvm
@@ -27711,7 +27711,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 41406
+.word 41048
 _p_131_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm:
 	.globl _p_131_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm
 .private_extern _p_131_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_llvm
@@ -27722,7 +27722,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 41422
+.word 41064
 _p_132_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_object_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_132_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_object_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_132_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_object_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -27733,7 +27733,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 41438
+.word 41080
 _p_133_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_0_llvm:
 	.globl _p_133_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_0_llvm
 .private_extern _p_133_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_0_llvm
@@ -27744,7 +27744,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 41462
+.word 41104
 _p_134_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_0_llvm:
 	.globl _p_134_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_0_llvm
 .private_extern _p_134_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_0_llvm
@@ -27755,7 +27755,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 41485
+.word 41127
 _p_135_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_llvm:
 	.globl _p_135_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_llvm
 .private_extern _p_135_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_llvm
@@ -27766,7 +27766,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 41504
+.word 41146
 _p_136_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___1_llvm:
 	.globl _p_136_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___1_llvm
 .private_extern _p_136_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___1_llvm
@@ -27777,7 +27777,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 41535
+.word 41177
 _p_137_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm:
 	.globl _p_137_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm
 .private_extern _p_137_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm
@@ -27788,7 +27788,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 41551
+.word 41193
 _p_138_plt_SQLite_net_SQLite_SQLiteConnection_RollbackTo_string_bool_llvm:
 	.globl _p_138_plt_SQLite_net_SQLite_SQLiteConnection_RollbackTo_string_bool_llvm
 .private_extern _p_138_plt_SQLite_net_SQLite_SQLiteConnection_RollbackTo_string_bool_llvm
@@ -27799,7 +27799,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 41567
+.word 41209
 _p_139_plt_SQLite_net__jit_icall_mono_arch_rethrow_exception_llvm:
 	.globl _p_139_plt_SQLite_net__jit_icall_mono_arch_rethrow_exception_llvm
 .private_extern _p_139_plt_SQLite_net__jit_icall_mono_arch_rethrow_exception_llvm
@@ -27810,7 +27810,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 41570
+.word 41212
 _p_140_plt_SQLite_net_int_ToString_llvm:
 	.globl _p_140_plt_SQLite_net_int_ToString_llvm
 .private_extern _p_140_plt_SQLite_net_int_ToString_llvm
@@ -27821,7 +27821,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 41572
+.word 41214
 _p_141_plt_SQLite_net_SQLite_SQLiteConnection_DoSavePointExecute_string_string_llvm:
 	.globl _p_141_plt_SQLite_net_SQLite_SQLiteConnection_DoSavePointExecute_string_string_llvm
 .private_extern _p_141_plt_SQLite_net_SQLite_SQLiteConnection_DoSavePointExecute_string_string_llvm
@@ -27832,7 +27832,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 41577
+.word 41219
 _p_142_plt_SQLite_net__jit_icall_mono_thread_get_undeniable_exception_llvm:
 	.globl _p_142_plt_SQLite_net__jit_icall_mono_thread_get_undeniable_exception_llvm
 .private_extern _p_142_plt_SQLite_net__jit_icall_mono_thread_get_undeniable_exception_llvm
@@ -27843,7 +27843,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 41580
+.word 41222
 _p_143_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
 	.globl _p_143_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
 .private_extern _p_143_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
@@ -27854,7 +27854,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 41607
+.word 41249
 _p_144_plt_SQLite_net_string_Substring_int_llvm:
 	.globl _p_144_plt_SQLite_net_string_Substring_int_llvm
 .private_extern _p_144_plt_SQLite_net_string_Substring_int_llvm
@@ -27865,7 +27865,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 41625
+.word 41267
 _p_145_plt_SQLite_net_int_TryParse_string_int__llvm:
 	.globl _p_145_plt_SQLite_net_int_TryParse_string_int__llvm
 .private_extern _p_145_plt_SQLite_net_int_TryParse_string_int__llvm
@@ -27876,7 +27876,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 41630
+.word 41272
 _p_146_plt_SQLite_net_SQLite_SQLiteConnection_SaveTransactionPoint_llvm:
 	.globl _p_146_plt_SQLite_net_SQLite_SQLiteConnection_SaveTransactionPoint_llvm
 .private_extern _p_146_plt_SQLite_net_SQLite_SQLiteConnection_SaveTransactionPoint_llvm
@@ -27887,7 +27887,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 41635
+.word 41277
 _p_147_plt_SQLite_net_SQLite_SQLiteConnection_Release_string_llvm:
 	.globl _p_147_plt_SQLite_net_SQLite_SQLiteConnection_Release_string_llvm
 .private_extern _p_147_plt_SQLite_net_SQLite_SQLiteConnection_Release_string_llvm
@@ -27898,7 +27898,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 41638
+.word 41280
 _p_148_plt_SQLite_net_SQLite_SQLiteConnection_Rollback_llvm:
 	.globl _p_148_plt_SQLite_net_SQLite_SQLiteConnection_Rollback_llvm
 .private_extern _p_148_plt_SQLite_net_SQLite_SQLiteConnection_Rollback_llvm
@@ -27909,7 +27909,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 41641
+.word 41283
 _p_149_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_llvm:
 	.globl _p_149_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_llvm
 .private_extern _p_149_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_llvm
@@ -27920,7 +27920,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 41644
+.word 41286
 _p_150_plt_SQLite_net_SQLite_SQLiteConnection_RunInTransaction_System_Action_llvm:
 	.globl _p_150_plt_SQLite_net_SQLite_SQLiteConnection_RunInTransaction_System_Action_llvm
 .private_extern _p_150_plt_SQLite_net_SQLite_SQLiteConnection_RunInTransaction_System_Action_llvm
@@ -27931,7 +27931,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 41647
+.word 41289
 _p_151_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_string_llvm:
 	.globl _p_151_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_string_llvm
 .private_extern _p_151_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_string_llvm
@@ -27942,7 +27942,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 41650
+.word 41292
 _p_152_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_System_Type_llvm:
 	.globl _p_152_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_System_Type_llvm
 .private_extern _p_152_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_System_Type_llvm
@@ -27953,7 +27953,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 41653
+.word 41295
 _p_153_plt_SQLite_net_SQLite_Orm_GetType_object_llvm:
 	.globl _p_153_plt_SQLite_net_SQLite_Orm_GetType_object_llvm
 .private_extern _p_153_plt_SQLite_net_SQLite_Orm_GetType_object_llvm
@@ -27964,7 +27964,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 41656
+.word 41298
 _p_154_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_string_System_Type_llvm:
 	.globl _p_154_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_string_System_Type_llvm
 .private_extern _p_154_plt_SQLite_net_SQLite_SQLiteConnection_Insert_object_string_System_Type_llvm
@@ -27975,7 +27975,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 41659
+.word 41301
 _p_155_plt_SQLite_net_SQLite_SQLiteConnection_CreateInsertCommand_SQLite_TableMapping_string_llvm:
 	.globl _p_155_plt_SQLite_net_SQLite_SQLiteConnection_CreateInsertCommand_SQLite_TableMapping_string_llvm
 .private_extern _p_155_plt_SQLite_net_SQLite_SQLiteConnection_CreateInsertCommand_SQLite_TableMapping_string_llvm
@@ -27986,7 +27986,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 41662
+.word 41304
 _p_156_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_TryGetValue_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand__llvm:
 	.globl _p_156_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_TryGetValue_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand__llvm
 .private_extern _p_156_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_TryGetValue_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand__llvm
@@ -27997,7 +27997,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 41665
+.word 41307
 _p_157_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_Add_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_llvm:
 	.globl _p_157_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_Add_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_llvm
 .private_extern _p_157_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_Add_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_llvm
@@ -28008,7 +28008,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 41676
+.word 41318
 _p_158_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_Dispose_llvm:
 	.globl _p_158_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_Dispose_llvm
 .private_extern _p_158_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_Dispose_llvm
@@ -28019,7 +28019,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 41687
+.word 41329
 _p_159_plt_SQLite_net__jit_icall_ves_icall_object_new_specific_llvm:
 	.globl _p_159_plt_SQLite_net__jit_icall_ves_icall_object_new_specific_llvm
 .private_extern _p_159_plt_SQLite_net__jit_icall_ves_icall_object_new_specific_llvm
@@ -28030,7 +28030,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 41690
+.word 41332
 _p_160_plt_SQLite_net_SQLite_SQLiteConnection_Update_object_System_Type_llvm:
 	.globl _p_160_plt_SQLite_net_SQLite_SQLiteConnection_Update_object_System_Type_llvm
 .private_extern _p_160_plt_SQLite_net_SQLite_SQLiteConnection_Update_object_System_Type_llvm
@@ -28041,7 +28041,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 41693
+.word 41335
 _p_161_plt_SQLite_net_System_Type_op_Equality_System_Type_System_Type_llvm:
 	.globl _p_161_plt_SQLite_net_System_Type_op_Equality_System_Type_System_Type_llvm
 .private_extern _p_161_plt_SQLite_net_System_Type_op_Equality_System_Type_System_Type_llvm
@@ -28052,7 +28052,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 41696
+.word 41338
 _p_162_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableMapping_Column_object_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_object_llvm:
 	.globl _p_162_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableMapping_Column_object_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_object_llvm
 .private_extern _p_162_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableMapping_Column_object_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_object_llvm
@@ -28063,7 +28063,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 41701
+.word 41343
 _p_163_plt_SQLite_net_System_Collections_Generic_List_1_object__ctor_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_163_plt_SQLite_net_System_Collections_Generic_List_1_object__ctor_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_163_plt_SQLite_net_System_Collections_Generic_List_1_object__ctor_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -28074,7 +28074,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 41713
+.word 41355
 _p_164_plt_SQLite_net_SQLite_TableMapping_Column_GetValue_object_llvm:
 	.globl _p_164_plt_SQLite_net_SQLite_TableMapping_Column_GetValue_object_llvm
 .private_extern _p_164_plt_SQLite_net_SQLite_TableMapping_Column_GetValue_object_llvm
@@ -28085,7 +28085,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 41724
+.word 41366
 _p_165_plt_SQLite_net_System_Collections_Generic_List_1_object_AddWithResize_object_llvm:
 	.globl _p_165_plt_SQLite_net_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
 .private_extern _p_165_plt_SQLite_net_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
@@ -28096,7 +28096,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 41727
+.word 41369
 _p_166_plt_SQLite_net_string_Format_string_object_object_object_llvm:
 	.globl _p_166_plt_SQLite_net_string_Format_string_object_object_object_llvm
 .private_extern _p_166_plt_SQLite_net_string_Format_string_object_object_object_llvm
@@ -28107,7 +28107,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 41746
+.word 41388
 _p_167_plt_SQLite_net_System_Collections_Generic_List_1_object_ToArray_llvm:
 	.globl _p_167_plt_SQLite_net_System_Collections_Generic_List_1_object_ToArray_llvm
 .private_extern _p_167_plt_SQLite_net_System_Collections_Generic_List_1_object_ToArray_llvm
@@ -28118,7 +28118,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 41751
+.word 41393
 _p_168_plt_SQLite_net_SQLite_SQLiteConnection_OnTableChanged_SQLite_TableMapping_SQLite_NotifyTableChangedAction_llvm:
 	.globl _p_168_plt_SQLite_net_SQLite_SQLiteConnection_OnTableChanged_SQLite_TableMapping_SQLite_NotifyTableChangedAction_llvm
 .private_extern _p_168_plt_SQLite_net_SQLite_SQLiteConnection_OnTableChanged_SQLite_TableMapping_SQLite_NotifyTableChangedAction_llvm
@@ -28129,7 +28129,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 41762
+.word 41404
 _p_169_plt_SQLite_net_SQLite_SQLite3_ExtendedErrCode_SQLitePCL_sqlite3_llvm:
 	.globl _p_169_plt_SQLite_net_SQLite_SQLite3_ExtendedErrCode_SQLitePCL_sqlite3_llvm
 .private_extern _p_169_plt_SQLite_net_SQLite_SQLite3_ExtendedErrCode_SQLitePCL_sqlite3_llvm
@@ -28140,7 +28140,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 41765
+.word 41407
 _p_170_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLiteException_SQLite_TableMapping_object_llvm:
 	.globl _p_170_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLiteException_SQLite_TableMapping_object_llvm
 .private_extern _p_170_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLiteException_SQLite_TableMapping_object_llvm
@@ -28151,7 +28151,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 41768
+.word 41410
 _p_171_plt_SQLite_net_SQLite_SQLiteConnection_Update_object_llvm:
 	.globl _p_171_plt_SQLite_net_SQLite_SQLiteConnection_Update_object_llvm
 .private_extern _p_171_plt_SQLite_net_SQLite_SQLiteConnection_Update_object_llvm
@@ -28162,7 +28162,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 41770
+.word 41412
 _p_172_plt_SQLite_net_SQLite_SQLiteConnection_Delete_object_SQLite_TableMapping_llvm:
 	.globl _p_172_plt_SQLite_net_SQLite_SQLiteConnection_Delete_object_SQLite_TableMapping_llvm
 .private_extern _p_172_plt_SQLite_net_SQLite_SQLiteConnection_Delete_object_SQLite_TableMapping_llvm
@@ -28173,7 +28173,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 41773
+.word 41415
 _p_173_plt_SQLite_net_SQLite_SQLiteConnection_DeleteAll_SQLite_TableMapping_llvm:
 	.globl _p_173_plt_SQLite_net_SQLite_SQLiteConnection_DeleteAll_SQLite_TableMapping_llvm
 .private_extern _p_173_plt_SQLite_net_SQLite_SQLiteConnection_DeleteAll_SQLite_TableMapping_llvm
@@ -28184,7 +28184,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 41776
+.word 41418
 _p_174_plt_SQLite_net_SQLite_SQLite3_Open_string_SQLitePCL_sqlite3__llvm:
 	.globl _p_174_plt_SQLite_net_SQLite_SQLite3_Open_string_SQLitePCL_sqlite3__llvm
 .private_extern _p_174_plt_SQLite_net_SQLite_SQLite3_Open_string_SQLitePCL_sqlite3__llvm
@@ -28195,7 +28195,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 41779
+.word 41421
 _p_175_plt_SQLite_net_SQLite_SQLite3_BackupInit_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_string_llvm:
 	.globl _p_175_plt_SQLite_net_SQLite_SQLite3_BackupInit_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_string_llvm
 .private_extern _p_175_plt_SQLite_net_SQLite_SQLite3_BackupInit_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_string_llvm
@@ -28206,7 +28206,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 41782
+.word 41424
 _p_176_plt_SQLite_net_SQLite_SQLite3_BackupStep_SQLitePCL_sqlite3_backup_int_llvm:
 	.globl _p_176_plt_SQLite_net_SQLite_SQLite3_BackupStep_SQLitePCL_sqlite3_backup_int_llvm
 .private_extern _p_176_plt_SQLite_net_SQLite_SQLite3_BackupStep_SQLitePCL_sqlite3_backup_int_llvm
@@ -28217,7 +28217,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 41785
+.word 41427
 _p_177_plt_SQLite_net_SQLite_SQLite3_BackupFinish_SQLitePCL_sqlite3_backup_llvm:
 	.globl _p_177_plt_SQLite_net_SQLite_SQLite3_BackupFinish_SQLitePCL_sqlite3_backup_llvm
 .private_extern _p_177_plt_SQLite_net_SQLite_SQLite3_BackupFinish_SQLitePCL_sqlite3_backup_llvm
@@ -28228,7 +28228,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 41788
+.word 41430
 _p_178_plt_SQLite_net_SQLite_SQLite3_GetResult_SQLitePCL_sqlite3_llvm:
 	.globl _p_178_plt_SQLite_net_SQLite_SQLite3_GetResult_SQLitePCL_sqlite3_llvm
 .private_extern _p_178_plt_SQLite_net_SQLite_SQLite3_GetResult_SQLitePCL_sqlite3_llvm
@@ -28239,7 +28239,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 41791
+.word 41433
 _p_179_plt_SQLite_net_SQLite_SQLite3_Close_SQLitePCL_sqlite3_llvm:
 	.globl _p_179_plt_SQLite_net_SQLite_SQLite3_Close_SQLitePCL_sqlite3_llvm
 .private_extern _p_179_plt_SQLite_net_SQLite_SQLite3_Close_SQLitePCL_sqlite3_llvm
@@ -28250,7 +28250,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 41794
+.word 41436
 _p_180_plt_SQLite_net_System_GC_SuppressFinalize_object_llvm:
 	.globl _p_180_plt_SQLite_net_System_GC_SuppressFinalize_object_llvm
 .private_extern _p_180_plt_SQLite_net_System_GC_SuppressFinalize_object_llvm
@@ -28261,7 +28261,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 41797
+.word 41439
 _p_181_plt_SQLite_net_System_Delegate_Combine_System_Delegate_System_Delegate_llvm:
 	.globl _p_181_plt_SQLite_net_System_Delegate_Combine_System_Delegate_System_Delegate_llvm
 .private_extern _p_181_plt_SQLite_net_System_Delegate_Combine_System_Delegate_System_Delegate_llvm
@@ -28272,7 +28272,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 41802
+.word 41444
 _p_182_plt_SQLite_net_System_Delegate_Remove_System_Delegate_System_Delegate_llvm:
 	.globl _p_182_plt_SQLite_net_System_Delegate_Remove_System_Delegate_System_Delegate_llvm
 .private_extern _p_182_plt_SQLite_net_System_Delegate_Remove_System_Delegate_System_Delegate_llvm
@@ -28283,7 +28283,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 41807
+.word 41449
 _p_183_plt_SQLite_net_string_Equals_string_System_StringComparison_llvm:
 	.globl _p_183_plt_SQLite_net_string_Equals_string_System_StringComparison_llvm
 .private_extern _p_183_plt_SQLite_net_string_Equals_string_System_StringComparison_llvm
@@ -28294,7 +28294,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 41812
+.word 41454
 _p_184_plt_SQLite_net_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type_llvm:
 	.globl _p_184_plt_SQLite_net_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type_llvm
 .private_extern _p_184_plt_SQLite_net_System_Reflection_IntrospectionExtensions_GetTypeInfo_System_Type_llvm
@@ -28305,7 +28305,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 41817
+.word 41459
 _p_185_plt_SQLite_net_System_Linq_Enumerable_Where_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm:
 	.globl _p_185_plt_SQLite_net_System_Linq_Enumerable_Where_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
 .private_extern _p_185_plt_SQLite_net_System_Linq_Enumerable_Where_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
@@ -28316,7 +28316,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 41822
+.word 41464
 _p_186_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_SQLite_TableAttribute_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_SQLite_TableAttribute_llvm:
 	.globl _p_186_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_SQLite_TableAttribute_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_SQLite_TableAttribute_llvm
 .private_extern _p_186_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_SQLite_TableAttribute_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_SQLite_TableAttribute_llvm
@@ -28327,7 +28327,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 41834
+.word 41476
 _p_187_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_SQLite_TableAttribute_System_Collections_Generic_IEnumerable_1_SQLite_TableAttribute_llvm:
 	.globl _p_187_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_SQLite_TableAttribute_System_Collections_Generic_IEnumerable_1_SQLite_TableAttribute_llvm
 .private_extern _p_187_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_SQLite_TableAttribute_System_Collections_Generic_IEnumerable_1_SQLite_TableAttribute_llvm
@@ -28338,7 +28338,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 41846
+.word 41488
 _p_188_plt_SQLite_net_SQLite_TableMapping_GetPublicMembers_System_Type_llvm:
 	.globl _p_188_plt_SQLite_net_SQLite_TableMapping_GetPublicMembers_System_Type_llvm
 .private_extern _p_188_plt_SQLite_net_SQLite_TableMapping_GetPublicMembers_System_Type_llvm
@@ -28349,7 +28349,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 41858
+.word 41500
 _p_189_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column__ctor_int_llvm:
 	.globl _p_189_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column__ctor_int_llvm
 .private_extern _p_189_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column__ctor_int_llvm
@@ -28360,7 +28360,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 41861
+.word 41503
 _p_190_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_ToArray_llvm:
 	.globl _p_190_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_ToArray_llvm
 .private_extern _p_190_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_TableMapping_Column_ToArray_llvm
@@ -28371,7 +28371,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 41872
+.word 41514
 _p_191_plt_SQLite_net_System_Linq_Enumerable_ToArray_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_llvm:
 	.globl _p_191_plt_SQLite_net_System_Linq_Enumerable_ToArray_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_llvm
 .private_extern _p_191_plt_SQLite_net_System_Linq_Enumerable_ToArray_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_llvm
@@ -28382,7 +28382,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 41883
+.word 41525
 _p_192_plt_SQLite_net_SQLite_TableMapping_Column__ctor_System_Reflection_MemberInfo_SQLite_CreateFlags_llvm:
 	.globl _p_192_plt_SQLite_net_SQLite_TableMapping_Column__ctor_System_Reflection_MemberInfo_SQLite_CreateFlags_llvm
 .private_extern _p_192_plt_SQLite_net_SQLite_TableMapping_Column__ctor_System_Reflection_MemberInfo_SQLite_CreateFlags_llvm
@@ -28393,7 +28393,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 41895
+.word 41537
 _p_193_plt_SQLite_net_string_StartsWith_string_llvm:
 	.globl _p_193_plt_SQLite_net_string_StartsWith_string_llvm
 .private_extern _p_193_plt_SQLite_net_string_StartsWith_string_llvm
@@ -28404,7 +28404,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 41898
+.word 41540
 _p_194_plt_SQLite_net_System_Collections_Generic_HashSet_1_string__ctor_llvm:
 	.globl _p_194_plt_SQLite_net_System_Collections_Generic_HashSet_1_string__ctor_llvm
 .private_extern _p_194_plt_SQLite_net_System_Collections_Generic_HashSet_1_string__ctor_llvm
@@ -28415,7 +28415,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 41903
+.word 41545
 _p_195_plt_SQLite_net_System_Reflection_TypeInfo_get_DeclaredProperties_llvm:
 	.globl _p_195_plt_SQLite_net_System_Reflection_TypeInfo_get_DeclaredProperties_llvm
 .private_extern _p_195_plt_SQLite_net_System_Reflection_TypeInfo_get_DeclaredProperties_llvm
@@ -28426,7 +28426,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 41914
+.word 41556
 _p_196_plt_SQLite_net_System_Linq_Enumerable_Where_System_Reflection_PropertyInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_PropertyInfo_System_Func_2_System_Reflection_PropertyInfo_bool_llvm:
 	.globl _p_196_plt_SQLite_net_System_Linq_Enumerable_Where_System_Reflection_PropertyInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_PropertyInfo_System_Func_2_System_Reflection_PropertyInfo_bool_llvm
 .private_extern _p_196_plt_SQLite_net_System_Linq_Enumerable_Where_System_Reflection_PropertyInfo_System_Collections_Generic_IEnumerable_1_System_Reflection_PropertyInfo_System_Func_2_System_Reflection_PropertyInfo_bool_llvm
@@ -28437,7 +28437,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 41919
+.word 41561
 _p_197_plt_SQLite_net_System_Collections_Generic_List_1_System_Reflection_MemberInfo_AddRange_System_Collections_Generic_IEnumerable_1_System_Reflection_MemberInfo_llvm:
 	.globl _p_197_plt_SQLite_net_System_Collections_Generic_List_1_System_Reflection_MemberInfo_AddRange_System_Collections_Generic_IEnumerable_1_System_Reflection_MemberInfo_llvm
 .private_extern _p_197_plt_SQLite_net_System_Collections_Generic_List_1_System_Reflection_MemberInfo_AddRange_System_Collections_Generic_IEnumerable_1_System_Reflection_MemberInfo_llvm
@@ -28448,7 +28448,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 41931
+.word 41573
 _p_198_plt_SQLite_net_System_Collections_Generic_List_1_System_Reflection_MemberInfo_GetEnumerator_llvm:
 	.globl _p_198_plt_SQLite_net_System_Collections_Generic_List_1_System_Reflection_MemberInfo_GetEnumerator_llvm
 .private_extern _p_198_plt_SQLite_net_System_Collections_Generic_List_1_System_Reflection_MemberInfo_GetEnumerator_llvm
@@ -28459,7 +28459,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 41942
+.word 41584
 _p_199_plt_SQLite_net_System_Type_op_Inequality_System_Type_System_Type_llvm:
 	.globl _p_199_plt_SQLite_net_System_Type_op_Inequality_System_Type_System_Type_llvm
 .private_extern _p_199_plt_SQLite_net_System_Type_op_Inequality_System_Type_System_Type_llvm
@@ -28470,7 +28470,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 41953
+.word 41595
 _p_200_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_System_Reflection_MemberInfo_MoveNext_llvm:
 	.globl _p_200_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_System_Reflection_MemberInfo_MoveNext_llvm
 .private_extern _p_200_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_System_Reflection_MemberInfo_MoveNext_llvm
@@ -28481,7 +28481,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 41958
+.word 41600
 _p_201_plt_SQLite_net_System_Collections_Generic_HashSet_1_string_Add_string_llvm:
 	.globl _p_201_plt_SQLite_net_System_Collections_Generic_HashSet_1_string_Add_string_llvm
 .private_extern _p_201_plt_SQLite_net_System_Collections_Generic_HashSet_1_string_Add_string_llvm
@@ -28492,7 +28492,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 41969
+.word 41611
 _p_202_plt_SQLite_net_System_Array_Clear_System_Array_int_int_llvm:
 	.globl _p_202_plt_SQLite_net_System_Array_Clear_System_Array_int_int_llvm
 .private_extern _p_202_plt_SQLite_net_System_Array_Clear_System_Array_int_int_llvm
@@ -28503,7 +28503,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 41980
+.word 41622
 _p_203_plt_SQLite_net_SQLite_TableMapping_GetFieldsFromValueTuple_System_Type_llvm:
 	.globl _p_203_plt_SQLite_net_SQLite_TableMapping_GetFieldsFromValueTuple_System_Type_llvm
 .private_extern _p_203_plt_SQLite_net_SQLite_TableMapping_GetFieldsFromValueTuple_System_Type_llvm
@@ -28514,7 +28514,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 41985
+.word 41627
 _p_204_plt_SQLite_net_System_Type_GetFields_llvm:
 	.globl _p_204_plt_SQLite_net_System_Type_GetFields_llvm
 .private_extern _p_204_plt_SQLite_net_System_Type_GetFields_llvm
@@ -28525,7 +28525,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 41988
+.word 41630
 _p_205_plt_SQLite_net_System_Convert_ChangeType_object_System_Type_System_IFormatProvider_llvm:
 	.globl _p_205_plt_SQLite_net_System_Convert_ChangeType_object_System_Type_System_IFormatProvider_llvm
 .private_extern _p_205_plt_SQLite_net_System_Convert_ChangeType_object_System_Type_System_IFormatProvider_llvm
@@ -28536,7 +28536,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 41993
+.word 41635
 _p_206_plt_SQLite_net_SQLite_TableMapping_Column_SetValue_object_object_llvm:
 	.globl _p_206_plt_SQLite_net_SQLite_TableMapping_Column_SetValue_object_object_llvm
 .private_extern _p_206_plt_SQLite_net_SQLite_TableMapping_Column_SetValue_object_object_llvm
@@ -28547,7 +28547,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 41998
+.word 41640
 _p_207_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_bool_llvm:
 	.globl _p_207_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_bool_llvm
 .private_extern _p_207_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_SQLite_TableMapping_Column_System_Collections_Generic_IEnumerable_1_SQLite_TableMapping_Column_System_Func_2_SQLite_TableMapping_Column_bool_llvm
@@ -28558,7 +28558,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 42001
+.word 41643
 _p_208_plt_SQLite_net_System_Linq_Enumerable_Any_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm:
 	.globl _p_208_plt_SQLite_net_System_Linq_Enumerable_Any_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
 .private_extern _p_208_plt_SQLite_net_System_Linq_Enumerable_Any_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
@@ -28569,7 +28569,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 42013
+.word 41655
 _p_209_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string__ctor_llvm:
 	.globl _p_209_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string__ctor_llvm
 .private_extern _p_209_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string__ctor_llvm
@@ -28580,7 +28580,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 42025
+.word 41667
 _p_210_plt_SQLite_net_System_Enum_GetValues_System_Type_llvm:
 	.globl _p_210_plt_SQLite_net_System_Enum_GetValues_System_Type_llvm
 .private_extern _p_210_plt_SQLite_net_System_Enum_GetValues_System_Type_llvm
@@ -28591,7 +28591,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 42036
+.word 41678
 _p_211_plt_SQLite_net_System_Convert_ToInt32_object_llvm:
 	.globl _p_211_plt_SQLite_net_System_Convert_ToInt32_object_llvm
 .private_extern _p_211_plt_SQLite_net_System_Convert_ToInt32_object_llvm
@@ -28602,7 +28602,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 42041
+.word 41683
 _p_212_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string_set_Item_int_string_llvm:
 	.globl _p_212_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string_set_Item_int_string_llvm
 .private_extern _p_212_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string_set_Item_int_string_llvm
@@ -28613,7 +28613,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 42046
+.word 41688
 _p_213_plt_SQLite_net_SQLite_EnumCache_GetInfo_System_Type_llvm:
 	.globl _p_213_plt_SQLite_net_SQLite_EnumCache_GetInfo_System_Type_llvm
 .private_extern _p_213_plt_SQLite_net_SQLite_EnumCache_GetInfo_System_Type_llvm
@@ -28624,7 +28624,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 42057
+.word 41699
 _p_214_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo_TryGetValue_System_Type_SQLite_EnumCacheInfo__llvm:
 	.globl _p_214_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo_TryGetValue_System_Type_SQLite_EnumCacheInfo__llvm
 .private_extern _p_214_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo_TryGetValue_System_Type_SQLite_EnumCacheInfo__llvm
@@ -28635,7 +28635,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 42060
+.word 41702
 _p_215_plt_SQLite_net_SQLite_EnumCacheInfo__ctor_System_Type_llvm:
 	.globl _p_215_plt_SQLite_net_SQLite_EnumCacheInfo__ctor_System_Type_llvm
 .private_extern _p_215_plt_SQLite_net_SQLite_EnumCacheInfo__ctor_System_Type_llvm
@@ -28646,7 +28646,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 42071
+.word 41713
 _p_216_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo_set_Item_System_Type_SQLite_EnumCacheInfo_llvm:
 	.globl _p_216_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo_set_Item_System_Type_SQLite_EnumCacheInfo_llvm
 .private_extern _p_216_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo_set_Item_System_Type_SQLite_EnumCacheInfo_llvm
@@ -28657,7 +28657,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 42074
+.word 41716
 _p_217_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo__ctor_llvm:
 	.globl _p_217_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo__ctor_llvm
 .private_extern _p_217_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_EnumCacheInfo__ctor_llvm
@@ -28668,7 +28668,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 42085
+.word 41727
 _p_218_plt_SQLite_net_SQLite_Orm_SqlType_SQLite_TableMapping_Column_bool_bool_llvm:
 	.globl _p_218_plt_SQLite_net_SQLite_Orm_SqlType_SQLite_TableMapping_Column_bool_bool_llvm
 .private_extern _p_218_plt_SQLite_net_SQLite_Orm_SqlType_SQLite_TableMapping_Column_bool_bool_llvm
@@ -28679,7 +28679,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 42096
+.word 41738
 _p_219_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm:
 	.globl _p_219_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
 .private_extern _p_219_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_NoValue_llvm
@@ -28690,7 +28690,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 42099
+.word 41741
 _p_220_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_string_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_string_llvm:
 	.globl _p_220_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_string_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_string_llvm
 .private_extern _p_220_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_string_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_string_llvm
@@ -28701,7 +28701,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 42104
+.word 41746
 _p_221_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_string_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_221_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_string_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_221_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_string_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -28712,7 +28712,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 42116
+.word 41758
 _p_222_plt_SQLite_net_System_Reflection_TypeInfo_GetDeclaredField_string_llvm:
 	.globl _p_222_plt_SQLite_net_System_Reflection_TypeInfo_GetDeclaredField_string_llvm
 .private_extern _p_222_plt_SQLite_net_System_Reflection_TypeInfo_GetDeclaredField_string_llvm
@@ -28723,7 +28723,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 42128
+.word 41770
 _p_223_plt_SQLite_net_SQLite_Orm_GetField_System_Reflection_TypeInfo_string_llvm:
 	.globl _p_223_plt_SQLite_net_SQLite_Orm_GetField_System_Reflection_TypeInfo_string_llvm
 .private_extern _p_223_plt_SQLite_net_SQLite_Orm_GetField_System_Reflection_TypeInfo_string_llvm
@@ -28734,7 +28734,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 42133
+.word 41775
 _p_224_plt_SQLite_net_System_Reflection_TypeInfo_GetDeclaredProperty_string_llvm:
 	.globl _p_224_plt_SQLite_net_System_Reflection_TypeInfo_GetDeclaredProperty_string_llvm
 .private_extern _p_224_plt_SQLite_net_System_Reflection_TypeInfo_GetDeclaredProperty_string_llvm
@@ -28745,7 +28745,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 42136
+.word 41778
 _p_225_plt_SQLite_net_SQLite_Orm_GetProperty_System_Reflection_TypeInfo_string_llvm:
 	.globl _p_225_plt_SQLite_net_SQLite_Orm_GetProperty_System_Reflection_TypeInfo_string_llvm
 .private_extern _p_225_plt_SQLite_net_SQLite_Orm_GetProperty_System_Reflection_TypeInfo_string_llvm
@@ -28756,7 +28756,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 42141
+.word 41783
 _p_226_plt_SQLite_net_System_Reflection_CustomAttributeData_get_AttributeType_llvm:
 	.globl _p_226_plt_SQLite_net_System_Reflection_CustomAttributeData_get_AttributeType_llvm
 .private_extern _p_226_plt_SQLite_net_System_Reflection_CustomAttributeData_get_AttributeType_llvm
@@ -28767,7 +28767,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 42144
+.word 41786
 _p_227_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeTypedArgument_object_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeTypedArgument_System_Func_2_System_Reflection_CustomAttributeTypedArgument_object_llvm:
 	.globl _p_227_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeTypedArgument_object_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeTypedArgument_System_Func_2_System_Reflection_CustomAttributeTypedArgument_object_llvm
 .private_extern _p_227_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeTypedArgument_object_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeTypedArgument_System_Func_2_System_Reflection_CustomAttributeTypedArgument_object_llvm
@@ -28778,7 +28778,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 42149
+.word 41791
 _p_228_plt_SQLite_net_System_Linq_Enumerable_ToArray_object_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_228_plt_SQLite_net_System_Linq_Enumerable_ToArray_object_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_228_plt_SQLite_net_System_Linq_Enumerable_ToArray_object_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -28789,7 +28789,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 42161
+.word 41803
 _p_229_plt_SQLite_net_System_Activator_CreateInstance_System_Type_object___llvm:
 	.globl _p_229_plt_SQLite_net_System_Activator_CreateInstance_System_Type_object___llvm
 .private_extern _p_229_plt_SQLite_net_System_Activator_CreateInstance_System_Type_object___llvm
@@ -28800,7 +28800,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 42173
+.word 41815
 _p_230_plt_SQLite_net_System_Reflection_CustomAttributeNamedArgument_get_MemberName_llvm:
 	.globl _p_230_plt_SQLite_net_System_Reflection_CustomAttributeNamedArgument_get_MemberName_llvm
 .private_extern _p_230_plt_SQLite_net_System_Reflection_CustomAttributeNamedArgument_get_MemberName_llvm
@@ -28811,7 +28811,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 42178
+.word 41820
 _p_231_plt_SQLite_net_System_Reflection_PropertyInfo_SetValue_object_object_llvm:
 	.globl _p_231_plt_SQLite_net_System_Reflection_PropertyInfo_SetValue_object_object_llvm
 .private_extern _p_231_plt_SQLite_net_System_Reflection_PropertyInfo_SetValue_object_object_llvm
@@ -28822,7 +28822,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 42183
+.word 41825
 _p_232_plt_SQLite_net_System_Reflection_FieldInfo_SetValue_object_object_llvm:
 	.globl _p_232_plt_SQLite_net_System_Reflection_FieldInfo_SetValue_object_object_llvm
 .private_extern _p_232_plt_SQLite_net_System_Reflection_FieldInfo_SetValue_object_object_llvm
@@ -28833,7 +28833,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 42188
+.word 41830
 _p_233_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_SQLite_IndexedAttribute_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_SQLite_IndexedAttribute_llvm:
 	.globl _p_233_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_SQLite_IndexedAttribute_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_SQLite_IndexedAttribute_llvm
 .private_extern _p_233_plt_SQLite_net_System_Linq_Enumerable_Select_System_Reflection_CustomAttributeData_SQLite_IndexedAttribute_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_SQLite_IndexedAttribute_llvm
@@ -28844,7 +28844,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 42193
+.word 41835
 _p_234_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm:
 	.globl _p_234_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
 .private_extern _p_234_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_System_Reflection_CustomAttributeData_System_Collections_Generic_IEnumerable_1_System_Reflection_CustomAttributeData_System_Func_2_System_Reflection_CustomAttributeData_bool_llvm
@@ -28855,7 +28855,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 42205
+.word 41847
 _p_235_plt_SQLite_net_SQLite_Orm_InflateAttribute_System_Reflection_CustomAttributeData_llvm:
 	.globl _p_235_plt_SQLite_net_SQLite_Orm_InflateAttribute_System_Reflection_CustomAttributeData_llvm
 .private_extern _p_235_plt_SQLite_net_SQLite_Orm_InflateAttribute_System_Reflection_CustomAttributeData_llvm
@@ -28866,7 +28866,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 42217
+.word 41859
 _p_236_plt_SQLite_net_SQLite_Orm_MaxStringLength_System_Reflection_MemberInfo_llvm:
 	.globl _p_236_plt_SQLite_net_SQLite_Orm_MaxStringLength_System_Reflection_MemberInfo_llvm
 .private_extern _p_236_plt_SQLite_net_SQLite_Orm_MaxStringLength_System_Reflection_MemberInfo_llvm
@@ -28877,7 +28877,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 42220
+.word 41862
 _p_237_plt_SQLite_net_SQLite_SQLiteConnection_get_Trace_llvm:
 	.globl _p_237_plt_SQLite_net_SQLite_SQLiteConnection_get_Trace_llvm
 .private_extern _p_237_plt_SQLite_net_SQLite_SQLiteConnection_get_Trace_llvm
@@ -28888,7 +28888,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 42223
+.word 41865
 _p_238_plt_SQLite_net_SQLite_SQLiteCommand_Prepare_llvm:
 	.globl _p_238_plt_SQLite_net_SQLite_SQLiteCommand_Prepare_llvm
 .private_extern _p_238_plt_SQLite_net_SQLite_SQLiteCommand_Prepare_llvm
@@ -28899,7 +28899,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 42225
+.word 41867
 _p_239_plt_SQLite_net_SQLite_SQLite3_Step_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_239_plt_SQLite_net_SQLite_SQLite3_Step_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_239_plt_SQLite_net_SQLite_SQLite3_Step_SQLitePCL_sqlite3_stmt_llvm
@@ -28910,7 +28910,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 42228
+.word 41870
 _p_240_plt_SQLite_net_SQLite_SQLiteCommand_Finalize_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_240_plt_SQLite_net_SQLite_SQLiteCommand_Finalize_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_240_plt_SQLite_net_SQLite_SQLiteCommand_Finalize_SQLitePCL_sqlite3_stmt_llvm
@@ -28921,7 +28921,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 42231
+.word 41873
 _p_241_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLite3_Result_string_llvm:
 	.globl _p_241_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLite3_Result_string_llvm
 .private_extern _p_241_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLite3_Result_string_llvm
@@ -28932,7 +28932,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 42234
+.word 41876
 _p_242_plt_SQLite_net_SQLite_SQLite3_Changes_SQLitePCL_sqlite3_llvm:
 	.globl _p_242_plt_SQLite_net_SQLite_SQLite3_Changes_SQLitePCL_sqlite3_llvm
 .private_extern _p_242_plt_SQLite_net_SQLite_SQLite3_Changes_SQLitePCL_sqlite3_llvm
@@ -28943,7 +28943,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 42236
+.word 41878
 _p_243_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_llvm:
 	.globl _p_243_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_llvm
 .private_extern _p_243_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_llvm
@@ -28954,7 +28954,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 42251
+.word 41893
 _p_244_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_0_llvm:
 	.globl _p_244_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_0_llvm
 .private_extern _p_244_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_0_llvm
@@ -28965,7 +28965,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 42279
+.word 41921
 _p_245_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm:
 	.globl _p_245_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm
 .private_extern _p_245_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm
@@ -28976,7 +28976,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 42295
+.word 41937
 _p_246_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_1_llvm:
 	.globl _p_246_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_1_llvm
 .private_extern _p_246_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_SQLite_TableMapping_1_llvm
@@ -28987,7 +28987,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 42323
+.word 41965
 _p_247_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_1_llvm:
 	.globl _p_247_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_1_llvm
 .private_extern _p_247_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_1_llvm
@@ -28998,7 +28998,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 42339
+.word 41981
 _p_248_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__ctor_int_llvm:
 	.globl _p_248_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__ctor_int_llvm
 .private_extern _p_248_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__ctor_int_llvm
@@ -29009,7 +29009,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 42374
+.word 42016
 _p_249_plt_SQLite_net_SQLite_SQLite3_ColumnType_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_249_plt_SQLite_net_SQLite_SQLite3_ColumnType_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_249_plt_SQLite_net_SQLite_SQLite3_ColumnType_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29020,7 +29020,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 42393
+.word 42035
 _p_250_plt_SQLite_net_SQLite_SQLiteCommand_ReadCol_SQLitePCL_sqlite3_stmt_int_SQLite_SQLite3_ColType_System_Type_llvm:
 	.globl _p_250_plt_SQLite_net_SQLite_SQLiteCommand_ReadCol_SQLitePCL_sqlite3_stmt_int_SQLite_SQLite3_ColType_System_Type_llvm
 .private_extern _p_250_plt_SQLite_net_SQLite_SQLiteCommand_ReadCol_SQLitePCL_sqlite3_stmt_int_SQLite_SQLite3_ColType_System_Type_llvm
@@ -29031,7 +29031,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 42396
+.word 42038
 _p_251_plt_SQLite_net_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
 	.globl _p_251_plt_SQLite_net_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
 .private_extern _p_251_plt_SQLite_net_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
@@ -29042,7 +29042,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 42399
+.word 42041
 _p_252_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__ctor_int_llvm:
 	.globl _p_252_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__ctor_int_llvm
 .private_extern _p_252_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__ctor_int_llvm
@@ -29053,7 +29053,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 42426
+.word 42068
 _p_253_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteCommand_Binding_AddWithResize_SQLite_SQLiteCommand_Binding_llvm:
 	.globl _p_253_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteCommand_Binding_AddWithResize_SQLite_SQLiteCommand_Binding_llvm
 .private_extern _p_253_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteCommand_Binding_AddWithResize_SQLite_SQLiteCommand_Binding_llvm
@@ -29064,7 +29064,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 42448
+.word 42090
 _p_254_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteCommand_Binding_GetEnumerator_llvm:
 	.globl _p_254_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteCommand_Binding_GetEnumerator_llvm
 .private_extern _p_254_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteCommand_Binding_GetEnumerator_llvm
@@ -29075,7 +29075,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 42467
+.word 42109
 _p_255_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteCommand_Binding_MoveNext_llvm:
 	.globl _p_255_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteCommand_Binding_MoveNext_llvm
 .private_extern _p_255_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteCommand_Binding_MoveNext_llvm
@@ -29086,7 +29086,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 42478
+.word 42120
 _p_256_plt_SQLite_net_SQLite_SQLite3_Prepare2_SQLitePCL_sqlite3_string_llvm:
 	.globl _p_256_plt_SQLite_net_SQLite_SQLite3_Prepare2_SQLitePCL_sqlite3_string_llvm
 .private_extern _p_256_plt_SQLite_net_SQLite_SQLite3_Prepare2_SQLitePCL_sqlite3_string_llvm
@@ -29097,7 +29097,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 42489
+.word 42131
 _p_257_plt_SQLite_net_SQLite_SQLiteCommand_BindAll_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_257_plt_SQLite_net_SQLite_SQLiteCommand_BindAll_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_257_plt_SQLite_net_SQLite_SQLiteCommand_BindAll_SQLitePCL_sqlite3_stmt_llvm
@@ -29108,7 +29108,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 42492
+.word 42134
 _p_258_plt_SQLite_net_SQLite_SQLite3_Finalize_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_258_plt_SQLite_net_SQLite_SQLite3_Finalize_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_258_plt_SQLite_net_SQLite_SQLite3_Finalize_SQLitePCL_sqlite3_stmt_llvm
@@ -29119,7 +29119,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 42495
+.word 42137
 _p_259_plt_SQLite_net_SQLite_SQLiteConnection_get_DateTimeStringFormat_llvm:
 	.globl _p_259_plt_SQLite_net_SQLite_SQLiteConnection_get_DateTimeStringFormat_llvm
 .private_extern _p_259_plt_SQLite_net_SQLite_SQLiteConnection_get_DateTimeStringFormat_llvm
@@ -29130,7 +29130,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 42498
+.word 42140
 _p_260_plt_SQLite_net_SQLite_SQLiteCommand_BindParameter_SQLitePCL_sqlite3_stmt_int_object_bool_string_bool_llvm:
 	.globl _p_260_plt_SQLite_net_SQLite_SQLiteCommand_BindParameter_SQLitePCL_sqlite3_stmt_int_object_bool_string_bool_llvm
 .private_extern _p_260_plt_SQLite_net_SQLite_SQLiteCommand_BindParameter_SQLitePCL_sqlite3_stmt_int_object_bool_string_bool_llvm
@@ -29141,7 +29141,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 42500
+.word 42142
 _p_261_plt_SQLite_net_SQLite_SQLite3_BindParameterIndex_SQLitePCL_sqlite3_stmt_string_llvm:
 	.globl _p_261_plt_SQLite_net_SQLite_SQLite3_BindParameterIndex_SQLitePCL_sqlite3_stmt_string_llvm
 .private_extern _p_261_plt_SQLite_net_SQLite_SQLite3_BindParameterIndex_SQLitePCL_sqlite3_stmt_string_llvm
@@ -29152,7 +29152,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 42503
+.word 42145
 _p_262_plt_SQLite_net_SQLite_SQLite3_BindInt_SQLitePCL_sqlite3_stmt_int_int_llvm:
 	.globl _p_262_plt_SQLite_net_SQLite_SQLite3_BindInt_SQLitePCL_sqlite3_stmt_int_int_llvm
 .private_extern _p_262_plt_SQLite_net_SQLite_SQLite3_BindInt_SQLitePCL_sqlite3_stmt_int_int_llvm
@@ -29163,7 +29163,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 42506
+.word 42148
 _p_263_plt_SQLite_net_System_Convert_ToInt64_object_llvm:
 	.globl _p_263_plt_SQLite_net_System_Convert_ToInt64_object_llvm
 .private_extern _p_263_plt_SQLite_net_System_Convert_ToInt64_object_llvm
@@ -29174,7 +29174,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 42509
+.word 42151
 _p_264_plt_SQLite_net_SQLite_SQLite3_BindInt64_SQLitePCL_sqlite3_stmt_int_long_llvm:
 	.globl _p_264_plt_SQLite_net_SQLite_SQLite3_BindInt64_SQLitePCL_sqlite3_stmt_int_long_llvm
 .private_extern _p_264_plt_SQLite_net_SQLite_SQLite3_BindInt64_SQLitePCL_sqlite3_stmt_int_long_llvm
@@ -29185,7 +29185,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 42514
+.word 42156
 _p_265_plt_SQLite_net_System_Convert_ToDouble_object_llvm:
 	.globl _p_265_plt_SQLite_net_System_Convert_ToDouble_object_llvm
 .private_extern _p_265_plt_SQLite_net_System_Convert_ToDouble_object_llvm
@@ -29196,7 +29196,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 42517
+.word 42159
 _p_266_plt_SQLite_net_SQLite_SQLite3_BindDouble_SQLitePCL_sqlite3_stmt_int_double_llvm:
 	.globl _p_266_plt_SQLite_net_SQLite_SQLite3_BindDouble_SQLitePCL_sqlite3_stmt_int_double_llvm
 .private_extern _p_266_plt_SQLite_net_SQLite_SQLite3_BindDouble_SQLitePCL_sqlite3_stmt_int_double_llvm
@@ -29207,7 +29207,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 42522
+.word 42164
 _p_267_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string_get_Item_int_llvm:
 	.globl _p_267_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string_get_Item_int_llvm
 .private_extern _p_267_plt_SQLite_net_System_Collections_Generic_Dictionary_2_int_string_get_Item_int_llvm
@@ -29218,7 +29218,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 42525
+.word 42167
 _p_268_plt_SQLite_net_SQLite_SQLite3_BindText_SQLitePCL_sqlite3_stmt_int_string_int_intptr_llvm:
 	.globl _p_268_plt_SQLite_net_SQLite_SQLite3_BindText_SQLitePCL_sqlite3_stmt_int_string_int_intptr_llvm
 .private_extern _p_268_plt_SQLite_net_SQLite_SQLite3_BindText_SQLitePCL_sqlite3_stmt_int_string_int_intptr_llvm
@@ -29229,7 +29229,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 42536
+.word 42178
 _p_269_plt_SQLite_net_System_Guid_ToString_llvm:
 	.globl _p_269_plt_SQLite_net_System_Guid_ToString_llvm
 .private_extern _p_269_plt_SQLite_net_System_Guid_ToString_llvm
@@ -29240,7 +29240,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 42539
+.word 42181
 _p_270_plt_SQLite_net_SQLite_SQLite3_BindBlob_SQLitePCL_sqlite3_stmt_int_byte___int_intptr_llvm:
 	.globl _p_270_plt_SQLite_net_SQLite_SQLite3_BindBlob_SQLitePCL_sqlite3_stmt_int_byte___int_intptr_llvm
 .private_extern _p_270_plt_SQLite_net_SQLite_SQLite3_BindBlob_SQLitePCL_sqlite3_stmt_int_byte___int_intptr_llvm
@@ -29251,7 +29251,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 42544
+.word 42186
 _p_271_plt_SQLite_net_System_DateTimeOffset_get_UtcTicks_llvm:
 	.globl _p_271_plt_SQLite_net_System_DateTimeOffset_get_UtcTicks_llvm
 .private_extern _p_271_plt_SQLite_net_System_DateTimeOffset_get_UtcTicks_llvm
@@ -29262,7 +29262,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 42547
+.word 42189
 _p_272_plt_SQLite_net_System_DateTime_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_272_plt_SQLite_net_System_DateTime_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_272_plt_SQLite_net_System_DateTime_ToString_string_System_IFormatProvider_llvm
@@ -29273,7 +29273,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 42552
+.word 42194
 _p_273_plt_SQLite_net_System_TimeSpan_ToString_llvm:
 	.globl _p_273_plt_SQLite_net_System_TimeSpan_ToString_llvm
 .private_extern _p_273_plt_SQLite_net_System_TimeSpan_ToString_llvm
@@ -29284,7 +29284,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 42557
+.word 42199
 _p_274_plt_SQLite_net_SQLite_SQLite3_BindNull_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_274_plt_SQLite_net_SQLite_SQLite3_BindNull_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_274_plt_SQLite_net_SQLite_SQLite3_BindNull_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29295,7 +29295,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 42562
+.word 42204
 _p_275_plt_SQLite_net_SQLite_SQLite3_ColumnString_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_275_plt_SQLite_net_SQLite_SQLite3_ColumnString_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_275_plt_SQLite_net_SQLite_SQLite3_ColumnString_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29306,7 +29306,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 42565
+.word 42207
 _p_276_plt_SQLite_net_System_UriBuilder__ctor_string_llvm:
 	.globl _p_276_plt_SQLite_net_System_UriBuilder__ctor_string_llvm
 .private_extern _p_276_plt_SQLite_net_System_UriBuilder__ctor_string_llvm
@@ -29317,7 +29317,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 42568
+.word 42210
 _p_277_plt_SQLite_net_System_Text_StringBuilder__ctor_string_llvm:
 	.globl _p_277_plt_SQLite_net_System_Text_StringBuilder__ctor_string_llvm
 .private_extern _p_277_plt_SQLite_net_System_Text_StringBuilder__ctor_string_llvm
@@ -29328,7 +29328,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 42573
+.word 42215
 _p_278_plt_SQLite_net_System_Uri__ctor_string_llvm:
 	.globl _p_278_plt_SQLite_net_System_Uri__ctor_string_llvm
 .private_extern _p_278_plt_SQLite_net_System_Uri__ctor_string_llvm
@@ -29339,7 +29339,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 42578
+.word 42220
 _p_279_plt_SQLite_net_System_Guid__ctor_string_llvm:
 	.globl _p_279_plt_SQLite_net_System_Guid__ctor_string_llvm
 .private_extern _p_279_plt_SQLite_net_System_Guid__ctor_string_llvm
@@ -29350,7 +29350,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 42583
+.word 42225
 _p_280_plt_SQLite_net_SQLite_SQLite3_ColumnByteArray_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_280_plt_SQLite_net_SQLite_SQLite3_ColumnByteArray_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_280_plt_SQLite_net_SQLite_SQLite3_ColumnByteArray_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29361,7 +29361,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 42588
+.word 42230
 _p_281_plt_SQLite_net_SQLite_SQLite3_ColumnInt_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_281_plt_SQLite_net_SQLite_SQLite3_ColumnInt_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_281_plt_SQLite_net_SQLite_SQLite3_ColumnInt_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29372,7 +29372,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 42591
+.word 42233
 _p_282_plt_SQLite_net_SQLite_SQLite3_ColumnDouble_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_282_plt_SQLite_net_SQLite_SQLite3_ColumnDouble_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_282_plt_SQLite_net_SQLite_SQLite3_ColumnDouble_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29383,7 +29383,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 42594
+.word 42236
 _p_283_plt_SQLite_net_System_Decimal_op_Explicit_double_llvm:
 	.globl _p_283_plt_SQLite_net_System_Decimal_op_Explicit_double_llvm
 .private_extern _p_283_plt_SQLite_net_System_Decimal_op_Explicit_double_llvm
@@ -29394,7 +29394,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 42597
+.word 42239
 _p_284_plt_SQLite_net_SQLite_SQLite3_ColumnInt64_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_284_plt_SQLite_net_SQLite_SQLite3_ColumnInt64_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_284_plt_SQLite_net_SQLite_SQLite3_ColumnInt64_SQLitePCL_sqlite3_stmt_int_llvm
@@ -29405,7 +29405,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 42602
+.word 42244
 _p_285_plt_SQLite_net_System_Enum_Parse_System_Type_string_bool_llvm:
 	.globl _p_285_plt_SQLite_net_System_Enum_Parse_System_Type_string_bool_llvm
 .private_extern _p_285_plt_SQLite_net_System_Enum_Parse_System_Type_string_bool_llvm
@@ -29416,7 +29416,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 42605
+.word 42247
 _p_286_plt_SQLite_net_System_DateTimeOffset__ctor_long_System_TimeSpan_llvm:
 	.globl _p_286_plt_SQLite_net_System_DateTimeOffset__ctor_long_System_TimeSpan_llvm
 .private_extern _p_286_plt_SQLite_net_System_DateTimeOffset__ctor_long_System_TimeSpan_llvm
@@ -29427,7 +29427,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 42610
+.word 42252
 _p_287_plt_SQLite_net_SQLite_SQLiteConnection_get_DateTimeStyle_llvm:
 	.globl _p_287_plt_SQLite_net_SQLite_SQLiteConnection_get_DateTimeStyle_llvm
 .private_extern _p_287_plt_SQLite_net_SQLite_SQLiteConnection_get_DateTimeStyle_llvm
@@ -29438,7 +29438,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 42615
+.word 42257
 _p_288_plt_SQLite_net_System_DateTime_TryParseExact_string_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm:
 	.globl _p_288_plt_SQLite_net_System_DateTime_TryParseExact_string_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm
 .private_extern _p_288_plt_SQLite_net_System_DateTime_TryParseExact_string_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm
@@ -29449,7 +29449,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 42617
+.word 42259
 _p_289_plt_SQLite_net_System_DateTime_Parse_string_llvm:
 	.globl _p_289_plt_SQLite_net_System_DateTime_Parse_string_llvm
 .private_extern _p_289_plt_SQLite_net_System_DateTime_Parse_string_llvm
@@ -29460,7 +29460,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 42622
+.word 42264
 _p_290_plt_SQLite_net_System_DateTime__ctor_long_llvm:
 	.globl _p_290_plt_SQLite_net_System_DateTime__ctor_long_llvm
 .private_extern _p_290_plt_SQLite_net_System_DateTime__ctor_long_llvm
@@ -29471,7 +29471,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 42627
+.word 42269
 _p_291_plt_SQLite_net_System_TimeSpan_TryParseExact_string_string_System_IFormatProvider_System_Globalization_TimeSpanStyles_System_TimeSpan__llvm:
 	.globl _p_291_plt_SQLite_net_System_TimeSpan_TryParseExact_string_string_System_IFormatProvider_System_Globalization_TimeSpanStyles_System_TimeSpan__llvm
 .private_extern _p_291_plt_SQLite_net_System_TimeSpan_TryParseExact_string_string_System_IFormatProvider_System_Globalization_TimeSpanStyles_System_TimeSpan__llvm
@@ -29482,7 +29482,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 42632
+.word 42274
 _p_292_plt_SQLite_net_System_TimeSpan_Parse_string_llvm:
 	.globl _p_292_plt_SQLite_net_System_TimeSpan_Parse_string_llvm
 .private_extern _p_292_plt_SQLite_net_System_TimeSpan_Parse_string_llvm
@@ -29493,7 +29493,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 42637
+.word 42279
 _p_293_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_UriBuilder_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_UriBuilder_llvm:
 	.globl _p_293_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_UriBuilder_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_UriBuilder_llvm
 .private_extern _p_293_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_UriBuilder_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_UriBuilder_llvm
@@ -29504,7 +29504,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 42657
+.word 42299
 _p_294_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_Text_StringBuilder_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_Text_StringBuilder_llvm:
 	.globl _p_294_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_Text_StringBuilder_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_Text_StringBuilder_llvm
 .private_extern _p_294_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_Text_StringBuilder_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_Text_StringBuilder_llvm
@@ -29515,7 +29515,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 42683
+.word 42325
 _p_295_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_Uri_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_Uri_llvm:
 	.globl _p_295_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_Uri_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_Uri_llvm
 .private_extern _p_295_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_System_Uri_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_System_Uri_llvm
@@ -29526,7 +29526,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 42708
+.word 42350
 _p_296_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_byte___SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_byte___llvm:
 	.globl _p_296_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_byte___SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_byte___llvm
 .private_extern _p_296_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_byte___SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_byte___llvm
@@ -29537,7 +29537,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 42735
+.word 42377
 _p_297_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_string_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_string_llvm:
 	.globl _p_297_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_string_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_string_llvm
 .private_extern _p_297_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_T_REF_string_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_string_llvm
@@ -29548,7 +29548,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 42760
+.word 42402
 _p_298_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_ObjectType_REF_ColumnMemberType_REF_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_ColumnMemberType_REF_llvm:
 	.globl _p_298_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_ObjectType_REF_ColumnMemberType_REF_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_ColumnMemberType_REF_llvm
 .private_extern _p_298_plt_SQLite_net_SQLite_FastColumnSetter_CreateTypedSetterDelegate_ObjectType_REF_ColumnMemberType_REF_SQLite_TableMapping_Column_System_Func_3_SQLitePCL_sqlite3_stmt_int_ColumnMemberType_REF_llvm
@@ -29559,7 +29559,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 42799
+.word 42441
 _p_299_plt_SQLite_net_System_Reflection_PropertyInfo_GetSetMethod_llvm:
 	.globl _p_299_plt_SQLite_net_System_Reflection_PropertyInfo_GetSetMethod_llvm
 .private_extern _p_299_plt_SQLite_net_System_Reflection_PropertyInfo_GetSetMethod_llvm
@@ -29570,7 +29570,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 42815
+.word 42457
 _p_300_plt_SQLite_net_System_Delegate_CreateDelegate_System_Type_object_System_Reflection_MethodInfo_llvm:
 	.globl _p_300_plt_SQLite_net_System_Delegate_CreateDelegate_System_Type_object_System_Reflection_MethodInfo_llvm
 .private_extern _p_300_plt_SQLite_net_System_Delegate_CreateDelegate_System_Type_object_System_Reflection_MethodInfo_llvm
@@ -29581,7 +29581,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 42820
+.word 42462
 _p_301_plt_SQLite_net_SQLite_SQLite3_Reset_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_301_plt_SQLite_net_SQLite_SQLite3_Reset_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_301_plt_SQLite_net_SQLite_SQLite3_Reset_SQLitePCL_sqlite3_stmt_llvm
@@ -29592,7 +29592,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 42825
+.word 42467
 _p_302_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_Dispose_bool_llvm:
 	.globl _p_302_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_Dispose_bool_llvm
 .private_extern _p_302_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_Dispose_bool_llvm
@@ -29603,7 +29603,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 42828
+.word 42470
 _p_303_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_CreateTableResult__ctor_llvm:
 	.globl _p_303_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_CreateTableResult__ctor_llvm
 .private_extern _p_303_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Type_SQLite_CreateTableResult__ctor_llvm
@@ -29614,7 +29614,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 42831
+.word 42473
 _p_304_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering__ctor_System_Collections_Generic_IEnumerable_1_SQLite_BaseTableQuery_Ordering_llvm:
 	.globl _p_304_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering__ctor_System_Collections_Generic_IEnumerable_1_SQLite_BaseTableQuery_Ordering_llvm
 .private_extern _p_304_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering__ctor_System_Collections_Generic_IEnumerable_1_SQLite_BaseTableQuery_Ordering_llvm
@@ -29625,7 +29625,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 42842
+.word 42484
 _p_305_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Clone_T_REF_llvm:
 	.globl _p_305_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Clone_T_REF_llvm
 .private_extern _p_305_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Clone_T_REF_llvm
@@ -29636,7 +29636,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 42880
+.word 42522
 _p_306_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddWhere_System_Linq_Expressions_Expression_llvm:
 	.globl _p_306_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddWhere_System_Linq_Expressions_Expression_llvm
 .private_extern _p_306_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddWhere_System_Linq_Expressions_Expression_llvm
@@ -29647,7 +29647,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 42903
+.word 42545
 _p_307_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_307_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_307_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -29658,7 +29658,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 42922
+.word 42564
 _p_308_plt_SQLite_net_SQLite_TableQuery_1_T_REF_CompileExpr_System_Linq_Expressions_Expression_System_Collections_Generic_List_1_object_llvm:
 	.globl _p_308_plt_SQLite_net_SQLite_TableQuery_1_T_REF_CompileExpr_System_Linq_Expressions_Expression_System_Collections_Generic_List_1_object_llvm
 .private_extern _p_308_plt_SQLite_net_SQLite_TableQuery_1_T_REF_CompileExpr_System_Linq_Expressions_Expression_System_Collections_Generic_List_1_object_llvm
@@ -29669,7 +29669,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 42941
+.word 42583
 _p_309_plt_SQLite_net_System_Linq_Expressions_Expression_AndAlso_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_llvm:
 	.globl _p_309_plt_SQLite_net_System_Linq_Expressions_Expression_AndAlso_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_llvm
 .private_extern _p_309_plt_SQLite_net_System_Linq_Expressions_Expression_AndAlso_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_llvm
@@ -29680,7 +29680,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 42960
+.word 42602
 _p_310_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Skip_int_llvm:
 	.globl _p_310_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Skip_int_llvm
 .private_extern _p_310_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Skip_int_llvm
@@ -29691,7 +29691,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 42965
+.word 42607
 _p_311_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Take_int_llvm:
 	.globl _p_311_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Take_int_llvm
 .private_extern _p_311_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Take_int_llvm
@@ -29702,7 +29702,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 42984
+.word 42626
 _p_312_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_0_llvm:
 	.globl _p_312_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_0_llvm
 .private_extern _p_312_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_0_llvm
@@ -29713,7 +29713,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 43003
+.word 42645
 _p_313_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_llvm:
 	.globl _p_313_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_llvm
 .private_extern _p_313_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_llvm
@@ -29724,7 +29724,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 43034
+.word 42676
 _p_314_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_0_llvm:
 	.globl _p_314_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_0_llvm
 .private_extern _p_314_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_0_llvm
@@ -29735,7 +29735,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 43069
+.word 42711
 _p_315_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_1_llvm:
 	.globl _p_315_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_1_llvm
 .private_extern _p_315_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_1_llvm
@@ -29746,7 +29746,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 43104
+.word 42746
 _p_316_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_2_llvm:
 	.globl _p_316_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_2_llvm
 .private_extern _p_316_plt_SQLite_net_SQLite_TableQuery_1_T_REF_AddOrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_bool_2_llvm
@@ -29757,7 +29757,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 43139
+.word 42781
 _p_317_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering_AddWithResize_SQLite_BaseTableQuery_Ordering_llvm:
 	.globl _p_317_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering_AddWithResize_SQLite_BaseTableQuery_Ordering_llvm
 .private_extern _p_317_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering_AddWithResize_SQLite_BaseTableQuery_Ordering_llvm
@@ -29768,7 +29768,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 43162
+.word 42804
 _p_318_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_BaseTableQuery_Ordering_string_System_Collections_Generic_IEnumerable_1_SQLite_BaseTableQuery_Ordering_System_Func_2_SQLite_BaseTableQuery_Ordering_string_llvm:
 	.globl _p_318_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_BaseTableQuery_Ordering_string_System_Collections_Generic_IEnumerable_1_SQLite_BaseTableQuery_Ordering_System_Func_2_SQLite_BaseTableQuery_Ordering_string_llvm
 .private_extern _p_318_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_BaseTableQuery_Ordering_string_System_Collections_Generic_IEnumerable_1_SQLite_BaseTableQuery_Ordering_System_Func_2_SQLite_BaseTableQuery_Ordering_string_llvm
@@ -29779,7 +29779,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 43181
+.word 42823
 _p_319_plt_SQLite_net_System_Enum_ToString_llvm:
 	.globl _p_319_plt_SQLite_net_System_Enum_ToString_llvm
 .private_extern _p_319_plt_SQLite_net_System_Enum_ToString_llvm
@@ -29790,7 +29790,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 43197
+.word 42839
 _p_320_plt_SQLite_net_System_Text_StringBuilder__ctor_llvm:
 	.globl _p_320_plt_SQLite_net_System_Text_StringBuilder__ctor_llvm
 .private_extern _p_320_plt_SQLite_net_System_Text_StringBuilder__ctor_llvm
@@ -29801,7 +29801,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 43202
+.word 42844
 _p_321_plt_SQLite_net_System_Text_StringBuilder_Append_string_llvm:
 	.globl _p_321_plt_SQLite_net_System_Text_StringBuilder_Append_string_llvm
 .private_extern _p_321_plt_SQLite_net_System_Text_StringBuilder_Append_string_llvm
@@ -29812,7 +29812,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 43207
+.word 42849
 _p_322_plt_SQLite_net_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
 	.globl _p_322_plt_SQLite_net_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
 .private_extern _p_322_plt_SQLite_net_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
@@ -29823,7 +29823,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 43212
+.word 42854
 _p_323_plt_SQLite_net_string_op_Equality_string_string_llvm:
 	.globl _p_323_plt_SQLite_net_string_op_Equality_string_string_llvm
 .private_extern _p_323_plt_SQLite_net_string_op_Equality_string_string_llvm
@@ -29834,7 +29834,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 43220
+.word 42862
 _p_324_plt_SQLite_net_System_Collections_Generic_List_1_object_RemoveAt_int_llvm:
 	.globl _p_324_plt_SQLite_net_System_Collections_Generic_List_1_object_RemoveAt_int_llvm
 .private_extern _p_324_plt_SQLite_net_System_Collections_Generic_List_1_object_RemoveAt_int_llvm
@@ -29845,7 +29845,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 43225
+.word 42867
 _p_325_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ConvertTo_object_System_Type_llvm:
 	.globl _p_325_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ConvertTo_object_System_Type_llvm
 .private_extern _p_325_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ConvertTo_object_System_Type_llvm
@@ -29856,7 +29856,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 43244
+.word 42886
 _p_326_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Arguments_llvm:
 	.globl _p_326_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Arguments_llvm
 .private_extern _p_326_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Arguments_llvm
@@ -29867,7 +29867,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 43263
+.word 42905
 _p_327_plt_SQLite_net_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Linq_Expressions_Expression_get_Count_llvm:
 	.globl _p_327_plt_SQLite_net_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Linq_Expressions_Expression_get_Count_llvm
 .private_extern _p_327_plt_SQLite_net_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Linq_Expressions_Expression_get_Count_llvm
@@ -29878,7 +29878,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 43268
+.word 42910
 _p_328_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Object_llvm:
 	.globl _p_328_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Object_llvm
 .private_extern _p_328_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Object_llvm
@@ -29889,7 +29889,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 43287
+.word 42929
 _p_329_plt_SQLite_net_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Linq_Expressions_Expression_get_Item_int_llvm:
 	.globl _p_329_plt_SQLite_net_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Linq_Expressions_Expression_get_Item_int_llvm
 .private_extern _p_329_plt_SQLite_net_System_Collections_ObjectModel_ReadOnlyCollection_1_System_Linq_Expressions_Expression_get_Item_int_llvm
@@ -29900,7 +29900,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 43292
+.word 42934
 _p_330_plt_SQLite_net_string_ToLower_llvm:
 	.globl _p_330_plt_SQLite_net_string_ToLower_llvm
 .private_extern _p_330_plt_SQLite_net_string_ToLower_llvm
@@ -29911,7 +29911,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 43311
+.word 42953
 _p_331_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableQuery_1_CompileResult_T_REF_string_System_Collections_Generic_IEnumerable_1_SQLite_TableQuery_1_CompileResult_T_REF_System_Func_2_SQLite_TableQuery_1_CompileResult_T_REF_string_llvm:
 	.globl _p_331_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableQuery_1_CompileResult_T_REF_string_System_Collections_Generic_IEnumerable_1_SQLite_TableQuery_1_CompileResult_T_REF_System_Func_2_SQLite_TableQuery_1_CompileResult_T_REF_string_llvm
 .private_extern _p_331_plt_SQLite_net_System_Linq_Enumerable_Select_SQLite_TableQuery_1_CompileResult_T_REF_string_System_Collections_Generic_IEnumerable_1_SQLite_TableQuery_1_CompileResult_T_REF_System_Func_2_SQLite_TableQuery_1_CompileResult_T_REF_string_llvm
@@ -29922,7 +29922,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 43332
+.word 42974
 _p_332_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GetSqlName_System_Linq_Expressions_Expression_llvm:
 	.globl _p_332_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GetSqlName_System_Linq_Expressions_Expression_llvm
 .private_extern _p_332_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GetSqlName_System_Linq_Expressions_Expression_llvm
@@ -29933,7 +29933,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 43348
+.word 42990
 _p_333_plt_SQLite_net_SQLite_TableQuery_1_T_REF_CompileNullBinaryExpression_System_Linq_Expressions_BinaryExpression_SQLite_TableQuery_1_CompileResult_T_REF_llvm:
 	.globl _p_333_plt_SQLite_net_SQLite_TableQuery_1_T_REF_CompileNullBinaryExpression_System_Linq_Expressions_BinaryExpression_SQLite_TableQuery_1_CompileResult_T_REF_llvm
 .private_extern _p_333_plt_SQLite_net_SQLite_TableQuery_1_T_REF_CompileNullBinaryExpression_System_Linq_Expressions_BinaryExpression_SQLite_TableQuery_1_CompileResult_T_REF_llvm
@@ -29944,7 +29944,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 43367
+.word 43009
 _p_334_plt_SQLite_net_System_Linq_Expressions_Expression_MakeBinary_System_Linq_Expressions_ExpressionType_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_llvm:
 	.globl _p_334_plt_SQLite_net_System_Linq_Expressions_Expression_MakeBinary_System_Linq_Expressions_ExpressionType_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_llvm
 .private_extern _p_334_plt_SQLite_net_System_Linq_Expressions_Expression_MakeBinary_System_Linq_Expressions_ExpressionType_System_Linq_Expressions_Expression_System_Linq_Expressions_Expression_llvm
@@ -29955,7 +29955,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 43386
+.word 43028
 _p_335_plt_SQLite_net_System_Nullable_GetUnderlyingType_System_Type_llvm:
 	.globl _p_335_plt_SQLite_net_System_Nullable_GetUnderlyingType_System_Type_llvm
 .private_extern _p_335_plt_SQLite_net_System_Nullable_GetUnderlyingType_System_Type_llvm
@@ -29966,7 +29966,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 43391
+.word 43033
 _p_336_plt_SQLite_net_System_Convert_ChangeType_object_System_Type_llvm:
 	.globl _p_336_plt_SQLite_net_System_Convert_ChangeType_object_System_Type_llvm
 .private_extern _p_336_plt_SQLite_net_System_Convert_ChangeType_object_System_Type_llvm
@@ -29977,7 +29977,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 43396
+.word 43038
 _p_337_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GenerateCommand_string_llvm:
 	.globl _p_337_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GenerateCommand_string_llvm
 .private_extern _p_337_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GenerateCommand_string_llvm
@@ -29988,7 +29988,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 43401
+.word 43043
 _p_338_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_int_llvm:
 	.globl _p_338_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_int_llvm
 .private_extern _p_338_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_int_llvm
@@ -29999,7 +29999,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 43420
+.word 43062
 _p_339_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_1_llvm:
 	.globl _p_339_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_1_llvm
 .private_extern _p_339_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_1_llvm
@@ -30010,7 +30010,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 43436
+.word 43078
 _p_340_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_llvm:
 	.globl _p_340_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_llvm
 .private_extern _p_340_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_llvm
@@ -30021,7 +30021,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 43455
+.word 43097
 _p_341_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_0_llvm:
 	.globl _p_341_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_0_llvm
 .private_extern _p_341_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteDeferredQuery_T_REF_0_llvm
@@ -30032,7 +30032,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 43474
+.word 43116
 _p_342_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_T_REF_0_llvm:
 	.globl _p_342_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_T_REF_0_llvm
 .private_extern _p_342_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteQuery_T_REF_0_llvm
@@ -30043,7 +30043,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 43490
+.word 43132
 _p_343_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_GetEnumerator_llvm:
 	.globl _p_343_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_GetEnumerator_llvm
 .private_extern _p_343_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_GetEnumerator_llvm
@@ -30054,7 +30054,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 43515
+.word 43157
 _p_344_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GetEnumerator_llvm:
 	.globl _p_344_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GetEnumerator_llvm
 .private_extern _p_344_plt_SQLite_net_SQLite_TableQuery_1_T_REF_GetEnumerator_llvm
@@ -30065,7 +30065,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 43534
+.word 43176
 _p_345_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_ToArray_llvm:
 	.globl _p_345_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_ToArray_llvm
 .private_extern _p_345_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_ToArray_llvm
@@ -30076,7 +30076,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 43553
+.word 43195
 _p_346_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToList_llvm:
 	.globl _p_346_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToList_llvm
 .private_extern _p_346_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToList_llvm
@@ -30087,7 +30087,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 43572
+.word 43214
 _p_347_plt_SQLite_net_System_Linq_Enumerable_First_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm:
 	.globl _p_347_plt_SQLite_net_System_Linq_Enumerable_First_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm
 .private_extern _p_347_plt_SQLite_net_System_Linq_Enumerable_First_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_0_llvm
@@ -30098,7 +30098,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 43591
+.word 43233
 _p_348_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_1_llvm:
 	.globl _p_348_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_1_llvm
 .private_extern _p_348_plt_SQLite_net_System_Linq_Enumerable_FirstOrDefault_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_1_llvm
@@ -30109,7 +30109,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 43607
+.word 43249
 _p_349_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_0_llvm:
 	.globl _p_349_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_0_llvm
 .private_extern _p_349_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_0_llvm
@@ -30120,7 +30120,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 43623
+.word 43265
 _p_350_plt_SQLite_net_SQLitePCL_raw_sqlite3_open_string_SQLitePCL_sqlite3__llvm:
 	.globl _p_350_plt_SQLite_net_SQLitePCL_raw_sqlite3_open_string_SQLitePCL_sqlite3__llvm
 .private_extern _p_350_plt_SQLite_net_SQLitePCL_raw_sqlite3_open_string_SQLitePCL_sqlite3__llvm
@@ -30131,7 +30131,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 43642
+.word 43284
 _p_351_plt_SQLite_net_SQLitePCL_raw_sqlite3_open_v2_string_SQLitePCL_sqlite3__int_string_llvm:
 	.globl _p_351_plt_SQLite_net_SQLitePCL_raw_sqlite3_open_v2_string_SQLitePCL_sqlite3__int_string_llvm
 .private_extern _p_351_plt_SQLite_net_SQLitePCL_raw_sqlite3_open_v2_string_SQLitePCL_sqlite3__int_string_llvm
@@ -30142,7 +30142,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 43647
+.word 43289
 _p_352_plt_SQLite_net_SQLitePCL_raw_sqlite3_close_SQLitePCL_sqlite3_llvm:
 	.globl _p_352_plt_SQLite_net_SQLitePCL_raw_sqlite3_close_SQLitePCL_sqlite3_llvm
 .private_extern _p_352_plt_SQLite_net_SQLitePCL_raw_sqlite3_close_SQLitePCL_sqlite3_llvm
@@ -30153,7 +30153,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 43652
+.word 43294
 _p_353_plt_SQLite_net_SQLitePCL_raw_sqlite3_close_v2_SQLitePCL_sqlite3_llvm:
 	.globl _p_353_plt_SQLite_net_SQLitePCL_raw_sqlite3_close_v2_SQLitePCL_sqlite3_llvm
 .private_extern _p_353_plt_SQLite_net_SQLitePCL_raw_sqlite3_close_v2_SQLitePCL_sqlite3_llvm
@@ -30164,7 +30164,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 43657
+.word 43299
 _p_354_plt_SQLite_net_SQLitePCL_raw_sqlite3_busy_timeout_SQLitePCL_sqlite3_int_llvm:
 	.globl _p_354_plt_SQLite_net_SQLitePCL_raw_sqlite3_busy_timeout_SQLitePCL_sqlite3_int_llvm
 .private_extern _p_354_plt_SQLite_net_SQLitePCL_raw_sqlite3_busy_timeout_SQLitePCL_sqlite3_int_llvm
@@ -30175,7 +30175,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 43662
+.word 43304
 _p_355_plt_SQLite_net_SQLitePCL_raw_sqlite3_changes_SQLitePCL_sqlite3_llvm:
 	.globl _p_355_plt_SQLite_net_SQLitePCL_raw_sqlite3_changes_SQLitePCL_sqlite3_llvm
 .private_extern _p_355_plt_SQLite_net_SQLitePCL_raw_sqlite3_changes_SQLitePCL_sqlite3_llvm
@@ -30186,7 +30186,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 43667
+.word 43309
 _p_356_plt_SQLite_net_SQLitePCL_raw_sqlite3_prepare_v2_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_stmt__llvm:
 	.globl _p_356_plt_SQLite_net_SQLitePCL_raw_sqlite3_prepare_v2_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_stmt__llvm
 .private_extern _p_356_plt_SQLite_net_SQLitePCL_raw_sqlite3_prepare_v2_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_stmt__llvm
@@ -30197,7 +30197,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 43672
+.word 43314
 _p_357_plt_SQLite_net_SQLitePCL_raw_sqlite3_step_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_357_plt_SQLite_net_SQLitePCL_raw_sqlite3_step_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_357_plt_SQLite_net_SQLitePCL_raw_sqlite3_step_SQLitePCL_sqlite3_stmt_llvm
@@ -30208,7 +30208,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 43677
+.word 43319
 _p_358_plt_SQLite_net_SQLitePCL_raw_sqlite3_reset_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_358_plt_SQLite_net_SQLitePCL_raw_sqlite3_reset_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_358_plt_SQLite_net_SQLitePCL_raw_sqlite3_reset_SQLitePCL_sqlite3_stmt_llvm
@@ -30219,7 +30219,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 43682
+.word 43324
 _p_359_plt_SQLite_net_SQLitePCL_raw_sqlite3_finalize_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_359_plt_SQLite_net_SQLitePCL_raw_sqlite3_finalize_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_359_plt_SQLite_net_SQLitePCL_raw_sqlite3_finalize_SQLitePCL_sqlite3_stmt_llvm
@@ -30230,7 +30230,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 43687
+.word 43329
 _p_360_plt_SQLite_net_SQLitePCL_raw_sqlite3_last_insert_rowid_SQLitePCL_sqlite3_llvm:
 	.globl _p_360_plt_SQLite_net_SQLitePCL_raw_sqlite3_last_insert_rowid_SQLitePCL_sqlite3_llvm
 .private_extern _p_360_plt_SQLite_net_SQLitePCL_raw_sqlite3_last_insert_rowid_SQLitePCL_sqlite3_llvm
@@ -30241,7 +30241,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 43692
+.word 43334
 _p_361_plt_SQLite_net_SQLitePCL_raw_sqlite3_errmsg_SQLitePCL_sqlite3_llvm:
 	.globl _p_361_plt_SQLite_net_SQLitePCL_raw_sqlite3_errmsg_SQLitePCL_sqlite3_llvm
 .private_extern _p_361_plt_SQLite_net_SQLitePCL_raw_sqlite3_errmsg_SQLitePCL_sqlite3_llvm
@@ -30252,7 +30252,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 43697
+.word 43339
 _p_362_plt_SQLite_net_SQLitePCL_utf8z_utf8_to_string_llvm:
 	.globl _p_362_plt_SQLite_net_SQLitePCL_utf8z_utf8_to_string_llvm
 .private_extern _p_362_plt_SQLite_net_SQLitePCL_utf8z_utf8_to_string_llvm
@@ -30263,7 +30263,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 43702
+.word 43344
 _p_363_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_parameter_index_SQLitePCL_sqlite3_stmt_string_llvm:
 	.globl _p_363_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_parameter_index_SQLitePCL_sqlite3_stmt_string_llvm
 .private_extern _p_363_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_parameter_index_SQLitePCL_sqlite3_stmt_string_llvm
@@ -30274,7 +30274,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 43707
+.word 43349
 _p_364_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_null_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_364_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_null_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_364_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_null_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30285,7 +30285,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 43712
+.word 43354
 _p_365_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_int_SQLitePCL_sqlite3_stmt_int_int_llvm:
 	.globl _p_365_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_int_SQLitePCL_sqlite3_stmt_int_int_llvm
 .private_extern _p_365_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_int_SQLitePCL_sqlite3_stmt_int_int_llvm
@@ -30296,7 +30296,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 43717
+.word 43359
 _p_366_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_int64_SQLitePCL_sqlite3_stmt_int_long_llvm:
 	.globl _p_366_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_int64_SQLitePCL_sqlite3_stmt_int_long_llvm
 .private_extern _p_366_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_int64_SQLitePCL_sqlite3_stmt_int_long_llvm
@@ -30307,7 +30307,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 43722
+.word 43364
 _p_367_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_double_SQLitePCL_sqlite3_stmt_int_double_llvm:
 	.globl _p_367_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_double_SQLitePCL_sqlite3_stmt_int_double_llvm
 .private_extern _p_367_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_double_SQLitePCL_sqlite3_stmt_int_double_llvm
@@ -30318,7 +30318,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 43727
+.word 43369
 _p_368_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_text_SQLitePCL_sqlite3_stmt_int_string_llvm:
 	.globl _p_368_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_text_SQLitePCL_sqlite3_stmt_int_string_llvm
 .private_extern _p_368_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_text_SQLitePCL_sqlite3_stmt_int_string_llvm
@@ -30329,7 +30329,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 43732
+.word 43374
 _p_369_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_blob_SQLitePCL_sqlite3_stmt_int_System_ReadOnlySpan_1_byte_llvm:
 	.globl _p_369_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_blob_SQLitePCL_sqlite3_stmt_int_System_ReadOnlySpan_1_byte_llvm
 .private_extern _p_369_plt_SQLite_net_SQLitePCL_raw_sqlite3_bind_blob_SQLitePCL_sqlite3_stmt_int_System_ReadOnlySpan_1_byte_llvm
@@ -30340,7 +30340,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 43737
+.word 43379
 _p_370_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_count_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_370_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_count_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_370_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_count_SQLitePCL_sqlite3_stmt_llvm
@@ -30351,7 +30351,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 43742
+.word 43384
 _p_371_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_name_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_371_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_name_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_371_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_name_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30362,7 +30362,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 43747
+.word 43389
 _p_372_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_type_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_372_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_type_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_372_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_type_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30373,7 +30373,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 43752
+.word 43394
 _p_373_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_int_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_373_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_int_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_373_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_int_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30384,7 +30384,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 43757
+.word 43399
 _p_374_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_int64_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_374_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_int64_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_374_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_int64_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30395,7 +30395,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 43762
+.word 43404
 _p_375_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_double_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_375_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_double_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_375_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_double_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30406,7 +30406,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 43767
+.word 43409
 _p_376_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_text_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_376_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_text_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_376_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_text_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30417,7 +30417,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 43772
+.word 43414
 _p_377_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_blob_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_377_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_blob_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_377_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_blob_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30428,7 +30428,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 43777
+.word 43419
 _p_378_plt_SQLite_net_System_ReadOnlySpan_1_byte_ToArray_llvm:
 	.globl _p_378_plt_SQLite_net_System_ReadOnlySpan_1_byte_ToArray_llvm
 .private_extern _p_378_plt_SQLite_net_System_ReadOnlySpan_1_byte_ToArray_llvm
@@ -30439,7 +30439,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 43782
+.word 43424
 _p_379_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_bytes_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_379_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_bytes_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_379_plt_SQLite_net_SQLitePCL_raw_sqlite3_column_bytes_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30450,7 +30450,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 43793
+.word 43435
 _p_380_plt_SQLite_net_SQLite_SQLite3_ColumnBytes_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_380_plt_SQLite_net_SQLite_SQLite3_ColumnBytes_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_380_plt_SQLite_net_SQLite_SQLite3_ColumnBytes_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30461,7 +30461,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 43798
+.word 43440
 _p_381_plt_SQLite_net_SQLite_SQLite3_ColumnBlob_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_381_plt_SQLite_net_SQLite_SQLite3_ColumnBlob_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_381_plt_SQLite_net_SQLite_SQLite3_ColumnBlob_SQLitePCL_sqlite3_stmt_int_llvm
@@ -30472,7 +30472,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 43801
+.word 43443
 _p_382_plt_SQLite_net_SQLitePCL_raw_sqlite3_enable_load_extension_SQLitePCL_sqlite3_int_llvm:
 	.globl _p_382_plt_SQLite_net_SQLitePCL_raw_sqlite3_enable_load_extension_SQLitePCL_sqlite3_int_llvm
 .private_extern _p_382_plt_SQLite_net_SQLitePCL_raw_sqlite3_enable_load_extension_SQLitePCL_sqlite3_int_llvm
@@ -30483,7 +30483,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 43804
+.word 43446
 _p_383_plt_SQLite_net_SQLitePCL_raw_sqlite3_libversion_number_llvm:
 	.globl _p_383_plt_SQLite_net_SQLitePCL_raw_sqlite3_libversion_number_llvm
 .private_extern _p_383_plt_SQLite_net_SQLitePCL_raw_sqlite3_libversion_number_llvm
@@ -30494,7 +30494,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 43809
+.word 43451
 _p_384_plt_SQLite_net_SQLitePCL_raw_sqlite3_errcode_SQLitePCL_sqlite3_llvm:
 	.globl _p_384_plt_SQLite_net_SQLitePCL_raw_sqlite3_errcode_SQLitePCL_sqlite3_llvm
 .private_extern _p_384_plt_SQLite_net_SQLitePCL_raw_sqlite3_errcode_SQLitePCL_sqlite3_llvm
@@ -30505,7 +30505,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 43814
+.word 43456
 _p_385_plt_SQLite_net_SQLitePCL_raw_sqlite3_extended_errcode_SQLitePCL_sqlite3_llvm:
 	.globl _p_385_plt_SQLite_net_SQLitePCL_raw_sqlite3_extended_errcode_SQLitePCL_sqlite3_llvm
 .private_extern _p_385_plt_SQLite_net_SQLitePCL_raw_sqlite3_extended_errcode_SQLitePCL_sqlite3_llvm
@@ -30516,7 +30516,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 43819
+.word 43461
 _p_386_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_init_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_string_llvm:
 	.globl _p_386_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_init_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_string_llvm
 .private_extern _p_386_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_init_SQLitePCL_sqlite3_string_SQLitePCL_sqlite3_string_llvm
@@ -30527,7 +30527,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 43824
+.word 43466
 _p_387_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_step_SQLitePCL_sqlite3_backup_int_llvm:
 	.globl _p_387_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_step_SQLitePCL_sqlite3_backup_int_llvm
 .private_extern _p_387_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_step_SQLitePCL_sqlite3_backup_int_llvm
@@ -30538,7 +30538,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 43829
+.word 43471
 _p_388_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_finish_SQLitePCL_sqlite3_backup_llvm:
 	.globl _p_388_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_finish_SQLitePCL_sqlite3_backup_llvm
 .private_extern _p_388_plt_SQLite_net_SQLitePCL_raw_sqlite3_backup_finish_SQLitePCL_sqlite3_backup_llvm
@@ -30549,7 +30549,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 43834
+.word 43476
 _p_389_plt_SQLite_net_SQLite_SQLiteAsyncConnection_GetConnection_llvm:
 	.globl _p_389_plt_SQLite_net_SQLite_SQLiteAsyncConnection_GetConnection_llvm
 .private_extern _p_389_plt_SQLite_net_SQLite_SQLiteAsyncConnection_GetConnection_llvm
@@ -30560,7 +30560,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 43839
+.word 43481
 _p_390_plt_SQLite_net_SQLite_SQLiteConnection_get_LibVersionNumber_llvm:
 	.globl _p_390_plt_SQLite_net_SQLite_SQLiteConnection_get_LibVersionNumber_llvm
 .private_extern _p_390_plt_SQLite_net_SQLite_SQLiteConnection_get_LibVersionNumber_llvm
@@ -30571,7 +30571,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 43842
+.word 43484
 _p_391_plt_SQLite_net_SQLite_SQLiteConnection_get_BusyTimeout_llvm:
 	.globl _p_391_plt_SQLite_net_SQLite_SQLiteConnection_get_BusyTimeout_llvm
 .private_extern _p_391_plt_SQLite_net_SQLite_SQLiteConnection_get_BusyTimeout_llvm
@@ -30582,7 +30582,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 43844
+.word 43486
 _p_392_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm:
 	.globl _p_392_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm
 .private_extern _p_392_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm
@@ -30593,7 +30593,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 43846
+.word 43488
 _p_393_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm:
 	.globl _p_393_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm
 .private_extern _p_393_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm
@@ -30604,7 +30604,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 43858
+.word 43500
 _p_394_plt_SQLite_net_SQLite_SQLiteConnection_set_Trace_bool_llvm:
 	.globl _p_394_plt_SQLite_net_SQLite_SQLiteConnection_set_Trace_bool_llvm
 .private_extern _p_394_plt_SQLite_net_SQLite_SQLiteConnection_set_Trace_bool_llvm
@@ -30615,7 +30615,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 43870
+.word 43512
 _p_395_plt_SQLite_net_SQLite_SQLiteConnection_set_TimeExecution_bool_llvm:
 	.globl _p_395_plt_SQLite_net_SQLite_SQLiteConnection_set_TimeExecution_bool_llvm
 .private_extern _p_395_plt_SQLite_net_SQLite_SQLiteConnection_set_TimeExecution_bool_llvm
@@ -30626,7 +30626,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 43872
+.word 43514
 _p_396_plt_SQLite_net_SQLite_SQLiteConnection_get_TableMappings_llvm:
 	.globl _p_396_plt_SQLite_net_SQLite_SQLiteConnection_get_TableMappings_llvm
 .private_extern _p_396_plt_SQLite_net_SQLite_SQLiteConnection_get_TableMappings_llvm
@@ -30637,7 +30637,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 43874
+.word 43516
 _p_397_plt_SQLite_net_SQLite_SQLiteConnectionPool_Reset_llvm:
 	.globl _p_397_plt_SQLite_net_SQLite_SQLiteConnectionPool_Reset_llvm
 .private_extern _p_397_plt_SQLite_net_SQLite_SQLiteConnectionPool_Reset_llvm
@@ -30648,7 +30648,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 43877
+.word 43519
 _p_398_plt_SQLite_net_SQLite_SQLiteConnectionPool_GetConnection_SQLite_SQLiteConnectionString_llvm:
 	.globl _p_398_plt_SQLite_net_SQLite_SQLiteConnectionPool_GetConnection_SQLite_SQLiteConnectionString_llvm
 .private_extern _p_398_plt_SQLite_net_SQLite_SQLiteConnectionPool_GetConnection_SQLite_SQLiteConnectionString_llvm
@@ -30659,7 +30659,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 43880
+.word 43522
 _p_399_plt_SQLite_net_SQLite_SQLiteConnectionPool_GetConnectionAndTransactionLock_SQLite_SQLiteConnectionString_object__llvm:
 	.globl _p_399_plt_SQLite_net_SQLite_SQLiteConnectionPool_GetConnectionAndTransactionLock_SQLite_SQLiteConnectionString_object__llvm
 .private_extern _p_399_plt_SQLite_net_SQLite_SQLiteConnectionPool_GetConnectionAndTransactionLock_SQLite_SQLiteConnectionString_object__llvm
@@ -30670,7 +30670,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 43883
+.word 43525
 _p_400_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_System_Action_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm:
 	.globl _p_400_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_System_Action_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm
 .private_extern _p_400_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_System_Action_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm
@@ -30681,7 +30681,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 43886
+.word 43528
 _p_401_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm:
 	.globl _p_401_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm
 .private_extern _p_401_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm
@@ -30692,7 +30692,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 43903
+.word 43545
 _p_402_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_0_llvm:
 	.globl _p_402_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_0_llvm
 .private_extern _p_402_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_0_llvm
@@ -30703,7 +30703,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 43933
+.word 43575
 _p_403_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_1_llvm:
 	.globl _p_403_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_1_llvm
 .private_extern _p_403_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_T_REF_System_Func_1_T_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_1_llvm
@@ -30714,7 +30714,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 43963
+.word 43605
 _p_404_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_SQLite_CreateTableResult_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_CreateTableResult_llvm:
 	.globl _p_404_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_SQLite_CreateTableResult_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_CreateTableResult_llvm
 .private_extern _p_404_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_SQLite_CreateTableResult_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_CreateTableResult_llvm
@@ -30725,7 +30725,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 43981
+.word 43623
 _p_405_plt_SQLite_net_SQLite_SQLiteAsyncConnection_CreateTablesAsync_SQLite_CreateFlags_System_Type___llvm:
 	.globl _p_405_plt_SQLite_net_SQLite_SQLiteAsyncConnection_CreateTablesAsync_SQLite_CreateFlags_System_Type___llvm
 .private_extern _p_405_plt_SQLite_net_SQLite_SQLiteAsyncConnection_CreateTablesAsync_SQLite_CreateFlags_System_Type___llvm
@@ -30736,7 +30736,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 43993
+.word 43635
 _p_406_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_SQLite_CreateTablesResult_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_CreateTablesResult_llvm:
 	.globl _p_406_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_SQLite_CreateTablesResult_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_CreateTablesResult_llvm
 .private_extern _p_406_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_SQLite_CreateTablesResult_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_CreateTablesResult_llvm
@@ -30747,7 +30747,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 43996
+.word 43638
 _p_407_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_int_System_Func_2_SQLite_SQLiteConnectionWithLock_int_llvm:
 	.globl _p_407_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_int_System_Func_2_SQLite_SQLiteConnectionWithLock_int_llvm
 .private_extern _p_407_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_int_System_Func_2_SQLite_SQLiteConnectionWithLock_int_llvm
@@ -30758,7 +30758,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 44008
+.word 43650
 _p_408_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm:
 	.globl _p_408_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm
 .private_extern _p_408_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm
@@ -30769,7 +30769,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 44032
+.word 43674
 _p_409_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_0_llvm:
 	.globl _p_409_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_0_llvm
 .private_extern _p_409_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_0_llvm
@@ -30780,7 +30780,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 44060
+.word 43702
 _p_410_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_1_llvm:
 	.globl _p_410_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_1_llvm
 .private_extern _p_410_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_1_llvm
@@ -30791,7 +30791,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 44088
+.word 43730
 _p_411_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_2_llvm:
 	.globl _p_411_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_2_llvm
 .private_extern _p_411_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_2_llvm
@@ -30802,7 +30802,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 44116
+.word 43758
 _p_412_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_3_llvm:
 	.globl _p_412_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_3_llvm
 .private_extern _p_412_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_3_llvm
@@ -30813,7 +30813,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 44144
+.word 43786
 _p_413_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_SQLite_TableMapping_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_TableMapping_llvm:
 	.globl _p_413_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_SQLite_TableMapping_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_TableMapping_llvm
 .private_extern _p_413_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_SQLite_TableMapping_System_Func_2_SQLite_SQLiteConnectionWithLock_SQLite_TableMapping_llvm
@@ -30824,7 +30824,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 44160
+.word 43802
 _p_414_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_llvm:
 	.globl _p_414_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_llvm
 .private_extern _p_414_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_SQLite_SQLiteConnection_ColumnInfo_llvm
@@ -30835,7 +30835,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 44172
+.word 43814
 _p_415_plt_SQLite_net_SQLite_SQLiteAsyncConnection_TransactAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm:
 	.globl _p_415_plt_SQLite_net_SQLite_SQLiteAsyncConnection_TransactAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm
 .private_extern _p_415_plt_SQLite_net_SQLite_SQLiteAsyncConnection_TransactAsync_object_System_Func_2_SQLite_SQLiteConnectionWithLock_object_llvm
@@ -30846,7 +30846,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 44184
+.word 43826
 _p_416_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_1_llvm:
 	.globl _p_416_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_1_llvm
 .private_extern _p_416_plt_SQLite_net_SQLite_SQLiteConnection_Table_T_REF_1_llvm
@@ -30857,7 +30857,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 44208
+.word 43850
 _p_417_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm:
 	.globl _p_417_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm
 .private_extern _p_417_plt_SQLite_net_SQLite_SQLiteAsyncConnection_WriteAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm
@@ -30868,7 +30868,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 44236
+.word 43878
 _p_418_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_llvm:
 	.globl _p_418_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_llvm
 .private_extern _p_418_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_llvm
@@ -30879,7 +30879,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 44279
+.word 43921
 _p_419_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_0_llvm:
 	.globl _p_419_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_0_llvm
 .private_extern _p_419_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_0_llvm
@@ -30890,7 +30890,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 44322
+.word 43964
 _p_420_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_object_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_object_llvm:
 	.globl _p_420_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_object_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_object_llvm
 .private_extern _p_420_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_List_1_object_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_object_llvm
@@ -30901,7 +30901,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 44338
+.word 43980
 _p_421_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_IEnumerable_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_IEnumerable_1_T_REF_llvm:
 	.globl _p_421_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_IEnumerable_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_IEnumerable_1_T_REF_llvm
 .private_extern _p_421_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_IEnumerable_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_IEnumerable_1_T_REF_llvm
@@ -30912,7 +30912,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 44377
+.word 44019
 _p_422_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_IEnumerable_1_object_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_422_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_IEnumerable_1_object_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_422_plt_SQLite_net_SQLite_SQLiteAsyncConnection_ReadAsync_System_Collections_Generic_IEnumerable_1_object_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -30923,7 +30923,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 44393
+.word 44035
 _p_423_plt_SQLite_net_SQLite_SQLiteConnectionPool_CloseConnection_SQLite_SQLiteConnectionString_llvm:
 	.globl _p_423_plt_SQLite_net_SQLite_SQLiteConnectionPool_CloseConnection_SQLite_SQLiteConnectionString_llvm
 .private_extern _p_423_plt_SQLite_net_SQLite_SQLiteConnectionPool_CloseConnection_SQLite_SQLiteConnectionString_llvm
@@ -30934,7 +30934,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 44405
+.word 44047
 _p_424_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_U_REF_System_Func_1_U_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm:
 	.globl _p_424_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_U_REF_System_Func_1_U_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm
 .private_extern _p_424_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_U_REF_System_Func_1_U_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_llvm
@@ -30945,7 +30945,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 44420
+.word 44062
 _p_425_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_U_REF_System_Func_1_U_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_0_llvm:
 	.globl _p_425_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_U_REF_System_Func_1_U_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_0_llvm
 .private_extern _p_425_plt_SQLite_net_System_Threading_Tasks_TaskFactory_StartNew_U_REF_System_Func_1_U_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_TaskScheduler_0_llvm
@@ -30956,7 +30956,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 44450
+.word 44092
 _p_426_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_2_llvm:
 	.globl _p_426_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_2_llvm
 .private_extern _p_426_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Where_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_2_llvm
@@ -30967,7 +30967,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 44487
+.word 44129
 _p_427_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Skip_int_0_llvm:
 	.globl _p_427_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Skip_int_0_llvm
 .private_extern _p_427_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Skip_int_0_llvm
@@ -30978,7 +30978,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 44506
+.word 44148
 _p_428_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Take_int_0_llvm:
 	.globl _p_428_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Take_int_0_llvm
 .private_extern _p_428_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Take_int_0_llvm
@@ -30989,7 +30989,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 44525
+.word 44167
 _p_429_plt_SQLite_net_SQLite_TableQuery_1_T_REF_OrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm:
 	.globl _p_429_plt_SQLite_net_SQLite_TableQuery_1_T_REF_OrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
 .private_extern _p_429_plt_SQLite_net_SQLite_TableQuery_1_T_REF_OrderBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
@@ -31000,7 +31000,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 44556
+.word 44198
 _p_430_plt_SQLite_net_SQLite_TableQuery_1_T_REF_OrderByDescending_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm:
 	.globl _p_430_plt_SQLite_net_SQLite_TableQuery_1_T_REF_OrderByDescending_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
 .private_extern _p_430_plt_SQLite_net_SQLite_TableQuery_1_T_REF_OrderByDescending_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
@@ -31011,7 +31011,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 44591
+.word 44233
 _p_431_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ThenBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm:
 	.globl _p_431_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ThenBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
 .private_extern _p_431_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ThenBy_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
@@ -31022,7 +31022,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 44626
+.word 44268
 _p_432_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ThenByDescending_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm:
 	.globl _p_432_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ThenByDescending_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
 .private_extern _p_432_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ThenByDescending_U_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_U_REF_llvm
@@ -31033,7 +31033,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 44661
+.word 44303
 _p_433_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_llvm:
 	.globl _p_433_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_llvm
 .private_extern _p_433_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_System_Collections_Generic_List_1_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_System_Collections_Generic_List_1_T_REF_llvm
@@ -31044,7 +31044,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 44706
+.word 44348
 _p_434_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_T_REF___System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF___llvm:
 	.globl _p_434_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_T_REF___System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF___llvm
 .private_extern _p_434_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_T_REF___System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF___llvm
@@ -31055,7 +31055,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 44737
+.word 44379
 _p_435_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm:
 	.globl _p_435_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm
 .private_extern _p_435_plt_SQLite_net_SQLite_AsyncTableQuery_1_T_REF_ReadAsync_T_REF_System_Func_2_SQLite_SQLiteConnectionWithLock_T_REF_llvm
@@ -31066,7 +31066,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 44760
+.word 44402
 _p_436_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToList_0_llvm:
 	.globl _p_436_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToList_0_llvm
 .private_extern _p_436_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToList_0_llvm
@@ -31077,7 +31077,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 44783
+.word 44425
 _p_437_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToArray_llvm:
 	.globl _p_437_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToArray_llvm
 .private_extern _p_437_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ToArray_llvm
@@ -31088,7 +31088,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 44802
+.word 44444
 _p_438_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_0_llvm:
 	.globl _p_438_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_0_llvm
 .private_extern _p_438_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_0_llvm
@@ -31099,7 +31099,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 44821
+.word 44463
 _p_439_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_1_llvm:
 	.globl _p_439_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_1_llvm
 .private_extern _p_439_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_1_llvm
@@ -31110,7 +31110,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 44840
+.word 44482
 _p_440_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_1_llvm:
 	.globl _p_440_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_1_llvm
 .private_extern _p_440_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_1_llvm
@@ -31121,7 +31121,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 44859
+.word 44501
 _p_441_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_llvm:
 	.globl _p_441_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_llvm
 .private_extern _p_441_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_llvm
@@ -31132,7 +31132,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 44878
+.word 44520
 _p_442_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_TryGetValue_string_SQLite_SQLiteConnectionPool_Entry__llvm:
 	.globl _p_442_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_TryGetValue_string_SQLite_SQLiteConnectionPool_Entry__llvm
 .private_extern _p_442_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_TryGetValue_string_SQLite_SQLiteConnectionPool_Entry__llvm
@@ -31143,7 +31143,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 44897
+.word 44539
 _p_443_plt_SQLite_net_SQLite_SQLiteConnectionPool_Entry__ctor_SQLite_SQLiteConnectionString_llvm:
 	.globl _p_443_plt_SQLite_net_SQLite_SQLiteConnectionPool_Entry__ctor_SQLite_SQLiteConnectionString_llvm
 .private_extern _p_443_plt_SQLite_net_SQLite_SQLiteConnectionPool_Entry__ctor_SQLite_SQLiteConnectionString_llvm
@@ -31154,7 +31154,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 44908
+.word 44550
 _p_444_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_set_Item_string_SQLite_SQLiteConnectionPool_Entry_llvm:
 	.globl _p_444_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_set_Item_string_SQLite_SQLiteConnectionPool_Entry_llvm
 .private_extern _p_444_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_set_Item_string_SQLite_SQLiteConnectionPool_Entry_llvm
@@ -31165,7 +31165,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 44911
+.word 44553
 _p_445_plt_SQLite_net_SQLite_SQLiteConnectionPool_Entry_Close_llvm:
 	.globl _p_445_plt_SQLite_net_SQLite_SQLiteConnectionPool_Entry_Close_llvm
 .private_extern _p_445_plt_SQLite_net_SQLite_SQLiteConnectionPool_Entry_Close_llvm
@@ -31176,7 +31176,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 44922
+.word 44564
 _p_446_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_Remove_string_llvm:
 	.globl _p_446_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_Remove_string_llvm
 .private_extern _p_446_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_Remove_string_llvm
@@ -31187,7 +31187,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 44925
+.word 44567
 _p_447_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnectionPool_Entry_GetEnumerator_llvm:
 	.globl _p_447_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnectionPool_Entry_GetEnumerator_llvm
 .private_extern _p_447_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnectionPool_Entry_GetEnumerator_llvm
@@ -31198,7 +31198,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 44936
+.word 44578
 _p_448_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnectionPool_Entry_MoveNext_llvm:
 	.globl _p_448_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnectionPool_Entry_MoveNext_llvm
 .private_extern _p_448_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnectionPool_Entry_MoveNext_llvm
@@ -31209,7 +31209,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 44947
+.word 44589
 _p_449_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnectionPool_Entry__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnectionPool_Entry_llvm:
 	.globl _p_449_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnectionPool_Entry__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnectionPool_Entry_llvm
 .private_extern _p_449_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnectionPool_Entry__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnectionPool_Entry_llvm
@@ -31220,7 +31220,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 44958
+.word 44600
 _p_450_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_Clear_llvm:
 	.globl _p_450_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_Clear_llvm
 .private_extern _p_450_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry_Clear_llvm
@@ -31231,7 +31231,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 44969
+.word 44611
 _p_451_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry__ctor_llvm:
 	.globl _p_451_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry__ctor_llvm
 .private_extern _p_451_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnectionPool_Entry__ctor_llvm
@@ -31242,7 +31242,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 44980
+.word 44622
 _p_452_plt_SQLite_net_SQLite_SQLiteConnectionPool__ctor_llvm:
 	.globl _p_452_plt_SQLite_net_SQLite_SQLiteConnectionPool__ctor_llvm
 .private_extern _p_452_plt_SQLite_net_SQLite_SQLiteConnectionPool__ctor_llvm
@@ -31253,7 +31253,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 44991
+.word 44633
 _p_453_plt_SQLite_net__jit_icall_mono_monitor_enter_fast_llvm:
 	.globl _p_453_plt_SQLite_net__jit_icall_mono_monitor_enter_fast_llvm
 .private_extern _p_453_plt_SQLite_net__jit_icall_mono_monitor_enter_fast_llvm
@@ -31264,7 +31264,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 44994
+.word 44636
 _p_454_plt_SQLite_net__jit_icall_mono_monitor_enter_internal_llvm:
 	.globl _p_454_plt_SQLite_net__jit_icall_mono_monitor_enter_internal_llvm
 .private_extern _p_454_plt_SQLite_net__jit_icall_mono_monitor_enter_internal_llvm
@@ -31275,7 +31275,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 44997
+.word 44639
 _p_455_plt_SQLite_net_byte_ToString_string_llvm:
 	.globl _p_455_plt_SQLite_net_byte_ToString_string_llvm
 .private_extern _p_455_plt_SQLite_net_byte_ToString_string_llvm
@@ -31286,7 +31286,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 45000
+.word 44642
 _p_456_plt_SQLite_net_SQLite_TableMapping_Column_GetMemberType_System_Reflection_MemberInfo_llvm:
 	.globl _p_456_plt_SQLite_net_SQLite_TableMapping_Column_GetMemberType_System_Reflection_MemberInfo_llvm
 .private_extern _p_456_plt_SQLite_net_SQLite_TableMapping_Column_GetMemberType_System_Reflection_MemberInfo_llvm
@@ -31297,7 +31297,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 45005
+.word 44647
 _p_457_plt_SQLite_net_SQLite_Orm_Collation_System_Reflection_MemberInfo_llvm:
 	.globl _p_457_plt_SQLite_net_SQLite_Orm_Collation_System_Reflection_MemberInfo_llvm
 .private_extern _p_457_plt_SQLite_net_SQLite_Orm_Collation_System_Reflection_MemberInfo_llvm
@@ -31308,7 +31308,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 45008
+.word 44650
 _p_458_plt_SQLite_net_SQLite_Orm_IsPK_System_Reflection_MemberInfo_llvm:
 	.globl _p_458_plt_SQLite_net_SQLite_Orm_IsPK_System_Reflection_MemberInfo_llvm
 .private_extern _p_458_plt_SQLite_net_SQLite_Orm_IsPK_System_Reflection_MemberInfo_llvm
@@ -31319,7 +31319,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 45011
+.word 44653
 _p_459_plt_SQLite_net_SQLite_Orm_IsAutoInc_System_Reflection_MemberInfo_llvm:
 	.globl _p_459_plt_SQLite_net_SQLite_Orm_IsAutoInc_System_Reflection_MemberInfo_llvm
 .private_extern _p_459_plt_SQLite_net_SQLite_Orm_IsAutoInc_System_Reflection_MemberInfo_llvm
@@ -31330,7 +31330,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 45014
+.word 44656
 _p_460_plt_SQLite_net_SQLite_Orm_GetIndices_System_Reflection_MemberInfo_llvm:
 	.globl _p_460_plt_SQLite_net_SQLite_Orm_GetIndices_System_Reflection_MemberInfo_llvm
 .private_extern _p_460_plt_SQLite_net_SQLite_Orm_GetIndices_System_Reflection_MemberInfo_llvm
@@ -31341,7 +31341,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 45017
+.word 44659
 _p_461_plt_SQLite_net_System_Linq_Enumerable_Any_SQLite_IndexedAttribute_System_Collections_Generic_IEnumerable_1_SQLite_IndexedAttribute_llvm:
 	.globl _p_461_plt_SQLite_net_System_Linq_Enumerable_Any_SQLite_IndexedAttribute_System_Collections_Generic_IEnumerable_1_SQLite_IndexedAttribute_llvm
 .private_extern _p_461_plt_SQLite_net_System_Linq_Enumerable_Any_SQLite_IndexedAttribute_System_Collections_Generic_IEnumerable_1_SQLite_IndexedAttribute_llvm
@@ -31352,7 +31352,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 45020
+.word 44662
 _p_462_plt_SQLite_net_SQLite_Orm_IsMarkedNotNull_System_Reflection_MemberInfo_llvm:
 	.globl _p_462_plt_SQLite_net_SQLite_Orm_IsMarkedNotNull_System_Reflection_MemberInfo_llvm
 .private_extern _p_462_plt_SQLite_net_SQLite_Orm_IsMarkedNotNull_System_Reflection_MemberInfo_llvm
@@ -31363,7 +31363,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 45032
+.word 44674
 _p_463_plt_SQLite_net_string_EndsWith_string_System_StringComparison_llvm:
 	.globl _p_463_plt_SQLite_net_string_EndsWith_string_System_StringComparison_llvm
 .private_extern _p_463_plt_SQLite_net_string_EndsWith_string_System_StringComparison_llvm
@@ -31374,7 +31374,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 45035
+.word 44677
 _p_464_plt_SQLite_net_System_Enum_ToObject_System_Type_object_llvm:
 	.globl _p_464_plt_SQLite_net_System_Enum_ToObject_System_Type_object_llvm
 .private_extern _p_464_plt_SQLite_net_System_Enum_ToObject_System_Type_object_llvm
@@ -31385,7 +31385,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 45040
+.word 44682
 _p_465_plt_SQLite_net_System_Reflection_PropertyInfo_GetValue_object_llvm:
 	.globl _p_465_plt_SQLite_net_System_Reflection_PropertyInfo_GetValue_object_llvm
 .private_extern _p_465_plt_SQLite_net_System_Reflection_PropertyInfo_GetValue_object_llvm
@@ -31396,7 +31396,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 45045
+.word 44687
 _p_466_plt_SQLite_net_System_Collections_Generic_HashSet_1_string_Contains_string_llvm:
 	.globl _p_466_plt_SQLite_net_System_Collections_Generic_HashSet_1_string_Contains_string_llvm
 .private_extern _p_466_plt_SQLite_net_System_Collections_Generic_HashSet_1_string_Contains_string_llvm
@@ -31407,7 +31407,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 45050
+.word 44692
 _p_467_plt_SQLite_net_System_Reflection_PropertyInfo_get_GetMethod_llvm:
 	.globl _p_467_plt_SQLite_net_System_Reflection_PropertyInfo_get_GetMethod_llvm
 .private_extern _p_467_plt_SQLite_net_System_Reflection_PropertyInfo_get_GetMethod_llvm
@@ -31418,7 +31418,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 45061
+.word 44703
 _p_468_plt_SQLite_net_System_Reflection_PropertyInfo_get_SetMethod_llvm:
 	.globl _p_468_plt_SQLite_net_System_Reflection_PropertyInfo_get_SetMethod_llvm
 .private_extern _p_468_plt_SQLite_net_System_Reflection_PropertyInfo_get_SetMethod_llvm
@@ -31429,7 +31429,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 45066
+.word 44708
 _p_469_plt_SQLite_net_System_Reflection_MethodBase_get_IsPublic_llvm:
 	.globl _p_469_plt_SQLite_net_System_Reflection_MethodBase_get_IsPublic_llvm
 .private_extern _p_469_plt_SQLite_net_System_Reflection_MethodBase_get_IsPublic_llvm
@@ -31440,7 +31440,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 45071
+.word 44713
 _p_470_plt_SQLite_net_System_Reflection_MethodBase_get_IsStatic_llvm:
 	.globl _p_470_plt_SQLite_net_System_Reflection_MethodBase_get_IsStatic_llvm
 .private_extern _p_470_plt_SQLite_net_System_Reflection_MethodBase_get_IsStatic_llvm
@@ -31451,7 +31451,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 45076
+.word 44718
 _p_471_plt_SQLite_net_SQLite_TableMapping_Column_get_PropertyName_llvm:
 	.globl _p_471_plt_SQLite_net_SQLite_TableMapping_Column_get_PropertyName_llvm
 .private_extern _p_471_plt_SQLite_net_SQLite_TableMapping_Column_get_PropertyName_llvm
@@ -31462,7 +31462,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 45081
+.word 44723
 _p_472_plt_SQLite_net_System_Environment_get_CurrentManagedThreadId_llvm:
 	.globl _p_472_plt_SQLite_net_System_Environment_get_CurrentManagedThreadId_llvm
 .private_extern _p_472_plt_SQLite_net_System_Environment_get_CurrentManagedThreadId_llvm
@@ -31473,7 +31473,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 45084
+.word 44726
 _p_473_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__m__Finally1_llvm:
 	.globl _p_473_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__m__Finally1_llvm
 .private_extern _p_473_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__m__Finally1_llvm
@@ -31484,7 +31484,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 45108
+.word 44750
 _p_474_plt_SQLite_net_SQLite_SQLite3_ColumnCount_SQLitePCL_sqlite3_stmt_llvm:
 	.globl _p_474_plt_SQLite_net_SQLite_SQLite3_ColumnCount_SQLitePCL_sqlite3_stmt_llvm
 .private_extern _p_474_plt_SQLite_net_SQLite_SQLite3_ColumnCount_SQLitePCL_sqlite3_stmt_llvm
@@ -31495,7 +31495,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 45127
+.word 44769
 _p_475_plt_SQLite_net_System_Activator_CreateInstance_System_Type_llvm:
 	.globl _p_475_plt_SQLite_net_System_Activator_CreateInstance_System_Type_llvm
 .private_extern _p_475_plt_SQLite_net_System_Activator_CreateInstance_System_Type_llvm
@@ -31506,7 +31506,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 45130
+.word 44772
 _p_476_plt_SQLite_net_SQLite_SQLite3_ColumnName16_SQLitePCL_sqlite3_stmt_int_llvm:
 	.globl _p_476_plt_SQLite_net_SQLite_SQLite3_ColumnName16_SQLitePCL_sqlite3_stmt_int_llvm
 .private_extern _p_476_plt_SQLite_net_SQLite_SQLite3_ColumnName16_SQLitePCL_sqlite3_stmt_int_llvm
@@ -31517,7 +31517,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 45135
+.word 44777
 _p_477_plt_SQLite_net_SQLite_TableMapping_FindColumn_string_llvm:
 	.globl _p_477_plt_SQLite_net_SQLite_TableMapping_FindColumn_string_llvm
 .private_extern _p_477_plt_SQLite_net_SQLite_TableMapping_FindColumn_string_llvm
@@ -31528,7 +31528,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 45138
+.word 44780
 _p_478_plt_SQLite_net_SQLite_FastColumnSetter_GetFastSetter_T_REF_SQLite_SQLiteConnection_SQLite_TableMapping_Column_llvm:
 	.globl _p_478_plt_SQLite_net_SQLite_FastColumnSetter_GetFastSetter_T_REF_SQLite_SQLiteConnection_SQLite_TableMapping_Column_llvm
 .private_extern _p_478_plt_SQLite_net_SQLite_FastColumnSetter_GetFastSetter_T_REF_SQLite_SQLiteConnection_SQLite_TableMapping_Column_llvm
@@ -31539,7 +31539,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 45141
+.word 44783
 _p_479_plt_SQLite_net_System_Reflection_MethodBase_Invoke_object_object___llvm:
 	.globl _p_479_plt_SQLite_net_System_Reflection_MethodBase_Invoke_object_object___llvm
 .private_extern _p_479_plt_SQLite_net_System_Reflection_MethodBase_Invoke_object_object___llvm
@@ -31550,7 +31550,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 45157
+.word 44799
 _p_480_plt_SQLite_net_System_Type_GetMethod_string_System_Reflection_BindingFlags_llvm:
 	.globl _p_480_plt_SQLite_net_System_Type_GetMethod_string_System_Reflection_BindingFlags_llvm
 .private_extern _p_480_plt_SQLite_net_System_Type_GetMethod_string_System_Reflection_BindingFlags_llvm
@@ -31561,7 +31561,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 45162
+.word 44804
 _p_481_plt_SQLite_net_System_Array_Copy_System_Array_System_Array_int_llvm:
 	.globl _p_481_plt_SQLite_net_System_Array_Copy_System_Array_System_Array_int_llvm
 .private_extern _p_481_plt_SQLite_net_System_Array_Copy_System_Array_System_Array_int_llvm
@@ -31572,7 +31572,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 45167
+.word 44809
 _p_482_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF_System_IDisposable_Dispose_llvm:
 	.globl _p_482_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF_System_IDisposable_Dispose_llvm
 .private_extern _p_482_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF_System_IDisposable_Dispose_llvm
@@ -31583,7 +31583,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 45172
+.word 44814
 _p_483_plt_SQLite_net__jit_icall_mono_create_corlib_exception_0_llvm:
 	.globl _p_483_plt_SQLite_net__jit_icall_mono_create_corlib_exception_0_llvm
 .private_extern _p_483_plt_SQLite_net__jit_icall_mono_create_corlib_exception_0_llvm
@@ -31594,7 +31594,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 45191
+.word 44833
 _p_484_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__ctor_int_0_llvm:
 	.globl _p_484_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__ctor_int_0_llvm
 .private_extern _p_484_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF__ctor_int_0_llvm
@@ -31605,7 +31605,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 45194
+.word 44836
 _p_485_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF_System_Collections_Generic_IEnumerable_T_GetEnumerator_llvm:
 	.globl _p_485_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF_System_Collections_Generic_IEnumerable_T_GetEnumerator_llvm
 .private_extern _p_485_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteDeferredQueryd__12_1_T_REF_System_Collections_Generic_IEnumerable_T_GetEnumerator_llvm
@@ -31616,7 +31616,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 45213
+.word 44855
 _p_486_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__m__Finally1_llvm:
 	.globl _p_486_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__m__Finally1_llvm
 .private_extern _p_486_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__m__Finally1_llvm
@@ -31627,7 +31627,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 45251
+.word 44893
 _p_487_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF_System_IDisposable_Dispose_llvm:
 	.globl _p_487_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF_System_IDisposable_Dispose_llvm
 .private_extern _p_487_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF_System_IDisposable_Dispose_llvm
@@ -31638,7 +31638,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 45270
+.word 44912
 _p_488_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__ctor_int_0_llvm:
 	.globl _p_488_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__ctor_int_0_llvm
 .private_extern _p_488_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF__ctor_int_0_llvm
@@ -31649,7 +31649,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 45289
+.word 44931
 _p_489_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF_System_Collections_Generic_IEnumerable_T_GetEnumerator_llvm:
 	.globl _p_489_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF_System_Collections_Generic_IEnumerable_T_GetEnumerator_llvm
 .private_extern _p_489_plt_SQLite_net_SQLite_SQLiteCommand__ExecuteQueryScalarsd__14_1_T_REF_System_Collections_Generic_IEnumerable_T_GetEnumerator_llvm
@@ -31660,7 +31660,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 45308
+.word 44950
 _p_490_plt_SQLite_net_SQLite_FastColumnSetter__c__0_1_T_REF__ctor_llvm:
 	.globl _p_490_plt_SQLite_net_SQLite_FastColumnSetter__c__0_1_T_REF__ctor_llvm
 .private_extern _p_490_plt_SQLite_net_SQLite_FastColumnSetter__c__0_1_T_REF__ctor_llvm
@@ -31671,7 +31671,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 45327
+.word 44969
 _p_491_plt_SQLite_net_SQLite_TableQuery_1__c_T_REF__ctor_llvm:
 	.globl _p_491_plt_SQLite_net_SQLite_TableQuery_1__c_T_REF__ctor_llvm
 .private_extern _p_491_plt_SQLite_net_SQLite_TableQuery_1__c_T_REF__ctor_llvm
@@ -31682,7 +31682,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 45340
+.word 44982
 _p_492_plt_SQLite_net_SQLite_SQLiteConnection_EnableWriteAheadLogging_llvm:
 	.globl _p_492_plt_SQLite_net_SQLite_SQLiteConnection_EnableWriteAheadLogging_llvm
 .private_extern _p_492_plt_SQLite_net_SQLite_SQLiteConnection_EnableWriteAheadLogging_llvm
@@ -31693,7 +31693,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 45353
+.word 44995
 _p_493_plt_SQLite_net_SQLite_SQLiteAsyncConnection__c__43_1_T_REF__ctor_llvm:
 	.globl _p_493_plt_SQLite_net_SQLite_SQLiteAsyncConnection__c__43_1_T_REF__ctor_llvm
 .private_extern _p_493_plt_SQLite_net_SQLite_SQLiteAsyncConnection__c__43_1_T_REF__ctor_llvm
@@ -31704,7 +31704,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 45355
+.word 44997
 _p_494_plt_SQLite_net_SQLite_SQLiteConnection_DropTable_T_REF_llvm:
 	.globl _p_494_plt_SQLite_net_SQLite_SQLiteConnection_DropTable_T_REF_llvm
 .private_extern _p_494_plt_SQLite_net_SQLite_SQLiteConnection_DropTable_T_REF_llvm
@@ -31715,7 +31715,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 45368
+.word 45010
 _p_495_plt_SQLite_net_SQLite_SQLiteAsyncConnection__c__62_1_T_REF__ctor_llvm:
 	.globl _p_495_plt_SQLite_net_SQLite_SQLiteAsyncConnection__c__62_1_T_REF__ctor_llvm
 .private_extern _p_495_plt_SQLite_net_SQLite_SQLiteAsyncConnection__c__62_1_T_REF__ctor_llvm
@@ -31726,7 +31726,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 45381
+.word 45023
 _p_496_plt_SQLite_net_SQLite_SQLiteConnection_DeleteAll_T_REF_llvm:
 	.globl _p_496_plt_SQLite_net_SQLite_SQLiteConnection_DeleteAll_T_REF_llvm
 .private_extern _p_496_plt_SQLite_net_SQLite_SQLiteConnection_DeleteAll_T_REF_llvm
@@ -31737,7 +31737,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 45394
+.word 45036
 _p_497_plt_SQLite_net_SQLite_SQLiteConnectionWithLock_Lock_llvm:
 	.globl _p_497_plt_SQLite_net_SQLite_SQLiteConnectionWithLock_Lock_llvm
 .private_extern _p_497_plt_SQLite_net_SQLite_SQLiteConnectionWithLock_Lock_llvm
@@ -31748,7 +31748,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 45407
+.word 45049
 _p_498_plt_SQLite_net_SQLite_SQLiteConnection_EnableLoadExtension_bool_llvm:
 	.globl _p_498_plt_SQLite_net_SQLite_SQLiteConnection_EnableLoadExtension_bool_llvm
 .private_extern _p_498_plt_SQLite_net_SQLite_SQLiteConnection_EnableLoadExtension_bool_llvm
@@ -31759,7 +31759,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 45410
+.word 45052
 _p_499_plt_SQLite_net_SQLite_SQLiteConnection_CreateTable_T_REF_SQLite_CreateFlags_llvm:
 	.globl _p_499_plt_SQLite_net_SQLite_SQLiteConnection_CreateTable_T_REF_SQLite_CreateFlags_llvm
 .private_extern _p_499_plt_SQLite_net_SQLite_SQLiteConnection_CreateTable_T_REF_SQLite_CreateFlags_llvm
@@ -31770,7 +31770,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 45424
+.word 45066
 _p_500_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string___bool_llvm:
 	.globl _p_500_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string___bool_llvm
 .private_extern _p_500_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_string_string___bool_llvm
@@ -31781,7 +31781,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 45440
+.word 45082
 _p_501_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_object_bool_llvm:
 	.globl _p_501_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_object_bool_llvm
 .private_extern _p_501_plt_SQLite_net_SQLite_SQLiteConnection_CreateIndex_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_object_bool_llvm
@@ -31792,7 +31792,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 45455
+.word 45097
 _p_502_plt_SQLite_net_SQLite_SQLiteConnection_InsertOrReplace_object_llvm:
 	.globl _p_502_plt_SQLite_net_SQLite_SQLiteConnection_InsertOrReplace_object_llvm
 .private_extern _p_502_plt_SQLite_net_SQLite_SQLiteConnection_InsertOrReplace_object_llvm
@@ -31803,7 +31803,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 45471
+.word 45113
 _p_503_plt_SQLite_net_SQLite_SQLiteConnection_InsertOrReplace_object_System_Type_llvm:
 	.globl _p_503_plt_SQLite_net_SQLite_SQLiteConnection_InsertOrReplace_object_System_Type_llvm
 .private_extern _p_503_plt_SQLite_net_SQLite_SQLiteConnection_InsertOrReplace_object_System_Type_llvm
@@ -31814,7 +31814,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 45474
+.word 45116
 _p_504_plt_SQLite_net_SQLite_SQLiteConnection_UpdateAll_System_Collections_IEnumerable_bool_llvm:
 	.globl _p_504_plt_SQLite_net_SQLite_SQLiteConnection_UpdateAll_System_Collections_IEnumerable_bool_llvm
 .private_extern _p_504_plt_SQLite_net_SQLite_SQLiteConnection_UpdateAll_System_Collections_IEnumerable_bool_llvm
@@ -31825,7 +31825,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 45477
+.word 45119
 _p_505_plt_SQLite_net_SQLite_SQLiteConnection_Delete_object_llvm:
 	.globl _p_505_plt_SQLite_net_SQLite_SQLiteConnection_Delete_object_llvm
 .private_extern _p_505_plt_SQLite_net_SQLite_SQLiteConnection_Delete_object_llvm
@@ -31836,7 +31836,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 45480
+.word 45122
 _p_506_plt_SQLite_net_SQLite_SQLiteConnection_Delete_T_REF_object_llvm:
 	.globl _p_506_plt_SQLite_net_SQLite_SQLiteConnection_Delete_T_REF_object_llvm
 .private_extern _p_506_plt_SQLite_net_SQLite_SQLiteConnection_Delete_T_REF_object_llvm
@@ -31847,7 +31847,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 45495
+.word 45137
 _p_507_plt_SQLite_net_SQLite_SQLiteConnection_Backup_string_string_llvm:
 	.globl _p_507_plt_SQLite_net_SQLite_SQLiteConnection_Backup_string_string_llvm
 .private_extern _p_507_plt_SQLite_net_SQLite_SQLiteConnection_Backup_string_string_llvm
@@ -31858,7 +31858,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 45511
+.word 45153
 _p_508_plt_SQLite_net_SQLite_SQLiteConnection_Get_T_REF_object_llvm:
 	.globl _p_508_plt_SQLite_net_SQLite_SQLiteConnection_Get_T_REF_object_llvm
 .private_extern _p_508_plt_SQLite_net_SQLite_SQLiteConnection_Get_T_REF_object_llvm
@@ -31869,7 +31869,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 45526
+.word 45168
 _p_509_plt_SQLite_net_SQLite_SQLiteConnection_Get_object_SQLite_TableMapping_llvm:
 	.globl _p_509_plt_SQLite_net_SQLite_SQLiteConnection_Get_object_SQLite_TableMapping_llvm
 .private_extern _p_509_plt_SQLite_net_SQLite_SQLiteConnection_Get_object_SQLite_TableMapping_llvm
@@ -31880,7 +31880,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 45542
+.word 45184
 _p_510_plt_SQLite_net_SQLite_SQLiteConnection_Get_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_510_plt_SQLite_net_SQLite_SQLiteConnection_Get_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_510_plt_SQLite_net_SQLite_SQLiteConnection_Get_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -31891,7 +31891,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 45557
+.word 45199
 _p_511_plt_SQLite_net_SQLite_SQLiteConnection_Find_T_REF_object_llvm:
 	.globl _p_511_plt_SQLite_net_SQLite_SQLiteConnection_Find_T_REF_object_llvm
 .private_extern _p_511_plt_SQLite_net_SQLite_SQLiteConnection_Find_T_REF_object_llvm
@@ -31902,7 +31902,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 45585
+.word 45227
 _p_512_plt_SQLite_net_SQLite_SQLiteConnection_Find_object_SQLite_TableMapping_llvm:
 	.globl _p_512_plt_SQLite_net_SQLite_SQLiteConnection_Find_object_SQLite_TableMapping_llvm
 .private_extern _p_512_plt_SQLite_net_SQLite_SQLiteConnection_Find_object_SQLite_TableMapping_llvm
@@ -31913,7 +31913,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 45601
+.word 45243
 _p_513_plt_SQLite_net_SQLite_SQLiteConnection_Find_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_513_plt_SQLite_net_SQLite_SQLiteConnection_Find_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_513_plt_SQLite_net_SQLite_SQLiteConnection_Find_T_REF_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -31924,7 +31924,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 45616
+.word 45258
 _p_514_plt_SQLite_net_SQLite_SQLiteConnection_FindWithQuery_T_REF_string_object___llvm:
 	.globl _p_514_plt_SQLite_net_SQLite_SQLiteConnection_FindWithQuery_T_REF_string_object___llvm
 .private_extern _p_514_plt_SQLite_net_SQLite_SQLiteConnection_FindWithQuery_T_REF_string_object___llvm
@@ -31935,7 +31935,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 45644
+.word 45286
 _p_515_plt_SQLite_net_SQLite_SQLiteConnection_FindWithQuery_SQLite_TableMapping_string_object___llvm:
 	.globl _p_515_plt_SQLite_net_SQLite_SQLiteConnection_FindWithQuery_SQLite_TableMapping_string_object___llvm
 .private_extern _p_515_plt_SQLite_net_SQLite_SQLiteConnection_FindWithQuery_SQLite_TableMapping_string_object___llvm
@@ -31946,7 +31946,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 45660
+.word 45302
 _p_516_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_T_REF_SQLite_CreateFlags_0_llvm:
 	.globl _p_516_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_T_REF_SQLite_CreateFlags_0_llvm
 .private_extern _p_516_plt_SQLite_net_SQLite_SQLiteConnection_GetMapping_T_REF_SQLite_CreateFlags_0_llvm
@@ -31957,7 +31957,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 45675
+.word 45317
 _p_517_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_bool_llvm:
 	.globl _p_517_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_bool_llvm
 .private_extern _p_517_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_bool_llvm
@@ -31968,7 +31968,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 45691
+.word 45333
 _p_518_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_string_bool_llvm:
 	.globl _p_518_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_string_bool_llvm
 .private_extern _p_518_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_string_bool_llvm
@@ -31979,7 +31979,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 45694
+.word 45336
 _p_519_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_System_Type_bool_llvm:
 	.globl _p_519_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_System_Type_bool_llvm
 .private_extern _p_519_plt_SQLite_net_SQLite_SQLiteConnection_InsertAll_System_Collections_IEnumerable_System_Type_bool_llvm
@@ -31990,7 +31990,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 45697
+.word 45339
 _p_520_plt_SQLite_net_SQLite_SQLiteConnection_BeginTransaction_llvm:
 	.globl _p_520_plt_SQLite_net_SQLite_SQLiteConnection_BeginTransaction_llvm
 .private_extern _p_520_plt_SQLite_net_SQLite_SQLiteConnection_BeginTransaction_llvm
@@ -32001,7 +32001,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 45700
+.word 45342
 _p_521_plt_SQLite_net_SQLite_SQLiteConnection_Commit_llvm:
 	.globl _p_521_plt_SQLite_net_SQLite_SQLiteConnection_Commit_llvm
 .private_extern _p_521_plt_SQLite_net_SQLite_SQLiteConnection_Commit_llvm
@@ -32012,7 +32012,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 45703
+.word 45345
 _p_522_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_T_REF_0_llvm:
 	.globl _p_522_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_T_REF_0_llvm
 .private_extern _p_522_plt_SQLite_net_SQLite_SQLiteCommand_ExecuteScalar_T_REF_0_llvm
@@ -32023,7 +32023,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 45718
+.word 45360
 _p_523_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___2_llvm:
 	.globl _p_523_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___2_llvm
 .private_extern _p_523_plt_SQLite_net_SQLite_SQLiteConnection_Query_T_REF_string_object___2_llvm
@@ -32034,7 +32034,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 45746
+.word 45388
 _p_524_plt_SQLite_net_SQLite_SQLiteConnection_QueryScalars_T_REF_string_object___llvm:
 	.globl _p_524_plt_SQLite_net_SQLite_SQLiteConnection_QueryScalars_T_REF_string_object___llvm
 .private_extern _p_524_plt_SQLite_net_SQLite_SQLiteConnection_QueryScalars_T_REF_string_object___llvm
@@ -32045,7 +32045,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 45774
+.word 45416
 _p_525_plt_SQLite_net_SQLite_SQLiteConnection_DeferredQuery_T_REF_string_object___llvm:
 	.globl _p_525_plt_SQLite_net_SQLite_SQLiteConnection_DeferredQuery_T_REF_string_object___llvm
 .private_extern _p_525_plt_SQLite_net_SQLite_SQLiteConnection_DeferredQuery_T_REF_string_object___llvm
@@ -32056,7 +32056,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 45802
+.word 45444
 _p_526_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_2_llvm:
 	.globl _p_526_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_2_llvm
 .private_extern _p_526_plt_SQLite_net_System_Linq_Enumerable_ToList_T_REF_System_Collections_Generic_IEnumerable_1_T_REF_2_llvm
@@ -32067,7 +32067,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 45818
+.word 45460
 _p_527_plt_SQLite_net_SQLite_SQLiteConnection_DeferredQuery_SQLite_TableMapping_string_object___llvm:
 	.globl _p_527_plt_SQLite_net_SQLite_SQLiteConnection_DeferredQuery_SQLite_TableMapping_string_object___llvm
 .private_extern _p_527_plt_SQLite_net_SQLite_SQLiteConnection_DeferredQuery_SQLite_TableMapping_string_object___llvm
@@ -32078,7 +32078,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 45834
+.word 45476
 _p_528_plt_SQLite_net_System_Linq_Enumerable_ToList_object_System_Collections_Generic_IEnumerable_1_object_llvm:
 	.globl _p_528_plt_SQLite_net_System_Linq_Enumerable_ToList_object_System_Collections_Generic_IEnumerable_1_object_llvm
 .private_extern _p_528_plt_SQLite_net_System_Linq_Enumerable_ToList_object_System_Collections_Generic_IEnumerable_1_object_llvm
@@ -32089,7 +32089,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 45837
+.word 45479
 _p_529_plt_SQLite_net_SQLite_SQLiteConnection_ReKey_string_llvm:
 	.globl _p_529_plt_SQLite_net_SQLite_SQLiteConnection_ReKey_string_llvm
 .private_extern _p_529_plt_SQLite_net_SQLite_SQLiteConnection_ReKey_string_llvm
@@ -32100,7 +32100,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 45849
+.word 45491
 _p_530_plt_SQLite_net_SQLite_SQLiteConnection_ReKey_byte___llvm:
 	.globl _p_530_plt_SQLite_net_SQLite_SQLiteConnection_ReKey_byte___llvm
 .private_extern _p_530_plt_SQLite_net_SQLite_SQLiteConnection_ReKey_byte___llvm
@@ -32111,7 +32111,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 45851
+.word 45493
 _p_531_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_531_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_531_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Count_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -32122,7 +32122,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 45872
+.word 45514
 _p_532_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ElementAt_int_llvm:
 	.globl _p_532_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ElementAt_int_llvm
 .private_extern _p_532_plt_SQLite_net_SQLite_TableQuery_1_T_REF_ElementAt_int_llvm
@@ -32133,7 +32133,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 45910
+.word 45552
 _p_533_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_533_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_533_plt_SQLite_net_SQLite_TableQuery_1_T_REF_First_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -32144,7 +32144,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 45948
+.word 45590
 _p_534_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm:
 	.globl _p_534_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
 .private_extern _p_534_plt_SQLite_net_SQLite_TableQuery_1_T_REF_FirstOrDefault_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_llvm
@@ -32155,7 +32155,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 45986
+.word 45628
 _p_535_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_0_llvm:
 	.globl _p_535_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_0_llvm
 .private_extern _p_535_plt_SQLite_net_SQLite_TableQuery_1_T_REF_Delete_System_Linq_Expressions_Expression_1_System_Func_2_T_REF_bool_0_llvm
@@ -32166,7 +32166,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 46024
+.word 45666
 _p_536_plt_SQLite_net_SQLite_SQLiteConnectionWithLock__ctor_SQLite_SQLiteConnectionString_llvm:
 	.globl _p_536_plt_SQLite_net_SQLite_SQLiteConnectionWithLock__ctor_SQLite_SQLiteConnectionString_llvm
 .private_extern _p_536_plt_SQLite_net_SQLite_SQLiteConnectionWithLock__ctor_SQLite_SQLiteConnectionString_llvm
@@ -32177,7 +32177,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 46043
+.word 45685
 _p_537_plt_SQLite_net_SQLite_SQLiteConnection_Close_llvm:
 	.globl _p_537_plt_SQLite_net_SQLite_SQLiteConnection_Close_llvm
 .private_extern _p_537_plt_SQLite_net_SQLite_SQLiteConnection_Close_llvm
@@ -32188,7 +32188,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 46046
+.word 45688
 _p_538_plt_SQLite_net__jit_icall_mono_thread_interruption_checkpoint_llvm:
 	.globl _p_538_plt_SQLite_net__jit_icall_mono_thread_interruption_checkpoint_llvm
 .private_extern _p_538_plt_SQLite_net__jit_icall_mono_thread_interruption_checkpoint_llvm
@@ -32199,7 +32199,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 46049
+.word 45691
 _p_539_plt_SQLite_net_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm:
 	.globl _p_539_plt_SQLite_net_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm
 .private_extern _p_539_plt_SQLite_net_System_Collections_Generic_KeyValuePair_PairToString_object_object_llvm
@@ -32210,7 +32210,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 46052
+.word 45694
 _p_540_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo__ctor_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_llvm:
 	.globl _p_540_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo__ctor_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_llvm
 .private_extern _p_540_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo__ctor_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_llvm
@@ -32221,7 +32221,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 46057
+.word 45699
 _p_541_plt_SQLite_net_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm:
 	.globl _p_541_plt_SQLite_net_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm
 .private_extern _p_541_plt_SQLite_net_System_ThrowHelper_ThrowIndexArgumentOutOfRange_NeedNonNegNumException_llvm
@@ -32232,7 +32232,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 46074
+.word 45716
 _p_542_plt_SQLite_net_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm:
 	.globl _p_542_plt_SQLite_net_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
 .private_extern _p_542_plt_SQLite_net_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
@@ -32243,7 +32243,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 46079
+.word 45721
 _p_543_plt_SQLite_net_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm:
 	.globl _p_543_plt_SQLite_net_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
 .private_extern _p_543_plt_SQLite_net_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
@@ -32254,7 +32254,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 46084
+.word 45726
 _p_544_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_ContainsKey_string_llvm:
 	.globl _p_544_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_ContainsKey_string_llvm
 .private_extern _p_544_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_ContainsKey_string_llvm
@@ -32265,7 +32265,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 46089
+.word 45731
 _p_545_plt_SQLite_net_System_Array_GetLowerBound_int_llvm:
 	.globl _p_545_plt_SQLite_net_System_Array_GetLowerBound_int_llvm
 .private_extern _p_545_plt_SQLite_net_System_Array_GetLowerBound_int_llvm
@@ -32276,7 +32276,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 46106
+.word 45748
 _p_546_plt_SQLite_net_System_ThrowHelper_ThrowArgumentException_Argument_IncompatibleArrayType_llvm:
 	.globl _p_546_plt_SQLite_net_System_ThrowHelper_ThrowArgumentException_Argument_IncompatibleArrayType_llvm
 .private_extern _p_546_plt_SQLite_net_System_ThrowHelper_ThrowArgumentException_Argument_IncompatibleArrayType_llvm
@@ -32287,7 +32287,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 46111
+.word 45753
 _p_547_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_string_SQLite_SQLiteConnection_IndexInfo_CopyTo_string___int_llvm:
 	.globl _p_547_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_string_SQLite_SQLiteConnection_IndexInfo_CopyTo_string___int_llvm
 .private_extern _p_547_plt_SQLite_net_System_Collections_Generic_Dictionary_2_KeyCollection_string_SQLite_SQLiteConnection_IndexInfo_CopyTo_string___int_llvm
@@ -32298,7 +32298,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 46116
+.word 45758
 _p_548_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo__ctor_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_llvm:
 	.globl _p_548_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo__ctor_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_llvm
 .private_extern _p_548_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_string_SQLite_SQLiteConnection_IndexInfo__ctor_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_llvm
@@ -32309,7 +32309,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 46133
+.word 45775
 _p_549_plt_SQLite_net__jit_icall_mono_gc_wbarrier_range_copy_llvm:
 	.globl _p_549_plt_SQLite_net__jit_icall_mono_gc_wbarrier_range_copy_llvm
 .private_extern _p_549_plt_SQLite_net__jit_icall_mono_gc_wbarrier_range_copy_llvm
@@ -32320,7 +32320,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 46148
+.word 45790
 _p_550_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_ContainsValue_SQLite_SQLiteConnection_IndexInfo_llvm:
 	.globl _p_550_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_ContainsValue_SQLite_SQLiteConnection_IndexInfo_llvm
 .private_extern _p_550_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_ContainsValue_SQLite_SQLiteConnection_IndexInfo_llvm
@@ -32331,7 +32331,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 46151
+.word 45793
 _p_551_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_string_SQLite_SQLiteConnection_IndexInfo_GetEnumerator_llvm:
 	.globl _p_551_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_string_SQLite_SQLiteConnection_IndexInfo_GetEnumerator_llvm
 .private_extern _p_551_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_string_SQLite_SQLiteConnection_IndexInfo_GetEnumerator_llvm
@@ -32342,7 +32342,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 46168
+.word 45810
 _p_552_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_string_SQLite_SQLiteConnection_IndexInfo_CopyTo_SQLite_SQLiteConnection_IndexInfo___int_llvm:
 	.globl _p_552_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_string_SQLite_SQLiteConnection_IndexInfo_CopyTo_SQLite_SQLiteConnection_IndexInfo___int_llvm
 .private_extern _p_552_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_string_SQLite_SQLiteConnection_IndexInfo_CopyTo_SQLite_SQLiteConnection_IndexInfo___int_llvm
@@ -32353,7 +32353,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 46183
+.word 45825
 _p_553_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexInfo_CreateComparer_llvm:
 	.globl _p_553_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexInfo_CreateComparer_llvm
 .private_extern _p_553_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexInfo_CreateComparer_llvm
@@ -32364,7 +32364,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 46198
+.word 45840
 _p_554_plt_SQLite_net_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm:
 	.globl _p_554_plt_SQLite_net_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
 .private_extern _p_554_plt_SQLite_net_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
@@ -32375,7 +32375,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 46213
+.word 45855
 _p_555_plt_SQLite_net_System_Array_IndexOf_SQLite_SQLiteConnection_IndexedColumn_SQLite_SQLiteConnection_IndexedColumn___SQLite_SQLiteConnection_IndexedColumn_int_int_llvm:
 	.globl _p_555_plt_SQLite_net_System_Array_IndexOf_SQLite_SQLiteConnection_IndexedColumn_SQLite_SQLiteConnection_IndexedColumn___SQLite_SQLiteConnection_IndexedColumn_int_int_llvm
 .private_extern _p_555_plt_SQLite_net_System_Array_IndexOf_SQLite_SQLiteConnection_IndexedColumn_SQLite_SQLiteConnection_IndexedColumn___SQLite_SQLiteConnection_IndexedColumn_int_int_llvm
@@ -32386,7 +32386,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 46218
+.word 45860
 _p_556_plt_SQLite_net_System_Array_Copy_System_Array_int_System_Array_int_int_llvm:
 	.globl _p_556_plt_SQLite_net_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
 .private_extern _p_556_plt_SQLite_net_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
@@ -32397,7 +32397,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 46233
+.word 45875
 _p_557_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm:
 	.globl _p_557_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm
 .private_extern _p_557_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumFailedVersion_llvm
@@ -32408,7 +32408,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 46238
+.word 45880
 _p_558_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm:
 	.globl _p_558_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm
 .private_extern _p_558_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_InvalidOperation_EnumOpCantHappen_llvm
@@ -32419,7 +32419,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 46243
+.word 45885
 _p_559_plt_SQLite_net__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm:
 	.globl _p_559_plt_SQLite_net__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
 .private_extern _p_559_plt_SQLite_net__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
@@ -32430,7 +32430,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 46248
+.word 45890
 _p_560_plt_SQLite_net__jit_icall_mono_string_to_utf8str_llvm:
 	.globl _p_560_plt_SQLite_net__jit_icall_mono_string_to_utf8str_llvm
 .private_extern _p_560_plt_SQLite_net__jit_icall_mono_string_to_utf8str_llvm
@@ -32441,7 +32441,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 46251
+.word 45893
 _p_561_plt_SQLite_net__jit_icall_monoeg_g_free_llvm:
 	.globl _p_561_plt_SQLite_net__jit_icall_monoeg_g_free_llvm
 .private_extern _p_561_plt_SQLite_net__jit_icall_monoeg_g_free_llvm
@@ -32452,7 +32452,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 46254
+.word 45896
 _p_562_plt_SQLite_net__jit_icall_ves_icall_string_new_wrapper_llvm:
 	.globl _p_562_plt_SQLite_net__jit_icall_ves_icall_string_new_wrapper_llvm
 .private_extern _p_562_plt_SQLite_net__jit_icall_ves_icall_string_new_wrapper_llvm
@@ -32463,7 +32463,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 46256
+.word 45898
 _p_563_plt_SQLite_net_System_Linq_Enumerable_SelectEnumerableIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm:
 	.globl _p_563_plt_SQLite_net_System_Linq_Enumerable_SelectEnumerableIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
 .private_extern _p_563_plt_SQLite_net_System_Linq_Enumerable_SelectEnumerableIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
@@ -32474,7 +32474,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 46259
+.word 45901
 _p_564_plt_SQLite_net_System_Linq_Enumerable_SelectIListIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_IList_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm:
 	.globl _p_564_plt_SQLite_net_System_Linq_Enumerable_SelectIListIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_IList_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
 .private_extern _p_564_plt_SQLite_net_System_Linq_Enumerable_SelectIListIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_IList_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
@@ -32485,7 +32485,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 46273
+.word 45916
 _p_565_plt_SQLite_net_System_Linq_Enumerable_SelectListIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm:
 	.globl _p_565_plt_SQLite_net_System_Linq_Enumerable_SelectListIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
 .private_extern _p_565_plt_SQLite_net_System_Linq_Enumerable_SelectListIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
@@ -32496,7 +32496,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 46287
+.word 45931
 _p_566_plt_SQLite_net_System_Linq_Enumerable_SelectArrayIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_SQLite_SQLiteConnection_IndexedColumn___System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm:
 	.globl _p_566_plt_SQLite_net_System_Linq_Enumerable_SelectArrayIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_SQLite_SQLiteConnection_IndexedColumn___System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
 .private_extern _p_566_plt_SQLite_net_System_Linq_Enumerable_SelectArrayIterator_2_SQLite_SQLiteConnection_IndexedColumn_string__ctor_SQLite_SQLiteConnection_IndexedColumn___System_Func_2_SQLite_SQLiteConnection_IndexedColumn_string_llvm
@@ -32507,7 +32507,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 46301
+.word 45946
 _p_567_plt_SQLite_net_System_Linq_ThrowHelper_ThrowArgumentNullException_System_Linq_ExceptionArgument_llvm:
 	.globl _p_567_plt_SQLite_net_System_Linq_ThrowHelper_ThrowArgumentNullException_System_Linq_ExceptionArgument_llvm
 .private_extern _p_567_plt_SQLite_net_System_Linq_ThrowHelper_ThrowArgumentNullException_System_Linq_ExceptionArgument_llvm
@@ -32518,7 +32518,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 46315
+.word 45961
 _p_568_plt_SQLite_net_System_Linq_Enumerable_WhereEnumerableIterator_1_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_llvm:
 	.globl _p_568_plt_SQLite_net_System_Linq_Enumerable_WhereEnumerableIterator_1_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_llvm
 .private_extern _p_568_plt_SQLite_net_System_Linq_Enumerable_WhereEnumerableIterator_1_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_llvm
@@ -32529,7 +32529,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 46320
+.word 45966
 _p_569_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerator_llvm:
 	.globl _p_569_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerator_llvm
 .private_extern _p_569_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerator_llvm
@@ -32540,7 +32540,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 46335
+.word 45981
 _p_570_plt_SQLite_net_System_Linq_ThrowHelper_ThrowNotSupportedException_llvm:
 	.globl _p_570_plt_SQLite_net_System_Linq_ThrowHelper_ThrowNotSupportedException_llvm
 .private_extern _p_570_plt_SQLite_net_System_Linq_ThrowHelper_ThrowNotSupportedException_llvm
@@ -32551,7 +32551,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 46349
+.word 45995
 _p_571_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
 	.globl _p_571_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
 .private_extern _p_571_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
@@ -32562,7 +32562,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 46354
+.word 46000
 _p_572_plt_SQLite_net_System_Linq_OrderedEnumerable_2_SQLite_SQLiteConnection_IndexedColumn_int__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IComparer_1_int_bool_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_llvm:
 	.globl _p_572_plt_SQLite_net_System_Linq_OrderedEnumerable_2_SQLite_SQLiteConnection_IndexedColumn_int__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IComparer_1_int_bool_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_llvm
 .private_extern _p_572_plt_SQLite_net_System_Linq_OrderedEnumerable_2_SQLite_SQLiteConnection_IndexedColumn_int__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IComparer_1_int_bool_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_llvm
@@ -32573,7 +32573,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 46359
+.word 46005
 _p_573_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_FindValue_string_llvm:
 	.globl _p_573_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_FindValue_string_llvm
 .private_extern _p_573_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_FindValue_string_llvm
@@ -32584,7 +32584,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 46374
+.word 46020
 _p_574_plt_SQLite_net_System_ThrowHelper_ThrowKeyNotFoundException_string_string_llvm:
 	.globl _p_574_plt_SQLite_net_System_ThrowHelper_ThrowKeyNotFoundException_string_string_llvm
 .private_extern _p_574_plt_SQLite_net_System_ThrowHelper_ThrowKeyNotFoundException_string_string_llvm
@@ -32595,7 +32595,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 46395
+.word 46041
 _p_575_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_TryInsert_string_SQLite_SQLiteConnection_IndexInfo_System_Collections_Generic_InsertionBehavior_llvm:
 	.globl _p_575_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_TryInsert_string_SQLite_SQLiteConnection_IndexInfo_System_Collections_Generic_InsertionBehavior_llvm
 .private_extern _p_575_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_TryInsert_string_SQLite_SQLiteConnection_IndexInfo_System_Collections_Generic_InsertionBehavior_llvm
@@ -32606,7 +32606,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 46413
+.word 46059
 _p_576_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_Grow_int_llvm:
 	.globl _p_576_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_Grow_int_llvm
 .private_extern _p_576_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_Grow_int_llvm
@@ -32617,7 +32617,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 46430
+.word 46076
 _p_577_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo__ctor_int_System_Collections_Generic_IEqualityComparer_1_string_llvm:
 	.globl _p_577_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo__ctor_int_System_Collections_Generic_IEqualityComparer_1_string_llvm
 .private_extern _p_577_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo__ctor_int_System_Collections_Generic_IEqualityComparer_1_string_llvm
@@ -32628,7 +32628,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 46447
+.word 46093
 _p_578_plt_SQLite_net_System_Collections_Generic_List_1_TSource_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_llvm:
 	.globl _p_578_plt_SQLite_net_System_Collections_Generic_List_1_TSource_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_llvm
 .private_extern _p_578_plt_SQLite_net_System_Collections_Generic_List_1_TSource_REF__ctor_System_Collections_Generic_IEnumerable_1_TSource_REF_llvm
@@ -32639,7 +32639,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+4096
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 46471
+.word 46117
 _p_579_plt_SQLite_net_System_Linq_Enumerable_TryGetFirst_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_bool__llvm:
 	.globl _p_579_plt_SQLite_net_System_Linq_Enumerable_TryGetFirst_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_bool__llvm
 .private_extern _p_579_plt_SQLite_net_System_Linq_Enumerable_TryGetFirst_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_bool__llvm
@@ -32650,7 +32650,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 46488
+.word 46134
 _p_580_plt_SQLite_net_System_Linq_ThrowHelper_ThrowNoElementsException_llvm:
 	.globl _p_580_plt_SQLite_net_System_Linq_ThrowHelper_ThrowNoElementsException_llvm
 .private_extern _p_580_plt_SQLite_net_System_Linq_ThrowHelper_ThrowNoElementsException_llvm
@@ -32661,7 +32661,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 46502
+.word 46148
 _p_581_plt_SQLite_net_System_Linq_Enumerable_TryGetFirst_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_bool__0_llvm:
 	.globl _p_581_plt_SQLite_net_System_Linq_Enumerable_TryGetFirst_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_bool__0_llvm
 .private_extern _p_581_plt_SQLite_net_System_Linq_Enumerable_TryGetFirst_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_bool__0_llvm
@@ -32672,7 +32672,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 46507
+.word 46153
 _p_582_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_T_REF__ctor_System_Collections_Generic_List_1_T_REF_llvm:
 	.globl _p_582_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_T_REF__ctor_System_Collections_Generic_List_1_T_REF_llvm
 .private_extern _p_582_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_T_REF__ctor_System_Collections_Generic_List_1_T_REF_llvm
@@ -32683,7 +32683,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 46528
+.word 46174
 _p_583_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF_StartNew_System_Threading_Tasks_Task_System_Func_1_TResult_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
 	.globl _p_583_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF_StartNew_System_Threading_Tasks_Task_System_Func_1_TResult_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
 .private_extern _p_583_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF_StartNew_System_Threading_Tasks_Task_System_Func_1_TResult_REF_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
@@ -32694,7 +32694,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 46552
+.word 46198
 _p_584_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF__ctor_System_Func_1_TResult_REF_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
 	.globl _p_584_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF__ctor_System_Func_1_TResult_REF_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
 .private_extern _p_584_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF__ctor_System_Func_1_TResult_REF_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
@@ -32705,7 +32705,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 46569
+.word 46215
 _p_585_plt_SQLite_net_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm:
 	.globl _p_585_plt_SQLite_net_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
 .private_extern _p_585_plt_SQLite_net_System_Threading_Tasks_Task_ScheduleAndStart_bool_llvm
@@ -32716,7 +32716,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 46584
+.word 46230
 _p_586_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm:
 	.globl _p_586_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm
 .private_extern _p_586_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm
@@ -32727,7 +32727,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 46589
+.word 46235
 _p_587_plt_SQLite_net_System_SZGenericArrayEnumerator_1_SQLite_SQLiteConnection_IndexedColumn_get_Current_llvm:
 	.globl _p_587_plt_SQLite_net_System_SZGenericArrayEnumerator_1_SQLite_SQLiteConnection_IndexedColumn_get_Current_llvm
 .private_extern _p_587_plt_SQLite_net_System_SZGenericArrayEnumerator_1_SQLite_SQLiteConnection_IndexedColumn_get_Current_llvm
@@ -32738,7 +32738,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 46594
+.word 46240
 _p_588_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexedColumn_IndexOf_SQLite_SQLiteConnection_IndexedColumn___SQLite_SQLiteConnection_IndexedColumn_int_int_llvm:
 	.globl _p_588_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexedColumn_IndexOf_SQLite_SQLiteConnection_IndexedColumn___SQLite_SQLiteConnection_IndexedColumn_int_int_llvm
 .private_extern _p_588_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexedColumn_IndexOf_SQLite_SQLiteConnection_IndexedColumn___SQLite_SQLiteConnection_IndexedColumn_int_int_llvm
@@ -32749,7 +32749,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 46609
+.word 46255
 _p_589_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexedColumn_CreateComparer_llvm:
 	.globl _p_589_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexedColumn_CreateComparer_llvm
 .private_extern _p_589_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_SQLite_SQLiteConnection_IndexedColumn_CreateComparer_llvm
@@ -32760,7 +32760,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 46624
+.word 46270
 _p_590_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm:
 	.globl _p_590_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
 .private_extern _p_590_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
@@ -32771,7 +32771,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 46663
+.word 46309
 _p_591_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm:
 	.globl _p_591_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
 .private_extern _p_591_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
@@ -32782,7 +32782,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 46700
+.word 46346
 _p_592_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm:
 	.globl _p_592_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
 .private_extern _p_592_plt_SQLite_net_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
@@ -32793,7 +32793,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 46740
+.word 46386
 _p_593_plt_SQLite_net_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm:
 	.globl _p_593_plt_SQLite_net_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm
 .private_extern _p_593_plt_SQLite_net_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm
@@ -32804,7 +32804,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 46758
+.word 46404
 _p_594_plt_SQLite_net_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm:
 	.globl _p_594_plt_SQLite_net_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm
 .private_extern _p_594_plt_SQLite_net_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm
@@ -32815,7 +32815,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 46763
+.word 46409
 _p_595_plt_SQLite_net_System_SZGenericArrayEnumerator_1_SQLite_SQLiteConnection_IndexInfo_get_Current_llvm:
 	.globl _p_595_plt_SQLite_net_System_SZGenericArrayEnumerator_1_SQLite_SQLiteConnection_IndexInfo_get_Current_llvm
 .private_extern _p_595_plt_SQLite_net_System_SZGenericArrayEnumerator_1_SQLite_SQLiteConnection_IndexInfo_get_Current_llvm
@@ -32826,7 +32826,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 46768
+.word 46414
 _p_596_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_string__ctor_llvm:
 	.globl _p_596_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_string__ctor_llvm
 .private_extern _p_596_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_string__ctor_llvm
@@ -32837,7 +32837,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 46791
+.word 46437
 _p_597_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerator_llvm:
 	.globl _p_597_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerator_llvm
 .private_extern _p_597_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerator_llvm
@@ -32848,7 +32848,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 46809
+.word 46455
 _p_598_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn_MoveNext_llvm:
 	.globl _p_598_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn_MoveNext_llvm
 .private_extern _p_598_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn_MoveNext_llvm
@@ -32859,7 +32859,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 46826
+.word 46472
 _p_599_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn_MoveNextRare_llvm:
 	.globl _p_599_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn_MoveNextRare_llvm
 .private_extern _p_599_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn_MoveNextRare_llvm
@@ -32870,7 +32870,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 46841
+.word 46487
 _p_600_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_SQLite_SQLiteConnection_IndexedColumn__ctor_llvm:
 	.globl _p_600_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_SQLite_SQLiteConnection_IndexedColumn__ctor_llvm
 .private_extern _p_600_plt_SQLite_net_System_Linq_Enumerable_Iterator_1_SQLite_SQLiteConnection_IndexedColumn__ctor_llvm
@@ -32881,7 +32881,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 46856
+.word 46502
 _p_601_plt_SQLite_net_System_Linq_Utilities_CombinePredicates_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_llvm:
 	.globl _p_601_plt_SQLite_net_System_Linq_Utilities_CombinePredicates_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_llvm
 .private_extern _p_601_plt_SQLite_net_System_Linq_Utilities_CombinePredicates_SQLite_SQLiteConnection_IndexedColumn_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_bool_llvm
@@ -32892,7 +32892,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 46870
+.word 46516
 _p_602_plt_SQLite_net_System_Collections_Generic_Comparer_1_int_get_Default_llvm:
 	.globl _p_602_plt_SQLite_net_System_Collections_Generic_Comparer_1_int_get_Default_llvm
 .private_extern _p_602_plt_SQLite_net_System_Collections_Generic_Comparer_1_int_get_Default_llvm
@@ -32903,7 +32903,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 46894
+.word 46540
 _p_603_plt_SQLite_net_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerableSorter_llvm:
 	.globl _p_603_plt_SQLite_net_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerableSorter_llvm
 .private_extern _p_603_plt_SQLite_net_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_GetEnumerableSorter_llvm
@@ -32914,7 +32914,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 46913
+.word 46559
 _p_604_plt_SQLite_net_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_Sort_SQLite_SQLiteConnection_IndexedColumn___int_llvm:
 	.globl _p_604_plt_SQLite_net_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_Sort_SQLite_SQLiteConnection_IndexedColumn___int_llvm
 .private_extern _p_604_plt_SQLite_net_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_Sort_SQLite_SQLiteConnection_IndexedColumn___int_llvm
@@ -32925,7 +32925,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 46928
+.word 46574
 _p_605_plt_SQLite_net_System_Linq_EnumerableSorter_2_SQLite_SQLiteConnection_IndexedColumn_int__ctor_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IComparer_1_int_bool_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_llvm:
 	.globl _p_605_plt_SQLite_net_System_Linq_EnumerableSorter_2_SQLite_SQLiteConnection_IndexedColumn_int__ctor_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IComparer_1_int_bool_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_llvm
 .private_extern _p_605_plt_SQLite_net_System_Linq_EnumerableSorter_2_SQLite_SQLiteConnection_IndexedColumn_int__ctor_System_Func_2_SQLite_SQLiteConnection_IndexedColumn_int_System_Collections_Generic_IComparer_1_int_bool_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_llvm
@@ -32936,7 +32936,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 46943
+.word 46589
 _p_606_plt_SQLite_net_System_Collections_Generic_Comparer_1_string_get_Default_llvm:
 	.globl _p_606_plt_SQLite_net_System_Collections_Generic_Comparer_1_string_get_Default_llvm
 .private_extern _p_606_plt_SQLite_net_System_Collections_Generic_Comparer_1_string_get_Default_llvm
@@ -32947,7 +32947,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 46967
+.word 46613
 _p_607_plt_SQLite_net_System_StringComparer_get_CurrentCulture_llvm:
 	.globl _p_607_plt_SQLite_net_System_StringComparer_get_CurrentCulture_llvm
 .private_extern _p_607_plt_SQLite_net_System_StringComparer_get_CurrentCulture_llvm
@@ -32958,7 +32958,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 46986
+.word 46632
 _p_608_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm:
 	.globl _p_608_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm
 .private_extern _p_608_plt_SQLite_net_System_ThrowHelper_ThrowInvalidOperationException_ConcurrentOperationsNotSupported_llvm
@@ -32969,7 +32969,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 46991
+.word 46637
 _p_609_plt_SQLite_net_System_Marvin_ComputeHash32_byte__uint_uint_uint_llvm:
 	.globl _p_609_plt_SQLite_net_System_Marvin_ComputeHash32_byte__uint_uint_uint_llvm
 .private_extern _p_609_plt_SQLite_net_System_Marvin_ComputeHash32_byte__uint_uint_uint_llvm
@@ -32980,7 +32980,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 46996
+.word 46642
 _p_610_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_string_CreateComparer_llvm:
 	.globl _p_610_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_string_CreateComparer_llvm
 .private_extern _p_610_plt_SQLite_net_System_Collections_Generic_EqualityComparer_1_string_CreateComparer_llvm
@@ -32991,7 +32991,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 47010
+.word 46656
 _p_611_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Resize_int_bool_llvm:
 	.globl _p_611_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Resize_int_bool_llvm
 .private_extern _p_611_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Resize_int_bool_llvm
@@ -33002,7 +33002,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 47029
+.word 46675
 _p_612_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Resize_llvm:
 	.globl _p_612_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Resize_llvm
 .private_extern _p_612_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Resize_llvm
@@ -33013,7 +33013,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 47046
+.word 46692
 _p_613_plt_SQLite_net_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_string_string_llvm:
 	.globl _p_613_plt_SQLite_net_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_string_string_llvm
 .private_extern _p_613_plt_SQLite_net_System_ThrowHelper_ThrowAddingDuplicateWithKeyArgumentException_string_string_llvm
@@ -33024,7 +33024,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 47063
+.word 46709
 _p_614_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Initialize_int_llvm:
 	.globl _p_614_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Initialize_int_llvm
 .private_extern _p_614_plt_SQLite_net_System_Collections_Generic_Dictionary_2_string_SQLite_SQLiteConnection_IndexInfo_Initialize_int_llvm
@@ -33035,7 +33035,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 47081
+.word 46727
 _p_615_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_set_Capacity_int_llvm:
 	.globl _p_615_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_set_Capacity_int_llvm
 .private_extern _p_615_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_set_Capacity_int_llvm
@@ -33046,7 +33046,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 47098
+.word 46744
 _p_616_plt_SQLite_net_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm:
 	.globl _p_616_plt_SQLite_net_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm
 .private_extern _p_616_plt_SQLite_net_System_Collections_Generic_NonRandomizedStringEqualityComparer_GetStringComparer_object_llvm
@@ -33057,7 +33057,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 47115
+.word 46761
 _p_617_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
 	.globl _p_617_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
 .private_extern _p_617_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
@@ -33068,7 +33068,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 47120
+.word 46766
 _p_618_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_Add_T_REF_llvm:
 	.globl _p_618_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_Add_T_REF_llvm
 .private_extern _p_618_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_Add_T_REF_llvm
@@ -33079,7 +33079,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 47125
+.word 46771
 _p_619_plt_SQLite_net_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm:
 	.globl _p_619_plt_SQLite_net_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
 .private_extern _p_619_plt_SQLite_net_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler_llvm
@@ -33090,7 +33090,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 47140
+.word 46786
 _p_620_plt_SQLite_net_System_Threading_Tasks_TaskCache_CreateCacheableTask_TResult_REF_TResult_REF_llvm:
 	.globl _p_620_plt_SQLite_net_System_Threading_Tasks_TaskCache_CreateCacheableTask_TResult_REF_TResult_REF_llvm
 .private_extern _p_620_plt_SQLite_net_System_Threading_Tasks_TaskCache_CreateCacheableTask_TResult_REF_TResult_REF_llvm
@@ -33101,7 +33101,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 47145
+.word 46791
 _p_621_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_llvm:
 	.globl _p_621_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_llvm
 .private_extern _p_621_plt_SQLite_net_System_Collections_Generic_List_1_Enumerator_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_List_1_SQLite_SQLiteConnection_IndexedColumn_llvm
@@ -33112,7 +33112,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 47161
+.word 46807
 _p_622_plt_SQLite_net_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_ComputeMap_SQLite_SQLiteConnection_IndexedColumn___int_llvm:
 	.globl _p_622_plt_SQLite_net_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_ComputeMap_SQLite_SQLiteConnection_IndexedColumn___int_llvm
 .private_extern _p_622_plt_SQLite_net_System_Linq_EnumerableSorter_1_SQLite_SQLiteConnection_IndexedColumn_ComputeMap_SQLite_SQLiteConnection_IndexedColumn___int_llvm
@@ -33123,7 +33123,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 47176
+.word 46822
 _p_623_plt_SQLite_net_System_Linq_Buffer_1_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_llvm:
 	.globl _p_623_plt_SQLite_net_System_Linq_Buffer_1_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_llvm
 .private_extern _p_623_plt_SQLite_net_System_Linq_Buffer_1_SQLite_SQLiteConnection_IndexedColumn__ctor_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_llvm
@@ -33134,7 +33134,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 47191
+.word 46837
 _p_624_plt_SQLite_net_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_SortedMap_System_Linq_Buffer_1_SQLite_SQLiteConnection_IndexedColumn_llvm:
 	.globl _p_624_plt_SQLite_net_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_SortedMap_System_Linq_Buffer_1_SQLite_SQLiteConnection_IndexedColumn_llvm
 .private_extern _p_624_plt_SQLite_net_System_Linq_OrderedEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_SortedMap_System_Linq_Buffer_1_SQLite_SQLiteConnection_IndexedColumn_llvm
@@ -33145,7 +33145,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 47206
+.word 46852
 _p_625_plt_SQLite_net_System_Collections_Generic_EnumerableHelpers_ToArray_SQLite_SQLiteConnection_IndexedColumn_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_int__llvm:
 	.globl _p_625_plt_SQLite_net_System_Collections_Generic_EnumerableHelpers_ToArray_SQLite_SQLiteConnection_IndexedColumn_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_int__llvm
 .private_extern _p_625_plt_SQLite_net_System_Collections_Generic_EnumerableHelpers_ToArray_SQLite_SQLiteConnection_IndexedColumn_System_Collections_Generic_IEnumerable_1_SQLite_SQLiteConnection_IndexedColumn_int__llvm
@@ -33156,7 +33156,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 47221
+.word 46867
 _p_626_plt_SQLite_net_System_MemoryExtensions_Sort_int_System_Span_1_int_System_Comparison_1_int_llvm:
 	.globl _p_626_plt_SQLite_net_System_MemoryExtensions_Sort_int_System_Span_1_int_System_Comparison_1_int_llvm
 .private_extern _p_626_plt_SQLite_net_System_MemoryExtensions_Sort_int_System_Span_1_int_System_Comparison_1_int_llvm
@@ -33167,7 +33167,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 47235
+.word 46881
 _p_627_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
 	.globl _p_627_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
 .private_extern _p_627_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
@@ -33178,7 +33178,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 47253
+.word 46899
 _p_628_plt_SQLite_net_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm:
 	.globl _p_628_plt_SQLite_net_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
 .private_extern _p_628_plt_SQLite_net_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
@@ -33189,7 +33189,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 47258
+.word 46904
 _p_629_plt_SQLite_net_System_Collections_HashHelpers_GetPrime_int_llvm:
 	.globl _p_629_plt_SQLite_net_System_Collections_HashHelpers_GetPrime_int_llvm
 .private_extern _p_629_plt_SQLite_net_System_Collections_HashHelpers_GetPrime_int_llvm
@@ -33200,7 +33200,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 47263
+.word 46909
 _p_630_plt_SQLite_net_System_Collections_HashHelpers_ExpandPrime_int_llvm:
 	.globl _p_630_plt_SQLite_net_System_Collections_HashHelpers_ExpandPrime_int_llvm
 .private_extern _p_630_plt_SQLite_net_System_Collections_HashHelpers_ExpandPrime_int_llvm
@@ -33211,7 +33211,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 47268
+.word 46914
 _p_631_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm:
 	.globl _p_631_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
 .private_extern _p_631_plt_SQLite_net_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
@@ -33222,7 +33222,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 47273
+.word 46919
 _p_632_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_AddWithResize_T_REF_llvm:
 	.globl _p_632_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_AddWithResize_T_REF_llvm
 .private_extern _p_632_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_AddWithResize_T_REF_llvm
@@ -33233,7 +33233,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 47278
+.word 46924
 _p_633_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF__ctor_bool_TResult_REF_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
 	.globl _p_633_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF__ctor_bool_TResult_REF_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
 .private_extern _p_633_plt_SQLite_net_System_Threading_Tasks_Task_1_TResult_REF__ctor_bool_TResult_REF_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
@@ -33244,7 +33244,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 47300
+.word 46946
 _p_634_plt_SQLite_net_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm:
 	.globl _p_634_plt_SQLite_net_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
 .private_extern _p_634_plt_SQLite_net_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken_llvm
@@ -33255,7 +33255,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 47317
+.word 46963
 _p_635_plt_SQLite_net_System_Array_Resize_SQLite_SQLiteConnection_IndexedColumn_SQLite_SQLiteConnection_IndexedColumn____int_llvm:
 	.globl _p_635_plt_SQLite_net_System_Array_Resize_SQLite_SQLiteConnection_IndexedColumn_SQLite_SQLiteConnection_IndexedColumn____int_llvm
 .private_extern _p_635_plt_SQLite_net_System_Array_Resize_SQLite_SQLiteConnection_IndexedColumn_SQLite_SQLiteConnection_IndexedColumn____int_llvm
@@ -33266,7 +33266,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 47322
+.word 46968
 _p_636_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_Grow_int_llvm:
 	.globl _p_636_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_Grow_int_llvm
 .private_extern _p_636_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_Grow_int_llvm
@@ -33277,7 +33277,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 47337
+.word 46983
 _p_637_plt_SQLite_net_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
 	.globl _p_637_plt_SQLite_net_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
 .private_extern _p_637_plt_SQLite_net_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
@@ -33288,7 +33288,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 47352
+.word 46998
 _p_638_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_set_Capacity_int_llvm:
 	.globl _p_638_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_set_Capacity_int_llvm
 .private_extern _p_638_plt_SQLite_net_System_Collections_Generic_List_1_T_REF_set_Capacity_int_llvm
@@ -33299,7 +33299,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 47357
+.word 47003
 _p_639_plt_SQLite_net_System_Guid_NewGuid_llvm:
 	.globl _p_639_plt_SQLite_net_System_Guid_NewGuid_llvm
 .private_extern _p_639_plt_SQLite_net_System_Guid_NewGuid_llvm
@@ -33310,7 +33310,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 47372
+.word 47018
 _p_640_plt_SQLite_net_SQLite_SQLiteConnection_GetInsertCommand_SQLite_TableMapping_string_llvm:
 	.globl _p_640_plt_SQLite_net_SQLite_SQLiteConnection_GetInsertCommand_SQLite_TableMapping_string_llvm
 .private_extern _p_640_plt_SQLite_net_SQLite_SQLiteConnection_GetInsertCommand_SQLite_TableMapping_string_llvm
@@ -33321,7 +33321,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 47377
+.word 47023
 _p_641_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_ExecuteNonQuery_object___llvm:
 	.globl _p_641_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_ExecuteNonQuery_object___llvm
 .private_extern _p_641_plt_SQLite_net_SQLite_PreparedSqlLiteInsertCommand_ExecuteNonQuery_object___llvm
@@ -33332,7 +33332,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 47380
+.word 47026
 _p_642_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLite3_Result_string_SQLite_TableMapping_object_llvm:
 	.globl _p_642_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLite3_Result_string_SQLite_TableMapping_object_llvm
 .private_extern _p_642_plt_SQLite_net_SQLite_NotNullConstraintViolationException_New_SQLite_SQLite3_Result_string_SQLite_TableMapping_object_llvm
@@ -33343,7 +33343,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 47383
+.word 47029
 _p_643_plt_SQLite_net_SQLite_SQLite3_LastInsertRowid_SQLitePCL_sqlite3_llvm:
 	.globl _p_643_plt_SQLite_net_SQLite_SQLite3_LastInsertRowid_SQLitePCL_sqlite3_llvm
 .private_extern _p_643_plt_SQLite_net_SQLite_SQLite3_LastInsertRowid_SQLitePCL_sqlite3_llvm
@@ -33354,7 +33354,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 47385
+.word 47031
 _p_644_plt_SQLite_net_SQLite_TableMapping_SetAutoIncPK_object_long_llvm:
 	.globl _p_644_plt_SQLite_net_SQLite_TableMapping_SetAutoIncPK_object_long_llvm
 .private_extern _p_644_plt_SQLite_net_SQLite_TableMapping_SetAutoIncPK_object_long_llvm
@@ -33365,7 +33365,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 47388
+.word 47034
 _p_645_plt_SQLite_net__jit_icall_mono_arch_throw_corlib_exception_llvm:
 	.globl _p_645_plt_SQLite_net__jit_icall_mono_arch_throw_corlib_exception_llvm
 .private_extern _p_645_plt_SQLite_net__jit_icall_mono_arch_throw_corlib_exception_llvm
@@ -33376,7 +33376,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 47391
+.word 47037
 _p_646_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_get_Values_llvm:
 	.globl _p_646_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_get_Values_llvm
 .private_extern _p_646_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_get_Values_llvm
@@ -33387,7 +33387,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 47393
+.word 47039
 _p_647_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_GetEnumerator_llvm:
 	.globl _p_647_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_GetEnumerator_llvm
 .private_extern _p_647_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_GetEnumerator_llvm
@@ -33398,7 +33398,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 47404
+.word 47050
 _p_648_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_MoveNext_llvm:
 	.globl _p_648_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_MoveNext_llvm
 .private_extern _p_648_plt_SQLite_net_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_MoveNext_llvm
@@ -33409,7 +33409,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 47415
+.word 47061
 _p_649_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_Clear_llvm:
 	.globl _p_649_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_Clear_llvm
 .private_extern _p_649_plt_SQLite_net_System_Collections_Generic_Dictionary_2_System_Tuple_2_string_string_SQLite_PreparedSqlLiteInsertCommand_Clear_llvm
@@ -33420,7 +33420,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 47426
+.word 47072
 _p_650_plt_SQLite_net_SQLite_SQLite3_Close2_SQLitePCL_sqlite3_llvm:
 	.globl _p_650_plt_SQLite_net_SQLite_SQLite3_Close2_SQLitePCL_sqlite3_llvm
 .private_extern _p_650_plt_SQLite_net_SQLite_SQLite3_Close2_SQLitePCL_sqlite3_llvm
@@ -33431,7 +33431,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 47437
+.word 47083
 _p_651_plt_SQLite_net_SQLite_SQLiteAsyncConnection_GetConnectionAndTransactionLock_object__llvm:
 	.globl _p_651_plt_SQLite_net_SQLite_SQLiteAsyncConnection_GetConnectionAndTransactionLock_object__llvm
 .private_extern _p_651_plt_SQLite_net_SQLite_SQLiteAsyncConnection_GetConnectionAndTransactionLock_object__llvm
@@ -33442,7 +33442,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 47440
+.word 47086
 _p_652_plt_SQLite_net_System_Linq_Expressions_LambdaExpression_get_Body_llvm:
 	.globl _p_652_plt_SQLite_net_System_Linq_Expressions_LambdaExpression_get_Body_llvm
 .private_extern _p_652_plt_SQLite_net_System_Linq_Expressions_LambdaExpression_get_Body_llvm
@@ -33453,7 +33453,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 47443
+.word 47089
 _p_653_plt_SQLite_net_System_Linq_Expressions_UnaryExpression_get_Operand_llvm:
 	.globl _p_653_plt_SQLite_net_System_Linq_Expressions_UnaryExpression_get_Operand_llvm
 .private_extern _p_653_plt_SQLite_net_System_Linq_Expressions_UnaryExpression_get_Operand_llvm
@@ -33464,7 +33464,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 47448
+.word 47094
 _p_654_plt_SQLite_net_System_Reflection_PropertyInfo_op_Equality_System_Reflection_PropertyInfo_System_Reflection_PropertyInfo_llvm:
 	.globl _p_654_plt_SQLite_net_System_Reflection_PropertyInfo_op_Equality_System_Reflection_PropertyInfo_System_Reflection_PropertyInfo_llvm
 .private_extern _p_654_plt_SQLite_net_System_Reflection_PropertyInfo_op_Equality_System_Reflection_PropertyInfo_System_Reflection_PropertyInfo_llvm
@@ -33475,7 +33475,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 47453
+.word 47099
 _p_655_plt_SQLite_net_SQLite_TableMapping_Column_get_Name_llvm:
 	.globl _p_655_plt_SQLite_net_SQLite_TableMapping_Column_get_Name_llvm
 .private_extern _p_655_plt_SQLite_net_SQLite_TableMapping_Column_get_Name_llvm
@@ -33486,7 +33486,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 47458
+.word 47104
 _p_656_plt_SQLite_net_SQLite_TableMapping_get_TableName_llvm:
 	.globl _p_656_plt_SQLite_net_SQLite_TableMapping_get_TableName_llvm
 .private_extern _p_656_plt_SQLite_net_SQLite_TableMapping_get_TableName_llvm
@@ -33497,7 +33497,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 47461
+.word 47107
 _p_657_plt_SQLite_net_System_Diagnostics_Stopwatch__ctor_llvm:
 	.globl _p_657_plt_SQLite_net_System_Diagnostics_Stopwatch__ctor_llvm
 .private_extern _p_657_plt_SQLite_net_System_Diagnostics_Stopwatch__ctor_llvm
@@ -33508,7 +33508,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 47464
+.word 47110
 _p_658_plt_SQLite_net_System_Diagnostics_Stopwatch_Reset_llvm:
 	.globl _p_658_plt_SQLite_net_System_Diagnostics_Stopwatch_Reset_llvm
 .private_extern _p_658_plt_SQLite_net_System_Diagnostics_Stopwatch_Reset_llvm
@@ -33519,7 +33519,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 47469
+.word 47115
 _p_659_plt_SQLite_net_wrapper_alloc_object_Alloc_intptr_llvm:
 	.globl _p_659_plt_SQLite_net_wrapper_alloc_object_Alloc_intptr_llvm
 .private_extern _p_659_plt_SQLite_net_wrapper_alloc_object_Alloc_intptr_llvm
@@ -33530,7 +33530,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 47474
+.word 47120
 _p_660_plt_SQLite_net_SQLite_TableMapping_get_GetByPrimaryKeySql_llvm:
 	.globl _p_660_plt_SQLite_net_SQLite_TableMapping_get_GetByPrimaryKeySql_llvm
 .private_extern _p_660_plt_SQLite_net_SQLite_TableMapping_get_GetByPrimaryKeySql_llvm
@@ -33541,7 +33541,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 47482
+.word 47128
 _p_661_plt_SQLite_net__jit_icall_mono_object_castclass_unbox_llvm:
 	.globl _p_661_plt_SQLite_net__jit_icall_mono_object_castclass_unbox_llvm
 .private_extern _p_661_plt_SQLite_net__jit_icall_mono_object_castclass_unbox_llvm
@@ -33552,7 +33552,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 47485
+.word 47131
 _p_662_plt_SQLite_net_SQLite_TableMapping_Column_get_PropertyInfo_llvm:
 	.globl _p_662_plt_SQLite_net_SQLite_TableMapping_Column_get_PropertyInfo_llvm
 .private_extern _p_662_plt_SQLite_net_SQLite_TableMapping_Column_get_PropertyInfo_llvm
@@ -33563,7 +33563,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 47488
+.word 47134
 _p_663_plt_SQLite_net_SQLite_BaseTableQuery__ctor_llvm:
 	.globl _p_663_plt_SQLite_net_SQLite_BaseTableQuery__ctor_llvm
 .private_extern _p_663_plt_SQLite_net_SQLite_BaseTableQuery__ctor_llvm
@@ -33574,7 +33574,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 47491
+.word 47137
 _p_664_plt_SQLite_net_System_Collections_Generic_List_1_object__ctor_llvm:
 	.globl _p_664_plt_SQLite_net_System_Collections_Generic_List_1_object__ctor_llvm
 .private_extern _p_664_plt_SQLite_net_System_Collections_Generic_List_1_object__ctor_llvm
@@ -33585,7 +33585,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 47494
+.word 47140
 _p_665_plt_SQLite_net_System_Nullable_1_int__ctor_int_llvm:
 	.globl _p_665_plt_SQLite_net_System_Nullable_1_int__ctor_int_llvm
 .private_extern _p_665_plt_SQLite_net_System_Nullable_1_int__ctor_int_llvm
@@ -33596,7 +33596,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 47513
+.word 47159
 _p_666_plt_SQLite_net_System_Linq_Expressions_MemberExpression_get_Expression_llvm:
 	.globl _p_666_plt_SQLite_net_System_Linq_Expressions_MemberExpression_get_Expression_llvm
 .private_extern _p_666_plt_SQLite_net_System_Linq_Expressions_MemberExpression_get_Expression_llvm
@@ -33607,7 +33607,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 47524
+.word 47170
 _p_667_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering__ctor_llvm:
 	.globl _p_667_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering__ctor_llvm
 .private_extern _p_667_plt_SQLite_net_System_Collections_Generic_List_1_SQLite_BaseTableQuery_Ordering__ctor_llvm
@@ -33618,7 +33618,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 47529
+.word 47175
 _p_668_plt_SQLite_net_SQLite_BaseTableQuery_Ordering__ctor_llvm:
 	.globl _p_668_plt_SQLite_net_SQLite_BaseTableQuery_Ordering__ctor_llvm
 .private_extern _p_668_plt_SQLite_net_SQLite_BaseTableQuery_Ordering__ctor_llvm
@@ -33629,7 +33629,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 47548
+.word 47194
 _p_669_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_set_ColumnName_string_llvm:
 	.globl _p_669_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_set_ColumnName_string_llvm
 .private_extern _p_669_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_set_ColumnName_string_llvm
@@ -33640,7 +33640,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 47551
+.word 47197
 _p_670_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_set_Ascending_bool_llvm:
 	.globl _p_670_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_set_Ascending_bool_llvm
 .private_extern _p_670_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_set_Ascending_bool_llvm
@@ -33651,7 +33651,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 47554
+.word 47200
 _p_671_plt_SQLite_net_System_Linq_Expressions_BinaryExpression_get_Left_llvm:
 	.globl _p_671_plt_SQLite_net_System_Linq_Expressions_BinaryExpression_get_Left_llvm
 .private_extern _p_671_plt_SQLite_net_System_Linq_Expressions_BinaryExpression_get_Left_llvm
@@ -33662,7 +33662,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 47557
+.word 47203
 _p_672_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Method_llvm:
 	.globl _p_672_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Method_llvm
 .private_extern _p_672_plt_SQLite_net_System_Linq_Expressions_MethodCallExpression_get_Method_llvm
@@ -33673,7 +33673,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 47562
+.word 47208
 _p_673_plt_SQLite_net_System_Linq_Expressions_BinaryExpression_get_Right_llvm:
 	.globl _p_673_plt_SQLite_net_System_Linq_Expressions_BinaryExpression_get_Right_llvm
 .private_extern _p_673_plt_SQLite_net_System_Linq_Expressions_BinaryExpression_get_Right_llvm
@@ -33684,7 +33684,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 47567
+.word 47213
 _p_674_plt_SQLite_net__jit_icall_mono_ldftn_llvm:
 	.globl _p_674_plt_SQLite_net__jit_icall_mono_ldftn_llvm
 .private_extern _p_674_plt_SQLite_net__jit_icall_mono_ldftn_llvm
@@ -33695,7 +33695,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 47572
+.word 47218
 _p_675_plt_SQLite_net_System_Linq_Expressions_ConstantExpression_get_Value_llvm:
 	.globl _p_675_plt_SQLite_net_System_Linq_Expressions_ConstantExpression_get_Value_llvm
 .private_extern _p_675_plt_SQLite_net_System_Linq_Expressions_ConstantExpression_get_Value_llvm
@@ -33706,7 +33706,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 47575
+.word 47221
 _p_676_plt_SQLite_net_System_Threading_Tasks_Task_get_Factory_llvm:
 	.globl _p_676_plt_SQLite_net_System_Threading_Tasks_Task_get_Factory_llvm
 .private_extern _p_676_plt_SQLite_net_System_Threading_Tasks_Task_get_Factory_llvm
@@ -33717,7 +33717,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 47580
+.word 47226
 _p_677_plt_SQLite_net_System_Threading_CancellationToken_get_None_llvm:
 	.globl _p_677_plt_SQLite_net_System_Threading_CancellationToken_get_None_llvm
 .private_extern _p_677_plt_SQLite_net_System_Threading_CancellationToken_get_None_llvm
@@ -33728,7 +33728,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 47585
+.word 47231
 _p_678_plt_SQLite_net_System_Threading_Tasks_TaskScheduler_get_Default_llvm:
 	.globl _p_678_plt_SQLite_net_System_Threading_Tasks_TaskScheduler_get_Default_llvm
 .private_extern _p_678_plt_SQLite_net_System_Threading_Tasks_TaskScheduler_get_Default_llvm
@@ -33739,7 +33739,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 47590
+.word 47236
 _p_679_plt_SQLite_net_SQLite_TableMapping_get_Method_llvm:
 	.globl _p_679_plt_SQLite_net_SQLite_TableMapping_get_Method_llvm
 .private_extern _p_679_plt_SQLite_net_SQLite_TableMapping_get_Method_llvm
@@ -33750,7 +33750,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 47595
+.word 47241
 _p_680_plt_SQLite_net_SQLite_TableMapping_get_Columns_llvm:
 	.globl _p_680_plt_SQLite_net_SQLite_TableMapping_get_Columns_llvm
 .private_extern _p_680_plt_SQLite_net_SQLite_TableMapping_get_Columns_llvm
@@ -33761,7 +33761,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 47598
+.word 47244
 _p_681_plt_SQLite_net_System_Math_Min_int_int_llvm:
 	.globl _p_681_plt_SQLite_net_System_Math_Min_int_int_llvm
 .private_extern _p_681_plt_SQLite_net_System_Math_Min_int_int_llvm
@@ -33772,7 +33772,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 47601
+.word 47247
 _p_682_plt_SQLite_net_SQLite_TableMapping_get_MappedType_llvm:
 	.globl _p_682_plt_SQLite_net_SQLite_TableMapping_get_MappedType_llvm
 .private_extern _p_682_plt_SQLite_net_SQLite_TableMapping_get_MappedType_llvm
@@ -33783,7 +33783,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 47606
+.word 47252
 _p_683_plt_SQLite_net_System_Reflection_MethodInfo_op_Inequality_System_Reflection_MethodInfo_System_Reflection_MethodInfo_llvm:
 	.globl _p_683_plt_SQLite_net_System_Reflection_MethodInfo_op_Inequality_System_Reflection_MethodInfo_System_Reflection_MethodInfo_llvm
 .private_extern _p_683_plt_SQLite_net_System_Reflection_MethodInfo_op_Inequality_System_Reflection_MethodInfo_System_Reflection_MethodInfo_llvm
@@ -33794,7 +33794,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 47609
+.word 47255
 _p_684_plt_SQLite_net_SQLite_TableMapping_Column_get_ColumnType_llvm:
 	.globl _p_684_plt_SQLite_net_SQLite_TableMapping_Column_get_ColumnType_llvm
 .private_extern _p_684_plt_SQLite_net_SQLite_TableMapping_Column_get_ColumnType_llvm
@@ -33805,7 +33805,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 47614
+.word 47260
 _p_685_plt_SQLite_net_System_TimeSpan__ctor_long_llvm:
 	.globl _p_685_plt_SQLite_net_System_TimeSpan__ctor_long_llvm
 .private_extern _p_685_plt_SQLite_net_System_TimeSpan__ctor_long_llvm
@@ -33816,7 +33816,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 47617
+.word 47263
 _p_686_plt_SQLite_net_System_Globalization_CultureInfo_get_InvariantCulture_llvm:
 	.globl _p_686_plt_SQLite_net_System_Globalization_CultureInfo_get_InvariantCulture_llvm
 .private_extern _p_686_plt_SQLite_net_System_Globalization_CultureInfo_get_InvariantCulture_llvm
@@ -33827,7 +33827,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 47622
+.word 47268
 _p_687_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_get_ColumnName_llvm:
 	.globl _p_687_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_get_ColumnName_llvm
 .private_extern _p_687_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_get_ColumnName_llvm
@@ -33838,7 +33838,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 47627
+.word 47273
 _p_688_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_get_Ascending_llvm:
 	.globl _p_688_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_get_Ascending_llvm
 .private_extern _p_688_plt_SQLite_net_SQLite_BaseTableQuery_Ordering_get_Ascending_llvm
@@ -33849,7 +33849,7 @@ adrp x16, mono_aot_SQLite_net_got@PAGE+8192
 add x16, x16, mono_aot_SQLite_net_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 47630
+.word 47276
 plt_end:
 _mono_aot_SQLite_netplt_end:
 	.globl _mono_aot_SQLite_netplt_end

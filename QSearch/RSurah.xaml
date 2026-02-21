@@ -1,24 +1,694 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QSearch"
              x:Class="QSearch.RSurah"
              NavigationPage.HasBackButton="False"
              Title="Recite Surah">
     <ContentPage.ToolbarItems>
-      <ToolbarItem Clicked="ToolbarItem_Clicked" >
+      <ToolbarItem Clicked="ToolbarItem_Clicked" Text="More">
         <ToolbarItem.IconImageSource>
           <FontImageSource
             FontFamily="MaterialIconsOutlined-Regular"
-            Glyph="&#xe5d2;"
+            Glyph="&#xe8b6;"
             Color="LightBlue"
-            Size="24"
+            Size="32"
               />
         </ToolbarItem.IconImageSource>
       </ToolbarItem>
       </ContentPage.ToolbarItems>
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="5">
+            <FlexLayout HorizontalOptions="Center">
+                <ImageButton x:Name="bmSurah"
+                        BackgroundColor="LightGoldenrodYellow"
+                        ToolTipProperties.Text="Bookmark this surah" Clicked="bmSurah_Clicked">
+                    <ImageButton.Source>
+                        <FontImageSource Glyph="&#xe866;" Color="Black" FontFamily="MaterialIconsOutlined-Regular" Size="28">
+                        </FontImageSource>
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                    <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                 </ImageButton>
+                <ImageButton x:Name="openBM"
+                         BackgroundColor="LightSkyBlue"
+                         ToolTipProperties.Text="Open bookmarks" Clicked="openBM_Clicked">
+                    <ImageButton.Source>
+                            <FontImageSource
+                            FontFamily="MaterialIconsOutlined-Regular"
+                            Glyph="&#xe98b;"
+                            Size="28"
+                            />                        
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                    <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>
+                <ImageButton x:Name="showTranslation"
+                    BackgroundColor="LightGreen"
+                    ToolTipProperties.Text="Show translation" Clicked="showTranslation_Clicked">
+                    <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="MaterialIconsOutlined-Regular"
+                                Color="Black"
+                                Glyph="&#xe894;"
+                                Size="28"
+                            />                         
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>
+                <ImageButton x:Name="btnFont" BackgroundColor="OliveDrab" Clicked="btnFont_Clicked">
+                    <ImageButton.Source>
+                            <FontImageSource
+                            FontFamily="MaterialIconsOutlined-Regular"
+                            Glyph="&#xe167;"
+                            Size="28"
+                            />
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>                
+                <ImageButton x:Name="btnBack" BackgroundColor="LightSkyBlue" Clicked="btnBack_Clicked">
+                    <ImageButton.Source>
+                            <FontImageSource
+                            FontFamily="MaterialIconsOutlined-Regular"
+                            Glyph="&#xe5e0;"
+                            Size="28"
+                            />
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>  
+                <ImageButton x:Name="btnForward" BackgroundColor="LightSkyBlue" Clicked="btnForward_Clicked">
+                <ImageButton.Source>
+                        <FontImageSource
+                        FontFamily="MaterialIconsOutlined-Regular"
+                        Glyph="&#xe5e1;"
+                        Size="28"
+                        />
+                </ImageButton.Source>
+                <ImageButton.Shadow>
+                    <Shadow Brush="Gray"
+                        Offset="20,20"
+                        Radius="40"
+                        Opacity="0.8" />
+                </ImageButton.Shadow>
+            </ImageButton>  
+            </FlexLayout>
+            <Grid IsVisible="{Binding IsBusy}"  BackgroundColor="Transparent">
+                <ActivityIndicator x:Name="progInd"
+                        IsRunning="{Binding IsBusy}"
+                        Color="Blue"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                    />
             <CollectionView
                     x:Name="lstView"            
+                    HorizontalOptions="Center"
+                    Margin="5"
+                    Scrolled="lstView_Scrolled"
+                    IsGrouped="True"
+                    VerticalScrollBarVisibility="Always" >
+                        <CollectionView.GroupHeaderTemplate>
+                            <DataTemplate>
+                            <Grid HorizontalOptions="Fill"
+                                  HeightRequest="90"
+                                  >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition  />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Image
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        Grid.ColumnSpan="3"
+                                        Grid.RowSpan="3"
+                                        Opacity="0.8"
+                                        Source="qs_hdr4"
+                                        Aspect="Fill" />
+                                <Border
+                                    Grid.Row="0"
+                                    Grid.RowSpan="3"
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="3"
+                                    Stroke="Beige"
+                                    StrokeThickness="3">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="5,5,5,5"/>
+                                    </Border.StrokeShape>
+                                </Border>
+                                <Label
+                                    FontFamily="Tahoma"
+                                    FontSize="Small"
+                                    TextColor="SlateBlue"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="2"
+                                    Padding="5,10,0,0">
+                                 <Label.FormattedText>     
+                                    <FormattedString>
+                                        <Span Text="{Binding para_name}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                        <Span Text="(" />
+                                        <Span Text="{Binding para_no}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                        <Span Text=")" />
+                                    </FormattedString>
+                                 </Label.FormattedText>
+                                 </Label>
+                                <Label
+                                     FontFamily="NotoArabic"
+                                    FontSize="Small"
+                                    TextColor="SlateBlue"
+                                    HorizontalOptions="End"
+                                    VerticalOptions="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    Padding="0,10,5,0">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding chapter_class}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" ></Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label
+                                    FontFamily="NotoArabic"
+                                    TextColor="Goldenrod"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="3"
+                                    >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding chapter_name}" FontSize="Large" FontAttributes="Bold" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label
+                                        HorizontalOptions="Start"
+                                        Grid.Row="2"
+                                        Grid.Column="0"
+                                        Padding="10,0,0,0"
+                                        >
+                                        <Label.FormattedText>
+                                            <FormattedString>
+                                                    <Span Text="Chapter # - " FontSize="Micro" BackgroundColor="WhiteSmoke" />
+                                                    <Span Text="{Binding chapter_number}" TextColor="SlateBlue" FontSize="Small" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                            </FormattedString>
+                                        </Label.FormattedText>
+                                </Label>                                                                      
+                                <Label
+                                    HorizontalOptions="End"
+                                    Grid.Row="2"
+                                    Grid.Column="2"
+                                    Padding="0,0,10,0"
+                                    >
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                                <Span Text="Total lines - " FontSize="Micro" />
+                                                <Span Text="{Binding total_verses}" TextColor="SlateBlue" FontSize="Small" FontAttributes="Bold" BackgroundColor="WhiteSmoke"  />
+                                         </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                             
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.GroupHeaderTemplate>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Border
+                                   BackgroundColor="White"
+                                   Stroke="LightGray"
+                                   StrokeThickness="1"
+                                    >
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="5,5,5,5"/>
+                                    </Border.StrokeShape>
+                                    <Border.Shadow>
+                                                <Shadow Brush="Gray"
+                                                    Offset="20,20"
+                                                    Radius="40"
+                                                    Opacity="0.8" />
+                                    </Border.Shadow>
+                                     <VerticalStackLayout Margin="1,0,1,1">
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[0]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[0]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[0]}" TextColor="White" BackgroundColor="Red"  />
+                                                    <Span Text="{Binding verse_arabic_lines_number[0]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[0]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[1]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[1]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[1]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[1]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[1]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[2]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[2]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[2]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[2]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[2]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[3]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[3]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[3]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[3]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[3]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[4]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[4]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[4]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[4]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[4]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[5]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[5]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[5]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[5]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[5]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[6]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[6]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[6]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[6]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[6]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[7]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[7]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[7]}" TextColor="White" BackgroundColor="Red"  />
+                                                    <Span Text="{Binding verse_arabic_lines_number[7]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[7]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[8]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[8]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[8]}" TextColor="White"  BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[8]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[8]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[9]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[9]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[9]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[9]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[9]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[10]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[10]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[10]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[10]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[10]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[11]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[11]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[11]}" TextColor="White" BackgroundColor="Red"  />
+                                                    <Span Text="{Binding verse_arabic_lines_number[11]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[11]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[12]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[12]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[12]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[12]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[12]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[13]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[13]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[13]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[13]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[13]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[14]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[14]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[14]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[14]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[14]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[15]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[15]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[15]}" TextColor="White"  BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[15]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[15]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[16]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[16]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[16]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[16]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[16]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[17]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[17]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[17]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[17]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[17]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[18]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[18]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[18]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[18]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[18]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[19]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[19]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[19]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[19]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[19]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[20]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[20]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[20]}" TextColor="White"  BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[20]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[20]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[21]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[21]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[21]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[21]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[21]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[22]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[22]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[22]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[22]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[22]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[23]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[23]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[23]}" TextColor="White" BackgroundColor="Red"  />
+                                                    <Span Text="{Binding verse_arabic_lines_number[23]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[23]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                        <Label
+                                            FontAttributes="Bold"
+                                            FontSize="Title"
+                                            FontFamily="NotoArabic"
+                                            TextType="Text"
+                                            IsVisible ="{Binding showLine[24]}"
+                                            HorizontalTextAlignment="End">
+                                            <Label.FormattedText>
+                                                <FormattedString>
+                                                    <Span Text="{Binding verse_arabic_lines[24]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                    <Span Text="{Binding verse_arabic_line_end[24]}" TextColor="White" BackgroundColor="Red" />
+                                                    <Span Text="{Binding verse_arabic_lines_number[24]}" TextColor="Green" FontSize="Small" />
+                                                    <Span Text="{Binding verse_english_lines[24]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"
+                                                        ></Span>
+      
+                                                </FormattedString>
+                                            </Label.FormattedText>
+                                        </Label>
+                                    </VerticalStackLayout>
+
+                                </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>                   
+            </Grid>          
+                 <!-- <CollectionView
+                    x:Name="lstViewAndroid"            
                     HorizontalOptions="Center"
                     Scrolled="lstView_Scrolled"
                     Margin="5"
@@ -46,7 +716,7 @@
                                         Grid.ColumnSpan="3"
                                         Grid.RowSpan="3"
                                         Opacity="0.7"
-                                        Source="qsearch_header"
+                                        Source="qsearch_hdr"
                                         Aspect="AspectFill" />
                                 <Border
                                     Grid.Row="0"
@@ -100,10 +770,12 @@
                                     HorizontalOptions="Center"
                                     VerticalOptions="Center"
                                     Grid.Row="1"
-                                    Grid.Column="1">
+                                    Grid.Column="0"
+                                    Grid.ColumnSpan="3"
+                                    >
                                     <Label.FormattedText>
                                         <FormattedString>
-                                            <Span Text="{Binding chapter_name}" />
+                                            <Span Text="{Binding chapter_name}" FontSize="Header" />
                                             <Span Text="(" FontAttributes="None " FontSize="Small"  />
                                             <Span Text="{Binding total_verses}"   FontAttributes="None" FontSize="Small"  />
                                             <Span Text=")" FontAttributes="None" FontSize="Small"  />
@@ -130,33 +802,33 @@
                             </DataTemplate>
                         </CollectionView.GroupHeaderTemplate>
                         <CollectionView.ItemTemplate>
-                            <DataTemplate x:Name="dataTemplate">
+                            <DataTemplate>
                                 <Border
-                                   BackgroundColor="AliceBlue"
+                                   BackgroundColor="White"
                                    Stroke="LightGray"
                                    StrokeThickness="3"
                                     >
                                     <Border.StrokeShape>
                                         <RoundRectangle CornerRadius="5,5,5,5"/>
                                     </Border.StrokeShape>
-                                      <Label
-                                            FontAttributes="Bold"
+                                    <Border.Shadow>
+                                                <Shadow Brush="Gray"
+                                                    Offset="20,20"
+                                                    Radius="40"
+                                                    Opacity="0.8" />
+                                    </Border.Shadow>
+                                      <Label 
                                             FontSize="Title"
-                                            FontFamily="NotoArabic"
+                                            FontFamily="{Binding font}"
+                                            FontAttributes="Bold"
                                             MaxLines="500"
                                             TextType="Html"
-                                            TextColor="Black"
                                             Text="{Binding verse_arabic}"
                                             HorizontalTextAlignment="End">
                                         </Label>
-                                </Border>
+                                    </Border>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
-                </CollectionView>
-            <ActivityIndicator x:Name="progInd"
-            IsRunning="false"
-            Color="Blue"
-            HorizontalOptions="Center" />
+                </CollectionView> -->
     </VerticalStackLayout>
-
 </ContentPage>

@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "System.Net.Primitives.dll"
 	.asciz ""
 
@@ -121,22 +121,42 @@ _mono_aot_System_Net_Primitivesjit_code_start:
 
 	.byte 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 .text
-ut_48:
+ut_0:
 add x0, x0, 16
-b _System_Net_Primitives_System_Net_HeaderVariantInfo__ctor_string_System_Net_CookieVariant
+b _System_Net_Primitives_Interop_ErrorInfo__ctor_Interop_Error
 ut_end:
 .section __TEXT, __const
 _unbox_trampoline_p:
 
 	.long 0
-LDIFF_SYM3=ut_end - ut_48
+LDIFF_SYM3=ut_end - ut_0
 	.long LDIFF_SYM3
 .text
-ut_49:
+ut_1:
+add x0, x0, 16
+b _System_Net_Primitives_Interop_ErrorInfo_get_Error
+.text
+ut_2:
+add x0, x0, 16
+b _System_Net_Primitives_Interop_ErrorInfo_get_RawErrno
+.text
+ut_3:
+add x0, x0, 16
+b _System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage
+.text
+ut_4:
+add x0, x0, 16
+b _System_Net_Primitives_Interop_ErrorInfo_ToString
+.text
+ut_68:
+add x0, x0, 16
+b _System_Net_Primitives_System_Net_HeaderVariantInfo__ctor_string_System_Net_CookieVariant
+.text
+ut_69:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_HeaderVariantInfo_get_Name
 .text
-ut_50:
+ut_70:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_HeaderVariantInfo_get_Variant
 .text
@@ -195,12 +215,12 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1803e0
 .word 0xaa1703e1
-bl _p_75
+bl _p_96
 .word 0xf9400b20
 .word 0xf9009ba0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_147
+bl _p_216
 .word 0xaa0003e1
 .word 0xf9409ba2
 .word 0xaa0203e0
@@ -223,16 +243,16 @@ ldr x1, [x16, #192]
 .word 0xf900a3a0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_147
+bl _p_216
 .word 0xf9009fa0
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #192]
 .word 0xd2800301
-bl _p_11
+bl _p_19
 .word 0xf9009ba0
-bl _p_148
+bl _p_217
 .word 0xf9409ba0
 .word 0xf9409fa1
 .word 0xf940a3a3
@@ -246,7 +266,7 @@ bl _p_148
 .word 0x94000005
 .word 0xf9404ba0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000e
 .word 0xf90063be
 
@@ -259,17 +279,17 @@ bl _p_1
 .word 0x394143a0
 .word 0x34000060
 .word 0xf94027a0
-bl _p_76
+bl _p_97
 .word 0xf94063be
 .word 0xd61f03c0
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_149
+bl _p_218
 .word 0x93407c00
 .word 0xaa0003f8
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_91
+bl _p_110
 .word 0xf9002fa0
 .word 0xd2a00000
 .word 0x390183a0
@@ -282,12 +302,12 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1603e0
 .word 0xaa1503e1
-bl _p_75
+bl _p_96
 .word 0x3940035e
 .word 0xf9401b41
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_150
+bl _p_219
 .word 0xaa0003f6
 .word 0xb4000116
 .word 0xf94002c0
@@ -305,9 +325,9 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #200]
 .word 0xd2800501
-bl _p_11
+bl _p_19
 .word 0xf9009ba0
-bl _p_151
+bl _p_220
 .word 0xf9409ba0
 .word 0xaa0003f5
 .word 0x3940035e
@@ -315,12 +335,12 @@ bl _p_151
 .word 0xaa1703e0
 .word 0xaa1503e2
 .word 0x394002fe
-bl _p_152
+bl _p_221
 .word 0xf9004fbf
 .word 0x94000005
 .word 0xf9404fa0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000e
 .word 0xf9006bbe
 
@@ -333,12 +353,12 @@ bl _p_1
 .word 0x394183a0
 .word 0x34000060
 .word 0xf9402fa0
-bl _p_76
+bl _p_97
 .word 0xf9406bbe
 .word 0xd61f03c0
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_72
+bl _p_94
 .word 0x53001c00
 .word 0x34000640
 .word 0xf90037b5
@@ -353,11 +373,11 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1803e0
 .word 0xaa1603e1
-bl _p_75
+bl _p_96
 .word 0xaa1503e0
 .word 0xaa1a03e1
 .word 0x394002be
-bl _p_107
+bl _p_126
 .word 0x93407c00
 .word 0xaa0003fa
 .word 0xaa1a03e0
@@ -367,7 +387,7 @@ bl _p_107
 .word 0xaa1503e0
 .word 0xaa1a03e1
 .word 0x394002be
-bl _p_73
+bl _p_95
 .word 0xb9802f20
 .word 0x51000400
 .word 0xb9002f20
@@ -375,7 +395,7 @@ bl _p_73
 .word 0x94000005
 .word 0xf94057a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x14000050
 .word 0xf90073be
 
@@ -388,7 +408,7 @@ bl _p_1
 .word 0x3941c3a0
 .word 0x34000060
 .word 0xf94037a0
-bl _p_76
+bl _p_97
 .word 0xf94073be
 .word 0xd61f03c0
 .word 0xb9802b20
@@ -396,10 +416,10 @@ bl _p_76
 .word 0x5400014b
 .word 0xaa1a03e0
 .word 0x3940035e
-bl _p_147
+bl _p_216
 .word 0xaa0003e1
 .word 0xaa1903e0
-bl _p_153
+bl _p_222
 .word 0x53001c00
 .word 0x35000040
 .word 0x14000078
@@ -409,7 +429,7 @@ bl _p_153
 .word 0x540000eb
 .word 0xaa1903e0
 .word 0xd2800001
-bl _p_153
+bl _p_222
 .word 0x53001c00
 .word 0x35000040
 .word 0x1400006e
@@ -425,14 +445,14 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1803e0
 .word 0xaa1603e1
-bl _p_75
+bl _p_96
 .word 0xb9802f20
 .word 0xf9009ba0
 .word 0xaa1503e0
 .word 0xaa1a03e1
 .word 0xd2800022
 .word 0x394002be
-bl _p_99
+bl _p_118
 .word 0x93407c00
 .word 0xaa0003e1
 .word 0xf9409ba0
@@ -442,7 +462,7 @@ bl _p_99
 .word 0x94000005
 .word 0xf94053a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000e
 .word 0xf9007bbe
 
@@ -455,7 +475,7 @@ bl _p_1
 .word 0x394203a0
 .word 0x34000060
 .word 0xf9403fa0
-bl _p_76
+bl _p_97
 .word 0xf9407bbe
 .word 0xd61f03c0
 .word 0xf9400b21
@@ -469,13 +489,13 @@ bl _p_76
 .word 0x5400010c
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_92
+bl _p_111
 .word 0x93407c00
 .word 0xb9802b21
 .word 0x6b01001f
 .word 0x5400006d
 .word 0xaa1903e0
-bl _p_154
+bl _p_223
 .word 0x1400002f
 .word 0xf9005ba0
 
@@ -486,7 +506,7 @@ ldr x0, [x16, #56]
 .word 0xb4000051
 bl _p_1
 .word 0xf9405ba0
-bl _p_143
+bl _p_212
 .word 0xf9005fa0
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -503,8 +523,8 @@ bl _p_1
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804e41
-bl _p_5
+.word 0xd2805801
+bl _p_18
 .word 0xf9009fa0
 .word 0xf94047a0
 .word 0xf900a3a0
@@ -513,19 +533,19 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #208]
 .word 0xd2801201
-bl _p_11
+bl _p_19
 .word 0xf9409fa1
 .word 0xf940a3a2
 .word 0xf9009ba0
-bl _p_155
+bl _p_224
 .word 0xf9409ba0
-bl _p_13
-bl _p_138
+bl _p_21
+bl _p_197
 .word 0xf90093a0
 .word 0xf94093a0
 .word 0xb4000060
 .word 0xf94093a0
-bl _p_13
+bl _p_21
 .word 0x14000001
 .word 0xa9415bb5
 .word 0xa94263b7
@@ -537,36 +557,36 @@ bl _p_13
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2804a41
-bl _p_5
+.word 0xd2805401
+bl _p_18
 .word 0xf900a3a0
 .word 0xb9802320
 .word 0xf900a7a0
 .word 0xd28018a0
-bl _p_156
+bl _p_157
 .word 0xaa0003e2
 .word 0xf940a3a0
 .word 0xf940a7a1
 .word 0xb9001041
 .word 0xaa1a03e1
-bl _p_31
+bl _p_53
 .word 0xf9009fa0
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #208]
 .word 0xd2801201
-bl _p_11
+bl _p_19
 .word 0xf9409fa1
 .word 0xf9009ba0
-bl _p_32
+bl _p_54
 .word 0xf9409ba0
-bl _p_13
+bl _p_21
 .word 0xd2801920
 .word 0xaa1103e1
-bl _p_157
+bl _p_225
 
-Lme_35:
+Lme_49:
 .text
 	.align 4
 	.no_dead_strip System_Net_CookieContainer_AgeCookies_string
@@ -654,7 +674,7 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1503e0
 .word 0xaa1403e1
-bl _p_75
+bl _p_96
 .word 0xf9402ba0
 .word 0xf9400801
 .word 0xaa0103e0
@@ -748,7 +768,7 @@ ldr x1, [x16, #192]
 .word 0xd2a00014
 .word 0xaa1303e0
 .word 0x3940027e
-bl _p_91
+bl _p_110
 .word 0xf9006ba0
 .word 0xd2a00000
 .word 0x390363a0
@@ -763,10 +783,10 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xf94097a0
 .word 0xf9409ba1
-bl _p_75
+bl _p_96
 .word 0xaa1303e0
 .word 0x3940027e
-bl _p_158
+bl _p_226
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -808,7 +828,7 @@ ldr x1, [x16, #200]
 .word 0x54005381
 .word 0xf9009fb6
 .word 0xf9409fa0
-bl _p_159
+bl _p_227
 .word 0x93407c00
 .word 0xaa0003f6
 .word 0xb160318
@@ -819,13 +839,13 @@ bl _p_159
 .word 0xf9409fa0
 .word 0xf9409fa1
 .word 0x3940003e
-bl _p_70
+bl _p_92
 .word 0x93407c00
 .word 0xb000294
 .word 0xf9409fa0
 .word 0xf9409fa1
 .word 0x3940003e
-bl _p_70
+bl _p_92
 .word 0x93407c00
 .word 0x6b1f001f
 .word 0x540004cd
@@ -835,7 +855,7 @@ bl _p_70
 .word 0xd2a00001
 .word 0xf9409fa2
 .word 0x3940005e
-bl _p_95
+bl _p_114
 .word 0xf940a3be
 .word 0xf90003c0
 .word 0xf9403fa0
@@ -882,12 +902,12 @@ ldr x15, [x16, #256]
 .word 0x9400000a
 .word 0xf940a7a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0xf900b7bf
 .word 0x9400003d
 .word 0xf940b7a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x14000046
 .word 0xf900ffbe
 
@@ -960,7 +980,7 @@ bl _p_1
 .word 0x394363a0
 .word 0x34000060
 .word 0xf9406ba0
-bl _p_76
+bl _p_97
 .word 0xf94107be
 .word 0xd61f03c0
 .word 0x1e220280
@@ -994,7 +1014,7 @@ bl _p_76
 .word 0x540025ed
 .word 0xaa1303e0
 .word 0x3940027e
-bl _p_91
+bl _p_110
 .word 0xf9007ba0
 .word 0xd2a00000
 .word 0x3903e3a0
@@ -1008,32 +1028,32 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1a03e0
 .word 0xf940c3a1
-bl _p_75
+bl _p_96
 .word 0xaa1303e0
 .word 0x3940027e
-bl _p_92
+bl _p_111
 .word 0x93407c00
 .word 0xaa0003e1
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #280]
-bl _p_18
+bl _p_40
 .word 0xaa0003fa
 .word 0xaa1303e0
 .word 0x3940027e
-bl _p_92
+bl _p_111
 .word 0x93407c00
 .word 0xaa0003e1
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #288]
-bl _p_18
+bl _p_40
 .word 0xf9009fa0
 .word 0xaa1303e0
 .word 0x3940027e
-bl _p_158
+bl _p_226
 .word 0xaa0003e1
 .word 0xaa0103e0
 .word 0xf9400021
@@ -1080,7 +1100,7 @@ ldr x1, [x16, #200]
 .word 0xd2a00001
 .word 0xf940c7a2
 .word 0x3940005e
-bl _p_95
+bl _p_114
 .word 0xf940a3be
 .word 0xf90003c0
 .word 0x93407ec1
@@ -1117,12 +1137,12 @@ ldr x15, [x16, #256]
 .word 0x9400000a
 .word 0xf940cba0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0xf900dbbf
 .word 0x9400003d
 .word 0xf940dba0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x14000046
 .word 0xf9010fbe
 
@@ -1195,7 +1215,7 @@ bl _p_1
 .word 0x3943e3a0
 .word 0x34000060
 .word 0xf9407ba0
-bl _p_76
+bl _p_97
 .word 0xf94117be
 .word 0xd61f03c0
 
@@ -1204,7 +1224,7 @@ add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x15, [x16, #296]
 .word 0xf9409fa0
 .word 0xaa1a03e1
-bl _p_160
+bl _p_228
 .word 0xd2a00016
 .word 0xd2a00013
 .word 0x14000050
@@ -1238,7 +1258,7 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1903e0
 .word 0xf940dfa1
-bl _p_75
+bl _p_96
 .word 0x14000012
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -1251,7 +1271,7 @@ bl _p_1
 .word 0xd2a00001
 .word 0xf940c7a2
 .word 0x3940005e
-bl _p_73
+bl _p_95
 .word 0x51000694
 .word 0xf9402ba0
 .word 0xb9802c01
@@ -1263,7 +1283,7 @@ bl _p_73
 .word 0xf940c7a0
 .word 0xf940c7a1
 .word 0x3940003e
-bl _p_70
+bl _p_92
 .word 0x93407c00
 .word 0x6b1f001f
 .word 0x54fffcec
@@ -1271,7 +1291,7 @@ bl _p_70
 .word 0x94000005
 .word 0xf940e3a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000e
 .word 0xf9011fbe
 
@@ -1284,7 +1304,7 @@ bl _p_1
 .word 0x394443a0
 .word 0x34000060
 .word 0xf94087a0
-bl _p_76
+bl _p_97
 .word 0xf9411fbe
 .word 0xd61f03c0
 .word 0x6b15029f
@@ -1303,12 +1323,12 @@ bl _p_76
 .word 0x94000020
 .word 0xf940e7a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0xf900f7bf
 .word 0x94000053
 .word 0xf940f7a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x140000ab
 .word 0xf94067a1
 .word 0xaa0103e0
@@ -1326,12 +1346,12 @@ ldr x15, [x16, #256]
 .word 0x9400000a
 .word 0xf940e7a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0xf900f7bf
 .word 0x9400003d
 .word 0xf940f7a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x14000046
 .word 0xf90127be
 
@@ -1404,7 +1424,7 @@ bl _p_1
 .word 0x394303a0
 .word 0x34000060
 .word 0xf9405fa0
-bl _p_76
+bl _p_97
 .word 0xf9412fbe
 .word 0xd61f03c0
 .word 0xf9402fa0
@@ -1422,7 +1442,7 @@ ldr x0, [x16, #216]
 .word 0xf90033a0
 .word 0xf94057a0
 .word 0xf94033a1
-bl _p_161
+bl _p_229
 .word 0x53001c00
 .word 0x34000060
 .word 0xd2a00000
@@ -1439,7 +1459,7 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1a03e0
 .word 0xaa1903e1
-bl _p_75
+bl _p_96
 .word 0x1400000f
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -1451,7 +1471,7 @@ bl _p_1
 .word 0xaa1703e0
 .word 0xd2a00001
 .word 0x394002fe
-bl _p_73
+bl _p_95
 .word 0xf9402ba0
 .word 0xb9802c01
 .word 0x51000421
@@ -1463,7 +1483,7 @@ bl _p_73
 .word 0x540000eb
 .word 0xaa1703e0
 .word 0x394002fe
-bl _p_70
+bl _p_92
 .word 0x93407c00
 .word 0x6b1f001f
 .word 0x54fffd0c
@@ -1471,7 +1491,7 @@ bl _p_70
 .word 0x94000005
 .word 0xf940fba0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000e
 .word 0xf90137be
 
@@ -1484,7 +1504,7 @@ bl _p_1
 .word 0x394483a0
 .word 0x34000060
 .word 0xf9408fa0
-bl _p_76
+bl _p_97
 .word 0xf94137be
 .word 0xd61f03c0
 .word 0xd2800020
@@ -1503,12 +1523,12 @@ bl _p_76
 .word 0xd65f03c0
 .word 0xd2801840
 .word 0xaa1103e1
-bl _p_157
+bl _p_225
 .word 0xd2801920
 .word 0xaa1103e1
-bl _p_157
+bl _p_225
 
-Lme_36:
+Lme_4a:
 .text
 	.align 4
 	.no_dead_strip System_Net_CookieContainer_DomainTableCleanup
@@ -1545,7 +1565,7 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #304]
 .word 0xd2800401
-bl _p_11
+bl _p_19
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
@@ -1573,7 +1593,7 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #320]
 .word 0xd2800401
-bl _p_11
+bl _p_19
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
@@ -1614,7 +1634,7 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1703e0
 .word 0xaa1603e1
-bl _p_75
+bl _p_96
 .word 0xf9402ba0
 .word 0xf9400801
 .word 0xaa0103e0
@@ -1672,7 +1692,7 @@ ldr x1, [x16, #192]
 .word 0xaa1603f4
 .word 0xaa1603e0
 .word 0x394002de
-bl _p_91
+bl _p_110
 .word 0xf9004fa0
 .word 0xd2a00000
 .word 0x390283a0
@@ -1685,10 +1705,10 @@ bl _mono_monitor_enter_v4_fast
 .word 0x35000080
 .word 0xaa1603e0
 .word 0xaa1303e1
-bl _p_75
+bl _p_96
 .word 0xaa1403e0
 .word 0x3940029e
-bl _p_162
+bl _p_230
 .word 0xaa0003f6
 .word 0x14000045
 
@@ -1721,7 +1741,7 @@ ldr x1, [x16, #200]
 .word 0xf9405ba1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_70
+bl _p_92
 .word 0x93407c00
 .word 0x350004e0
 .word 0xaa1603e0
@@ -1762,7 +1782,7 @@ add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x15, [x16, #352]
 .word 0xaa1a03e0
 .word 0xaa1303e1
-bl _p_163
+bl _p_231
 .word 0x14000001
 .word 0xaa1603e0
 .word 0xf94002c1
@@ -1782,7 +1802,7 @@ ldr x15, [x16, #360]
 .word 0xf94057a0
 .word 0x3940001e
 .word 0x9101c3a8
-bl _p_164
+bl _p_232
 .word 0x1400000c
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -1795,20 +1815,20 @@ bl _p_1
 .word 0xaa1403e0
 .word 0xaa1a03e1
 .word 0x3940029e
-bl _p_165
+bl _p_233
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x15, [x16, #368]
 .word 0x9101c3a0
-bl _p_166
+bl _p_234
 .word 0x53001c00
 .word 0x35fffde0
 .word 0xf9005fbf
 .word 0x94000005
 .word 0xf9405fa0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000c
 .word 0xf90077be
 
@@ -1836,13 +1856,13 @@ bl _p_1
 .word 0xf9400b40
 .word 0xd2a00001
 .word 0xaa1903e2
-bl _p_167
+bl _p_235
 .word 0x14000003
 .word 0xb9001b5f
 .word 0x14000001
 .word 0xaa1403e0
 .word 0x3940029e
-bl _p_92
+bl _p_111
 .word 0x93407c00
 .word 0x350003a0
 .word 0xaa1803fa
@@ -1872,13 +1892,13 @@ add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x15, [x16, #376]
 .word 0xaa1a03e0
 .word 0xaa1903e1
-bl _p_86
+bl _p_105
 .word 0x14000001
 .word 0xf90067bf
 .word 0x94000005
 .word 0xf94067a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x1400000e
 .word 0xf9007fbe
 
@@ -1891,7 +1911,7 @@ bl _p_1
 .word 0x394283a0
 .word 0x34000060
 .word 0xf9404fa0
-bl _p_76
+bl _p_97
 .word 0xf9407fbe
 .word 0xd61f03c0
 .word 0xaa1703e0
@@ -1912,7 +1932,7 @@ ldr x15, [x16, #384]
 .word 0x3940031e
 .word 0x910163a8
 .word 0xaa1803e0
-bl _p_168
+bl _p_236
 .word 0x1400000f
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -1934,19 +1954,19 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x15, [x16, #392]
 .word 0x910163a0
-bl _p_169
+bl _p_237
 .word 0x53001c00
 .word 0x35fffd80
 .word 0xf9006bbf
 .word 0x9400000a
 .word 0xf9406ba0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0xf90073bf
 .word 0x94000010
 .word 0xf94073a0
 .word 0xb4000040
-bl _p_74
+bl _p_27
 .word 0x14000019
 .word 0xf90087be
 
@@ -1971,7 +1991,7 @@ bl _p_1
 .word 0x394243a0
 .word 0x34000060
 .word 0xf94047a0
-bl _p_76
+bl _p_97
 .word 0xf9408fbe
 .word 0xd61f03c0
 .word 0xa94153b3
@@ -1983,9 +2003,9 @@ bl _p_76
 .word 0xd65f03c0
 .word 0xd2801920
 .word 0xaa1103e1
-bl _p_157
+bl _p_225
 
-Lme_37:
+Lme_4b:
 .text
 	.align 4
 	.no_dead_strip System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
@@ -2012,7 +2032,7 @@ bl _p_1
 .word 0x910123a0
 .word 0xd2a00001
 .word 0xd2800902
-bl _p_170
+bl _p_238
 .word 0xf90053bf
 .word 0xb900abbf
 
@@ -2029,9 +2049,9 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #200]
 .word 0xd2800501
-bl _p_11
+bl _p_19
 .word 0xf9007ba0
-bl _p_151
+bl _p_220
 .word 0xf9407ba0
 .word 0xf9004ba0
 .word 0xd2a00018
@@ -2062,7 +2082,7 @@ ldr x0, [x16, #408]
 .word 0xf9401001
 .word 0xaa1903e0
 .word 0xd28000a2
-bl _p_34
+bl _p_56
 .word 0x53001c00
 .word 0x340001a0
 
@@ -2092,15 +2112,15 @@ ldr x0, [x16, #408]
 .word 0xf9401fa1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_28
+bl _p_50
 .word 0xaa0003e1
 .word 0xf9407ba0
-bl _p_171
+bl _p_239
 .word 0x53001c00
 .word 0x53001c19
 .word 0x910123a0
 .word 0xaa1a03e1
-bl _p_172
+bl _p_240
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
@@ -2109,7 +2129,7 @@ ldr x0, [x16, #56]
 .word 0xb4000051
 bl _p_1
 .word 0x910123a0
-bl _p_173
+bl _p_241
 .word 0xaa0003fa
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -2148,20 +2168,20 @@ ldr x0, [x16, #400]
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2805d01
-bl _p_5
+.word 0xd28066c1
+bl _p_18
 .word 0xf9007fa0
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #208]
 .word 0xd2801201
-bl _p_11
+bl _p_19
 .word 0xf9407fa1
 .word 0xf9007ba0
-bl _p_32
+bl _p_54
 .word 0xf9407ba0
-bl _p_13
+bl _p_21
 .word 0xf9401fa2
 .word 0xf9401ba0
 .word 0xf9400c04
@@ -2171,7 +2191,7 @@ bl _p_13
 .word 0xaa1903e3
 .word 0xd2800025
 .word 0x3940035e
-bl _p_174
+bl _p_242
 .word 0x53001c00
 .word 0x34fff780
 .word 0xf9404ba3
@@ -2179,7 +2199,7 @@ bl _p_174
 .word 0xaa1a03e1
 .word 0xd2800022
 .word 0x3940007e
-bl _p_99
+bl _p_118
 .word 0x93407c00
 .word 0x17ffffb4
 .word 0x14000037
@@ -2192,7 +2212,7 @@ ldr x0, [x16, #56]
 .word 0xb4000051
 bl _p_1
 .word 0xf9405ba0
-bl _p_143
+bl _p_212
 .word 0xf9005fa0
 
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
@@ -2209,16 +2229,16 @@ bl _p_1
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #0]
-.word 0xd2806181
-bl _p_5
+.word 0xd2806b41
+bl _p_18
 .word 0xf90087a0
 .word 0xf9401fa1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_175
+bl _p_243
 .word 0xaa0003e1
 .word 0xf94087a0
-bl _p_176
+bl _p_244
 .word 0xf9007fa0
 .word 0xf94053a0
 .word 0xf90083a0
@@ -2227,24 +2247,24 @@ adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x0, [x16, #208]
 .word 0xd2801201
-bl _p_11
+bl _p_19
 .word 0xf9407fa1
 .word 0xf94083a2
 .word 0xf9007ba0
-bl _p_155
+bl _p_224
 .word 0xf9407ba0
-bl _p_13
-bl _p_138
+bl _p_21
+bl _p_197
 .word 0xf90073a0
 .word 0xf94073a0
 .word 0xb4000060
 .word 0xf94073a0
-bl _p_13
+bl _p_21
 .word 0x14000001
 .word 0xf9404ba1
 .word 0xaa0103e0
 .word 0x3940003e
-bl _p_70
+bl _p_92
 .word 0x93407c00
 .word 0xb9009ba0
 .word 0xb900abbf
@@ -2262,11 +2282,11 @@ bl _p_1
 .word 0xb980aba1
 .word 0xaa0203e0
 .word 0x3940005e
-bl _p_71
+bl _p_93
 .word 0xaa0003e1
 .word 0xf9407ba0
 .word 0x394103a2
-bl _p_177
+bl _p_245
 .word 0xb980aba0
 .word 0x11000400
 .word 0xb900aba0
@@ -2282,161 +2302,2875 @@ bl _p_177
 .word 0xd65f03c0
 .word 0xd2801840
 .word 0xaa1103e1
-bl _p_157
+bl _p_225
 
-Lme_3a:
+Lme_4e:
 .text
-ut_119:
+ut_180:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer__ctor_string
 .text
-ut_120:
+ut_181:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_get_EndOfCookie
 .text
-ut_121:
+ut_182:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_set_EndOfCookie_bool
 .text
-ut_122:
+ut_183:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_get_Eof
 .text
-ut_123:
+ut_184:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_get_Name
 .text
-ut_124:
+ut_185:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_set_Name_string
 .text
-ut_125:
+ut_186:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_get_Quoted
 .text
-ut_126:
+ut_187:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_set_Quoted_bool
 .text
-ut_127:
+ut_188:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_get_Token
 .text
-ut_128:
+ut_189:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_set_Token_System_Net_CookieToken
 .text
-ut_129:
+ut_190:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_get_Value
 .text
-ut_130:
+ut_191:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_set_Value_string
 .text
-ut_131:
+ut_192:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_Extract
 .text
-ut_132:
+ut_193:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool
 .text
-ut_133:
+ut_194:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool
 .text
-ut_134:
+ut_195:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_Reset
 .text
-ut_135:
+ut_196:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool
 .text
-ut_136:
+ut_197:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer__cctor
 .text
-ut_137:
+ut_198:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute__ctor_string_System_Net_CookieToken
 .text
-ut_138:
+ut_199:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_get_Token
 .text
-ut_139:
+ut_200:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string
 .text
-ut_140:
+ut_201:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser__ctor_string
 .text
-ut_141:
+ut_202:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string
 .text
-ut_142:
+ut_203:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField
 .text
-ut_143:
+ut_204:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField
 .text
-ut_144:
+ut_205:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser_Get
 .text
-ut_145:
+ut_206:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string
 .text
-ut_146:
+ut_207:
 add x0, x0, 16
 b _System_Net_Primitives_System_Net_CookieParser_EndofHeader
 .text
-ut_153:
+	.align 4
+	.no_dead_strip System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_
+System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_:
+.loc 1 1 0
+.word 0xa9ba7bfd
+.word 0x910003fd
+.word 0xa9015bb5
+.word 0xa90263b7
+.word 0xa9036bb9
+.word 0xf90027af
+.word 0xaa0003f9
+.word 0xf90023a1
+.word 0xaa0203fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x1, [x16, #416]
+.word 0xf94027a0
+.word 0xf9400c10
+.word 0xb5000050
+bl _mini_init_method_rgctx
+.word 0xf94027a0
+.word 0xf9401018
+.word 0xb9800300
+.word 0x91003c10
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f7
+.word 0xb9802b00
+.word 0x8b0002e0
+.word 0xf9400b01
+.word 0xf9400f02
+.word 0xd63f0040
+.word 0xb9803301
+.word 0xaa1703e0
+.word 0x8b010000
+.word 0xf9400b01
+.word 0xf9400f02
+.word 0xd63f0040
+.word 0xaa1903e0
+bl _p_246
+.word 0x53001c00
+.word 0x34000340
+.word 0xf94023a0
+.word 0xb9800800
+.word 0xd28001fe
+.word 0x6b1e001f
+.word 0x5400062b
+.word 0xb9402320
+.word 0xf9002ba0
+.word 0xf94023a1
+.word 0xb9804300
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf94027a1
+.word 0xf940142f
+.word 0xf94027a1
+.word 0xf9401822
+.word 0xb9804301
+.word 0x8b0102e1
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xb9000340
+.word 0xd2800020
+.word 0x140000aa
+.word 0xf94023a0
+.word 0xb9800800
+.word 0xd280083e
+.word 0x6b1e001f
+.word 0x5400030b
+.word 0xf9400b20
+.word 0xf9002ba0
+.word 0xb9402320
+.word 0xf9002fa0
+.word 0xf94023a1
+.word 0xb9804b00
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf9402fa1
+.word 0xf94027a2
+.word 0xf9401c4f
+.word 0xf94027a2
+.word 0xf9402043
+.word 0xb9804b02
+.word 0x8b0202e2
+.word 0xd63f0060
+.word 0x93407c00
+.word 0xb9000340
+.word 0xd2800020
+.word 0x1400008e
+.word 0xd2800820
+.word 0x2a0003e0
+.word 0xf9400701
+.word 0x93407c21
+bl _p_98
+.word 0xaa0003f6
+.word 0xb5000076
+.word 0xd2800015
+.word 0x1400000e
+.word 0x91003ed0
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f5
+.word 0xb9803b00
+.word 0x8b0002e0
+.word 0xf9400b01
+.word 0xf9400f02
+.word 0xd63f0040
+.word 0xb9803b00
+.word 0x8b0002e0
+.word 0xf94027a1
+.word 0xf940242f
+.word 0xf94027a1
+.word 0xf9400c21
+.word 0xf9400023
+.word 0xaa1503e1
+.word 0xd2800822
+.word 0xd63f0060
+.word 0xb9803b00
+.word 0x8b0002e1
+.word 0xb9803300
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xb9803300
+.word 0x8b0002e1
+.word 0xb9802b00
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xaa1903e0
+bl _p_246
+.word 0x53001c00
+.word 0x35000340
+.word 0xf9400b20
+.word 0xf9002ba0
+.word 0xaa1903e0
+bl _p_247
+.word 0xf9002fa0
+.word 0xb9802b00
+.word 0x8b0002e1
+.word 0xb9805300
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf9402fa1
+.word 0xf94027a2
+.word 0xf9401c4f
+.word 0xf94027a2
+.word 0xf9400c42
+.word 0xf9400443
+.word 0xb9805302
+.word 0x8b0202e2
+.word 0xd63f0060
+.word 0x93407c00
+.word 0xaa0003f9
+.word 0x14000016
+.word 0xaa1903e0
+bl _p_248
+.word 0xf9002ba0
+.word 0xb9802b00
+.word 0x8b0002e1
+.word 0xb9805b00
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf94027a1
+.word 0xf940142f
+.word 0xf94027a1
+.word 0xf9400c21
+.word 0xf9400822
+.word 0xb9805b01
+.word 0x8b0102e1
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xaa0003f9
+.word 0xaa1903f6
+.word 0xb9802b00
+.word 0x8b0002e0
+.word 0xf94027a1
+.word 0xf9400c21
+.word 0xf9400c2f
+.word 0xf94027a1
+.word 0xf9400c21
+.word 0xf9401023
+.word 0xb9803301
+.word 0x8b0102e8
+.word 0xd2a00001
+.word 0xaa1903e2
+.word 0xd63f0060
+.word 0xb9803300
+.word 0x8b0002e0
+.word 0xf9002ba0
+.word 0xf94023a1
+.word 0xb9806300
+.word 0x8b0002e0
+.word 0xf9400b02
+.word 0xf9401303
+.word 0xd63f0060
+.word 0xf9402ba0
+.word 0xf94027a1
+.word 0xf9400c21
+.word 0xf940142f
+.word 0xf94027a1
+.word 0xf9400c21
+.word 0xf9401822
+.word 0xb9806301
+.word 0x8b0102e1
+.word 0xd63f0040
+.word 0x53001c00
+.word 0x34000080
+.word 0xb9000356
+.word 0xd2800020
+.word 0x14000003
+.word 0xb900035f
+.word 0xd2a00000
+.word 0xa9415bb5
+.word 0xa94263b7
+.word 0xa9436bb9
+.word 0x910003bf
+.word 0xa8c67bfd
+.word 0xd65f03c0
+
+Lme_d9:
+.text
+	.align 4
+	.no_dead_strip System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT:
+.loc 1 1 0
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xa90157b4
+.word 0xa9025fb6
+.word 0xa90367b8
+.word 0xf90023ba
+.word 0xf9002baf
+.word 0xaa0003fa
+.word 0xf90027a1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x1, [x16, #424]
+.word 0xf9402ba0
+.word 0xf9400c10
+.word 0xb5000050
+bl _mini_init_method_rgctx
+.word 0xf9402ba0
+.word 0xf9401019
+.word 0xb9800320
+.word 0x91003c10
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f8
+.word 0xaa1a03e0
+bl _p_249
+.word 0x93407c00
+.word 0xaa0003fa
+.word 0xaa1a03e0
+.word 0x53187c00
+.word 0xf9003ba0
+.word 0xf94027a1
+.word 0xb9807322
+.word 0xaa1803e0
+.word 0x8b020000
+.word 0xf9401322
+.word 0xf9401723
+.word 0xd63f0060
+.word 0xf9403ba0
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9401822
+.word 0xb9807323
+.word 0xaa1803e1
+.word 0x8b030021
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xaa0003f7
+.word 0xf94027a0
+.word 0xaa1703e1
+.word 0x110006f7
+.word 0xf9402ba2
+.word 0xf9401c4f
+.word 0xf9402ba2
+.word 0xf9402042
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0xd28005de
+.word 0x7900b3be
+.word 0xf9402ba0
+.word 0xf9402403
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400001
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910163a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9804320
+.word 0x8b000314
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9804b20
+.word 0x8b000308
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9804b20
+.word 0x8b000314
+.word 0xb9807b20
+.word 0x8b000300
+.word 0xf9401b22
+.word 0xf9401f23
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9807b20
+.word 0x8b000301
+.word 0xf9401b20
+.word 0xf9401f20
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0x53107f40
+.word 0xf9003ba0
+.word 0xf94027a0
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf940082f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9400c22
+.word 0xb9808321
+.word 0x8b010308
+.word 0xaa1703e1
+.word 0xd63f0040
+.word 0xf9403ba0
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9401022
+.word 0xb9808321
+.word 0x8b010301
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xb0002f7
+.word 0xf94027a0
+.word 0xaa1703e1
+.word 0x110006f7
+.word 0xf9402ba2
+.word 0xf9401c4f
+.word 0xf9402ba2
+.word 0xf9400c42
+.word 0xf9401442
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0xd28005de
+.word 0x7900c3be
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9401803
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400001
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910183a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9805320
+.word 0x8b000314
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9805b20
+.word 0x8b000308
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9805b20
+.word 0x8b000314
+.word 0xb9808b20
+.word 0x8b000300
+.word 0xf9401b22
+.word 0xf9401f23
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9808b20
+.word 0x8b000301
+.word 0xf9401b20
+.word 0xf9401f20
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0x53087f40
+.word 0xf9003ba0
+.word 0xf94027a0
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf940082f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9401c22
+.word 0xb9809321
+.word 0x8b010308
+.word 0xaa1703e1
+.word 0xd63f0040
+.word 0xf9403ba0
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9402022
+.word 0xb9809321
+.word 0x8b010301
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xb0002f7
+.word 0xf94027a0
+.word 0xaa1703e1
+.word 0x110006f7
+.word 0xf9402ba2
+.word 0xf9401c4f
+.word 0xf9402ba2
+.word 0xf9400c42
+.word 0xf9402442
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0xd28005de
+.word 0x7900d3be
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9402803
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400001
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9101a3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9806320
+.word 0x8b000314
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9806b20
+.word 0x8b000308
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9806b20
+.word 0x8b000314
+.word 0xb9809b20
+.word 0x8b000300
+.word 0xf9401b22
+.word 0xf9401f23
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9809b20
+.word 0x8b000301
+.word 0xf9401b20
+.word 0xf9401f20
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf940082f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9402c22
+.word 0xb980a321
+.word 0x8b010308
+.word 0xaa1703e1
+.word 0xd63f0040
+.word 0xf9402ba0
+.word 0xf940140f
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9403002
+.word 0xaa1a03e0
+.word 0xb980a321
+.word 0x8b010301
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xb0002f7
+.word 0xaa1703e0
+.word 0xa94157b4
+.word 0xa9425fb6
+.word 0xa94367b8
+.word 0xf94023ba
+.word 0x910003bf
+.word 0xa8c87bfd
+.word 0xd65f03c0
+
+Lme_da:
+.text
+	.align 4
+	.no_dead_strip System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT
+System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT:
+.loc 1 1 0
+.word 0xa9b07bfd
+.word 0x910003fd
+.word 0xa90157b4
+.word 0xa9025fb6
+.word 0xa90367b8
+.word 0xf90023ba
+.word 0xf9005faf
+.word 0xaa0003f9
+.word 0xaa0103fa
+.word 0xf90027a2
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x1, [x16, #432]
+.word 0xf9405fa0
+.word 0xf9400c10
+.word 0xb5000050
+bl _mini_init_method_rgctx
+.word 0xf9405fa0
+.word 0xf9401018
+.word 0xb9800300
+.word 0x91003c10
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f7
+.word 0xb900c3bf
+.word 0xb9805300
+.word 0x8b0002e0
+.word 0xf9401701
+.word 0xf9401b02
+.word 0xd63f0040
+.word 0xb9805b01
+.word 0xaa1703e0
+.word 0x8b010000
+.word 0xf9401701
+.word 0xf9401b02
+.word 0xd63f0040
+.word 0xb9806301
+.word 0xaa1703e0
+.word 0x8b010000
+.word 0xf9401701
+.word 0xf9401b02
+.word 0xd63f0040
+.word 0xb900c3bf
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x15, [x16, #440]
+.word 0xf9405fa0
+.word 0xf9401401
+.word 0x910263a0
+.word 0xf90067a0
+.word 0xaa1903e0
+.word 0xd63f0020
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xf9404fa0
+.word 0xf94053a1
+bl _p_252
+.word 0x53001c00
+.word 0x34001de0
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x15, [x16, #448]
+.word 0xf9405fa0
+.word 0xf9401803
+.word 0x910223a0
+.word 0xf90067a0
+.word 0xaa1903e0
+.word 0xd2a00001
+.word 0xd28000c2
+.word 0xd63f0060
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x15, [x16, #456]
+.word 0xf9405fa0
+.word 0xf9401c02
+.word 0x9101e3a0
+.word 0xf90067a0
+.word 0xf94047a0
+.word 0xf9404ba1
+.word 0xd63f0040
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xf94027a1
+.word 0xb980c300
+.word 0x8b0002e0
+.word 0xf9401702
+.word 0xf9401f03
+.word 0xd63f0060
+.word 0xf9405fa0
+.word 0xf940200f
+.word 0xf9405fa0
+.word 0xf9402404
+.word 0xf9403fa0
+.word 0xf94043a1
+.word 0xb980c302
+.word 0x8b0202e2
+.word 0x910303a3
+.word 0xd63f0080
+.word 0xf94027a0
+.word 0xb980c3a1
+.word 0x51000421
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf940004f
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf9400442
+.word 0xd63f0040
+.word 0xaa0003e1
+.word 0xb9807b00
+.word 0x8b0002e0
+.word 0xf9402302
+.word 0xf9402703
+.word 0xd63f0060
+.word 0xd280075e
+.word 0x7901c3be
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9400803
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9400c01
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910383a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f6
+.word 0xf9400b15
+.word 0xd280005e
+.word 0xeb1e02bf
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02bf
+.word 0x540000e0
+.word 0x910042d5
+.word 0x1400000c
+.word 0xb9806b00
+.word 0x8b0002f5
+.word 0xf90002b6
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb9807300
+.word 0x8b0002e8
+.word 0xaa1603e0
+.word 0xd63f0020
+.word 0xb9807300
+.word 0x8b0002f5
+.word 0xb9808300
+.word 0x8b0002e0
+.word 0xf9402302
+.word 0xf9402703
+.word 0xaa1503e1
+.word 0xd63f0060
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401403
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401801
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e4
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0xf9400b00
+.word 0x39000080
+.word 0xb9807b00
+.word 0x8b0002e0
+.word 0xf90000a0
+.word 0xf9400b00
+.word 0x39000480
+.word 0xb9808300
+.word 0x8b0002e0
+.word 0xf90004a0
+.word 0xd2800000
+bl _p_250
+.word 0x39404000
+.word 0x340008e0
+.word 0xf94027a0
+.word 0xb980c3a2
+.word 0xaa0203e1
+.word 0x11000442
+.word 0xb900c3a2
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf940004f
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf9401c42
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0xd280075e
+.word 0x7901d3be
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9402003
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9400c01
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9103a3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b14
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9808b00
+.word 0x8b0002f4
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb9809300
+.word 0x8b0002e8
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9809300
+.word 0x8b0002f4
+.word 0xb980cb00
+.word 0x8b0002e0
+.word 0xf9402302
+.word 0xf9402703
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb980cb00
+.word 0x8b0002e1
+.word 0xf9402300
+.word 0xf9402700
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xb980c3a0
+.word 0xf9007ba0
+.word 0xaa1903e0
+bl _p_253
+.word 0xf9007fa0
+.word 0xf94027a0
+.word 0xb980c3a1
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf940244f
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf9402842
+.word 0xb980d303
+.word 0x8b0302e8
+.word 0xd63f0040
+.word 0xf9407fa0
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf9402c2f
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf9403022
+.word 0xb980d301
+.word 0x8b0102e1
+.word 0xd63f0040
+.word 0x93407c00
+.word 0xaa0003e1
+.word 0xf9407ba0
+.word 0xb010000
+.word 0xb900c3a0
+.word 0x1400002f
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x15, [x16, #448]
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9403403
+.word 0x9101a3a0
+.word 0xf90067a0
+.word 0xaa1903e0
+.word 0xd2a00001
+.word 0xd2800102
+.word 0xd63f0060
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x15, [x16, #456]
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9403802
+.word 0x910163a0
+.word 0xf90067a0
+.word 0xf94037a0
+.word 0xf9403ba1
+.word 0xd63f0040
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xf90007c1
+.word 0xf94027a1
+.word 0xb980db00
+.word 0x8b0002e0
+.word 0xf9401702
+.word 0xf9401f03
+.word 0xd63f0060
+.word 0xf9405fa0
+.word 0xf940200f
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9403c04
+.word 0xf9402fa0
+.word 0xf94033a1
+.word 0xb980db02
+.word 0x8b0202e2
+.word 0x910303a3
+.word 0xd63f0080
+.word 0x3400209a
+.word 0xf94027a0
+.word 0xb980c3a2
+.word 0xaa0203e1
+.word 0x11000442
+.word 0xb900c3a2
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf940004f
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf9404042
+.word 0xd63f0040
+.word 0xaa0003f9
+.word 0xd28004be
+.word 0x7901a3be
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9404403
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9400c01
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910343a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f6
+.word 0xf9400b15
+.word 0xd280005e
+.word 0xeb1e02bf
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02bf
+.word 0x540000e0
+.word 0x910042d5
+.word 0x1400000c
+.word 0xb9809b00
+.word 0x8b0002f5
+.word 0xf90002b6
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb980a300
+.word 0x8b0002e8
+.word 0xaa1603e0
+.word 0xd63f0020
+.word 0xb980a300
+.word 0x8b0002f5
+.word 0xb980e300
+.word 0x8b0002e0
+.word 0xf9402302
+.word 0xf9402703
+.word 0xaa1503e1
+.word 0xd63f0060
+.word 0xb980e300
+.word 0x8b0002e1
+.word 0xf9402300
+.word 0xf9402700
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xaa1903e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2800140
+.word 0x2a0003e0
+.word 0xf9401301
+.word 0x93407c21
+bl _p_98
+.word 0xaa0003f9
+.word 0xb5000079
+.word 0xd2800016
+.word 0x1400000e
+.word 0x91003f30
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f6
+.word 0xb980ab00
+.word 0x8b0002e0
+.word 0xf9401701
+.word 0xf9401b02
+.word 0xd63f0040
+.word 0xb980ab00
+.word 0x8b0002e0
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf940482f
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf9404c23
+.word 0xaa1603e1
+.word 0xd2800142
+.word 0xd63f0060
+.word 0xb980ab00
+.word 0x8b0002e1
+.word 0xb9806300
+.word 0x8b0002e0
+.word 0xf9401702
+.word 0xf9401f03
+.word 0xd63f0060
+.word 0xb9806300
+.word 0x8b0002e1
+.word 0xb9805300
+.word 0x8b0002e0
+.word 0xf9401702
+.word 0xf9401f03
+.word 0xd63f0060
+.word 0xd2800159
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+.word 0x910143a0
+.word 0xf90067a0
+.word 0xaa1a03e0
+.word 0xd2800141
+bl _p_254
+.word 0xf94067be
+.word 0xf90003c0
+.word 0xb98053a0
+.word 0xb900aba0
+.word 0xb98057a0
+.word 0xb900afa0
+.word 0xb98053a0
+.word 0xb900b3a0
+.word 0xb98057a0
+.word 0xb900b7a0
+.word 0xb940b3ba
+.word 0xb940afb6
+.word 0xb9805300
+.word 0x8b0002e0
+.word 0x51000722
+.word 0xaa0203e1
+.word 0xaa0203f9
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf940004f
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf9405042
+.word 0xd63f0040
+.word 0xaa0003f5
+.word 0x1100c2c0
+.word 0xb900dba0
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9405403
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9405801
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910363a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f6
+.word 0xf9400b14
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042d4
+.word 0x1400000c
+.word 0xb980b300
+.word 0x8b0002f4
+.word 0xf9000296
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb980bb00
+.word 0x8b0002e8
+.word 0xaa1603e0
+.word 0xd63f0020
+.word 0xb980bb00
+.word 0x8b0002f4
+.word 0xb980eb00
+.word 0x8b0002e0
+.word 0xf9402302
+.word 0xf9402703
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb980eb00
+.word 0x8b0002e1
+.word 0xf9402300
+.word 0xf9402700
+.word 0xf9405fa0
+.word 0xf9400c00
+.word 0xf9401002
+.word 0xaa1503e0
+bl _mono_gsharedvt_value_copy
+.word 0x35fff47a
+.word 0xb9805300
+.word 0x8b0002e0
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf940242f
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf9405c22
+.word 0xb9805b01
+.word 0x8b0102e8
+.word 0xaa1903e1
+.word 0xd63f0040
+.word 0xb9805b00
+.word 0x8b0002e0
+.word 0xf9007ba0
+.word 0xf94027a0
+.word 0xb980c3a1
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf940244f
+.word 0xf9405fa2
+.word 0xf9400c42
+.word 0xf9406042
+.word 0xb980f303
+.word 0x8b0302e8
+.word 0xd63f0040
+.word 0xf9407ba0
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf940642f
+.word 0xf9405fa1
+.word 0xf9400c21
+.word 0xf9406822
+.word 0xb980f301
+.word 0x8b0102e1
+.word 0xd63f0040
+.word 0xb980c3a0
+.word 0xb9805b01
+.word 0x8b0102e1
+.word 0xb9800821
+.word 0xb010000
+.word 0xb900c3a0
+.word 0xb980c3a0
+.word 0xa94157b4
+.word 0xa9425fb6
+.word 0xa94367b8
+.word 0xf94023ba
+.word 0x910003bf
+.word 0xa8d07bfd
+.word 0xd65f03c0
+
+Lme_db:
+.text
+	.align 4
+	.no_dead_strip System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT:
+.loc 1 1 0
+.word 0xa9b27bfd
+.word 0x910003fd
+.word 0xa90157b4
+.word 0xa9025fb6
+.word 0xa90367b8
+.word 0xf90023ba
+.word 0xf9004faf
+.word 0xaa0003fa
+.word 0xf90027a1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x1, [x16, #464]
+.word 0xf9404fa0
+.word 0xf9400c10
+.word 0xb5000050
+bl _mini_init_method_rgctx
+.word 0xf9404fa0
+.word 0xf9401019
+.word 0xb9800320
+.word 0x91003c10
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f8
+.word 0xd2801ffe
+.word 0xa1e035a
+.word 0xaa1a03e0
+.word 0xd280015e
+.word 0x6b1e001f
+.word 0x54002e83
+.word 0xd2800c9e
+.word 0x6b1e035f
+.word 0x54001c03
+.word 0x910183a0
+.word 0xf90057a0
+.word 0xaa1a03e0
+.word 0xd2800141
+bl _p_254
+.word 0xf94057be
+.word 0xf90003c0
+.word 0xb98063a0
+.word 0xb9008ba0
+.word 0xb98067a0
+.word 0xb9008fa0
+.word 0xb98063a0
+.word 0xb90093a0
+.word 0xb98067a0
+.word 0xb90097a0
+.word 0xb94093b7
+.word 0xb9408fba
+.word 0x910163a0
+.word 0xf90057a0
+.word 0xaa1703e0
+.word 0xd2800141
+bl _p_254
+.word 0xf94057be
+.word 0xf90003c0
+.word 0xb9805ba0
+.word 0xb9007ba0
+.word 0xb9805fa0
+.word 0xb9007fa0
+.word 0xb9805ba0
+.word 0xb90083a0
+.word 0xb9805fa0
+.word 0xb90087a0
+.word 0xb94083b6
+.word 0xb9407fb7
+.word 0xf94027a0
+.word 0xf9404fa1
+.word 0xf940142f
+.word 0xf9404fa1
+.word 0xf9401822
+.word 0xd2800041
+.word 0xd63f0040
+.word 0xaa0003f5
+.word 0x1100c340
+.word 0xb900c3a0
+.word 0xf9404fa0
+.word 0xf9401c03
+.word 0xf9404fa0
+.word 0xf9402001
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910303a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003fa
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x91004354
+.word 0x1400000c
+.word 0xb9803320
+.word 0x8b000314
+.word 0xf900029a
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9803b20
+.word 0x8b000308
+.word 0xaa1a03e0
+.word 0xd63f0020
+.word 0xb9803b20
+.word 0x8b000314
+.word 0xb9809320
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9809320
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xaa1503e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xf9404fa1
+.word 0xf940142f
+.word 0xf9404fa1
+.word 0xf9400c21
+.word 0xf9400022
+.word 0xd2800021
+.word 0xd63f0040
+.word 0xaa0003fa
+.word 0x1100c2e0
+.word 0xb900cba0
+.word 0xf9404fa0
+.word 0xf9400c00
+.word 0xf9400403
+.word 0xf9404fa0
+.word 0xf9402001
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910323a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f7
+.word 0xf9400b35
+.word 0xd280005e
+.word 0xeb1e02bf
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02bf
+.word 0x540000e0
+.word 0x910042f5
+.word 0x1400000c
+.word 0xb9804320
+.word 0x8b000315
+.word 0xf90002b7
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9804b20
+.word 0x8b000308
+.word 0xaa1703e0
+.word 0xd63f0020
+.word 0xb9804b20
+.word 0x8b000315
+.word 0xb9809b20
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1503e1
+.word 0xd63f0060
+.word 0xb9809b20
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xaa1a03e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xf9404fa1
+.word 0xf940142f
+.word 0xf9404fa1
+.word 0xf9400c21
+.word 0xf9400822
+.word 0xd2a00001
+.word 0xd63f0040
+.word 0xaa0003fa
+.word 0x1100c2c0
+.word 0xb900d3a0
+.word 0xf9404fa0
+.word 0xf9400c00
+.word 0xf9400c03
+.word 0xf9404fa0
+.word 0xf9402001
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910343a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f7
+.word 0xf9400b36
+.word 0xd280005e
+.word 0xeb1e02df
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02df
+.word 0x540000e0
+.word 0x910042f6
+.word 0x1400000c
+.word 0xb9805320
+.word 0x8b000316
+.word 0xf90002d7
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9805b20
+.word 0x8b000308
+.word 0xaa1703e0
+.word 0xd63f0020
+.word 0xb9805b20
+.word 0x8b000316
+.word 0xb980a320
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1603e1
+.word 0xd63f0060
+.word 0xb980a320
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xaa1a03e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2800060
+.word 0x140000d2
+.word 0x910143a0
+.word 0xf90057a0
+.word 0xaa1a03e0
+.word 0xd2800141
+bl _p_254
+.word 0xf94057be
+.word 0xf90003c0
+.word 0xb98053a0
+.word 0xb9006ba0
+.word 0xb98057a0
+.word 0xb9006fa0
+.word 0xb98053a0
+.word 0xb90073a0
+.word 0xb98057a0
+.word 0xb90077a0
+.word 0xb94073b7
+.word 0xb9406fba
+.word 0xf94027a0
+.word 0xf9404fa1
+.word 0xf940142f
+.word 0xf9404fa1
+.word 0xf9400c21
+.word 0xf9401022
+.word 0xd2800021
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0x1100c340
+.word 0xb900b3a0
+.word 0xf9404fa0
+.word 0xf9400c00
+.word 0xf9401403
+.word 0xf9404fa0
+.word 0xf9402001
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9102c3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003fa
+.word 0xf9400b35
+.word 0xd280005e
+.word 0xeb1e02bf
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02bf
+.word 0x540000e0
+.word 0x91004355
+.word 0x1400000c
+.word 0xb9806320
+.word 0x8b000315
+.word 0xf90002ba
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9806b20
+.word 0x8b000308
+.word 0xaa1a03e0
+.word 0xd63f0020
+.word 0xb9806b20
+.word 0x8b000315
+.word 0xb980ab20
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1503e1
+.word 0xd63f0060
+.word 0xb980ab20
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xf9404fa1
+.word 0xf940142f
+.word 0xf9404fa1
+.word 0xf9400c21
+.word 0xf9401822
+.word 0xd2a00001
+.word 0xd63f0040
+.word 0xaa0003fa
+.word 0x1100c2e0
+.word 0xb900bba0
+.word 0xf9404fa0
+.word 0xf9400c00
+.word 0xf9401c03
+.word 0xf9404fa0
+.word 0xf9402001
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9102e3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f7
+.word 0xf9400b36
+.word 0xd280005e
+.word 0xeb1e02df
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02df
+.word 0x540000e0
+.word 0x910042f6
+.word 0x1400000c
+.word 0xb9807320
+.word 0x8b000316
+.word 0xf90002d7
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9807b20
+.word 0x8b000308
+.word 0xaa1703e0
+.word 0xd63f0020
+.word 0xb9807b20
+.word 0x8b000316
+.word 0xb980b320
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1603e1
+.word 0xd63f0060
+.word 0xb980b320
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xaa1a03e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2800040
+.word 0x14000041
+.word 0xf94027a0
+.word 0xf9404fa1
+.word 0xf940142f
+.word 0xf9404fa1
+.word 0xf9400c21
+.word 0xf9402022
+.word 0xd2a00001
+.word 0xd63f0040
+.word 0xaa0003f7
+.word 0x1100c340
+.word 0xb900a3a0
+.word 0xf9404fa0
+.word 0xf9400c00
+.word 0xf9402403
+.word 0xf9404fa0
+.word 0xf9402001
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910283a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003fa
+.word 0xf9400b36
+.word 0xd280005e
+.word 0xeb1e02df
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02df
+.word 0x540000e0
+.word 0x91004356
+.word 0x1400000c
+.word 0xb9808320
+.word 0x8b000316
+.word 0xf90002da
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9808b20
+.word 0x8b000308
+.word 0xaa1a03e0
+.word 0xd63f0020
+.word 0xb9808b20
+.word 0x8b000316
+.word 0xb980bb20
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1603e1
+.word 0xd63f0060
+.word 0xb980bb20
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404fa0
+.word 0xf9402402
+.word 0xaa1703e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2800020
+.word 0xa94157b4
+.word 0xa9425fb6
+.word 0xa94367b8
+.word 0xf94023ba
+.word 0x910003bf
+.word 0xa8ce7bfd
+.word 0xd65f03c0
+
+Lme_dc:
+.text
+	.align 4
+	.no_dead_strip System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_
+System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_:
+.loc 1 1 0
+.word 0xa9b27bfd
+.word 0x910003fd
+.word 0xa90153b3
+.word 0xa9025bb5
+.word 0xa90363b7
+.word 0xa9046bb9
+.word 0xf9004baf
+.word 0xf9002ba0
+.word 0xf9002fa1
+.word 0xf90033a2
+.word 0xaa0303fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x1, [x16, #472]
+.word 0xf9404ba0
+.word 0xf9400c10
+.word 0xb5000050
+bl _mini_init_method_rgctx
+.word 0xf9404ba0
+.word 0xf9401019
+.word 0xb9800320
+.word 0x91003c10
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f8
+.word 0xf9402ba0
+.word 0xf9003ba0
+.word 0xf9402fa0
+.word 0xf9003fa0
+.word 0x9101a3a0
+.word 0xf9004fa0
+.word 0xf9403ba0
+.word 0xf9403fa1
+bl _p_255
+.word 0xf9404fbe
+.word 0xf90003c0
+.word 0xb9806ba0
+.word 0xb90083a0
+.word 0xb9806fa0
+.word 0xb90087a0
+.word 0xb9806ba0
+.word 0xb9008ba0
+.word 0xb9806fa0
+.word 0xb9008fa0
+.word 0xb9808bb7
+.word 0xb98087b6
+.word 0xd2a00000
+.word 0x53001c15
+.word 0x6b1f02ff
+.word 0x54001f0b
+.word 0xd2a00014
+.word 0x1400006c
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+.word 0x340008f5
+.word 0xf94033a0
+.word 0xb9800355
+.word 0xaa1503e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9404ba1
+.word 0xf940142f
+.word 0xf9404ba1
+.word 0xf9401822
+.word 0xaa1503e1
+.word 0xd63f0040
+.word 0xaa0003f5
+.word 0xd280075e
+.word 0x790153be
+.word 0xf9404ba0
+.word 0xf9401c03
+.word 0xf9404ba0
+.word 0xf9402001
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9102a3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f3
+.word 0xf9400b20
+.word 0xf9005ba0
+.word 0xd280005e
+.word 0xeb1e001f
+.word 0x54000100
+.word 0xf9405ba0
+.word 0xd280007e
+.word 0xeb1e001f
+.word 0x54000120
+.word 0x91004260
+.word 0xf9005fa0
+.word 0x1400000e
+.word 0xb9804320
+.word 0x8b000300
+.word 0xf9005fa0
+.word 0xf9000013
+.word 0x14000009
+.word 0xf9400f21
+.word 0xb9804b20
+.word 0x8b000308
+.word 0xaa1303e0
+.word 0xd63f0020
+.word 0xb9804b20
+.word 0x8b000300
+.word 0xf9005fa0
+.word 0xf9405fa1
+.word 0xb9808320
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xd63f0060
+.word 0xb9808320
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xaa1503e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2800020
+.word 0x53001c15
+.word 0xf9402ba0
+.word 0x93407e81
+.word 0xb9805ba2
+.word 0xeb01005f
+.word 0x10000011
+.word 0x540022a9
+.word 0xd37ff821
+.word 0x8b010000
+.word 0x79400000
+.word 0xf9006ba0
+.word 0xf94033a1
+.word 0xb9808b20
+.word 0x8b000300
+.word 0xf9401b22
+.word 0xf9401f23
+.word 0xd63f0060
+.word 0xf9406ba0
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf940002f
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf9400423
+.word 0xb9808b21
+.word 0x8b010301
+.word 0xaa1a03e2
+.word 0xd63f0060
+.word 0x11000694
+.word 0x6b17029f
+.word 0x54fff28b
+.word 0xf94033a0
+.word 0xb9800355
+.word 0xaa1503e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9404ba1
+.word 0xf940142f
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf9400822
+.word 0xaa1503e1
+.word 0xd63f0040
+.word 0xaa0003f7
+.word 0xd280075e
+.word 0x790183be
+.word 0xf9404ba0
+.word 0xf9400c00
+.word 0xf9400c03
+.word 0xf9404ba0
+.word 0xf9402001
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910303a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9805320
+.word 0x8b000314
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9805b20
+.word 0x8b000308
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9805b20
+.word 0x8b000314
+.word 0xb9809320
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9809320
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xaa1703e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94033a0
+.word 0xb9800355
+.word 0xaa1503e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9404ba1
+.word 0xf940142f
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf9401022
+.word 0xaa1503e1
+.word 0xd63f0040
+.word 0xaa0003f7
+.word 0xd280075e
+.word 0x790193be
+.word 0xf9404ba0
+.word 0xf9400c00
+.word 0xf9401403
+.word 0xf9404ba0
+.word 0xf9402001
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910323a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9806320
+.word 0x8b000314
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9806b20
+.word 0x8b000308
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9806b20
+.word 0x8b000314
+.word 0xb9809b20
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9809b20
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xaa1703e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2a00000
+.word 0x53001c15
+.word 0xaa1603f7
+.word 0x14000069
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+.word 0x34000895
+.word 0xf94033a0
+.word 0xb9800355
+.word 0xaa1503e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9404ba1
+.word 0xf940142f
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf9401822
+.word 0xaa1503e1
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0xd280075e
+.word 0x790143be
+.word 0xf9404ba0
+.word 0xf9400c00
+.word 0xf9401c03
+.word 0xf9404ba0
+.word 0xf9402001
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910283a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400721
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b34
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9807320
+.word 0x8b000314
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f21
+.word 0xb9807b20
+.word 0x8b000308
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9807b20
+.word 0x8b000314
+.word 0xb980a320
+.word 0x8b000300
+.word 0xf9401322
+.word 0xf9401723
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb980a320
+.word 0x8b000301
+.word 0xf9401320
+.word 0xf9401720
+.word 0xf9404ba0
+.word 0xf9402402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xd2800020
+.word 0x53001c15
+.word 0xf9402ba0
+.word 0x93407ee1
+.word 0xb9805ba2
+.word 0xeb01005f
+.word 0x10000011
+.word 0x54000429
+.word 0xd37ff821
+.word 0x8b010000
+.word 0x79400000
+.word 0xf9006ba0
+.word 0xf94033a1
+.word 0xb980ab20
+.word 0x8b000300
+.word 0xf9401b22
+.word 0xf9401f23
+.word 0xd63f0060
+.word 0xf9406ba0
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf940002f
+.word 0xf9404ba1
+.word 0xf9400c21
+.word 0xf9402023
+.word 0xb980ab21
+.word 0x8b010301
+.word 0xaa1a03e2
+.word 0xd63f0060
+.word 0x110006f7
+.word 0xb9805ba0
+.word 0x6b0002ff
+.word 0x54fff2cb
+.word 0xa94153b3
+.word 0xa9425bb5
+.word 0xa94363b7
+.word 0xa9446bb9
+.word 0x910003bf
+.word 0xa8ce7bfd
+.word 0xd65f03c0
+.word 0xd2801840
+.word 0xaa1103e1
+bl _p_225
+
+Lme_dd:
+.text
+	.align 4
+	.no_dead_strip System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_
+System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_:
+.loc 1 1 0
+.word 0xa9b87bfd
+.word 0x910003fd
+.word 0xa90157b4
+.word 0xa9025fb6
+.word 0xa90367b8
+.word 0xf90023ba
+.word 0xf9002baf
+.word 0xaa0003f9
+.word 0xf90027a1
+.word 0xaa0203fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x1, [x16, #480]
+.word 0xf9402ba0
+.word 0xf9400c10
+.word 0xb5000050
+bl _mini_init_method_rgctx
+.word 0xf9402ba0
+.word 0xf9401018
+.word 0xb9800300
+.word 0x91003c10
+.word 0x928001f1
+.word 0x8a110210
+.word 0x910003f1
+.word 0xcb100231
+.word 0x9100023f
+.word 0x8b100230
+.word 0xeb10023f
+.word 0x54000080
+.word 0xa9007e3f
+.word 0x91004231
+.word 0x17fffffc
+.word 0x910003f7
+.word 0xd29ffe1e
+.word 0xa1e0320
+.word 0x34001a20
+.word 0xd29fe01e
+.word 0xa1e0320
+.word 0x34001140
+.word 0xd29e001e
+.word 0xa1e0320
+.word 0x34000860
+.word 0xf94027a0
+.word 0xb9800356
+.word 0xaa1603e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9401822
+.word 0xaa1603e1
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0x130c7f20
+bl _p_256
+.word 0x7900e3a0
+.word 0xf9402ba0
+.word 0xf9401c03
+.word 0xf9402ba0
+.word 0xf9402001
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9101c3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b14
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9803300
+.word 0x8b0002f4
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb9803b00
+.word 0x8b0002e8
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9803b00
+.word 0x8b0002f4
+.word 0xb9807300
+.word 0x8b0002e0
+.word 0xf9401302
+.word 0xf9401703
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9807300
+.word 0x8b0002e1
+.word 0xf9401300
+.word 0xf9401700
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xb9800356
+.word 0xaa1603e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9400022
+.word 0xaa1603e1
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0x13087f20
+bl _p_256
+.word 0x7900d3a0
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400403
+.word 0xf9402ba0
+.word 0xf9402001
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x9101a3a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b14
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9804300
+.word 0x8b0002f4
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb9804b00
+.word 0x8b0002e8
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9804b00
+.word 0x8b0002f4
+.word 0xb9807b00
+.word 0x8b0002e0
+.word 0xf9401302
+.word 0xf9401703
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9807b00
+.word 0x8b0002e1
+.word 0xf9401300
+.word 0xf9401700
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xb9800356
+.word 0xaa1603e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9400822
+.word 0xaa1603e1
+.word 0xd63f0040
+.word 0xaa0003f6
+.word 0x13047f20
+bl _p_256
+.word 0x7900c3a0
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9400c03
+.word 0xf9402ba0
+.word 0xf9402001
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910183a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f5
+.word 0xf9400b14
+.word 0xd280005e
+.word 0xeb1e029f
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e029f
+.word 0x540000e0
+.word 0x910042b4
+.word 0x1400000c
+.word 0xb9805300
+.word 0x8b0002f4
+.word 0xf9000295
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb9805b00
+.word 0x8b0002e8
+.word 0xaa1503e0
+.word 0xd63f0020
+.word 0xb9805b00
+.word 0x8b0002f4
+.word 0xb9808300
+.word 0x8b0002e0
+.word 0xf9401302
+.word 0xf9401703
+.word 0xaa1403e1
+.word 0xd63f0060
+.word 0xb9808300
+.word 0x8b0002e1
+.word 0xf9401300
+.word 0xf9401700
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xaa1603e0
+bl _mono_gsharedvt_value_copy
+.word 0xf94027a0
+.word 0xb9800356
+.word 0xaa1603e1
+.word 0x11000421
+.word 0xb9000341
+.word 0xf9402ba1
+.word 0xf940142f
+.word 0xf9402ba1
+.word 0xf9400c21
+.word 0xf9401022
+.word 0xaa1603e1
+.word 0xd63f0040
+.word 0xaa0003fa
+.word 0xaa1903e0
+bl _p_256
+.word 0x7900b3a0
+.word 0xf9402ba0
+.word 0xf9400c00
+.word 0xf9401403
+.word 0xf9402ba0
+.word 0xf9402001
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xd10043ff
+.word 0xa9007fff
+.word 0x910003e5
+.word 0x910163a0
+.word 0xf90000a0
+.word 0xd2800000
+.word 0xd2800004
+bl _p_250
+.word 0xf9400701
+bl _p_251
+.word 0xaa0003f9
+.word 0xf9400b16
+.word 0xd280005e
+.word 0xeb1e02df
+.word 0x540000c0
+.word 0xd280007e
+.word 0xeb1e02df
+.word 0x540000e0
+.word 0x91004336
+.word 0x1400000c
+.word 0xb9806300
+.word 0x8b0002f6
+.word 0xf90002d9
+.word 0x14000008
+.word 0xf9400f01
+.word 0xb9806b00
+.word 0x8b0002e8
+.word 0xaa1903e0
+.word 0xd63f0020
+.word 0xb9806b00
+.word 0x8b0002f6
+.word 0xb9808b00
+.word 0x8b0002e0
+.word 0xf9401302
+.word 0xf9401703
+.word 0xaa1603e1
+.word 0xd63f0060
+.word 0xb9808b00
+.word 0x8b0002e1
+.word 0xf9401300
+.word 0xf9401700
+.word 0xf9402ba0
+.word 0xf9402402
+.word 0xaa1a03e0
+bl _mono_gsharedvt_value_copy
+.word 0xa94157b4
+.word 0xa9425fb6
+.word 0xa94367b8
+.word 0xf94023ba
+.word 0x910003bf
+.word 0xa8c87bfd
+.word 0xd65f03c0
+
+Lme_de:
+.text
+ut_226:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_Interop_ErrorInfo_StructureToPtr_object_intptr_bool
+.text
+ut_227:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_Interop_ErrorInfo_PtrToStructure_intptr_object
+.text
+ut_228:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_Net_HeaderVariantInfo_StructureToPtr_object_intptr_bool
 .text
-ut_154:
+ut_229:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_Net_HeaderVariantInfo_PtrToStructure_intptr_object
 .text
-ut_155:
+ut_230:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_StructureToPtr_object_intptr_bool
 .text
-ut_156:
+ut_231:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_PtrToStructure_intptr_object
 .text
-ut_157:
+ut_232:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_RecognizedAttribute_StructureToPtr_object_intptr_bool
 .text
-ut_158:
+ut_233:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_RecognizedAttribute_PtrToStructure_intptr_object
 .text
-ut_159:
+ut_234:
 add x0, x0, 16
-b _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_StructureToPtr_object_intptr_bool
+b _System_Net_Primitives_wrapper_other_System_Span_1_byte_StructureToPtr_object_intptr_bool
 .text
-ut_160:
+ut_235:
 add x0, x0, 16
-b _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_PtrToStructure_intptr_object
+b _System_Net_Primitives_wrapper_other_System_Span_1_byte_PtrToStructure_intptr_object
 .text
-ut_161:
+ut_236:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_char_StructureToPtr_object_intptr_bool
 .text
-ut_162:
+ut_237:
 add x0, x0, 16
 b _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_char_PtrToStructure_intptr_object
+.text
+ut_238:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_uint16_StructureToPtr_object_intptr_bool
+.text
+ut_239:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_uint16_PtrToStructure_intptr_object
+.text
+ut_240:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_Span_1_uint16_StructureToPtr_object_intptr_bool
+.text
+ut_241:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_Span_1_uint16_PtrToStructure_intptr_object
+.text
+ut_242:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_StructureToPtr_object_intptr_bool
+.text
+ut_243:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_PtrToStructure_intptr_object
+.text
+ut_244:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_byte_StructureToPtr_object_intptr_bool
+.text
+ut_245:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_byte_PtrToStructure_intptr_object
+.text
+ut_246:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_Span_1_char_StructureToPtr_object_intptr_bool
+.text
+ut_247:
+add x0, x0, 16
+b _System_Net_Primitives_wrapper_other_System_Span_1_char_PtrToStructure_intptr_object
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error
+wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error:
+.loc 1 1 0
+.word 0xa9b77bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf90013be
+.word 0xa902d3b3
+.word 0xa903dbb5
+.word 0xa904e3b7
+.word 0xa905ebb9
+.word 0xa906f3bb
+.word 0xf9003fbd
+.word 0x910003f1
+.word 0xf90043b1
+.word 0xaa0003fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f9
+.word 0x910043a0
+.word 0xf9400321
+.word 0xf9000ba1
+.word 0xf9000320
+.word 0xaa1a03e0
+bl _SystemNative_ConvertErrorPalToPlatform
+.word 0x93407c00
+.word 0xaa0003fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf9400ba0
+.word 0xf9000320
+.word 0xaa1a03e0
+.word 0xa94567b8
+.word 0xf94033ba
+.word 0x910003bf
+.word 0xa8c97bfd
+.word 0xd65f03c0
+.word 0x91022300
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1803e0
+bl _p_212
+bl _p_211
+.word 0xaa0003f8
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_f8:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int
+wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001fbe
+.word 0xa90453b3
+.word 0xa9055bb5
+.word 0xa90663b7
+.word 0xa9076bb9
+.word 0xa90873bb
+.word 0xf9004bbd
+.word 0x910003f1
+.word 0xf9004fb1
+.word 0xf9000ba0
+.word 0xaa0103f9
+.word 0xaa0203fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f7
+.word 0x9100a3a0
+.word 0xf94002e1
+.word 0xf90017a1
+.word 0xf90002e0
+.word 0x910083a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xb98013a0
+.word 0xaa1903e1
+.word 0xaa1a03e2
+bl _SystemNative_StrErrorR
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
+.word 0x910063a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0xaa0003fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94017a0
+.word 0xf90002e0
+.word 0xaa1a03e0
+.word 0xf94033b7
+.word 0xa9476bb9
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022320
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1903e0
+bl _p_212
+bl _p_211
+.word 0xaa0003f9
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_f9:
 .text
 	.align 4
 	.no_dead_strip wrapper_managed_to_native_Interop_Sys_GetDomainName_byte__int
@@ -2506,13 +5240,86 @@ ldr x0, [x16, #48]
 .word 0xd280003e
 .word 0xb900001e
 .word 0xaa1903e0
-bl _p_143
-bl _p_142
+bl _p_212
+bl _p_211
 .word 0xaa0003f9
 .word 0xb5ffff20
 .word 0x17fffff0
 
-Lme_a3:
+Lme_fa:
+.text
+	.align 4
+	.no_dead_strip wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_
+wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_:
+.loc 1 1 0
+.word 0xa9b57bfd
+.word 0x910003fd
+.word 0x1000001e
+.word 0xf9001bbe
+.word 0xa903d3b3
+.word 0xa904dbb5
+.word 0xa905e3b7
+.word 0xa906ebb9
+.word 0xa907f3bb
+.word 0xf90047bd
+.word 0x910003f1
+.word 0xf9004bb1
+.word 0xaa0003fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #56]
+.word 0xf9400011
+.word 0xb4000051
+bl _p_1
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #80]
+.word 0xd63f0000
+.word 0xaa0003f9
+.word 0x910083a0
+.word 0xf9400321
+.word 0xf90013a1
+.word 0xf9000320
+.word 0x910063a0
+bl _mono_threads_enter_gc_safe_region_unbalanced
+.word 0xf90057a0
+.word 0xaa1a03e0
+bl _SystemNative_InterfaceNameToIndex
+.word 0xaa0003e1
+.word 0xf94057a0
+.word 0xf90053a1
+.word 0x910043a1
+bl _mono_threads_exit_gc_safe_region_unbalanced
+.word 0xf94053a0
+.word 0xaa0003fa
+
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x0, [x16, #48]
+.word 0xb9400000
+.word 0x350001e0
+.word 0x14000001
+.word 0xf94013a0
+.word 0xf9000320
+.word 0xaa1a03e0
+.word 0xa94667b8
+.word 0xf9403bba
+.word 0x910003bf
+.word 0xa8cb7bfd
+.word 0xd65f03c0
+.word 0x91022300
+.word 0xd280003e
+.word 0xb900001e
+.word 0xaa1803e0
+bl _p_212
+bl _p_211
+.word 0xaa0003f8
+.word 0xb5ffff20
+.word 0x17fffff0
+
+Lme_fb:
 .text
 	.align 3
 jit_code_end:
@@ -2520,8 +5327,25 @@ _mono_aot_System_Net_Primitivesjit_code_end:
 	.globl _mono_aot_System_Net_Primitivesjit_code_end
 
 	.byte 0,0,0,0
+.no_dead_strip _System_Net_Primitives_Interop_ErrorInfo__ctor_Interop_Error
+.no_dead_strip _System_Net_Primitives_Interop_ErrorInfo_get_Error
+.no_dead_strip _System_Net_Primitives_Interop_ErrorInfo_get_RawErrno
+.no_dead_strip _System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage
+.no_dead_strip _System_Net_Primitives_Interop_ErrorInfo_ToString
+.no_dead_strip _System_Net_Primitives_Interop_Sys_StrError_int
 .no_dead_strip _System_Net_Primitives_Interop_Sys_GetDomainName
+.no_dead_strip _System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string
+.no_dead_strip _System_Net_Primitives_InteropErrorExtensions_Info_Interop_Error
+.no_dead_strip _System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int
+.no_dead_strip _System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool
+.no_dead_strip _System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool
+.no_dead_strip _System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool
+.no_dead_strip _System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16
+.no_dead_strip _System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16
+.no_dead_strip _System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int_
+.no_dead_strip _System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string_
 .no_dead_strip _System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int
+.no_dead_strip _System_Net_Primitives_System_HexConverter_ToCharLower_int
 .no_dead_strip _System_Net_Primitives_System_SR_Format_string_object
 .no_dead_strip _System_Net_Primitives_System_SR_Format_string_object_object
 .no_dead_strip _System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int
@@ -2626,6 +5450,41 @@ _mono_aot_System_Net_Primitivesjit_code_end:
 .no_dead_strip _System_Net_Primitives_System_Net_CookieException__ctor_string
 .no_dead_strip _System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception
 .no_dead_strip _System_Net_Primitives_System_Net_HttpVersion__cctor
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_get_IsIPv4
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_get_IsIPv6
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_set_PrivateAddress_uint
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_set_PrivateScopeId_uint
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress__ctor_long
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_ReadUInt16NumbersFromBytes_System_ReadOnlySpan_1_byte
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress_
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress_
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_IParsable_System_Net_IPAddress_TryParse_string_System_IFormatProvider_System_Net_IPAddress_
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_ISpanParsable_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_IFormatProvider_System_Net_IPAddress_
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_Parse_string
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_ISpanParsable_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char_System_IFormatProvider
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_IParsable_System_Net_IPAddress_Parse_string_System_IFormatProvider
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_get_AddressFamily
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_ToString
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_IFormattable_ToString_string_System_IFormatProvider
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_ISpanFormattable_TryFormat_System_Span_1_char_int__System_ReadOnlySpan_1_char_System_IFormatProvider
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_System_IUtf8SpanFormattable_TryFormat_System_Span_1_byte_int__System_ReadOnlySpan_1_char_System_IFormatProvider
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_HostToNetworkOrder_int
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_Equals_object
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_GetHashCode
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress__cctor
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long_
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint_
+.no_dead_strip _System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16__
 .no_dead_strip _System_Net_Primitives_System_Net_NetEventSource__ctor
 .no_dead_strip _System_Net_Primitives_System_Net_NetEventSource__cctor
 .no_dead_strip _System_Net_Primitives_System_Net_NetworkCredential_get_UserName
@@ -2663,19 +5522,37 @@ _mono_aot_System_Net_Primitivesjit_code_end:
 .no_dead_strip _System_Net_Primitives_System_Net_CookieParser_EndofHeader
 .no_dead_strip _System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName
 .no_dead_strip _System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName
+.no_dead_strip _System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string
+.no_dead_strip _System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError
+.no_dead_strip _System_Net_Primitives_System_Net_Sockets_SocketException_get_Message
+.no_dead_strip _System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError
+.no_dead_strip _System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error_
+.no_dead_strip _System_Net_Primitives_System_Net_Sockets_SocketErrorPal__cctor
 .no_dead_strip _System_Net_Primitives_wrapper_delegate_invoke_System_Predicate_1_T_REF_invoke_bool_T_T_REF
 .no_dead_strip _System_Net_Primitives_wrapper_delegate_invoke_System_Action_1_T_REF_invoke_void_T_T_REF
 .no_dead_strip _System_Net_Primitives_wrapper_delegate_invoke_System_Comparison_1_T_REF_invoke_int_T_T_T_REF_T_REF
+.no_dead_strip _System_Net_Primitives_wrapper_other_Interop_ErrorInfo_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_Interop_ErrorInfo_PtrToStructure_intptr_object
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_Net_HeaderVariantInfo_StructureToPtr_object_intptr_bool
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_Net_HeaderVariantInfo_PtrToStructure_intptr_object
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_StructureToPtr_object_intptr_bool
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_PtrToStructure_intptr_object
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_RecognizedAttribute_StructureToPtr_object_intptr_bool
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_RecognizedAttribute_PtrToStructure_intptr_object
-.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_StructureToPtr_object_intptr_bool
-.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_PtrToStructure_intptr_object
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_byte_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_byte_PtrToStructure_intptr_object
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_char_StructureToPtr_object_intptr_bool
 .no_dead_strip _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_char_PtrToStructure_intptr_object
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_uint16_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_uint16_PtrToStructure_intptr_object
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_uint16_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_uint16_PtrToStructure_intptr_object
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_PtrToStructure_intptr_object
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_byte_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_byte_PtrToStructure_intptr_object
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_char_StructureToPtr_object_intptr_bool
+.no_dead_strip _System_Net_Primitives_wrapper_other_System_Span_1_char_PtrToStructure_intptr_object
 .no_dead_strip _mono_aot_System_Net_Primitives_init_method
 .no_dead_strip _mono_aot_System_Net_Primitives_init_method_gshared_mrgctx
 .no_dead_strip _mono_aot_System_Net_Primitives_init_method_gshared_this
@@ -2688,9 +5565,29 @@ method_addresses:
 _mono_aot_System_Net_Primitivesmethod_addresses:
 	.globl _mono_aot_System_Net_Primitivesmethod_addresses
 	.no_dead_strip method_addresses
+bl _System_Net_Primitives_Interop_ErrorInfo__ctor_Interop_Error
+bl _System_Net_Primitives_Interop_ErrorInfo_get_Error
+bl _System_Net_Primitives_Interop_ErrorInfo_get_RawErrno
+bl _System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage
+bl _System_Net_Primitives_Interop_ErrorInfo_ToString
+bl _System_Net_Primitives_Interop_Sys_StrError_int
+bl method_addresses
+bl method_addresses
 bl method_addresses
 bl _System_Net_Primitives_Interop_Sys_GetDomainName
+bl _System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string
+bl method_addresses
+bl _System_Net_Primitives_InteropErrorExtensions_Info_Interop_Error
+bl _System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int
+bl _System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool
+bl _System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool
+bl _System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool
+bl _System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16
+bl _System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16
+bl _System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int_
+bl _System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string_
 bl _System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int
+bl _System_Net_Primitives_System_HexConverter_ToCharLower_int
 bl _System_Net_Primitives_System_SR_Format_string_object
 bl _System_Net_Primitives_System_SR_Format_string_object_object
 bl _System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int
@@ -2800,6 +5697,47 @@ bl _System_Net_Primitives_System_Net_CookieException__ctor_string
 bl _System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception
 bl _System_Net_Primitives_System_Net_HttpVersion__cctor
 bl method_addresses
+bl _System_Net_Primitives_System_Net_IPAddress_get_IsIPv4
+bl _System_Net_Primitives_System_Net_IPAddress_get_IsIPv6
+bl _System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress
+bl _System_Net_Primitives_System_Net_IPAddress_set_PrivateAddress_uint
+bl _System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId
+bl _System_Net_Primitives_System_Net_IPAddress_set_PrivateScopeId_uint
+bl _System_Net_Primitives_System_Net_IPAddress__ctor_long
+bl _System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long
+bl _System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint
+bl _System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte
+bl _System_Net_Primitives_System_Net_IPAddress_ReadUInt16NumbersFromBytes_System_ReadOnlySpan_1_byte
+bl _System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress_
+bl _System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress_
+bl _System_Net_Primitives_System_Net_IPAddress_System_IParsable_System_Net_IPAddress_TryParse_string_System_IFormatProvider_System_Net_IPAddress_
+bl _System_Net_Primitives_System_Net_IPAddress_System_ISpanParsable_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_IFormatProvider_System_Net_IPAddress_
+bl _System_Net_Primitives_System_Net_IPAddress_Parse_string
+bl _System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char
+bl _System_Net_Primitives_System_Net_IPAddress_System_ISpanParsable_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char_System_IFormatProvider
+bl _System_Net_Primitives_System_Net_IPAddress_System_IParsable_System_Net_IPAddress_Parse_string_System_IFormatProvider
+bl _System_Net_Primitives_System_Net_IPAddress_get_AddressFamily
+bl _System_Net_Primitives_System_Net_IPAddress_ToString
+bl _System_Net_Primitives_System_Net_IPAddress_System_IFormattable_ToString_string_System_IFormatProvider
+bl _System_Net_Primitives_System_Net_IPAddress_System_ISpanFormattable_TryFormat_System_Span_1_char_int__System_ReadOnlySpan_1_char_System_IFormatProvider
+bl _System_Net_Primitives_System_Net_IPAddress_System_IUtf8SpanFormattable_TryFormat_System_Span_1_byte_int__System_ReadOnlySpan_1_char_System_IFormatProvider
+bl method_addresses
+bl _System_Net_Primitives_System_Net_IPAddress_HostToNetworkOrder_int
+bl _System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int
+bl _System_Net_Primitives_System_Net_IPAddress_Equals_object
+bl _System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress
+bl _System_Net_Primitives_System_Net_IPAddress_GetHashCode
+bl _System_Net_Primitives_System_Net_IPAddress__cctor
+bl _System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte
+bl _System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool
+bl _System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long_
+bl _System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint_
+bl method_addresses
+bl method_addresses
+bl _System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16__
+bl method_addresses
+bl method_addresses
+bl method_addresses
 bl _System_Net_Primitives_System_Net_NetEventSource__ctor
 bl _System_Net_Primitives_System_Net_NetEventSource__cctor
 bl _System_Net_Primitives_System_Net_NetworkCredential_get_UserName
@@ -2837,21 +5775,48 @@ bl _System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string
 bl _System_Net_Primitives_System_Net_CookieParser_EndofHeader
 bl _System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName
 bl _System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName
+bl _System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string
+bl _System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError
+bl _System_Net_Primitives_System_Net_Sockets_SocketException_get_Message
+bl _System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError
+bl _System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error_
+bl _System_Net_Primitives_System_Net_Sockets_SocketErrorPal__cctor
 bl method_addresses
+bl System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_
+bl System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+bl System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT
+bl System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+bl System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_
+bl System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_
 bl _System_Net_Primitives_wrapper_delegate_invoke_System_Predicate_1_T_REF_invoke_bool_T_T_REF
 bl _System_Net_Primitives_wrapper_delegate_invoke_System_Action_1_T_REF_invoke_void_T_T_REF
 bl _System_Net_Primitives_wrapper_delegate_invoke_System_Comparison_1_T_REF_invoke_int_T_T_T_REF_T_REF
+bl _System_Net_Primitives_wrapper_other_Interop_ErrorInfo_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_Interop_ErrorInfo_PtrToStructure_intptr_object
 bl _System_Net_Primitives_wrapper_other_System_Net_HeaderVariantInfo_StructureToPtr_object_intptr_bool
 bl _System_Net_Primitives_wrapper_other_System_Net_HeaderVariantInfo_PtrToStructure_intptr_object
 bl _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_StructureToPtr_object_intptr_bool
 bl _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_PtrToStructure_intptr_object
 bl _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_RecognizedAttribute_StructureToPtr_object_intptr_bool
 bl _System_Net_Primitives_wrapper_other_System_Net_CookieTokenizer_RecognizedAttribute_PtrToStructure_intptr_object
-bl _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_StructureToPtr_object_intptr_bool
-bl _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_PtrToStructure_intptr_object
+bl _System_Net_Primitives_wrapper_other_System_Span_1_byte_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_System_Span_1_byte_PtrToStructure_intptr_object
 bl _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_char_StructureToPtr_object_intptr_bool
 bl _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_char_PtrToStructure_intptr_object
+bl _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_uint16_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_uint16_PtrToStructure_intptr_object
+bl _System_Net_Primitives_wrapper_other_System_Span_1_uint16_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_System_Span_1_uint16_PtrToStructure_intptr_object
+bl _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_System_Span_1_System_Range_PtrToStructure_intptr_object
+bl _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_byte_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_System_ReadOnlySpan_1_byte_PtrToStructure_intptr_object
+bl _System_Net_Primitives_wrapper_other_System_Span_1_char_StructureToPtr_object_intptr_bool
+bl _System_Net_Primitives_wrapper_other_System_Span_1_char_PtrToStructure_intptr_object
+bl wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error
+bl wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int
 bl wrapper_managed_to_native_Interop_Sys_GetDomainName_byte__int
+bl wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_
 bl _mono_aot_System_Net_Primitives_init_method
 bl _mono_aot_System_Net_Primitives_init_method_gshared_mrgctx
 bl _mono_aot_System_Net_Primitives_init_method_gshared_this
@@ -2868,12 +5833,14 @@ unbox_trampolines:
 _mono_aot_System_Net_Primitivesunbox_trampolines:
 	.globl _mono_aot_System_Net_Primitivesunbox_trampolines
 
-	.long 48,49,50,119,120,121,122,123
-	.long 124,125,126,127,128,129,130,131
-	.long 132,133,134,135,136,137,138,139
-	.long 140,141,142,143,144,145,146,153
-	.long 154,155,156,157,158,159,160,161
-	.long 162
+	.long 0,1,2,3,4,68,69,70
+	.long 180,181,182,183,184,185,186,187
+	.long 188,189,190,191,192,193,194,195
+	.long 196,197,198,199,200,201,202,203
+	.long 204,205,206,207,226,227,228,229
+	.long 230,231,232,233,234,235,236,237
+	.long 238,239,240,241,242,243,244,245
+	.long 246,247
 unbox_trampolines_end:
 _mono_aot_System_Net_Primitivesunbox_trampolines_end:
 	.globl _mono_aot_System_Net_Primitivesunbox_trampolines_end
@@ -2884,47 +5851,64 @@ _mono_aot_System_Net_Primitivesunbox_trampolines_end:
 unbox_trampoline_addresses:
 _mono_aot_System_Net_Primitivesunbox_trampoline_addresses:
 	.globl _mono_aot_System_Net_Primitivesunbox_trampoline_addresses
-bl ut_48
-bl ut_49
-bl ut_50
-bl ut_119
-bl ut_120
-bl ut_121
-bl ut_122
-bl ut_123
-bl ut_124
-bl ut_125
-bl ut_126
-bl ut_127
-bl ut_128
-bl ut_129
-bl ut_130
-bl ut_131
-bl ut_132
-bl ut_133
-bl ut_134
-bl ut_135
-bl ut_136
-bl ut_137
-bl ut_138
-bl ut_139
-bl ut_140
-bl ut_141
-bl ut_142
-bl ut_143
-bl ut_144
-bl ut_145
-bl ut_146
-bl ut_153
-bl ut_154
-bl ut_155
-bl ut_156
-bl ut_157
-bl ut_158
-bl ut_159
-bl ut_160
-bl ut_161
-bl ut_162
+bl ut_0
+bl ut_1
+bl ut_2
+bl ut_3
+bl ut_4
+bl ut_68
+bl ut_69
+bl ut_70
+bl ut_180
+bl ut_181
+bl ut_182
+bl ut_183
+bl ut_184
+bl ut_185
+bl ut_186
+bl ut_187
+bl ut_188
+bl ut_189
+bl ut_190
+bl ut_191
+bl ut_192
+bl ut_193
+bl ut_194
+bl ut_195
+bl ut_196
+bl ut_197
+bl ut_198
+bl ut_199
+bl ut_200
+bl ut_201
+bl ut_202
+bl ut_203
+bl ut_204
+bl ut_205
+bl ut_206
+bl ut_207
+bl ut_226
+bl ut_227
+bl ut_228
+bl ut_229
+bl ut_230
+bl ut_231
+bl ut_232
+bl ut_233
+bl ut_234
+bl ut_235
+bl ut_236
+bl ut_237
+bl ut_238
+bl ut_239
+bl ut_240
+bl ut_241
+bl ut_242
+bl ut_243
+bl ut_244
+bl ut_245
+bl ut_246
+bl ut_247
 
 	.long 0
 .section __TEXT, __const
@@ -2936,9 +5920,16 @@ _mono_aot_System_Net_Primitivesunwind_info:
 	.byte 0,29,12,31,0,68,14,208,2,157,42,158,41,68,13,29,68,149,40,150,39,68,151,38,152,37,68,153,36,154,35,34
 	.byte 12,31,0,84,14,128,5,157,80,158,79,68,13,29,68,147,78,148,77,68,149,76,150,75,68,151,74,152,73,68,153,72
 	.byte 154,71,34,12,31,0,68,14,192,2,157,40,158,39,68,13,29,68,147,38,148,37,68,149,36,150,35,68,151,34,152,33
-	.byte 68,153,32,154,31,24,12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,151,32,152,31,68,153,30,154,29,39,12
-	.byte 31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154
-	.byte 8,68,155,7,156,6
+	.byte 68,153,32,154,31,24,12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,151,32,152,31,68,153,30,154,29,28,12
+	.byte 31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5,32,12,31,0,68
+	.byte 14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8,32,12,31,0
+	.byte 68,14,128,2,157,32,158,31,68,13,29,68,148,30,149,29,68,150,28,151,27,68,152,26,153,25,68,154,24,32,12,31
+	.byte 0,68,14,224,1,157,28,158,27,68,13,29,68,148,26,149,25,68,150,24,151,23,68,152,22,153,21,68,154,20,34,12
+	.byte 31,0,68,14,224,1,157,28,158,27,68,13,29,68,147,26,148,25,68,149,24,150,23,68,151,22,152,21,68,153,20,154
+	.byte 19,39,12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68
+	.byte 153,7,154,6,68,155,5,156,4,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12
+	.byte 150,11,68,151,10,152,9,68,153,8,154,7,68,155,6,156,5,39,12,31,0,68,14,176,1,157,22,158,21,68,13,29
+	.byte 76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9,154,8,68,155,7,156,6
 
 .text
 	.align 4
@@ -2954,1945 +5945,2814 @@ plt_System_Net_Primitives__jit_icall_mono_threads_state_poll:
 _p_1:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #424]
-br x16
-.word 595
-_p_2_plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int_llvm:
-	.globl _p_2_plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int_llvm
-.private_extern _p_2_plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int_llvm
-	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int
-plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int:
-_p_2:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #432]
-br x16
-.word 598
-_p_3_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr_llvm:
-	.globl _p_3_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr_llvm
-.private_extern _p_3_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr
-plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr:
-_p_3:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #440]
-br x16
-.word 600
-_p_4_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm:
-	.globl _p_4_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
-.private_extern _p_4_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int
-plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int:
-_p_4:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #448]
-br x16
-.word 605
-_p_5_plt_System_Net_Primitives__jit_icall_mono_helper_ldstr_llvm:
-	.globl _p_5_plt_System_Net_Primitives__jit_icall_mono_helper_ldstr_llvm
-.private_extern _p_5_plt_System_Net_Primitives__jit_icall_mono_helper_ldstr_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_helper_ldstr
-plt_System_Net_Primitives__jit_icall_mono_helper_ldstr:
-_p_5:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #456]
-br x16
-.word 610
-_p_6_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm:
-	.globl _p_6_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
-.private_extern _p_6_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string
-plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string:
-_p_6:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #464]
-br x16
-.word 613
-_p_7_plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
-	.globl _p_7_plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
-.private_extern _p_7_plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline
-plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline:
-_p_7:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #472]
-br x16
-.word 618
-_p_8_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm:
-	.globl _p_8_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
-.private_extern _p_8_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string
-plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string:
-_p_8:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #480]
-br x16
-.word 621
-_p_9_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm:
-	.globl _p_9_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm
-.private_extern _p_9_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int
-plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int:
-_p_9:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
-ldr x16, [x16, #488]
-br x16
-.word 626
-_p_10_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm:
-	.globl _p_10_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
-.private_extern _p_10_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear
-plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear:
-_p_10:
-adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
-add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 638
-_p_11_plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
-	.globl _p_11_plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
-.private_extern _p_11_plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
-	.no_dead_strip plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr
-plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr:
-_p_11:
+.word 4014
+_p_2_plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
+	.globl _p_2_plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
+.private_extern _p_2_plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline
+plt_System_Net_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline:
+_p_2:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 643
-_p_12_plt_System_Net_Primitives_System_InvalidOperationException__ctor_string_llvm:
-	.globl _p_12_plt_System_Net_Primitives_System_InvalidOperationException__ctor_string_llvm
-.private_extern _p_12_plt_System_Net_Primitives_System_InvalidOperationException__ctor_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_InvalidOperationException__ctor_string
-plt_System_Net_Primitives_System_InvalidOperationException__ctor_string:
-_p_12:
+.word 4017
+_p_3_plt_System_Net_Primitives_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error_llvm:
+	.globl _p_3_plt_System_Net_Primitives_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error_llvm
+.private_extern _p_3_plt_System_Net_Primitives_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error
+plt_System_Net_Primitives_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error:
+_p_3:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 651
-_p_13_plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception_llvm:
-	.globl _p_13_plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception_llvm
-.private_extern _p_13_plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception
-plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception:
-_p_13:
+.word 4020
+_p_4_plt_System_Net_Primitives_Interop_ErrorInfo_get_RawErrno_llvm:
+	.globl _p_4_plt_System_Net_Primitives_Interop_ErrorInfo_get_RawErrno_llvm
+.private_extern _p_4_plt_System_Net_Primitives_Interop_ErrorInfo_get_RawErrno_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_ErrorInfo_get_RawErrno
+plt_System_Net_Primitives_Interop_ErrorInfo_get_RawErrno:
+_p_4:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 656
-_p_14_plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
-	.globl _p_14_plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
-.private_extern _p_14_plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr
-plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr:
-_p_14:
+.word 4022
+_p_5_plt_System_Net_Primitives_Interop_Sys_StrError_int_llvm:
+	.globl _p_5_plt_System_Net_Primitives_Interop_Sys_StrError_int_llvm
+.private_extern _p_5_plt_System_Net_Primitives_Interop_Sys_StrError_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_StrError_int
+plt_System_Net_Primitives_Interop_Sys_StrError_int:
+_p_5:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 658
-_p_15_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
-	.globl _p_15_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
-.private_extern _p_15_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException
-plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException:
-_p_15:
+.word 4024
+_p_6_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm:
+	.globl _p_6_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
+.private_extern _p_6_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int
+plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int:
+_p_6:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 663
-_p_16_plt_System_Net_Primitives_string_Substring_int_int_llvm:
-	.globl _p_16_plt_System_Net_Primitives_string_Substring_int_int_llvm
-.private_extern _p_16_plt_System_Net_Primitives_string_Substring_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Substring_int_int
-plt_System_Net_Primitives_string_Substring_int_int:
-_p_16:
+.word 4026
+_p_7_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm:
+	.globl _p_7_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
+.private_extern _p_7_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string
+plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string:
+_p_7:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 668
-_p_17_plt_System_Net_Primitives_char_IsWhiteSpace_char_llvm:
-	.globl _p_17_plt_System_Net_Primitives_char_IsWhiteSpace_char_llvm
-.private_extern _p_17_plt_System_Net_Primitives_char_IsWhiteSpace_char_llvm
-	.no_dead_strip plt_System_Net_Primitives_char_IsWhiteSpace_char
-plt_System_Net_Primitives_char_IsWhiteSpace_char:
-_p_17:
+.word 4031
+_p_8_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm:
+	.globl _p_8_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm
+.private_extern _p_8_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int
+plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int:
+_p_8:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 673
-_p_18_plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
-	.globl _p_18_plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
-.private_extern _p_18_plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
-	.no_dead_strip plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr
-plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr:
-_p_18:
+.word 4036
+_p_9_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Interop_Error_Interop_Error_llvm:
+	.globl _p_9_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Interop_Error_Interop_Error_llvm
+.private_extern _p_9_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Interop_Error_Interop_Error_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Interop_Error_Interop_Error
+plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_Interop_Error_Interop_Error:
+_p_9:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 678
-_p_19_plt_System_Net_Primitives_string_Join_string_object___llvm:
-	.globl _p_19_plt_System_Net_Primitives_string_Join_string_object___llvm
-.private_extern _p_19_plt_System_Net_Primitives_string_Join_string_object___llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Join_string_object__
-plt_System_Net_Primitives_string_Join_string_object__:
-_p_19:
+.word 4048
+_p_10_plt_System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage_llvm:
+	.globl _p_10_plt_System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage_llvm
+.private_extern _p_10_plt_System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage
+plt_System_Net_Primitives_Interop_ErrorInfo_GetErrorMessage:
+_p_10:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 686
-_p_20_plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int_llvm:
-	.globl _p_20_plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int_llvm
-.private_extern _p_20_plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int
-plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int:
-_p_20:
+.word 4060
+_p_11_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm:
+	.globl _p_11_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
+.private_extern _p_11_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string
+plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_string:
+_p_11:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 691
-_p_21_plt_System_Net_Primitives_System_Text_StringBuilder_Clear_llvm:
-	.globl _p_21_plt_System_Net_Primitives_System_Text_StringBuilder_Clear_llvm
-.private_extern _p_21_plt_System_Net_Primitives_System_Text_StringBuilder_Clear_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_Clear
-plt_System_Net_Primitives_System_Text_StringBuilder_Clear:
-_p_21:
+.word 4062
+_p_12_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm:
+	.globl _p_12_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
+.private_extern _p_12_plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear
+plt_System_Net_Primitives_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear:
+_p_12:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 696
-_p_22_plt_System_Net_Primitives_System_DateTime_get_Now_llvm:
-	.globl _p_22_plt_System_Net_Primitives_System_DateTime_get_Now_llvm
-.private_extern _p_22_plt_System_Net_Primitives_System_DateTime_get_Now_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_DateTime_get_Now
-plt_System_Net_Primitives_System_DateTime_get_Now:
-_p_22:
+.word 4067
+_p_13_plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
+	.globl _p_13_plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
+.private_extern _p_13_plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr
+plt_System_Net_Primitives_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr:
+_p_13:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 701
-_p_23_plt_System_Net_Primitives_System_DateTime_ToLocalTime_llvm:
-	.globl _p_23_plt_System_Net_Primitives_System_DateTime_ToLocalTime_llvm
-.private_extern _p_23_plt_System_Net_Primitives_System_DateTime_ToLocalTime_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_DateTime_ToLocalTime
-plt_System_Net_Primitives_System_DateTime_ToLocalTime:
-_p_23:
+.word 4072
+_p_14_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
+	.globl _p_14_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
+.private_extern _p_14_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException
+plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException:
+_p_14:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 706
-_p_24_plt_System_Net_Primitives_string_StartsWith_char_llvm:
-	.globl _p_24_plt_System_Net_Primitives_string_StartsWith_char_llvm
-.private_extern _p_24_plt_System_Net_Primitives_string_StartsWith_char_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_StartsWith_char
-plt_System_Net_Primitives_string_StartsWith_char:
-_p_24:
+.word 4077
+_p_15_plt_System_Net_Primitives_Interop_Sys_StrErrorR_int_byte__int_llvm:
+	.globl _p_15_plt_System_Net_Primitives_Interop_Sys_StrErrorR_int_byte__int_llvm
+.private_extern _p_15_plt_System_Net_Primitives_Interop_Sys_StrErrorR_int_byte__int_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_StrErrorR_int_byte__int
+plt_System_Net_Primitives_Interop_Sys_StrErrorR_int_byte__int:
+_p_15:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 711
-_p_25_plt_System_Net_Primitives_string_EndsWith_char_llvm:
-	.globl _p_25_plt_System_Net_Primitives_string_EndsWith_char_llvm
-.private_extern _p_25_plt_System_Net_Primitives_string_EndsWith_char_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_EndsWith_char
-plt_System_Net_Primitives_string_EndsWith_char:
-_p_25:
+.word 4082
+_p_16_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr_llvm:
+	.globl _p_16_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr_llvm
+.private_extern _p_16_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr
+plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_PtrToStringUTF8_intptr:
+_p_16:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 716
-_p_26_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
-	.globl _p_26_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
-.private_extern _p_26_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
-plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
-_p_26:
+.word 4084
+_p_17_plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int_llvm:
+	.globl _p_17_plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int_llvm
+.private_extern _p_17_plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int
+plt_System_Net_Primitives_Interop_Sys_GetDomainName_byte__int:
+_p_17:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 721
-_p_27_plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison_llvm:
-	.globl _p_27_plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison_llvm
-.private_extern _p_27_plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison
-plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison:
-_p_27:
+.word 4089
+_p_18_plt_System_Net_Primitives__jit_icall_mono_helper_ldstr_llvm:
+	.globl _p_18_plt_System_Net_Primitives__jit_icall_mono_helper_ldstr_llvm
+.private_extern _p_18_plt_System_Net_Primitives__jit_icall_mono_helper_ldstr_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_helper_ldstr
+plt_System_Net_Primitives__jit_icall_mono_helper_ldstr:
+_p_18:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 726
-_p_28_plt_System_Net_Primitives_System_Uri_get_Host_llvm:
-	.globl _p_28_plt_System_Net_Primitives_System_Uri_get_Host_llvm
-.private_extern _p_28_plt_System_Net_Primitives_System_Uri_get_Host_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_Host
-plt_System_Net_Primitives_System_Uri_get_Host:
-_p_28:
+.word 4091
+_p_19_plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
+	.globl _p_19_plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+.private_extern _p_19_plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr
+plt_System_Net_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr:
+_p_19:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 731
-_p_29_plt_System_Net_Primitives_System_Uri_get_Port_llvm:
-	.globl _p_29_plt_System_Net_Primitives_System_Uri_get_Port_llvm
-.private_extern _p_29_plt_System_Net_Primitives_System_Uri_get_Port_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_Port
-plt_System_Net_Primitives_System_Uri_get_Port:
-_p_29:
+.word 4094
+_p_20_plt_System_Net_Primitives_System_InvalidOperationException__ctor_string_llvm:
+	.globl _p_20_plt_System_Net_Primitives_System_InvalidOperationException__ctor_string_llvm
+.private_extern _p_20_plt_System_Net_Primitives_System_InvalidOperationException__ctor_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_InvalidOperationException__ctor_string
+plt_System_Net_Primitives_System_InvalidOperationException__ctor_string:
+_p_20:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 736
-_p_30_plt_System_Net_Primitives_System_Uri_get_AbsolutePath_llvm:
-	.globl _p_30_plt_System_Net_Primitives_System_Uri_get_AbsolutePath_llvm
-.private_extern _p_30_plt_System_Net_Primitives_System_Uri_get_AbsolutePath_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_AbsolutePath
-plt_System_Net_Primitives_System_Uri_get_AbsolutePath:
-_p_30:
+.word 4102
+_p_21_plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception_llvm:
+	.globl _p_21_plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception_llvm
+.private_extern _p_21_plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception
+plt_System_Net_Primitives__jit_icall_mono_arch_throw_exception:
+_p_21:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 741
-_p_31_plt_System_Net_Primitives_System_SR_Format_string_object_object_llvm:
-	.globl _p_31_plt_System_Net_Primitives_System_SR_Format_string_object_object_llvm
-.private_extern _p_31_plt_System_Net_Primitives_System_SR_Format_string_object_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SR_Format_string_object_object
-plt_System_Net_Primitives_System_SR_Format_string_object_object:
-_p_31:
+.word 4107
+_p_22_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastPInvokeError_int_llvm:
+	.globl _p_22_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastPInvokeError_int_llvm
+.private_extern _p_22_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastPInvokeError_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastPInvokeError_int
+plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastPInvokeError_int:
+_p_22:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 746
-_p_32_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_llvm:
-	.globl _p_32_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_llvm
-.private_extern _p_32_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieException__ctor_string
-plt_System_Net_Primitives_System_Net_CookieException__ctor_string:
-_p_32:
+.word 4109
+_p_23_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_FromManaged_string_System_Span_1_byte_llvm:
+	.globl _p_23_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_FromManaged_string_System_Span_1_byte_llvm
+.private_extern _p_23_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_FromManaged_string_System_Span_1_byte_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_FromManaged_string_System_Span_1_byte
+plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_FromManaged_string_System_Span_1_byte:
+_p_23:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 748
-_p_33_plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm:
-	.globl _p_33_plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm
-.private_extern _p_33_plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int
-plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int:
-_p_33:
+.word 4114
+_p_24_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastSystemError_int_llvm:
+	.globl _p_24_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastSystemError_int_llvm
+.private_extern _p_24_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastSystemError_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastSystemError_int
+plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_SetLastSystemError_int:
+_p_24:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 754
-_p_34_plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison_llvm:
-	.globl _p_34_plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison_llvm
-.private_extern _p_34_plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison
-plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison:
-_p_34:
+.word 4119
+_p_25_plt_System_Net_Primitives_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte__llvm:
+	.globl _p_25_plt_System_Net_Primitives_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte__llvm
+.private_extern _p_25_plt_System_Net_Primitives_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte__llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_
+plt_System_Net_Primitives_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_:
+_p_25:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 770
-_p_35_plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
-	.globl _p_35_plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
-.private_extern _p_35_plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int
-plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int:
-_p_35:
+.word 4124
+_p_26_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_GetLastSystemError_llvm:
+	.globl _p_26_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_GetLastSystemError_llvm
+.private_extern _p_26_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_GetLastSystemError_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_GetLastSystemError
+plt_System_Net_Primitives_System_Runtime_InteropServices_Marshal_GetLastSystemError:
+_p_26:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 795
-_p_36_plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string_llvm:
-	.globl _p_36_plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string_llvm
-.private_extern _p_36_plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string
-plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string:
-_p_36:
+.word 4126
+_p_27_plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm:
+	.globl _p_27_plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm
+.private_extern _p_27_plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort
+plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort:
+_p_27:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 811
-_p_37_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
-	.globl _p_37_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
-.private_extern _p_37_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int
-plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int:
-_p_37:
+.word 4131
+_p_28_plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm:
+	.globl _p_28_plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
+.private_extern _p_28_plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type
+plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type:
+_p_28:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 813
-_p_38_plt_System_Net_Primitives_string_IndexOf_char_int_int_llvm:
-	.globl _p_38_plt_System_Net_Primitives_string_IndexOf_char_int_int_llvm
-.private_extern _p_38_plt_System_Net_Primitives_string_IndexOf_char_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_IndexOf_char_int_int
-plt_System_Net_Primitives_string_IndexOf_char_int_int:
-_p_38:
+.word 4134
+_p_29_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_Free_llvm:
+	.globl _p_29_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_Free_llvm
+.private_extern _p_29_plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_Free_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_Free
+plt_System_Net_Primitives_System_Runtime_InteropServices_Marshalling_Utf8StringMarshaller_ManagedToUnmanagedIn_Free:
+_p_29:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 829
-_p_39_plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string_llvm:
-	.globl _p_39_plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string_llvm
-.private_extern _p_39_plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string
-plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string:
-_p_39:
+.word 4139
+_p_30_plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm:
+	.globl _p_30_plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm
+.private_extern _p_30_plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline
+plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline:
+_p_30:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 834
-_p_40_plt_System_Net_Primitives_string_ToLowerInvariant_llvm:
-	.globl _p_40_plt_System_Net_Primitives_string_ToLowerInvariant_llvm
-.private_extern _p_40_plt_System_Net_Primitives_string_ToLowerInvariant_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_ToLowerInvariant
-plt_System_Net_Primitives_string_ToLowerInvariant:
-_p_40:
+.word 4144
+_p_31_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
+	.globl _p_31_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
+.private_extern _p_31_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument
+plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument:
+_p_31:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 836
-_p_41_plt_System_Net_Primitives_string_Concat_string_string_llvm:
-	.globl _p_41_plt_System_Net_Primitives_string_Concat_string_string_llvm
-.private_extern _p_41_plt_System_Net_Primitives_string_Concat_string_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Concat_string_string
-plt_System_Net_Primitives_string_Concat_string_string:
-_p_41:
+.word 4147
+_p_32_plt_System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool_llvm:
+	.globl _p_32_plt_System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool_llvm
+.private_extern _p_32_plt_System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool
+plt_System_Net_Primitives_System_IPv4AddressHelper_ParseNonCanonical_char__int_int__bool:
+_p_32:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 841
-_p_42_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm:
-	.globl _p_42_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm
-.private_extern _p_42_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int
-plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int:
-_p_42:
+.word 4152
+_p_33_plt_System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool_llvm:
+	.globl _p_33_plt_System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool_llvm
+.private_extern _p_33_plt_System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool
+plt_System_Net_Primitives_System_IPv4AddressHelper_IsValidCanonical_char__int_int__bool_bool:
+_p_33:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 846
-_p_43_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm:
-	.globl _p_43_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm
-.private_extern _p_43_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int
-plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int:
-_p_43:
+.word 4154
+_p_34_plt_System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool_llvm:
+	.globl _p_34_plt_System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool_llvm
+.private_extern _p_34_plt_System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool
+plt_System_Net_Primitives_System_IPv4AddressHelper_IsValid_char__int_int__bool_bool_bool:
+_p_34:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 880
-_p_44_plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions_llvm:
-	.globl _p_44_plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions_llvm
-.private_extern _p_44_plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions
-plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions:
-_p_44:
+.word 4156
+_p_35_plt_System_Net_Primitives_string__ctor_System_ReadOnlySpan_1_char_llvm:
+	.globl _p_35_plt_System_Net_Primitives_string__ctor_System_ReadOnlySpan_1_char_llvm
+.private_extern _p_35_plt_System_Net_Primitives_string__ctor_System_ReadOnlySpan_1_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_string__ctor_System_ReadOnlySpan_1_char
+plt_System_Net_Primitives_string__ctor_System_ReadOnlySpan_1_char:
+_p_35:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 896
-_p_45_plt_System_Net_Primitives_int_TryParse_string_int__llvm:
-	.globl _p_45_plt_System_Net_Primitives_int_TryParse_string_int__llvm
-.private_extern _p_45_plt_System_Net_Primitives_int_TryParse_string_int__llvm
-	.no_dead_strip plt_System_Net_Primitives_int_TryParse_string_int_
-plt_System_Net_Primitives_int_TryParse_string_int_:
-_p_45:
+.word 4158
+_p_36_plt_System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int_llvm:
+	.globl _p_36_plt_System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int_llvm
+.private_extern _p_36_plt_System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int
+plt_System_Net_Primitives_System_IPv4AddressHelper_ParseHostNumber_System_ReadOnlySpan_1_char_int_int:
+_p_36:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 901
-_p_46_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm:
-	.globl _p_46_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
-.private_extern _p_46_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string
-plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string:
-_p_46:
+.word 4163
+_p_37_plt_System_Net_Primitives_System_Uri_FromHex_char_llvm:
+	.globl _p_37_plt_System_Net_Primitives_System_Uri_FromHex_char_llvm
+.private_extern _p_37_plt_System_Net_Primitives_System_Uri_FromHex_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_FromHex_char
+plt_System_Net_Primitives_System_Uri_FromHex_char:
+_p_37:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 906
-_p_47_plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm:
-	.globl _p_47_plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
-.private_extern _p_47_plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char
-plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char:
-_p_47:
+.word 4165
+_p_38_plt_System_Net_Primitives_string_Substring_int_int_llvm:
+	.globl _p_38_plt_System_Net_Primitives_string_Substring_int_int_llvm
+.private_extern _p_38_plt_System_Net_Primitives_string_Substring_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Substring_int_int
+plt_System_Net_Primitives_string_Substring_int_int:
+_p_38:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 918
-_p_48_plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int_llvm:
-	.globl _p_48_plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int_llvm
-.private_extern _p_48_plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int
-plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int:
-_p_48:
+.word 4170
+_p_39_plt_System_Net_Primitives_char_IsWhiteSpace_char_llvm:
+	.globl _p_39_plt_System_Net_Primitives_char_IsWhiteSpace_char_llvm
+.private_extern _p_39_plt_System_Net_Primitives_char_IsWhiteSpace_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_char_IsWhiteSpace_char
+plt_System_Net_Primitives_char_IsWhiteSpace_char:
+_p_39:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 920
-_p_49_plt_System_Net_Primitives__jit_icall_mono_generic_class_init_llvm:
-	.globl _p_49_plt_System_Net_Primitives__jit_icall_mono_generic_class_init_llvm
-.private_extern _p_49_plt_System_Net_Primitives__jit_icall_mono_generic_class_init_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_generic_class_init
-plt_System_Net_Primitives__jit_icall_mono_generic_class_init:
-_p_49:
+.word 4175
+_p_40_plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
+	.globl _p_40_plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
+.private_extern _p_40_plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr
+plt_System_Net_Primitives_wrapper_alloc_object_AllocVector_intptr_intptr:
+_p_40:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 932
-_p_50_plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int_llvm:
-	.globl _p_50_plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int_llvm
-.private_extern _p_50_plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int
-plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int:
-_p_50:
+.word 4180
+_p_41_plt_System_Net_Primitives_string_Join_string_object___llvm:
+	.globl _p_41_plt_System_Net_Primitives_string_Join_string_object___llvm
+.private_extern _p_41_plt_System_Net_Primitives_string_Join_string_object___llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Join_string_object__
+plt_System_Net_Primitives_string_Join_string_object__:
+_p_41:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 935
-_p_51_plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder_llvm:
-	.globl _p_51_plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder_llvm
-.private_extern _p_51_plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder
-plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder:
-_p_51:
+.word 4188
+_p_42_plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int_llvm:
+	.globl _p_42_plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int_llvm
+.private_extern _p_42_plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int
+plt_System_Net_Primitives_System_Text_StringBuilder__ctor_int:
+_p_42:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 937
-_p_52_plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder_llvm:
-	.globl _p_52_plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder_llvm
-.private_extern _p_52_plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
-plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder:
-_p_52:
+.word 4193
+_p_43_plt_System_Net_Primitives_System_Text_StringBuilder_Clear_llvm:
+	.globl _p_43_plt_System_Net_Primitives_System_Text_StringBuilder_Clear_llvm
+.private_extern _p_43_plt_System_Net_Primitives_System_Text_StringBuilder_Clear_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_Clear
+plt_System_Net_Primitives_System_Text_StringBuilder_Clear:
+_p_43:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 939
-_p_53_plt_System_Net_Primitives_System_Text_StringBuilder_Append_string_llvm:
-	.globl _p_53_plt_System_Net_Primitives_System_Text_StringBuilder_Append_string_llvm
-.private_extern _p_53_plt_System_Net_Primitives_System_Text_StringBuilder_Append_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_Append_string
-plt_System_Net_Primitives_System_Text_StringBuilder_Append_string:
-_p_53:
+.word 4198
+_p_44_plt_System_Net_Primitives_System_DateTime_get_Now_llvm:
+	.globl _p_44_plt_System_Net_Primitives_System_DateTime_get_Now_llvm
+.private_extern _p_44_plt_System_Net_Primitives_System_DateTime_get_Now_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_DateTime_get_Now
+plt_System_Net_Primitives_System_DateTime_get_Now:
+_p_44:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 941
-_p_54_plt_System_Net_Primitives_System_Text_StringBuilder_Append_char_llvm:
-	.globl _p_54_plt_System_Net_Primitives_System_Text_StringBuilder_Append_char_llvm
-.private_extern _p_54_plt_System_Net_Primitives_System_Text_StringBuilder_Append_char_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_Append_char
-plt_System_Net_Primitives_System_Text_StringBuilder_Append_char:
-_p_54:
+.word 4203
+_p_45_plt_System_Net_Primitives_System_DateTime_ToLocalTime_llvm:
+	.globl _p_45_plt_System_Net_Primitives_System_DateTime_ToLocalTime_llvm
+.private_extern _p_45_plt_System_Net_Primitives_System_DateTime_ToLocalTime_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_DateTime_ToLocalTime
+plt_System_Net_Primitives_System_DateTime_ToLocalTime:
+_p_45:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 946
-_p_55_plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int_llvm:
-	.globl _p_55_plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int_llvm
-.private_extern _p_55_plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int
-plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int:
-_p_55:
+.word 4208
+_p_46_plt_System_Net_Primitives_string_StartsWith_char_llvm:
+	.globl _p_46_plt_System_Net_Primitives_string_StartsWith_char_llvm
+.private_extern _p_46_plt_System_Net_Primitives_string_StartsWith_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_StartsWith_char
+plt_System_Net_Primitives_string_StartsWith_char:
+_p_46:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 951
-_p_56_plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int_llvm:
-	.globl _p_56_plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int_llvm
-.private_extern _p_56_plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int
-plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int:
-_p_56:
+.word 4213
+_p_47_plt_System_Net_Primitives_string_EndsWith_char_llvm:
+	.globl _p_47_plt_System_Net_Primitives_string_EndsWith_char_llvm
+.private_extern _p_47_plt_System_Net_Primitives_string_EndsWith_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_EndsWith_char
+plt_System_Net_Primitives_string_EndsWith_char:
+_p_47:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 956
-_p_57_plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm:
-	.globl _p_57_plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm
-.private_extern _p_57_plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo
-plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo:
-_p_57:
+.word 4218
+_p_48_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
+	.globl _p_48_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
+.private_extern _p_48_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument
+plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument:
+_p_48:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 961
-_p_58_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider_llvm:
-	.globl _p_58_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider_llvm
-.private_extern _p_58_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider
-plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider:
-_p_58:
+.word 4223
+_p_49_plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison_llvm:
+	.globl _p_49_plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison_llvm
+.private_extern _p_49_plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison
+plt_System_Net_Primitives_string_Compare_string_int_string_int_int_System_StringComparison:
+_p_49:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 966
-_p_59_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int_llvm:
-	.globl _p_59_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int_llvm
-.private_extern _p_59_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int
-plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int:
-_p_59:
+.word 4228
+_p_50_plt_System_Net_Primitives_System_Uri_get_Host_llvm:
+	.globl _p_50_plt_System_Net_Primitives_System_Uri_get_Host_llvm
+.private_extern _p_50_plt_System_Net_Primitives_System_Uri_get_Host_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_Host
+plt_System_Net_Primitives_System_Uri_get_Host:
+_p_50:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 971
-_p_60_plt_System_Net_Primitives_string_Concat_string_string_string_llvm:
-	.globl _p_60_plt_System_Net_Primitives_string_Concat_string_string_string_llvm
-.private_extern _p_60_plt_System_Net_Primitives_string_Concat_string_string_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Concat_string_string_string
-plt_System_Net_Primitives_string_Concat_string_string_string:
-_p_60:
+.word 4233
+_p_51_plt_System_Net_Primitives_System_Uri_get_Port_llvm:
+	.globl _p_51_plt_System_Net_Primitives_System_Uri_get_Port_llvm
+.private_extern _p_51_plt_System_Net_Primitives_System_Uri_get_Port_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_Port
+plt_System_Net_Primitives_System_Uri_get_Port:
+_p_51:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 983
-_p_61_plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri_llvm:
-	.globl _p_61_plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
-.private_extern _p_61_plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri
-plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri:
-_p_61:
+.word 4238
+_p_52_plt_System_Net_Primitives_System_Uri_get_AbsolutePath_llvm:
+	.globl _p_52_plt_System_Net_Primitives_System_Uri_get_AbsolutePath_llvm
+.private_extern _p_52_plt_System_Net_Primitives_System_Uri_get_AbsolutePath_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_AbsolutePath
+plt_System_Net_Primitives_System_Uri_get_AbsolutePath:
+_p_52:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 988
-_p_62_plt_System_Net_Primitives_string_op_Equality_string_string_llvm:
-	.globl _p_62_plt_System_Net_Primitives_string_op_Equality_string_string_llvm
-.private_extern _p_62_plt_System_Net_Primitives_string_op_Equality_string_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_op_Equality_string_string
-plt_System_Net_Primitives_string_op_Equality_string_string:
-_p_62:
+.word 4243
+_p_53_plt_System_Net_Primitives_System_SR_Format_string_object_object_llvm:
+	.globl _p_53_plt_System_Net_Primitives_System_SR_Format_string_object_object_llvm
+.private_extern _p_53_plt_System_Net_Primitives_System_SR_Format_string_object_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SR_Format_string_object_object
+plt_System_Net_Primitives_System_SR_Format_string_object_object:
+_p_53:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 993
-_p_63_plt_System_Net_Primitives_int_ToString_System_IFormatProvider_llvm:
-	.globl _p_63_plt_System_Net_Primitives_int_ToString_System_IFormatProvider_llvm
-.private_extern _p_63_plt_System_Net_Primitives_int_ToString_System_IFormatProvider_llvm
-	.no_dead_strip plt_System_Net_Primitives_int_ToString_System_IFormatProvider
-plt_System_Net_Primitives_int_ToString_System_IFormatProvider:
-_p_63:
+.word 4248
+_p_54_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_llvm:
+	.globl _p_54_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_llvm
+.private_extern _p_54_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieException__ctor_string
+plt_System_Net_Primitives_System_Net_CookieException__ctor_string:
+_p_54:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 998
-_p_64_plt_System_Net_Primitives_string_Concat_string_string_string_string_llvm:
-	.globl _p_64_plt_System_Net_Primitives_string_Concat_string_string_string_string_llvm
-.private_extern _p_64_plt_System_Net_Primitives_string_Concat_string_string_string_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Concat_string_string_string_string
-plt_System_Net_Primitives_string_Concat_string_string_string_string:
-_p_64:
+.word 4250
+_p_55_plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm:
+	.globl _p_55_plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm
+.private_extern _p_55_plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int
+plt_System_Net_Primitives_System_SpanHelpers_IndexOfAny_char_char__char_char_int:
+_p_55:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 1003
-_p_65_plt_System_Net_Primitives_string_memcpy_byte__byte__int_llvm:
-	.globl _p_65_plt_System_Net_Primitives_string_memcpy_byte__byte__int_llvm
-.private_extern _p_65_plt_System_Net_Primitives_string_memcpy_byte__byte__int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_memcpy_byte__byte__int
-plt_System_Net_Primitives_string_memcpy_byte__byte__int:
-_p_65:
+.word 4253
+_p_56_plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison_llvm:
+	.globl _p_56_plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison_llvm
+.private_extern _p_56_plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison
+plt_System_Net_Primitives_string_Equals_string_string_System_StringComparison:
+_p_56:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 1008
-_p_66_plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm:
-	.globl _p_66_plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm
-.private_extern _p_66_plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char
-plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char:
-_p_66:
+.word 4269
+_p_57_plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
+	.globl _p_57_plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
+.private_extern _p_57_plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int
+plt_System_Net_Primitives_System_SpanHelpers_LastIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int:
+_p_57:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 1013
-_p_67_plt_System_Net_Primitives_System_Collections_Hashtable__ctor_llvm:
-	.globl _p_67_plt_System_Net_Primitives_System_Collections_Hashtable__ctor_llvm
-.private_extern _p_67_plt_System_Net_Primitives_System_Collections_Hashtable__ctor_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Hashtable__ctor
-plt_System_Net_Primitives_System_Collections_Hashtable__ctor:
-_p_67:
+.word 4294
+_p_58_plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string_llvm:
+	.globl _p_58_plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string_llvm
+.private_extern _p_58_plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string
+plt_System_Net_Primitives_System_Net_Cookie_DomainCharsTest_string:
+_p_58:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 1018
-_p_68_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName_llvm:
-	.globl _p_68_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName_llvm
-.private_extern _p_68_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName
-plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName:
-_p_68:
+.word 4310
+_p_59_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
+	.globl _p_59_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
+.private_extern _p_59_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int:
+_p_59:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 1023
-_p_69_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast_llvm:
-	.globl _p_69_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast_llvm
-.private_extern _p_69_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast
-plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast:
-_p_69:
+.word 4312
+_p_60_plt_System_Net_Primitives_string_IndexOf_char_int_int_llvm:
+	.globl _p_60_plt_System_Net_Primitives_string_IndexOf_char_int_int_llvm
+.private_extern _p_60_plt_System_Net_Primitives_string_IndexOf_char_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_IndexOf_char_int_int
+plt_System_Net_Primitives_string_IndexOf_char_int_int:
+_p_60:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 1026
-_p_70_plt_System_Net_Primitives_System_Net_CookieCollection_get_Count_llvm:
-	.globl _p_70_plt_System_Net_Primitives_System_Net_CookieCollection_get_Count_llvm
-.private_extern _p_70_plt_System_Net_Primitives_System_Net_CookieCollection_get_Count_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_get_Count
-plt_System_Net_Primitives_System_Net_CookieCollection_get_Count:
-_p_70:
+.word 4328
+_p_61_plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string_llvm:
+	.globl _p_61_plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string_llvm
+.private_extern _p_61_plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string
+plt_System_Net_Primitives_System_Net_Cookie_IsDomainEqualToHost_string_string:
+_p_61:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 1029
-_p_71_plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int_llvm:
-	.globl _p_71_plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int_llvm
-.private_extern _p_71_plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int
-plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int:
-_p_71:
+.word 4333
+_p_62_plt_System_Net_Primitives_string_ToLowerInvariant_llvm:
+	.globl _p_62_plt_System_Net_Primitives_string_ToLowerInvariant_llvm
+.private_extern _p_62_plt_System_Net_Primitives_string_ToLowerInvariant_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_ToLowerInvariant
+plt_System_Net_Primitives_string_ToLowerInvariant:
+_p_62:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 1031
-_p_72_plt_System_Net_Primitives_System_Net_Cookie_get_Expired_llvm:
-	.globl _p_72_plt_System_Net_Primitives_System_Net_Cookie_get_Expired_llvm
-.private_extern _p_72_plt_System_Net_Primitives_System_Net_Cookie_get_Expired_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_get_Expired
-plt_System_Net_Primitives_System_Net_Cookie_get_Expired:
-_p_72:
+.word 4335
+_p_63_plt_System_Net_Primitives_string_Concat_string_string_llvm:
+	.globl _p_63_plt_System_Net_Primitives_string_Concat_string_string_llvm
+.private_extern _p_63_plt_System_Net_Primitives_string_Concat_string_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Concat_string_string
+plt_System_Net_Primitives_string_Concat_string_string:
+_p_63:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 1033
-_p_73_plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int_llvm:
-	.globl _p_73_plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int_llvm
-.private_extern _p_73_plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int
-plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int:
-_p_73:
+.word 4340
+_p_64_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm:
+	.globl _p_64_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm
+.private_extern _p_64_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int:
+_p_64:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 1035
-_p_74_plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm:
-	.globl _p_74_plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm
-.private_extern _p_74_plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort
-plt_System_Net_Primitives__jit_icall_ves_icall_thread_finish_async_abort:
-_p_74:
+.word 4345
+_p_65_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm:
+	.globl _p_65_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm
+.private_extern _p_65_plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int:
+_p_65:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 1037
-_p_75_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal_llvm:
-	.globl _p_75_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal_llvm
-.private_extern _p_75_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal
-plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal:
-_p_75:
+.word 4379
+_p_66_plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions_llvm:
+	.globl _p_66_plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions_llvm
+.private_extern _p_66_plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions
+plt_System_Net_Primitives_string_Split_char___System_StringSplitOptions:
+_p_66:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 1040
-_p_76_plt_System_Net_Primitives_System_Threading_Monitor_Exit_object_llvm:
-	.globl _p_76_plt_System_Net_Primitives_System_Threading_Monitor_Exit_object_llvm
-.private_extern _p_76_plt_System_Net_Primitives_System_Threading_Monitor_Exit_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Threading_Monitor_Exit_object
-plt_System_Net_Primitives_System_Threading_Monitor_Exit_object:
-_p_76:
+.word 4395
+_p_67_plt_System_Net_Primitives_int_TryParse_string_int__llvm:
+	.globl _p_67_plt_System_Net_Primitives_int_TryParse_string_int__llvm
+.private_extern _p_67_plt_System_Net_Primitives_int_TryParse_string_int__llvm
+	.no_dead_strip plt_System_Net_Primitives_int_TryParse_string_int_
+plt_System_Net_Primitives_int_TryParse_string_int_:
+_p_67:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 1043
-_p_77_plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm:
-	.globl _p_77_plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm
-.private_extern _p_77_plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline
-plt_System_Net_Primitives__jit_icall_llvm_resume_unwind_trampoline:
-_p_77:
+.word 4400
+_p_68_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm:
+	.globl _p_68_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
+.private_extern _p_68_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string
+plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string:
+_p_68:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 1048
-_p_78_plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un_llvm:
-	.globl _p_78_plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un_llvm
-.private_extern _p_78_plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un
-plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un:
-_p_78:
+.word 4405
+_p_69_plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm:
+	.globl _p_69_plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
+.private_extern _p_69_plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char
+plt_System_Net_Primitives_System_Net_CookieComparer_EqualDomains_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char:
+_p_69:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 1051
-_p_79_plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions_llvm:
-	.globl _p_79_plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions_llvm
-.private_extern _p_79_plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions
-plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions:
-_p_79:
+.word 4417
+_p_70_plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int_llvm:
+	.globl _p_70_plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int_llvm
+.private_extern _p_70_plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int
+plt_System_Net_Primitives_System_HashCode_Combine_int_int_int_int_int_int_int_int_int_int:
+_p_70:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 1053
-_p_80_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm:
-	.globl _p_80_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
-.private_extern _p_80_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int
-plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int:
-_p_80:
+.word 4420
+_p_71_plt_System_Net_Primitives__jit_icall_mono_generic_class_init_llvm:
+	.globl _p_71_plt_System_Net_Primitives__jit_icall_mono_generic_class_init_llvm
+.private_extern _p_71_plt_System_Net_Primitives__jit_icall_mono_generic_class_init_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_generic_class_init
+plt_System_Net_Primitives__jit_icall_mono_generic_class_init:
+_p_71:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 1058
-_p_81_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm:
-	.globl _p_81_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
-.private_extern _p_81_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr
-plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr:
-_p_81:
+.word 4432
+_p_72_plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int_llvm:
+	.globl _p_72_plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int_llvm
+.private_extern _p_72_plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int
+plt_System_Net_Primitives_System_Text_StringBuilderCache_Acquire_int:
+_p_72:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 1074
-_p_82_plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm:
-	.globl _p_82_plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
-.private_extern _p_82_plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type
-plt_System_Net_Primitives_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type:
-_p_82:
+.word 4435
+_p_73_plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder_llvm:
+	.globl _p_73_plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder_llvm
+.private_extern _p_73_plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder
+plt_System_Net_Primitives_System_Net_Cookie_ToString_System_Text_StringBuilder:
+_p_73:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 1079
-_p_83_plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string_llvm:
-	.globl _p_83_plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string_llvm
-.private_extern _p_83_plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string
-plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string:
-_p_83:
+.word 4437
+_p_74_plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder_llvm:
+	.globl _p_74_plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder_llvm
+.private_extern _p_74_plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder
+plt_System_Net_Primitives_System_Text_StringBuilderCache_GetStringAndRelease_System_Text_StringBuilder:
+_p_74:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 1084
-_p_84_plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri_llvm:
-	.globl _p_84_plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri_llvm
-.private_extern _p_84_plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri
-plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri:
-_p_84:
+.word 4439
+_p_75_plt_System_Net_Primitives_System_Text_StringBuilder_Append_string_llvm:
+	.globl _p_75_plt_System_Net_Primitives_System_Text_StringBuilder_Append_string_llvm
+.private_extern _p_75_plt_System_Net_Primitives_System_Text_StringBuilder_Append_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_Append_string
+plt_System_Net_Primitives_System_Text_StringBuilder_Append_string:
+_p_75:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 1089
-_p_85_plt_System_Net_Primitives_System_Uri_get_Scheme_llvm:
-	.globl _p_85_plt_System_Net_Primitives_System_Uri_get_Scheme_llvm
-.private_extern _p_85_plt_System_Net_Primitives_System_Uri_get_Scheme_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_Scheme
-plt_System_Net_Primitives_System_Uri_get_Scheme:
-_p_85:
+.word 4441
+_p_76_plt_System_Net_Primitives_System_Text_StringBuilder_Append_char_llvm:
+	.globl _p_76_plt_System_Net_Primitives_System_Text_StringBuilder_Append_char_llvm
+.private_extern _p_76_plt_System_Net_Primitives_System_Text_StringBuilder_Append_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_Append_char
+plt_System_Net_Primitives_System_Text_StringBuilder_Append_char:
+_p_76:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 1091
-_p_86_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string_llvm:
-	.globl _p_86_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
-.private_extern _p_86_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string
-plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string:
-_p_86:
+.word 4446
+_p_77_plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int_llvm:
+	.globl _p_77_plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int_llvm
+.private_extern _p_77_plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int
+plt_System_Net_Primitives_System_Text_StringBuilder_get_Chars_int:
+_p_77:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 1096
-_p_87_plt_System_Net_Primitives_string_Substring_int_llvm:
-	.globl _p_87_plt_System_Net_Primitives_string_Substring_int_llvm
-.private_extern _p_87_plt_System_Net_Primitives_string_Substring_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_Substring_int
-plt_System_Net_Primitives_string_Substring_int:
-_p_87:
+.word 4451
+_p_78_plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int_llvm:
+	.globl _p_78_plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int_llvm
+.private_extern _p_78_plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int
+plt_System_Net_Primitives_System_Text_StringBuilder_set_Length_int:
+_p_78:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 1113
-_p_88_plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool_llvm:
-	.globl _p_88_plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool_llvm
-.private_extern _p_88_plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool
-plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool:
-_p_88:
+.word 4456
+_p_79_plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm:
+	.globl _p_79_plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm
+.private_extern _p_79_plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo
+plt_System_Net_Primitives_System_Globalization_NumberFormatInfo_get_InvariantInfo:
+_p_79:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 1118
-_p_89_plt_System_Net_Primitives_string_LastIndexOf_char_int_llvm:
-	.globl _p_89_plt_System_Net_Primitives_string_LastIndexOf_char_int_llvm
-.private_extern _p_89_plt_System_Net_Primitives_string_LastIndexOf_char_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_LastIndexOf_char_int
-plt_System_Net_Primitives_string_LastIndexOf_char_int:
-_p_89:
+.word 4461
+_p_80_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider_llvm:
+	.globl _p_80_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider_llvm
+.private_extern _p_80_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider
+plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler__ctor_int_int_System_Text_StringBuilder_System_IFormatProvider:
+_p_80:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 1120
-_p_90_plt_System_Net_Primitives_string_IndexOf_char_int_llvm:
-	.globl _p_90_plt_System_Net_Primitives_string_IndexOf_char_int_llvm
-.private_extern _p_90_plt_System_Net_Primitives_string_IndexOf_char_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_IndexOf_char_int
-plt_System_Net_Primitives_string_IndexOf_char_int:
-_p_90:
+.word 4466
+_p_81_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int_llvm:
+	.globl _p_81_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int_llvm
+.private_extern _p_81_plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int
+plt_System_Net_Primitives_System_Text_StringBuilder_AppendInterpolatedStringHandler_AppendFormatted_int_int:
+_p_81:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 1125
-_p_91_plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot_llvm:
-	.globl _p_91_plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot_llvm
-.private_extern _p_91_plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot
-plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot:
-_p_91:
+.word 4471
+_p_82_plt_System_Net_Primitives_string_Concat_string_string_string_llvm:
+	.globl _p_82_plt_System_Net_Primitives_string_Concat_string_string_string_llvm
+.private_extern _p_82_plt_System_Net_Primitives_string_Concat_string_string_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Concat_string_string_string
+plt_System_Net_Primitives_string_Concat_string_string_string:
+_p_82:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 1130
-_p_92_plt_System_Net_Primitives_System_Net_PathList_get_Count_llvm:
-	.globl _p_92_plt_System_Net_Primitives_System_Net_PathList_get_Count_llvm
-.private_extern _p_92_plt_System_Net_Primitives_System_Net_PathList_get_Count_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_Count
-plt_System_Net_Primitives_System_Net_PathList_get_Count:
-_p_92:
+.word 4483
+_p_83_plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri_llvm:
+	.globl _p_83_plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
+.private_extern _p_83_plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri
+plt_System_Net_Primitives_System_Uri_op_Inequality_System_Uri_System_Uri:
+_p_83:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 1132
-_p_93_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
-	.globl _p_93_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
-.private_extern _p_93_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException
-plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException:
-_p_93:
+.word 4488
+_p_84_plt_System_Net_Primitives_string_op_Equality_string_string_llvm:
+	.globl _p_84_plt_System_Net_Primitives_string_op_Equality_string_string_llvm
+.private_extern _p_84_plt_System_Net_Primitives_string_op_Equality_string_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_op_Equality_string_string
+plt_System_Net_Primitives_string_op_Equality_string_string:
+_p_84:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 1134
-_p_94_plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string_llvm:
-	.globl _p_94_plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string_llvm
-.private_extern _p_94_plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string
-plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string:
-_p_94:
+.word 4493
+_p_85_plt_System_Net_Primitives_int_ToString_System_IFormatProvider_llvm:
+	.globl _p_85_plt_System_Net_Primitives_int_ToString_System_IFormatProvider_llvm
+.private_extern _p_85_plt_System_Net_Primitives_int_ToString_System_IFormatProvider_llvm
+	.no_dead_strip plt_System_Net_Primitives_int_ToString_System_IFormatProvider
+plt_System_Net_Primitives_int_ToString_System_IFormatProvider:
+_p_85:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 1139
-_p_95_plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp_llvm:
-	.globl _p_95_plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp_llvm
-.private_extern _p_95_plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp
-plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp:
-_p_95:
+.word 4498
+_p_86_plt_System_Net_Primitives_string_Concat_string_string_string_string_llvm:
+	.globl _p_86_plt_System_Net_Primitives_string_Concat_string_string_string_string_llvm
+.private_extern _p_86_plt_System_Net_Primitives_string_Concat_string_string_string_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Concat_string_string_string_string
+plt_System_Net_Primitives_string_Concat_string_string_string_string:
+_p_86:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 1141
-_p_96_plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool_llvm:
-	.globl _p_96_plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool_llvm
-.private_extern _p_96_plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool
-plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool:
-_p_96:
+.word 4503
+_p_87_plt_System_Net_Primitives_string_memcpy_byte__byte__int_llvm:
+	.globl _p_87_plt_System_Net_Primitives_string_memcpy_byte__byte__int_llvm
+.private_extern _p_87_plt_System_Net_Primitives_string_memcpy_byte__byte__int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_memcpy_byte__byte__int
+plt_System_Net_Primitives_string_memcpy_byte__byte__int:
+_p_87:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 1143
-_p_97_plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string_llvm:
-	.globl _p_97_plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string_llvm
-.private_extern _p_97_plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string
-plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string:
-_p_97:
+.word 4508
+_p_88_plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm:
+	.globl _p_88_plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm
+.private_extern _p_88_plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char
+plt_System_Net_Primitives_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char:
+_p_88:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 1145
-_p_98_plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison_llvm:
-	.globl _p_98_plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison_llvm
-.private_extern _p_98_plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison
-plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison:
-_p_98:
+.word 4513
+_p_89_plt_System_Net_Primitives_System_Collections_Hashtable__ctor_llvm:
+	.globl _p_89_plt_System_Net_Primitives_System_Collections_Hashtable__ctor_llvm
+.private_extern _p_89_plt_System_Net_Primitives_System_Collections_Hashtable__ctor_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Hashtable__ctor
+plt_System_Net_Primitives_System_Collections_Hashtable__ctor:
+_p_89:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 1148
-_p_99_plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool_llvm:
-	.globl _p_99_plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool_llvm
-.private_extern _p_99_plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool
-plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool:
-_p_99:
+.word 4518
+_p_90_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName_llvm:
+	.globl _p_90_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName_llvm
+.private_extern _p_90_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName
+plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformation_get_DomainName:
+_p_90:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 1153
-_p_100_plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string__llvm:
-	.globl _p_100_plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string__llvm
-.private_extern _p_100_plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string__llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string_
-plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string_:
-_p_100:
+.word 4523
+_p_91_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast_llvm:
+	.globl _p_91_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast_llvm
+.private_extern _p_91_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast
+plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_fast:
+_p_91:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 1155
-_p_101_plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool_llvm:
-	.globl _p_101_plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool_llvm
-.private_extern _p_101_plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
-plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool:
-_p_101:
+.word 4526
+_p_92_plt_System_Net_Primitives_System_Net_CookieCollection_get_Count_llvm:
+	.globl _p_92_plt_System_Net_Primitives_System_Net_CookieCollection_get_Count_llvm
+.private_extern _p_92_plt_System_Net_Primitives_System_Net_CookieCollection_get_Count_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_get_Count
+plt_System_Net_Primitives_System_Net_CookieCollection_get_Count:
+_p_92:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 1157
-_p_102_plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain_llvm:
-	.globl _p_102_plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain_llvm
-.private_extern _p_102_plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain
-plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain:
-_p_102:
+.word 4529
+_p_93_plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int_llvm:
+	.globl _p_93_plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int_llvm
+.private_extern _p_93_plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int
+plt_System_Net_Primitives_System_Net_CookieCollection_get_Item_int:
+_p_93:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 1159
-_p_103_plt_System_Net_Primitives_System_Collections_SortedList_get_Values_llvm:
-	.globl _p_103_plt_System_Net_Primitives_System_Collections_SortedList_get_Values_llvm
-.private_extern _p_103_plt_System_Net_Primitives_System_Collections_SortedList_get_Values_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_SortedList_get_Values
-plt_System_Net_Primitives_System_Collections_SortedList_get_Values:
-_p_103:
+.word 4531
+_p_94_plt_System_Net_Primitives_System_Net_Cookie_get_Expired_llvm:
+	.globl _p_94_plt_System_Net_Primitives_System_Net_Cookie_get_Expired_llvm
+.private_extern _p_94_plt_System_Net_Primitives_System_Net_Cookie_get_Expired_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_get_Expired
+plt_System_Net_Primitives_System_Net_Cookie_get_Expired:
+_p_94:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 1161
-_p_104_plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer_llvm:
-	.globl _p_104_plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer_llvm
-.private_extern _p_104_plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer
-plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer:
-_p_104:
+.word 4533
+_p_95_plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int_llvm:
+	.globl _p_95_plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int_llvm
+.private_extern _p_95_plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int
+plt_System_Net_Primitives_System_Net_CookieCollection_RemoveAt_int:
+_p_95:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 1166
-_p_105_plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList_llvm:
-	.globl _p_105_plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList_llvm
-.private_extern _p_105_plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList
-plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList:
-_p_105:
+.word 4535
+_p_96_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal_llvm:
+	.globl _p_96_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal_llvm
+.private_extern _p_96_plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal
+plt_System_Net_Primitives__jit_icall_mono_monitor_enter_v4_internal:
+_p_96:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 1171
-_p_106_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm:
-	.globl _p_106_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm
-.private_extern _p_106_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string
-plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string:
-_p_106:
+.word 4537
+_p_97_plt_System_Net_Primitives_System_Threading_Monitor_Exit_object_llvm:
+	.globl _p_97_plt_System_Net_Primitives_System_Threading_Monitor_Exit_object_llvm
+.private_extern _p_97_plt_System_Net_Primitives_System_Threading_Monitor_Exit_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Threading_Monitor_Exit_object
+plt_System_Net_Primitives_System_Threading_Monitor_Exit_object:
+_p_97:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 1176
-_p_107_plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie_llvm:
-	.globl _p_107_plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie_llvm
-.private_extern _p_107_plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie
-plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie:
-_p_107:
+.word 4540
+_p_98_plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un_llvm:
+	.globl _p_98_plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un_llvm
+.private_extern _p_98_plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un
+plt_System_Net_Primitives__jit_icall___emul_lmul_ovf_un:
+_p_98:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 1188
-_p_108_plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie_llvm:
-	.globl _p_108_plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie_llvm
-.private_extern _p_108_plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie
-plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie:
-_p_108:
+.word 4545
+_p_99_plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions_llvm:
+	.globl _p_99_plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions_llvm
+.private_extern _p_99_plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions
+plt_System_Net_Primitives_System_MemoryExtensions_Split_System_ReadOnlySpan_1_char_System_Span_1_System_Range_char_System_StringSplitOptions:
+_p_99:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 1190
-_p_109_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1_llvm:
-	.globl _p_109_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1_llvm
-.private_extern _p_109_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1
-plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1:
-_p_109:
+.word 4547
+_p_100_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm:
+	.globl _p_100_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
+.private_extern _p_100_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int
+plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_char_char__char__int:
+_p_100:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 1192
-_p_110_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose_llvm:
-	.globl _p_110_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose_llvm
-.private_extern _p_110_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose
-plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose:
-_p_110:
+.word 4552
+_p_101_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm:
+	.globl _p_101_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
+.private_extern _p_101_plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr
+plt_System_Net_Primitives_System_SpanHelpers_SequenceEqual_byte__byte__uintptr:
+_p_101:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 1194
-_p_111_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0_llvm:
-	.globl _p_111_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0_llvm
-.private_extern _p_111_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0
-plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0:
-_p_111:
+.word 4568
+_p_102_plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string_llvm:
+	.globl _p_102_plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string_llvm
+.private_extern _p_102_plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string
+plt_System_Net_Primitives_System_ArgumentNullException_ThrowIfNull_object_string:
+_p_102:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 1196
-_p_112_plt_System_Net_Primitives_System_Version__ctor_int_int_llvm:
-	.globl _p_112_plt_System_Net_Primitives_System_Version__ctor_int_int_llvm
-.private_extern _p_112_plt_System_Net_Primitives_System_Version__ctor_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Version__ctor_int_int
-plt_System_Net_Primitives_System_Version__ctor_int_int:
-_p_112:
+.word 4573
+_p_103_plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri_llvm:
+	.globl _p_103_plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri_llvm
+.private_extern _p_103_plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri
+plt_System_Net_Primitives_System_Net_CookieContainer_InternalGetCookies_System_Uri:
+_p_103:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 1199
-_p_113_plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific_llvm:
-	.globl _p_113_plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific_llvm
-.private_extern _p_113_plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific
-plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific:
-_p_113:
+.word 4578
+_p_104_plt_System_Net_Primitives_System_Uri_get_Scheme_llvm:
+	.globl _p_104_plt_System_Net_Primitives_System_Uri_get_Scheme_llvm
+.private_extern _p_104_plt_System_Net_Primitives_System_Uri_get_Scheme_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_Scheme
+plt_System_Net_Primitives_System_Uri_get_Scheme:
+_p_104:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 1204
-_p_114_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1_llvm:
-	.globl _p_114_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1_llvm
-.private_extern _p_114_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1
-plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1:
-_p_114:
+.word 4580
+_p_105_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string_llvm:
+	.globl _p_105_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
+.private_extern _p_105_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string
+plt_System_Net_Primitives_System_Collections_Generic_List_1_string_AddWithResize_string:
+_p_105:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 1207
-_p_115_plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm:
-	.globl _p_115_plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
-.private_extern _p_115_plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison
-plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison:
-_p_115:
+.word 4585
+_p_106_plt_System_Net_Primitives_string_Substring_int_llvm:
+	.globl _p_106_plt_System_Net_Primitives_string_Substring_int_llvm
+.private_extern _p_106_plt_System_Net_Primitives_string_Substring_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_Substring_int
+plt_System_Net_Primitives_string_Substring_int:
+_p_106:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 1210
-_p_116_plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int_llvm:
-	.globl _p_116_plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int_llvm
-.private_extern _p_116_plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int
-plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int:
-_p_116:
+.word 4602
+_p_107_plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool_llvm:
+	.globl _p_107_plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool_llvm
+.private_extern _p_107_plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool
+plt_System_Net_Primitives_System_Net_CookieContainer_BuildCookieCollectionFromDomainMatches_System_Uri_bool_int_System_Net_CookieCollection__System_Collections_Generic_List_1_string_bool:
+_p_107:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 1215
-_p_117_plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset_llvm:
-	.globl _p_117_plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset_llvm
-.private_extern _p_117_plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset
-plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset:
-_p_117:
+.word 4607
+_p_108_plt_System_Net_Primitives_string_LastIndexOf_char_int_llvm:
+	.globl _p_108_plt_System_Net_Primitives_string_LastIndexOf_char_int_llvm
+.private_extern _p_108_plt_System_Net_Primitives_string_LastIndexOf_char_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_LastIndexOf_char_int
+plt_System_Net_Primitives_string_LastIndexOf_char_int:
+_p_108:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 1217
-_p_118_plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool_llvm:
-	.globl _p_118_plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool_llvm
-.private_extern _p_118_plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool
-plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool:
-_p_118:
+.word 4609
+_p_109_plt_System_Net_Primitives_string_IndexOf_char_int_llvm:
+	.globl _p_109_plt_System_Net_Primitives_string_IndexOf_char_int_llvm
+.private_extern _p_109_plt_System_Net_Primitives_string_IndexOf_char_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_IndexOf_char_int
+plt_System_Net_Primitives_string_IndexOf_char_int:
+_p_109:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 1220
-_p_119_plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract_llvm:
-	.globl _p_119_plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract_llvm
-.private_extern _p_119_plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract
-plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract:
-_p_119:
+.word 4614
+_p_110_plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot_llvm:
+	.globl _p_110_plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot_llvm
+.private_extern _p_110_plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot
+plt_System_Net_Primitives_System_Net_PathList_get_SyncRoot:
+_p_110:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 1223
-_p_120_plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool_llvm:
-	.globl _p_120_plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool_llvm
-.private_extern _p_120_plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool
-plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool:
-_p_120:
+.word 4619
+_p_111_plt_System_Net_Primitives_System_Net_PathList_get_Count_llvm:
+	.globl _p_111_plt_System_Net_Primitives_System_Net_PathList_get_Count_llvm
+.private_extern _p_111_plt_System_Net_Primitives_System_Net_PathList_get_Count_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_Count
+plt_System_Net_Primitives_System_Net_PathList_get_Count:
+_p_111:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 1226
-_p_121_plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string_llvm:
-	.globl _p_121_plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string_llvm
-.private_extern _p_121_plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string
-plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string:
-_p_121:
+.word 4621
+_p_112_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
+	.globl _p_112_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
+.private_extern _p_112_plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException
+plt_System_Net_Primitives_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException:
+_p_112:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 1229
-_p_122_plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string_llvm:
-	.globl _p_122_plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string_llvm
-.private_extern _p_122_plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string
-plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string:
-_p_122:
+.word 4623
+_p_113_plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string_llvm:
+	.globl _p_113_plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string_llvm
+.private_extern _p_113_plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string
+plt_System_Net_Primitives_System_Net_CookieContainer_PathMatch_string_string:
+_p_113:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 1232
-_p_123_plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy_llvm:
-	.globl _p_123_plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy_llvm
-.private_extern _p_123_plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy
-plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy:
-_p_123:
+.word 4628
+_p_114_plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp_llvm:
+	.globl _p_114_plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp_llvm
+.private_extern _p_114_plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp
+plt_System_Net_Primitives_System_Net_CookieCollection_TimeStamp_System_Net_CookieCollection_Stamp:
+_p_114:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 1234
-_p_124_plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string_llvm:
-	.globl _p_124_plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string_llvm
-.private_extern _p_124_plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string
-plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string:
-_p_124:
+.word 4630
+_p_115_plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool_llvm:
+	.globl _p_115_plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool_llvm
+.private_extern _p_115_plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool
+plt_System_Net_Primitives_System_Net_CookieContainer_MergeUpdateCollections_System_Net_CookieCollection__System_Net_CookieCollection_int_bool_bool:
+_p_115:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 1237
-_p_125_plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool_llvm:
-	.globl _p_125_plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool_llvm
-.private_extern _p_125_plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool
-plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool:
-_p_125:
+.word 4632
+_p_116_plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string_llvm:
+	.globl _p_116_plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string_llvm
+.private_extern _p_116_plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string
+plt_System_Net_Primitives_System_Net_CookieParser_CheckQuoted_string:
+_p_116:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 1239
-_p_126_plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm:
-	.globl _p_126_plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
-.private_extern _p_126_plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri_
-plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri_:
-_p_126:
+.word 4634
+_p_117_plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison_llvm:
+	.globl _p_117_plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison_llvm
+.private_extern _p_117_plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison
+plt_System_Net_Primitives_string_StartsWith_string_System_StringComparison:
+_p_117:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 1242
-_p_127_plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string_llvm:
-	.globl _p_127_plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string_llvm
-.private_extern _p_127_plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string
-plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string:
-_p_127:
+.word 4637
+_p_118_plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool_llvm:
+	.globl _p_118_plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool_llvm
+.private_extern _p_118_plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool
+plt_System_Net_Primitives_System_Net_CookieCollection_InternalAdd_System_Net_Cookie_bool:
+_p_118:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 1247
-_p_128_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField_llvm:
-	.globl _p_128_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField_llvm
-.private_extern _p_128_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField
-plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField:
-_p_128:
+.word 4642
+_p_119_plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string__llvm:
+	.globl _p_119_plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string__llvm
+.private_extern _p_119_plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string_
+plt_System_Net_Primitives_System_Net_CookieContainer_GetCookieHeader_System_Uri_string_:
+_p_119:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 1249
-_p_129_plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object_llvm:
-	.globl _p_129_plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object_llvm
-.private_extern _p_129_plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object
-plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object:
-_p_129:
+.word 4644
+_p_120_plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool_llvm:
+	.globl _p_120_plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool_llvm
+.private_extern _p_120_plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
+plt_System_Net_Primitives_System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool:
+_p_120:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 1252
-_p_130_plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm:
-	.globl _p_130_plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm
-.private_extern _p_130_plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm
-	.no_dead_strip plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime_
-plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime_:
-_p_130:
+.word 4646
+_p_121_plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain_llvm:
+	.globl _p_121_plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain_llvm
+.private_extern _p_121_plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain
+plt_System_Net_Primitives_System_Net_CookieContainer_CreateFqdnMyDomain:
+_p_121:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 1257
-_p_131_plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string_llvm:
-	.globl _p_131_plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string_llvm
-.private_extern _p_131_plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string
-plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string:
-_p_131:
+.word 4648
+_p_122_plt_System_Net_Primitives_System_Collections_SortedList_get_Values_llvm:
+	.globl _p_122_plt_System_Net_Primitives_System_Collections_SortedList_get_Values_llvm
+.private_extern _p_122_plt_System_Net_Primitives_System_Collections_SortedList_get_Values_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_SortedList_get_Values
+plt_System_Net_Primitives_System_Collections_SortedList_get_Values:
+_p_122:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 1262
-_p_132_plt_System_Net_Primitives_System_DateTime_AddTicks_long_llvm:
-	.globl _p_132_plt_System_Net_Primitives_System_DateTime_AddTicks_long_llvm
-.private_extern _p_132_plt_System_Net_Primitives_System_DateTime_AddTicks_long_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_DateTime_AddTicks_long
-plt_System_Net_Primitives_System_DateTime_AddTicks_long:
-_p_132:
+.word 4650
+_p_123_plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer_llvm:
+	.globl _p_123_plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer_llvm
+.private_extern _p_123_plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer
+plt_System_Net_Primitives_System_Collections_SortedList__ctor_System_Collections_IComparer:
+_p_123:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 1265
-_p_133_plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange_llvm:
-	.globl _p_133_plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange_llvm
-.private_extern _p_133_plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange
-plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange:
-_p_133:
+.word 4655
+_p_124_plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList_llvm:
+	.globl _p_124_plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList_llvm
+.private_extern _p_124_plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList
+plt_System_Net_Primitives_System_Collections_SortedList_Synchronized_System_Collections_SortedList:
+_p_124:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 1270
-_p_134_plt_System_Net_Primitives_System_Net_Cookie_set_Port_string_llvm:
-	.globl _p_134_plt_System_Net_Primitives_System_Net_Cookie_set_Port_string_llvm
-.private_extern _p_134_plt_System_Net_Primitives_System_Net_Cookie_set_Port_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_set_Port_string
-plt_System_Net_Primitives_System_Net_Cookie_set_Port_string:
-_p_134:
+.word 4660
+_p_125_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm:
+	.globl _p_125_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm
+.private_extern _p_125_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string
+plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string:
+_p_125:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 1275
-_p_135_plt_System_Net_Primitives_System_Net_Cookie_set_Version_int_llvm:
-	.globl _p_135_plt_System_Net_Primitives_System_Net_Cookie_set_Version_int_llvm
-.private_extern _p_135_plt_System_Net_Primitives_System_Net_Cookie_set_Version_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_set_Version_int
-plt_System_Net_Primitives_System_Net_Cookie_set_Version_int:
-_p_135:
+.word 4665
+_p_126_plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie_llvm:
+	.globl _p_126_plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie_llvm
+.private_extern _p_126_plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie
+plt_System_Net_Primitives_System_Net_CookieCollection_IndexOf_System_Net_Cookie:
+_p_126:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 1277
-_p_136_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField_llvm:
-	.globl _p_136_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField_llvm
-.private_extern _p_136_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField
-plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField:
-_p_136:
+.word 4677
+_p_127_plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie_llvm:
+	.globl _p_127_plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie_llvm
+.private_extern _p_127_plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie
+plt_System_Net_Primitives_System_Net_CookieComparer_Equals_System_Net_Cookie_System_Net_Cookie:
+_p_127:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 1279
-_p_137_plt_System_Net_Primitives_System_Net_Cookie__ctor_llvm:
-	.globl _p_137_plt_System_Net_Primitives_System_Net_Cookie__ctor_llvm
-.private_extern _p_137_plt_System_Net_Primitives_System_Net_Cookie__ctor_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie__ctor
-plt_System_Net_Primitives_System_Net_Cookie__ctor:
-_p_137:
+.word 4679
+_p_128_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1_llvm:
+	.globl _p_128_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1_llvm
+.private_extern _p_128_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1
+plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32__m__Finally1:
+_p_128:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 1282
-_p_138_plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception_llvm:
-	.globl _p_138_plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception_llvm
-.private_extern _p_138_plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception
-plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception:
-_p_138:
+.word 4682
+_p_129_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose_llvm:
+	.globl _p_129_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose_llvm
+.private_extern _p_129_plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose
+plt_System_Net_Primitives_System_Net_CookieCollection__System_Collections_Generic_IEnumerable_System_Net_Cookie_GetEnumeratord__32_System_IDisposable_Dispose:
+_p_129:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 1284
-_p_139_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName_llvm:
-	.globl _p_139_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName_llvm
-.private_extern _p_139_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName
-plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName:
-_p_139:
+.word 4684
+_p_130_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0_llvm:
+	.globl _p_130_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0_llvm
+.private_extern _p_130_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0
+plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_0:
+_p_130:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 1287
-_p_140_plt_System_Net_Primitives_Interop_Sys_GetDomainName_llvm:
-	.globl _p_140_plt_System_Net_Primitives_Interop_Sys_GetDomainName_llvm
-.private_extern _p_140_plt_System_Net_Primitives_Interop_Sys_GetDomainName_llvm
-	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_GetDomainName
-plt_System_Net_Primitives_Interop_Sys_GetDomainName:
-_p_140:
+.word 4686
+_p_131_plt_System_Net_Primitives_System_Version__ctor_int_int_llvm:
+	.globl _p_131_plt_System_Net_Primitives_System_Version__ctor_int_int_llvm
+.private_extern _p_131_plt_System_Net_Primitives_System_Version__ctor_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Version__ctor_int_int
+plt_System_Net_Primitives_System_Version__ctor_int_int:
+_p_131:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 1290
-_p_141_plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx_llvm:
-	.globl _p_141_plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx_llvm
-.private_extern _p_141_plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx
-plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx:
-_p_141:
+.word 4689
+_p_132_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_ulong_ulong_ulong_string_llvm:
+	.globl _p_132_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_ulong_ulong_ulong_string_llvm
+.private_extern _p_132_plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_ulong_ulong_ulong_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_ulong_ulong_ulong_string
+plt_System_Net_Primitives_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_ulong_ulong_ulong_string:
+_p_132:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 1292
-_p_142_plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm:
-	.globl _p_142_plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm
-.private_extern _p_142_plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint
-plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint:
-_p_142:
+.word 4694
+_p_133_plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm:
+	.globl _p_133_plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
+.private_extern _p_133_plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource
+plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource:
+_p_133:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 1295
-_p_143_plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception_llvm:
-	.globl _p_143_plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception_llvm
-.private_extern _p_143_plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception
-plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception:
-_p_143:
+.word 4706
+_p_134_plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_llvm:
+	.globl _p_134_plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_llvm
+.private_extern _p_134_plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException
+plt_System_Net_Primitives_System_ThrowHelper_ThrowNotSupportedException:
+_p_134:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 1298
-_p_144_plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str_llvm:
-	.globl _p_144_plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str_llvm
-.private_extern _p_144_plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str
-plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str:
-_p_144:
+.word 4711
+_p_135_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_2_llvm:
+	.globl _p_135_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_2_llvm
+.private_extern _p_135_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_2_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_2
+plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_2:
+_p_135:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 1300
-_p_145_plt_System_Net_Primitives__jit_icall_monoeg_g_free_llvm:
-	.globl _p_145_plt_System_Net_Primitives__jit_icall_monoeg_g_free_llvm
-.private_extern _p_145_plt_System_Net_Primitives__jit_icall_monoeg_g_free_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_monoeg_g_free
-plt_System_Net_Primitives__jit_icall_monoeg_g_free:
-_p_145:
+.word 4716
+_p_136_plt_System_Net_Primitives_System_ReadOnlySpan_1_uint16_ToArray_llvm:
+	.globl _p_136_plt_System_Net_Primitives_System_ReadOnlySpan_1_uint16_ToArray_llvm
+.private_extern _p_136_plt_System_Net_Primitives_System_ReadOnlySpan_1_uint16_ToArray_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ReadOnlySpan_1_uint16_ToArray
+plt_System_Net_Primitives_System_ReadOnlySpan_1_uint16_ToArray:
+_p_136:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 1303
-_p_146_plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper_llvm:
-	.globl _p_146_plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper_llvm
-.private_extern _p_146_plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper
-plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper:
-_p_146:
+.word 4719
+_p_137_plt_System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool_llvm:
+	.globl _p_137_plt_System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool_llvm
+.private_extern _p_137_plt_System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool
+plt_System_Net_Primitives_System_Net_IPAddressParser_Parse_System_ReadOnlySpan_1_char_bool:
+_p_137:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 1305
-_p_147_plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey_llvm:
-	.globl _p_147_plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey_llvm
-.private_extern _p_147_plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey
-plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey:
-_p_147:
+.word 4730
+_p_138_plt_System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress__llvm:
+	.globl _p_138_plt_System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress__llvm
+.private_extern _p_138_plt_System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress_
+plt_System_Net_Primitives_System_Net_IPAddress_TryParse_string_System_Net_IPAddress_:
+_p_138:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 1308
-_p_148_plt_System_Net_Primitives_System_Net_PathList__ctor_llvm:
-	.globl _p_148_plt_System_Net_Primitives_System_Net_PathList__ctor_llvm
-.private_extern _p_148_plt_System_Net_Primitives_System_Net_PathList__ctor_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList__ctor
-plt_System_Net_Primitives_System_Net_PathList__ctor:
-_p_148:
+.word 4733
+_p_139_plt_System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress__llvm:
+	.globl _p_139_plt_System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress__llvm
+.private_extern _p_139_plt_System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress_
+plt_System_Net_Primitives_System_Net_IPAddress_TryParse_System_ReadOnlySpan_1_char_System_Net_IPAddress_:
+_p_139:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 1310
-_p_149_plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount_llvm:
-	.globl _p_149_plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount_llvm
-.private_extern _p_149_plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount
-plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount:
-_p_149:
+.word 4736
+_p_140_plt_System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char_llvm:
+	.globl _p_140_plt_System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char_llvm
+.private_extern _p_140_plt_System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char
+plt_System_Net_Primitives_System_Net_IPAddress_Parse_System_ReadOnlySpan_1_char:
+_p_140:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 1312
-_p_150_plt_System_Net_Primitives_System_Net_PathList_get_Item_string_llvm:
-	.globl _p_150_plt_System_Net_Primitives_System_Net_PathList_get_Item_string_llvm
-.private_extern _p_150_plt_System_Net_Primitives_System_Net_PathList_get_Item_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_Item_string
-plt_System_Net_Primitives_System_Net_PathList_get_Item_string:
-_p_150:
+.word 4739
+_p_141_plt_System_Net_Primitives_System_Net_IPAddress_Parse_string_llvm:
+	.globl _p_141_plt_System_Net_Primitives_System_Net_IPAddress_Parse_string_llvm
+.private_extern _p_141_plt_System_Net_Primitives_System_Net_IPAddress_Parse_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_Parse_string
+plt_System_Net_Primitives_System_Net_IPAddress_Parse_string:
+_p_141:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 1314
-_p_151_plt_System_Net_Primitives_System_Net_CookieCollection__ctor_llvm:
-	.globl _p_151_plt_System_Net_Primitives_System_Net_CookieCollection__ctor_llvm
-.private_extern _p_151_plt_System_Net_Primitives_System_Net_CookieCollection__ctor_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection__ctor
-plt_System_Net_Primitives_System_Net_CookieCollection__ctor:
-_p_151:
+.word 4742
+_p_142_plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv4Address_char_uint_System_Span_1_char_llvm:
+	.globl _p_142_plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv4Address_char_uint_System_Span_1_char_llvm
+.private_extern _p_142_plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv4Address_char_uint_System_Span_1_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv4Address_char_uint_System_Span_1_char
+plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv4Address_char_uint_System_Span_1_char:
+_p_142:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 1316
-_p_152_plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object_llvm:
-	.globl _p_152_plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object_llvm
-.private_extern _p_152_plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object
-plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object:
-_p_152:
+.word 4745
+_p_143_plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv6Address_char_uint16___uint_System_Span_1_char_llvm:
+	.globl _p_143_plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv6Address_char_uint16___uint_System_Span_1_char_llvm
+.private_extern _p_143_plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv6Address_char_uint16___uint_System_Span_1_char_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv6Address_char_uint16___uint_System_Span_1_char
+plt_System_Net_Primitives_System_Net_IPAddressParser_FormatIPv6Address_char_uint16___uint_System_Span_1_char:
+_p_143:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 1318
-_p_153_plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string_llvm:
-	.globl _p_153_plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string_llvm
-.private_extern _p_153_plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string
-plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string:
-_p_153:
+.word 4757
+_p_144_plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_char_System_Span_1_char_int__llvm:
+	.globl _p_144_plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_char_System_Span_1_char_int__llvm
+.private_extern _p_144_plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_char_System_Span_1_char_int__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_char_System_Span_1_char_int_
+plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_char_System_Span_1_char_int_:
+_p_144:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 1320
-_p_154_plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup_llvm:
-	.globl _p_154_plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup_llvm
-.private_extern _p_154_plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup
-plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup:
-_p_154:
+.word 4769
+_p_145_plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_byte_System_Span_1_byte_int__llvm:
+	.globl _p_145_plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_byte_System_Span_1_byte_int__llvm
+.private_extern _p_145_plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_byte_System_Span_1_byte_int__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_byte_System_Span_1_byte_int_
+plt_System_Net_Primitives_System_Net_IPAddress_TryFormatCore_byte_System_Span_1_byte_int_:
+_p_145:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 1322
-_p_155_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception_llvm:
-	.globl _p_155_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception_llvm
-.private_extern _p_155_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception
-plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception:
-_p_155:
+.word 4781
+_p_146_plt_System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress_llvm:
+	.globl _p_146_plt_System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress_llvm
+.private_extern _p_146_plt_System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress
+plt_System_Net_Primitives_System_Net_IPAddress_Equals_System_Net_IPAddress:
+_p_146:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 1324
-_p_156_plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib_llvm:
-	.globl _p_156_plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib_llvm
-.private_extern _p_156_plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib
-plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib:
-_p_156:
+.word 4793
+_p_147_plt_System_Net_Primitives__jit_icall___emul_op_imul_ovf_llvm:
+	.globl _p_147_plt_System_Net_Primitives__jit_icall___emul_op_imul_ovf_llvm
+.private_extern _p_147_plt_System_Net_Primitives__jit_icall___emul_op_imul_ovf_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall___emul_op_imul_ovf
+plt_System_Net_Primitives__jit_icall___emul_op_imul_ovf:
+_p_147:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 1326
-_p_157_plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm:
-	.globl _p_157_plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm
-.private_extern _p_157_plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm
-	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception
-plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception:
-_p_157:
+.word 4796
+_p_148_plt_System_Net_Primitives_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm:
+	.globl _p_148_plt_System_Net_Primitives_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
+.private_extern _p_148_plt_System_Net_Primitives_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ThrowHelper_ThrowArrayTypeMismatchException
+plt_System_Net_Primitives_System_ThrowHelper_ThrowArrayTypeMismatchException:
+_p_148:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 1329
-_p_158_plt_System_Net_Primitives_System_Net_PathList_get_Values_llvm:
-	.globl _p_158_plt_System_Net_Primitives_System_Net_PathList_get_Values_llvm
-.private_extern _p_158_plt_System_Net_Primitives_System_Net_PathList_get_Values_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_Values
-plt_System_Net_Primitives_System_Net_PathList_get_Values:
-_p_158:
+.word 4798
+_p_149_plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_llvm:
+	.globl _p_149_plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_llvm
+.private_extern _p_149_plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_HashCode_Combine_uint_uint
+plt_System_Net_Primitives_System_HashCode_Combine_uint_uint:
+_p_149:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 1331
-_p_159_plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection_llvm:
-	.globl _p_159_plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection_llvm
-.private_extern _p_159_plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection
-plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection:
-_p_159:
+.word 4803
+_p_150_plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_uint_uint_uint_uint_uint_uint_uint_uint_llvm:
+	.globl _p_150_plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_uint_uint_uint_uint_uint_uint_uint_uint_llvm
+.private_extern _p_150_plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_uint_uint_uint_uint_uint_uint_uint_uint_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_uint_uint_uint_uint_uint_uint_uint_uint
+plt_System_Net_Primitives_System_HashCode_Combine_uint_uint_uint_uint_uint_uint_uint_uint_uint_uint:
+_p_150:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 1333
-_p_160_plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection___llvm:
-	.globl _p_160_plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection___llvm
-.private_extern _p_160_plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection___llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection__
-plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection__:
-_p_160:
+.word 4815
+_p_151_plt_System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte_llvm:
+	.globl _p_151_plt_System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte_llvm
+.private_extern _p_151_plt_System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte
+plt_System_Net_Primitives_System_Net_IPAddress_ReadOnlyIPAddress__ctor_System_ReadOnlySpan_1_byte:
+_p_151:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 1335
-_p_161_plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime_llvm:
-	.globl _p_161_plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime_llvm
-.private_extern _p_161_plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime
-plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime:
-_p_161:
+.word 4827
+_p_152_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long_llvm:
+	.globl _p_152_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long_llvm
+.private_extern _p_152_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long
+plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_long:
+_p_152:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 1347
-_p_162_plt_System_Net_Primitives_System_Net_PathList_GetEnumerator_llvm:
-	.globl _p_162_plt_System_Net_Primitives_System_Net_PathList_GetEnumerator_llvm
-.private_extern _p_162_plt_System_Net_Primitives_System_Net_PathList_GetEnumerator_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_GetEnumerator
-plt_System_Net_Primitives_System_Net_PathList_GetEnumerator:
-_p_162:
+.word 4830
+_p_153_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_llvm:
+	.globl _p_153_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_llvm
+.private_extern _p_153_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte
+plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_byte:
+_p_153:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 1352
-_p_163_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object_llvm:
-	.globl _p_163_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
-.private_extern _p_163_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object
-plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object:
-_p_163:
+.word 4833
+_p_154_plt_System_Net_Primitives_System_SpanHelpers_Contains_char_char__char_int_llvm:
+	.globl _p_154_plt_System_Net_Primitives_System_SpanHelpers_Contains_char_char__char_int_llvm
+.private_extern _p_154_plt_System_Net_Primitives_System_SpanHelpers_Contains_char_char__char_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_Contains_char_char__char_int
+plt_System_Net_Primitives_System_SpanHelpers_Contains_char_char__char_int:
+_p_154:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 1354
-_p_164_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator_llvm:
-	.globl _p_164_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator_llvm
-.private_extern _p_164_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator
-plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator:
-_p_164:
+.word 4836
+_p_155_plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long__llvm:
+	.globl _p_155_plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long__llvm
+.private_extern _p_155_plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long_
+plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIpv4_System_ReadOnlySpan_1_char_long_:
+_p_155:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 1371
-_p_165_plt_System_Net_Primitives_System_Net_PathList_Remove_object_llvm:
-	.globl _p_165_plt_System_Net_Primitives_System_Net_PathList_Remove_object_llvm
-.private_extern _p_165_plt_System_Net_Primitives_System_Net_PathList_Remove_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_Remove_object
-plt_System_Net_Primitives_System_Net_PathList_Remove_object:
-_p_165:
+.word 4852
+_p_156_plt_System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError_llvm:
+	.globl _p_156_plt_System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError_llvm
+.private_extern _p_156_plt_System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError
+plt_System_Net_Primitives_System_Net_Sockets_SocketException__ctor_System_Net_Sockets_SocketError:
+_p_156:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 1382
-_p_166_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext_llvm:
-	.globl _p_166_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext_llvm
-.private_extern _p_166_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext
-plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext:
-_p_166:
+.word 4855
+_p_157_plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib_llvm:
+	.globl _p_157_plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib_llvm
+.private_extern _p_157_plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib
+plt_System_Net_Primitives__jit_icall_mono_helper_newobj_mscorlib:
+_p_157:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 1384
-_p_167_plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int_llvm:
-	.globl _p_167_plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int_llvm
-.private_extern _p_167_plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int
-plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int:
-_p_167:
+.word 4858
+_p_158_plt_System_Net_Primitives_System_FormatException__ctor_string_System_Exception_llvm:
+	.globl _p_158_plt_System_Net_Primitives_System_FormatException__ctor_string_System_Exception_llvm
+.private_extern _p_158_plt_System_Net_Primitives_System_FormatException__ctor_string_System_Exception_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_FormatException__ctor_string_System_Exception
+plt_System_Net_Primitives_System_FormatException__ctor_string_System_Exception:
+_p_158:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 1395
-_p_168_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator_llvm:
-	.globl _p_168_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator_llvm
-.private_extern _p_168_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator
-plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator:
-_p_168:
+.word 4861
+_p_159_plt_System_Net_Primitives_System_Net_IPAddress__ctor_long_llvm:
+	.globl _p_159_plt_System_Net_Primitives_System_Net_IPAddress__ctor_long_llvm
+.private_extern _p_159_plt_System_Net_Primitives_System_Net_IPAddress__ctor_long_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress__ctor_long
+plt_System_Net_Primitives_System_Net_IPAddress__ctor_long:
+_p_159:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 1400
-_p_169_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm:
-	.globl _p_169_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm
-.private_extern _p_169_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext
-plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext:
-_p_169:
+.word 4866
+_p_160_plt_System_Net_Primitives_System_SpanHelpers_ClearWithoutReferences_byte__uintptr_llvm:
+	.globl _p_160_plt_System_Net_Primitives_System_SpanHelpers_ClearWithoutReferences_byte__uintptr_llvm
+.private_extern _p_160_plt_System_Net_Primitives_System_SpanHelpers_ClearWithoutReferences_byte__uintptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_ClearWithoutReferences_byte__uintptr
+plt_System_Net_Primitives_System_SpanHelpers_ClearWithoutReferences_byte__uintptr:
+_p_160:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 1411
-_p_170_plt_System_Net_Primitives_string_memset_byte__int_int_llvm:
-	.globl _p_170_plt_System_Net_Primitives_string_memset_byte__int_int_llvm
-.private_extern _p_170_plt_System_Net_Primitives_string_memset_byte__int_int_llvm
-	.no_dead_strip plt_System_Net_Primitives_string_memset_byte__int_int
-plt_System_Net_Primitives_string_memset_byte__int_int:
-_p_170:
+.word 4869
+_p_161_plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint__llvm:
+	.globl _p_161_plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint__llvm
+.private_extern _p_161_plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint_
+plt_System_Net_Primitives_System_Net_IPAddressParser_TryParseIPv6_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_uint_:
+_p_161:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 1422
-_p_171_plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string_llvm:
-	.globl _p_171_plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string_llvm
-.private_extern _p_171_plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string
-plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string:
-_p_171:
+.word 4874
+_p_162_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint_llvm:
+	.globl _p_162_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint_llvm
+.private_extern _p_162_plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint
+plt_System_Net_Primitives_System_Net_IPAddress__ctor_System_ReadOnlySpan_1_uint16_uint:
+_p_162:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 1427
-_p_172_plt_System_Net_Primitives_System_Net_CookieParser__ctor_string_llvm:
-	.globl _p_172_plt_System_Net_Primitives_System_Net_CookieParser__ctor_string_llvm
-.private_extern _p_172_plt_System_Net_Primitives_System_Net_CookieParser__ctor_string_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser__ctor_string
-plt_System_Net_Primitives_System_Net_CookieParser__ctor_string:
-_p_172:
+.word 4877
+_p_163_plt_System_Net_Primitives_System_SpanHelpers_ClearWithReferences_intptr__uintptr_llvm:
+	.globl _p_163_plt_System_Net_Primitives_System_SpanHelpers_ClearWithReferences_intptr__uintptr_llvm
+.private_extern _p_163_plt_System_Net_Primitives_System_SpanHelpers_ClearWithReferences_intptr__uintptr_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_ClearWithReferences_intptr__uintptr
+plt_System_Net_Primitives_System_SpanHelpers_ClearWithReferences_intptr__uintptr:
+_p_163:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 1429
-_p_173_plt_System_Net_Primitives_System_Net_CookieParser_Get_llvm:
-	.globl _p_173_plt_System_Net_Primitives_System_Net_CookieParser_Get_llvm
-.private_extern _p_173_plt_System_Net_Primitives_System_Net_CookieParser_Get_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_Get
-plt_System_Net_Primitives_System_Net_CookieParser_Get:
-_p_173:
+.word 4880
+_p_164_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_long_long__long_int_llvm:
+	.globl _p_164_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_long_long__long_int_llvm
+.private_extern _p_164_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_long_long__long_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_long_long__long_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_long_long__long_int:
+_p_164:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 1432
-_p_174_plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool_llvm:
-	.globl _p_174_plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool_llvm
-.private_extern _p_174_plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool
-plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool:
-_p_174:
+.word 4890
+_p_165_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int_int__int_int_llvm:
+	.globl _p_165_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int_int__int_int_llvm
+.private_extern _p_165_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int_int__int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int_int__int_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int_int__int_int:
+_p_165:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 1435
-_p_175_plt_System_Net_Primitives_System_Uri_get_AbsoluteUri_llvm:
-	.globl _p_175_plt_System_Net_Primitives_System_Uri_get_AbsoluteUri_llvm
-.private_extern _p_175_plt_System_Net_Primitives_System_Uri_get_AbsoluteUri_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_AbsoluteUri
-plt_System_Net_Primitives_System_Uri_get_AbsoluteUri:
-_p_175:
+.word 4911
+_p_166_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int_llvm:
+	.globl _p_166_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int_llvm
+.private_extern _p_166_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int:
+_p_166:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 1437
-_p_176_plt_System_Net_Primitives_System_SR_Format_string_object_llvm:
-	.globl _p_176_plt_System_Net_Primitives_System_SR_Format_string_object_llvm
-.private_extern _p_176_plt_System_Net_Primitives_System_SR_Format_string_object_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_SR_Format_string_object
-plt_System_Net_Primitives_System_SR_Format_string_object:
-_p_176:
+.word 4927
+_p_167_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_byte_byte__byte_int_llvm:
+	.globl _p_167_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_byte_byte__byte_int_llvm
+.private_extern _p_167_plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_byte_byte__byte_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_byte_byte__byte_int
+plt_System_Net_Primitives_System_SpanHelpers_NonPackedContainsValueType_byte_byte__byte_int:
+_p_167:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 1442
-_p_177_plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool_llvm:
-	.globl _p_177_plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool_llvm
-.private_extern _p_177_plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool_llvm
-	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool
-plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool:
-_p_177:
+.word 4943
+_p_168_plt_System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int__llvm:
+	.globl _p_168_plt_System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int__llvm
+.private_extern _p_168_plt_System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int_
+plt_System_Net_Primitives_System_IPv6AddressHelper_IsValidStrict_char__int_int_:
+_p_168:
 adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
 add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 1444
+.word 4959
+_p_169_plt_System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string__llvm:
+	.globl _p_169_plt_System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string__llvm
+.private_extern _p_169_plt_System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string_
+plt_System_Net_Primitives_System_IPv6AddressHelper_Parse_System_ReadOnlySpan_1_char_System_Span_1_uint16_int_string_:
+_p_169:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1840]
+br x16
+.word 4961
+_p_170_plt_System_Net_Primitives_uint_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm:
+	.globl _p_170_plt_System_Net_Primitives_uint_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm
+.private_extern _p_170_plt_System_Net_Primitives_uint_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm
+	.no_dead_strip plt_System_Net_Primitives_uint_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_uint_
+plt_System_Net_Primitives_uint_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_uint_:
+_p_170:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1848]
+br x16
+.word 4963
+_p_171_plt_System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string_llvm:
+	.globl _p_171_plt_System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string_llvm
+.private_extern _p_171_plt_System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string
+plt_System_Net_Primitives_System_Net_NetworkInformation_InterfaceInfoPal_InterfaceNameToIndex_string:
+_p_171:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1856]
+br x16
+.word 4968
+_p_172_plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific_llvm:
+	.globl _p_172_plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific_llvm
+.private_extern _p_172_plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific
+plt_System_Net_Primitives__jit_icall_ves_icall_object_new_specific:
+_p_172:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1864]
+br x16
+.word 4971
+_p_173_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1_llvm:
+	.globl _p_173_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1_llvm
+.private_extern _p_173_plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1
+plt_System_Net_Primitives__jit_icall_mono_create_corlib_exception_1:
+_p_173:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1872]
+br x16
+.word 4974
+_p_174_plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm:
+	.globl _p_174_plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
+.private_extern _p_174_plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison
+plt_System_Net_Primitives_System_MemoryExtensions_Equals_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_System_StringComparison:
+_p_174:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1880]
+br x16
+.word 4977
+_p_175_plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int_llvm:
+	.globl _p_175_plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int_llvm
+.private_extern _p_175_plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int
+plt_System_Net_Primitives_System_StringExtensions_SubstringTrim_string_int_int:
+_p_175:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1888]
+br x16
+.word 4982
+_p_176_plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset_llvm:
+	.globl _p_176_plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset_llvm
+.private_extern _p_176_plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset
+plt_System_Net_Primitives_System_Net_CookieTokenizer_Reset:
+_p_176:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1896]
+br x16
+.word 4984
+_p_177_plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool_llvm:
+	.globl _p_177_plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool_llvm
+.private_extern _p_177_plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool
+plt_System_Net_Primitives_System_Net_CookieTokenizer_FindNext_bool_bool:
+_p_177:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1904]
+br x16
+.word 4987
+_p_178_plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract_llvm:
+	.globl _p_178_plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract_llvm
+.private_extern _p_178_plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract
+plt_System_Net_Primitives_System_Net_CookieTokenizer_Extract:
+_p_178:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1912]
+br x16
+.word 4990
+_p_179_plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool_llvm:
+	.globl _p_179_plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool_llvm
+.private_extern _p_179_plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool
+plt_System_Net_Primitives_System_Net_CookieTokenizer_TokenFromName_bool:
+_p_179:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1920]
+br x16
+.word 4993
+_p_180_plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string_llvm:
+	.globl _p_180_plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string_llvm
+.private_extern _p_180_plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string
+plt_System_Net_Primitives_System_Net_CookieTokenizer_RecognizedAttribute_IsEqualTo_string:
+_p_180:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1928]
+br x16
+.word 4996
+_p_181_plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string_llvm:
+	.globl _p_181_plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string_llvm
+.private_extern _p_181_plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string
+plt_System_Net_Primitives_System_Net_CookieTokenizer__ctor_string:
+_p_181:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1936]
+br x16
+.word 4999
+_p_182_plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy_llvm:
+	.globl _p_182_plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy_llvm
+.private_extern _p_182_plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy
+plt_System_Net_Primitives__jit_icall_mono_gc_wbarrier_range_copy:
+_p_182:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1944]
+br x16
+.word 5002
+_p_183_plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string_llvm:
+	.globl _p_183_plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string_llvm
+.private_extern _p_183_plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string
+plt_System_Net_Primitives_System_Net_Cookie_InternalSetName_string:
+_p_183:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1952]
+br x16
+.word 5005
+_p_184_plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool_llvm:
+	.globl _p_184_plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool_llvm
+.private_extern _p_184_plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool
+plt_System_Net_Primitives_System_Net_CookieTokenizer_Next_bool_bool:
+_p_184:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1960]
+br x16
+.word 5007
+_p_185_plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm:
+	.globl _p_185_plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
+.private_extern _p_185_plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri_
+plt_System_Net_Primitives_System_Uri_TryCreate_string_System_UriKind_System_Uri_:
+_p_185:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1968]
+br x16
+.word 5010
+_p_186_plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string_llvm:
+	.globl _p_186_plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string_llvm
+.private_extern _p_186_plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string
+plt_System_Net_Primitives_System_Net_Cookie_set_Domain_string:
+_p_186:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1976]
+br x16
+.word 5015
+_p_187_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField_llvm:
+	.globl _p_187_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField_llvm
+.private_extern _p_187_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField
+plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedDomainField:
+_p_187:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1984]
+br x16
+.word 5017
+_p_188_plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object_llvm:
+	.globl _p_188_plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object_llvm
+.private_extern _p_188_plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object
+plt_System_Net_Primitives_System_Reflection_FieldInfo_SetValue_object_object:
+_p_188:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #1992]
+br x16
+.word 5020
+_p_189_plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm:
+	.globl _p_189_plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm
+.private_extern _p_189_plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime_
+plt_System_Net_Primitives_System_DateTime_TryParse_string_System_IFormatProvider_System_Globalization_DateTimeStyles_System_DateTime_:
+_p_189:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2000]
+br x16
+.word 5025
+_p_190_plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string_llvm:
+	.globl _p_190_plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string_llvm
+.private_extern _p_190_plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string
+plt_System_Net_Primitives_System_Net_CookieParser_InternalSetNameMethod_System_Net_Cookie_string:
+_p_190:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2008]
+br x16
+.word 5030
+_p_191_plt_System_Net_Primitives_System_DateTime_AddTicks_long_llvm:
+	.globl _p_191_plt_System_Net_Primitives_System_DateTime_AddTicks_long_llvm
+.private_extern _p_191_plt_System_Net_Primitives_System_DateTime_AddTicks_long_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_DateTime_AddTicks_long
+plt_System_Net_Primitives_System_DateTime_AddTicks_long:
+_p_191:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2016]
+br x16
+.word 5033
+_p_192_plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange_llvm:
+	.globl _p_192_plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange_llvm
+.private_extern _p_192_plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange
+plt_System_Net_Primitives_System_DateTime_ThrowAddOutOfRange:
+_p_192:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2024]
+br x16
+.word 5038
+_p_193_plt_System_Net_Primitives_System_Net_Cookie_set_Port_string_llvm:
+	.globl _p_193_plt_System_Net_Primitives_System_Net_Cookie_set_Port_string_llvm
+.private_extern _p_193_plt_System_Net_Primitives_System_Net_Cookie_set_Port_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_set_Port_string
+plt_System_Net_Primitives_System_Net_Cookie_set_Port_string:
+_p_193:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2032]
+br x16
+.word 5043
+_p_194_plt_System_Net_Primitives_System_Net_Cookie_set_Version_int_llvm:
+	.globl _p_194_plt_System_Net_Primitives_System_Net_Cookie_set_Version_int_llvm
+.private_extern _p_194_plt_System_Net_Primitives_System_Net_Cookie_set_Version_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_set_Version_int
+plt_System_Net_Primitives_System_Net_Cookie_set_Version_int:
+_p_194:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2040]
+br x16
+.word 5045
+_p_195_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField_llvm:
+	.globl _p_195_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField_llvm
+.private_extern _p_195_plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField
+plt_System_Net_Primitives_System_Net_CookieParser_get_IsQuotedVersionField:
+_p_195:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2048]
+br x16
+.word 5047
+_p_196_plt_System_Net_Primitives_System_Net_Cookie__ctor_llvm:
+	.globl _p_196_plt_System_Net_Primitives_System_Net_Cookie__ctor_llvm
+.private_extern _p_196_plt_System_Net_Primitives_System_Net_Cookie__ctor_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie__ctor
+plt_System_Net_Primitives_System_Net_Cookie__ctor:
+_p_196:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2056]
+br x16
+.word 5050
+_p_197_plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception_llvm:
+	.globl _p_197_plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception_llvm
+.private_extern _p_197_plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception
+plt_System_Net_Primitives__jit_icall_mono_thread_get_undeniable_exception:
+_p_197:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2064]
+br x16
+.word 5052
+_p_198_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName_llvm:
+	.globl _p_198_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName_llvm
+.private_extern _p_198_plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName
+plt_System_Net_Primitives_System_Net_NetworkInformation_HostInformationPal_GetDomainName:
+_p_198:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2072]
+br x16
+.word 5055
+_p_199_plt_System_Net_Primitives_Interop_Sys_GetDomainName_llvm:
+	.globl _p_199_plt_System_Net_Primitives_Interop_Sys_GetDomainName_llvm
+.private_extern _p_199_plt_System_Net_Primitives_Interop_Sys_GetDomainName_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_GetDomainName
+plt_System_Net_Primitives_Interop_Sys_GetDomainName:
+_p_199:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2080]
+br x16
+.word 5058
+_p_200_plt_System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string_llvm:
+	.globl _p_200_plt_System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string_llvm
+.private_extern _p_200_plt_System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string
+plt_System_Net_Primitives_Interop_Sys_InterfaceNameToIndex_string:
+_p_200:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2088]
+br x16
+.word 5060
+_p_201_plt_System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError_llvm:
+	.globl _p_201_plt_System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError_llvm
+.private_extern _p_201_plt_System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError
+plt_System_Net_Primitives_System_Net_Sockets_SocketException_GetNativeErrorForSocketError_System_Net_Sockets_SocketError:
+_p_201:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2096]
+br x16
+.word 5062
+_p_202_plt_System_Net_Primitives_System_ComponentModel_Win32Exception__ctor_int_llvm:
+	.globl _p_202_plt_System_Net_Primitives_System_ComponentModel_Win32Exception__ctor_int_llvm
+.private_extern _p_202_plt_System_Net_Primitives_System_ComponentModel_Win32Exception__ctor_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_ComponentModel_Win32Exception__ctor_int
+plt_System_Net_Primitives_System_ComponentModel_Win32Exception__ctor_int:
+_p_202:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2104]
+br x16
+.word 5065
+_p_203_plt_System_Net_Primitives_System_Exception_get_Message_llvm:
+	.globl _p_203_plt_System_Net_Primitives_System_Exception_get_Message_llvm
+.private_extern _p_203_plt_System_Net_Primitives_System_Exception_get_Message_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Exception_get_Message
+plt_System_Net_Primitives_System_Exception_get_Message:
+_p_203:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2112]
+br x16
+.word 5070
+_p_204_plt_System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error__llvm:
+	.globl _p_204_plt_System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error__llvm
+.private_extern _p_204_plt_System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error_
+plt_System_Net_Primitives_System_Net_Sockets_SocketErrorPal_TryGetNativeErrorForSocketError_System_Net_Sockets_SocketError_Interop_Error_:
+_p_204:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2120]
+br x16
+.word 5075
+_p_205_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_TryGetValue_System_Net_Sockets_SocketError_Interop_Error__llvm:
+	.globl _p_205_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_TryGetValue_System_Net_Sockets_SocketError_Interop_Error__llvm
+.private_extern _p_205_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_TryGetValue_System_Net_Sockets_SocketError_Interop_Error__llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_TryGetValue_System_Net_Sockets_SocketError_Interop_Error_
+plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_TryGetValue_System_Net_Sockets_SocketError_Interop_Error_:
+_p_205:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2128]
+br x16
+.word 5078
+_p_206_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError__ctor_int_llvm:
+	.globl _p_206_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError__ctor_int_llvm
+.private_extern _p_206_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError__ctor_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError__ctor_int
+plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError__ctor_int:
+_p_206:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2136]
+br x16
+.word 5089
+_p_207_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError_Add_Interop_Error_System_Net_Sockets_SocketError_llvm:
+	.globl _p_207_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError_Add_Interop_Error_System_Net_Sockets_SocketError_llvm
+.private_extern _p_207_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError_Add_Interop_Error_System_Net_Sockets_SocketError_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError_Add_Interop_Error_System_Net_Sockets_SocketError
+plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_Interop_Error_System_Net_Sockets_SocketError_Add_Interop_Error_System_Net_Sockets_SocketError:
+_p_207:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2144]
+br x16
+.word 5100
+_p_208_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error__ctor_int_llvm:
+	.globl _p_208_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error__ctor_int_llvm
+.private_extern _p_208_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error__ctor_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error__ctor_int
+plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error__ctor_int:
+_p_208:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2152]
+br x16
+.word 5111
+_p_209_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_Add_System_Net_Sockets_SocketError_Interop_Error_llvm:
+	.globl _p_209_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_Add_System_Net_Sockets_SocketError_Interop_Error_llvm
+.private_extern _p_209_plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_Add_System_Net_Sockets_SocketError_Interop_Error_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_Add_System_Net_Sockets_SocketError_Interop_Error
+plt_System_Net_Primitives_System_Collections_Generic_Dictionary_2_System_Net_Sockets_SocketError_Interop_Error_Add_System_Net_Sockets_SocketError_Interop_Error:
+_p_209:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2160]
+br x16
+.word 5122
+_p_210_plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx_llvm:
+	.globl _p_210_plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx_llvm
+.private_extern _p_210_plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx
+plt_System_Net_Primitives__jit_icall_mini_init_method_rgctx:
+_p_210:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2168]
+br x16
+.word 5133
+_p_211_plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm:
+	.globl _p_211_plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm
+.private_extern _p_211_plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint
+plt_System_Net_Primitives__jit_icall_mono_thread_interruption_checkpoint:
+_p_211:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2176]
+br x16
+.word 5136
+_p_212_plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception_llvm:
+	.globl _p_212_plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception_llvm
+.private_extern _p_212_plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception
+plt_System_Net_Primitives__jit_icall_mono_arch_rethrow_exception:
+_p_212:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2184]
+br x16
+.word 5139
+_p_213_plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str_llvm:
+	.globl _p_213_plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str_llvm
+.private_extern _p_213_plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str
+plt_System_Net_Primitives__jit_icall_mono_string_to_utf8str:
+_p_213:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2192]
+br x16
+.word 5141
+_p_214_plt_System_Net_Primitives__jit_icall_monoeg_g_free_llvm:
+	.globl _p_214_plt_System_Net_Primitives__jit_icall_monoeg_g_free_llvm
+.private_extern _p_214_plt_System_Net_Primitives__jit_icall_monoeg_g_free_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_monoeg_g_free
+plt_System_Net_Primitives__jit_icall_monoeg_g_free:
+_p_214:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2200]
+br x16
+.word 5144
+_p_215_plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper_llvm:
+	.globl _p_215_plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper_llvm
+.private_extern _p_215_plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper
+plt_System_Net_Primitives__jit_icall_ves_icall_string_new_wrapper:
+_p_215:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2208]
+br x16
+.word 5146
+_p_216_plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey_llvm:
+	.globl _p_216_plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey_llvm
+.private_extern _p_216_plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey
+plt_System_Net_Primitives_System_Net_Cookie_get_DomainKey:
+_p_216:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2216]
+br x16
+.word 5149
+_p_217_plt_System_Net_Primitives_System_Net_PathList__ctor_llvm:
+	.globl _p_217_plt_System_Net_Primitives_System_Net_PathList__ctor_llvm
+.private_extern _p_217_plt_System_Net_Primitives_System_Net_PathList__ctor_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList__ctor
+plt_System_Net_Primitives_System_Net_PathList__ctor:
+_p_217:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2224]
+br x16
+.word 5151
+_p_218_plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount_llvm:
+	.globl _p_218_plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount_llvm
+.private_extern _p_218_plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount
+plt_System_Net_Primitives_System_Net_PathList_GetCookiesCount:
+_p_218:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2232]
+br x16
+.word 5153
+_p_219_plt_System_Net_Primitives_System_Net_PathList_get_Item_string_llvm:
+	.globl _p_219_plt_System_Net_Primitives_System_Net_PathList_get_Item_string_llvm
+.private_extern _p_219_plt_System_Net_Primitives_System_Net_PathList_get_Item_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_Item_string
+plt_System_Net_Primitives_System_Net_PathList_get_Item_string:
+_p_219:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2240]
+br x16
+.word 5155
+_p_220_plt_System_Net_Primitives_System_Net_CookieCollection__ctor_llvm:
+	.globl _p_220_plt_System_Net_Primitives_System_Net_CookieCollection__ctor_llvm
+.private_extern _p_220_plt_System_Net_Primitives_System_Net_CookieCollection__ctor_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieCollection__ctor
+plt_System_Net_Primitives_System_Net_CookieCollection__ctor:
+_p_220:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2248]
+br x16
+.word 5157
+_p_221_plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object_llvm:
+	.globl _p_221_plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object_llvm
+.private_extern _p_221_plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object
+plt_System_Net_Primitives_System_Net_PathList_set_Item_string_object:
+_p_221:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2256]
+br x16
+.word 5159
+_p_222_plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string_llvm:
+	.globl _p_222_plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string_llvm
+.private_extern _p_222_plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string
+plt_System_Net_Primitives_System_Net_CookieContainer_AgeCookies_string:
+_p_222:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2264]
+br x16
+.word 5161
+_p_223_plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup_llvm:
+	.globl _p_223_plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup_llvm
+.private_extern _p_223_plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup
+plt_System_Net_Primitives_System_Net_CookieContainer_DomainTableCleanup:
+_p_223:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2272]
+br x16
+.word 5163
+_p_224_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception_llvm:
+	.globl _p_224_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception_llvm
+.private_extern _p_224_plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception
+plt_System_Net_Primitives_System_Net_CookieException__ctor_string_System_Exception:
+_p_224:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2280]
+br x16
+.word 5165
+_p_225_plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm:
+	.globl _p_225_plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm
+.private_extern _p_225_plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception
+plt_System_Net_Primitives__jit_icall_mono_arch_throw_corlib_exception:
+_p_225:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2288]
+br x16
+.word 5168
+_p_226_plt_System_Net_Primitives_System_Net_PathList_get_Values_llvm:
+	.globl _p_226_plt_System_Net_Primitives_System_Net_PathList_get_Values_llvm
+.private_extern _p_226_plt_System_Net_Primitives_System_Net_PathList_get_Values_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_get_Values
+plt_System_Net_Primitives_System_Net_PathList_get_Values:
+_p_226:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2296]
+br x16
+.word 5170
+_p_227_plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection_llvm:
+	.globl _p_227_plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection_llvm
+.private_extern _p_227_plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection
+plt_System_Net_Primitives_System_Net_CookieContainer_ExpireCollection_System_Net_CookieCollection:
+_p_227:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2304]
+br x16
+.word 5172
+_p_228_plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection___llvm:
+	.globl _p_228_plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection___llvm
+.private_extern _p_228_plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection___llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection__
+plt_System_Net_Primitives_System_Array_Sort_System_DateTime_System_Net_CookieCollection_System_DateTime___System_Net_CookieCollection__:
+_p_228:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2312]
+br x16
+.word 5174
+_p_229_plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime_llvm:
+	.globl _p_229_plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime_llvm
+.private_extern _p_229_plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime
+plt_System_Net_Primitives_System_DateTime_op_Equality_System_DateTime_System_DateTime:
+_p_229:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2320]
+br x16
+.word 5186
+_p_230_plt_System_Net_Primitives_System_Net_PathList_GetEnumerator_llvm:
+	.globl _p_230_plt_System_Net_Primitives_System_Net_PathList_GetEnumerator_llvm
+.private_extern _p_230_plt_System_Net_Primitives_System_Net_PathList_GetEnumerator_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_GetEnumerator
+plt_System_Net_Primitives_System_Net_PathList_GetEnumerator:
+_p_230:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2328]
+br x16
+.word 5191
+_p_231_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object_llvm:
+	.globl _p_231_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
+.private_extern _p_231_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object
+plt_System_Net_Primitives_System_Collections_Generic_List_1_object_AddWithResize_object:
+_p_231:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2336]
+br x16
+.word 5193
+_p_232_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator_llvm:
+	.globl _p_232_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator_llvm
+.private_extern _p_232_plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator
+plt_System_Net_Primitives_System_Collections_Generic_List_1_object_GetEnumerator:
+_p_232:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2344]
+br x16
+.word 5210
+_p_233_plt_System_Net_Primitives_System_Net_PathList_Remove_object_llvm:
+	.globl _p_233_plt_System_Net_Primitives_System_Net_PathList_Remove_object_llvm
+.private_extern _p_233_plt_System_Net_Primitives_System_Net_PathList_Remove_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_PathList_Remove_object
+plt_System_Net_Primitives_System_Net_PathList_Remove_object:
+_p_233:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2352]
+br x16
+.word 5221
+_p_234_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext_llvm:
+	.globl _p_234_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext_llvm
+.private_extern _p_234_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext
+plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_object_MoveNext:
+_p_234:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2360]
+br x16
+.word 5223
+_p_235_plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int_llvm:
+	.globl _p_235_plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int_llvm
+.private_extern _p_235_plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int
+plt_System_Net_Primitives_System_Array_Clear_System_Array_int_int:
+_p_235:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2368]
+br x16
+.word 5234
+_p_236_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator_llvm:
+	.globl _p_236_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator_llvm
+.private_extern _p_236_plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator
+plt_System_Net_Primitives_System_Collections_Generic_List_1_string_GetEnumerator:
+_p_236:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2376]
+br x16
+.word 5239
+_p_237_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm:
+	.globl _p_237_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm
+.private_extern _p_237_plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext
+plt_System_Net_Primitives_System_Collections_Generic_List_1_Enumerator_string_MoveNext:
+_p_237:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2384]
+br x16
+.word 5250
+_p_238_plt_System_Net_Primitives_string_memset_byte__int_int_llvm:
+	.globl _p_238_plt_System_Net_Primitives_string_memset_byte__int_int_llvm
+.private_extern _p_238_plt_System_Net_Primitives_string_memset_byte__int_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_string_memset_byte__int_int
+plt_System_Net_Primitives_string_memset_byte__int_int:
+_p_238:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2392]
+br x16
+.word 5261
+_p_239_plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string_llvm:
+	.globl _p_239_plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string_llvm
+.private_extern _p_239_plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string
+plt_System_Net_Primitives_System_Net_CookieContainer_IsLocalDomain_string:
+_p_239:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2400]
+br x16
+.word 5266
+_p_240_plt_System_Net_Primitives_System_Net_CookieParser__ctor_string_llvm:
+	.globl _p_240_plt_System_Net_Primitives_System_Net_CookieParser__ctor_string_llvm
+.private_extern _p_240_plt_System_Net_Primitives_System_Net_CookieParser__ctor_string_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser__ctor_string
+plt_System_Net_Primitives_System_Net_CookieParser__ctor_string:
+_p_240:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2408]
+br x16
+.word 5268
+_p_241_plt_System_Net_Primitives_System_Net_CookieParser_Get_llvm:
+	.globl _p_241_plt_System_Net_Primitives_System_Net_CookieParser_Get_llvm
+.private_extern _p_241_plt_System_Net_Primitives_System_Net_CookieParser_Get_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieParser_Get
+plt_System_Net_Primitives_System_Net_CookieParser_Get:
+_p_241:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2416]
+br x16
+.word 5271
+_p_242_plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool_llvm:
+	.globl _p_242_plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool_llvm
+.private_extern _p_242_plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool
+plt_System_Net_Primitives_System_Net_Cookie_VerifySetDefaults_System_Net_CookieVariant_System_Uri_bool_string_bool_bool:
+_p_242:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2424]
+br x16
+.word 5274
+_p_243_plt_System_Net_Primitives_System_Uri_get_AbsoluteUri_llvm:
+	.globl _p_243_plt_System_Net_Primitives_System_Uri_get_AbsoluteUri_llvm
+.private_extern _p_243_plt_System_Net_Primitives_System_Uri_get_AbsoluteUri_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Uri_get_AbsoluteUri
+plt_System_Net_Primitives_System_Uri_get_AbsoluteUri:
+_p_243:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2432]
+br x16
+.word 5276
+_p_244_plt_System_Net_Primitives_System_SR_Format_string_object_llvm:
+	.globl _p_244_plt_System_Net_Primitives_System_SR_Format_string_object_llvm
+.private_extern _p_244_plt_System_Net_Primitives_System_SR_Format_string_object_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_SR_Format_string_object
+plt_System_Net_Primitives_System_SR_Format_string_object:
+_p_244:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2440]
+br x16
+.word 5281
+_p_245_plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool_llvm:
+	.globl _p_245_plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool_llvm
+.private_extern _p_245_plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool
+plt_System_Net_Primitives_System_Net_CookieContainer_Add_System_Net_Cookie_bool:
+_p_245:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2448]
+br x16
+.word 5283
+_p_246_plt_System_Net_Primitives_System_Net_IPAddress_get_IsIPv4_llvm:
+	.globl _p_246_plt_System_Net_Primitives_System_Net_IPAddress_get_IsIPv4_llvm
+.private_extern _p_246_plt_System_Net_Primitives_System_Net_IPAddress_get_IsIPv4_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_get_IsIPv4
+plt_System_Net_Primitives_System_Net_IPAddress_get_IsIPv4:
+_p_246:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2456]
+br x16
+.word 5285
+_p_247_plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId_llvm:
+	.globl _p_247_plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId_llvm
+.private_extern _p_247_plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId
+plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateScopeId:
+_p_247:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2464]
+br x16
+.word 5288
+_p_248_plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress_llvm:
+	.globl _p_248_plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress_llvm
+.private_extern _p_248_plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress
+plt_System_Net_Primitives_System_Net_IPAddress_get_PrivateAddress:
+_p_248:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2472]
+br x16
+.word 5291
+_p_249_plt_System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int_llvm:
+	.globl _p_249_plt_System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int_llvm
+.private_extern _p_249_plt_System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int
+plt_System_Net_Primitives_System_Net_IPAddress_NetworkToHostOrder_int:
+_p_249:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2480]
+br x16
+.word 5294
+_p_250_plt_System_Net_Primitives__jit_icall_mono_gsharedvt_constrained_call_llvm:
+	.globl _p_250_plt_System_Net_Primitives__jit_icall_mono_gsharedvt_constrained_call_llvm
+.private_extern _p_250_plt_System_Net_Primitives__jit_icall_mono_gsharedvt_constrained_call_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_gsharedvt_constrained_call
+plt_System_Net_Primitives__jit_icall_mono_gsharedvt_constrained_call:
+_p_250:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2488]
+br x16
+.word 5297
+_p_251_plt_System_Net_Primitives__jit_icall_mono_object_castclass_unbox_llvm:
+	.globl _p_251_plt_System_Net_Primitives__jit_icall_mono_object_castclass_unbox_llvm
+.private_extern _p_251_plt_System_Net_Primitives__jit_icall_mono_object_castclass_unbox_llvm
+	.no_dead_strip plt_System_Net_Primitives__jit_icall_mono_object_castclass_unbox
+plt_System_Net_Primitives__jit_icall_mono_object_castclass_unbox:
+_p_251:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2496]
+br x16
+.word 5300
+_p_252_plt_System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16_llvm:
+	.globl _p_252_plt_System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16_llvm
+.private_extern _p_252_plt_System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16
+plt_System_Net_Primitives_System_IPv6AddressHelper_ShouldHaveIpv4Embedded_System_ReadOnlySpan_1_uint16:
+_p_252:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2504]
+br x16
+.word 5303
+_p_253_plt_System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16___llvm:
+	.globl _p_253_plt_System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16___llvm
+.private_extern _p_253_plt_System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16___llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16__
+plt_System_Net_Primitives_System_Net_IPAddressParser_ExtractIPv4Address_uint16__:
+_p_253:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2512]
+br x16
+.word 5305
+_p_254_plt_System_Net_Primitives_System_Math_DivRem_uint_uint_llvm:
+	.globl _p_254_plt_System_Net_Primitives_System_Math_DivRem_uint_uint_llvm
+.private_extern _p_254_plt_System_Net_Primitives_System_Math_DivRem_uint_uint_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_Math_DivRem_uint_uint
+plt_System_Net_Primitives_System_Math_DivRem_uint_uint:
+_p_254:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2520]
+br x16
+.word 5308
+_p_255_plt_System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16_llvm:
+	.globl _p_255_plt_System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16_llvm
+.private_extern _p_255_plt_System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16
+plt_System_Net_Primitives_System_IPv6AddressHelper_FindCompressionRange_System_ReadOnlySpan_1_uint16:
+_p_255:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2528]
+br x16
+.word 5313
+_p_256_plt_System_Net_Primitives_System_HexConverter_ToCharLower_int_llvm:
+	.globl _p_256_plt_System_Net_Primitives_System_HexConverter_ToCharLower_int_llvm
+.private_extern _p_256_plt_System_Net_Primitives_System_HexConverter_ToCharLower_int_llvm
+	.no_dead_strip plt_System_Net_Primitives_System_HexConverter_ToCharLower_int
+plt_System_Net_Primitives_System_HexConverter_ToCharLower_int:
+_p_256:
+adrp x16, mono_aot_System_Net_Primitives_got@PAGE+0
+add x16, x16, mono_aot_System_Net_Primitives_got@PAGEOFF
+ldr x16, [x16, #2536]
+br x16
+.word 5315
 plt_end:
 _mono_aot_System_Net_Primitivesplt_end:
 	.globl _mono_aot_System_Net_Primitivesplt_end
@@ -4901,7 +8761,7 @@ _mono_aot_System_Net_Primitivesplt_end:
 jit_got:
 _mono_aot_System_Net_Primitivesjit_got:
 	.globl _mono_aot_System_Net_Primitivesjit_got
-.lcomm mono_aot_System_Net_Primitives_got, 1840
+.lcomm mono_aot_System_Net_Primitives_got, 2544
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -6212,7 +10072,7 @@ LDIFF_SYM187=LTDIE_23 - Ldebug_info_start
 
 	.byte 0,0
 	.quad System_Net_CookieContainer_Add_System_Net_Cookie_bool
-	.quad Lme_35
+	.quad Lme_49
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -6306,7 +10166,7 @@ Lfde0_start:
 	.align 3
 	.quad System_Net_CookieContainer_Add_System_Net_Cookie_bool
 
-LDIFF_SYM205=Lme_35 - System_Net_CookieContainer_Add_System_Net_Cookie_bool
+LDIFF_SYM205=Lme_49 - System_Net_CookieContainer_Add_System_Net_Cookie_bool
 	.long LDIFF_SYM205
 	.long 0
 	.byte 12,31,0,68,14,208,2,157,42,158,41,68,13,29,68,149,40,150,39,68,151,38,152,37,68,153,36,154,35
@@ -6380,7 +10240,7 @@ LDIFF_SYM214=LTDIE_27 - Ldebug_info_start
 
 	.byte 0,0
 	.quad System_Net_CookieContainer_AgeCookies_string
-	.quad Lme_36
+	.quad Lme_4a
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -6574,7 +10434,7 @@ Lfde1_start:
 	.align 3
 	.quad System_Net_CookieContainer_AgeCookies_string
 
-LDIFF_SYM252=Lme_36 - System_Net_CookieContainer_AgeCookies_string
+LDIFF_SYM252=Lme_4a - System_Net_CookieContainer_AgeCookies_string
 	.long LDIFF_SYM252
 	.long 0
 	.byte 12,31,0,84,14,128,5,157,80,158,79,68,13,29,68,147,78,148,77,68,149,76,150,75,68,151,74,152,73,68,153,72
@@ -6590,7 +10450,7 @@ Lfde1_end:
 
 	.byte 0,0
 	.quad System_Net_CookieContainer_DomainTableCleanup
-	.quad Lme_37
+	.quad Lme_4b
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -6684,7 +10544,7 @@ Lfde2_start:
 	.align 3
 	.quad System_Net_CookieContainer_DomainTableCleanup
 
-LDIFF_SYM270=Lme_37 - System_Net_CookieContainer_DomainTableCleanup
+LDIFF_SYM270=Lme_4b - System_Net_CookieContainer_DomainTableCleanup
 	.long LDIFF_SYM270
 	.long 0
 	.byte 12,31,0,68,14,192,2,157,40,158,39,68,13,29,68,147,38,148,37,68,149,36,150,35,68,151,34,152,33,68,153,32
@@ -6700,7 +10560,7 @@ Lfde2_end:
 
 	.byte 0,0
 	.quad System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
-	.quad Lme_3a
+	.quad Lme_4e
 
 	.byte 2,118,16,3
 	.asciz "this"
@@ -6784,12 +10644,866 @@ Lfde3_start:
 	.align 3
 	.quad System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
 
-LDIFF_SYM286=Lme_3a - System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
+LDIFF_SYM286=Lme_4e - System_Net_CookieContainer_CookieCutter_System_Uri_string_string_bool
 	.long LDIFF_SYM286
 	.long 0
 	.byte 12,31,0,68,14,144,2,157,34,158,33,68,13,29,68,151,32,152,31,68,153,30,154,29
 	.align 3
 Lfde3_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_29:
+
+	.byte 5
+	.asciz "System_UInt32"
+
+	.byte 20,16
+LDIFF_SYM287=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM287
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM288=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM288
+	.byte 2,35,16,0,7
+	.asciz "System_UInt32"
+
+LDIFF_SYM289=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM289
+LTDIE_29_POINTER:
+
+	.byte 13
+LDIFF_SYM290=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM290
+LTDIE_29_REFERENCE:
+
+	.byte 14
+LDIFF_SYM291=LTDIE_29 - Ldebug_info_start
+	.long LDIFF_SYM291
+LTDIE_28:
+
+	.byte 5
+	.asciz "System_Net_IPAddress"
+
+	.byte 40,16
+LDIFF_SYM292=LTDIE_1 - Ldebug_info_start
+	.long LDIFF_SYM292
+	.byte 2,35,0,6
+	.asciz "_addressOrScopeId"
+
+LDIFF_SYM293=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM293
+	.byte 2,35,32,6
+	.asciz "_numbers"
+
+LDIFF_SYM294=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM294
+	.byte 2,35,16,6
+	.asciz "_toString"
+
+LDIFF_SYM295=LDIE_STRING - Ldebug_info_start
+	.long LDIFF_SYM295
+	.byte 2,35,24,6
+	.asciz "_hashCode"
+
+LDIFF_SYM296=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM296
+	.byte 2,35,36,0,7
+	.asciz "System_Net_IPAddress"
+
+LDIFF_SYM297=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM297
+LTDIE_28_POINTER:
+
+	.byte 13
+LDIFF_SYM298=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM298
+LTDIE_28_REFERENCE:
+
+	.byte 14
+LDIFF_SYM299=LTDIE_28 - Ldebug_info_start
+	.long LDIFF_SYM299
+	.byte 2
+	.asciz "System.Net.IPAddress:TryFormatCore<TChar_GSHAREDVT>"
+	.asciz "System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_"
+
+	.byte 0,0
+	.quad System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_
+	.quad Lme_d9
+
+	.byte 2,118,16,3
+	.asciz "this"
+
+LDIFF_SYM300=LTDIE_28_REFERENCE - Ldebug_info_start
+	.long LDIFF_SYM300
+	.byte 1,105,3
+	.asciz "param0"
+
+LDIFF_SYM301=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM301
+	.byte 1,80,3
+	.asciz "param1"
+
+LDIFF_SYM302=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM302
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM303=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM303
+	.byte 1,80,11
+	.asciz "V_1"
+
+LDIFF_SYM304=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM304
+	.byte 1,102,11
+	.asciz "V_2"
+
+LDIFF_SYM305=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM305
+	.byte 1,80,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM306=Lfde4_end - Lfde4_start
+	.long LDIFF_SYM306
+Lfde4_start:
+
+	.long 0
+	.align 3
+	.quad System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_
+
+LDIFF_SYM307=Lme_d9 - System_Net_IPAddress_TryFormatCore_TChar_GSHAREDVT_System_Span_1_TChar_GSHAREDVT_int_
+	.long LDIFF_SYM307
+	.long 0
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7,68,153,6,154,5
+	.align 3
+Lfde4_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Net.IPAddressParser:FormatIPv4Address<TChar_GSHAREDVT>"
+	.asciz "System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT"
+
+	.byte 0,0
+	.quad System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+	.quad Lme_da
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM308=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM308
+	.byte 1,106,3
+	.asciz "param1"
+
+LDIFF_SYM309=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM309
+	.byte 1,80,11
+	.asciz "V_0"
+
+LDIFF_SYM310=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM310
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM311=Lfde5_end - Lfde5_start
+	.long LDIFF_SYM311
+Lfde5_start:
+
+	.long 0
+	.align 3
+	.quad System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+
+LDIFF_SYM312=Lme_da - System_Net_IPAddressParser_FormatIPv4Address_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+	.long LDIFF_SYM312
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8
+	.align 3
+Lfde5_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Net.IPAddressParser:FormatIPv6Address<TChar_GSHAREDVT>"
+	.asciz "System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT"
+
+	.byte 0,0
+	.quad System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT
+	.quad Lme_db
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM313=LDIE_SZARRAY - Ldebug_info_start
+	.long LDIFF_SYM313
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM314=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM314
+	.byte 1,106,3
+	.asciz "param2"
+
+LDIFF_SYM315=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM315
+	.byte 1,80,11
+	.asciz "V_0"
+
+LDIFF_SYM316=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM316
+	.byte 3,141,192,1,11
+	.asciz "V_1"
+
+LDIFF_SYM317=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM317
+	.byte 1,80,11
+	.asciz "V_2"
+
+LDIFF_SYM318=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM318
+	.byte 1,105,11
+	.asciz "V_3"
+
+LDIFF_SYM319=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM319
+	.byte 1,80,11
+	.asciz "V_4"
+
+LDIFF_SYM320=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM320
+	.byte 1,80,11
+	.asciz "V_5"
+
+LDIFF_SYM321=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM321
+	.byte 1,102,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM322=Lfde6_end - Lfde6_start
+	.long LDIFF_SYM322
+Lfde6_start:
+
+	.long 0
+	.align 3
+	.quad System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT
+
+LDIFF_SYM323=Lme_db - System_Net_IPAddressParser_FormatIPv6Address_TChar_GSHAREDVT_uint16___uint_System_Span_1_TChar_GSHAREDVT
+	.long LDIFF_SYM323
+	.long 0
+	.byte 12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,148,30,149,29,68,150,28,151,27,68,152,26,153,25,68,154,24
+	.align 3
+Lfde6_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Net.IPAddressParser:<FormatIPv4Address>g__FormatByte_5_0<TChar_GSHAREDVT>"
+	.asciz "System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT"
+
+	.byte 0,0
+	.quad System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+	.quad Lme_dc
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM324=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM324
+	.byte 1,106,3
+	.asciz "param1"
+
+LDIFF_SYM325=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM325
+	.byte 1,80,11
+	.asciz "V_0"
+
+LDIFF_SYM326=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM326
+	.byte 1,102,11
+	.asciz "V_1"
+
+LDIFF_SYM327=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM327
+	.byte 1,103,11
+	.asciz "V_2"
+
+LDIFF_SYM328=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM328
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM329=Lfde7_end - Lfde7_start
+	.long LDIFF_SYM329
+Lfde7_start:
+
+	.long 0
+	.align 3
+	.quad System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+
+LDIFF_SYM330=Lme_dc - System_Net_IPAddressParser__FormatIPv4Addressg__FormatByte_5_0_TChar_GSHAREDVT_uint_System_Span_1_TChar_GSHAREDVT
+	.long LDIFF_SYM330
+	.long 0
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,148,26,149,25,68,150,24,151,23,68,152,22,153,21,68,154,20
+	.align 3
+Lfde7_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "System.Net.IPAddressParser:<FormatIPv6Address>g__AppendSections_6_0<TChar_GSHAREDVT>"
+	.asciz "System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_"
+
+	.byte 0,0
+	.quad System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_
+	.quad Lme_dd
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM331=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM331
+	.byte 3,141,208,0,3
+	.asciz "param1"
+
+LDIFF_SYM332=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM332
+	.byte 1,80,3
+	.asciz "param2"
+
+LDIFF_SYM333=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM333
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM334=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM334
+	.byte 1,103,11
+	.asciz "V_1"
+
+LDIFF_SYM335=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM335
+	.byte 1,102,11
+	.asciz "V_2"
+
+LDIFF_SYM336=LDIE_BOOLEAN - Ldebug_info_start
+	.long LDIFF_SYM336
+	.byte 1,101,11
+	.asciz "V_3"
+
+LDIFF_SYM337=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM337
+	.byte 1,100,11
+	.asciz "V_4"
+
+LDIFF_SYM338=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM338
+	.byte 1,101,11
+	.asciz "V_5"
+
+LDIFF_SYM339=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM339
+	.byte 1,103,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM340=Lfde8_end - Lfde8_start
+	.long LDIFF_SYM340
+Lfde8_start:
+
+	.long 0
+	.align 3
+	.quad System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_
+
+LDIFF_SYM341=Lme_dd - System_Net_IPAddressParser__FormatIPv6Addressg__AppendSections_6_0_TChar_GSHAREDVT_System_ReadOnlySpan_1_uint16_System_Span_1_TChar_GSHAREDVT_int_
+	.long LDIFF_SYM341
+	.long 0
+	.byte 12,31,0,68,14,224,1,157,28,158,27,68,13,29,68,147,26,148,25,68,149,24,150,23,68,151,22,152,21,68,153,20
+	.byte 154,19
+	.align 3
+Lfde8_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_30:
+
+	.byte 5
+	.asciz "System_UInt16"
+
+	.byte 18,16
+LDIFF_SYM342=LTDIE_4 - Ldebug_info_start
+	.long LDIFF_SYM342
+	.byte 2,35,0,6
+	.asciz "m_value"
+
+LDIFF_SYM343=LDIE_U2 - Ldebug_info_start
+	.long LDIFF_SYM343
+	.byte 2,35,16,0,7
+	.asciz "System_UInt16"
+
+LDIFF_SYM344=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM344
+LTDIE_30_POINTER:
+
+	.byte 13
+LDIFF_SYM345=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM345
+LTDIE_30_REFERENCE:
+
+	.byte 14
+LDIFF_SYM346=LTDIE_30 - Ldebug_info_start
+	.long LDIFF_SYM346
+	.byte 2
+	.asciz "System.Net.IPAddressParser:<FormatIPv6Address>g__AppendHex_6_1<TChar_GSHAREDVT>"
+	.asciz "System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_"
+
+	.byte 0,0
+	.quad System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_
+	.quad Lme_de
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM347=LDIE_U2 - Ldebug_info_start
+	.long LDIFF_SYM347
+	.byte 1,105,3
+	.asciz "param1"
+
+LDIFF_SYM348=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM348
+	.byte 1,80,3
+	.asciz "param2"
+
+LDIFF_SYM349=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM349
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM350=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM350
+	.byte 1,102,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM351=Lfde9_end - Lfde9_start
+	.long LDIFF_SYM351
+Lfde9_start:
+
+	.long 0
+	.align 3
+	.quad System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_
+
+LDIFF_SYM352=Lme_de - System_Net_IPAddressParser__FormatIPv6Addressg__AppendHex_6_1_TChar_GSHAREDVT_uint16_System_Span_1_TChar_GSHAREDVT_int_
+	.long LDIFF_SYM352
+	.long 0
+	.byte 12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,148,14,149,13,68,150,12,151,11,68,152,10,153,9,68,154,8
+	.align 3
+Lfde9_end:
+
+.section __DWARF, __debug_info,regular,debug
+LTDIE_31:
+
+	.byte 8
+	.asciz "_Error"
+
+	.byte 4
+LDIFF_SYM353=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM353
+	.byte 9
+	.asciz "SUCCESS"
+
+	.byte 0,9
+	.asciz "E2BIG"
+
+	.byte 129,128,4,9
+	.asciz "EACCES"
+
+	.byte 130,128,4,9
+	.asciz "EADDRINUSE"
+
+	.byte 131,128,4,9
+	.asciz "EADDRNOTAVAIL"
+
+	.byte 132,128,4,9
+	.asciz "EAFNOSUPPORT"
+
+	.byte 133,128,4,9
+	.asciz "EAGAIN"
+
+	.byte 134,128,4,9
+	.asciz "EALREADY"
+
+	.byte 135,128,4,9
+	.asciz "EBADF"
+
+	.byte 136,128,4,9
+	.asciz "EBADMSG"
+
+	.byte 137,128,4,9
+	.asciz "EBUSY"
+
+	.byte 138,128,4,9
+	.asciz "ECANCELED"
+
+	.byte 139,128,4,9
+	.asciz "ECHILD"
+
+	.byte 140,128,4,9
+	.asciz "ECONNABORTED"
+
+	.byte 141,128,4,9
+	.asciz "ECONNREFUSED"
+
+	.byte 142,128,4,9
+	.asciz "ECONNRESET"
+
+	.byte 143,128,4,9
+	.asciz "EDEADLK"
+
+	.byte 144,128,4,9
+	.asciz "EDESTADDRREQ"
+
+	.byte 145,128,4,9
+	.asciz "EDOM"
+
+	.byte 146,128,4,9
+	.asciz "EDQUOT"
+
+	.byte 147,128,4,9
+	.asciz "EEXIST"
+
+	.byte 148,128,4,9
+	.asciz "EFAULT"
+
+	.byte 149,128,4,9
+	.asciz "EFBIG"
+
+	.byte 150,128,4,9
+	.asciz "EHOSTUNREACH"
+
+	.byte 151,128,4,9
+	.asciz "EIDRM"
+
+	.byte 152,128,4,9
+	.asciz "EILSEQ"
+
+	.byte 153,128,4,9
+	.asciz "EINPROGRESS"
+
+	.byte 154,128,4,9
+	.asciz "EINTR"
+
+	.byte 155,128,4,9
+	.asciz "EINVAL"
+
+	.byte 156,128,4,9
+	.asciz "EIO"
+
+	.byte 157,128,4,9
+	.asciz "EISCONN"
+
+	.byte 158,128,4,9
+	.asciz "EISDIR"
+
+	.byte 159,128,4,9
+	.asciz "ELOOP"
+
+	.byte 160,128,4,9
+	.asciz "EMFILE"
+
+	.byte 161,128,4,9
+	.asciz "EMLINK"
+
+	.byte 162,128,4,9
+	.asciz "EMSGSIZE"
+
+	.byte 163,128,4,9
+	.asciz "EMULTIHOP"
+
+	.byte 164,128,4,9
+	.asciz "ENAMETOOLONG"
+
+	.byte 165,128,4,9
+	.asciz "ENETDOWN"
+
+	.byte 166,128,4,9
+	.asciz "ENETRESET"
+
+	.byte 167,128,4,9
+	.asciz "ENETUNREACH"
+
+	.byte 168,128,4,9
+	.asciz "ENFILE"
+
+	.byte 169,128,4,9
+	.asciz "ENOBUFS"
+
+	.byte 170,128,4,9
+	.asciz "ENODEV"
+
+	.byte 172,128,4,9
+	.asciz "ENOENT"
+
+	.byte 173,128,4,9
+	.asciz "ENOEXEC"
+
+	.byte 174,128,4,9
+	.asciz "ENOLCK"
+
+	.byte 175,128,4,9
+	.asciz "ENOLINK"
+
+	.byte 176,128,4,9
+	.asciz "ENOMEM"
+
+	.byte 177,128,4,9
+	.asciz "ENOMSG"
+
+	.byte 178,128,4,9
+	.asciz "ENOPROTOOPT"
+
+	.byte 179,128,4,9
+	.asciz "ENOSPC"
+
+	.byte 180,128,4,9
+	.asciz "ENOSYS"
+
+	.byte 183,128,4,9
+	.asciz "ENOTCONN"
+
+	.byte 184,128,4,9
+	.asciz "ENOTDIR"
+
+	.byte 185,128,4,9
+	.asciz "ENOTEMPTY"
+
+	.byte 186,128,4,9
+	.asciz "ENOTRECOVERABLE"
+
+	.byte 187,128,4,9
+	.asciz "ENOTSOCK"
+
+	.byte 188,128,4,9
+	.asciz "ENOTSUP"
+
+	.byte 189,128,4,9
+	.asciz "ENOTTY"
+
+	.byte 190,128,4,9
+	.asciz "ENXIO"
+
+	.byte 191,128,4,9
+	.asciz "EOVERFLOW"
+
+	.byte 192,128,4,9
+	.asciz "EOWNERDEAD"
+
+	.byte 193,128,4,9
+	.asciz "EPERM"
+
+	.byte 194,128,4,9
+	.asciz "EPIPE"
+
+	.byte 195,128,4,9
+	.asciz "EPROTO"
+
+	.byte 196,128,4,9
+	.asciz "EPROTONOSUPPORT"
+
+	.byte 197,128,4,9
+	.asciz "EPROTOTYPE"
+
+	.byte 198,128,4,9
+	.asciz "ERANGE"
+
+	.byte 199,128,4,9
+	.asciz "EROFS"
+
+	.byte 200,128,4,9
+	.asciz "ESPIPE"
+
+	.byte 201,128,4,9
+	.asciz "ESRCH"
+
+	.byte 202,128,4,9
+	.asciz "ESTALE"
+
+	.byte 203,128,4,9
+	.asciz "ETIMEDOUT"
+
+	.byte 205,128,4,9
+	.asciz "ETXTBSY"
+
+	.byte 206,128,4,9
+	.asciz "EXDEV"
+
+	.byte 207,128,4,9
+	.asciz "ESOCKTNOSUPPORT"
+
+	.byte 222,128,4,9
+	.asciz "EPFNOSUPPORT"
+
+	.byte 224,128,4,9
+	.asciz "ESHUTDOWN"
+
+	.byte 236,128,4,9
+	.asciz "EHOSTDOWN"
+
+	.byte 240,128,4,9
+	.asciz "ENODATA"
+
+	.byte 241,128,4,9
+	.asciz "EHOSTNOTFOUND"
+
+	.byte 129,128,8,9
+	.asciz "ESOCKETERROR"
+
+	.byte 130,128,8,9
+	.asciz "EOPNOTSUPP"
+
+	.byte 189,128,4,9
+	.asciz "EWOULDBLOCK"
+
+	.byte 134,128,4,0,7
+	.asciz "_Error"
+
+LDIFF_SYM354=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM354
+LTDIE_31_POINTER:
+
+	.byte 13
+LDIFF_SYM355=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM355
+LTDIE_31_REFERENCE:
+
+	.byte 14
+LDIFF_SYM356=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM356
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_Interop/Sys:ConvertErrorPalToPlatform"
+	.asciz "wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error
+	.quad Lme_f8
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM357=LTDIE_31 - Ldebug_info_start
+	.long LDIFF_SYM357
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM358=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM358
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM359=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM359
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM360=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM360
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM361=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM361
+	.byte 1,106,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM362=Lfde10_end - Lfde10_start
+	.long LDIFF_SYM362
+Lfde10_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error
+
+LDIFF_SYM363=Lme_f8 - wrapper_managed_to_native_Interop_Sys_ConvertErrorPalToPlatform_Interop_Error
+	.long LDIFF_SYM363
+	.long 0
+	.byte 12,31,0,68,14,144,1,157,18,158,17,68,13,29,76,147,13,148,12,68,149,11,150,10,68,151,9,152,8,68,153,7
+	.byte 154,6,68,155,5,156,4
+	.align 3
+Lfde10_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_Interop/Sys:StrErrorR"
+	.asciz "wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int
+	.quad Lme_f9
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM364=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM364
+	.byte 2,141,16,3
+	.asciz "param1"
+
+LDIFF_SYM365=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM365
+	.byte 1,105,3
+	.asciz "param2"
+
+LDIFF_SYM366=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM366
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM367=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM367
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM368=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM368
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM369=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM369
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM370=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM370
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM371=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM371
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM372=Lfde11_end - Lfde11_start
+	.long LDIFF_SYM372
+Lfde11_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int
+
+LDIFF_SYM373=Lme_f9 - wrapper_managed_to_native_Interop_Sys_StrErrorR_int_byte__int
+	.long LDIFF_SYM373
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,14,148,13,68,149,12,150,11,68,151,10,152,9,68,153,8
+	.byte 154,7,68,155,6,156,5
+	.align 3
+Lfde11_end:
 
 .section __DWARF, __debug_info,regular,debug
 
@@ -6799,62 +11513,122 @@ Lfde3_end:
 
 	.byte 0,0
 	.quad wrapper_managed_to_native_Interop_Sys_GetDomainName_byte__int
-	.quad Lme_a3
+	.quad Lme_fa
 
 	.byte 2,118,16,3
 	.asciz "param0"
 
-LDIFF_SYM287=LDIE_I - Ldebug_info_start
-	.long LDIFF_SYM287
+LDIFF_SYM374=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM374
 	.byte 1,105,3
 	.asciz "param1"
 
-LDIFF_SYM288=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM288
+LDIFF_SYM375=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM375
 	.byte 1,106,11
 	.asciz "V_0"
 
-LDIFF_SYM289=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM289
+LDIFF_SYM376=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM376
 	.byte 0,11
 	.asciz "V_1"
 
-LDIFF_SYM290=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM290
+LDIFF_SYM377=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM377
 	.byte 0,11
 	.asciz "V_2"
 
-LDIFF_SYM291=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM291
+LDIFF_SYM378=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM378
 	.byte 0,11
 	.asciz "V_3"
 
-LDIFF_SYM292=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM292
+LDIFF_SYM379=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM379
 	.byte 1,106,11
 	.asciz "V_4"
 
-LDIFF_SYM293=LDIE_I4 - Ldebug_info_start
-	.long LDIFF_SYM293
+LDIFF_SYM380=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM380
 	.byte 0,0
 
 .section __DWARF, __debug_frame,regular,debug
 
-LDIFF_SYM294=Lfde4_end - Lfde4_start
-	.long LDIFF_SYM294
-Lfde4_start:
+LDIFF_SYM381=Lfde12_end - Lfde12_start
+	.long LDIFF_SYM381
+Lfde12_start:
 
 	.long 0
 	.align 3
 	.quad wrapper_managed_to_native_Interop_Sys_GetDomainName_byte__int
 
-LDIFF_SYM295=Lme_a3 - wrapper_managed_to_native_Interop_Sys_GetDomainName_byte__int
-	.long LDIFF_SYM295
+LDIFF_SYM382=Lme_fa - wrapper_managed_to_native_Interop_Sys_GetDomainName_byte__int
+	.long LDIFF_SYM382
 	.long 0
 	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
 	.byte 154,8,68,155,7,156,6
 	.align 3
-Lfde4_end:
+Lfde12_end:
+
+.section __DWARF, __debug_info,regular,debug
+
+	.byte 2
+	.asciz "(wrapper_managed-to-native)_Interop/Sys:<InterfaceNameToIndex>g____PInvoke_33_0"
+	.asciz "wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_"
+
+	.byte 0,0
+	.quad wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_
+	.quad Lme_fb
+
+	.byte 2,118,16,3
+	.asciz "param0"
+
+LDIFF_SYM383=LDIE_I - Ldebug_info_start
+	.long LDIFF_SYM383
+	.byte 1,106,11
+	.asciz "V_0"
+
+LDIFF_SYM384=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM384
+	.byte 0,11
+	.asciz "V_1"
+
+LDIFF_SYM385=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM385
+	.byte 0,11
+	.asciz "V_2"
+
+LDIFF_SYM386=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM386
+	.byte 0,11
+	.asciz "V_3"
+
+LDIFF_SYM387=LDIE_U4 - Ldebug_info_start
+	.long LDIFF_SYM387
+	.byte 1,106,11
+	.asciz "V_4"
+
+LDIFF_SYM388=LDIE_I4 - Ldebug_info_start
+	.long LDIFF_SYM388
+	.byte 0,0
+
+.section __DWARF, __debug_frame,regular,debug
+
+LDIFF_SYM389=Lfde13_end - Lfde13_start
+	.long LDIFF_SYM389
+Lfde13_start:
+
+	.long 0
+	.align 3
+	.quad wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_
+
+LDIFF_SYM390=Lme_fb - wrapper_managed_to_native_Interop_Sys__InterfaceNameToIndexg____PInvoke_33_0_byte_
+	.long LDIFF_SYM390
+	.long 0
+	.byte 12,31,0,68,14,176,1,157,22,158,21,68,13,29,76,147,15,148,14,68,149,13,150,12,68,151,11,152,10,68,153,9
+	.byte 154,8,68,155,7,156,6
+	.align 3
+Lfde13_end:
 
 .section __DWARF, __debug_info,regular,debug
 

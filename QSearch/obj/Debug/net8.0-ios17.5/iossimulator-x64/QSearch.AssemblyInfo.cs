@@ -12,11 +12,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("QSearch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("5.3.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("5.3.0+2d83d7c190c6ab572ecf8b0e498e7aaa2391e163")]
 [assembly: System.Reflection.AssemblyProductAttribute("QSearch")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QSearch")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("5.3.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("iOS17.5")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("iOS11.0")]
 

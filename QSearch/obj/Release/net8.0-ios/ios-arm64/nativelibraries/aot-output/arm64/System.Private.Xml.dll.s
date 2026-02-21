@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "System.Private.Xml.dll"
 	.asciz ""
 
@@ -656,7 +656,7 @@ bl _p_1145
 .word 0x910003bf
 .word 0xa8d27bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_1146
 
@@ -751,7 +751,7 @@ bl _p_372
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940d030
+.word 0xf940d830
 .word 0xd63f0200
 
 adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
@@ -767,7 +767,7 @@ bl _p_296
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940d030
+.word 0xf940d830
 .word 0xd63f0200
 
 adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
@@ -885,13 +885,13 @@ bl _p_14
 .word 0xf9401401
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940d030
+.word 0xf940d830
 .word 0xd63f0200
 .word 0xf90043a0
 .word 0xf94013a1
 .word 0xaa0103e0
 .word 0xf9400021
-.word 0xf940d030
+.word 0xf940d830
 .word 0xd63f0200
 .word 0xaa0003e1
 .word 0xf94043a0
@@ -909,7 +909,7 @@ bl _p_270
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_1146
 
@@ -1099,7 +1099,7 @@ ldr x1, [x16, #16]
 .word 0x910003bf
 .word 0xa8cd7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_1146
 
@@ -2923,7 +2923,7 @@ bl _p_1156
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_1146
 
@@ -7431,7 +7431,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 3025
+.word 3013
 _p_2_plt_System_Private_Xml__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_2_plt_System_Private_Xml__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_2_plt_System_Private_Xml__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -7442,7 +7442,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 3028
+.word 3016
 _p_3_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm:
 	.globl _p_3_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
 .private_extern _p_3_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_llvm
@@ -7453,7 +7453,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 3031
+.word 3019
 _p_4_plt_System_Private_Xml_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm:
 	.globl _p_4_plt_System_Private_Xml_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
 .private_extern _p_4_plt_System_Private_Xml_System_ThrowHelper_ThrowInvalidTypeWithPointersNotSupported_System_Type_llvm
@@ -7464,7 +7464,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 3036
+.word 3024
 _p_5_plt_System_Private_Xml_System_LocalAppContextSwitches_GetCachedSwitchValueInternal_string_int__llvm:
 	.globl _p_5_plt_System_Private_Xml_System_LocalAppContextSwitches_GetCachedSwitchValueInternal_string_int__llvm
 .private_extern _p_5_plt_System_Private_Xml_System_LocalAppContextSwitches_GetCachedSwitchValueInternal_string_int__llvm
@@ -7475,7 +7475,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 3041
+.word 3029
 _p_6_plt_System_Private_Xml_System_AppContext_TryGetSwitch_string_bool__llvm:
 	.globl _p_6_plt_System_Private_Xml_System_AppContext_TryGetSwitch_string_bool__llvm
 .private_extern _p_6_plt_System_Private_Xml_System_AppContext_TryGetSwitch_string_bool__llvm
@@ -7486,7 +7486,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 3043
+.word 3031
 _p_7_plt_System_Private_Xml_System_LocalAppContextSwitches_GetSwitchDefaultValue_string_llvm:
 	.globl _p_7_plt_System_Private_Xml_System_LocalAppContextSwitches_GetSwitchDefaultValue_string_llvm
 .private_extern _p_7_plt_System_Private_Xml_System_LocalAppContextSwitches_GetSwitchDefaultValue_string_llvm
@@ -7497,7 +7497,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 3048
+.word 3036
 _p_8_plt_System_Private_Xml_string_op_Equality_string_string_llvm:
 	.globl _p_8_plt_System_Private_Xml_string_op_Equality_string_string_llvm
 .private_extern _p_8_plt_System_Private_Xml_string_op_Equality_string_string_llvm
@@ -7508,7 +7508,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 3050
+.word 3038
 _p_9_plt_System_Private_Xml_wrapper_alloc_object_AllocVector_intptr_intptr_llvm:
 	.globl _p_9_plt_System_Private_Xml_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
 .private_extern _p_9_plt_System_Private_Xml_wrapper_alloc_object_AllocVector_intptr_intptr_llvm
@@ -7519,7 +7519,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 3055
+.word 3043
 _p_10_plt_System_Private_Xml_string_Join_string_object___llvm:
 	.globl _p_10_plt_System_Private_Xml_string_Join_string_object___llvm
 .private_extern _p_10_plt_System_Private_Xml_string_Join_string_object___llvm
@@ -7530,7 +7530,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 3063
+.word 3051
 _p_11_plt_System_Private_Xml_string_Concat_string_string_string_llvm:
 	.globl _p_11_plt_System_Private_Xml_string_Concat_string_string_string_llvm
 .private_extern _p_11_plt_System_Private_Xml_string_Concat_string_string_string_llvm
@@ -7541,7 +7541,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 3068
+.word 3056
 _p_12_plt_System_Private_Xml__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_12_plt_System_Private_Xml__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_12_plt_System_Private_Xml__jit_icall_mono_helper_ldstr_llvm
@@ -7552,7 +7552,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 3073
+.word 3061
 _p_13_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_13_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_13_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_1_llvm
@@ -7563,7 +7563,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 3076
+.word 3064
 _p_14_plt_System_Private_Xml__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_14_plt_System_Private_Xml__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_14_plt_System_Private_Xml__jit_icall_mono_arch_throw_exception_llvm
@@ -7574,7 +7574,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 3079
+.word 3067
 _p_15_plt_System_Private_Xml_System_Xml_BinHexDecoder_Decode_System_ReadOnlySpan_1_char_System_Span_1_byte_bool__byte__int__int__llvm:
 	.globl _p_15_plt_System_Private_Xml_System_Xml_BinHexDecoder_Decode_System_ReadOnlySpan_1_char_System_Span_1_byte_bool__byte__int__int__llvm
 .private_extern _p_15_plt_System_Private_Xml_System_Xml_BinHexDecoder_Decode_System_ReadOnlySpan_1_char_System_Span_1_byte_bool__byte__int__int__llvm
@@ -7585,7 +7585,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 3081
+.word 3069
 _p_16_plt_System_Private_Xml_System_Array_Resize_byte_byte____int_llvm:
 	.globl _p_16_plt_System_Private_Xml_System_Array_Resize_byte_byte____int_llvm
 .private_extern _p_16_plt_System_Private_Xml_System_Array_Resize_byte_byte____int_llvm
@@ -7596,7 +7596,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 3083
+.word 3071
 _p_17_plt_System_Private_Xml_string__ctor_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_17_plt_System_Private_Xml_string__ctor_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_17_plt_System_Private_Xml_string__ctor_System_ReadOnlySpan_1_char_llvm
@@ -7607,7 +7607,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 3095
+.word 3083
 _p_18_plt_System_Private_Xml_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_18_plt_System_Private_Xml_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_18_plt_System_Private_Xml_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -7618,7 +7618,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 3100
+.word 3088
 _p_19_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_llvm:
 	.globl _p_19_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_llvm
 .private_extern _p_19_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_llvm
@@ -7629,7 +7629,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 3108
+.word 3096
 _p_20_plt_System_Private_Xml_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm:
 	.globl _p_20_plt_System_Private_Xml_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
 .private_extern _p_20_plt_System_Private_Xml_System_ThrowHelper_ThrowArrayTypeMismatchException_llvm
@@ -7640,7 +7640,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 3111
+.word 3099
 _p_21_plt_System_Private_Xml__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_21_plt_System_Private_Xml__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_21_plt_System_Private_Xml__jit_icall_mono_generic_class_init_llvm
@@ -7651,7 +7651,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 3116
+.word 3104
 _p_22_plt_System_Private_Xml_System_ReadOnlySpan_1_char_ToString_llvm:
 	.globl _p_22_plt_System_Private_Xml_System_ReadOnlySpan_1_char_ToString_llvm
 .private_extern _p_22_plt_System_Private_Xml_System_ReadOnlySpan_1_char_ToString_llvm
@@ -7662,7 +7662,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 3123
+.word 3111
 _p_23_plt_System_Private_Xml_System_Convert_ToHexString_byte___int_int_llvm:
 	.globl _p_23_plt_System_Private_Xml_System_Convert_ToHexString_byte___int_int_llvm
 .private_extern _p_23_plt_System_Private_Xml_System_Convert_ToHexString_byte___int_int_llvm
@@ -7673,7 +7673,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 3140
+.word 3128
 _p_24_plt_System_Private_Xml_System_ArgumentNullException_ThrowIfNull_object_string_llvm:
 	.globl _p_24_plt_System_Private_Xml_System_ArgumentNullException_ThrowIfNull_object_string_llvm
 .private_extern _p_24_plt_System_Private_Xml_System_ArgumentNullException_ThrowIfNull_object_string_llvm
@@ -7684,7 +7684,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 3145
+.word 3133
 _p_25_plt_System_Private_Xml_System_Marvin_ComputeHash32_byte__uint_uint_uint_llvm:
 	.globl _p_25_plt_System_Private_Xml_System_Marvin_ComputeHash32_byte__uint_uint_uint_llvm
 .private_extern _p_25_plt_System_Private_Xml_System_Marvin_ComputeHash32_byte__uint_uint_uint_llvm
@@ -7695,7 +7695,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 3150
+.word 3138
 _p_26_plt_System_Private_Xml_string_Equals_string_llvm:
 	.globl _p_26_plt_System_Private_Xml_string_Equals_string_llvm
 .private_extern _p_26_plt_System_Private_Xml_string_Equals_string_llvm
@@ -7706,7 +7706,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 3155
+.word 3143
 _p_27_plt_System_Private_Xml_System_Xml_NameTable_AddEntry_string_int_llvm:
 	.globl _p_27_plt_System_Private_Xml_System_Xml_NameTable_AddEntry_string_int_llvm
 .private_extern _p_27_plt_System_Private_Xml_System_Xml_NameTable_AddEntry_string_int_llvm
@@ -7717,7 +7717,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 3160
+.word 3148
 _p_28_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_0_llvm:
 	.globl _p_28_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_0_llvm
 .private_extern _p_28_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_0_llvm
@@ -7728,7 +7728,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 3162
+.word 3150
 _p_29_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm:
 	.globl _p_29_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
 .private_extern _p_29_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfNegative_int_int_string_llvm
@@ -7739,7 +7739,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 3165
+.word 3153
 _p_30_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm:
 	.globl _p_30_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
 .private_extern _p_30_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_char_char__char__int_llvm
@@ -7750,7 +7750,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 3177
+.word 3165
 _p_31_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm:
 	.globl _p_31_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
 .private_extern _p_31_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_byte__byte__uintptr_llvm
@@ -7761,7 +7761,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 3193
+.word 3181
 _p_32_plt_System_Private_Xml_string__ctor_char___int_int_llvm:
 	.globl _p_32_plt_System_Private_Xml_string__ctor_char___int_int_llvm
 .private_extern _p_32_plt_System_Private_Xml_string__ctor_char___int_int_llvm
@@ -7772,7 +7772,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 3198
+.word 3186
 _p_33_plt_System_Private_Xml_System_Xml_NameTable_Grow_llvm:
 	.globl _p_33_plt_System_Private_Xml_System_Xml_NameTable_Grow_llvm
 .private_extern _p_33_plt_System_Private_Xml_System_Xml_NameTable_Grow_llvm
@@ -7783,7 +7783,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 3203
+.word 3191
 _p_34_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNCName_string_int_llvm:
 	.globl _p_34_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNCName_string_int_llvm
 .private_extern _p_34_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNCName_string_int_llvm
@@ -7794,7 +7794,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 3205
+.word 3193
 _p_35_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQName_string_int_int__llvm:
 	.globl _p_35_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQName_string_int_int__llvm
 .private_extern _p_35_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQName_string_int_int__llvm
@@ -7805,7 +7805,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 3207
+.word 3195
 _p_36_plt_System_Private_Xml_System_Xml_ValidateNames_ThrowInvalidName_string_int_int_llvm:
 	.globl _p_36_plt_System_Private_Xml_System_Xml_ValidateNames_ThrowInvalidName_string_int_int_llvm
 .private_extern _p_36_plt_System_Private_Xml_System_Xml_ValidateNames_ThrowInvalidName_string_int_int_llvm
@@ -7816,7 +7816,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 3209
+.word 3197
 _p_37_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQNameThrow_string_llvm:
 	.globl _p_37_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQNameThrow_string_llvm
 .private_extern _p_37_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQNameThrow_string_llvm
@@ -7827,7 +7827,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 3211
+.word 3199
 _p_38_plt_System_Private_Xml_string_Substring_int_int_llvm:
 	.globl _p_38_plt_System_Private_Xml_string_Substring_int_int_llvm
 .private_extern _p_38_plt_System_Private_Xml_string_Substring_int_int_llvm
@@ -7838,7 +7838,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 3213
+.word 3201
 _p_39_plt_System_Private_Xml_string_Substring_int_llvm:
 	.globl _p_39_plt_System_Private_Xml_string_Substring_int_llvm
 .private_extern _p_39_plt_System_Private_Xml_string_Substring_int_llvm
@@ -7849,7 +7849,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 3218
+.word 3206
 _p_40_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_string_int_llvm:
 	.globl _p_40_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_string_int_llvm
 .private_extern _p_40_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_string_int_llvm
@@ -7860,7 +7860,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 3223
+.word 3211
 _p_41_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___llvm:
 	.globl _p_41_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___llvm
 .private_extern _p_41_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___llvm
@@ -7871,7 +7871,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 3226
+.word 3214
 _p_42_plt_System_Private_Xml_System_SR_Format_string_object_llvm:
 	.globl _p_42_plt_System_Private_Xml_System_SR_Format_string_object_llvm
 .private_extern _p_42_plt_System_Private_Xml_System_SR_Format_string_object_llvm
@@ -7882,7 +7882,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 3229
+.word 3217
 _p_43_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_llvm:
 	.globl _p_43_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_llvm
 .private_extern _p_43_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_llvm
@@ -7893,7 +7893,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 3231
+.word 3219
 _p_44_plt_System_Private_Xml_char_IsSurrogatePair_char_char_llvm:
 	.globl _p_44_plt_System_Private_Xml_char_IsSurrogatePair_char_char_llvm
 .private_extern _p_44_plt_System_Private_Xml_char_IsSurrogatePair_char_char_llvm
@@ -7904,7 +7904,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 3234
+.word 3222
 _p_45_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm:
 	.globl _p_45_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
 .private_extern _p_45_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentNullException_System_ExceptionArgument_llvm
@@ -7915,7 +7915,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 3239
+.word 3227
 _p_46_plt_System_Private_Xml_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_46_plt_System_Private_Xml_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_46_plt_System_Private_Xml_System_Buffers_SearchValues_Create_System_ReadOnlySpan_1_char_llvm
@@ -7926,7 +7926,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 3244
+.word 3232
 _p_47_plt_System_Private_Xml_System_Text_StringBuilder_Append_string_int_int_llvm:
 	.globl _p_47_plt_System_Private_Xml_System_Text_StringBuilder_Append_string_int_int_llvm
 .private_extern _p_47_plt_System_Private_Xml_System_Text_StringBuilder_Append_string_int_int_llvm
@@ -7937,7 +7937,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 3249
+.word 3237
 _p_48_plt_System_Private_Xml_System_Text_StringBuilder_Append_char_llvm:
 	.globl _p_48_plt_System_Private_Xml_System_Text_StringBuilder_Append_char_llvm
 .private_extern _p_48_plt_System_Private_Xml_System_Text_StringBuilder_Append_char_llvm
@@ -7948,7 +7948,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 3254
+.word 3242
 _p_49_plt_System_Private_Xml_System_Text_StringBuilder__ctor_int_llvm:
 	.globl _p_49_plt_System_Private_Xml_System_Text_StringBuilder__ctor_int_llvm
 .private_extern _p_49_plt_System_Private_Xml_System_Text_StringBuilder__ctor_int_llvm
@@ -7959,7 +7959,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 3259
+.word 3247
 _p_50_plt_System_Private_Xml_System_Xml_BinHexDecoder_Decode_System_ReadOnlySpan_1_char_bool_llvm:
 	.globl _p_50_plt_System_Private_Xml_System_Xml_BinHexDecoder_Decode_System_ReadOnlySpan_1_char_bool_llvm
 .private_extern _p_50_plt_System_Private_Xml_System_Xml_BinHexDecoder_Decode_System_ReadOnlySpan_1_char_bool_llvm
@@ -7970,7 +7970,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 3264
+.word 3252
 _p_51_plt_System_Private_Xml_System_Xml_BinHexEncoder_Encode_byte___int_int_llvm:
 	.globl _p_51_plt_System_Private_Xml_System_Xml_BinHexEncoder_Encode_byte___int_int_llvm
 .private_extern _p_51_plt_System_Private_Xml_System_Xml_BinHexEncoder_Encode_byte___int_int_llvm
@@ -7981,7 +7981,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 3266
+.word 3254
 _p_52_plt_System_Private_Xml_System_ArgumentException_ThrowIfNullOrEmpty_string_string_llvm:
 	.globl _p_52_plt_System_Private_Xml_System_ArgumentException_ThrowIfNullOrEmpty_string_string_llvm
 .private_extern _p_52_plt_System_Private_Xml_System_ArgumentException_ThrowIfNullOrEmpty_string_string_llvm
@@ -7992,7 +7992,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 3268
+.word 3256
 _p_53_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNameNoNamespaces_string_int_llvm:
 	.globl _p_53_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNameNoNamespaces_string_int_llvm
 .private_extern _p_53_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNameNoNamespaces_string_int_llvm
@@ -8003,7 +8003,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 3273
+.word 3261
 _p_54_plt_System_Private_Xml_System_Xml_XmlConvert_CreateInvalidNameCharException_string_int_System_Xml_ExceptionType_llvm:
 	.globl _p_54_plt_System_Private_Xml_System_Xml_XmlConvert_CreateInvalidNameCharException_string_int_System_Xml_ExceptionType_llvm
 .private_extern _p_54_plt_System_Private_Xml_System_Xml_XmlConvert_CreateInvalidNameCharException_string_int_System_Xml_ExceptionType_llvm
@@ -8014,7 +8014,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 3275
+.word 3263
 _p_55_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNCName_string_llvm:
 	.globl _p_55_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNCName_string_llvm
 .private_extern _p_55_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNCName_string_llvm
@@ -8025,7 +8025,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 3277
+.word 3265
 _p_56_plt_System_Private_Xml_System_Xml_ValidateNames_GetInvalidNameException_string_int_int_llvm:
 	.globl _p_56_plt_System_Private_Xml_System_Xml_ValidateNames_GetInvalidNameException_string_int_int_llvm
 .private_extern _p_56_plt_System_Private_Xml_System_Xml_ValidateNames_GetInvalidNameException_string_int_int_llvm
@@ -8036,7 +8036,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 3279
+.word 3267
 _p_57_plt_System_Private_Xml_string_StartsWith_char_llvm:
 	.globl _p_57_plt_System_Private_Xml_string_StartsWith_char_llvm
 .private_extern _p_57_plt_System_Private_Xml_string_StartsWith_char_llvm
@@ -8047,7 +8047,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 3281
+.word 3269
 _p_58_plt_System_Private_Xml_string_EndsWith_char_llvm:
 	.globl _p_58_plt_System_Private_Xml_string_EndsWith_char_llvm
 .private_extern _p_58_plt_System_Private_Xml_string_EndsWith_char_llvm
@@ -8058,7 +8058,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 3286
+.word 3274
 _p_59_plt_System_Private_Xml_System_SpanHelpers_IndexOfAny_char_char__int_char__int_llvm:
 	.globl _p_59_plt_System_Private_Xml_System_SpanHelpers_IndexOfAny_char_char__int_char__int_llvm
 .private_extern _p_59_plt_System_Private_Xml_System_SpanHelpers_IndexOfAny_char_char__int_char__int_llvm
@@ -8069,7 +8069,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 3291
+.word 3279
 _p_60_plt_System_Private_Xml_string_Contains_string_llvm:
 	.globl _p_60_plt_System_Private_Xml_string_Contains_string_llvm
 .private_extern _p_60_plt_System_Private_Xml_string_Contains_string_llvm
@@ -8080,7 +8080,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 3307
+.word 3295
 _p_61_plt_System_Private_Xml_System_Buffers_ProbabilisticMap_IndexOfAny_char__int_char__int_llvm:
 	.globl _p_61_plt_System_Private_Xml_System_Buffers_ProbabilisticMap_IndexOfAny_char__int_char__int_llvm
 .private_extern _p_61_plt_System_Private_Xml_System_Buffers_ProbabilisticMap_IndexOfAny_char__int_char__int_llvm
@@ -8091,7 +8091,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 3312
+.word 3300
 _p_62_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm:
 	.globl _p_62_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
 .private_extern _p_62_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int_llvm
@@ -8102,7 +8102,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 3337
+.word 3325
 _p_63_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm:
 	.globl _p_63_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm
 .private_extern _p_63_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int_llvm
@@ -8113,7 +8113,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 3353
+.word 3341
 _p_64_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int_llvm:
 	.globl _p_64_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int_llvm
 .private_extern _p_64_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int_llvm
@@ -8124,7 +8124,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 3369
+.word 3357
 _p_65_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int16_int_llvm:
 	.globl _p_65_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int16_int_llvm
 .private_extern _p_65_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int16_int_llvm
@@ -8135,7 +8135,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 3385
+.word 3373
 _p_66_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int16_int16_int_llvm:
 	.globl _p_66_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int16_int16_int_llvm
 .private_extern _p_66_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_int16_System_SpanHelpers_DontNegate_1_int16_int16__int16_int16_int16_int16_int16_int_llvm
@@ -8146,7 +8146,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 3401
+.word 3389
 _p_67_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm:
 	.globl _p_67_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
 .private_extern _p_67_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_int_llvm
@@ -8157,7 +8157,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 3435
+.word 3423
 _p_68_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm:
 	.globl _p_68_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm
 .private_extern _p_68_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_int_llvm
@@ -8168,7 +8168,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 3451
+.word 3439
 _p_69_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_int_llvm:
 	.globl _p_69_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_int_llvm
 .private_extern _p_69_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_int_llvm
@@ -8179,7 +8179,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 3467
+.word 3455
 _p_70_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_byte_int_llvm:
 	.globl _p_70_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_byte_int_llvm
 .private_extern _p_70_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_byte_int_llvm
@@ -8190,7 +8190,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 3483
+.word 3471
 _p_71_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_byte_byte_int_llvm:
 	.globl _p_71_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_byte_byte_int_llvm
 .private_extern _p_71_plt_System_Private_Xml_System_SpanHelpers_IndexOfAnyValueType_byte_System_SpanHelpers_DontNegate_1_byte_byte__byte_byte_byte_byte_byte_int_llvm
@@ -8201,7 +8201,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 3499
+.word 3487
 _p_72_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNmtokenNoNamespaces_string_int_llvm:
 	.globl _p_72_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNmtokenNoNamespaces_string_int_llvm
 .private_extern _p_72_plt_System_Private_Xml_System_Xml_ValidateNames_ParseNmtokenNoNamespaces_string_int_llvm
@@ -8212,7 +8212,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 3515
+.word 3503
 _p_73_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string_llvm:
 	.globl _p_73_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string_llvm
 .private_extern _p_73_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string_llvm
@@ -8223,7 +8223,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 3517
+.word 3505
 _p_74_plt_System_Private_Xml_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm:
 	.globl _p_74_plt_System_Private_Xml_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm
 .private_extern _p_74_plt_System_Private_Xml_System_Globalization_NumberFormatInfo_get_InvariantInfo_llvm
@@ -8234,7 +8234,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 3520
+.word 3508
 _p_75_plt_System_Private_Xml_System_Decimal_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_75_plt_System_Private_Xml_System_Decimal_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_75_plt_System_Private_Xml_System_Decimal_ToString_string_System_IFormatProvider_llvm
@@ -8245,7 +8245,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 3525
+.word 3513
 _p_76_plt_System_Private_Xml_sbyte_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_76_plt_System_Private_Xml_sbyte_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_76_plt_System_Private_Xml_sbyte_ToString_string_System_IFormatProvider_llvm
@@ -8256,7 +8256,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 3530
+.word 3518
 _p_77_plt_System_Private_Xml_int16_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_77_plt_System_Private_Xml_int16_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_77_plt_System_Private_Xml_int16_ToString_string_System_IFormatProvider_llvm
@@ -8267,7 +8267,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 3535
+.word 3523
 _p_78_plt_System_Private_Xml_int_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_78_plt_System_Private_Xml_int_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_78_plt_System_Private_Xml_int_ToString_string_System_IFormatProvider_llvm
@@ -8278,7 +8278,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 3540
+.word 3528
 _p_79_plt_System_Private_Xml_long_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_79_plt_System_Private_Xml_long_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_79_plt_System_Private_Xml_long_ToString_string_System_IFormatProvider_llvm
@@ -8289,7 +8289,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 3545
+.word 3533
 _p_80_plt_System_Private_Xml_byte_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_80_plt_System_Private_Xml_byte_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_80_plt_System_Private_Xml_byte_ToString_string_System_IFormatProvider_llvm
@@ -8300,7 +8300,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 3550
+.word 3538
 _p_81_plt_System_Private_Xml_uint16_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_81_plt_System_Private_Xml_uint16_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_81_plt_System_Private_Xml_uint16_ToString_string_System_IFormatProvider_llvm
@@ -8311,7 +8311,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 3555
+.word 3543
 _p_82_plt_System_Private_Xml_uint_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_82_plt_System_Private_Xml_uint_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_82_plt_System_Private_Xml_uint_ToString_string_System_IFormatProvider_llvm
@@ -8322,7 +8322,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 3560
+.word 3548
 _p_83_plt_System_Private_Xml_ulong_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_83_plt_System_Private_Xml_ulong_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_83_plt_System_Private_Xml_ulong_ToString_string_System_IFormatProvider_llvm
@@ -8333,7 +8333,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 3565
+.word 3553
 _p_84_plt_System_Private_Xml_System_Xml_XmlConvert_IsNegativeZero_double_llvm:
 	.globl _p_84_plt_System_Private_Xml_System_Xml_XmlConvert_IsNegativeZero_double_llvm
 .private_extern _p_84_plt_System_Private_Xml_System_Xml_XmlConvert_IsNegativeZero_double_llvm
@@ -8344,7 +8344,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 3570
+.word 3558
 _p_85_plt_System_Private_Xml_single_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_85_plt_System_Private_Xml_single_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_85_plt_System_Private_Xml_single_ToString_string_System_IFormatProvider_llvm
@@ -8355,7 +8355,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 3572
+.word 3560
 _p_86_plt_System_Private_Xml_double_ToString_string_System_IFormatProvider_llvm:
 	.globl _p_86_plt_System_Private_Xml_double_ToString_string_System_IFormatProvider_llvm
 .private_extern _p_86_plt_System_Private_Xml_double_ToString_string_System_IFormatProvider_llvm
@@ -8366,7 +8366,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 3577
+.word 3565
 _p_87_plt_System_Private_Xml_System_MemoryExtensions_Trim_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_87_plt_System_Private_Xml_System_MemoryExtensions_Trim_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_87_plt_System_Private_Xml_System_MemoryExtensions_Trim_System_ReadOnlySpan_1_char_System_ReadOnlySpan_1_char_llvm
@@ -8377,7 +8377,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 3582
+.word 3570
 _p_88_plt_System_Private_Xml_System_SR_Format_string_object_object_llvm:
 	.globl _p_88_plt_System_Private_Xml_System_SR_Format_string_object_object_llvm
 .private_extern _p_88_plt_System_Private_Xml_System_SR_Format_string_object_object_llvm
@@ -8388,7 +8388,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 3587
+.word 3575
 _p_89_plt_System_Private_Xml_System_FormatException__ctor_string_llvm:
 	.globl _p_89_plt_System_Private_Xml_System_FormatException__ctor_string_llvm
 .private_extern _p_89_plt_System_Private_Xml_System_FormatException__ctor_string_llvm
@@ -8399,7 +8399,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 3589
+.word 3577
 _p_90_plt_System_Private_Xml_System_Decimal_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_90_plt_System_Private_Xml_System_Decimal_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_90_plt_System_Private_Xml_System_Decimal_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -8410,7 +8410,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 3594
+.word 3582
 _p_91_plt_System_Private_Xml_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal__llvm:
 	.globl _p_91_plt_System_Private_Xml_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal__llvm
 .private_extern _p_91_plt_System_Private_Xml_System_Decimal_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_System_Decimal__llvm
@@ -8421,7 +8421,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 3599
+.word 3587
 _p_92_plt_System_Private_Xml_sbyte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_sbyte__llvm:
 	.globl _p_92_plt_System_Private_Xml_sbyte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_sbyte__llvm
 .private_extern _p_92_plt_System_Private_Xml_sbyte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_sbyte__llvm
@@ -8432,7 +8432,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 3604
+.word 3592
 _p_93_plt_System_Private_Xml_int16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int16__llvm:
 	.globl _p_93_plt_System_Private_Xml_int16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int16__llvm
 .private_extern _p_93_plt_System_Private_Xml_int16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int16__llvm
@@ -8443,7 +8443,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 3609
+.word 3597
 _p_94_plt_System_Private_Xml_int_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_94_plt_System_Private_Xml_int_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_94_plt_System_Private_Xml_int_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -8454,7 +8454,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 3614
+.word 3602
 _p_95_plt_System_Private_Xml_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm:
 	.globl _p_95_plt_System_Private_Xml_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm
 .private_extern _p_95_plt_System_Private_Xml_int_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_int__llvm
@@ -8465,7 +8465,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 3619
+.word 3607
 _p_96_plt_System_Private_Xml_long_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_96_plt_System_Private_Xml_long_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_96_plt_System_Private_Xml_long_Parse_string_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -8476,7 +8476,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 3624
+.word 3612
 _p_97_plt_System_Private_Xml_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long__llvm:
 	.globl _p_97_plt_System_Private_Xml_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long__llvm
 .private_extern _p_97_plt_System_Private_Xml_long_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_long__llvm
@@ -8487,7 +8487,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 3629
+.word 3617
 _p_98_plt_System_Private_Xml_byte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_byte__llvm:
 	.globl _p_98_plt_System_Private_Xml_byte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_byte__llvm
 .private_extern _p_98_plt_System_Private_Xml_byte_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_byte__llvm
@@ -8498,7 +8498,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 3634
+.word 3622
 _p_99_plt_System_Private_Xml_uint16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint16__llvm:
 	.globl _p_99_plt_System_Private_Xml_uint16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint16__llvm
 .private_extern _p_99_plt_System_Private_Xml_uint16_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint16__llvm
@@ -8509,7 +8509,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 3639
+.word 3627
 _p_100_plt_System_Private_Xml_uint_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm:
 	.globl _p_100_plt_System_Private_Xml_uint_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm
 .private_extern _p_100_plt_System_Private_Xml_uint_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_uint__llvm
@@ -8520,7 +8520,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 3644
+.word 3632
 _p_101_plt_System_Private_Xml_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong__llvm:
 	.globl _p_101_plt_System_Private_Xml_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong__llvm
 .private_extern _p_101_plt_System_Private_Xml_ulong_TryParse_string_System_Globalization_NumberStyles_System_IFormatProvider_ulong__llvm
@@ -8531,7 +8531,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 3649
+.word 3637
 _p_102_plt_System_Private_Xml_single_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_102_plt_System_Private_Xml_single_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_102_plt_System_Private_Xml_single_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -8542,7 +8542,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 3654
+.word 3642
 _p_103_plt_System_Private_Xml_single_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm:
 	.globl _p_103_plt_System_Private_Xml_single_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm
 .private_extern _p_103_plt_System_Private_Xml_single_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_single__llvm
@@ -8553,7 +8553,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 3659
+.word 3647
 _p_104_plt_System_Private_Xml_double_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm:
 	.globl _p_104_plt_System_Private_Xml_double_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm
 .private_extern _p_104_plt_System_Private_Xml_double_Parse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_llvm
@@ -8564,7 +8564,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 3664
+.word 3652
 _p_105_plt_System_Private_Xml_double_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm:
 	.globl _p_105_plt_System_Private_Xml_double_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
 .private_extern _p_105_plt_System_Private_Xml_double_TryParse_System_ReadOnlySpan_1_char_System_Globalization_NumberStyles_System_IFormatProvider_double__llvm
@@ -8575,7 +8575,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 3669
+.word 3657
 _p_106_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParse_string_System_Xml_Schema_XsdDuration__llvm:
 	.globl _p_106_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParse_string_System_Xml_Schema_XsdDuration__llvm
 .private_extern _p_106_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParse_string_System_Xml_Schema_XsdDuration__llvm
@@ -8586,7 +8586,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 3674
+.word 3662
 _p_107_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryToTimeSpan_System_TimeSpan__llvm:
 	.globl _p_107_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryToTimeSpan_System_TimeSpan__llvm
 .private_extern _p_107_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryToTimeSpan_System_TimeSpan__llvm
@@ -8597,7 +8597,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 3677
+.word 3665
 _p_108_plt_System_Private_Xml_System_Guid__ctor_string_llvm:
 	.globl _p_108_plt_System_Private_Xml_System_Guid__ctor_string_llvm
 .private_extern _p_108_plt_System_Private_Xml_System_Guid__ctor_string_llvm
@@ -8608,7 +8608,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 3680
+.word 3668
 _p_109_plt_System_Private_Xml_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm:
 	.globl _p_109_plt_System_Private_Xml_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
 .private_extern _p_109_plt_System_Private_Xml_System_Uri_TryCreate_string_System_UriKind_System_Uri__llvm
@@ -8619,7 +8619,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 3685
+.word 3673
 _p_110_plt_System_Private_Xml_System_Xml_XmlConvert_TrimString_string_llvm:
 	.globl _p_110_plt_System_Private_Xml_System_Xml_XmlConvert_TrimString_string_llvm
 .private_extern _p_110_plt_System_Private_Xml_System_Xml_XmlConvert_TrimString_string_llvm
@@ -8630,7 +8630,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 3690
+.word 3678
 _p_111_plt_System_Private_Xml_string_Trim_char___llvm:
 	.globl _p_111_plt_System_Private_Xml_string_Trim_char___llvm
 .private_extern _p_111_plt_System_Private_Xml_string_Trim_char___llvm
@@ -8641,7 +8641,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 3692
+.word 3680
 _p_112_plt_System_Private_Xml_string_Split_char___System_StringSplitOptions_llvm:
 	.globl _p_112_plt_System_Private_Xml_string_Split_char___System_StringSplitOptions_llvm
 .private_extern _p_112_plt_System_Private_Xml_string_Split_char___System_StringSplitOptions_llvm
@@ -8652,7 +8652,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 3697
+.word 3685
 _p_113_plt_System_Private_Xml_System_ThrowHelper_ThrowNotSupportedException_llvm:
 	.globl _p_113_plt_System_Private_Xml_System_ThrowHelper_ThrowNotSupportedException_llvm
 .private_extern _p_113_plt_System_Private_Xml_System_ThrowHelper_ThrowNotSupportedException_llvm
@@ -8663,7 +8663,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 3702
+.word 3690
 _p_114_plt_System_Private_Xml_string_Format_string_object___llvm:
 	.globl _p_114_plt_System_Private_Xml_string_Format_string_object___llvm
 .private_extern _p_114_plt_System_Private_Xml_string_Format_string_object___llvm
@@ -8674,7 +8674,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 3707
+.word 3695
 _p_115_plt_System_Private_Xml_System_ArgumentException__ctor_string_llvm:
 	.globl _p_115_plt_System_Private_Xml_System_ArgumentException__ctor_string_llvm
 .private_extern _p_115_plt_System_Private_Xml_System_ArgumentException__ctor_string_llvm
@@ -8685,7 +8685,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 3712
+.word 3700
 _p_116_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___int_int_llvm:
 	.globl _p_116_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___int_int_llvm
 .private_extern _p_116_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___int_int_llvm
@@ -8696,7 +8696,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 3717
+.word 3705
 _p_117_plt_System_Private_Xml_System_Xml_XmlConvert_CreateException_string_string___System_Xml_ExceptionType_int_int_llvm:
 	.globl _p_117_plt_System_Private_Xml_System_Xml_XmlConvert_CreateException_string_string___System_Xml_ExceptionType_int_int_llvm
 .private_extern _p_117_plt_System_Private_Xml_System_Xml_XmlConvert_CreateException_string_string___System_Xml_ExceptionType_int_int_llvm
@@ -8707,7 +8707,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 3720
+.word 3708
 _p_118_plt_System_Private_Xml_string_memcpy_byte__byte__int_llvm:
 	.globl _p_118_plt_System_Private_Xml_string_memcpy_byte__byte__int_llvm
 .private_extern _p_118_plt_System_Private_Xml_string_memcpy_byte__byte__int_llvm
@@ -8718,7 +8718,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 3722
+.word 3710
 _p_119_plt_System_Private_Xml_System_Uri_get_Scheme_llvm:
 	.globl _p_119_plt_System_Private_Xml_System_Uri_get_Scheme_llvm
 .private_extern _p_119_plt_System_Private_Xml_System_Uri_get_Scheme_llvm
@@ -8729,7 +8729,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 3727
+.word 3715
 _p_120_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetNonFileStreamAsync_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm:
 	.globl _p_120_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetNonFileStreamAsync_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm
 .private_extern _p_120_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetNonFileStreamAsync_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm
@@ -8740,7 +8740,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 3732
+.word 3720
 _p_121_plt_System_Private_Xml_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm:
 	.globl _p_121_plt_System_Private_Xml_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm
 .private_extern _p_121_plt_System_Private_Xml_System_Runtime_CompilerServices_TaskAwaiter_HandleNonSuccessAndDebuggerNotification_System_Threading_Tasks_Task_System_Threading_Tasks_ConfigureAwaitOptions_llvm
@@ -8751,7 +8751,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 3734
+.word 3722
 _p_122_plt_System_Private_Xml_System_Uri_get_LocalPath_llvm:
 	.globl _p_122_plt_System_Private_Xml_System_Uri_get_LocalPath_llvm
 .private_extern _p_122_plt_System_Private_Xml_System_Uri_get_LocalPath_llvm
@@ -8762,7 +8762,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 3739
+.word 3727
 _p_123_plt_System_Private_Xml__jit_icall_ves_icall_object_new_specific_llvm:
 	.globl _p_123_plt_System_Private_Xml__jit_icall_ves_icall_object_new_specific_llvm
 .private_extern _p_123_plt_System_Private_Xml__jit_icall_ves_icall_object_new_specific_llvm
@@ -8773,7 +8773,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 3744
+.word 3732
 _p_124_plt_System_Private_Xml_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_int_llvm:
 	.globl _p_124_plt_System_Private_Xml_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_int_llvm
 .private_extern _p_124_plt_System_Private_Xml_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_int_llvm
@@ -8784,7 +8784,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 3747
+.word 3735
 _p_125_plt_System_Private_Xml_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_int_bool_llvm:
 	.globl _p_125_plt_System_Private_Xml_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_int_bool_llvm
 .private_extern _p_125_plt_System_Private_Xml_System_IO_FileStream__ctor_string_System_IO_FileMode_System_IO_FileAccess_System_IO_FileShare_int_bool_llvm
@@ -8795,7 +8795,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 3752
+.word 3740
 _p_126_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_System_IO_Stream_System_IO_Stream_llvm:
 	.globl _p_126_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_System_IO_Stream_System_IO_Stream_llvm
 .private_extern _p_126_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_System_IO_Stream_System_IO_Stream_llvm
@@ -8806,7 +8806,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 3757
+.word 3745
 _p_127_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2__llvm:
 	.globl _p_127_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2__llvm
 .private_extern _p_127_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2__llvm
@@ -8817,7 +8817,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 3769
+.word 3757
 _p_128_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_InitializeTaskAsPromise_llvm:
 	.globl _p_128_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_InitializeTaskAsPromise_llvm
 .private_extern _p_128_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_InitializeTaskAsPromise_llvm
@@ -8828,7 +8828,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 3785
+.word 3773
 _p_129_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
 	.globl _p_129_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
 .private_extern _p_129_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
@@ -8839,7 +8839,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 3802
+.word 3790
 _p_130_plt_System_Private_Xml__jit_icall_mono_helper_newobj_mscorlib_llvm:
 	.globl _p_130_plt_System_Private_Xml__jit_icall_mono_helper_newobj_mscorlib_llvm
 .private_extern _p_130_plt_System_Private_Xml__jit_icall_mono_helper_newobj_mscorlib_llvm
@@ -8850,7 +8850,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 3813
+.word 3801
 _p_131_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_2_llvm:
 	.globl _p_131_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_2_llvm
 .private_extern _p_131_plt_System_Private_Xml__jit_icall_mono_create_corlib_exception_2_llvm
@@ -8861,7 +8861,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 3816
+.word 3804
 _p_132_plt_System_Private_Xml_System_Buffer_BlockCopy_System_Array_int_System_Array_int_int_llvm:
 	.globl _p_132_plt_System_Private_Xml_System_Buffer_BlockCopy_System_Array_int_System_Array_int_int_llvm
 .private_extern _p_132_plt_System_Private_Xml_System_Buffer_BlockCopy_System_Array_int_System_Array_int_int_llvm
@@ -8872,7 +8872,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 3819
+.word 3807
 _p_133_plt_System_Private_Xml__jit_icall___emul_op_imul_ovf_llvm:
 	.globl _p_133_plt_System_Private_Xml__jit_icall___emul_op_imul_ovf_llvm
 .private_extern _p_133_plt_System_Private_Xml__jit_icall___emul_op_imul_ovf_llvm
@@ -8883,7 +8883,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 3824
+.word 3812
 _p_134_plt_System_Private_Xml_System_Xml_Ucs4Encoding4321__ctor_llvm:
 	.globl _p_134_plt_System_Private_Xml_System_Xml_Ucs4Encoding4321__ctor_llvm
 .private_extern _p_134_plt_System_Private_Xml_System_Xml_Ucs4Encoding4321__ctor_llvm
@@ -8894,7 +8894,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 3826
+.word 3814
 _p_135_plt_System_Private_Xml_System_Xml_Ucs4Encoding1234__ctor_llvm:
 	.globl _p_135_plt_System_Private_Xml_System_Xml_Ucs4Encoding1234__ctor_llvm
 .private_extern _p_135_plt_System_Private_Xml_System_Xml_Ucs4Encoding1234__ctor_llvm
@@ -8905,7 +8905,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 3829
+.word 3817
 _p_136_plt_System_Private_Xml_System_Xml_Ucs4Encoding2143__ctor_llvm:
 	.globl _p_136_plt_System_Private_Xml_System_Xml_Ucs4Encoding2143__ctor_llvm
 .private_extern _p_136_plt_System_Private_Xml_System_Xml_Ucs4Encoding2143__ctor_llvm
@@ -8916,7 +8916,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 3832
+.word 3820
 _p_137_plt_System_Private_Xml_System_Xml_Ucs4Encoding3412__ctor_llvm:
 	.globl _p_137_plt_System_Private_Xml_System_Xml_Ucs4Encoding3412__ctor_llvm
 .private_extern _p_137_plt_System_Private_Xml_System_Xml_Ucs4Encoding3412__ctor_llvm
@@ -8927,7 +8927,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 3835
+.word 3823
 _p_138_plt_System_Private_Xml_System_Text_Encoding__ctor_llvm:
 	.globl _p_138_plt_System_Private_Xml_System_Text_Encoding__ctor_llvm
 .private_extern _p_138_plt_System_Private_Xml_System_Text_Encoding__ctor_llvm
@@ -8938,7 +8938,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 3838
+.word 3826
 _p_139_plt_System_Private_Xml_System_Xml_Ucs4Encoding__ctor_llvm:
 	.globl _p_139_plt_System_Private_Xml_System_Xml_Ucs4Encoding__ctor_llvm
 .private_extern _p_139_plt_System_Private_Xml_System_Xml_Ucs4Encoding__ctor_llvm
@@ -8949,7 +8949,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 3843
+.word 3831
 _p_140_plt_System_Private_Xml_System_Xml_Ucs4Decoder_Ucs4ToUTF16_uint_char___int_llvm:
 	.globl _p_140_plt_System_Private_Xml_System_Xml_Ucs4Decoder_Ucs4ToUTF16_uint_char___int_llvm
 .private_extern _p_140_plt_System_Private_Xml_System_Xml_Ucs4Decoder_Ucs4ToUTF16_uint_char___int_llvm
@@ -8960,7 +8960,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 3846
+.word 3834
 _p_141_plt_System_Private_Xml_System_SR_Format_string_object___llvm:
 	.globl _p_141_plt_System_Private_Xml_System_SR_Format_string_object___llvm
 .private_extern _p_141_plt_System_Private_Xml_System_SR_Format_string_object___llvm
@@ -8971,7 +8971,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 3849
+.word 3837
 _p_142_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm:
 	.globl _p_142_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
 .private_extern _p_142_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_llvm
@@ -8982,7 +8982,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 3851
+.word 3839
 _p_143_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_System_Exception_int_int_llvm:
 	.globl _p_143_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_System_Exception_int_int_llvm
 .private_extern _p_143_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_System_Exception_int_int_llvm
@@ -8993,7 +8993,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 3856
+.word 3844
 _p_144_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_System_Exception_int_int_string_llvm:
 	.globl _p_144_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_System_Exception_int_int_string_llvm
 .private_extern _p_144_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_System_Exception_int_int_string_llvm
@@ -9004,7 +9004,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 3859
+.word 3847
 _p_145_plt_System_Private_Xml_System_Xml_XmlException_FormatUserMessage_string_int_int_llvm:
 	.globl _p_145_plt_System_Private_Xml_System_Xml_XmlException_FormatUserMessage_string_int_int_llvm
 .private_extern _p_145_plt_System_Private_Xml_System_Xml_XmlException_FormatUserMessage_string_int_int_llvm
@@ -9015,7 +9015,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 3862
+.word 3850
 _p_146_plt_System_Private_Xml_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm:
 	.globl _p_146_plt_System_Private_Xml_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
 .private_extern _p_146_plt_System_Private_Xml_wrapper_stelemref_object_virt_stelemref_sealed_class_intptr_object_llvm
@@ -9026,7 +9026,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 3865
+.word 3853
 _p_147_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___System_Exception_int_int_string_llvm:
 	.globl _p_147_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___System_Exception_int_int_string_llvm
 .private_extern _p_147_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___System_Exception_int_int_string_llvm
@@ -9037,7 +9037,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 3874
+.word 3862
 _p_148_plt_System_Private_Xml_System_Xml_XmlException_CreateMessage_string_string___int_int_llvm:
 	.globl _p_148_plt_System_Private_Xml_System_Xml_XmlException_CreateMessage_string_string___int_int_llvm
 .private_extern _p_148_plt_System_Private_Xml_System_Xml_XmlException_CreateMessage_string_string___int_int_llvm
@@ -9048,7 +9048,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 3877
+.word 3865
 _p_149_plt_System_Private_Xml_int_ToString_System_IFormatProvider_llvm:
 	.globl _p_149_plt_System_Private_Xml_int_ToString_System_IFormatProvider_llvm
 .private_extern _p_149_plt_System_Private_Xml_int_ToString_System_IFormatProvider_llvm
@@ -9059,7 +9059,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 3880
+.word 3868
 _p_150_plt_System_Private_Xml__jit_icall_mono_thread_get_undeniable_exception_llvm:
 	.globl _p_150_plt_System_Private_Xml__jit_icall_mono_thread_get_undeniable_exception_llvm
 .private_extern _p_150_plt_System_Private_Xml__jit_icall_mono_thread_get_undeniable_exception_llvm
@@ -9070,7 +9070,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 3885
+.word 3873
 _p_151_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_char_char_llvm:
 	.globl _p_151_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_char_char_llvm
 .private_extern _p_151_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_char_char_llvm
@@ -9081,7 +9081,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 3888
+.word 3876
 _p_152_plt_System_Private_Xml_char_ToString_llvm:
 	.globl _p_152_plt_System_Private_Xml_char_ToString_llvm
 .private_extern _p_152_plt_System_Private_Xml_char_ToString_llvm
@@ -9092,7 +9092,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 3891
+.word 3879
 _p_153_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm:
 	.globl _p_153_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
 .private_extern _p_153_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler__ctor_int_int_llvm
@@ -9103,7 +9103,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 3896
+.word 3884
 _p_154_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm:
 	.globl _p_154_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
 .private_extern _p_154_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_GrowThenCopyString_string_llvm
@@ -9114,7 +9114,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 3901
+.word 3889
 _p_155_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_string_llvm:
 	.globl _p_155_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_string_llvm
 .private_extern _p_155_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_AppendFormatted_int_int_string_llvm
@@ -9125,7 +9125,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 3906
+.word 3894
 _p_156_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm:
 	.globl _p_156_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
 .private_extern _p_156_plt_System_Private_Xml_System_Runtime_CompilerServices_DefaultInterpolatedStringHandler_ToStringAndClear_llvm
@@ -9136,7 +9136,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 3918
+.word 3906
 _p_157_plt_System_Private_Xml_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm:
 	.globl _p_157_plt_System_Private_Xml_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
 .private_extern _p_157_plt_System_Private_Xml_System_Buffer_BulkMoveWithWriteBarrier_byte__byte__uintptr_intptr_llvm
@@ -9147,7 +9147,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 3923
+.word 3911
 _p_158_plt_System_Private_Xml_System_Exception_get_Message_llvm:
 	.globl _p_158_plt_System_Private_Xml_System_Exception_get_Message_llvm
 .private_extern _p_158_plt_System_Private_Xml_System_Exception_get_Message_llvm
@@ -9158,7 +9158,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 3928
+.word 3916
 _p_159_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_NamespaceDeclaration_Set_string_string_int_int_llvm:
 	.globl _p_159_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_NamespaceDeclaration_Set_string_string_int_int_llvm
 .private_extern _p_159_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_NamespaceDeclaration_Set_string_string_int_int_llvm
@@ -9169,7 +9169,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 3933
+.word 3921
 _p_160_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_set_Item_string_int_llvm:
 	.globl _p_160_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_set_Item_string_int_llvm
 .private_extern _p_160_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_set_Item_string_int_llvm
@@ -9180,7 +9180,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 3936
+.word 3924
 _p_161_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupNamespaceDecl_string_llvm:
 	.globl _p_161_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupNamespaceDecl_string_llvm
 .private_extern _p_161_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupNamespaceDecl_string_llvm
@@ -9191,7 +9191,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 3947
+.word 3935
 _p_162_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int__ctor_int_llvm:
 	.globl _p_162_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int__ctor_int_llvm
 .private_extern _p_162_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int__ctor_int_llvm
@@ -9202,7 +9202,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 3950
+.word 3938
 _p_163_plt_System_Private_Xml_System_Array_Copy_System_Array_System_Array_int_llvm:
 	.globl _p_163_plt_System_Private_Xml_System_Array_Copy_System_Array_System_Array_int_llvm
 .private_extern _p_163_plt_System_Private_Xml_System_Array_Copy_System_Array_System_Array_int_llvm
@@ -9213,7 +9213,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 3961
+.word 3949
 _p_164_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_string__ctor_int_llvm:
 	.globl _p_164_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_string__ctor_int_llvm
 .private_extern _p_164_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_string__ctor_int_llvm
@@ -9224,7 +9224,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 3966
+.word 3954
 _p_165_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string_llvm:
 	.globl _p_165_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string_llvm
 .private_extern _p_165_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_string_set_Item_string_string_llvm
@@ -9235,7 +9235,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 3977
+.word 3965
 _p_166_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_KeyCollection_string_string_GetEnumerator_llvm:
 	.globl _p_166_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_KeyCollection_string_string_GetEnumerator_llvm
 .private_extern _p_166_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_KeyCollection_string_string_GetEnumerator_llvm
@@ -9246,7 +9246,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 3988
+.word 3976
 _p_167_plt_System_Private_Xml_string_Equals_string_string_llvm:
 	.globl _p_167_plt_System_Private_Xml_string_Equals_string_string_llvm
 .private_extern _p_167_plt_System_Private_Xml_string_Equals_string_string_llvm
@@ -9257,7 +9257,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 3999
+.word 3987
 _p_168_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_TryGetValue_string_int__llvm:
 	.globl _p_168_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_TryGetValue_string_int__llvm
 .private_extern _p_168_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_TryGetValue_string_int__llvm
@@ -9268,7 +9268,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 4004
+.word 3992
 _p_169_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupNamespace_string_llvm:
 	.globl _p_169_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupNamespace_string_llvm
 .private_extern _p_169_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupNamespace_string_llvm
@@ -9279,7 +9279,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 4015
+.word 4003
 _p_170_plt_System_Private_Xml_System_Xml_XmlQualifiedName__ctor_string_string_llvm:
 	.globl _p_170_plt_System_Private_Xml_System_Xml_XmlQualifiedName__ctor_string_string_llvm
 .private_extern _p_170_plt_System_Private_Xml_System_Xml_XmlQualifiedName__ctor_string_string_llvm
@@ -9290,7 +9290,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 4018
+.word 4006
 _p_171_plt_System_Private_Xml_System_Xml_XmlQualifiedName_Equals_string_string_llvm:
 	.globl _p_171_plt_System_Private_Xml_System_Xml_XmlQualifiedName_Equals_string_string_llvm
 .private_extern _p_171_plt_System_Private_Xml_System_Xml_XmlQualifiedName_Equals_string_string_llvm
@@ -9301,7 +9301,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 4021
+.word 4009
 _p_172_plt_System_Private_Xml_System_Xml_XmlQualifiedName_op_Equality_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_172_plt_System_Private_Xml_System_Xml_XmlQualifiedName_op_Equality_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_172_plt_System_Private_Xml_System_Xml_XmlQualifiedName_op_Equality_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName_llvm
@@ -9312,7 +9312,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 4024
+.word 4012
 _p_173_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQNameThrow_string_string__string__llvm:
 	.globl _p_173_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQNameThrow_string_string__string__llvm
 .private_extern _p_173_plt_System_Private_Xml_System_Xml_ValidateNames_ParseQNameThrow_string_string__string__llvm
@@ -9323,7 +9323,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 4027
+.word 4015
 _p_174_plt_System_Private_Xml_System_Xml_XmlQualifiedName__ctor_string_llvm:
 	.globl _p_174_plt_System_Private_Xml_System_Xml_XmlQualifiedName__ctor_string_llvm
 .private_extern _p_174_plt_System_Private_Xml_System_Xml_XmlQualifiedName__ctor_string_llvm
@@ -9334,7 +9334,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 4029
+.word 4017
 _p_175_plt_System_Private_Xml_System_Uri_op_Equality_System_Uri_System_Uri_llvm:
 	.globl _p_175_plt_System_Private_Xml_System_Uri_op_Equality_System_Uri_System_Uri_llvm
 .private_extern _p_175_plt_System_Private_Xml_System_Uri_op_Equality_System_Uri_System_Uri_llvm
@@ -9345,7 +9345,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 4032
+.word 4020
 _p_176_plt_System_Private_Xml_System_Uri__ctor_string_System_UriKind_llvm:
 	.globl _p_176_plt_System_Private_Xml_System_Uri__ctor_string_System_UriKind_llvm
 .private_extern _p_176_plt_System_Private_Xml_System_Uri__ctor_string_System_UriKind_llvm
@@ -9356,7 +9356,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 4037
+.word 4025
 _p_177_plt_System_Private_Xml_System_IO_Path_GetFullPath_string_llvm:
 	.globl _p_177_plt_System_Private_Xml_System_IO_Path_GetFullPath_string_llvm
 .private_extern _p_177_plt_System_Private_Xml_System_IO_Path_GetFullPath_string_llvm
@@ -9367,7 +9367,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 4042
+.word 4030
 _p_178_plt_System_Private_Xml_System_Uri__ctor_string_llvm:
 	.globl _p_178_plt_System_Private_Xml_System_Uri__ctor_string_llvm
 .private_extern _p_178_plt_System_Private_Xml_System_Uri__ctor_string_llvm
@@ -9378,7 +9378,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 4047
+.word 4035
 _p_179_plt_System_Private_Xml_System_Uri__ctor_System_Uri_string_llvm:
 	.globl _p_179_plt_System_Private_Xml_System_Uri__ctor_System_Uri_string_llvm
 .private_extern _p_179_plt_System_Private_Xml_System_Uri__ctor_System_Uri_string_llvm
@@ -9389,7 +9389,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 4052
+.word 4040
 _p_180_plt_System_Private_Xml_System_Type_op_Equality_System_Type_System_Type_llvm:
 	.globl _p_180_plt_System_Private_Xml_System_Type_op_Equality_System_Type_System_Type_llvm
 .private_extern _p_180_plt_System_Private_Xml_System_Type_op_Equality_System_Type_System_Type_llvm
@@ -9400,7 +9400,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 4057
+.word 4045
 _p_181_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_object_object_llvm:
 	.globl _p_181_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_object_object_llvm
 .private_extern _p_181_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_object_object_llvm
@@ -9411,7 +9411,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 4062
+.word 4050
 _p_182_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetStream_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm:
 	.globl _p_182_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetStream_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm
 .private_extern _p_182_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetStream_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm
@@ -9422,7 +9422,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 4074
+.word 4062
 _p_183_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_System_Xml_XmlUrlResolver__GetEntityAsyncd__10__llvm:
 	.globl _p_183_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_System_Xml_XmlUrlResolver__GetEntityAsyncd__10__llvm
 .private_extern _p_183_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncMethodBuilderCore_Start_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_System_Xml_XmlUrlResolver__GetEntityAsyncd__10__llvm
@@ -9433,7 +9433,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 4076
+.word 4064
 _p_184_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_InitializeTaskAsPromise_llvm:
 	.globl _p_184_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_InitializeTaskAsPromise_llvm
 .private_extern _p_184_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_InitializeTaskAsPromise_llvm
@@ -9444,7 +9444,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 4092
+.word 4080
 _p_185_plt_System_Private_Xml_System_Xml_XmlResolver_ResolveUri_System_Uri_string_llvm:
 	.globl _p_185_plt_System_Private_Xml_System_Xml_XmlResolver_ResolveUri_System_Uri_string_llvm
 .private_extern _p_185_plt_System_Private_Xml_System_Xml_XmlResolver_ResolveUri_System_Uri_string_llvm
@@ -9455,7 +9455,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 4109
+.word 4097
 _p_186_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetResult_object_llvm:
 	.globl _p_186_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetResult_object_llvm
 .private_extern _p_186_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetResult_object_llvm
@@ -9466,7 +9466,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 4112
+.word 4100
 _p_187_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetStreamAsync_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm:
 	.globl _p_187_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetStreamAsync_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm
 .private_extern _p_187_plt_System_Private_Xml_System_Xml_XmlDownloadManager_GetStreamAsync_System_Uri_System_Net_ICredentials_System_Net_IWebProxy_llvm
@@ -9477,7 +9477,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 4123
+.word 4111
 _p_188_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_GetStateMachineBox_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_System_Xml_XmlUrlResolver__GetEntityAsyncd__10__System_Threading_Tasks_Task_1_object__llvm:
 	.globl _p_188_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_GetStateMachineBox_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_System_Xml_XmlUrlResolver__GetEntityAsyncd__10__System_Threading_Tasks_Task_1_object__llvm
 .private_extern _p_188_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_GetStateMachineBox_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_System_Xml_XmlUrlResolver__GetEntityAsyncd__10__System_Threading_Tasks_Task_1_object__llvm
@@ -9488,7 +9488,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 4125
+.word 4113
 _p_189_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
 	.globl _p_189_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
 .private_extern _p_189_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
@@ -9499,7 +9499,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 4144
+.word 4132
 _p_190_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetException_System_Exception_llvm:
 	.globl _p_190_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetException_System_Exception_llvm
 .private_extern _p_190_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetException_System_Exception_llvm
@@ -9510,7 +9510,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 4163
+.word 4151
 _p_191_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm:
 	.globl _p_191_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
 .private_extern _p_191_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_object_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine_llvm
@@ -9521,7 +9521,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 4174
+.word 4162
 _p_192_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm:
 	.globl _p_192_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm
 .private_extern _p_192_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfGreaterThanOrEqual_int_int_int_string_llvm
@@ -9532,7 +9532,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 4185
+.word 4173
 _p_193_plt_System_Private_Xml_System_Xml_XmlReader_Dispose_bool_llvm:
 	.globl _p_193_plt_System_Private_Xml_System_Xml_XmlReader_Dispose_bool_llvm
 .private_extern _p_193_plt_System_Private_Xml_System_Xml_XmlReader_Dispose_bool_llvm
@@ -9543,7 +9543,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 4197
+.word 4185
 _p_194_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl__ctor_System_IO_TextReader_System_Xml_XmlReaderSettings_string_System_Xml_XmlParserContext_llvm:
 	.globl _p_194_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl__ctor_System_IO_TextReader_System_Xml_XmlReaderSettings_string_System_Xml_XmlParserContext_llvm
 .private_extern _p_194_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl__ctor_System_IO_TextReader_System_Xml_XmlReaderSettings_string_System_Xml_XmlParserContext_llvm
@@ -9554,7 +9554,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 4200
+.word 4188
 _p_195_plt_System_Private_Xml_System_Xml_XmlReaderSettings_Initialize_System_Xml_XmlResolver_llvm:
 	.globl _p_195_plt_System_Private_Xml_System_Xml_XmlReaderSettings_Initialize_System_Xml_XmlResolver_llvm
 .private_extern _p_195_plt_System_Private_Xml_System_Xml_XmlReaderSettings_Initialize_System_Xml_XmlResolver_llvm
@@ -9565,7 +9565,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 4203
+.word 4191
 _p_196_plt_System_Private_Xml_System_Xml_XmlReaderSettings__ctor_llvm:
 	.globl _p_196_plt_System_Private_Xml_System_Xml_XmlReaderSettings__ctor_llvm
 .private_extern _p_196_plt_System_Private_Xml_System_Xml_XmlReaderSettings__ctor_llvm
@@ -9576,7 +9576,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 4206
+.word 4194
 _p_197_plt_System_Private_Xml_System_Text_UTF8Encoding__ctor_bool_bool_llvm:
 	.globl _p_197_plt_System_Private_Xml_System_Text_UTF8Encoding__ctor_bool_bool_llvm
 .private_extern _p_197_plt_System_Private_Xml_System_Text_UTF8Encoding__ctor_bool_bool_llvm
@@ -9587,7 +9587,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 4209
+.word 4197
 _p_198_plt_System_Private_Xml_System_ValueTuple_4_int_int_int_bool__ctor_int_int_int_bool_llvm:
 	.globl _p_198_plt_System_Private_Xml_System_ValueTuple_4_int_int_int_bool__ctor_int_int_int_bool_llvm
 .private_extern _p_198_plt_System_Private_Xml_System_ValueTuple_4_int_int_int_bool__ctor_int_int_int_bool_llvm
@@ -9598,7 +9598,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 4214
+.word 4202
 _p_199_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_System_ValueTuple_4_int_int_int_bool_System_ValueTuple_4_int_int_int_bool_llvm:
 	.globl _p_199_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_System_ValueTuple_4_int_int_int_bool_System_ValueTuple_4_int_int_int_bool_llvm
 .private_extern _p_199_plt_System_Private_Xml_System_Threading_Tasks_Task_FromResult_System_ValueTuple_4_int_int_int_bool_System_ValueTuple_4_int_int_int_bool_llvm
@@ -9609,7 +9609,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 4225
+.word 4213
 _p_200_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_XmlContext__ctor_llvm:
 	.globl _p_200_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_XmlContext__ctor_llvm
 .private_extern _p_200_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_XmlContext__ctor_llvm
@@ -9620,7 +9620,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 4237
+.word 4225
 _p_201_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupFromParserContext_System_Xml_XmlParserContext_System_Xml_XmlReaderSettings_llvm:
 	.globl _p_201_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupFromParserContext_System_Xml_XmlParserContext_System_Xml_XmlReaderSettings_llvm
 .private_extern _p_201_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupFromParserContext_System_Xml_XmlParserContext_System_Xml_XmlReaderSettings_llvm
@@ -9631,7 +9631,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 4240
+.word 4228
 _p_202_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData__ctor_llvm:
 	.globl _p_202_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData__ctor_llvm
 .private_extern _p_202_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData__ctor_llvm
@@ -9642,7 +9642,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 4243
+.word 4231
 _p_203_plt_System_Private_Xml_System_Text_StringBuilder__ctor_llvm:
 	.globl _p_203_plt_System_Private_Xml_System_Text_StringBuilder__ctor_llvm
 .private_extern _p_203_plt_System_Private_Xml_System_Text_StringBuilder__ctor_llvm
@@ -9653,7 +9653,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 4246
+.word 4234
 _p_204_plt_System_Private_Xml_System_Xml_XmlNamespaceManager__ctor_System_Xml_XmlNameTable_llvm:
 	.globl _p_204_plt_System_Private_Xml_System_Xml_XmlNamespaceManager__ctor_System_Xml_XmlNameTable_llvm
 .private_extern _p_204_plt_System_Private_Xml_System_Xml_XmlNamespaceManager__ctor_System_Xml_XmlNameTable_llvm
@@ -9664,7 +9664,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 4251
+.word 4239
 _p_205_plt_System_Private_Xml_System_Xml_NameTable__ctor_llvm:
 	.globl _p_205_plt_System_Private_Xml_System_Xml_NameTable__ctor_llvm
 .private_extern _p_205_plt_System_Private_Xml_System_Xml_NameTable__ctor_llvm
@@ -9675,7 +9675,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 4254
+.word 4242
 _p_206_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_string_System_IO_Stream_byte___int_System_Text_Encoding_llvm:
 	.globl _p_206_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_string_System_IO_Stream_byte___int_System_Text_Encoding_llvm
 .private_extern _p_206_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_string_System_IO_Stream_byte___int_System_Text_Encoding_llvm
@@ -9686,7 +9686,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 4256
+.word 4244
 _p_207_plt_System_Private_Xml_System_Xml_XmlParserContext_get_HasDtdInfo_llvm:
 	.globl _p_207_plt_System_Private_Xml_System_Xml_XmlParserContext_get_HasDtdInfo_llvm
 .private_extern _p_207_plt_System_Private_Xml_System_Xml_XmlParserContext_get_HasDtdInfo_llvm
@@ -9697,7 +9697,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 4259
+.word 4247
 _p_208_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ProcessDtdFromParserContext_System_Xml_XmlParserContext_llvm:
 	.globl _p_208_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ProcessDtdFromParserContext_System_Xml_XmlParserContext_llvm
 .private_extern _p_208_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ProcessDtdFromParserContext_System_Xml_XmlParserContext_llvm
@@ -9708,7 +9708,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 4262
+.word 4250
 _p_209_plt_System_Private_Xml_System_Xml_XmlParserContext_get_Encoding_llvm:
 	.globl _p_209_plt_System_Private_Xml_System_Xml_XmlParserContext_get_Encoding_llvm
 .private_extern _p_209_plt_System_Private_Xml_System_Xml_XmlParserContext_get_Encoding_llvm
@@ -9719,7 +9719,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 4265
+.word 4253
 _p_210_plt_System_Private_Xml_System_IO_Stream_Dispose_llvm:
 	.globl _p_210_plt_System_Private_Xml_System_IO_Stream_Dispose_llvm
 .private_extern _p_210_plt_System_Private_Xml_System_IO_Stream_Dispose_llvm
@@ -9730,7 +9730,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 4268
+.word 4256
 _p_211_plt_System_Private_Xml__jit_icall_mono_arch_rethrow_exception_llvm:
 	.globl _p_211_plt_System_Private_Xml__jit_icall_mono_arch_rethrow_exception_llvm
 .private_extern _p_211_plt_System_Private_Xml__jit_icall_mono_arch_rethrow_exception_llvm
@@ -9741,7 +9741,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 4273
+.word 4261
 _p_212_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl__ctor_System_Xml_XmlResolver_System_Xml_XmlReaderSettings_System_Xml_XmlParserContext_llvm:
 	.globl _p_212_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl__ctor_System_Xml_XmlResolver_System_Xml_XmlReaderSettings_System_Xml_XmlParserContext_llvm
 .private_extern _p_212_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl__ctor_System_Xml_XmlResolver_System_Xml_XmlReaderSettings_System_Xml_XmlParserContext_llvm
@@ -9752,7 +9752,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 4275
+.word 4263
 _p_213_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ConvertAbsoluteUnixPathToAbsoluteUri_string__System_Xml_XmlResolver_llvm:
 	.globl _p_213_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ConvertAbsoluteUnixPathToAbsoluteUri_string__System_Xml_XmlResolver_llvm
 .private_extern _p_213_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ConvertAbsoluteUnixPathToAbsoluteUri_string__System_Xml_XmlResolver_llvm
@@ -9763,7 +9763,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 4278
+.word 4266
 _p_214_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitTextReader_llvm:
 	.globl _p_214_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitTextReader_llvm
 .private_extern _p_214_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitTextReader_llvm
@@ -9774,7 +9774,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 4281
+.word 4269
 _p_215_plt_System_Private_Xml_System_Xml_XmlParserContext_get_BaseURI_llvm:
 	.globl _p_215_plt_System_Private_Xml_System_Xml_XmlParserContext_get_BaseURI_llvm
 .private_extern _p_215_plt_System_Private_Xml_System_Xml_XmlParserContext_get_BaseURI_llvm
@@ -9785,7 +9785,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 4284
+.word 4272
 _p_216_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitTextReaderInput_string_System_IO_TextReader_llvm:
 	.globl _p_216_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitTextReaderInput_string_System_IO_TextReader_llvm
 .private_extern _p_216_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitTextReaderInput_string_System_IO_TextReader_llvm
@@ -9796,7 +9796,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 4287
+.word 4275
 _p_217_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_GetNameWPrefix_System_Xml_XmlNameTable_llvm:
 	.globl _p_217_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_GetNameWPrefix_System_Xml_XmlNameTable_llvm
 .private_extern _p_217_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_GetNameWPrefix_System_Xml_XmlNameTable_llvm
@@ -9807,7 +9807,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 4290
+.word 4278
 _p_218_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_get_StringValue_llvm:
 	.globl _p_218_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_get_StringValue_llvm
 .private_extern _p_218_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_get_StringValue_llvm
@@ -9818,7 +9818,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 4293
+.word 4281
 _p_219_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishOtherValueIterator_llvm:
 	.globl _p_219_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishOtherValueIterator_llvm
 .private_extern _p_219_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishOtherValueIterator_llvm
@@ -9829,7 +9829,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 4296
+.word 4284
 _p_220_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishPartialValue_llvm:
 	.globl _p_220_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishPartialValue_llvm
 .private_extern _p_220_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishPartialValue_llvm
@@ -9840,7 +9840,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 4299
+.word 4287
 _p_221_plt_System_Private_Xml_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int_llvm:
 	.globl _p_221_plt_System_Private_Xml_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int_llvm
 .private_extern _p_221_plt_System_Private_Xml_System_SpanHelpers_NonPackedContainsValueType_int16_int16__int16_int_llvm
@@ -9851,7 +9851,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 4302
+.word 4290
 _p_222_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetIndexOfAttributeWithPrefix_string_llvm:
 	.globl _p_222_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetIndexOfAttributeWithPrefix_string_llvm
 .private_extern _p_222_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetIndexOfAttributeWithPrefix_string_llvm
@@ -9862,7 +9862,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 4318
+.word 4306
 _p_223_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetIndexOfAttributeWithoutPrefix_string_llvm:
 	.globl _p_223_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetIndexOfAttributeWithoutPrefix_string_llvm
 .private_extern _p_223_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetIndexOfAttributeWithoutPrefix_string_llvm
@@ -9873,7 +9873,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 4321
+.word 4309
 _p_224_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishAttributeValueIterator_llvm:
 	.globl _p_224_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishAttributeValueIterator_llvm
 .private_extern _p_224_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishAttributeValueIterator_llvm
@@ -9884,7 +9884,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 4324
+.word 4312
 _p_225_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitUriString_llvm:
 	.globl _p_225_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitUriString_llvm
 .private_extern _p_225_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitUriString_llvm
@@ -9895,7 +9895,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 4327
+.word 4315
 _p_226_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitStream_llvm:
 	.globl _p_226_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitStream_llvm
 .private_extern _p_226_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInitStream_llvm
@@ -9906,7 +9906,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 4330
+.word 4318
 _p_227_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseElementContent_llvm:
 	.globl _p_227_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseElementContent_llvm
 .private_extern _p_227_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseElementContent_llvm
@@ -9917,7 +9917,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 4333
+.word 4321
 _p_228_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_llvm:
 	.globl _p_228_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_llvm
 .private_extern _p_228_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_llvm
@@ -9928,7 +9928,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 4336
+.word 4324
 _p_229_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OpenUrl_llvm:
 	.globl _p_229_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OpenUrl_llvm
 .private_extern _p_229_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OpenUrl_llvm
@@ -9939,7 +9939,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 4339
+.word 4327
 _p_230_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseXmlDeclaration_bool_llvm:
 	.globl _p_230_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseXmlDeclaration_bool_llvm
 .private_extern _p_230_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseXmlDeclaration_bool_llvm
@@ -9950,7 +9950,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 4342
+.word 4330
 _p_231_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDocumentContent_llvm:
 	.globl _p_231_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDocumentContent_llvm
 .private_extern _p_231_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDocumentContent_llvm
@@ -9961,7 +9961,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 4345
+.word 4333
 _p_232_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ResetAttributes_llvm:
 	.globl _p_232_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ResetAttributes_llvm
 .private_extern _p_232_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ResetAttributes_llvm
@@ -9972,7 +9972,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 4348
+.word 4336
 _p_233_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddNode_int_int_llvm:
 	.globl _p_233_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddNode_int_int_llvm
 .private_extern _p_233_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddNode_int_int_llvm
@@ -9983,7 +9983,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 4351
+.word 4339
 _p_234_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopElementContext_llvm:
 	.globl _p_234_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopElementContext_llvm
 .private_extern _p_234_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopElementContext_llvm
@@ -9994,7 +9994,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 4354
+.word 4342
 _p_235_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEntityReference_llvm:
 	.globl _p_235_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEntityReference_llvm
 .private_extern _p_235_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEntityReference_llvm
@@ -10005,7 +10005,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 4357
+.word 4345
 _p_236_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishIncrementalRead_llvm:
 	.globl _p_236_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishIncrementalRead_llvm
 .private_extern _p_236_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishIncrementalRead_llvm
@@ -10016,7 +10016,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 4360
+.word 4348
 _p_237_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseFragmentAttribute_llvm:
 	.globl _p_237_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseFragmentAttribute_llvm
 .private_extern _p_237_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseFragmentAttribute_llvm
@@ -10027,7 +10027,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 4363
+.word 4351
 _p_238_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEndEntityNodeInContent_llvm:
 	.globl _p_238_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEndEntityNodeInContent_llvm
 .private_extern _p_238_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEndEntityNodeInContent_llvm
@@ -10038,7 +10038,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 4366
+.word 4354
 _p_239_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetValueNode_System_Xml_XmlNodeType_string_llvm:
 	.globl _p_239_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetValueNode_System_Xml_XmlNodeType_string_llvm
 .private_extern _p_239_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetValueNode_System_Xml_XmlNodeType_string_llvm
@@ -10049,7 +10049,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 4369
+.word 4357
 _p_240_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseXmlDeclarationFragment_llvm:
 	.globl _p_240_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseXmlDeclarationFragment_llvm
 .private_extern _p_240_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseXmlDeclarationFragment_llvm
@@ -10060,7 +10060,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 4372
+.word 4360
 _p_241_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnEof_llvm:
 	.globl _p_241_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnEof_llvm
 .private_extern _p_241_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnEof_llvm
@@ -10071,7 +10071,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 4375
+.word 4363
 _p_242_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipPartialTextValue_llvm:
 	.globl _p_242_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipPartialTextValue_llvm
 .private_extern _p_242_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipPartialTextValue_llvm
@@ -10082,7 +10082,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 4378
+.word 4366
 _p_243_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadValueChunk_llvm:
 	.globl _p_243_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadValueChunk_llvm
 .private_extern _p_243_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadValueChunk_llvm
@@ -10093,7 +10093,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 4381
+.word 4369
 _p_244_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadContentAsBinary_llvm:
 	.globl _p_244_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadContentAsBinary_llvm
 .private_extern _p_244_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadContentAsBinary_llvm
@@ -10104,7 +10104,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 4384
+.word 4372
 _p_245_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadElementContentAsBinary_llvm:
 	.globl _p_245_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadElementContentAsBinary_llvm
 .private_extern _p_245_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishReadElementContentAsBinary_llvm
@@ -10115,7 +10115,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 4387
+.word 4375
 _p_246_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInit_llvm:
 	.globl _p_246_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInit_llvm
 .private_extern _p_246_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FinishInit_llvm
@@ -10126,7 +10126,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 4390
+.word 4378
 _p_247_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Close_bool_llvm:
 	.globl _p_247_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Close_bool_llvm
 .private_extern _p_247_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Close_bool_llvm
@@ -10137,7 +10137,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 4393
+.word 4381
 _p_248_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributeValueChunk_llvm:
 	.globl _p_248_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributeValueChunk_llvm
 .private_extern _p_248_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributeValueChunk_llvm
@@ -10148,7 +10148,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 4396
+.word 4384
 _p_249_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleGeneralEntityReference_string_bool_bool_int_llvm:
 	.globl _p_249_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleGeneralEntityReference_string_bool_bool_int_llvm
 .private_extern _p_249_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleGeneralEntityReference_string_bool_bool_int_llvm
@@ -10159,7 +10159,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 4399
+.word 4387
 _p_250_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_LookupPrefix_string_llvm:
 	.globl _p_250_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_LookupPrefix_string_llvm
 .private_extern _p_250_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_LookupPrefix_string_llvm
@@ -10170,7 +10170,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 4402
+.word 4390
 _p_251_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupPrefix_string_llvm:
 	.globl _p_251_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupPrefix_string_llvm
 .private_extern _p_251_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_LookupPrefix_string_llvm
@@ -10181,7 +10181,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 4405
+.word 4393
 _p_252_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnNewLine_int_llvm:
 	.globl _p_252_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnNewLine_int_llvm
 .private_extern _p_252_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnNewLine_int_llvm
@@ -10192,7 +10192,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 4408
+.word 4396
 _p_253_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReadData_llvm:
 	.globl _p_253_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReadData_llvm
 .private_extern _p_253_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReadData_llvm
@@ -10203,7 +10203,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 4411
+.word 4399
 _p_254_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNumericCharRef_bool_System_Text_StringBuilder_System_Xml_XmlTextReaderImpl_EntityType__llvm:
 	.globl _p_254_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNumericCharRef_bool_System_Text_StringBuilder_System_Xml_XmlTextReaderImpl_EntityType__llvm
 .private_extern _p_254_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNumericCharRef_bool_System_Text_StringBuilder_System_Xml_XmlTextReaderImpl_EntityType__llvm
@@ -10214,7 +10214,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 4414
+.word 4402
 _p_255_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNamedCharRef_bool_System_Text_StringBuilder_llvm:
 	.globl _p_255_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNamedCharRef_bool_System_Text_StringBuilder_llvm
 .private_extern _p_255_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNamedCharRef_bool_System_Text_StringBuilder_llvm
@@ -10225,7 +10225,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 4417
+.word 4405
 _p_256_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePI_System_Text_StringBuilder_llvm:
 	.globl _p_256_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePI_System_Text_StringBuilder_llvm
 .private_extern _p_256_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePI_System_Text_StringBuilder_llvm
@@ -10236,7 +10236,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 4420
+.word 4408
 _p_257_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCDataOrComment_System_Xml_XmlNodeType_llvm:
 	.globl _p_257_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCDataOrComment_System_Xml_XmlNodeType_llvm
 .private_extern _p_257_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCDataOrComment_System_Xml_XmlNodeType_llvm
@@ -10247,7 +10247,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 4423
+.word 4411
 _p_258_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_CopyTo_int_System_Text_StringBuilder_llvm:
 	.globl _p_258_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_CopyTo_int_System_Text_StringBuilder_llvm
 .private_extern _p_258_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_CopyTo_int_System_Text_StringBuilder_llvm
@@ -10258,7 +10258,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 4426
+.word 4414
 _p_259_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SendValidationEvent_System_Xml_Schema_XmlSeverityType_string_string_int_int_llvm:
 	.globl _p_259_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SendValidationEvent_System_Xml_Schema_XmlSeverityType_string_string_int_int_llvm
 .private_extern _p_259_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SendValidationEvent_System_Xml_Schema_XmlSeverityType_string_string_int_int_llvm
@@ -10269,7 +10269,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 4429
+.word 4417
 _p_260_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushInternalEntity_System_Xml_IDtdEntityInfo_llvm:
 	.globl _p_260_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushInternalEntity_System_Xml_IDtdEntityInfo_llvm
 .private_extern _p_260_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushInternalEntity_System_Xml_IDtdEntityInfo_llvm
@@ -10280,7 +10280,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 4432
+.word 4420
 _p_261_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushExternalEntity_System_Xml_IDtdEntityInfo_llvm:
 	.globl _p_261_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushExternalEntity_System_Xml_IDtdEntityInfo_llvm
 .private_extern _p_261_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushExternalEntity_System_Xml_IDtdEntityInfo_llvm
@@ -10291,7 +10291,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 4435
+.word 4423
 _p_262_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopEntity_llvm:
 	.globl _p_262_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopEntity_llvm
 .private_extern _p_262_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopEntity_llvm
@@ -10302,7 +10302,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 4438
+.word 4426
 _p_263_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushExternalEntityOrSubset_string_string_System_Uri_string_llvm:
 	.globl _p_263_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushExternalEntityOrSubset_string_string_System_Uri_string_llvm
 .private_extern _p_263_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushExternalEntityOrSubset_string_string_System_Uri_string_llvm
@@ -10313,7 +10313,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 4441
+.word 4429
 _p_264_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_EatWhitespaces_System_Text_StringBuilder_llvm:
 	.globl _p_264_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_EatWhitespaces_System_Text_StringBuilder_llvm
 .private_extern _p_264_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_EatWhitespaces_System_Text_StringBuilder_llvm
@@ -10324,7 +10324,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 4444
+.word 4432
 _p_265_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushParsingState_llvm:
 	.globl _p_265_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushParsingState_llvm
 .private_extern _p_265_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushParsingState_llvm
@@ -10335,7 +10335,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 4447
+.word 4435
 _p_266_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_RegisterConsumedCharacters_long_bool_llvm:
 	.globl _p_266_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_RegisterConsumedCharacters_long_bool_llvm
 .private_extern _p_266_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_RegisterConsumedCharacters_long_bool_llvm
@@ -10346,7 +10346,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 4450
+.word 4438
 _p_267_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStringInput_string_System_Text_Encoding_string_llvm:
 	.globl _p_267_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStringInput_string_System_Text_Encoding_string_llvm
 .private_extern _p_267_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStringInput_string_System_Text_Encoding_string_llvm
@@ -10357,7 +10357,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 4453
+.word 4441
 _p_268_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_System_Exception_llvm:
 	.globl _p_268_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_System_Exception_llvm
 .private_extern _p_268_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_System_Exception_llvm
@@ -10368,7 +10368,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 4456
+.word 4444
 _p_269_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttributeNoChecks_string_int_llvm:
 	.globl _p_269_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttributeNoChecks_string_int_llvm
 .private_extern _p_269_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttributeNoChecks_string_int_llvm
@@ -10379,7 +10379,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 4459
+.word 4447
 _p_270_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_llvm:
 	.globl _p_270_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_llvm
 .private_extern _p_270_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_llvm
@@ -10390,7 +10390,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 4462
+.word 4450
 _p_271_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string___llvm:
 	.globl _p_271_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string___llvm
 .private_extern _p_271_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string___llvm
@@ -10401,7 +10401,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 4465
+.word 4453
 _p_272_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_int_int_string_llvm:
 	.globl _p_272_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_int_int_string_llvm
 .private_extern _p_272_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_int_int_string_llvm
@@ -10412,7 +10412,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 4468
+.word 4456
 _p_273_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___int_int_string_llvm:
 	.globl _p_273_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___int_int_string_llvm
 .private_extern _p_273_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___int_int_string_llvm
@@ -10423,7 +10423,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 4471
+.word 4459
 _p_274_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string___System_Exception_llvm:
 	.globl _p_274_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string___System_Exception_llvm
 .private_extern _p_274_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string___System_Exception_llvm
@@ -10434,7 +10434,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 4474
+.word 4462
 _p_275_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_string_llvm:
 	.globl _p_275_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_string_llvm
 .private_extern _p_275_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string_string_llvm
@@ -10445,7 +10445,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 4477
+.word 4465
 _p_276_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_char___int_int_llvm:
 	.globl _p_276_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_char___int_int_llvm
 .private_extern _p_276_plt_System_Private_Xml_System_Xml_XmlException_BuildCharExceptionArgs_char___int_int_llvm
@@ -10456,7 +10456,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 4480
+.word 4468
 _p_277_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_string___llvm:
 	.globl _p_277_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_string___llvm
 .private_extern _p_277_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_string___llvm
@@ -10467,7 +10467,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 4483
+.word 4471
 _p_278_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string_string_int_int_llvm:
 	.globl _p_278_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string_string_int_int_llvm
 .private_extern _p_278_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string_string_int_int_llvm
@@ -10478,7 +10478,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 4486
+.word 4474
 _p_279_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SendValidationEvent_System_Xml_Schema_XmlSeverityType_System_Xml_Schema_XmlSchemaException_llvm:
 	.globl _p_279_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SendValidationEvent_System_Xml_Schema_XmlSeverityType_System_Xml_Schema_XmlSchemaException_llvm
 .private_extern _p_279_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SendValidationEvent_System_Xml_Schema_XmlSeverityType_System_Xml_Schema_XmlSchemaException_llvm
@@ -10489,7 +10489,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 4489
+.word 4477
 _p_280_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleEntityEnd_bool_llvm:
 	.globl _p_280_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleEntityEnd_bool_llvm
 .private_extern _p_280_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleEntityEnd_bool_llvm
@@ -10500,7 +10500,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 4492
+.word 4480
 _p_281_plt_System_Private_Xml_System_Xml_XmlReader_CalcBufferSize_System_IO_Stream_llvm:
 	.globl _p_281_plt_System_Private_Xml_System_Xml_XmlReader_CalcBufferSize_System_IO_Stream_llvm
 .private_extern _p_281_plt_System_Private_Xml_System_Xml_XmlReader_CalcBufferSize_System_IO_Stream_llvm
@@ -10511,7 +10511,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 4495
+.word 4483
 _p_282_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEncoding_System_Text_Encoding_llvm:
 	.globl _p_282_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEncoding_System_Text_Encoding_llvm
 .private_extern _p_282_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEncoding_System_Text_Encoding_llvm
@@ -10522,7 +10522,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 4498
+.word 4486
 _p_283_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_EatPreamble_llvm:
 	.globl _p_283_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_EatPreamble_llvm
 .private_extern _p_283_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_EatPreamble_llvm
@@ -10533,7 +10533,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 4501
+.word 4489
 _p_284_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DetectEncoding_llvm:
 	.globl _p_284_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DetectEncoding_llvm
 .private_extern _p_284_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DetectEncoding_llvm
@@ -10544,7 +10544,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 4504
+.word 4492
 _p_285_plt_System_Private_Xml_System_IO_Stream_ReadAtLeast_System_Span_1_byte_int_bool_llvm:
 	.globl _p_285_plt_System_Private_Xml_System_IO_Stream_ReadAtLeast_System_Span_1_byte_int_bool_llvm
 .private_extern _p_285_plt_System_Private_Xml_System_IO_Stream_ReadAtLeast_System_Span_1_byte_int_bool_llvm
@@ -10555,7 +10555,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 4507
+.word 4495
 _p_286_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitTextReaderInput_string_System_Uri_System_IO_TextReader_llvm:
 	.globl _p_286_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitTextReaderInput_string_System_Uri_System_IO_TextReader_llvm
 .private_extern _p_286_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitTextReaderInput_string_System_Uri_System_IO_TextReader_llvm
@@ -10566,7 +10566,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 4512
+.word 4500
 _p_287_plt_System_Private_Xml_string_CopyTo_int_char___int_int_llvm:
 	.globl _p_287_plt_System_Private_Xml_string_CopyTo_int_char___int_int_llvm
 .private_extern _p_287_plt_System_Private_Xml_string_CopyTo_int_char___int_int_llvm
@@ -10577,7 +10577,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 4515
+.word 4503
 _p_288_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDtdFromParserContext_llvm:
 	.globl _p_288_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDtdFromParserContext_llvm
 .private_extern _p_288_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDtdFromParserContext_llvm
@@ -10588,7 +10588,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 4520
+.word 4508
 _p_289_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_string_System_IO_Stream_System_Text_Encoding_llvm:
 	.globl _p_289_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_string_System_IO_Stream_System_Text_Encoding_llvm
 .private_extern _p_289_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_string_System_IO_Stream_System_Text_Encoding_llvm
@@ -10599,7 +10599,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 4523
+.word 4511
 _p_290_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_string_llvm:
 	.globl _p_290_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_string_llvm
 .private_extern _p_290_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_string_llvm
@@ -10610,7 +10610,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 4526
+.word 4514
 _p_291_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_3412_llvm:
 	.globl _p_291_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_3412_llvm
 .private_extern _p_291_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_3412_llvm
@@ -10621,7 +10621,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 4529
+.word 4517
 _p_292_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_Littleendian_llvm:
 	.globl _p_292_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_Littleendian_llvm
 .private_extern _p_292_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_Littleendian_llvm
@@ -10632,7 +10632,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 4532
+.word 4520
 _p_293_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_Bigendian_llvm:
 	.globl _p_293_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_Bigendian_llvm
 .private_extern _p_293_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_Bigendian_llvm
@@ -10643,7 +10643,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 4535
+.word 4523
 _p_294_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_2143_llvm:
 	.globl _p_294_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_2143_llvm
 .private_extern _p_294_plt_System_Private_Xml_System_Xml_Ucs4Encoding_get_UCS4_2143_llvm
@@ -10654,7 +10654,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 4538
+.word 4526
 _p_295_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_byte_byte__byte__int_llvm:
 	.globl _p_295_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_byte_byte__byte__int_llvm
 .private_extern _p_295_plt_System_Private_Xml_System_SpanHelpers_SequenceEqual_byte_byte__byte__int_llvm
@@ -10665,7 +10665,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 4541
+.word 4529
 _p_296_plt_System_Private_Xml_string_op_Inequality_string_string_llvm:
 	.globl _p_296_plt_System_Private_Xml_string_op_Inequality_string_string_llvm
 .private_extern _p_296_plt_System_Private_Xml_string_op_Inequality_string_string_llvm
@@ -10676,7 +10676,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 4557
+.word 4545
 _p_297_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_UnDecodeChars_llvm:
 	.globl _p_297_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_UnDecodeChars_llvm
 .private_extern _p_297_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_UnDecodeChars_llvm
@@ -10687,7 +10687,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 4562
+.word 4550
 _p_298_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_get_UTF8BomThrowing_llvm:
 	.globl _p_298_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_get_UTF8BomThrowing_llvm
 .private_extern _p_298_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_get_UTF8BomThrowing_llvm
@@ -10698,7 +10698,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 4565
+.word 4553
 _p_299_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SwitchEncoding_System_Text_Encoding_llvm:
 	.globl _p_299_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SwitchEncoding_System_Text_Encoding_llvm
 .private_extern _p_299_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SwitchEncoding_System_Text_Encoding_llvm
@@ -10709,7 +10709,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 4568
+.word 4556
 _p_300_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetChars_int_llvm:
 	.globl _p_300_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetChars_int_llvm
 .private_extern _p_300_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetChars_int_llvm
@@ -10720,7 +10720,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 4571
+.word 4559
 _p_301_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_BlockCopy_byte___int_byte___int_int_llvm:
 	.globl _p_301_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_BlockCopy_byte___int_byte___int_int_llvm
 .private_extern _p_301_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_BlockCopy_byte___int_byte___int_int_llvm
@@ -10731,7 +10731,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 4574
+.word 4562
 _p_302_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_OnBufferInvalidated_llvm:
 	.globl _p_302_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_OnBufferInvalidated_llvm
 .private_extern _p_302_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_OnBufferInvalidated_llvm
@@ -10742,7 +10742,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 4577
+.word 4565
 _p_303_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_BlockCopyChars_char___int_char___int_int_llvm:
 	.globl _p_303_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_BlockCopyChars_char___int_char___int_int_llvm
 .private_extern _p_303_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_BlockCopyChars_char___int_char___int_int_llvm
@@ -10753,7 +10753,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 4580
+.word 4568
 _p_304_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InvalidCharRecovery_int__int__llvm:
 	.globl _p_304_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InvalidCharRecovery_int__int__llvm
 .private_extern _p_304_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InvalidCharRecovery_int__int__llvm
@@ -10764,7 +10764,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 4583
+.word 4571
 _p_305_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_llvm:
 	.globl _p_305_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_llvm
 .private_extern _p_305_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_llvm
@@ -10775,7 +10775,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 4586
+.word 4574
 _p_306_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopParsingState_llvm:
 	.globl _p_306_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopParsingState_llvm
 .private_extern _p_306_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopParsingState_llvm
@@ -10786,7 +10786,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 4589
+.word 4577
 _p_307_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsingState_Close_bool_llvm:
 	.globl _p_307_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsingState_Close_bool_llvm
 .private_extern _p_307_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsingState_Close_bool_llvm
@@ -10797,7 +10797,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 4592
+.word 4580
 _p_308_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_get_None_llvm:
 	.globl _p_308_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_get_None_llvm
 .private_extern _p_308_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_get_None_llvm
@@ -10808,7 +10808,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 4595
+.word 4583
 _p_309_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SwitchEncodingToUTF8_llvm:
 	.globl _p_309_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SwitchEncodingToUTF8_llvm
 .private_extern _p_309_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SwitchEncodingToUTF8_llvm
@@ -10819,7 +10819,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 4598
+.word 4586
 _p_310_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseName_llvm:
 	.globl _p_310_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseName_llvm
 .private_extern _p_310_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseName_llvm
@@ -10830,7 +10830,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 4601
+.word 4589
 _p_311_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_llvm:
 	.globl _p_311_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_llvm
 .private_extern _p_311_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_llvm
@@ -10841,7 +10841,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 4604
+.word 4592
 _p_312_plt_System_Private_Xml_System_Text_StringBuilder_Append_char___int_int_llvm:
 	.globl _p_312_plt_System_Private_Xml_System_Text_StringBuilder_Append_char___int_int_llvm
 .private_extern _p_312_plt_System_Private_Xml_System_Text_StringBuilder_Append_char___int_int_llvm
@@ -10852,7 +10852,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 4607
+.word 4595
 _p_313_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_CheckEncoding_string_llvm:
 	.globl _p_313_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_CheckEncoding_string_llvm
 .private_extern _p_313_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_CheckEncoding_string_llvm
@@ -10863,7 +10863,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 4612
+.word 4600
 _p_314_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_int_int_llvm:
 	.globl _p_314_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_int_int_llvm
 .private_extern _p_314_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_int_int_llvm
@@ -10874,7 +10874,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 4615
+.word 4603
 _p_315_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_string_string_llvm:
 	.globl _p_315_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_string_string_llvm
 .private_extern _p_315_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_string_string_llvm
@@ -10885,7 +10885,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 4618
+.word 4606
 _p_316_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_string_llvm:
 	.globl _p_316_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_string_llvm
 .private_extern _p_316_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_string_llvm
@@ -10896,7 +10896,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 4621
+.word 4609
 _p_317_plt_System_Private_Xml_System_Text_StringBuilder_set_Length_int_llvm:
 	.globl _p_317_plt_System_Private_Xml_System_Text_StringBuilder_set_Length_int_llvm
 .private_extern _p_317_plt_System_Private_Xml_System_Text_StringBuilder_set_Length_int_llvm
@@ -10907,7 +10907,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 4624
+.word 4612
 _p_318_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetNamedNode_System_Xml_XmlNodeType_string_llvm:
 	.globl _p_318_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetNamedNode_System_Xml_XmlNodeType_string_llvm
 .private_extern _p_318_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetNamedNode_System_Xml_XmlNodeType_string_llvm
@@ -10918,7 +10918,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 4629
+.word 4617
 _p_319_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseText_llvm:
 	.globl _p_319_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseText_llvm
 .private_extern _p_319_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseText_llvm
@@ -10929,7 +10929,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 4632
+.word 4620
 _p_320_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseRootLevelWhitespace_llvm:
 	.globl _p_320_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseRootLevelWhitespace_llvm
 .private_extern _p_320_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseRootLevelWhitespace_llvm
@@ -10940,7 +10940,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 4635
+.word 4623
 _p_321_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleEntityReference_bool_System_Xml_XmlTextReaderImpl_EntityExpandType_int__llvm:
 	.globl _p_321_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleEntityReference_bool_System_Xml_XmlTextReaderImpl_EntityExpandType_int__llvm
 .private_extern _p_321_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_HandleEntityReference_bool_System_Xml_XmlTextReaderImpl_EntityExpandType_int__llvm
@@ -10951,7 +10951,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 4638
+.word 4626
 _p_322_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDoctypeDecl_llvm:
 	.globl _p_322_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDoctypeDecl_llvm
 .private_extern _p_322_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDoctypeDecl_llvm
@@ -10962,7 +10962,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 4641
+.word 4629
 _p_323_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseUnexpectedToken_int_llvm:
 	.globl _p_323_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseUnexpectedToken_int_llvm
 .private_extern _p_323_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseUnexpectedToken_int_llvm
@@ -10973,7 +10973,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 4644
+.word 4632
 _p_324_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_int_string_string_llvm:
 	.globl _p_324_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_int_string_string_llvm
 .private_extern _p_324_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_int_string_string_llvm
@@ -10984,7 +10984,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 4647
+.word 4635
 _p_325_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_int_string_llvm:
 	.globl _p_325_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_int_string_llvm
 .private_extern _p_325_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnexpectedToken_int_string_llvm
@@ -10995,7 +10995,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 4650
+.word 4638
 _p_326_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCData_llvm:
 	.globl _p_326_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCData_llvm
 .private_extern _p_326_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCData_llvm
@@ -11006,7 +11006,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 4653
+.word 4641
 _p_327_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseComment_llvm:
 	.globl _p_327_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseComment_llvm
 .private_extern _p_327_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseComment_llvm
@@ -11017,7 +11017,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 4656
+.word 4644
 _p_328_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseElement_llvm:
 	.globl _p_328_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseElement_llvm
 .private_extern _p_328_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseElement_llvm
@@ -11028,7 +11028,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 4659
+.word 4647
 _p_329_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePI_llvm:
 	.globl _p_329_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePI_llvm
 .private_extern _p_329_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePI_llvm
@@ -11039,7 +11039,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 4662
+.word 4650
 _p_330_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnclosedElements_llvm:
 	.globl _p_330_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnclosedElements_llvm
 .private_extern _p_330_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowUnclosedElements_llvm
@@ -11050,7 +11050,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 4665
+.word 4653
 _p_331_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEndElement_llvm:
 	.globl _p_331_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEndElement_llvm
 .private_extern _p_331_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEndElement_llvm
@@ -11061,7 +11061,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 4668
+.word 4656
 _p_332_plt_System_Private_Xml_System_Text_StringBuilder_Append_string_llvm:
 	.globl _p_332_plt_System_Private_Xml_System_Text_StringBuilder_Append_string_llvm
 .private_extern _p_332_plt_System_Private_Xml_System_Text_StringBuilder_Append_string_llvm
@@ -11072,7 +11072,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 4671
+.word 4659
 _p_333_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_string_llvm:
 	.globl _p_333_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_string_llvm
 .private_extern _p_333_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_int_string_string_llvm
@@ -11083,7 +11083,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 4676
+.word 4664
 _p_334_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseQName_int__llvm:
 	.globl _p_334_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseQName_int__llvm
 .private_extern _p_334_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseQName_int__llvm
@@ -11094,7 +11094,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 4679
+.word 4667
 _p_335_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ElementNamespaceLookup_llvm:
 	.globl _p_335_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ElementNamespaceLookup_llvm
 .private_extern _p_335_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ElementNamespaceLookup_llvm
@@ -11105,7 +11105,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 4682
+.word 4670
 _p_336_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributesAndNormalize_llvm:
 	.globl _p_336_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributesAndNormalize_llvm
 .private_extern _p_336_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributesAndNormalize_llvm
@@ -11116,7 +11116,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 4685
+.word 4673
 _p_337_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributes_llvm:
 	.globl _p_337_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributes_llvm
 .private_extern _p_337_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributes_llvm
@@ -11127,7 +11127,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 4688
+.word 4676
 _p_338_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetNamedNode_System_Xml_XmlNodeType_string_string_string_llvm:
 	.globl _p_338_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetNamedNode_System_Xml_XmlNodeType_string_string_string_llvm
 .private_extern _p_338_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetNamedNode_System_Xml_XmlNodeType_string_string_string_llvm
@@ -11138,7 +11138,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 4691
+.word 4679
 _p_339_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AttributeNamespaceLookup_llvm:
 	.globl _p_339_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AttributeNamespaceLookup_llvm
 .private_extern _p_339_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AttributeNamespaceLookup_llvm
@@ -11149,7 +11149,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 4694
+.word 4682
 _p_340_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributeDtd_System_Xml_IDtdDefaultAttributeInfo_System_Xml_XmlTextReaderImpl_NodeData___llvm:
 	.globl _p_340_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributeDtd_System_Xml_IDtdDefaultAttributeInfo_System_Xml_XmlTextReaderImpl_NodeData___llvm
 .private_extern _p_340_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributeDtd_System_Xml_IDtdDefaultAttributeInfo_System_Xml_XmlTextReaderImpl_NodeData___llvm
@@ -11160,7 +11160,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 4697
+.word 4685
 _p_341_plt_System_Private_Xml__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_341_plt_System_Private_Xml__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_341_plt_System_Private_Xml__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -11171,7 +11171,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 4700
+.word 4688
 _p_342_plt_System_Private_Xml_System_Array_Copy_System_Array_int_System_Array_int_int_llvm:
 	.globl _p_342_plt_System_Private_Xml_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
 .private_extern _p_342_plt_System_Private_Xml_System_Array_Copy_System_Array_int_System_Array_int_int_llvm
@@ -11182,7 +11182,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 4703
+.word 4691
 _p_343_plt_System_Private_Xml_System_Array_Sort_object_object___System_Collections_Generic_IComparer_1_object_llvm:
 	.globl _p_343_plt_System_Private_Xml_System_Array_Sort_object_object___System_Collections_Generic_IComparer_1_object_llvm
 .private_extern _p_343_plt_System_Private_Xml_System_Array_Sort_object_object___System_Collections_Generic_IComparer_1_object_llvm
@@ -11193,7 +11193,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 4708
+.word 4696
 _p_344_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_TrimSpacesInValue_llvm:
 	.globl _p_344_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_TrimSpacesInValue_llvm
 .private_extern _p_344_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_TrimSpacesInValue_llvm
@@ -11204,7 +11204,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 4720
+.word 4708
 _p_345_plt_System_Private_Xml__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_345_plt_System_Private_Xml__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_345_plt_System_Private_Xml__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -11215,7 +11215,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 4723
+.word 4711
 _p_346_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowTagMismatch_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_346_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowTagMismatch_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_346_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowTagMismatch_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11226,7 +11226,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 4726
+.word 4714
 _p_347_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttribute_int_int_llvm:
 	.globl _p_347_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttribute_int_int_llvm
 .private_extern _p_347_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttribute_int_int_llvm
@@ -11237,7 +11237,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 4729
+.word 4717
 _p_348_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributeValueSlow_int_char_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_348_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributeValueSlow_int_char_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_348_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseAttributeValueSlow_int_char_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11248,7 +11248,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 4732
+.word 4720
 _p_349_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnXmlReservedAttribute_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_349_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnXmlReservedAttribute_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_349_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnXmlReservedAttribute_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11259,7 +11259,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 4735
+.word 4723
 _p_350_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnNamespaceDecl_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_350_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnNamespaceDecl_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_350_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnNamespaceDecl_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11270,7 +11270,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 4738
+.word 4726
 _p_351_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnDefaultNamespaceDecl_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_351_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnDefaultNamespaceDecl_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_351_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OnDefaultNamespaceDecl_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11281,7 +11281,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 4741
+.word 4729
 _p_352_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowExpectingWhitespace_int_llvm:
 	.globl _p_352_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowExpectingWhitespace_int_llvm
 .private_extern _p_352_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowExpectingWhitespace_int_llvm
@@ -11292,7 +11292,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 4744
+.word 4732
 _p_353_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AttributeDuplCheck_llvm:
 	.globl _p_353_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AttributeDuplCheck_llvm
 .private_extern _p_353_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AttributeDuplCheck_llvm
@@ -11303,7 +11303,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 4747
+.word 4735
 _p_354_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_LookupNamespace_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_354_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_LookupNamespace_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_354_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_LookupNamespace_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11314,7 +11314,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 4750
+.word 4738
 _p_355_plt_System_Private_Xml_System_Array_Sort_System_Xml_XmlTextReaderImpl_NodeData_System_Xml_XmlTextReaderImpl_NodeData___int_int_llvm:
 	.globl _p_355_plt_System_Private_Xml_System_Array_Sort_System_Xml_XmlTextReaderImpl_NodeData_System_Xml_XmlTextReaderImpl_NodeData___int_int_llvm
 .private_extern _p_355_plt_System_Private_Xml_System_Array_Sort_System_Xml_XmlTextReaderImpl_NodeData_System_Xml_XmlTextReaderImpl_NodeData___int_int_llvm
@@ -11325,7 +11325,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 4753
+.word 4741
 _p_356_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_int_int_llvm:
 	.globl _p_356_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_int_int_llvm
 .private_extern _p_356_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_int_int_llvm
@@ -11336,7 +11336,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 4765
+.word 4753
 _p_357_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddNamespace_string_string_System_Xml_XmlTextReaderImpl_NodeData_llvm:
 	.globl _p_357_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddNamespace_string_string_System_Xml_XmlTextReaderImpl_NodeData_llvm
 .private_extern _p_357_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddNamespace_string_string_System_Xml_XmlTextReaderImpl_NodeData_llvm
@@ -11347,7 +11347,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 4768
+.word 4756
 _p_358_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushXmlContext_llvm:
 	.globl _p_358_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushXmlContext_llvm
 .private_extern _p_358_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PushXmlContext_llvm
@@ -11358,7 +11358,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 4771
+.word 4759
 _p_359_plt_System_Private_Xml_System_Text_StringBuilder_ToString_int_int_llvm:
 	.globl _p_359_plt_System_Private_Xml_System_Text_StringBuilder_ToString_int_int_llvm
 .private_extern _p_359_plt_System_Private_Xml_System_Text_StringBuilder_ToString_int_int_llvm
@@ -11369,7 +11369,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 4774
+.word 4762
 _p_360_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowInvalidChar_char___int_int_llvm:
 	.globl _p_360_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowInvalidChar_char___int_int_llvm
 .private_extern _p_360_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowInvalidChar_char___int_int_llvm
@@ -11380,7 +11380,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 4779
+.word 4767
 _p_361_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEntityName_llvm:
 	.globl _p_361_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEntityName_llvm
 .private_extern _p_361_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseEntityName_llvm
@@ -11391,7 +11391,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 4782
+.word 4770
 _p_362_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseText_int__int__int__llvm:
 	.globl _p_362_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseText_int__int__int__llvm
 .private_extern _p_362_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseText_int__int__int__llvm
@@ -11402,7 +11402,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 4785
+.word 4773
 _p_363_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetTextNodeType_int_llvm:
 	.globl _p_363_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetTextNodeType_int_llvm
 .private_extern _p_363_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetTextNodeType_int_llvm
@@ -11413,7 +11413,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 4788
+.word 4776
 _p_364_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetValueNode_System_Xml_XmlNodeType_char___int_int_llvm:
 	.globl _p_364_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetValueNode_System_Xml_XmlNodeType_char___int_int_llvm
 .private_extern _p_364_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_SetValueNode_System_Xml_XmlNodeType_char___int_int_llvm
@@ -11424,7 +11424,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 4791
+.word 4779
 _p_365_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ShiftBuffer_int_int_int_llvm:
 	.globl _p_365_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ShiftBuffer_int_int_int_llvm
 .private_extern _p_365_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ShiftBuffer_int_int_int_llvm
@@ -11435,7 +11435,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 4794
+.word 4782
 _p_366_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ZeroEndingStream_int_llvm:
 	.globl _p_366_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ZeroEndingStream_int_llvm
 .private_extern _p_366_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ZeroEndingStream_int_llvm
@@ -11446,7 +11446,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 4797
+.word 4785
 _p_367_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCharRefInline_int_int__System_Xml_XmlTextReaderImpl_EntityType__llvm:
 	.globl _p_367_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCharRefInline_int_int__System_Xml_XmlTextReaderImpl_EntityType__llvm
 .private_extern _p_367_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCharRefInline_int_int__System_Xml_XmlTextReaderImpl_EntityType__llvm
@@ -11457,7 +11457,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 4800
+.word 4788
 _p_368_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_MoveToNextContentNode_bool_llvm:
 	.globl _p_368_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_MoveToNextContentNode_bool_llvm
 .private_extern _p_368_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_MoveToNextContentNode_bool_llvm
@@ -11468,7 +11468,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 4803
+.word 4791
 _p_369_plt_System_Private_Xml_System_Enum_ToString_llvm:
 	.globl _p_369_plt_System_Private_Xml_System_Enum_ToString_llvm
 .private_extern _p_369_plt_System_Private_Xml_System_Enum_ToString_llvm
@@ -11479,7 +11479,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 4806
+.word 4794
 _p_370_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetWhitespaceType_llvm:
 	.globl _p_370_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetWhitespaceType_llvm
 .private_extern _p_370_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_GetWhitespaceType_llvm
@@ -11490,7 +11490,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 4811
+.word 4799
 _p_371_plt_System_Private_Xml_System_Xml_Schema_SchemaEntity__ctor_System_Xml_XmlQualifiedName_bool_llvm:
 	.globl _p_371_plt_System_Private_Xml_System_Xml_Schema_SchemaEntity__ctor_System_Xml_XmlQualifiedName_bool_llvm
 .private_extern _p_371_plt_System_Private_Xml_System_Xml_Schema_SchemaEntity__ctor_System_Xml_XmlQualifiedName_bool_llvm
@@ -11501,7 +11501,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 4814
+.word 4802
 _p_372_plt_System_Private_Xml_string_Equals_string_string_System_StringComparison_llvm:
 	.globl _p_372_plt_System_Private_Xml_string_Equals_string_string_System_StringComparison_llvm
 .private_extern _p_372_plt_System_Private_Xml_string_Equals_string_string_System_StringComparison_llvm
@@ -11512,7 +11512,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 4817
+.word 4805
 _p_373_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePIValue_int__int__llvm:
 	.globl _p_373_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePIValue_int__int__llvm
 .private_extern _p_373_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsePIValue_int__int__llvm
@@ -11523,7 +11523,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 4822
+.word 4810
 _p_374_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCDataOrComment_System_Xml_XmlNodeType_int__int__llvm:
 	.globl _p_374_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCDataOrComment_System_Xml_XmlNodeType_int__int__llvm
 .private_extern _p_374_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseCDataOrComment_System_Xml_XmlNodeType_int__int__llvm
@@ -11534,7 +11534,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 4825
+.word 4813
 _p_375_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipDtd_llvm:
 	.globl _p_375_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipDtd_llvm
 .private_extern _p_375_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipDtd_llvm
@@ -11545,7 +11545,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 4828
+.word 4816
 _p_376_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDtd_llvm:
 	.globl _p_376_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDtd_llvm
 .private_extern _p_376_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseDtd_llvm
@@ -11556,7 +11556,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 4831
+.word 4819
 _p_377_plt_System_Private_Xml_System_Xml_DtdParser_Create_llvm:
 	.globl _p_377_plt_System_Private_Xml_System_Xml_DtdParser_Create_llvm
 .private_extern _p_377_plt_System_Private_Xml_System_Xml_DtdParser_Create_llvm
@@ -11567,7 +11567,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 4834
+.word 4822
 _p_378_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipUntil_char_bool_llvm:
 	.globl _p_378_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipUntil_char_bool_llvm
 .private_extern _p_378_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipUntil_char_bool_llvm
@@ -11578,7 +11578,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 4837
+.word 4825
 _p_379_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipPublicOrSystemIdLiteral_llvm:
 	.globl _p_379_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipPublicOrSystemIdLiteral_llvm
 .private_extern _p_379_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SkipPublicOrSystemIdLiteral_llvm
@@ -11589,7 +11589,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 4840
+.word 4828
 _p_380_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNamedCharRefInline_int_bool_System_Text_StringBuilder_llvm:
 	.globl _p_380_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNamedCharRefInline_int_bool_System_Text_StringBuilder_llvm
 .private_extern _p_380_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNamedCharRefInline_int_bool_System_Text_StringBuilder_llvm
@@ -11600,7 +11600,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 4843
+.word 4831
 _p_381_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNumericCharRefInline_int_bool_System_Text_StringBuilder_int__System_Xml_XmlTextReaderImpl_EntityType__llvm:
 	.globl _p_381_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNumericCharRefInline_int_bool_System_Text_StringBuilder_int__System_Xml_XmlTextReaderImpl_EntityType__llvm
 .private_extern _p_381_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseNumericCharRefInline_int_bool_System_Text_StringBuilder_int__System_Xml_XmlTextReaderImpl_EntityType__llvm
@@ -11611,7 +11611,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 4846
+.word 4834
 _p_382_plt_System_Private_Xml_System_Xml_XmlCharType_SplitSurrogateChar_int_char__char__llvm:
 	.globl _p_382_plt_System_Private_Xml_System_Xml_XmlCharType_SplitSurrogateChar_int_char__char__llvm
 .private_extern _p_382_plt_System_Private_Xml_System_Xml_XmlCharType_SplitSurrogateChar_int_char__char__llvm
@@ -11622,7 +11622,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 4849
+.word 4837
 _p_383_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_System_Exception_llvm:
 	.globl _p_383_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_System_Exception_llvm
 .private_extern _p_383_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_Throw_string_string_System_Exception_llvm
@@ -11633,7 +11633,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 4851
+.word 4839
 _p_384_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseQName_bool_int_int__llvm:
 	.globl _p_384_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseQName_bool_int_int__llvm
 .private_extern _p_384_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseQName_bool_int_int__llvm
@@ -11644,7 +11644,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 4854
+.word 4842
 _p_385_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReadDataInName_int__llvm:
 	.globl _p_385_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReadDataInName_int__llvm
 .private_extern _p_385_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReadDataInName_int__llvm
@@ -11655,7 +11655,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 4857
+.word 4845
 _p_386_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AllocNode_int_int_llvm:
 	.globl _p_386_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AllocNode_int_int_llvm
 .private_extern _p_386_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AllocNode_int_int_llvm
@@ -11666,7 +11666,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 4860
+.word 4848
 _p_387_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttribute_string_string_string_llvm:
 	.globl _p_387_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttribute_string_string_string_llvm
 .private_extern _p_387_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddAttribute_string_string_string_llvm
@@ -11677,7 +11677,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 4863
+.word 4851
 _p_388_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_PopScope_llvm:
 	.globl _p_388_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_PopScope_llvm
 .private_extern _p_388_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_PopScope_llvm
@@ -11688,7 +11688,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 4866
+.word 4854
 _p_389_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopXmlContext_llvm:
 	.globl _p_389_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopXmlContext_llvm
 .private_extern _p_389_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_PopXmlContext_llvm
@@ -11699,7 +11699,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 4869
+.word 4857
 _p_390_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_Clear_System_Xml_XmlNodeType_llvm:
 	.globl _p_390_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_Clear_System_Xml_XmlNodeType_llvm
 .private_extern _p_390_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_Clear_System_Xml_XmlNodeType_llvm
@@ -11710,7 +11710,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 4872
+.word 4860
 _p_391_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_AddNamespace_string_string_llvm:
 	.globl _p_391_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_AddNamespace_string_string_llvm
 .private_extern _p_391_plt_System_Private_Xml_System_Xml_XmlNamespaceManager_AddNamespace_string_string_llvm
@@ -11721,7 +11721,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 4875
+.word 4863
 _p_392_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReThrow_System_Exception_int_int_llvm:
 	.globl _p_392_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReThrow_System_Exception_int_int_llvm
 .private_extern _p_392_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ReThrow_System_Exception_int_int_llvm
@@ -11732,7 +11732,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 4878
+.word 4866
 _p_393_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FullAttributeCleanup_llvm:
 	.globl _p_393_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FullAttributeCleanup_llvm
 .private_extern _p_393_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_FullAttributeCleanup_llvm
@@ -11743,7 +11743,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 4881
+.word 4869
 _p_394_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_XmlContext__ctor_System_Xml_XmlTextReaderImpl_XmlContext_llvm:
 	.globl _p_394_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_XmlContext__ctor_System_Xml_XmlTextReaderImpl_XmlContext_llvm
 .private_extern _p_394_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_XmlContext__ctor_System_Xml_XmlTextReaderImpl_XmlContext_llvm
@@ -11754,7 +11754,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 4884
+.word 4872
 _p_395_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OpenAndPush_System_Uri_llvm:
 	.globl _p_395_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OpenAndPush_System_Uri_llvm
 .private_extern _p_395_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_OpenAndPush_System_Uri_llvm
@@ -11765,7 +11765,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 4887
+.word 4875
 _p_396_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_string___System_Exception_llvm:
 	.globl _p_396_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_string___System_Exception_llvm
 .private_extern _p_396_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ThrowWithoutLineInfo_string_string___System_Exception_llvm
@@ -11776,7 +11776,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 4890
+.word 4878
 _p_397_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___System_Exception_int_int_llvm:
 	.globl _p_397_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___System_Exception_int_int_llvm
 .private_extern _p_397_plt_System_Private_Xml_System_Xml_XmlException__ctor_string_string___System_Exception_int_int_llvm
@@ -11787,7 +11787,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 4893
+.word 4881
 _p_398_plt_System_Private_Xml_System_Xml_XmlResolver_SupportsType_System_Uri_System_Type_llvm:
 	.globl _p_398_plt_System_Private_Xml_System_Xml_XmlResolver_SupportsType_System_Uri_System_Type_llvm
 .private_extern _p_398_plt_System_Private_Xml_System_Xml_XmlResolver_SupportsType_System_Uri_System_Type_llvm
@@ -11798,7 +11798,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 4896
+.word 4884
 _p_399_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_System_IO_Stream_System_Text_Encoding_llvm:
 	.globl _p_399_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_System_IO_Stream_System_Text_Encoding_llvm
 .private_extern _p_399_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_InitStreamInput_System_Uri_System_IO_Stream_System_Text_Encoding_llvm
@@ -11809,7 +11809,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 4899
+.word 4887
 _p_400_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_RegisterEntity_System_Xml_IDtdEntityInfo_llvm:
 	.globl _p_400_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_RegisterEntity_System_Xml_IDtdEntityInfo_llvm
 .private_extern _p_400_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_RegisterEntity_System_Xml_IDtdEntityInfo_llvm
@@ -11820,7 +11820,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 4902
+.word 4890
 _p_401_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_UnregisterEntity_llvm:
 	.globl _p_401_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_UnregisterEntity_llvm
 .private_extern _p_401_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_UnregisterEntity_llvm
@@ -11831,7 +11831,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 4905
+.word 4893
 _p_402_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_Add_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_llvm:
 	.globl _p_402_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_Add_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_llvm
 .private_extern _p_402_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_Add_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_llvm
@@ -11842,7 +11842,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 4908
+.word 4896
 _p_403_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo__ctor_llvm:
 	.globl _p_403_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo__ctor_llvm
 .private_extern _p_403_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo__ctor_llvm
@@ -11853,7 +11853,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 4919
+.word 4907
 _p_404_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_ContainsKey_System_Xml_IDtdEntityInfo_llvm:
 	.globl _p_404_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_ContainsKey_System_Xml_IDtdEntityInfo_llvm
 .private_extern _p_404_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_ContainsKey_System_Xml_IDtdEntityInfo_llvm
@@ -11864,7 +11864,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 4930
+.word 4918
 _p_405_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_Remove_System_Xml_IDtdEntityInfo_llvm:
 	.globl _p_405_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_Remove_System_Xml_IDtdEntityInfo_llvm
 .private_extern _p_405_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_IDtdEntityInfo_System_Xml_IDtdEntityInfo_Remove_System_Xml_IDtdEntityInfo_llvm
@@ -11875,7 +11875,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 4941
+.word 4929
 _p_406_plt_System_Private_Xml__jit_icall_mono_gc_wbarrier_range_copy_llvm:
 	.globl _p_406_plt_System_Private_Xml__jit_icall_mono_gc_wbarrier_range_copy_llvm
 .private_extern _p_406_plt_System_Private_Xml__jit_icall_mono_gc_wbarrier_range_copy_llvm
@@ -11886,7 +11886,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 4952
+.word 4940
 _p_407_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsingState_Clear_llvm:
 	.globl _p_407_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsingState_Clear_llvm
 .private_extern _p_407_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParsingState_Clear_llvm
@@ -11897,7 +11897,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 4955
+.word 4943
 _p_408_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_IncrementalRead_llvm:
 	.globl _p_408_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_IncrementalRead_llvm
 .private_extern _p_408_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_IncrementalRead_llvm
@@ -11908,7 +11908,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 4958
+.word 4946
 _p_409_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEndEntityNodeInAttribute_llvm:
 	.globl _p_409_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEndEntityNodeInAttribute_llvm
 .private_extern _p_409_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_SetupEndEntityNodeInAttribute_llvm
@@ -11919,7 +11919,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 4961
+.word 4949
 _p_410_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseUnexpectedToken_llvm:
 	.globl _p_410_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseUnexpectedToken_llvm
 .private_extern _p_410_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_ParseUnexpectedToken_llvm
@@ -11930,7 +11930,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 4964
+.word 4952
 _p_411_plt_System_Private_Xml_System_Xml_XmlParserContext_get_DocTypeName_llvm:
 	.globl _p_411_plt_System_Private_Xml_System_Xml_XmlParserContext_get_DocTypeName_llvm
 .private_extern _p_411_plt_System_Private_Xml_System_Xml_XmlParserContext_get_DocTypeName_llvm
@@ -11941,7 +11941,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 4967
+.word 4955
 _p_412_plt_System_Private_Xml_System_Xml_XmlParserContext_get_PublicId_llvm:
 	.globl _p_412_plt_System_Private_Xml_System_Xml_XmlParserContext_get_PublicId_llvm
 .private_extern _p_412_plt_System_Private_Xml_System_Xml_XmlParserContext_get_PublicId_llvm
@@ -11952,7 +11952,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 4970
+.word 4958
 _p_413_plt_System_Private_Xml_System_Xml_XmlParserContext_get_SystemId_llvm:
 	.globl _p_413_plt_System_Private_Xml_System_Xml_XmlParserContext_get_SystemId_llvm
 .private_extern _p_413_plt_System_Private_Xml_System_Xml_XmlParserContext_get_SystemId_llvm
@@ -11963,7 +11963,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 4973
+.word 4961
 _p_414_plt_System_Private_Xml_System_Xml_XmlParserContext_get_InternalSubset_llvm:
 	.globl _p_414_plt_System_Private_Xml_System_Xml_XmlParserContext_get_InternalSubset_llvm
 .private_extern _p_414_plt_System_Private_Xml_System_Xml_XmlParserContext_get_InternalSubset_llvm
@@ -11974,7 +11974,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 4976
+.word 4964
 _p_415_plt_System_Private_Xml_System_Xml_XmlParserContext_get_NamespaceManager_llvm:
 	.globl _p_415_plt_System_Private_Xml_System_Xml_XmlParserContext_get_NamespaceManager_llvm
 .private_extern _p_415_plt_System_Private_Xml_System_Xml_XmlParserContext_get_NamespaceManager_llvm
@@ -11985,7 +11985,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 4979
+.word 4967
 _p_416_plt_System_Private_Xml_System_Xml_XmlParserContext_get_NameTable_llvm:
 	.globl _p_416_plt_System_Private_Xml_System_Xml_XmlParserContext_get_NameTable_llvm
 .private_extern _p_416_plt_System_Private_Xml_System_Xml_XmlParserContext_get_NameTable_llvm
@@ -11996,7 +11996,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 4982
+.word 4970
 _p_417_plt_System_Private_Xml_System_Xml_XmlParserContext_get_XmlSpace_llvm:
 	.globl _p_417_plt_System_Private_Xml_System_Xml_XmlParserContext_get_XmlSpace_llvm
 .private_extern _p_417_plt_System_Private_Xml_System_Xml_XmlParserContext_get_XmlSpace_llvm
@@ -12007,7 +12007,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 4985
+.word 4973
 _p_418_plt_System_Private_Xml_System_Xml_XmlParserContext_get_XmlLang_llvm:
 	.globl _p_418_plt_System_Private_Xml_System_Xml_XmlParserContext_get_XmlLang_llvm
 .private_extern _p_418_plt_System_Private_Xml_System_Xml_XmlParserContext_get_XmlLang_llvm
@@ -12018,7 +12018,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 4988
+.word 4976
 _p_419_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributeInternal_string_string_string_string_int_int_int_int_bool_llvm:
 	.globl _p_419_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributeInternal_string_string_string_string_int_int_int_int_bool_llvm
 .private_extern _p_419_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_AddDefaultAttributeInternal_string_string_string_string_int_int_int_int_bool_llvm
@@ -12029,7 +12029,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 4991
+.word 4979
 _p_420_plt_System_Private_Xml_System_Array_BinarySearch_object_object___object_System_Collections_Generic_IComparer_1_object_llvm:
 	.globl _p_420_plt_System_Private_Xml_System_Array_BinarySearch_object_object___object_System_Collections_Generic_IComparer_1_object_llvm
 .private_extern _p_420_plt_System_Private_Xml_System_Array_BinarySearch_object_object___object_System_Collections_Generic_IComparer_1_object_llvm
@@ -12040,7 +12040,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 4994
+.word 4982
 _p_421_plt_System_Private_Xml_System_Uri_get_IsFile_llvm:
 	.globl _p_421_plt_System_Private_Xml_System_Uri_get_IsFile_llvm
 .private_extern _p_421_plt_System_Private_Xml_System_Uri_get_IsFile_llvm
@@ -12051,7 +12051,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 5006
+.word 4994
 _p_422_plt_System_Private_Xml_System_IO_TextReader_Dispose_llvm:
 	.globl _p_422_plt_System_Private_Xml_System_IO_TextReader_Dispose_llvm
 .private_extern _p_422_plt_System_Private_Xml_System_IO_TextReader_Dispose_llvm
@@ -12062,7 +12062,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 5011
+.word 4999
 _p_423_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_get_DtdParserProxy_BaseUri_llvm:
 	.globl _p_423_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_get_DtdParserProxy_BaseUri_llvm
 .private_extern _p_423_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_get_DtdParserProxy_BaseUri_llvm
@@ -12073,7 +12073,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 5016
+.word 5004
 _p_424_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnNewLine_int_llvm:
 	.globl _p_424_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnNewLine_int_llvm
 .private_extern _p_424_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnNewLine_int_llvm
@@ -12084,7 +12084,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 5019
+.word 5007
 _p_425_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ReadData_llvm:
 	.globl _p_425_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ReadData_llvm
 .private_extern _p_425_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ReadData_llvm
@@ -12095,7 +12095,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 5022
+.word 5010
 _p_426_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseNumericCharRef_System_Text_StringBuilder_llvm:
 	.globl _p_426_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseNumericCharRef_System_Text_StringBuilder_llvm
 .private_extern _p_426_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseNumericCharRef_System_Text_StringBuilder_llvm
@@ -12106,7 +12106,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 5025
+.word 5013
 _p_427_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseNamedCharRef_bool_System_Text_StringBuilder_llvm:
 	.globl _p_427_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseNamedCharRef_bool_System_Text_StringBuilder_llvm
 .private_extern _p_427_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseNamedCharRef_bool_System_Text_StringBuilder_llvm
@@ -12117,7 +12117,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 5028
+.word 5016
 _p_428_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParsePI_System_Text_StringBuilder_llvm:
 	.globl _p_428_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParsePI_System_Text_StringBuilder_llvm
 .private_extern _p_428_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParsePI_System_Text_StringBuilder_llvm
@@ -12128,7 +12128,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 5031
+.word 5019
 _p_429_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseComment_System_Text_StringBuilder_llvm:
 	.globl _p_429_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseComment_System_Text_StringBuilder_llvm
 .private_extern _p_429_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_ParseComment_System_Text_StringBuilder_llvm
@@ -12139,7 +12139,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 5034
+.word 5022
 _p_430_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushEntity_System_Xml_IDtdEntityInfo_int__llvm:
 	.globl _p_430_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushEntity_System_Xml_IDtdEntityInfo_int__llvm
 .private_extern _p_430_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushEntity_System_Xml_IDtdEntityInfo_int__llvm
@@ -12150,7 +12150,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 5037
+.word 5025
 _p_431_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PopEntity_System_Xml_IDtdEntityInfo__int__llvm:
 	.globl _p_431_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PopEntity_System_Xml_IDtdEntityInfo__int__llvm
 .private_extern _p_431_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PopEntity_System_Xml_IDtdEntityInfo__int__llvm
@@ -12161,7 +12161,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 5040
+.word 5028
 _p_432_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushExternalSubset_string_string_llvm:
 	.globl _p_432_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushExternalSubset_string_string_llvm
 .private_extern _p_432_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushExternalSubset_string_string_llvm
@@ -12172,7 +12172,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 5043
+.word 5031
 _p_433_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushInternalDtd_string_string_llvm:
 	.globl _p_433_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushInternalDtd_string_string_llvm
 .private_extern _p_433_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_PushInternalDtd_string_string_llvm
@@ -12183,7 +12183,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 5046
+.word 5034
 _p_434_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_Throw_System_Exception_llvm:
 	.globl _p_434_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_Throw_System_Exception_llvm
 .private_extern _p_434_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_Throw_System_Exception_llvm
@@ -12194,7 +12194,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 5049
+.word 5037
 _p_435_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnSystemId_string_System_Xml_LineInfo_System_Xml_LineInfo_llvm:
 	.globl _p_435_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnSystemId_string_System_Xml_LineInfo_System_Xml_LineInfo_llvm
 .private_extern _p_435_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnSystemId_string_System_Xml_LineInfo_System_Xml_LineInfo_llvm
@@ -12205,7 +12205,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 5052
+.word 5040
 _p_436_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnPublicId_string_System_Xml_LineInfo_System_Xml_LineInfo_llvm:
 	.globl _p_436_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnPublicId_string_System_Xml_LineInfo_System_Xml_LineInfo_llvm
 .private_extern _p_436_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_DtdParserProxy_OnPublicId_string_System_Xml_LineInfo_System_Xml_LineInfo_llvm
@@ -12216,7 +12216,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 5055
+.word 5043
 _p_437_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_StripSpaces_string_llvm:
 	.globl _p_437_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_StripSpaces_string_llvm
 .private_extern _p_437_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_StripSpaces_string_llvm
@@ -12227,7 +12227,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 5058
+.word 5046
 _p_438_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_StripSpaces_char___int_int__llvm:
 	.globl _p_438_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_StripSpaces_char___int_int__llvm
 .private_extern _p_438_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_StripSpaces_char___int_int__llvm
@@ -12238,7 +12238,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+0
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 5061
+.word 5049
 _p_439_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_ClearName_llvm:
 	.globl _p_439_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_ClearName_llvm
 .private_extern _p_439_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_ClearName_llvm
@@ -12249,7 +12249,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 5064
+.word 5052
 _p_440_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_CreateNameWPrefix_System_Xml_XmlNameTable_llvm:
 	.globl _p_440_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_CreateNameWPrefix_System_Xml_XmlNameTable_llvm
 .private_extern _p_440_plt_System_Private_Xml_System_Xml_XmlTextReaderImpl_NodeData_CreateNameWPrefix_System_Xml_XmlNameTable_llvm
@@ -12260,7 +12260,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 5067
+.word 5055
 _p_441_plt_System_Private_Xml_string_CompareOrdinal_string_string_llvm:
 	.globl _p_441_plt_System_Private_Xml_string_CompareOrdinal_string_string_llvm
 .private_extern _p_441_plt_System_Private_Xml_string_CompareOrdinal_string_string_llvm
@@ -12271,7 +12271,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 5070
+.word 5058
 _p_442_plt_System_Private_Xml_string_Compare_string_string_System_StringComparison_llvm:
 	.globl _p_442_plt_System_Private_Xml_string_Compare_string_string_System_StringComparison_llvm
 .private_extern _p_442_plt_System_Private_Xml_string_Compare_string_string_System_StringComparison_llvm
@@ -12282,7 +12282,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 5075
+.word 5063
 _p_443_plt_System_Private_Xml_System_Xml_DtdParser__ctor_llvm:
 	.globl _p_443_plt_System_Private_Xml_System_Xml_DtdParser__ctor_llvm
 .private_extern _p_443_plt_System_Private_Xml_System_Xml_DtdParser__ctor_llvm
@@ -12293,7 +12293,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 5080
+.word 5068
 _p_444_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo__ctor_llvm:
 	.globl _p_444_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo__ctor_llvm
 .private_extern _p_444_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo__ctor_llvm
@@ -12304,7 +12304,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 5083
+.word 5071
 _p_445_plt_System_Private_Xml_System_Uri_op_Inequality_System_Uri_System_Uri_llvm:
 	.globl _p_445_plt_System_Private_Xml_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
 .private_extern _p_445_plt_System_Private_Xml_System_Uri_op_Inequality_System_Uri_System_Uri_llvm
@@ -12315,7 +12315,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 5086
+.word 5074
 _p_446_plt_System_Private_Xml_System_Xml_DtdParser_Initialize_System_Xml_IDtdParserAdapter_llvm:
 	.globl _p_446_plt_System_Private_Xml_System_Xml_DtdParser_Initialize_System_Xml_IDtdParserAdapter_llvm
 .private_extern _p_446_plt_System_Private_Xml_System_Xml_DtdParser_Initialize_System_Xml_IDtdParserAdapter_llvm
@@ -12326,7 +12326,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 5091
+.word 5079
 _p_447_plt_System_Private_Xml_System_Xml_XmlConvert_VerifyName_string_llvm:
 	.globl _p_447_plt_System_Private_Xml_System_Xml_XmlConvert_VerifyName_string_llvm
 .private_extern _p_447_plt_System_Private_Xml_System_Xml_XmlConvert_VerifyName_string_llvm
@@ -12337,7 +12337,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 5094
+.word 5082
 _p_448_plt_System_Private_Xml_System_Xml_XmlCharType_IsPublicId_string_llvm:
 	.globl _p_448_plt_System_Private_Xml_System_Xml_XmlCharType_IsPublicId_string_llvm
 .private_extern _p_448_plt_System_Private_Xml_System_Xml_XmlCharType_IsPublicId_string_llvm
@@ -12348,7 +12348,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 5096
+.word 5084
 _p_449_plt_System_Private_Xml_System_Xml_DtdParser_ThrowInvalidChar_int_string_int_llvm:
 	.globl _p_449_plt_System_Private_Xml_System_Xml_DtdParser_ThrowInvalidChar_int_string_int_llvm
 .private_extern _p_449_plt_System_Private_Xml_System_Xml_DtdParser_ThrowInvalidChar_int_string_int_llvm
@@ -12359,7 +12359,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 5098
+.word 5086
 _p_450_plt_System_Private_Xml_System_Xml_XmlCharType_IsOnlyCharData_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_450_plt_System_Private_Xml_System_Xml_XmlCharType_IsOnlyCharData_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_450_plt_System_Private_Xml_System_Xml_XmlCharType_IsOnlyCharData_System_ReadOnlySpan_1_char_llvm
@@ -12370,7 +12370,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 5101
+.word 5089
 _p_451_plt_System_Private_Xml_System_Xml_DtdParser_Parse_bool_llvm:
 	.globl _p_451_plt_System_Private_Xml_System_Xml_DtdParser_Parse_bool_llvm
 .private_extern _p_451_plt_System_Private_Xml_System_Xml_DtdParser_Parse_bool_llvm
@@ -12381,7 +12381,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 5103
+.word 5091
 _p_452_plt_System_Private_Xml_System_Xml_DtdParser_InitializeFreeFloatingDtd_string_string_string_string_string_System_Xml_IDtdParserAdapter_llvm:
 	.globl _p_452_plt_System_Private_Xml_System_Xml_DtdParser_InitializeFreeFloatingDtd_string_string_string_string_string_System_Xml_IDtdParserAdapter_llvm
 .private_extern _p_452_plt_System_Private_Xml_System_Xml_DtdParser_InitializeFreeFloatingDtd_string_string_string_string_string_System_Xml_IDtdParserAdapter_llvm
@@ -12392,7 +12392,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 5106
+.word 5094
 _p_453_plt_System_Private_Xml_System_Xml_DtdParser_ParseInDocumentDtd_bool_llvm:
 	.globl _p_453_plt_System_Private_Xml_System_Xml_DtdParser_ParseInDocumentDtd_bool_llvm
 .private_extern _p_453_plt_System_Private_Xml_System_Xml_DtdParser_ParseInDocumentDtd_bool_llvm
@@ -12403,7 +12403,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 5109
+.word 5097
 _p_454_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_Finish_llvm:
 	.globl _p_454_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_Finish_llvm
 .private_extern _p_454_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_Finish_llvm
@@ -12414,7 +12414,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 5112
+.word 5100
 _p_455_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_string_System_Xml_DtdParser_UndeclaredNotation_GetEnumerator_llvm:
 	.globl _p_455_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_string_System_Xml_DtdParser_UndeclaredNotation_GetEnumerator_llvm
 .private_extern _p_455_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_string_System_Xml_DtdParser_UndeclaredNotation_GetEnumerator_llvm
@@ -12425,7 +12425,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 5115
+.word 5103
 _p_456_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_string_System_Xml_DtdParser_UndeclaredNotation_MoveNext_llvm:
 	.globl _p_456_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_string_System_Xml_DtdParser_UndeclaredNotation_MoveNext_llvm
 .private_extern _p_456_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_string_System_Xml_DtdParser_UndeclaredNotation_MoveNext_llvm
@@ -12436,7 +12436,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 5126
+.word 5114
 _p_457_plt_System_Private_Xml_System_Xml_DtdParser_get_BaseUriStr_llvm:
 	.globl _p_457_plt_System_Private_Xml_System_Xml_DtdParser_get_BaseUriStr_llvm
 .private_extern _p_457_plt_System_Private_Xml_System_Xml_DtdParser_get_BaseUriStr_llvm
@@ -12447,7 +12447,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 5137
+.word 5125
 _p_458_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_System_Xml_Schema_XmlSeverityType_System_Xml_Schema_XmlSchemaException_llvm:
 	.globl _p_458_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_System_Xml_Schema_XmlSeverityType_System_Xml_Schema_XmlSchemaException_llvm
 .private_extern _p_458_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_System_Xml_Schema_XmlSeverityType_System_Xml_Schema_XmlSchemaException_llvm
@@ -12458,7 +12458,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 5140
+.word 5128
 _p_459_plt_System_Private_Xml_System_Xml_DtdParser_ParseFreeFloatingDtd_llvm:
 	.globl _p_459_plt_System_Private_Xml_System_Xml_DtdParser_ParseFreeFloatingDtd_llvm
 .private_extern _p_459_plt_System_Private_Xml_System_Xml_DtdParser_ParseFreeFloatingDtd_llvm
@@ -12469,7 +12469,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 5143
+.word 5131
 _p_460_plt_System_Private_Xml_System_Xml_DtdParser_LoadParsingBuffer_llvm:
 	.globl _p_460_plt_System_Private_Xml_System_Xml_DtdParser_LoadParsingBuffer_llvm
 .private_extern _p_460_plt_System_Private_Xml_System_Xml_DtdParser_LoadParsingBuffer_llvm
@@ -12480,7 +12480,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 5146
+.word 5134
 _p_461_plt_System_Private_Xml_System_Xml_DtdParser_GetToken_bool_llvm:
 	.globl _p_461_plt_System_Private_Xml_System_Xml_DtdParser_GetToken_bool_llvm
 .private_extern _p_461_plt_System_Private_Xml_System_Xml_DtdParser_GetToken_bool_llvm
@@ -12491,7 +12491,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 5149
+.word 5137
 _p_462_plt_System_Private_Xml_System_Xml_DtdParser_GetNameQualified_bool_llvm:
 	.globl _p_462_plt_System_Private_Xml_System_Xml_DtdParser_GetNameQualified_bool_llvm
 .private_extern _p_462_plt_System_Private_Xml_System_Xml_DtdParser_GetNameQualified_bool_llvm
@@ -12502,7 +12502,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 5152
+.word 5140
 _p_463_plt_System_Private_Xml_System_Xml_DtdParser_ParseExternalId_System_Xml_DtdParser_Token_System_Xml_DtdParser_Token_string__string__llvm:
 	.globl _p_463_plt_System_Private_Xml_System_Xml_DtdParser_ParseExternalId_System_Xml_DtdParser_Token_System_Xml_DtdParser_Token_string__string__llvm
 .private_extern _p_463_plt_System_Private_Xml_System_Xml_DtdParser_ParseExternalId_System_Xml_DtdParser_Token_System_Xml_DtdParser_Token_string__string__llvm
@@ -12513,7 +12513,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 5155
+.word 5143
 _p_464_plt_System_Private_Xml_System_Xml_DtdParser_SaveParsingBuffer_llvm:
 	.globl _p_464_plt_System_Private_Xml_System_Xml_DtdParser_SaveParsingBuffer_llvm
 .private_extern _p_464_plt_System_Private_Xml_System_Xml_DtdParser_SaveParsingBuffer_llvm
@@ -12524,7 +12524,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 5158
+.word 5146
 _p_465_plt_System_Private_Xml_System_Xml_DtdParser_ParseExternalSubset_llvm:
 	.globl _p_465_plt_System_Private_Xml_System_Xml_DtdParser_ParseExternalSubset_llvm
 .private_extern _p_465_plt_System_Private_Xml_System_Xml_DtdParser_ParseExternalSubset_llvm
@@ -12535,7 +12535,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 5161
+.word 5149
 _p_466_plt_System_Private_Xml_System_Xml_DtdParser_OnUnexpectedError_llvm:
 	.globl _p_466_plt_System_Private_Xml_System_Xml_DtdParser_OnUnexpectedError_llvm
 .private_extern _p_466_plt_System_Private_Xml_System_Xml_DtdParser_OnUnexpectedError_llvm
@@ -12546,7 +12546,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 5164
+.word 5152
 _p_467_plt_System_Private_Xml_System_Xml_DtdParser_ParseInternalSubset_llvm:
 	.globl _p_467_plt_System_Private_Xml_System_Xml_DtdParser_ParseInternalSubset_llvm
 .private_extern _p_467_plt_System_Private_Xml_System_Xml_DtdParser_ParseInternalSubset_llvm
@@ -12557,7 +12557,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 5167
+.word 5155
 _p_468_plt_System_Private_Xml_System_Xml_DtdParser_ParseSubset_llvm:
 	.globl _p_468_plt_System_Private_Xml_System_Xml_DtdParser_ParseSubset_llvm
 .private_extern _p_468_plt_System_Private_Xml_System_Xml_DtdParser_ParseSubset_llvm
@@ -12568,7 +12568,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 5170
+.word 5158
 _p_469_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_llvm:
 	.globl _p_469_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_llvm
 .private_extern _p_469_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_llvm
@@ -12579,7 +12579,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 5173
+.word 5161
 _p_470_plt_System_Private_Xml_System_Xml_DtdParser_ThrowUnexpectedToken_int_string_llvm:
 	.globl _p_470_plt_System_Private_Xml_System_Xml_DtdParser_ThrowUnexpectedToken_int_string_llvm
 .private_extern _p_470_plt_System_Private_Xml_System_Xml_DtdParser_ThrowUnexpectedToken_int_string_llvm
@@ -12590,7 +12590,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 5176
+.word 5164
 _p_471_plt_System_Private_Xml_System_Xml_DtdParser_SaveParsingBuffer_int_llvm:
 	.globl _p_471_plt_System_Private_Xml_System_Xml_DtdParser_SaveParsingBuffer_int_llvm
 .private_extern _p_471_plt_System_Private_Xml_System_Xml_DtdParser_SaveParsingBuffer_int_llvm
@@ -12601,7 +12601,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 5179
+.word 5167
 _p_472_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_int_System_Xml_Schema_XmlSeverityType_string_string_llvm:
 	.globl _p_472_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_int_System_Xml_Schema_XmlSeverityType_string_string_llvm
 .private_extern _p_472_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_int_System_Xml_Schema_XmlSeverityType_string_string_llvm
@@ -12612,7 +12612,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 5182
+.word 5170
 _p_473_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistDecl_llvm:
 	.globl _p_473_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistDecl_llvm
 .private_extern _p_473_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistDecl_llvm
@@ -12623,7 +12623,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 5185
+.word 5173
 _p_474_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementDecl_llvm:
 	.globl _p_474_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementDecl_llvm
 .private_extern _p_474_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementDecl_llvm
@@ -12634,7 +12634,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 5188
+.word 5176
 _p_475_plt_System_Private_Xml_System_Xml_DtdParser_ParseEntityDecl_llvm:
 	.globl _p_475_plt_System_Private_Xml_System_Xml_DtdParser_ParseEntityDecl_llvm
 .private_extern _p_475_plt_System_Private_Xml_System_Xml_DtdParser_ParseEntityDecl_llvm
@@ -12645,7 +12645,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 5191
+.word 5179
 _p_476_plt_System_Private_Xml_System_Xml_DtdParser_ParseNotationDecl_llvm:
 	.globl _p_476_plt_System_Private_Xml_System_Xml_DtdParser_ParseNotationDecl_llvm
 .private_extern _p_476_plt_System_Private_Xml_System_Xml_DtdParser_ParseNotationDecl_llvm
@@ -12656,7 +12656,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 5194
+.word 5182
 _p_477_plt_System_Private_Xml_System_Xml_DtdParser_ParseComment_llvm:
 	.globl _p_477_plt_System_Private_Xml_System_Xml_DtdParser_ParseComment_llvm
 .private_extern _p_477_plt_System_Private_Xml_System_Xml_DtdParser_ParseComment_llvm
@@ -12667,7 +12667,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 5197
+.word 5185
 _p_478_plt_System_Private_Xml_System_Xml_DtdParser_ParsePI_llvm:
 	.globl _p_478_plt_System_Private_Xml_System_Xml_DtdParser_ParsePI_llvm
 .private_extern _p_478_plt_System_Private_Xml_System_Xml_DtdParser_ParsePI_llvm
@@ -12678,7 +12678,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 5200
+.word 5188
 _p_479_plt_System_Private_Xml_System_Xml_DtdParser_ParseCondSection_llvm:
 	.globl _p_479_plt_System_Private_Xml_System_Xml_DtdParser_ParseCondSection_llvm
 .private_extern _p_479_plt_System_Private_Xml_System_Xml_DtdParser_ParseCondSection_llvm
@@ -12689,7 +12689,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 5203
+.word 5191
 _p_480_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl__llvm:
 	.globl _p_480_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl__llvm
 .private_extern _p_480_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl__llvm
@@ -12700,7 +12700,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 5206
+.word 5194
 _p_481_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef__ctor_System_Xml_XmlQualifiedName_string_llvm:
 	.globl _p_481_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef__ctor_System_Xml_XmlQualifiedName_string_llvm
 .private_extern _p_481_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef__ctor_System_Xml_XmlQualifiedName_string_llvm
@@ -12711,7 +12711,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 5217
+.word 5205
 _p_482_plt_System_Private_Xml_System_Xml_DtdParser_get_LineNo_llvm:
 	.globl _p_482_plt_System_Private_Xml_System_Xml_DtdParser_get_LineNo_llvm
 .private_extern _p_482_plt_System_Private_Xml_System_Xml_DtdParser_get_LineNo_llvm
@@ -12722,7 +12722,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 5220
+.word 5208
 _p_483_plt_System_Private_Xml_System_Xml_DtdParser_get_LinePos_llvm:
 	.globl _p_483_plt_System_Private_Xml_System_Xml_DtdParser_get_LinePos_llvm
 .private_extern _p_483_plt_System_Private_Xml_System_Xml_DtdParser_get_LinePos_llvm
@@ -12733,7 +12733,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 5223
+.word 5211
 _p_484_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_GetAttDef_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_484_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_GetAttDef_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_484_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_GetAttDef_System_Xml_XmlQualifiedName_llvm
@@ -12744,7 +12744,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 5226
+.word 5214
 _p_485_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistType_System_Xml_Schema_SchemaAttDef_System_Xml_Schema_SchemaElementDecl_bool_llvm:
 	.globl _p_485_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistType_System_Xml_Schema_SchemaAttDef_System_Xml_Schema_SchemaElementDecl_bool_llvm
 .private_extern _p_485_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistType_System_Xml_Schema_SchemaAttDef_System_Xml_Schema_SchemaElementDecl_bool_llvm
@@ -12755,7 +12755,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 5229
+.word 5217
 _p_486_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistDefault_System_Xml_Schema_SchemaAttDef_bool_llvm:
 	.globl _p_486_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistDefault_System_Xml_Schema_SchemaAttDef_bool_llvm
 .private_extern _p_486_plt_System_Private_Xml_System_Xml_DtdParser_ParseAttlistDefault_System_Xml_Schema_SchemaAttDef_bool_llvm
@@ -12766,7 +12766,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 5232
+.word 5220
 _p_487_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_AddAttDef_System_Xml_Schema_SchemaAttDef_llvm:
 	.globl _p_487_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_AddAttDef_System_Xml_Schema_SchemaAttDef_llvm
 .private_extern _p_487_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_AddAttDef_System_Xml_Schema_SchemaAttDef_llvm
@@ -12777,7 +12777,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 5235
+.word 5223
 _p_488_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_get_TokenizedType_llvm:
 	.globl _p_488_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_get_TokenizedType_llvm
 .private_extern _p_488_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_get_TokenizedType_llvm
@@ -12788,7 +12788,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 5238
+.word 5226
 _p_489_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_CheckXmlSpace_System_Xml_IValidationEventHandling_llvm:
 	.globl _p_489_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_CheckXmlSpace_System_Xml_IValidationEventHandling_llvm
 .private_extern _p_489_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_CheckXmlSpace_System_Xml_IValidationEventHandling_llvm
@@ -12799,7 +12799,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 5241
+.word 5229
 _p_490_plt_System_Private_Xml_System_Xml_DtdParser_Throw_string_string_int_int_llvm:
 	.globl _p_490_plt_System_Private_Xml_System_Xml_DtdParser_Throw_string_string_int_int_llvm
 .private_extern _p_490_plt_System_Private_Xml_System_Xml_DtdParser_Throw_string_string_int_int_llvm
@@ -12810,7 +12810,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 5244
+.word 5232
 _p_491_plt_System_Private_Xml_string_Trim_llvm:
 	.globl _p_491_plt_System_Private_Xml_string_Trim_llvm
 .private_extern _p_491_plt_System_Private_Xml_string_Trim_llvm
@@ -12821,7 +12821,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 5247
+.word 5235
 _p_492_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_System_Xml_XmlQualifiedName_string_llvm:
 	.globl _p_492_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_System_Xml_XmlQualifiedName_string_llvm
 .private_extern _p_492_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_System_Xml_XmlQualifiedName_string_llvm
@@ -12832,7 +12832,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 5252
+.word 5240
 _p_493_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_Add_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_llvm:
 	.globl _p_493_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_Add_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_llvm
 .private_extern _p_493_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_Add_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_llvm
@@ -12843,7 +12843,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 5255
+.word 5243
 _p_494_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_set_TokenizedType_System_Xml_XmlTokenizedType_llvm:
 	.globl _p_494_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_set_TokenizedType_System_Xml_XmlTokenizedType_llvm
 .private_extern _p_494_plt_System_Private_Xml_System_Xml_Schema_SchemaAttDef_set_TokenizedType_System_Xml_XmlTokenizedType_llvm
@@ -12854,7 +12854,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 5266
+.word 5254
 _p_495_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_GetBuiltInSimpleType_System_Xml_Schema_XmlTypeCode_llvm:
 	.globl _p_495_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_GetBuiltInSimpleType_System_Xml_Schema_XmlTypeCode_llvm
 .private_extern _p_495_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_GetBuiltInSimpleType_System_Xml_Schema_XmlTypeCode_llvm
@@ -12865,7 +12865,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 5269
+.word 5257
 _p_496_plt_System_Private_Xml_System_Xml_DtdParser_GetNameString_llvm:
 	.globl _p_496_plt_System_Private_Xml_System_Xml_DtdParser_GetNameString_llvm
 .private_extern _p_496_plt_System_Private_Xml_System_Xml_DtdParser_GetNameString_llvm
@@ -12876,7 +12876,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 5272
+.word 5260
 _p_497_plt_System_Private_Xml_System_Xml_Schema_SchemaDeclBase_AddValue_string_llvm:
 	.globl _p_497_plt_System_Private_Xml_System_Xml_Schema_SchemaDeclBase_AddValue_string_llvm
 .private_extern _p_497_plt_System_Private_Xml_System_Xml_Schema_SchemaDeclBase_AddValue_string_llvm
@@ -12887,7 +12887,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 5275
+.word 5263
 _p_498_plt_System_Private_Xml_System_Xml_DtdParser_GetNmtokenString_llvm:
 	.globl _p_498_plt_System_Private_Xml_System_Xml_DtdParser_GetNmtokenString_llvm
 .private_extern _p_498_plt_System_Private_Xml_System_Xml_DtdParser_GetNmtokenString_llvm
@@ -12898,7 +12898,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 5278
+.word 5266
 _p_499_plt_System_Private_Xml_System_Collections_Generic_List_1_string_Contains_string_llvm:
 	.globl _p_499_plt_System_Private_Xml_System_Collections_Generic_List_1_string_Contains_string_llvm
 .private_extern _p_499_plt_System_Private_Xml_System_Collections_Generic_List_1_string_Contains_string_llvm
@@ -12909,7 +12909,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 5281
+.word 5269
 _p_500_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_System_Xml_Schema_XmlSeverityType_string_string_llvm:
 	.globl _p_500_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_System_Xml_Schema_XmlSeverityType_string_string_llvm
 .private_extern _p_500_plt_System_Private_Xml_System_Xml_DtdParser_SendValidationEvent_System_Xml_Schema_XmlSeverityType_string_string_llvm
@@ -12920,7 +12920,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 5292
+.word 5280
 _p_501_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_Notations_llvm:
 	.globl _p_501_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_Notations_llvm
 .private_extern _p_501_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_Notations_llvm
@@ -12931,7 +12931,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 5295
+.word 5283
 _p_502_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation_ContainsKey_string_llvm:
 	.globl _p_502_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation_ContainsKey_string_llvm
 .private_extern _p_502_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation_ContainsKey_string_llvm
@@ -12942,7 +12942,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 5298
+.word 5286
 _p_503_plt_System_Private_Xml_System_Xml_DtdParser_AddUndeclaredNotation_string_llvm:
 	.globl _p_503_plt_System_Private_Xml_System_Xml_DtdParser_AddUndeclaredNotation_string_llvm
 .private_extern _p_503_plt_System_Private_Xml_System_Xml_DtdParser_AddUndeclaredNotation_string_llvm
@@ -12953,7 +12953,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 5309
+.word 5297
 _p_504_plt_System_Private_Xml_System_Xml_DtdParser_GetValue_llvm:
 	.globl _p_504_plt_System_Private_Xml_System_Xml_DtdParser_GetValue_llvm
 .private_extern _p_504_plt_System_Private_Xml_System_Xml_DtdParser_GetValue_llvm
@@ -12964,7 +12964,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 5312
+.word 5300
 _p_505_plt_System_Private_Xml_System_Xml_Schema_DtdValidator_SetDefaultTypedValue_System_Xml_Schema_SchemaAttDef_System_Xml_IDtdParserAdapter_llvm:
 	.globl _p_505_plt_System_Private_Xml_System_Xml_Schema_DtdValidator_SetDefaultTypedValue_System_Xml_Schema_SchemaAttDef_System_Xml_IDtdParserAdapter_llvm
 .private_extern _p_505_plt_System_Private_Xml_System_Xml_Schema_DtdValidator_SetDefaultTypedValue_System_Xml_Schema_SchemaAttDef_System_Xml_IDtdParserAdapter_llvm
@@ -12975,7 +12975,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 5315
+.word 5303
 _p_506_plt_System_Private_Xml_System_Xml_DtdParser_GetValueWithStrippedSpaces_llvm:
 	.globl _p_506_plt_System_Private_Xml_System_Xml_DtdParser_GetValueWithStrippedSpaces_llvm
 .private_extern _p_506_plt_System_Private_Xml_System_Xml_DtdParser_GetValueWithStrippedSpaces_llvm
@@ -12986,7 +12986,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 5318
+.word 5306
 _p_507_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Start_llvm:
 	.globl _p_507_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Start_llvm
 .private_extern _p_507_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Start_llvm
@@ -12997,7 +12997,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 5321
+.word 5309
 _p_508_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_OpenGroup_llvm:
 	.globl _p_508_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_OpenGroup_llvm
 .private_extern _p_508_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_OpenGroup_llvm
@@ -13008,7 +13008,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 5324
+.word 5312
 _p_509_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementOnlyContent_System_Xml_Schema_ParticleContentValidator_int_llvm:
 	.globl _p_509_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementOnlyContent_System_Xml_Schema_ParticleContentValidator_int_llvm
 .private_extern _p_509_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementOnlyContent_System_Xml_Schema_ParticleContentValidator_int_llvm
@@ -13019,7 +13019,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 5327
+.word 5315
 _p_510_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Finish_bool_llvm:
 	.globl _p_510_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Finish_bool_llvm
 .private_extern _p_510_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Finish_bool_llvm
@@ -13030,7 +13030,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 5330
+.word 5318
 _p_511_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementMixedContent_System_Xml_Schema_ParticleContentValidator_int_llvm:
 	.globl _p_511_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementMixedContent_System_Xml_Schema_ParticleContentValidator_int_llvm
 .private_extern _p_511_plt_System_Private_Xml_System_Xml_DtdParser_ParseElementMixedContent_System_Xml_Schema_ParticleContentValidator_int_llvm
@@ -13041,7 +13041,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 5333
+.word 5321
 _p_512_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_Remove_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_512_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_Remove_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_512_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_Remove_System_Xml_XmlQualifiedName_llvm
@@ -13052,7 +13052,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 5336
+.word 5324
 _p_513_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Push_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_llvm:
 	.globl _p_513_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Push_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_llvm
 .private_extern _p_513_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Push_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_llvm
@@ -13063,7 +13063,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 5347
+.word 5335
 _p_514_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddName_System_Xml_XmlQualifiedName_object_llvm:
 	.globl _p_514_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddName_System_Xml_XmlQualifiedName_object_llvm
 .private_extern _p_514_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddName_System_Xml_XmlQualifiedName_object_llvm
@@ -13074,7 +13074,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 5358
+.word 5346
 _p_515_plt_System_Private_Xml_System_Xml_DtdParser_ParseHowMany_System_Xml_Schema_ParticleContentValidator_llvm:
 	.globl _p_515_plt_System_Private_Xml_System_Xml_DtdParser_ParseHowMany_System_Xml_Schema_ParticleContentValidator_llvm
 .private_extern _p_515_plt_System_Private_Xml_System_Xml_DtdParser_ParseHowMany_System_Xml_Schema_ParticleContentValidator_llvm
@@ -13085,7 +13085,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 5361
+.word 5349
 _p_516_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Pop_llvm:
 	.globl _p_516_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Pop_llvm
 .private_extern _p_516_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Pop_llvm
@@ -13096,7 +13096,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 5364
+.word 5352
 _p_517_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Peek_llvm:
 	.globl _p_517_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Peek_llvm
 .private_extern _p_517_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_DtdParser_ParseElementOnlyContent_LocalFrame_Peek_llvm
@@ -13107,7 +13107,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 5375
+.word 5363
 _p_518_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddSequence_llvm:
 	.globl _p_518_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddSequence_llvm
 .private_extern _p_518_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddSequence_llvm
@@ -13118,7 +13118,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 5386
+.word 5374
 _p_519_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CloseGroup_llvm:
 	.globl _p_519_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CloseGroup_llvm
 .private_extern _p_519_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CloseGroup_llvm
@@ -13129,7 +13129,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 5389
+.word 5377
 _p_520_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddChoice_llvm:
 	.globl _p_520_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddChoice_llvm
 .private_extern _p_520_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddChoice_llvm
@@ -13140,7 +13140,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 5392
+.word 5380
 _p_521_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddStar_llvm:
 	.globl _p_521_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddStar_llvm
 .private_extern _p_521_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddStar_llvm
@@ -13151,7 +13151,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 5395
+.word 5383
 _p_522_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddQMark_llvm:
 	.globl _p_522_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddQMark_llvm
 .private_extern _p_522_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddQMark_llvm
@@ -13162,7 +13162,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 5398
+.word 5386
 _p_523_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddPlus_llvm:
 	.globl _p_523_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddPlus_llvm
 .private_extern _p_523_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddPlus_llvm
@@ -13173,7 +13173,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 5401
+.word 5389
 _p_524_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Exists_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_524_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Exists_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_524_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Exists_System_Xml_XmlQualifiedName_llvm
@@ -13184,7 +13184,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 5404
+.word 5392
 _p_525_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_GeneralEntities_llvm:
 	.globl _p_525_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_GeneralEntities_llvm
 .private_extern _p_525_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_GeneralEntities_llvm
@@ -13195,7 +13195,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 5407
+.word 5395
 _p_526_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_TryAdd_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_llvm:
 	.globl _p_526_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_TryAdd_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_llvm
 .private_extern _p_526_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_TryAdd_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_llvm
@@ -13206,7 +13206,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 5410
+.word 5398
 _p_527_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_string_llvm:
 	.globl _p_527_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_string_llvm
 .private_extern _p_527_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_string_llvm
@@ -13217,7 +13217,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 5421
+.word 5409
 _p_528_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_ParameterEntities_llvm:
 	.globl _p_528_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_ParameterEntities_llvm
 .private_extern _p_528_plt_System_Private_Xml_System_Xml_Schema_SchemaInfo_get_ParameterEntities_llvm
@@ -13228,7 +13228,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 5424
+.word 5412
 _p_529_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_Remove_string_llvm:
 	.globl _p_529_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_Remove_string_llvm
 .private_extern _p_529_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_Remove_string_llvm
@@ -13239,7 +13239,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 5427
+.word 5415
 _p_530_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation_Add_string_System_Xml_Schema_SchemaNotation_llvm:
 	.globl _p_530_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation_Add_string_System_Xml_Schema_SchemaNotation_llvm
 .private_extern _p_530_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation_Add_string_System_Xml_Schema_SchemaNotation_llvm
@@ -13250,7 +13250,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 5438
+.word 5426
 _p_531_plt_System_Private_Xml_System_Xml_DtdParser_UndeclaredNotation__ctor_string_int_int_llvm:
 	.globl _p_531_plt_System_Private_Xml_System_Xml_DtdParser_UndeclaredNotation__ctor_string_int_int_llvm
 .private_extern _p_531_plt_System_Private_Xml_System_Xml_DtdParser_UndeclaredNotation__ctor_string_int_int_llvm
@@ -13261,7 +13261,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 5449
+.word 5437
 _p_532_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_TryGetValue_string_System_Xml_DtdParser_UndeclaredNotation__llvm:
 	.globl _p_532_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_TryGetValue_string_System_Xml_DtdParser_UndeclaredNotation__llvm
 .private_extern _p_532_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_TryGetValue_string_System_Xml_DtdParser_UndeclaredNotation__llvm
@@ -13272,7 +13272,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 5452
+.word 5440
 _p_533_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_Add_string_System_Xml_DtdParser_UndeclaredNotation_llvm:
 	.globl _p_533_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_Add_string_System_Xml_DtdParser_UndeclaredNotation_llvm
 .private_extern _p_533_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation_Add_string_System_Xml_DtdParser_UndeclaredNotation_llvm
@@ -13283,7 +13283,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 5463
+.word 5451
 _p_534_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation__ctor_llvm:
 	.globl _p_534_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation__ctor_llvm
 .private_extern _p_534_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_DtdParser_UndeclaredNotation__ctor_llvm
@@ -13294,7 +13294,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 5474
+.word 5462
 _p_535_plt_System_Private_Xml_System_Xml_DtdParser_get_SaveInternalSubsetValue_llvm:
 	.globl _p_535_plt_System_Private_Xml_System_Xml_DtdParser_get_SaveInternalSubsetValue_llvm
 .private_extern _p_535_plt_System_Private_Xml_System_Xml_DtdParser_get_SaveInternalSubsetValue_llvm
@@ -13305,7 +13305,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 5485
+.word 5473
 _p_536_plt_System_Private_Xml_System_Xml_DtdParser_ThrowUnexpectedToken_int_string_string_llvm:
 	.globl _p_536_plt_System_Private_Xml_System_Xml_DtdParser_ThrowUnexpectedToken_int_string_string_llvm
 .private_extern _p_536_plt_System_Private_Xml_System_Xml_DtdParser_ThrowUnexpectedToken_int_string_string_llvm
@@ -13316,7 +13316,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 5488
+.word 5476
 _p_537_plt_System_Private_Xml_char_ToString_char_llvm:
 	.globl _p_537_plt_System_Private_Xml_char_ToString_char_llvm
 .private_extern _p_537_plt_System_Private_Xml_char_ToString_char_llvm
@@ -13327,7 +13327,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 5491
+.word 5479
 _p_538_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_string___llvm:
 	.globl _p_538_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_string___llvm
 .private_extern _p_538_plt_System_Private_Xml_System_Xml_DtdParser_Throw_int_string_string___llvm
@@ -13338,7 +13338,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 5496
+.word 5484
 _p_539_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityEnd_bool_llvm:
 	.globl _p_539_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityEnd_bool_llvm
 .private_extern _p_539_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityEnd_bool_llvm
@@ -13349,7 +13349,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 5499
+.word 5487
 _p_540_plt_System_Private_Xml_System_Xml_DtdParser_ReadData_llvm:
 	.globl _p_540_plt_System_Private_Xml_System_Xml_DtdParser_ReadData_llvm
 .private_extern _p_540_plt_System_Private_Xml_System_Xml_DtdParser_ReadData_llvm
@@ -13360,7 +13360,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 5502
+.word 5490
 _p_541_plt_System_Private_Xml_System_Xml_DtdParser_ScanSubsetContent_llvm:
 	.globl _p_541_plt_System_Private_Xml_System_Xml_DtdParser_ScanSubsetContent_llvm
 .private_extern _p_541_plt_System_Private_Xml_System_Xml_DtdParser_ScanSubsetContent_llvm
@@ -13371,7 +13371,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 5505
+.word 5493
 _p_542_plt_System_Private_Xml_System_Xml_DtdParser_ScanNameExpected_llvm:
 	.globl _p_542_plt_System_Private_Xml_System_Xml_DtdParser_ScanNameExpected_llvm
 .private_extern _p_542_plt_System_Private_Xml_System_Xml_DtdParser_ScanNameExpected_llvm
@@ -13382,7 +13382,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 5508
+.word 5496
 _p_543_plt_System_Private_Xml_System_Xml_DtdParser_ScanQNameExpected_llvm:
 	.globl _p_543_plt_System_Private_Xml_System_Xml_DtdParser_ScanQNameExpected_llvm
 .private_extern _p_543_plt_System_Private_Xml_System_Xml_DtdParser_ScanQNameExpected_llvm
@@ -13393,7 +13393,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 5511
+.word 5499
 _p_544_plt_System_Private_Xml_System_Xml_DtdParser_ScanNmtokenExpected_llvm:
 	.globl _p_544_plt_System_Private_Xml_System_Xml_DtdParser_ScanNmtokenExpected_llvm
 .private_extern _p_544_plt_System_Private_Xml_System_Xml_DtdParser_ScanNmtokenExpected_llvm
@@ -13404,7 +13404,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 5514
+.word 5502
 _p_545_plt_System_Private_Xml_System_Xml_DtdParser_ScanDoctype1_llvm:
 	.globl _p_545_plt_System_Private_Xml_System_Xml_DtdParser_ScanDoctype1_llvm
 .private_extern _p_545_plt_System_Private_Xml_System_Xml_DtdParser_ScanDoctype1_llvm
@@ -13415,7 +13415,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 5517
+.word 5505
 _p_546_plt_System_Private_Xml_System_Xml_DtdParser_ScanDoctype2_llvm:
 	.globl _p_546_plt_System_Private_Xml_System_Xml_DtdParser_ScanDoctype2_llvm
 .private_extern _p_546_plt_System_Private_Xml_System_Xml_DtdParser_ScanDoctype2_llvm
@@ -13426,7 +13426,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 5520
+.word 5508
 _p_547_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement1_llvm:
 	.globl _p_547_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement1_llvm
 .private_extern _p_547_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement1_llvm
@@ -13437,7 +13437,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 5523
+.word 5511
 _p_548_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement2_llvm:
 	.globl _p_548_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement2_llvm
 .private_extern _p_548_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement2_llvm
@@ -13448,7 +13448,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 5526
+.word 5514
 _p_549_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement3_llvm:
 	.globl _p_549_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement3_llvm
 .private_extern _p_549_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement3_llvm
@@ -13459,7 +13459,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 5529
+.word 5517
 _p_550_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement4_llvm:
 	.globl _p_550_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement4_llvm
 .private_extern _p_550_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement4_llvm
@@ -13470,7 +13470,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 5532
+.word 5520
 _p_551_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement5_llvm:
 	.globl _p_551_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement5_llvm
 .private_extern _p_551_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement5_llvm
@@ -13481,7 +13481,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 5535
+.word 5523
 _p_552_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement6_llvm:
 	.globl _p_552_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement6_llvm
 .private_extern _p_552_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement6_llvm
@@ -13492,7 +13492,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 5538
+.word 5526
 _p_553_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement7_llvm:
 	.globl _p_553_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement7_llvm
 .private_extern _p_553_plt_System_Private_Xml_System_Xml_DtdParser_ScanElement7_llvm
@@ -13503,7 +13503,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 5541
+.word 5529
 _p_554_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist1_llvm:
 	.globl _p_554_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist1_llvm
 .private_extern _p_554_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist1_llvm
@@ -13514,7 +13514,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 5544
+.word 5532
 _p_555_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist2_llvm:
 	.globl _p_555_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist2_llvm
 .private_extern _p_555_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist2_llvm
@@ -13525,7 +13525,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 5547
+.word 5535
 _p_556_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist3_llvm:
 	.globl _p_556_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist3_llvm
 .private_extern _p_556_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist3_llvm
@@ -13536,7 +13536,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 5550
+.word 5538
 _p_557_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist4_llvm:
 	.globl _p_557_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist4_llvm
 .private_extern _p_557_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist4_llvm
@@ -13547,7 +13547,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 5553
+.word 5541
 _p_558_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist5_llvm:
 	.globl _p_558_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist5_llvm
 .private_extern _p_558_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist5_llvm
@@ -13558,7 +13558,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 5556
+.word 5544
 _p_559_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist6_llvm:
 	.globl _p_559_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist6_llvm
 .private_extern _p_559_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist6_llvm
@@ -13569,7 +13569,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 5559
+.word 5547
 _p_560_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist7_llvm:
 	.globl _p_560_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist7_llvm
 .private_extern _p_560_plt_System_Private_Xml_System_Xml_DtdParser_ScanAttlist7_llvm
@@ -13580,7 +13580,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 5562
+.word 5550
 _p_561_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity1_llvm:
 	.globl _p_561_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity1_llvm
 .private_extern _p_561_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity1_llvm
@@ -13591,7 +13591,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 5565
+.word 5553
 _p_562_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity2_llvm:
 	.globl _p_562_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity2_llvm
 .private_extern _p_562_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity2_llvm
@@ -13602,7 +13602,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 5568
+.word 5556
 _p_563_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity3_llvm:
 	.globl _p_563_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity3_llvm
 .private_extern _p_563_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntity3_llvm
@@ -13613,7 +13613,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 5571
+.word 5559
 _p_564_plt_System_Private_Xml_System_Xml_DtdParser_ScanNotation1_llvm:
 	.globl _p_564_plt_System_Private_Xml_System_Xml_DtdParser_ScanNotation1_llvm
 .private_extern _p_564_plt_System_Private_Xml_System_Xml_DtdParser_ScanNotation1_llvm
@@ -13624,7 +13624,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 5574
+.word 5562
 _p_565_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection1_llvm:
 	.globl _p_565_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection1_llvm
 .private_extern _p_565_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection1_llvm
@@ -13635,7 +13635,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 5577
+.word 5565
 _p_566_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection2_llvm:
 	.globl _p_566_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection2_llvm
 .private_extern _p_566_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection2_llvm
@@ -13646,7 +13646,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 5580
+.word 5568
 _p_567_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection3_llvm:
 	.globl _p_567_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection3_llvm
 .private_extern _p_567_plt_System_Private_Xml_System_Xml_DtdParser_ScanCondSection3_llvm
@@ -13657,7 +13657,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 5583
+.word 5571
 _p_568_plt_System_Private_Xml_System_Xml_DtdParser_ScanSystemId_llvm:
 	.globl _p_568_plt_System_Private_Xml_System_Xml_DtdParser_ScanSystemId_llvm
 .private_extern _p_568_plt_System_Private_Xml_System_Xml_DtdParser_ScanSystemId_llvm
@@ -13668,7 +13668,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 5586
+.word 5574
 _p_569_plt_System_Private_Xml_System_Xml_DtdParser_ScanPublicId1_llvm:
 	.globl _p_569_plt_System_Private_Xml_System_Xml_DtdParser_ScanPublicId1_llvm
 .private_extern _p_569_plt_System_Private_Xml_System_Xml_DtdParser_ScanPublicId1_llvm
@@ -13679,7 +13679,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 5589
+.word 5577
 _p_570_plt_System_Private_Xml_System_Xml_DtdParser_ScanPublicId2_llvm:
 	.globl _p_570_plt_System_Private_Xml_System_Xml_DtdParser_ScanPublicId2_llvm
 .private_extern _p_570_plt_System_Private_Xml_System_Xml_DtdParser_ScanPublicId2_llvm
@@ -13690,7 +13690,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 5592
+.word 5580
 _p_571_plt_System_Private_Xml_System_Xml_DtdParser_ScanClosingTag_llvm:
 	.globl _p_571_plt_System_Private_Xml_System_Xml_DtdParser_ScanClosingTag_llvm
 .private_extern _p_571_plt_System_Private_Xml_System_Xml_DtdParser_ScanClosingTag_llvm
@@ -13701,7 +13701,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 5595
+.word 5583
 _p_572_plt_System_Private_Xml_System_Xml_DtdParser_ParseUnexpectedToken_int_llvm:
 	.globl _p_572_plt_System_Private_Xml_System_Xml_DtdParser_ParseUnexpectedToken_int_llvm
 .private_extern _p_572_plt_System_Private_Xml_System_Xml_DtdParser_ParseUnexpectedToken_int_llvm
@@ -13712,7 +13712,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 5598
+.word 5586
 _p_573_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityReference_bool_bool_bool_llvm:
 	.globl _p_573_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityReference_bool_bool_bool_llvm
 .private_extern _p_573_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityReference_bool_bool_bool_llvm
@@ -13723,7 +13723,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 5601
+.word 5589
 _p_574_plt_System_Private_Xml_System_Xml_DtdParser_ThrowInvalidChar_char___int_int_llvm:
 	.globl _p_574_plt_System_Private_Xml_System_Xml_DtdParser_ThrowInvalidChar_char___int_int_llvm
 .private_extern _p_574_plt_System_Private_Xml_System_Xml_DtdParser_ThrowInvalidChar_char___int_int_llvm
@@ -13734,7 +13734,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 5604
+.word 5592
 _p_575_plt_System_Private_Xml_System_Xml_DtdParser_ScanName_llvm:
 	.globl _p_575_plt_System_Private_Xml_System_Xml_DtdParser_ScanName_llvm
 .private_extern _p_575_plt_System_Private_Xml_System_Xml_DtdParser_ScanName_llvm
@@ -13745,7 +13745,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 5607
+.word 5595
 _p_576_plt_System_Private_Xml_System_Xml_DtdParser_ScanQName_llvm:
 	.globl _p_576_plt_System_Private_Xml_System_Xml_DtdParser_ScanQName_llvm
 .private_extern _p_576_plt_System_Private_Xml_System_Xml_DtdParser_ScanQName_llvm
@@ -13756,7 +13756,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 5610
+.word 5598
 _p_577_plt_System_Private_Xml_System_Xml_DtdParser_ScanNmtoken_llvm:
 	.globl _p_577_plt_System_Private_Xml_System_Xml_DtdParser_ScanNmtoken_llvm
 .private_extern _p_577_plt_System_Private_Xml_System_Xml_DtdParser_ScanNmtoken_llvm
@@ -13767,7 +13767,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 5613
+.word 5601
 _p_578_plt_System_Private_Xml_System_Xml_DtdParser_EatSystemKeyword_llvm:
 	.globl _p_578_plt_System_Private_Xml_System_Xml_DtdParser_EatSystemKeyword_llvm
 .private_extern _p_578_plt_System_Private_Xml_System_Xml_DtdParser_EatSystemKeyword_llvm
@@ -13778,7 +13778,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 5616
+.word 5604
 _p_579_plt_System_Private_Xml_System_Xml_DtdParser_EatPublicKeyword_llvm:
 	.globl _p_579_plt_System_Private_Xml_System_Xml_DtdParser_EatPublicKeyword_llvm
 .private_extern _p_579_plt_System_Private_Xml_System_Xml_DtdParser_EatPublicKeyword_llvm
@@ -13789,7 +13789,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 5619
+.word 5607
 _p_580_plt_System_Private_Xml_System_Xml_DtdParser_ScanLiteral_System_Xml_DtdParser_LiteralType_llvm:
 	.globl _p_580_plt_System_Private_Xml_System_Xml_DtdParser_ScanLiteral_System_Xml_DtdParser_LiteralType_llvm
 .private_extern _p_580_plt_System_Private_Xml_System_Xml_DtdParser_ScanLiteral_System_Xml_DtdParser_LiteralType_llvm
@@ -13800,7 +13800,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 5622
+.word 5610
 _p_581_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntityName_llvm:
 	.globl _p_581_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntityName_llvm
 .private_extern _p_581_plt_System_Private_Xml_System_Xml_DtdParser_ScanEntityName_llvm
@@ -13811,7 +13811,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 5625
+.word 5613
 _p_582_plt_System_Private_Xml_System_Xml_DtdParser_VerifyEntityReference_System_Xml_XmlQualifiedName_bool_bool_bool_llvm:
 	.globl _p_582_plt_System_Private_Xml_System_Xml_DtdParser_VerifyEntityReference_System_Xml_XmlQualifiedName_bool_bool_bool_llvm
 .private_extern _p_582_plt_System_Private_Xml_System_Xml_DtdParser_VerifyEntityReference_System_Xml_XmlQualifiedName_bool_bool_bool_llvm
@@ -13822,7 +13822,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 5628
+.word 5616
 _p_583_plt_System_Private_Xml_System_Xml_DtdParser_ScanQName_bool_llvm:
 	.globl _p_583_plt_System_Private_Xml_System_Xml_DtdParser_ScanQName_bool_llvm
 .private_extern _p_583_plt_System_Private_Xml_System_Xml_DtdParser_ScanQName_bool_llvm
@@ -13833,7 +13833,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 5631
+.word 5619
 _p_584_plt_System_Private_Xml_System_Xml_DtdParser_ReadDataInName_llvm:
 	.globl _p_584_plt_System_Private_Xml_System_Xml_DtdParser_ReadDataInName_llvm
 .private_extern _p_584_plt_System_Private_Xml_System_Xml_DtdParser_ReadDataInName_llvm
@@ -13844,7 +13844,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 5634
+.word 5622
 _p_585_plt_System_Private_Xml_System_Xml_DtdParser_StripSpaces_string_llvm:
 	.globl _p_585_plt_System_Private_Xml_System_Xml_DtdParser_StripSpaces_string_llvm
 .private_extern _p_585_plt_System_Private_Xml_System_Xml_DtdParser_StripSpaces_string_llvm
@@ -13855,7 +13855,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 5637
+.word 5625
 _p_586_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityReference_System_Xml_XmlQualifiedName_bool_bool_bool_llvm:
 	.globl _p_586_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityReference_System_Xml_XmlQualifiedName_bool_bool_bool_llvm
 .private_extern _p_586_plt_System_Private_Xml_System_Xml_DtdParser_HandleEntityReference_System_Xml_XmlQualifiedName_bool_bool_bool_llvm
@@ -13866,7 +13866,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 5640
+.word 5628
 _p_587_plt_System_Private_Xml_System_Xml_DtdParser_get_ParsingTopLevelMarkup_llvm:
 	.globl _p_587_plt_System_Private_Xml_System_Xml_DtdParser_get_ParsingTopLevelMarkup_llvm
 .private_extern _p_587_plt_System_Private_Xml_System_Xml_DtdParser_get_ParsingTopLevelMarkup_llvm
@@ -13877,7 +13877,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 5643
+.word 5631
 _p_588_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity__llvm:
 	.globl _p_588_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity__llvm
 .private_extern _p_588_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity__llvm
@@ -13888,7 +13888,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 5646
+.word 5634
 _p_589_plt_System_Private_Xml_System_Xml_XmlQualifiedName_get_IsEmpty_llvm:
 	.globl _p_589_plt_System_Private_Xml_System_Xml_XmlQualifiedName_get_IsEmpty_llvm
 .private_extern _p_589_plt_System_Private_Xml_System_Xml_XmlQualifiedName_get_IsEmpty_llvm
@@ -13899,7 +13899,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 5657
+.word 5645
 _p_590_plt_System_Private_Xml_System_Xml_Schema_BitSet_Get_int_llvm:
 	.globl _p_590_plt_System_Private_Xml_System_Xml_Schema_BitSet_Get_int_llvm
 .private_extern _p_590_plt_System_Private_Xml_System_Xml_Schema_BitSet_Get_int_llvm
@@ -13910,7 +13910,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 5660
+.word 5648
 _p_591_plt_System_Private_Xml_System_Xml_Schema_BitSet_EnsureLength_int_llvm:
 	.globl _p_591_plt_System_Private_Xml_System_Xml_Schema_BitSet_EnsureLength_int_llvm
 .private_extern _p_591_plt_System_Private_Xml_System_Xml_Schema_BitSet_EnsureLength_int_llvm
@@ -13921,7 +13921,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 5663
+.word 5651
 _p_592_plt_System_Private_Xml_System_Array_Clone_llvm:
 	.globl _p_592_plt_System_Private_Xml_System_Array_Clone_llvm
 .private_extern _p_592_plt_System_Private_Xml_System_Array_Clone_llvm
@@ -13932,7 +13932,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 5666
+.word 5654
 _p_593_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int__ctor_llvm:
 	.globl _p_593_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int__ctor_llvm
 .private_extern _p_593_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int__ctor_llvm
@@ -13943,7 +13943,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 5671
+.word 5659
 _p_594_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_TryGetValue_System_Xml_XmlQualifiedName_int__llvm:
 	.globl _p_594_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_TryGetValue_System_Xml_XmlQualifiedName_int__llvm
 .private_extern _p_594_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_TryGetValue_System_Xml_XmlQualifiedName_int__llvm
@@ -13954,7 +13954,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 5682
+.word 5670
 _p_595_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_Add_System_Xml_XmlQualifiedName_int_llvm:
 	.globl _p_595_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_Add_System_Xml_XmlQualifiedName_int_llvm
 .private_extern _p_595_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_Add_System_Xml_XmlQualifiedName_int_llvm
@@ -13965,7 +13965,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 5693
+.word 5681
 _p_596_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddWildcard_string_object_llvm:
 	.globl _p_596_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddWildcard_string_object_llvm
 .private_extern _p_596_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddWildcard_string_object_llvm
@@ -13976,7 +13976,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 5704
+.word 5692
 _p_597_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_get_Enumerate_llvm:
 	.globl _p_597_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_get_Enumerate_llvm
 .private_extern _p_597_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_get_Enumerate_llvm
@@ -13987,7 +13987,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 5707
+.word 5695
 _p_598_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_Add_string_int_llvm:
 	.globl _p_598_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_Add_string_int_llvm
 .private_extern _p_598_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_Add_string_int_llvm
@@ -13998,7 +13998,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 5710
+.word 5698
 _p_599_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int__ctor_llvm:
 	.globl _p_599_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int__ctor_llvm
 .private_extern _p_599_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int__ctor_llvm
@@ -14009,7 +14009,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 5721
+.word 5709
 _p_600_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_GetEnumerator_llvm:
 	.globl _p_600_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_GetEnumerator_llvm
 .private_extern _p_600_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_GetEnumerator_llvm
@@ -14020,7 +14020,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 5732
+.word 5720
 _p_601_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_GetEnumerator_llvm:
 	.globl _p_601_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_GetEnumerator_llvm
 .private_extern _p_601_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_int_GetEnumerator_llvm
@@ -14031,7 +14031,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 5743
+.word 5731
 _p_602_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_Enumerator_string_int_MoveNext_llvm:
 	.globl _p_602_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_Enumerator_string_int_MoveNext_llvm
 .private_extern _p_602_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_Enumerator_string_int_MoveNext_llvm
@@ -14042,7 +14042,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 5754
+.word 5742
 _p_603_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_Allows_string_llvm:
 	.globl _p_603_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_Allows_string_llvm
 .private_extern _p_603_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_Allows_string_llvm
@@ -14053,7 +14053,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 5765
+.word 5753
 _p_604_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_Enumerator_System_Xml_XmlQualifiedName_int_MoveNext_llvm:
 	.globl _p_604_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_Enumerator_System_Xml_XmlQualifiedName_int_MoveNext_llvm
 .private_extern _p_604_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_Enumerator_System_Xml_XmlQualifiedName_int_MoveNext_llvm
@@ -14064,7 +14064,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 5768
+.word 5756
 _p_605_plt_System_Private_Xml_System_Xml_XmlQualifiedName_op_Inequality_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_605_plt_System_Private_Xml_System_Xml_XmlQualifiedName_op_Inequality_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_605_plt_System_Private_Xml_System_Xml_XmlQualifiedName_op_Inequality_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName_llvm
@@ -14075,7 +14075,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 5779
+.word 5767
 _p_606_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_Allows_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_606_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_Allows_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_606_plt_System_Private_Xml_System_Xml_Schema_NamespaceList_Allows_System_Xml_XmlQualifiedName_llvm
@@ -14086,7 +14086,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 5782
+.word 5770
 _p_607_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_get_Item_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_607_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_get_Item_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_607_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_get_Item_System_Xml_XmlQualifiedName_llvm
@@ -14097,7 +14097,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 5785
+.word 5773
 _p_608_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_ContainsKey_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_608_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_ContainsKey_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_608_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_int_ContainsKey_System_Xml_XmlQualifiedName_llvm
@@ -14108,7 +14108,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 5796
+.word 5784
 _p_609_plt_System_Private_Xml_System_Xml_Schema_BitSet_Set_int_llvm:
 	.globl _p_609_plt_System_Private_Xml_System_Xml_Schema_BitSet_Set_int_llvm
 .private_extern _p_609_plt_System_Private_Xml_System_Xml_Schema_BitSet_Set_int_llvm
@@ -14119,7 +14119,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 5807
+.word 5795
 _p_610_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_GetNamespaceListSymbols_System_Xml_Schema_NamespaceList_llvm:
 	.globl _p_610_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_GetNamespaceListSymbols_System_Xml_Schema_NamespaceList_llvm
 .private_extern _p_610_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_GetNamespaceListSymbols_System_Xml_Schema_NamespaceList_llvm
@@ -14130,7 +14130,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 5810
+.word 5798
 _p_611_plt_System_Private_Xml_System_Xml_Schema_NamespaceListNode_GetResolvedSymbols_System_Xml_Schema_SymbolsDictionary_llvm:
 	.globl _p_611_plt_System_Private_Xml_System_Xml_Schema_NamespaceListNode_GetResolvedSymbols_System_Xml_Schema_SymbolsDictionary_llvm
 .private_extern _p_611_plt_System_Private_Xml_System_Xml_Schema_NamespaceListNode_GetResolvedSymbols_System_Xml_Schema_SymbolsDictionary_llvm
@@ -14141,7 +14141,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 5813
+.word 5801
 _p_612_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_GetParticle_int_llvm:
 	.globl _p_612_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_GetParticle_int_llvm
 .private_extern _p_612_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_GetParticle_int_llvm
@@ -14152,7 +14152,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 5816
+.word 5804
 _p_613_plt_System_Private_Xml_System_Xml_Schema_Positions_Add_int_object_llvm:
 	.globl _p_613_plt_System_Private_Xml_System_Xml_Schema_Positions_Add_int_object_llvm
 .private_extern _p_613_plt_System_Private_Xml_System_Xml_Schema_Positions_Add_int_object_llvm
@@ -14163,7 +14163,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 5819
+.word 5807
 _p_614_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_InteriorNode_Push_System_Xml_Schema_InteriorNode_llvm:
 	.globl _p_614_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_InteriorNode_Push_System_Xml_Schema_InteriorNode_llvm
 .private_extern _p_614_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_InteriorNode_Push_System_Xml_Schema_InteriorNode_llvm
@@ -14174,7 +14174,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 5822
+.word 5810
 _p_615_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_InteriorNode_Pop_llvm:
 	.globl _p_615_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_InteriorNode_Pop_llvm
 .private_extern _p_615_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_InteriorNode_Pop_llvm
@@ -14185,7 +14185,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 5833
+.word 5821
 _p_616_plt_System_Private_Xml_System_Xml_Schema_SequenceNode_SequenceConstructPosContext__ctor_System_Xml_Schema_SequenceNode_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_llvm:
 	.globl _p_616_plt_System_Private_Xml_System_Xml_Schema_SequenceNode_SequenceConstructPosContext__ctor_System_Xml_Schema_SequenceNode_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_llvm
 .private_extern _p_616_plt_System_Private_Xml_System_Xml_Schema_SequenceNode_SequenceConstructPosContext__ctor_System_Xml_Schema_SequenceNode_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_llvm
@@ -14196,7 +14196,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 5844
+.word 5832
 _p_617_plt_System_Private_Xml_System_Xml_Schema_BitSet__ctor_int_llvm:
 	.globl _p_617_plt_System_Private_Xml_System_Xml_Schema_BitSet__ctor_int_llvm
 .private_extern _p_617_plt_System_Private_Xml_System_Xml_Schema_BitSet__ctor_int_llvm
@@ -14207,7 +14207,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 5847
+.word 5835
 _p_618_plt_System_Private_Xml_System_Xml_Schema_BitSet_NextSet_int_llvm:
 	.globl _p_618_plt_System_Private_Xml_System_Xml_Schema_BitSet_NextSet_int_llvm
 .private_extern _p_618_plt_System_Private_Xml_System_Xml_Schema_BitSet_NextSet_int_llvm
@@ -14218,7 +14218,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 5850
+.word 5838
 _p_619_plt_System_Private_Xml_System_Xml_Schema_BitSet_Or_System_Xml_Schema_BitSet_llvm:
 	.globl _p_619_plt_System_Private_Xml_System_Xml_Schema_BitSet_Or_System_Xml_Schema_BitSet_llvm
 .private_extern _p_619_plt_System_Private_Xml_System_Xml_Schema_BitSet_Or_System_Xml_Schema_BitSet_llvm
@@ -14229,7 +14229,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 5853
+.word 5841
 _p_620_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Pop_llvm:
 	.globl _p_620_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Pop_llvm
 .private_extern _p_620_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Pop_llvm
@@ -14240,7 +14240,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 5856
+.word 5844
 _p_621_plt_System_Private_Xml_System_Xml_Schema_BitSet_Clone_llvm:
 	.globl _p_621_plt_System_Private_Xml_System_Xml_Schema_BitSet_Clone_llvm
 .private_extern _p_621_plt_System_Private_Xml_System_Xml_Schema_BitSet_Clone_llvm
@@ -14251,7 +14251,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 5867
+.word 5855
 _p_622_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_set_NextIteration_System_Xml_Schema_BitSet_llvm:
 	.globl _p_622_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_set_NextIteration_System_Xml_Schema_BitSet_llvm
 .private_extern _p_622_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_set_NextIteration_System_Xml_Schema_BitSet_llvm
@@ -14262,7 +14262,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 5870
+.word 5858
 _p_623_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Push_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm:
 	.globl _p_623_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Push_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
 .private_extern _p_623_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Push_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
@@ -14273,7 +14273,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 5873
+.word 5861
 _p_624_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_Min_llvm:
 	.globl _p_624_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_Min_llvm
 .private_extern _p_624_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_Min_llvm
@@ -14284,7 +14284,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 5884
+.word 5872
 _p_625_plt_System_Private_Xml_System_Decimal_op_Equality_System_Decimal_System_Decimal_llvm:
 	.globl _p_625_plt_System_Private_Xml_System_Decimal_op_Equality_System_Decimal_System_Decimal_llvm
 .private_extern _p_625_plt_System_Private_Xml_System_Decimal_op_Equality_System_Decimal_System_Decimal_llvm
@@ -14295,7 +14295,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 5887
+.word 5875
 _p_626_plt_System_Private_Xml_System_Xml_Schema_InteriorNode_ExpandTreeNoRecursive_System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_llvm:
 	.globl _p_626_plt_System_Private_Xml_System_Xml_Schema_InteriorNode_ExpandTreeNoRecursive_System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_llvm
 .private_extern _p_626_plt_System_Private_Xml_System_Xml_Schema_InteriorNode_ExpandTreeNoRecursive_System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_llvm
@@ -14306,7 +14306,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 5892
+.word 5880
 _p_627_plt_System_Private_Xml_System_Xml_Schema_ChoiceNode_ConstructChildPos_System_Xml_Schema_SyntaxTreeNode_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm:
 	.globl _p_627_plt_System_Private_Xml_System_Xml_Schema_ChoiceNode_ConstructChildPos_System_Xml_Schema_SyntaxTreeNode_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm
 .private_extern _p_627_plt_System_Private_Xml_System_Xml_Schema_ChoiceNode_ConstructChildPos_System_Xml_Schema_SyntaxTreeNode_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm
@@ -14317,7 +14317,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 5895
+.word 5883
 _p_628_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary__ctor_llvm:
 	.globl _p_628_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary__ctor_llvm
 .private_extern _p_628_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary__ctor_llvm
@@ -14328,7 +14328,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 5898
+.word 5886
 _p_629_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SyntaxTreeNode_Push_System_Xml_Schema_SyntaxTreeNode_llvm:
 	.globl _p_629_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SyntaxTreeNode_Push_System_Xml_Schema_SyntaxTreeNode_llvm
 .private_extern _p_629_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SyntaxTreeNode_Push_System_Xml_Schema_SyntaxTreeNode_llvm
@@ -14339,7 +14339,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 5901
+.word 5889
 _p_630_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SyntaxTreeNode_Pop_llvm:
 	.globl _p_630_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SyntaxTreeNode_Pop_llvm
 .private_extern _p_630_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SyntaxTreeNode_Pop_llvm
@@ -14350,7 +14350,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 5912
+.word 5900
 _p_631_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_Exists_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_631_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_Exists_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_631_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_Exists_System_Xml_XmlQualifiedName_llvm
@@ -14361,7 +14361,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 5923
+.word 5911
 _p_632_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddName_System_Xml_XmlQualifiedName_object_llvm:
 	.globl _p_632_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddName_System_Xml_XmlQualifiedName_object_llvm
 .private_extern _p_632_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddName_System_Xml_XmlQualifiedName_object_llvm
@@ -14372,7 +14372,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 5926
+.word 5914
 _p_633_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddLeafNode_System_Xml_Schema_SyntaxTreeNode_llvm:
 	.globl _p_633_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddLeafNode_System_Xml_Schema_SyntaxTreeNode_llvm
 .private_extern _p_633_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddLeafNode_System_Xml_Schema_SyntaxTreeNode_llvm
@@ -14383,7 +14383,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 5929
+.word 5917
 _p_634_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddNamespaceList_System_Xml_Schema_NamespaceList_object_bool_llvm:
 	.globl _p_634_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddNamespaceList_System_Xml_Schema_NamespaceList_object_bool_llvm
 .private_extern _p_634_plt_System_Private_Xml_System_Xml_Schema_SymbolsDictionary_AddNamespaceList_System_Xml_Schema_NamespaceList_object_bool_llvm
@@ -14394,7 +14394,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 5932
+.word 5920
 _p_635_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Closure_System_Xml_Schema_InteriorNode_llvm:
 	.globl _p_635_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Closure_System_Xml_Schema_InteriorNode_llvm
 .private_extern _p_635_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_Closure_System_Xml_Schema_InteriorNode_llvm
@@ -14405,7 +14405,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 5935
+.word 5923
 _p_636_plt_System_Private_Xml_System_Xml_Schema_Positions_get_Count_llvm:
 	.globl _p_636_plt_System_Private_Xml_System_Xml_Schema_Positions_get_Count_llvm
 .private_extern _p_636_plt_System_Private_Xml_System_Xml_Schema_Positions_get_Count_llvm
@@ -14416,7 +14416,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 5938
+.word 5926
 _p_637_plt_System_Private_Xml_System_Xml_Schema_NfaContentValidator__ctor_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_int_System_Xml_Schema_XmlSchemaContentType_bool_bool_llvm:
 	.globl _p_637_plt_System_Private_Xml_System_Xml_Schema_NfaContentValidator__ctor_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_int_System_Xml_Schema_XmlSchemaContentType_bool_bool_llvm
 .private_extern _p_637_plt_System_Private_Xml_System_Xml_Schema_NfaContentValidator__ctor_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_int_System_Xml_Schema_XmlSchemaContentType_bool_bool_llvm
@@ -14427,7 +14427,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 5941
+.word 5929
 _p_638_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_BuildTransitionTable_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___int_llvm:
 	.globl _p_638_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_BuildTransitionTable_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___int_llvm
 .private_extern _p_638_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_BuildTransitionTable_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___int_llvm
@@ -14438,7 +14438,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 5944
+.word 5932
 _p_639_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckUniqueParticleAttribution_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm:
 	.globl _p_639_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckUniqueParticleAttribution_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm
 .private_extern _p_639_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckUniqueParticleAttribution_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm
@@ -14449,7 +14449,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 5947
+.word 5935
 _p_640_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CalculateTotalFollowposForRangeNodes_System_Xml_Schema_BitSet___System_Xml_Schema_BitSet__llvm:
 	.globl _p_640_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CalculateTotalFollowposForRangeNodes_System_Xml_Schema_BitSet___System_Xml_Schema_BitSet__llvm
 .private_extern _p_640_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CalculateTotalFollowposForRangeNodes_System_Xml_Schema_BitSet___System_Xml_Schema_BitSet__llvm
@@ -14460,7 +14460,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 5950
+.word 5938
 _p_641_plt_System_Private_Xml_System_Xml_Schema_RangeContentValidator__ctor_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_int_System_Xml_Schema_XmlSchemaContentType_bool_System_Xml_Schema_BitSet_int_llvm:
 	.globl _p_641_plt_System_Private_Xml_System_Xml_Schema_RangeContentValidator__ctor_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_int_System_Xml_Schema_XmlSchemaContentType_bool_System_Xml_Schema_BitSet_int_llvm
 .private_extern _p_641_plt_System_Private_Xml_System_Xml_Schema_RangeContentValidator__ctor_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___System_Xml_Schema_SymbolsDictionary_System_Xml_Schema_Positions_int_System_Xml_Schema_XmlSchemaContentType_bool_System_Xml_Schema_BitSet_int_llvm
@@ -14471,7 +14471,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 5953
+.word 5941
 _p_642_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_GetApplicableMinMaxFollowPos_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm:
 	.globl _p_642_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_GetApplicableMinMaxFollowPos_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm
 .private_extern _p_642_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_GetApplicableMinMaxFollowPos_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet_System_Xml_Schema_BitSet___llvm
@@ -14482,7 +14482,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 5956
+.word 5944
 _p_643_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckCMUPAWithLeafRangeNodes_System_Xml_Schema_BitSet_llvm:
 	.globl _p_643_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckCMUPAWithLeafRangeNodes_System_Xml_Schema_BitSet_llvm
 .private_extern _p_643_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckCMUPAWithLeafRangeNodes_System_Xml_Schema_BitSet_llvm
@@ -14493,7 +14493,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 5959
+.word 5947
 _p_644_plt_System_Private_Xml_System_Xml_Schema_Positions_get_Item_int_llvm:
 	.globl _p_644_plt_System_Private_Xml_System_Xml_Schema_Positions_get_Item_int_llvm
 .private_extern _p_644_plt_System_Private_Xml_System_Xml_Schema_Positions_get_Item_int_llvm
@@ -14504,7 +14504,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 5962
+.word 5950
 _p_645_plt_System_Private_Xml_System_Xml_Schema_BitSet_Clear_llvm:
 	.globl _p_645_plt_System_Private_Xml_System_Xml_Schema_BitSet_Clear_llvm
 .private_extern _p_645_plt_System_Private_Xml_System_Xml_Schema_BitSet_Clear_llvm
@@ -14515,7 +14515,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 5965
+.word 5953
 _p_646_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_Max_llvm:
 	.globl _p_646_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_Max_llvm
 .private_extern _p_646_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_Max_llvm
@@ -14526,7 +14526,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 5968
+.word 5956
 _p_647_plt_System_Private_Xml_System_Decimal_op_Inequality_System_Decimal_System_Decimal_llvm:
 	.globl _p_647_plt_System_Private_Xml_System_Decimal_op_Inequality_System_Decimal_System_Decimal_llvm
 .private_extern _p_647_plt_System_Private_Xml_System_Decimal_op_Inequality_System_Decimal_System_Decimal_llvm
@@ -14537,7 +14537,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1664]
 br x16
-.word 5971
+.word 5959
 _p_648_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_NextIteration_llvm:
 	.globl _p_648_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_NextIteration_llvm
 .private_extern _p_648_plt_System_Private_Xml_System_Xml_Schema_LeafRangeNode_get_NextIteration_llvm
@@ -14548,7 +14548,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1672]
 br x16
-.word 5976
+.word 5964
 _p_649_plt_System_Private_Xml_System_Xml_Schema_UpaException__ctor_object_object_llvm:
 	.globl _p_649_plt_System_Private_Xml_System_Xml_Schema_UpaException__ctor_object_object_llvm
 .private_extern _p_649_plt_System_Private_Xml_System_Xml_Schema_UpaException__ctor_object_object_llvm
@@ -14559,7 +14559,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1680]
 br x16
-.word 5979
+.word 5967
 _p_650_plt_System_Private_Xml_System_Xml_Schema_BitSet_Intersects_System_Xml_Schema_BitSet_llvm:
 	.globl _p_650_plt_System_Private_Xml_System_Xml_Schema_BitSet_Intersects_System_Xml_Schema_BitSet_llvm
 .private_extern _p_650_plt_System_Private_Xml_System_Xml_Schema_BitSet_Intersects_System_Xml_Schema_BitSet_llvm
@@ -14570,7 +14570,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1688]
 br x16
-.word 5982
+.word 5970
 _p_651_plt_System_Private_Xml_System_Xml_Schema_BitSet_And_System_Xml_Schema_BitSet_llvm:
 	.globl _p_651_plt_System_Private_Xml_System_Xml_Schema_BitSet_And_System_Xml_Schema_BitSet_llvm
 .private_extern _p_651_plt_System_Private_Xml_System_Xml_Schema_BitSet_And_System_Xml_Schema_BitSet_llvm
@@ -14581,7 +14581,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1696]
 br x16
-.word 5985
+.word 5973
 _p_652_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckUniqueParticleAttribution_System_Xml_Schema_BitSet_llvm:
 	.globl _p_652_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckUniqueParticleAttribution_System_Xml_Schema_BitSet_llvm
 .private_extern _p_652_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_CheckUniqueParticleAttribution_System_Xml_Schema_BitSet_llvm
@@ -14592,7 +14592,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1704]
 br x16
-.word 5988
+.word 5976
 _p_653_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int__ctor_llvm:
 	.globl _p_653_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int__ctor_llvm
 .private_extern _p_653_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int__ctor_llvm
@@ -14603,7 +14603,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1712]
 br x16
-.word 5991
+.word 5979
 _p_654_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int_Add_System_Xml_Schema_BitSet_int_llvm:
 	.globl _p_654_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int_Add_System_Xml_Schema_BitSet_int_llvm
 .private_extern _p_654_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int_Add_System_Xml_Schema_BitSet_int_llvm
@@ -14614,7 +14614,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1720]
 br x16
-.word 6002
+.word 5990
 _p_655_plt_System_Private_Xml_System_Collections_Generic_Queue_1_System_Xml_Schema_BitSet_Enqueue_System_Xml_Schema_BitSet_llvm:
 	.globl _p_655_plt_System_Private_Xml_System_Collections_Generic_Queue_1_System_Xml_Schema_BitSet_Enqueue_System_Xml_Schema_BitSet_llvm
 .private_extern _p_655_plt_System_Private_Xml_System_Collections_Generic_Queue_1_System_Xml_Schema_BitSet_Enqueue_System_Xml_Schema_BitSet_llvm
@@ -14625,7 +14625,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1728]
 br x16
-.word 6013
+.word 6001
 _p_656_plt_System_Private_Xml_System_Collections_Generic_List_1_int___AddWithResize_int___llvm:
 	.globl _p_656_plt_System_Private_Xml_System_Collections_Generic_List_1_int___AddWithResize_int___llvm
 .private_extern _p_656_plt_System_Private_Xml_System_Collections_Generic_List_1_int___AddWithResize_int___llvm
@@ -14636,7 +14636,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1736]
 br x16
-.word 6031
+.word 6019
 _p_657_plt_System_Private_Xml_System_Collections_Generic_Queue_1_System_Xml_Schema_BitSet_Dequeue_llvm:
 	.globl _p_657_plt_System_Private_Xml_System_Collections_Generic_Queue_1_System_Xml_Schema_BitSet_Dequeue_llvm
 .private_extern _p_657_plt_System_Private_Xml_System_Collections_Generic_Queue_1_System_Xml_Schema_BitSet_Dequeue_llvm
@@ -14647,7 +14647,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1744]
 br x16
-.word 6048
+.word 6036
 _p_658_plt_System_Private_Xml_System_Xml_Schema_BitSet_get_Item_int_llvm:
 	.globl _p_658_plt_System_Private_Xml_System_Xml_Schema_BitSet_get_Item_int_llvm
 .private_extern _p_658_plt_System_Private_Xml_System_Xml_Schema_BitSet_get_Item_int_llvm
@@ -14658,7 +14658,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1752]
 br x16
-.word 6059
+.word 6047
 _p_659_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int_TryGetValue_System_Xml_Schema_BitSet_int__llvm:
 	.globl _p_659_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int_TryGetValue_System_Xml_Schema_BitSet_int__llvm
 .private_extern _p_659_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_Schema_BitSet_int_TryGetValue_System_Xml_Schema_BitSet_int__llvm
@@ -14669,7 +14669,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1760]
 br x16
-.word 6062
+.word 6050
 _p_660_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm:
 	.globl _p_660_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
 .private_extern _p_660_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRange_IndexMustBeLessException_llvm
@@ -14680,7 +14680,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1768]
 br x16
-.word 6073
+.word 6061
 _p_661_plt_System_Private_Xml_System_Collections_Generic_List_1_int___ToArray_llvm:
 	.globl _p_661_plt_System_Private_Xml_System_Collections_Generic_List_1_int___ToArray_llvm
 .private_extern _p_661_plt_System_Private_Xml_System_Collections_Generic_List_1_int___ToArray_llvm
@@ -14691,7 +14691,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1776]
 br x16
-.word 6078
+.word 6066
 _p_662_plt_System_Private_Xml_System_Collections_Hashtable__ctor_llvm:
 	.globl _p_662_plt_System_Private_Xml_System_Collections_Hashtable__ctor_llvm
 .private_extern _p_662_plt_System_Private_Xml_System_Collections_Hashtable__ctor_llvm
@@ -14702,7 +14702,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1784]
 br x16
-.word 6089
+.word 6077
 _p_663_plt_System_Private_Xml_System_Xml_Schema_Datatype_anySimpleType__ctor_llvm:
 	.globl _p_663_plt_System_Private_Xml_System_Xml_Schema_Datatype_anySimpleType__ctor_llvm
 .private_extern _p_663_plt_System_Private_Xml_System_Xml_Schema_Datatype_anySimpleType__ctor_llvm
@@ -14713,7 +14713,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1792]
 br x16
-.word 6094
+.word 6082
 _p_664_plt_System_Private_Xml_System_Xml_Schema_Datatype_anyURI__ctor_llvm:
 	.globl _p_664_plt_System_Private_Xml_System_Xml_Schema_Datatype_anyURI__ctor_llvm
 .private_extern _p_664_plt_System_Private_Xml_System_Xml_Schema_Datatype_anyURI__ctor_llvm
@@ -14724,7 +14724,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1800]
 br x16
-.word 6097
+.word 6085
 _p_665_plt_System_Private_Xml_System_Xml_Schema_Datatype_base64Binary__ctor_llvm:
 	.globl _p_665_plt_System_Private_Xml_System_Xml_Schema_Datatype_base64Binary__ctor_llvm
 .private_extern _p_665_plt_System_Private_Xml_System_Xml_Schema_Datatype_base64Binary__ctor_llvm
@@ -14735,7 +14735,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1808]
 br x16
-.word 6100
+.word 6088
 _p_666_plt_System_Private_Xml_System_Xml_Schema_Datatype_boolean__ctor_llvm:
 	.globl _p_666_plt_System_Private_Xml_System_Xml_Schema_Datatype_boolean__ctor_llvm
 .private_extern _p_666_plt_System_Private_Xml_System_Xml_Schema_Datatype_boolean__ctor_llvm
@@ -14746,7 +14746,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1816]
 br x16
-.word 6103
+.word 6091
 _p_667_plt_System_Private_Xml_System_Xml_Schema_Datatype_byte__ctor_llvm:
 	.globl _p_667_plt_System_Private_Xml_System_Xml_Schema_Datatype_byte__ctor_llvm
 .private_extern _p_667_plt_System_Private_Xml_System_Xml_Schema_Datatype_byte__ctor_llvm
@@ -14757,7 +14757,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1824]
 br x16
-.word 6106
+.word 6094
 _p_668_plt_System_Private_Xml_System_Xml_Schema_Datatype_char__ctor_llvm:
 	.globl _p_668_plt_System_Private_Xml_System_Xml_Schema_Datatype_char__ctor_llvm
 .private_extern _p_668_plt_System_Private_Xml_System_Xml_Schema_Datatype_char__ctor_llvm
@@ -14768,7 +14768,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1832]
 br x16
-.word 6109
+.word 6097
 _p_669_plt_System_Private_Xml_System_Xml_Schema_Datatype_date__ctor_llvm:
 	.globl _p_669_plt_System_Private_Xml_System_Xml_Schema_Datatype_date__ctor_llvm
 .private_extern _p_669_plt_System_Private_Xml_System_Xml_Schema_Datatype_date__ctor_llvm
@@ -14779,7 +14779,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1840]
 br x16
-.word 6112
+.word 6100
 _p_670_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTime__ctor_llvm:
 	.globl _p_670_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTime__ctor_llvm
 .private_extern _p_670_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTime__ctor_llvm
@@ -14790,7 +14790,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1848]
 br x16
-.word 6115
+.word 6103
 _p_671_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeNoTimeZone__ctor_llvm:
 	.globl _p_671_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeNoTimeZone__ctor_llvm
 .private_extern _p_671_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeNoTimeZone__ctor_llvm
@@ -14801,7 +14801,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1856]
 br x16
-.word 6118
+.word 6106
 _p_672_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeTimeZone__ctor_llvm:
 	.globl _p_672_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeTimeZone__ctor_llvm
 .private_extern _p_672_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeTimeZone__ctor_llvm
@@ -14812,7 +14812,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1864]
 br x16
-.word 6121
+.word 6109
 _p_673_plt_System_Private_Xml_System_Xml_Schema_Datatype_day__ctor_llvm:
 	.globl _p_673_plt_System_Private_Xml_System_Xml_Schema_Datatype_day__ctor_llvm
 .private_extern _p_673_plt_System_Private_Xml_System_Xml_Schema_Datatype_day__ctor_llvm
@@ -14823,7 +14823,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1872]
 br x16
-.word 6124
+.word 6112
 _p_674_plt_System_Private_Xml_System_Xml_Schema_Datatype_decimal__ctor_llvm:
 	.globl _p_674_plt_System_Private_Xml_System_Xml_Schema_Datatype_decimal__ctor_llvm
 .private_extern _p_674_plt_System_Private_Xml_System_Xml_Schema_Datatype_decimal__ctor_llvm
@@ -14834,7 +14834,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1880]
 br x16
-.word 6127
+.word 6115
 _p_675_plt_System_Private_Xml_System_Xml_Schema_Datatype_double__ctor_llvm:
 	.globl _p_675_plt_System_Private_Xml_System_Xml_Schema_Datatype_double__ctor_llvm
 .private_extern _p_675_plt_System_Private_Xml_System_Xml_Schema_Datatype_double__ctor_llvm
@@ -14845,7 +14845,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1888]
 br x16
-.word 6130
+.word 6118
 _p_676_plt_System_Private_Xml_System_Xml_Schema_Datatype_doubleXdr__ctor_llvm:
 	.globl _p_676_plt_System_Private_Xml_System_Xml_Schema_Datatype_doubleXdr__ctor_llvm
 .private_extern _p_676_plt_System_Private_Xml_System_Xml_Schema_Datatype_doubleXdr__ctor_llvm
@@ -14856,7 +14856,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1896]
 br x16
-.word 6133
+.word 6121
 _p_677_plt_System_Private_Xml_System_Xml_Schema_Datatype_duration__ctor_llvm:
 	.globl _p_677_plt_System_Private_Xml_System_Xml_Schema_Datatype_duration__ctor_llvm
 .private_extern _p_677_plt_System_Private_Xml_System_Xml_Schema_Datatype_duration__ctor_llvm
@@ -14867,7 +14867,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1904]
 br x16
-.word 6136
+.word 6124
 _p_678_plt_System_Private_Xml_System_Xml_Schema_Datatype_ENTITY__ctor_llvm:
 	.globl _p_678_plt_System_Private_Xml_System_Xml_Schema_Datatype_ENTITY__ctor_llvm
 .private_extern _p_678_plt_System_Private_Xml_System_Xml_Schema_Datatype_ENTITY__ctor_llvm
@@ -14878,7 +14878,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1912]
 br x16
-.word 6139
+.word 6127
 _p_679_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_DeriveByList_int_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_679_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_DeriveByList_int_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_679_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_DeriveByList_int_System_Xml_Schema_XmlSchemaType_llvm
@@ -14889,7 +14889,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1920]
 br x16
-.word 6142
+.word 6130
 _p_680_plt_System_Private_Xml_System_Xml_Schema_Datatype_ENUMERATION__ctor_llvm:
 	.globl _p_680_plt_System_Private_Xml_System_Xml_Schema_Datatype_ENUMERATION__ctor_llvm
 .private_extern _p_680_plt_System_Private_Xml_System_Xml_Schema_Datatype_ENUMERATION__ctor_llvm
@@ -14900,7 +14900,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1928]
 br x16
-.word 6145
+.word 6133
 _p_681_plt_System_Private_Xml_System_Xml_Schema_Datatype_fixed__ctor_llvm:
 	.globl _p_681_plt_System_Private_Xml_System_Xml_Schema_Datatype_fixed__ctor_llvm
 .private_extern _p_681_plt_System_Private_Xml_System_Xml_Schema_Datatype_fixed__ctor_llvm
@@ -14911,7 +14911,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1936]
 br x16
-.word 6148
+.word 6136
 _p_682_plt_System_Private_Xml_System_Xml_Schema_Datatype_float__ctor_llvm:
 	.globl _p_682_plt_System_Private_Xml_System_Xml_Schema_Datatype_float__ctor_llvm
 .private_extern _p_682_plt_System_Private_Xml_System_Xml_Schema_Datatype_float__ctor_llvm
@@ -14922,7 +14922,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1944]
 br x16
-.word 6151
+.word 6139
 _p_683_plt_System_Private_Xml_System_Xml_Schema_Datatype_floatXdr__ctor_llvm:
 	.globl _p_683_plt_System_Private_Xml_System_Xml_Schema_Datatype_floatXdr__ctor_llvm
 .private_extern _p_683_plt_System_Private_Xml_System_Xml_Schema_Datatype_floatXdr__ctor_llvm
@@ -14933,7 +14933,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1952]
 br x16
-.word 6154
+.word 6142
 _p_684_plt_System_Private_Xml_System_Xml_Schema_Datatype_hexBinary__ctor_llvm:
 	.globl _p_684_plt_System_Private_Xml_System_Xml_Schema_Datatype_hexBinary__ctor_llvm
 .private_extern _p_684_plt_System_Private_Xml_System_Xml_Schema_Datatype_hexBinary__ctor_llvm
@@ -14944,7 +14944,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1960]
 br x16
-.word 6157
+.word 6145
 _p_685_plt_System_Private_Xml_System_Xml_Schema_Datatype_ID__ctor_llvm:
 	.globl _p_685_plt_System_Private_Xml_System_Xml_Schema_Datatype_ID__ctor_llvm
 .private_extern _p_685_plt_System_Private_Xml_System_Xml_Schema_Datatype_ID__ctor_llvm
@@ -14955,7 +14955,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1968]
 br x16
-.word 6160
+.word 6148
 _p_686_plt_System_Private_Xml_System_Xml_Schema_Datatype_IDREF__ctor_llvm:
 	.globl _p_686_plt_System_Private_Xml_System_Xml_Schema_Datatype_IDREF__ctor_llvm
 .private_extern _p_686_plt_System_Private_Xml_System_Xml_Schema_Datatype_IDREF__ctor_llvm
@@ -14966,7 +14966,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1976]
 br x16
-.word 6163
+.word 6151
 _p_687_plt_System_Private_Xml_System_Xml_Schema_Datatype_int__ctor_llvm:
 	.globl _p_687_plt_System_Private_Xml_System_Xml_Schema_Datatype_int__ctor_llvm
 .private_extern _p_687_plt_System_Private_Xml_System_Xml_Schema_Datatype_int__ctor_llvm
@@ -14977,7 +14977,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1984]
 br x16
-.word 6166
+.word 6154
 _p_688_plt_System_Private_Xml_System_Xml_Schema_Datatype_integer__ctor_llvm:
 	.globl _p_688_plt_System_Private_Xml_System_Xml_Schema_Datatype_integer__ctor_llvm
 .private_extern _p_688_plt_System_Private_Xml_System_Xml_Schema_Datatype_integer__ctor_llvm
@@ -14988,7 +14988,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1992]
 br x16
-.word 6169
+.word 6157
 _p_689_plt_System_Private_Xml_System_Xml_Schema_Datatype_language__ctor_llvm:
 	.globl _p_689_plt_System_Private_Xml_System_Xml_Schema_Datatype_language__ctor_llvm
 .private_extern _p_689_plt_System_Private_Xml_System_Xml_Schema_Datatype_language__ctor_llvm
@@ -14999,7 +14999,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2000]
 br x16
-.word 6172
+.word 6160
 _p_690_plt_System_Private_Xml_System_Xml_Schema_Datatype_long__ctor_llvm:
 	.globl _p_690_plt_System_Private_Xml_System_Xml_Schema_Datatype_long__ctor_llvm
 .private_extern _p_690_plt_System_Private_Xml_System_Xml_Schema_Datatype_long__ctor_llvm
@@ -15010,7 +15010,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2008]
 br x16
-.word 6175
+.word 6163
 _p_691_plt_System_Private_Xml_System_Xml_Schema_Datatype_month__ctor_llvm:
 	.globl _p_691_plt_System_Private_Xml_System_Xml_Schema_Datatype_month__ctor_llvm
 .private_extern _p_691_plt_System_Private_Xml_System_Xml_Schema_Datatype_month__ctor_llvm
@@ -15021,7 +15021,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2016]
 br x16
-.word 6178
+.word 6166
 _p_692_plt_System_Private_Xml_System_Xml_Schema_Datatype_monthDay__ctor_llvm:
 	.globl _p_692_plt_System_Private_Xml_System_Xml_Schema_Datatype_monthDay__ctor_llvm
 .private_extern _p_692_plt_System_Private_Xml_System_Xml_Schema_Datatype_monthDay__ctor_llvm
@@ -15032,7 +15032,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2024]
 br x16
-.word 6181
+.word 6169
 _p_693_plt_System_Private_Xml_System_Xml_Schema_Datatype_Name__ctor_llvm:
 	.globl _p_693_plt_System_Private_Xml_System_Xml_Schema_Datatype_Name__ctor_llvm
 .private_extern _p_693_plt_System_Private_Xml_System_Xml_Schema_Datatype_Name__ctor_llvm
@@ -15043,7 +15043,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2032]
 br x16
-.word 6184
+.word 6172
 _p_694_plt_System_Private_Xml_System_Xml_Schema_Datatype_NCName__ctor_llvm:
 	.globl _p_694_plt_System_Private_Xml_System_Xml_Schema_Datatype_NCName__ctor_llvm
 .private_extern _p_694_plt_System_Private_Xml_System_Xml_Schema_Datatype_NCName__ctor_llvm
@@ -15054,7 +15054,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2040]
 br x16
-.word 6187
+.word 6175
 _p_695_plt_System_Private_Xml_System_Xml_Schema_Datatype_negativeInteger__ctor_llvm:
 	.globl _p_695_plt_System_Private_Xml_System_Xml_Schema_Datatype_negativeInteger__ctor_llvm
 .private_extern _p_695_plt_System_Private_Xml_System_Xml_Schema_Datatype_negativeInteger__ctor_llvm
@@ -15065,7 +15065,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2048]
 br x16
-.word 6190
+.word 6178
 _p_696_plt_System_Private_Xml_System_Xml_Schema_Datatype_NMTOKEN__ctor_llvm:
 	.globl _p_696_plt_System_Private_Xml_System_Xml_Schema_Datatype_NMTOKEN__ctor_llvm
 .private_extern _p_696_plt_System_Private_Xml_System_Xml_Schema_Datatype_NMTOKEN__ctor_llvm
@@ -15076,7 +15076,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2056]
 br x16
-.word 6193
+.word 6181
 _p_697_plt_System_Private_Xml_System_Xml_Schema_Datatype_nonNegativeInteger__ctor_llvm:
 	.globl _p_697_plt_System_Private_Xml_System_Xml_Schema_Datatype_nonNegativeInteger__ctor_llvm
 .private_extern _p_697_plt_System_Private_Xml_System_Xml_Schema_Datatype_nonNegativeInteger__ctor_llvm
@@ -15087,7 +15087,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2064]
 br x16
-.word 6196
+.word 6184
 _p_698_plt_System_Private_Xml_System_Xml_Schema_Datatype_nonPositiveInteger__ctor_llvm:
 	.globl _p_698_plt_System_Private_Xml_System_Xml_Schema_Datatype_nonPositiveInteger__ctor_llvm
 .private_extern _p_698_plt_System_Private_Xml_System_Xml_Schema_Datatype_nonPositiveInteger__ctor_llvm
@@ -15098,7 +15098,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2072]
 br x16
-.word 6199
+.word 6187
 _p_699_plt_System_Private_Xml_System_Xml_Schema_Datatype_normalizedString__ctor_llvm:
 	.globl _p_699_plt_System_Private_Xml_System_Xml_Schema_Datatype_normalizedString__ctor_llvm
 .private_extern _p_699_plt_System_Private_Xml_System_Xml_Schema_Datatype_normalizedString__ctor_llvm
@@ -15109,7 +15109,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2080]
 br x16
-.word 6202
+.word 6190
 _p_700_plt_System_Private_Xml_System_Xml_Schema_Datatype_NOTATION__ctor_llvm:
 	.globl _p_700_plt_System_Private_Xml_System_Xml_Schema_Datatype_NOTATION__ctor_llvm
 .private_extern _p_700_plt_System_Private_Xml_System_Xml_Schema_Datatype_NOTATION__ctor_llvm
@@ -15120,7 +15120,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2088]
 br x16
-.word 6205
+.word 6193
 _p_701_plt_System_Private_Xml_System_Xml_Schema_Datatype_positiveInteger__ctor_llvm:
 	.globl _p_701_plt_System_Private_Xml_System_Xml_Schema_Datatype_positiveInteger__ctor_llvm
 .private_extern _p_701_plt_System_Private_Xml_System_Xml_Schema_Datatype_positiveInteger__ctor_llvm
@@ -15131,7 +15131,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2096]
 br x16
-.word 6208
+.word 6196
 _p_702_plt_System_Private_Xml_System_Xml_Schema_Datatype_QName__ctor_llvm:
 	.globl _p_702_plt_System_Private_Xml_System_Xml_Schema_Datatype_QName__ctor_llvm
 .private_extern _p_702_plt_System_Private_Xml_System_Xml_Schema_Datatype_QName__ctor_llvm
@@ -15142,7 +15142,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2104]
 br x16
-.word 6211
+.word 6199
 _p_703_plt_System_Private_Xml_System_Xml_Schema_Datatype_QNameXdr__ctor_llvm:
 	.globl _p_703_plt_System_Private_Xml_System_Xml_Schema_Datatype_QNameXdr__ctor_llvm
 .private_extern _p_703_plt_System_Private_Xml_System_Xml_Schema_Datatype_QNameXdr__ctor_llvm
@@ -15153,7 +15153,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2112]
 br x16
-.word 6214
+.word 6202
 _p_704_plt_System_Private_Xml_System_Xml_Schema_Datatype_short__ctor_llvm:
 	.globl _p_704_plt_System_Private_Xml_System_Xml_Schema_Datatype_short__ctor_llvm
 .private_extern _p_704_plt_System_Private_Xml_System_Xml_Schema_Datatype_short__ctor_llvm
@@ -15164,7 +15164,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2120]
 br x16
-.word 6217
+.word 6205
 _p_705_plt_System_Private_Xml_System_Xml_Schema_Datatype_string__ctor_llvm:
 	.globl _p_705_plt_System_Private_Xml_System_Xml_Schema_Datatype_string__ctor_llvm
 .private_extern _p_705_plt_System_Private_Xml_System_Xml_Schema_Datatype_string__ctor_llvm
@@ -15175,7 +15175,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2128]
 br x16
-.word 6220
+.word 6208
 _p_706_plt_System_Private_Xml_System_Xml_Schema_Datatype_time__ctor_llvm:
 	.globl _p_706_plt_System_Private_Xml_System_Xml_Schema_Datatype_time__ctor_llvm
 .private_extern _p_706_plt_System_Private_Xml_System_Xml_Schema_Datatype_time__ctor_llvm
@@ -15186,7 +15186,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2136]
 br x16
-.word 6223
+.word 6211
 _p_707_plt_System_Private_Xml_System_Xml_Schema_Datatype_timeNoTimeZone__ctor_llvm:
 	.globl _p_707_plt_System_Private_Xml_System_Xml_Schema_Datatype_timeNoTimeZone__ctor_llvm
 .private_extern _p_707_plt_System_Private_Xml_System_Xml_Schema_Datatype_timeNoTimeZone__ctor_llvm
@@ -15197,7 +15197,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2144]
 br x16
-.word 6226
+.word 6214
 _p_708_plt_System_Private_Xml_System_Xml_Schema_Datatype_timeTimeZone__ctor_llvm:
 	.globl _p_708_plt_System_Private_Xml_System_Xml_Schema_Datatype_timeTimeZone__ctor_llvm
 .private_extern _p_708_plt_System_Private_Xml_System_Xml_Schema_Datatype_timeTimeZone__ctor_llvm
@@ -15208,7 +15208,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2152]
 br x16
-.word 6229
+.word 6217
 _p_709_plt_System_Private_Xml_System_Xml_Schema_Datatype_token__ctor_llvm:
 	.globl _p_709_plt_System_Private_Xml_System_Xml_Schema_Datatype_token__ctor_llvm
 .private_extern _p_709_plt_System_Private_Xml_System_Xml_Schema_Datatype_token__ctor_llvm
@@ -15219,7 +15219,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2160]
 br x16
-.word 6232
+.word 6220
 _p_710_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedByte__ctor_llvm:
 	.globl _p_710_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedByte__ctor_llvm
 .private_extern _p_710_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedByte__ctor_llvm
@@ -15230,7 +15230,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2168]
 br x16
-.word 6235
+.word 6223
 _p_711_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedInt__ctor_llvm:
 	.globl _p_711_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedInt__ctor_llvm
 .private_extern _p_711_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedInt__ctor_llvm
@@ -15241,7 +15241,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2176]
 br x16
-.word 6238
+.word 6226
 _p_712_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedLong__ctor_llvm:
 	.globl _p_712_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedLong__ctor_llvm
 .private_extern _p_712_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedLong__ctor_llvm
@@ -15252,7 +15252,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2184]
 br x16
-.word 6241
+.word 6229
 _p_713_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedShort__ctor_llvm:
 	.globl _p_713_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedShort__ctor_llvm
 .private_extern _p_713_plt_System_Private_Xml_System_Xml_Schema_Datatype_unsignedShort__ctor_llvm
@@ -15263,7 +15263,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2192]
 br x16
-.word 6244
+.word 6232
 _p_714_plt_System_Private_Xml_System_Xml_Schema_Datatype_uuid__ctor_llvm:
 	.globl _p_714_plt_System_Private_Xml_System_Xml_Schema_Datatype_uuid__ctor_llvm
 .private_extern _p_714_plt_System_Private_Xml_System_Xml_Schema_Datatype_uuid__ctor_llvm
@@ -15274,7 +15274,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2200]
 br x16
-.word 6247
+.word 6235
 _p_715_plt_System_Private_Xml_System_Xml_Schema_Datatype_year__ctor_llvm:
 	.globl _p_715_plt_System_Private_Xml_System_Xml_Schema_Datatype_year__ctor_llvm
 .private_extern _p_715_plt_System_Private_Xml_System_Xml_Schema_Datatype_year__ctor_llvm
@@ -15285,7 +15285,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2208]
 br x16
-.word 6250
+.word 6238
 _p_716_plt_System_Private_Xml_System_Xml_Schema_Datatype_yearMonth__ctor_llvm:
 	.globl _p_716_plt_System_Private_Xml_System_Xml_Schema_Datatype_yearMonth__ctor_llvm
 .private_extern _p_716_plt_System_Private_Xml_System_Xml_Schema_Datatype_yearMonth__ctor_llvm
@@ -15296,7 +15296,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2216]
 br x16
-.word 6253
+.word 6241
 _p_717_plt_System_Private_Xml_System_Xml_Schema_Datatype_normalizedStringV1Compat__ctor_llvm:
 	.globl _p_717_plt_System_Private_Xml_System_Xml_Schema_Datatype_normalizedStringV1Compat__ctor_llvm
 .private_extern _p_717_plt_System_Private_Xml_System_Xml_Schema_Datatype_normalizedStringV1Compat__ctor_llvm
@@ -15307,7 +15307,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2224]
 br x16
-.word 6256
+.word 6244
 _p_718_plt_System_Private_Xml_System_Xml_Schema_Datatype_tokenV1Compat__ctor_llvm:
 	.globl _p_718_plt_System_Private_Xml_System_Xml_Schema_Datatype_tokenV1Compat__ctor_llvm
 .private_extern _p_718_plt_System_Private_Xml_System_Xml_Schema_Datatype_tokenV1Compat__ctor_llvm
@@ -15318,7 +15318,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2232]
 br x16
-.word 6259
+.word 6247
 _p_719_plt_System_Private_Xml_System_Xml_Schema_Datatype_anyAtomicType__ctor_llvm:
 	.globl _p_719_plt_System_Private_Xml_System_Xml_Schema_Datatype_anyAtomicType__ctor_llvm
 .private_extern _p_719_plt_System_Private_Xml_System_Xml_Schema_Datatype_anyAtomicType__ctor_llvm
@@ -15329,7 +15329,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2240]
 br x16
-.word 6262
+.word 6250
 _p_720_plt_System_Private_Xml_System_Xml_Schema_Datatype_dayTimeDuration__ctor_llvm:
 	.globl _p_720_plt_System_Private_Xml_System_Xml_Schema_Datatype_dayTimeDuration__ctor_llvm
 .private_extern _p_720_plt_System_Private_Xml_System_Xml_Schema_Datatype_dayTimeDuration__ctor_llvm
@@ -15340,7 +15340,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2248]
 br x16
-.word 6265
+.word 6253
 _p_721_plt_System_Private_Xml_System_Xml_Schema_Datatype_untypedAtomicType__ctor_llvm:
 	.globl _p_721_plt_System_Private_Xml_System_Xml_Schema_Datatype_untypedAtomicType__ctor_llvm
 .private_extern _p_721_plt_System_Private_Xml_System_Xml_Schema_Datatype_untypedAtomicType__ctor_llvm
@@ -15351,7 +15351,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2256]
 br x16
-.word 6268
+.word 6256
 _p_722_plt_System_Private_Xml_System_Xml_Schema_Datatype_yearMonthDuration__ctor_llvm:
 	.globl _p_722_plt_System_Private_Xml_System_Xml_Schema_Datatype_yearMonthDuration__ctor_llvm
 .private_extern _p_722_plt_System_Private_Xml_System_Xml_Schema_Datatype_yearMonthDuration__ctor_llvm
@@ -15362,7 +15362,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2264]
 br x16
-.word 6271
+.word 6259
 _p_723_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_CreateBuiltinTypes_llvm:
 	.globl _p_723_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_CreateBuiltinTypes_llvm
 .private_extern _p_723_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_CreateBuiltinTypes_llvm
@@ -15373,7 +15373,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2272]
 br x16
-.word 6274
+.word 6262
 _p_724_plt_System_Private_Xml_System_Array_BinarySearch_System_Array_object_System_Collections_IComparer_llvm:
 	.globl _p_724_plt_System_Private_Xml_System_Array_BinarySearch_System_Array_object_System_Collections_IComparer_llvm
 .private_extern _p_724_plt_System_Private_Xml_System_Array_BinarySearch_System_Array_object_System_Collections_IComparer_llvm
@@ -15384,7 +15384,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2280]
 br x16
-.word 6277
+.word 6265
 _p_725_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaSimpleType__ctor_llvm:
 	.globl _p_725_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaSimpleType__ctor_llvm
 .private_extern _p_725_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaSimpleType__ctor_llvm
@@ -15395,7 +15395,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2288]
 br x16
-.word 6282
+.word 6270
 _p_726_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_726_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_726_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -15406,7 +15406,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2296]
 br x16
-.word 6285
+.word 6273
 _p_727_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FromTypeName_string_llvm:
 	.globl _p_727_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FromTypeName_string_llvm
 .private_extern _p_727_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FromTypeName_string_llvm
@@ -15417,7 +15417,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2304]
 br x16
-.word 6288
+.word 6276
 _p_728_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_StartBuiltinType_System_Xml_XmlQualifiedName_System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_728_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_StartBuiltinType_System_Xml_XmlQualifiedName_System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_728_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_StartBuiltinType_System_Xml_XmlQualifiedName_System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -15428,7 +15428,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2312]
 br x16
-.word 6291
+.word 6279
 _p_729_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FinishBuiltinType_System_Xml_Schema_XmlSchemaSimpleType_System_Xml_Schema_XmlSchemaSimpleType_llvm:
 	.globl _p_729_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FinishBuiltinType_System_Xml_Schema_XmlSchemaSimpleType_System_Xml_Schema_XmlSchemaSimpleType_llvm
 .private_extern _p_729_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FinishBuiltinType_System_Xml_Schema_XmlSchemaSimpleType_System_Xml_Schema_XmlSchemaSimpleType_llvm
@@ -15439,7 +15439,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2320]
 br x16
-.word 6294
+.word 6282
 _p_730_plt_System_Private_Xml_System_Xml_Schema_Datatype_List__ctor_System_Xml_Schema_DatatypeImplementation_int_llvm:
 	.globl _p_730_plt_System_Private_Xml_System_Xml_Schema_Datatype_List__ctor_System_Xml_Schema_DatatypeImplementation_int_llvm
 .private_extern _p_730_plt_System_Private_Xml_System_Xml_Schema_Datatype_List__ctor_System_Xml_Schema_DatatypeImplementation_int_llvm
@@ -15450,7 +15450,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2328]
 br x16
-.word 6297
+.word 6285
 _p_731_plt_System_Private_Xml_System_Xml_Schema_Datatype_union_HasAtomicMembers_llvm:
 	.globl _p_731_plt_System_Private_Xml_System_Xml_Schema_Datatype_union_HasAtomicMembers_llvm
 .private_extern _p_731_plt_System_Private_Xml_System_Xml_Schema_Datatype_union_HasAtomicMembers_llvm
@@ -15461,7 +15461,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2336]
 br x16
-.word 6300
+.word 6288
 _p_732_plt_System_Private_Xml_System_Xml_Schema_XsdSimpleValue_get_TypedValue_llvm:
 	.globl _p_732_plt_System_Private_Xml_System_Xml_Schema_XsdSimpleValue_get_TypedValue_llvm
 .private_extern _p_732_plt_System_Private_Xml_System_Xml_Schema_XsdSimpleValue_get_TypedValue_llvm
@@ -15472,7 +15472,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2344]
 br x16
-.word 6303
+.word 6291
 _p_733_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_GetTypeName_llvm:
 	.globl _p_733_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_GetTypeName_llvm
 .private_extern _p_733_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_GetTypeName_llvm
@@ -15483,7 +15483,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2352]
 br x16
-.word 6306
+.word 6294
 _p_734_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string___System_Exception_string_int_int_System_Xml_Schema_XmlSchemaObject_llvm:
 	.globl _p_734_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string___System_Exception_string_int_int_System_Xml_Schema_XmlSchemaObject_llvm
 .private_extern _p_734_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_string___System_Exception_string_int_int_System_Xml_Schema_XmlSchemaObject_llvm
@@ -15494,7 +15494,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2360]
 br x16
-.word 6309
+.word 6297
 _p_735_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_get_TypeCodeString_llvm:
 	.globl _p_735_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_get_TypeCodeString_llvm
 .private_extern _p_735_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_get_TypeCodeString_llvm
@@ -15505,7 +15505,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2368]
 br x16
-.word 6312
+.word 6300
 _p_736_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_get_ValueConverter_llvm:
 	.globl _p_736_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_get_ValueConverter_llvm
 .private_extern _p_736_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_get_ValueConverter_llvm
@@ -15516,7 +15516,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2376]
 br x16
-.word 6315
+.word 6303
 _p_737_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_Create_System_Xml_Schema_XmlValueConverter_llvm:
 	.globl _p_737_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_Create_System_Xml_Schema_XmlValueConverter_llvm
 .private_extern _p_737_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_Create_System_Xml_Schema_XmlValueConverter_llvm
@@ -15527,7 +15527,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2384]
 br x16
-.word 6318
+.word 6306
 _p_738_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_GetSimpleTypeFromTypeCode_System_Xml_Schema_XmlTypeCode_llvm:
 	.globl _p_738_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_GetSimpleTypeFromTypeCode_System_Xml_Schema_XmlTypeCode_llvm
 .private_extern _p_738_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_GetSimpleTypeFromTypeCode_System_Xml_Schema_XmlTypeCode_llvm
@@ -15538,7 +15538,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2392]
 br x16
-.word 6321
+.word 6309
 _p_739_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_get_AnySimpleType_llvm:
 	.globl _p_739_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_get_AnySimpleType_llvm
 .private_extern _p_739_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_get_AnySimpleType_llvm
@@ -15549,7 +15549,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2400]
 br x16
-.word 6324
+.word 6312
 _p_740_plt_System_Private_Xml_System_Array_GetValue_int_llvm:
 	.globl _p_740_plt_System_Private_Xml_System_Array_GetValue_int_llvm
 .private_extern _p_740_plt_System_Private_Xml_System_Array_GetValue_int_llvm
@@ -15560,7 +15560,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2408]
 br x16
-.word 6327
+.word 6315
 _p_741_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckLexicalFacets_string__System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_741_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckLexicalFacets_string__System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_741_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckLexicalFacets_string__System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -15571,7 +15571,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2416]
 br x16
-.word 6332
+.word 6320
 _p_742_plt_System_Private_Xml_System_Xml_XmlConvert_SplitString_string_llvm:
 	.globl _p_742_plt_System_Private_Xml_System_Xml_XmlConvert_SplitString_string_llvm
 .private_extern _p_742_plt_System_Private_Xml_System_Xml_XmlConvert_SplitString_string_llvm
@@ -15582,7 +15582,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2424]
 br x16
-.word 6335
+.word 6323
 _p_743_plt_System_Private_Xml_System_Xml_Schema_Datatype_List__TryParseValueg__ToArray_20_0_System_Collections_ArrayList_System_Type_llvm:
 	.globl _p_743_plt_System_Private_Xml_System_Xml_Schema_Datatype_List__TryParseValueg__ToArray_20_0_System_Collections_ArrayList_System_Type_llvm
 .private_extern _p_743_plt_System_Private_Xml_System_Xml_Schema_Datatype_List__TryParseValueg__ToArray_20_0_System_Collections_ArrayList_System_Type_llvm
@@ -15593,7 +15593,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2432]
 br x16
-.word 6337
+.word 6325
 _p_744_plt_System_Private_Xml_System_Xml_Schema_XsdSimpleValue_get_XmlType_llvm:
 	.globl _p_744_plt_System_Private_Xml_System_Xml_Schema_XsdSimpleValue_get_XmlType_llvm
 .private_extern _p_744_plt_System_Private_Xml_System_Xml_Schema_XsdSimpleValue_get_XmlType_llvm
@@ -15604,7 +15604,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2440]
 br x16
-.word 6340
+.word 6328
 _p_745_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_745_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_745_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -15615,7 +15615,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2448]
 br x16
-.word 6343
+.word 6331
 _p_746_plt_System_Private_Xml_System_Xml_XmlComplianceUtil_NonCDataNormalize_string_llvm:
 	.globl _p_746_plt_System_Private_Xml_System_Xml_XmlComplianceUtil_NonCDataNormalize_string_llvm
 .private_extern _p_746_plt_System_Private_Xml_System_Xml_XmlComplianceUtil_NonCDataNormalize_string_llvm
@@ -15626,7 +15626,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2456]
 br x16
-.word 6346
+.word 6334
 _p_747_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation__ctor_llvm:
 	.globl _p_747_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation__ctor_llvm
 .private_extern _p_747_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation__ctor_llvm
@@ -15637,7 +15637,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2464]
 br x16
-.word 6348
+.word 6336
 _p_748_plt_System_Private_Xml_System_Xml_Schema_XmlStringConverter_Create_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_748_plt_System_Private_Xml_System_Xml_Schema_XmlStringConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_748_plt_System_Private_Xml_System_Xml_Schema_XmlStringConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
@@ -15648,7 +15648,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2472]
 br x16
-.word 6351
+.word 6339
 _p_749_plt_System_Private_Xml_System_Xml_Schema_XmlBooleanConverter_Create_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_749_plt_System_Private_Xml_System_Xml_Schema_XmlBooleanConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_749_plt_System_Private_Xml_System_Xml_Schema_XmlBooleanConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
@@ -15659,7 +15659,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2480]
 br x16
-.word 6354
+.word 6342
 _p_750_plt_System_Private_Xml_System_Xml_XmlConvert_TryToBoolean_string_bool__llvm:
 	.globl _p_750_plt_System_Private_Xml_System_Xml_XmlConvert_TryToBoolean_string_bool__llvm
 .private_extern _p_750_plt_System_Private_Xml_System_Xml_XmlConvert_TryToBoolean_string_bool__llvm
@@ -15670,7 +15670,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2488]
 br x16
-.word 6357
+.word 6345
 _p_751_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric2Converter_Create_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_751_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric2Converter_Create_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_751_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric2Converter_Create_System_Xml_Schema_XmlSchemaType_llvm
@@ -15681,7 +15681,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2496]
 br x16
-.word 6359
+.word 6347
 _p_752_plt_System_Private_Xml_System_Xml_XmlConvert_TryToSingle_string_single__llvm:
 	.globl _p_752_plt_System_Private_Xml_System_Xml_XmlConvert_TryToSingle_string_single__llvm
 .private_extern _p_752_plt_System_Private_Xml_System_Xml_XmlConvert_TryToSingle_string_single__llvm
@@ -15692,7 +15692,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2504]
 br x16
-.word 6362
+.word 6350
 _p_753_plt_System_Private_Xml_System_Xml_XmlConvert_TryToDouble_string_double__llvm:
 	.globl _p_753_plt_System_Private_Xml_System_Xml_XmlConvert_TryToDouble_string_double__llvm
 .private_extern _p_753_plt_System_Private_Xml_System_Xml_XmlConvert_TryToDouble_string_double__llvm
@@ -15703,7 +15703,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2512]
 br x16
-.word 6364
+.word 6352
 _p_754_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_Create_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_754_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_Create_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_754_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_Create_System_Xml_Schema_XmlSchemaType_llvm
@@ -15714,7 +15714,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2520]
 br x16
-.word 6366
+.word 6354
 _p_755_plt_System_Private_Xml_System_Decimal_CompareTo_System_Decimal_llvm:
 	.globl _p_755_plt_System_Private_Xml_System_Decimal_CompareTo_System_Decimal_llvm
 .private_extern _p_755_plt_System_Private_Xml_System_Decimal_CompareTo_System_Decimal_llvm
@@ -15725,7 +15725,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2528]
 br x16
-.word 6369
+.word 6357
 _p_756_plt_System_Private_Xml_System_Xml_XmlConvert_TryToDecimal_string_System_Decimal__llvm:
 	.globl _p_756_plt_System_Private_Xml_System_Xml_XmlConvert_TryToDecimal_string_System_Decimal__llvm
 .private_extern _p_756_plt_System_Private_Xml_System_Xml_XmlConvert_TryToDecimal_string_System_Decimal__llvm
@@ -15736,7 +15736,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2536]
 br x16
-.word 6374
+.word 6362
 _p_757_plt_System_Private_Xml_System_Decimal__ctor_int_int_int_bool_byte_llvm:
 	.globl _p_757_plt_System_Private_Xml_System_Decimal__ctor_int_int_int_bool_byte_llvm
 .private_extern _p_757_plt_System_Private_Xml_System_Decimal__ctor_int_int_int_bool_byte_llvm
@@ -15747,7 +15747,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2544]
 br x16
-.word 6376
+.word 6364
 _p_758_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter_Create_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_758_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_758_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
@@ -15758,7 +15758,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2552]
 br x16
-.word 6381
+.word 6369
 _p_759_plt_System_Private_Xml_System_TimeSpan_CompareTo_System_TimeSpan_llvm:
 	.globl _p_759_plt_System_Private_Xml_System_TimeSpan_CompareTo_System_TimeSpan_llvm
 .private_extern _p_759_plt_System_Private_Xml_System_TimeSpan_CompareTo_System_TimeSpan_llvm
@@ -15769,7 +15769,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2560]
 br x16
-.word 6384
+.word 6372
 _p_760_plt_System_Private_Xml_System_Xml_XmlConvert_TryToTimeSpan_string_System_TimeSpan__llvm:
 	.globl _p_760_plt_System_Private_Xml_System_Xml_XmlConvert_TryToTimeSpan_string_System_TimeSpan__llvm
 .private_extern _p_760_plt_System_Private_Xml_System_Xml_XmlConvert_TryToTimeSpan_string_System_TimeSpan__llvm
@@ -15780,7 +15780,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2568]
 br x16
-.word 6389
+.word 6377
 _p_761_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParse_string_System_Xml_Schema_XsdDuration_DurationType_System_Xml_Schema_XsdDuration__llvm:
 	.globl _p_761_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParse_string_System_Xml_Schema_XsdDuration_DurationType_System_Xml_Schema_XsdDuration__llvm
 .private_extern _p_761_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParse_string_System_Xml_Schema_XsdDuration_DurationType_System_Xml_Schema_XsdDuration__llvm
@@ -15791,7 +15791,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2576]
 br x16
-.word 6391
+.word 6379
 _p_762_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryToTimeSpan_System_Xml_Schema_XsdDuration_DurationType_System_TimeSpan__llvm:
 	.globl _p_762_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryToTimeSpan_System_Xml_Schema_XsdDuration_DurationType_System_TimeSpan__llvm
 .private_extern _p_762_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryToTimeSpan_System_Xml_Schema_XsdDuration_DurationType_System_TimeSpan__llvm
@@ -15802,7 +15802,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2584]
 br x16
-.word 6394
+.word 6382
 _p_763_plt_System_Private_Xml_System_Xml_Schema_XmlDateTimeConverter_Create_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_763_plt_System_Private_Xml_System_Xml_Schema_XmlDateTimeConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_763_plt_System_Private_Xml_System_Xml_Schema_XmlDateTimeConverter_Create_System_Xml_Schema_XmlSchemaType_llvm
@@ -15813,7 +15813,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2592]
 br x16
-.word 6397
+.word 6385
 _p_764_plt_System_Private_Xml_System_DateTime_CompareTo_System_DateTime_llvm:
 	.globl _p_764_plt_System_Private_Xml_System_DateTime_CompareTo_System_DateTime_llvm
 .private_extern _p_764_plt_System_Private_Xml_System_DateTime_CompareTo_System_DateTime_llvm
@@ -15824,7 +15824,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2600]
 br x16
-.word 6400
+.word 6388
 _p_765_plt_System_Private_Xml_System_DateTime_ToUniversalTime_llvm:
 	.globl _p_765_plt_System_Private_Xml_System_DateTime_ToUniversalTime_llvm
 .private_extern _p_765_plt_System_Private_Xml_System_DateTime_ToUniversalTime_llvm
@@ -15835,7 +15835,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2608]
 br x16
-.word 6405
+.word 6393
 _p_766_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_TryParse_string_System_Xml_Schema_XsdDateTimeFlags_System_Xml_Schema_XsdDateTime__llvm:
 	.globl _p_766_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_TryParse_string_System_Xml_Schema_XsdDateTimeFlags_System_Xml_Schema_XsdDateTime__llvm
 .private_extern _p_766_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_TryParse_string_System_Xml_Schema_XsdDateTimeFlags_System_Xml_Schema_XsdDateTime__llvm
@@ -15846,7 +15846,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2616]
 br x16
-.word 6410
+.word 6398
 _p_767_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_op_Implicit_System_Xml_Schema_XsdDateTime_llvm:
 	.globl _p_767_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_op_Implicit_System_Xml_Schema_XsdDateTime_llvm
 .private_extern _p_767_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_op_Implicit_System_Xml_Schema_XsdDateTime_llvm
@@ -15857,7 +15857,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2624]
 br x16
-.word 6413
+.word 6401
 _p_768_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeBase__ctor_System_Xml_Schema_XsdDateTimeFlags_llvm:
 	.globl _p_768_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeBase__ctor_System_Xml_Schema_XsdDateTimeFlags_llvm
 .private_extern _p_768_plt_System_Private_Xml_System_Xml_Schema_Datatype_dateTimeBase__ctor_System_Xml_Schema_XsdDateTimeFlags_llvm
@@ -15868,7 +15868,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2632]
 br x16
-.word 6416
+.word 6404
 _p_769_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_Compare_byte___byte___llvm:
 	.globl _p_769_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_Compare_byte___byte___llvm
 .private_extern _p_769_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_Compare_byte___byte___llvm
@@ -15879,7 +15879,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2640]
 br x16
-.word 6419
+.word 6407
 _p_770_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUri_string_System_Uri__llvm:
 	.globl _p_770_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUri_string_System_Uri__llvm
 .private_extern _p_770_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUri_string_System_Uri__llvm
@@ -15890,7 +15890,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2648]
 br x16
-.word 6422
+.word 6410
 _p_771_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_CheckValueFacets_string_System_Xml_Schema_XmlSchemaDatatype_bool_llvm:
 	.globl _p_771_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_CheckValueFacets_string_System_Xml_Schema_XmlSchemaDatatype_bool_llvm
 .private_extern _p_771_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_CheckValueFacets_string_System_Xml_Schema_XmlSchemaDatatype_bool_llvm
@@ -15901,7 +15901,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2656]
 br x16
-.word 6424
+.word 6412
 _p_772_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInteger_string_System_Decimal__llvm:
 	.globl _p_772_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInteger_string_System_Decimal__llvm
 .private_extern _p_772_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInteger_string_System_Decimal__llvm
@@ -15912,7 +15912,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2664]
 br x16
-.word 6427
+.word 6415
 _p_773_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt64_string_long__llvm:
 	.globl _p_773_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt64_string_long__llvm
 .private_extern _p_773_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt64_string_long__llvm
@@ -15923,7 +15923,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2672]
 br x16
-.word 6429
+.word 6417
 _p_774_plt_System_Private_Xml_System_Decimal__ctor_long_llvm:
 	.globl _p_774_plt_System_Private_Xml_System_Decimal__ctor_long_llvm
 .private_extern _p_774_plt_System_Private_Xml_System_Decimal__ctor_long_llvm
@@ -15934,7 +15934,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2680]
 br x16
-.word 6431
+.word 6419
 _p_775_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt32_string_int__llvm:
 	.globl _p_775_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt32_string_int__llvm
 .private_extern _p_775_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt32_string_int__llvm
@@ -15945,7 +15945,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2688]
 br x16
-.word 6436
+.word 6424
 _p_776_plt_System_Private_Xml_System_Decimal__ctor_int_llvm:
 	.globl _p_776_plt_System_Private_Xml_System_Decimal__ctor_int_llvm
 .private_extern _p_776_plt_System_Private_Xml_System_Decimal__ctor_int_llvm
@@ -15956,7 +15956,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2696]
 br x16
-.word 6438
+.word 6426
 _p_777_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt16_string_int16__llvm:
 	.globl _p_777_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt16_string_int16__llvm
 .private_extern _p_777_plt_System_Private_Xml_System_Xml_XmlConvert_TryToInt16_string_int16__llvm
@@ -15967,7 +15967,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2704]
 br x16
-.word 6443
+.word 6431
 _p_778_plt_System_Private_Xml_System_Xml_XmlConvert_TryToSByte_string_sbyte__llvm:
 	.globl _p_778_plt_System_Private_Xml_System_Xml_XmlConvert_TryToSByte_string_sbyte__llvm
 .private_extern _p_778_plt_System_Private_Xml_System_Xml_XmlConvert_TryToSByte_string_sbyte__llvm
@@ -15978,7 +15978,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2712]
 br x16
-.word 6445
+.word 6433
 _p_779_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt64_string_ulong__llvm:
 	.globl _p_779_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt64_string_ulong__llvm
 .private_extern _p_779_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt64_string_ulong__llvm
@@ -15989,7 +15989,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2720]
 br x16
-.word 6447
+.word 6435
 _p_780_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt32_string_uint__llvm:
 	.globl _p_780_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt32_string_uint__llvm
 .private_extern _p_780_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt32_string_uint__llvm
@@ -16000,7 +16000,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2728]
 br x16
-.word 6449
+.word 6437
 _p_781_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt16_string_uint16__llvm:
 	.globl _p_781_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt16_string_uint16__llvm
 .private_extern _p_781_plt_System_Private_Xml_System_Xml_XmlConvert_TryToUInt16_string_uint16__llvm
@@ -16011,7 +16011,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2736]
 br x16
-.word 6451
+.word 6439
 _p_782_plt_System_Private_Xml_System_Xml_XmlConvert_TryToByte_string_byte__llvm:
 	.globl _p_782_plt_System_Private_Xml_System_Xml_XmlConvert_TryToByte_string_byte__llvm
 .private_extern _p_782_plt_System_Private_Xml_System_Xml_XmlConvert_TryToByte_string_byte__llvm
@@ -16022,7 +16022,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2744]
 br x16
-.word 6453
+.word 6441
 _p_783_plt_System_Private_Xml_System_Xml_XmlConvert_ToDouble_string_llvm:
 	.globl _p_783_plt_System_Private_Xml_System_Xml_XmlConvert_ToDouble_string_llvm
 .private_extern _p_783_plt_System_Private_Xml_System_Xml_XmlConvert_ToDouble_string_llvm
@@ -16033,7 +16033,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2752]
 br x16
-.word 6455
+.word 6443
 _p_784_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_System_Exception_llvm:
 	.globl _p_784_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_System_Exception_llvm
 .private_extern _p_784_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_System_Exception_llvm
@@ -16044,7 +16044,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2760]
 br x16
-.word 6457
+.word 6445
 _p_785_plt_System_Private_Xml_System_Xml_XmlConvert_ToSingle_string_llvm:
 	.globl _p_785_plt_System_Private_Xml_System_Xml_XmlConvert_ToSingle_string_llvm
 .private_extern _p_785_plt_System_Private_Xml_System_Xml_XmlConvert_ToSingle_string_llvm
@@ -16055,7 +16055,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2768]
 br x16
-.word 6460
+.word 6448
 _p_786_plt_System_Private_Xml_System_Xml_XmlConvert_TryToChar_string_char__llvm:
 	.globl _p_786_plt_System_Private_Xml_System_Xml_XmlConvert_TryToChar_string_char__llvm
 .private_extern _p_786_plt_System_Private_Xml_System_Xml_XmlConvert_TryToChar_string_char__llvm
@@ -16066,7 +16066,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2776]
 br x16
-.word 6462
+.word 6450
 _p_787_plt_System_Private_Xml_System_Xml_Schema_Numeric10FacetsChecker_CheckTotalAndFractionDigits_System_Decimal_int_int_bool_bool_llvm:
 	.globl _p_787_plt_System_Private_Xml_System_Xml_Schema_Numeric10FacetsChecker_CheckTotalAndFractionDigits_System_Decimal_int_int_bool_bool_llvm
 .private_extern _p_787_plt_System_Private_Xml_System_Xml_Schema_Numeric10FacetsChecker_CheckTotalAndFractionDigits_System_Decimal_int_int_bool_bool_llvm
@@ -16077,7 +16077,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2784]
 br x16
-.word 6464
+.word 6452
 _p_788_plt_System_Private_Xml_System_Guid_Equals_object_llvm:
 	.globl _p_788_plt_System_Private_Xml_System_Guid_Equals_object_llvm
 .private_extern _p_788_plt_System_Private_Xml_System_Guid_Equals_object_llvm
@@ -16088,7 +16088,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2792]
 br x16
-.word 6467
+.word 6455
 _p_789_plt_System_Private_Xml_System_Xml_XmlConvert_TryToGuid_string_System_Guid__llvm:
 	.globl _p_789_plt_System_Private_Xml_System_Xml_XmlConvert_TryToGuid_string_System_Guid__llvm
 .private_extern _p_789_plt_System_Private_Xml_System_Xml_XmlConvert_TryToGuid_string_System_Guid__llvm
@@ -16099,7 +16099,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2800]
 br x16
-.word 6472
+.word 6460
 _p_790_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckWhitespaceFacets_string__System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_790_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckWhitespaceFacets_string__System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_790_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckWhitespaceFacets_string__System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -16110,7 +16110,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2808]
 br x16
-.word 6474
+.word 6462
 _p_791_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckPatternFacets_System_Xml_Schema_RestrictionFacets_string_llvm:
 	.globl _p_791_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckPatternFacets_System_Xml_Schema_RestrictionFacets_string_llvm
 .private_extern _p_791_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_CheckPatternFacets_System_Xml_Schema_RestrictionFacets_string_llvm
@@ -16121,7 +16121,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2816]
 br x16
-.word 6477
+.word 6465
 _p_792_plt_System_Private_Xml_System_Xml_XmlComplianceUtil_CDataNormalize_string_llvm:
 	.globl _p_792_plt_System_Private_Xml_System_Xml_XmlComplianceUtil_CDataNormalize_string_llvm
 .private_extern _p_792_plt_System_Private_Xml_System_Xml_XmlComplianceUtil_CDataNormalize_string_llvm
@@ -16132,7 +16132,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2824]
 br x16
-.word 6480
+.word 6468
 _p_793_plt_System_Private_Xml_System_Text_RegularExpressions_Regex_IsMatch_string_llvm:
 	.globl _p_793_plt_System_Private_Xml_System_Text_RegularExpressions_Regex_IsMatch_string_llvm
 .private_extern _p_793_plt_System_Private_Xml_System_Text_RegularExpressions_Regex_IsMatch_string_llvm
@@ -16143,7 +16143,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2832]
 br x16
-.word 6482
+.word 6470
 _p_794_plt_System_Private_Xml_System_Decimal_op_Implicit_int_llvm:
 	.globl _p_794_plt_System_Private_Xml_System_Decimal_op_Implicit_int_llvm
 .private_extern _p_794_plt_System_Private_Xml_System_Decimal_op_Implicit_int_llvm
@@ -16154,7 +16154,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2840]
 br x16
-.word 6487
+.word 6475
 _p_795_plt_System_Private_Xml_System_Decimal_op_Multiply_System_Decimal_System_Decimal_llvm:
 	.globl _p_795_plt_System_Private_Xml_System_Decimal_op_Multiply_System_Decimal_System_Decimal_llvm
 .private_extern _p_795_plt_System_Private_Xml_System_Decimal_op_Multiply_System_Decimal_System_Decimal_llvm
@@ -16165,7 +16165,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2848]
 br x16
-.word 6492
+.word 6480
 _p_796_plt_System_Private_Xml_System_Decimal_op_GreaterThan_System_Decimal_System_Decimal_llvm:
 	.globl _p_796_plt_System_Private_Xml_System_Decimal_op_GreaterThan_System_Decimal_System_Decimal_llvm
 .private_extern _p_796_plt_System_Private_Xml_System_Decimal_op_GreaterThan_System_Decimal_System_Decimal_llvm
@@ -16176,7 +16176,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2856]
 br x16
-.word 6497
+.word 6485
 _p_797_plt_System_Private_Xml_System_Decimal_ToString_System_IFormatProvider_llvm:
 	.globl _p_797_plt_System_Private_Xml_System_Decimal_ToString_System_IFormatProvider_llvm
 .private_extern _p_797_plt_System_Private_Xml_System_Decimal_ToString_System_IFormatProvider_llvm
@@ -16187,7 +16187,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2864]
 br x16
-.word 6502
+.word 6490
 _p_798_plt_System_Private_Xml_System_OverflowException__ctor_string_llvm:
 	.globl _p_798_plt_System_Private_Xml_System_OverflowException__ctor_string_llvm
 .private_extern _p_798_plt_System_Private_Xml_System_OverflowException__ctor_string_llvm
@@ -16198,7 +16198,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2872]
 br x16
-.word 6507
+.word 6495
 _p_799_plt_System_Private_Xml_System_Decimal_op_LessThan_System_Decimal_System_Decimal_llvm:
 	.globl _p_799_plt_System_Private_Xml_System_Decimal_op_LessThan_System_Decimal_System_Decimal_llvm
 .private_extern _p_799_plt_System_Private_Xml_System_Decimal_op_LessThan_System_Decimal_System_Decimal_llvm
@@ -16209,7 +16209,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2880]
 br x16
-.word 6512
+.word 6500
 _p_800_plt_System_Private_Xml_System_Xml_Schema_Numeric10FacetsChecker_MatchEnumeration_System_Decimal_System_Collections_ArrayList_System_Xml_Schema_XmlValueConverter_llvm:
 	.globl _p_800_plt_System_Private_Xml_System_Xml_Schema_Numeric10FacetsChecker_MatchEnumeration_System_Decimal_System_Collections_ArrayList_System_Xml_Schema_XmlValueConverter_llvm
 .private_extern _p_800_plt_System_Private_Xml_System_Xml_Schema_Numeric10FacetsChecker_MatchEnumeration_System_Decimal_System_Collections_ArrayList_System_Xml_Schema_XmlValueConverter_llvm
@@ -16220,7 +16220,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2888]
 br x16
-.word 6517
+.word 6505
 _p_801_plt_System_Private_Xml_System_Decimal_op_LessThanOrEqual_System_Decimal_System_Decimal_llvm:
 	.globl _p_801_plt_System_Private_Xml_System_Decimal_op_LessThanOrEqual_System_Decimal_System_Decimal_llvm
 .private_extern _p_801_plt_System_Private_Xml_System_Decimal_op_LessThanOrEqual_System_Decimal_System_Decimal_llvm
@@ -16231,7 +16231,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2896]
 br x16
-.word 6520
+.word 6508
 _p_802_plt_System_Private_Xml_System_Decimal_op_GreaterThanOrEqual_System_Decimal_System_Decimal_llvm:
 	.globl _p_802_plt_System_Private_Xml_System_Decimal_op_GreaterThanOrEqual_System_Decimal_System_Decimal_llvm
 .private_extern _p_802_plt_System_Private_Xml_System_Decimal_op_GreaterThanOrEqual_System_Decimal_System_Decimal_llvm
@@ -16242,7 +16242,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2904]
 br x16
-.word 6525
+.word 6513
 _p_803_plt_System_Private_Xml_System_Decimal_op_Implicit_long_llvm:
 	.globl _p_803_plt_System_Private_Xml_System_Decimal_op_Implicit_long_llvm
 .private_extern _p_803_plt_System_Private_Xml_System_Decimal_op_Implicit_long_llvm
@@ -16253,7 +16253,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2912]
 br x16
-.word 6530
+.word 6518
 _p_804_plt_System_Private_Xml_System_Decimal_op_Implicit_int16_llvm:
 	.globl _p_804_plt_System_Private_Xml_System_Decimal_op_Implicit_int16_llvm
 .private_extern _p_804_plt_System_Private_Xml_System_Decimal_op_Implicit_int16_llvm
@@ -16264,7 +16264,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2920]
 br x16
-.word 6535
+.word 6523
 _p_805_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_Power_int_int_llvm:
 	.globl _p_805_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_Power_int_int_llvm
 .private_extern _p_805_plt_System_Private_Xml_System_Xml_Schema_FacetsChecker_Power_int_int_llvm
@@ -16275,7 +16275,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2928]
 br x16
-.word 6540
+.word 6528
 _p_806_plt_System_Private_Xml_System_Decimal_op_Subtraction_System_Decimal_System_Decimal_llvm:
 	.globl _p_806_plt_System_Private_Xml_System_Decimal_op_Subtraction_System_Decimal_System_Decimal_llvm
 .private_extern _p_806_plt_System_Private_Xml_System_Decimal_op_Subtraction_System_Decimal_System_Decimal_llvm
@@ -16286,7 +16286,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2936]
 br x16
-.word 6543
+.word 6531
 _p_807_plt_System_Private_Xml_System_Decimal_DecCalc_InternalRound_System_Decimal_DecCalc__uint_System_MidpointRounding_llvm:
 	.globl _p_807_plt_System_Private_Xml_System_Decimal_DecCalc_InternalRound_System_Decimal_DecCalc__uint_System_MidpointRounding_llvm
 .private_extern _p_807_plt_System_Private_Xml_System_Decimal_DecCalc_InternalRound_System_Decimal_DecCalc__uint_System_MidpointRounding_llvm
@@ -16297,7 +16297,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2944]
 br x16
-.word 6548
+.word 6536
 _p_808_plt_System_Private_Xml_System_Xml_Schema_Numeric2FacetsChecker_MatchEnumeration_double_System_Collections_ArrayList_System_Xml_Schema_XmlValueConverter_llvm:
 	.globl _p_808_plt_System_Private_Xml_System_Xml_Schema_Numeric2FacetsChecker_MatchEnumeration_double_System_Collections_ArrayList_System_Xml_Schema_XmlValueConverter_llvm
 .private_extern _p_808_plt_System_Private_Xml_System_Xml_Schema_Numeric2FacetsChecker_MatchEnumeration_double_System_Collections_ArrayList_System_Xml_Schema_XmlValueConverter_llvm
@@ -16308,7 +16308,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2952]
 br x16
-.word 6553
+.word 6541
 _p_809_plt_System_Private_Xml_System_Xml_Schema_DurationFacetsChecker_MatchEnumeration_System_TimeSpan_System_Collections_ArrayList_llvm:
 	.globl _p_809_plt_System_Private_Xml_System_Xml_Schema_DurationFacetsChecker_MatchEnumeration_System_TimeSpan_System_Collections_ArrayList_llvm
 .private_extern _p_809_plt_System_Private_Xml_System_Xml_Schema_DurationFacetsChecker_MatchEnumeration_System_TimeSpan_System_Collections_ArrayList_llvm
@@ -16319,7 +16319,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2960]
 br x16
-.word 6556
+.word 6544
 _p_810_plt_System_Private_Xml_System_TimeSpan_Compare_System_TimeSpan_System_TimeSpan_llvm:
 	.globl _p_810_plt_System_Private_Xml_System_TimeSpan_Compare_System_TimeSpan_System_TimeSpan_llvm
 .private_extern _p_810_plt_System_Private_Xml_System_TimeSpan_Compare_System_TimeSpan_System_TimeSpan_llvm
@@ -16330,7 +16330,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2968]
 br x16
-.word 6559
+.word 6547
 _p_811_plt_System_Private_Xml_System_Xml_Schema_DateTimeFacetsChecker_MatchEnumeration_System_DateTime_System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_811_plt_System_Private_Xml_System_Xml_Schema_DateTimeFacetsChecker_MatchEnumeration_System_DateTime_System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_811_plt_System_Private_Xml_System_Xml_Schema_DateTimeFacetsChecker_MatchEnumeration_System_DateTime_System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -16341,7 +16341,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2976]
 br x16
-.word 6564
+.word 6552
 _p_812_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_CheckBuiltInFacets_string_System_Xml_Schema_XmlTypeCode_bool_llvm:
 	.globl _p_812_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_CheckBuiltInFacets_string_System_Xml_Schema_XmlTypeCode_bool_llvm
 .private_extern _p_812_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_CheckBuiltInFacets_string_System_Xml_Schema_XmlTypeCode_bool_llvm
@@ -16352,7 +16352,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2984]
 br x16
-.word 6567
+.word 6555
 _p_813_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_MatchEnumeration_string_System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_813_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_MatchEnumeration_string_System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_813_plt_System_Private_Xml_System_Xml_Schema_StringFacetsChecker_MatchEnumeration_string_System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -16363,7 +16363,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #2992]
 br x16
-.word 6570
+.word 6558
 _p_814_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNormalizedString_string_llvm:
 	.globl _p_814_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNormalizedString_string_llvm
 .private_extern _p_814_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNormalizedString_string_llvm
@@ -16374,7 +16374,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3000]
 br x16
-.word 6573
+.word 6561
 _p_815_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyTOKEN_string_llvm:
 	.globl _p_815_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyTOKEN_string_llvm
 .private_extern _p_815_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyTOKEN_string_llvm
@@ -16385,7 +16385,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3008]
 br x16
-.word 6575
+.word 6563
 _p_816_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNMTOKEN_string_llvm:
 	.globl _p_816_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNMTOKEN_string_llvm
 .private_extern _p_816_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNMTOKEN_string_llvm
@@ -16396,7 +16396,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3016]
 br x16
-.word 6577
+.word 6565
 _p_817_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyName_string_llvm:
 	.globl _p_817_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyName_string_llvm
 .private_extern _p_817_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyName_string_llvm
@@ -16407,7 +16407,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3024]
 br x16
-.word 6579
+.word 6567
 _p_818_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNCName_string_llvm:
 	.globl _p_818_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNCName_string_llvm
 .private_extern _p_818_plt_System_Private_Xml_System_Xml_XmlConvert_TryVerifyNCName_string_llvm
@@ -16418,7 +16418,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3032]
 br x16
-.word 6581
+.word 6569
 _p_819_plt_System_Private_Xml_System_Xml_Schema_QNameFacetsChecker_MatchEnumeration_System_Xml_XmlQualifiedName_System_Collections_ArrayList_llvm:
 	.globl _p_819_plt_System_Private_Xml_System_Xml_Schema_QNameFacetsChecker_MatchEnumeration_System_Xml_XmlQualifiedName_System_Collections_ArrayList_llvm
 .private_extern _p_819_plt_System_Private_Xml_System_Xml_Schema_QNameFacetsChecker_MatchEnumeration_System_Xml_XmlQualifiedName_System_Collections_ArrayList_llvm
@@ -16429,7 +16429,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3040]
 br x16
-.word 6583
+.word 6571
 _p_820_plt_System_Private_Xml_System_Xml_Schema_BinaryFacetsChecker_MatchEnumeration_byte___System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm:
 	.globl _p_820_plt_System_Private_Xml_System_Xml_Schema_BinaryFacetsChecker_MatchEnumeration_byte___System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm
 .private_extern _p_820_plt_System_Private_Xml_System_Xml_Schema_BinaryFacetsChecker_MatchEnumeration_byte___System_Collections_ArrayList_System_Xml_Schema_XmlSchemaDatatype_llvm
@@ -16440,7 +16440,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3048]
 br x16
-.word 6586
+.word 6574
 _p_821_plt_System_Private_Xml_System_Xml_XmlConvert_ToUri_string_llvm:
 	.globl _p_821_plt_System_Private_Xml_System_Xml_XmlConvert_ToUri_string_llvm
 .private_extern _p_821_plt_System_Private_Xml_System_Xml_XmlConvert_ToUri_string_llvm
@@ -16451,7 +16451,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3056]
 br x16
-.word 6589
+.word 6577
 _p_822_plt_System_Private_Xml_System_Xml_Schema_SchemaDeclBase__ctor_System_Xml_XmlQualifiedName_string_llvm:
 	.globl _p_822_plt_System_Private_Xml_System_Xml_Schema_SchemaDeclBase__ctor_System_Xml_XmlQualifiedName_string_llvm
 .private_extern _p_822_plt_System_Private_Xml_System_Xml_Schema_SchemaDeclBase__ctor_System_Xml_XmlQualifiedName_string_llvm
@@ -16462,7 +16462,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3064]
 br x16
-.word 6591
+.word 6579
 _p_823_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_FromXmlTokenizedType_System_Xml_XmlTokenizedType_llvm:
 	.globl _p_823_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_FromXmlTokenizedType_System_Xml_XmlTokenizedType_llvm
 .private_extern _p_823_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_FromXmlTokenizedType_System_Xml_XmlTokenizedType_llvm
@@ -16473,7 +16473,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3072]
 br x16
-.word 6594
+.word 6582
 _p_824_plt_System_Private_Xml_System_Collections_Generic_List_1_string_AddWithResize_string_llvm:
 	.globl _p_824_plt_System_Private_Xml_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
 .private_extern _p_824_plt_System_Private_Xml_System_Collections_Generic_List_1_string_AddWithResize_string_llvm
@@ -16484,7 +16484,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3080]
 br x16
-.word 6601
+.word 6589
 _p_825_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef__ctor_llvm:
 	.globl _p_825_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef__ctor_llvm
 .private_extern _p_825_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef__ctor_llvm
@@ -16495,7 +16495,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3088]
 br x16
-.word 6618
+.word 6606
 _p_826_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName__ctor_llvm:
 	.globl _p_826_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName__ctor_llvm
 .private_extern _p_826_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_XmlQualifiedName__ctor_llvm
@@ -16506,7 +16506,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3096]
 br x16
-.word 6629
+.word 6617
 _p_827_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_llvm:
 	.globl _p_827_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_llvm
 .private_extern _p_827_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl__ctor_llvm
@@ -16517,7 +16517,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3104]
 br x16
-.word 6640
+.word 6628
 _p_828_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef__llvm:
 	.globl _p_828_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef__llvm
 .private_extern _p_828_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_TryGetValue_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef__llvm
@@ -16528,7 +16528,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3112]
 br x16
-.word 6643
+.word 6631
 _p_829_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_Add_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_llvm:
 	.globl _p_829_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_Add_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_llvm
 .private_extern _p_829_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_Add_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaAttDef_llvm
@@ -16539,7 +16539,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3120]
 br x16
-.word 6654
+.word 6642
 _p_830_plt_System_Private_Xml_System_Collections_Generic_List_1_System_Xml_IDtdDefaultAttributeInfo_AddWithResize_System_Xml_IDtdDefaultAttributeInfo_llvm:
 	.globl _p_830_plt_System_Private_Xml_System_Collections_Generic_List_1_System_Xml_IDtdDefaultAttributeInfo_AddWithResize_System_Xml_IDtdDefaultAttributeInfo_llvm
 .private_extern _p_830_plt_System_Private_Xml_System_Collections_Generic_List_1_System_Xml_IDtdDefaultAttributeInfo_AddWithResize_System_Xml_IDtdDefaultAttributeInfo_llvm
@@ -16550,7 +16550,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3128]
 br x16
-.word 6668
+.word 6656
 _p_831_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl__ctor_llvm:
 	.globl _p_831_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl__ctor_llvm
 .private_extern _p_831_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl__ctor_llvm
@@ -16561,7 +16561,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3136]
 br x16
-.word 6685
+.word 6673
 _p_832_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_bool__ctor_llvm:
 	.globl _p_832_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_bool__ctor_llvm
 .private_extern _p_832_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_bool__ctor_llvm
@@ -16572,7 +16572,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3144]
 br x16
-.word 6696
+.word 6684
 _p_833_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity__ctor_llvm:
 	.globl _p_833_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity__ctor_llvm
 .private_extern _p_833_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaEntity__ctor_llvm
@@ -16583,7 +16583,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3152]
 br x16
-.word 6707
+.word 6695
 _p_834_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation__ctor_llvm:
 	.globl _p_834_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation__ctor_llvm
 .private_extern _p_834_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_string_System_Xml_Schema_SchemaNotation__ctor_llvm
@@ -16594,7 +16594,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3160]
 br x16
-.word 6718
+.word 6706
 _p_835_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_GetEnumerator_llvm:
 	.globl _p_835_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_GetEnumerator_llvm
 .private_extern _p_835_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_GetEnumerator_llvm
@@ -16605,7 +16605,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3168]
 br x16
-.word 6729
+.word 6717
 _p_836_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_MoveNext_llvm:
 	.globl _p_836_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_MoveNext_llvm
 .private_extern _p_836_plt_System_Private_Xml_System_Collections_Generic_Dictionary_2_ValueCollection_Enumerator_System_Xml_XmlQualifiedName_System_Xml_Schema_SchemaElementDecl_MoveNext_llvm
@@ -16616,7 +16616,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3176]
 br x16
-.word 6740
+.word 6728
 _p_837_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_get_TypeCode_llvm:
 	.globl _p_837_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_get_TypeCode_llvm
 .private_extern _p_837_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType_get_TypeCode_llvm
@@ -16627,7 +16627,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3184]
 br x16
-.word 6751
+.word 6739
 _p_838_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue_GetPrefixFromQName_string_llvm:
 	.globl _p_838_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue_GetPrefixFromQName_string_llvm
 .private_extern _p_838_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue_GetPrefixFromQName_string_llvm
@@ -16638,7 +16638,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3192]
 br x16
-.word 6754
+.word 6742
 _p_839_plt_System_Private_Xml_System_Xml_Schema_NamespaceList__ctor_string_string_llvm:
 	.globl _p_839_plt_System_Private_Xml_System_Xml_Schema_NamespaceList__ctor_string_string_llvm
 .private_extern _p_839_plt_System_Private_Xml_System_Xml_Schema_NamespaceList__ctor_string_string_llvm
@@ -16649,7 +16649,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3200]
 br x16
-.word 6757
+.word 6745
 _p_840_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType__ctor_llvm:
 	.globl _p_840_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType__ctor_llvm
 .private_extern _p_840_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType__ctor_llvm
@@ -16660,7 +16660,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3208]
 br x16
-.word 6760
+.word 6748
 _p_841_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_CreateAnyTypeElementDecl_llvm:
 	.globl _p_841_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_CreateAnyTypeElementDecl_llvm
 .private_extern _p_841_plt_System_Private_Xml_System_Xml_Schema_SchemaElementDecl_CreateAnyTypeElementDecl_llvm
@@ -16671,7 +16671,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3216]
 br x16
-.word 6763
+.word 6751
 _p_842_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaParticle_set_MinOccurs_System_Decimal_llvm:
 	.globl _p_842_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaParticle_set_MinOccurs_System_Decimal_llvm
 .private_extern _p_842_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaParticle_set_MinOccurs_System_Decimal_llvm
@@ -16682,7 +16682,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3224]
 br x16
-.word 6766
+.word 6754
 _p_843_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaParticle_set_MaxOccurs_System_Decimal_llvm:
 	.globl _p_843_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaParticle_set_MaxOccurs_System_Decimal_llvm
 .private_extern _p_843_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaParticle_set_MaxOccurs_System_Decimal_llvm
@@ -16693,7 +16693,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3232]
 br x16
-.word 6769
+.word 6757
 _p_844_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaAny_BuildNamespaceList_string_llvm:
 	.globl _p_844_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaAny_BuildNamespaceList_string_llvm
 .private_extern _p_844_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaAny_BuildNamespaceList_string_llvm
@@ -16704,7 +16704,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3240]
 br x16
-.word 6772
+.word 6760
 _p_845_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaObjectCollection_Add_System_Xml_Schema_XmlSchemaObject_llvm:
 	.globl _p_845_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaObjectCollection_Add_System_Xml_Schema_XmlSchemaObject_llvm
 .private_extern _p_845_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaObjectCollection_Add_System_Xml_Schema_XmlSchemaObject_llvm
@@ -16715,7 +16715,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3248]
 br x16
-.word 6775
+.word 6763
 _p_846_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddNamespaceList_System_Xml_Schema_NamespaceList_object_llvm:
 	.globl _p_846_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddNamespaceList_System_Xml_Schema_NamespaceList_object_llvm
 .private_extern _p_846_plt_System_Private_Xml_System_Xml_Schema_ParticleContentValidator_AddNamespaceList_System_Xml_Schema_NamespaceList_object_llvm
@@ -16726,7 +16726,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3256]
 br x16
-.word 6778
+.word 6766
 _p_847_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaAnyAttribute_BuildNamespaceList_string_llvm:
 	.globl _p_847_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaAnyAttribute_BuildNamespaceList_string_llvm
 .private_extern _p_847_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaAnyAttribute_BuildNamespaceList_string_llvm
@@ -16737,7 +16737,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3264]
 br x16
-.word 6781
+.word 6769
 _p_848_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType__ctor_llvm:
 	.globl _p_848_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType__ctor_llvm
 .private_extern _p_848_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaType__ctor_llvm
@@ -16748,7 +16748,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3272]
 br x16
-.word 6784
+.word 6772
 _p_849_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType_CreateAnyType_System_Xml_Schema_XmlSchemaContentProcessing_llvm:
 	.globl _p_849_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType_CreateAnyType_System_Xml_Schema_XmlSchemaContentProcessing_llvm
 .private_extern _p_849_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType_CreateAnyType_System_Xml_Schema_XmlSchemaContentProcessing_llvm
@@ -16759,7 +16759,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3280]
 br x16
-.word 6787
+.word 6775
 _p_850_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType_CreateUntypedAnyType_llvm:
 	.globl _p_850_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType_CreateUntypedAnyType_llvm
 .private_extern _p_850_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaComplexType_CreateUntypedAnyType_llvm
@@ -16770,7 +16770,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3288]
 br x16
-.word 6790
+.word 6778
 _p_851_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_TypeCodeToString_System_Xml_Schema_XmlTypeCode_llvm:
 	.globl _p_851_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_TypeCodeToString_System_Xml_Schema_XmlTypeCode_llvm
 .private_extern _p_851_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaDatatype_TypeCodeToString_System_Xml_Schema_XmlTypeCode_llvm
@@ -16781,7 +16781,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3296]
 br x16
-.word 6793
+.word 6781
 _p_852_plt_System_Private_Xml_string_Concat_string_string_llvm:
 	.globl _p_852_plt_System_Private_Xml_string_Concat_string_string_llvm
 .private_extern _p_852_plt_System_Private_Xml_string_Concat_string_string_llvm
@@ -16792,7 +16792,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3304]
 br x16
-.word 6796
+.word 6784
 _p_853_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FromXmlTokenizedType_System_Xml_XmlTokenizedType_llvm:
 	.globl _p_853_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FromXmlTokenizedType_System_Xml_XmlTokenizedType_llvm
 .private_extern _p_853_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_FromXmlTokenizedType_System_Xml_XmlTokenizedType_llvm
@@ -16803,7 +16803,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3312]
 br x16
-.word 6801
+.word 6789
 _p_854_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_System_Exception_int_int_llvm:
 	.globl _p_854_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_System_Exception_int_int_llvm
 .private_extern _p_854_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException__ctor_string_System_Exception_int_int_llvm
@@ -16814,7 +16814,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3320]
 br x16
-.word 6804
+.word 6792
 _p_855_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException_CreateMessage_string_string___llvm:
 	.globl _p_855_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException_CreateMessage_string_string___llvm
 .private_extern _p_855_plt_System_Private_Xml_System_Xml_Schema_XmlSchemaException_CreateMessage_string_string___llvm
@@ -16825,7 +16825,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3328]
 br x16
-.word 6807
+.word 6795
 _p_856_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_QNameToString_System_Xml_XmlQualifiedName_llvm:
 	.globl _p_856_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_QNameToString_System_Xml_XmlQualifiedName_llvm
 .private_extern _p_856_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_QNameToString_System_Xml_XmlQualifiedName_llvm
@@ -16836,7 +16836,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3336]
 br x16
-.word 6810
+.word 6798
 _p_857_plt_System_Private_Xml_System_Type_op_Inequality_System_Type_System_Type_llvm:
 	.globl _p_857_plt_System_Private_Xml_System_Type_op_Inequality_System_Type_System_Type_llvm
 .private_extern _p_857_plt_System_Private_Xml_System_Type_op_Inequality_System_Type_System_Type_llvm
@@ -16847,7 +16847,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3344]
 br x16
-.word 6813
+.word 6801
 _p_858_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_get_XmlTypeName_llvm:
 	.globl _p_858_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_get_XmlTypeName_llvm
 .private_extern _p_858_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_get_XmlTypeName_llvm
@@ -16858,7 +16858,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3352]
 br x16
-.word 6818
+.word 6806
 _p_859_plt_System_Private_Xml_System_SR_Format_string_object_object_object_llvm:
 	.globl _p_859_plt_System_Private_Xml_System_SR_Format_string_object_object_object_llvm
 .private_extern _p_859_plt_System_Private_Xml_System_SR_Format_string_object_object_object_llvm
@@ -16869,7 +16869,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3360]
 br x16
-.word 6821
+.word 6809
 _p_860_plt_System_Private_Xml_System_InvalidCastException__ctor_string_llvm:
 	.globl _p_860_plt_System_Private_Xml_System_InvalidCastException__ctor_string_llvm
 .private_extern _p_860_plt_System_Private_Xml_System_InvalidCastException__ctor_string_llvm
@@ -16880,7 +16880,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3368]
 br x16
-.word 6823
+.word 6811
 _p_861_plt_System_Private_Xml_string_Concat_string_string_string_string_llvm:
 	.globl _p_861_plt_System_Private_Xml_string_Concat_string_string_string_string_llvm
 .private_extern _p_861_plt_System_Private_Xml_string_Concat_string_string_string_string_llvm
@@ -16891,7 +16891,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3376]
 br x16
-.word 6828
+.word 6816
 _p_862_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_CreateInvalidClrMappingException_System_Type_System_Type_llvm:
 	.globl _p_862_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_CreateInvalidClrMappingException_System_Type_System_Type_llvm
 .private_extern _p_862_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_CreateInvalidClrMappingException_System_Type_System_Type_llvm
@@ -16902,7 +16902,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3384]
 br x16
-.word 6833
+.word 6821
 _p_863_plt_System_Private_Xml_System_Convert_FromBase64String_string_llvm:
 	.globl _p_863_plt_System_Private_Xml_System_Convert_FromBase64String_string_llvm
 .private_extern _p_863_plt_System_Private_Xml_System_Convert_FromBase64String_string_llvm
@@ -16913,7 +16913,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3392]
 br x16
-.word 6836
+.word 6824
 _p_864_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_string_System_Xml_Schema_XsdDateTimeFlags_llvm:
 	.globl _p_864_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_string_System_Xml_Schema_XsdDateTimeFlags_llvm
 .private_extern _p_864_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_string_System_Xml_Schema_XsdDateTimeFlags_llvm
@@ -16924,7 +16924,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3400]
 br x16
-.word 6841
+.word 6829
 _p_865_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_string_System_Xml_Schema_XsdDuration_DurationType_llvm:
 	.globl _p_865_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_string_System_Xml_Schema_XsdDuration_DurationType_llvm
 .private_extern _p_865_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_string_System_Xml_Schema_XsdDuration_DurationType_llvm
@@ -16935,7 +16935,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3408]
 br x16
-.word 6844
+.word 6832
 _p_866_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_ToTimeSpan_System_Xml_Schema_XsdDuration_DurationType_llvm:
 	.globl _p_866_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_ToTimeSpan_System_Xml_Schema_XsdDuration_DurationType_llvm
 .private_extern _p_866_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_ToTimeSpan_System_Xml_Schema_XsdDuration_DurationType_llvm
@@ -16946,7 +16946,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3416]
 br x16
-.word 6847
+.word 6835
 _p_867_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_op_Implicit_System_Xml_Schema_XsdDateTime_0_llvm:
 	.globl _p_867_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_op_Implicit_System_Xml_Schema_XsdDateTime_0_llvm
 .private_extern _p_867_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_op_Implicit_System_Xml_Schema_XsdDateTime_0_llvm
@@ -16957,7 +16957,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3424]
 br x16
-.word 6850
+.word 6838
 _p_868_plt_System_Private_Xml_System_Xml_XmlConvert_FromBinHexString_System_ReadOnlySpan_1_char_bool_llvm:
 	.globl _p_868_plt_System_Private_Xml_System_Xml_XmlConvert_FromBinHexString_System_ReadOnlySpan_1_char_bool_llvm
 .private_extern _p_868_plt_System_Private_Xml_System_Xml_XmlConvert_FromBinHexString_System_ReadOnlySpan_1_char_bool_llvm
@@ -16968,7 +16968,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3432]
 br x16
-.word 6853
+.word 6841
 _p_869_plt_System_Private_Xml_System_Convert_ToBase64String_byte___llvm:
 	.globl _p_869_plt_System_Private_Xml_System_Convert_ToBase64String_byte___llvm
 .private_extern _p_869_plt_System_Private_Xml_System_Convert_ToBase64String_byte___llvm
@@ -16979,7 +16979,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3440]
 br x16
-.word 6855
+.word 6843
 _p_870_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_DateTime_System_Xml_Schema_XsdDateTimeFlags_llvm:
 	.globl _p_870_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_DateTime_System_Xml_Schema_XsdDateTimeFlags_llvm
 .private_extern _p_870_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_DateTime_System_Xml_Schema_XsdDateTimeFlags_llvm
@@ -16990,7 +16990,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3448]
 br x16
-.word 6860
+.word 6848
 _p_871_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_ToString_llvm:
 	.globl _p_871_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_ToString_llvm
 .private_extern _p_871_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_ToString_llvm
@@ -17001,7 +17001,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3456]
 br x16
-.word 6863
+.word 6851
 _p_872_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_System_TimeSpan_System_Xml_Schema_XsdDuration_DurationType_llvm:
 	.globl _p_872_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_System_TimeSpan_System_Xml_Schema_XsdDuration_DurationType_llvm
 .private_extern _p_872_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_System_TimeSpan_System_Xml_Schema_XsdDuration_DurationType_llvm
@@ -17012,7 +17012,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3464]
 br x16
-.word 6866
+.word 6854
 _p_873_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_ToString_System_Xml_Schema_XsdDuration_DurationType_llvm:
 	.globl _p_873_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_ToString_System_Xml_Schema_XsdDuration_DurationType_llvm
 .private_extern _p_873_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_ToString_System_Xml_Schema_XsdDuration_DurationType_llvm
@@ -17023,7 +17023,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3472]
 br x16
-.word 6869
+.word 6857
 _p_874_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_DateTimeOffset_System_Xml_Schema_XsdDateTimeFlags_llvm:
 	.globl _p_874_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_DateTimeOffset_System_Xml_Schema_XsdDateTimeFlags_llvm
 .private_extern _p_874_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_DateTimeOffset_System_Xml_Schema_XsdDateTimeFlags_llvm
@@ -17034,7 +17034,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3480]
 br x16
-.word 6872
+.word 6860
 _p_875_plt_System_Private_Xml_System_DateTimeOffset_get_LocalDateTime_llvm:
 	.globl _p_875_plt_System_Private_Xml_System_DateTimeOffset_get_LocalDateTime_llvm
 .private_extern _p_875_plt_System_Private_Xml_System_DateTimeOffset_get_LocalDateTime_llvm
@@ -17045,7 +17045,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3488]
 br x16
-.word 6875
+.word 6863
 _p_876_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_System_Decimal_llvm:
 	.globl _p_876_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_System_Decimal_llvm
 .private_extern _p_876_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_System_Decimal_llvm
@@ -17056,7 +17056,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3496]
 br x16
-.word 6880
+.word 6868
 _p_877_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_llvm:
 	.globl _p_877_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_llvm
 .private_extern _p_877_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_llvm
@@ -17067,7 +17067,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3504]
 br x16
-.word 6882
+.word 6870
 _p_878_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_0_llvm:
 	.globl _p_878_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_0_llvm
 .private_extern _p_878_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_0_llvm
@@ -17078,7 +17078,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3512]
 br x16
-.word 6887
+.word 6875
 _p_879_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_1_llvm:
 	.globl _p_879_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_1_llvm
 .private_extern _p_879_plt_System_Private_Xml_System_Decimal_op_Explicit_System_Decimal_1_llvm
@@ -17089,7 +17089,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3520]
 br x16
-.word 6892
+.word 6880
 _p_880_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_int_llvm:
 	.globl _p_880_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_int_llvm
 .private_extern _p_880_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_int_llvm
@@ -17100,7 +17100,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3528]
 br x16
-.word 6897
+.word 6885
 _p_881_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_long_llvm:
 	.globl _p_881_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_long_llvm
 .private_extern _p_881_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_long_llvm
@@ -17111,7 +17111,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3536]
 br x16
-.word 6899
+.word 6887
 _p_882_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_882_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_882_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -17122,7 +17122,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3544]
 br x16
-.word 6901
+.word 6889
 _p_883_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_883_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_883_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -17133,7 +17133,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3552]
 br x16
-.word 6904
+.word 6892
 _p_884_plt_System_Private_Xml_System_Xml_XmlConvert_ToInteger_string_llvm:
 	.globl _p_884_plt_System_Private_Xml_System_Xml_XmlConvert_ToInteger_string_llvm
 .private_extern _p_884_plt_System_Private_Xml_System_Xml_XmlConvert_ToInteger_string_llvm
@@ -17144,7 +17144,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3560]
 br x16
-.word 6907
+.word 6895
 _p_885_plt_System_Private_Xml_System_Xml_XmlConvert_ToDecimal_string_llvm:
 	.globl _p_885_plt_System_Private_Xml_System_Xml_XmlConvert_ToDecimal_string_llvm
 .private_extern _p_885_plt_System_Private_Xml_System_Xml_XmlConvert_ToDecimal_string_llvm
@@ -17155,7 +17155,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3568]
 br x16
-.word 6909
+.word 6897
 _p_886_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_886_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_886_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -17166,7 +17166,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3576]
 br x16
-.word 6911
+.word 6899
 _p_887_plt_System_Private_Xml_System_Xml_XPath_XPathItem_ValueAs_System_Type_llvm:
 	.globl _p_887_plt_System_Private_Xml_System_Xml_XPath_XPathItem_ValueAs_System_Type_llvm
 .private_extern _p_887_plt_System_Private_Xml_System_Xml_XPath_XPathItem_ValueAs_System_Type_llvm
@@ -17177,7 +17177,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3584]
 br x16
-.word 6914
+.word 6902
 _p_888_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int64ToInt32_long_llvm:
 	.globl _p_888_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int64ToInt32_long_llvm
 .private_extern _p_888_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int64ToInt32_long_llvm
@@ -17188,7 +17188,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3592]
 br x16
-.word 6917
+.word 6905
 _p_889_plt_System_Private_Xml_System_Xml_XmlConvert_ToInt32_string_llvm:
 	.globl _p_889_plt_System_Private_Xml_System_Xml_XmlConvert_ToInt32_string_llvm
 .private_extern _p_889_plt_System_Private_Xml_System_Xml_XmlConvert_ToInt32_string_llvm
@@ -17199,7 +17199,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3600]
 br x16
-.word 6920
+.word 6908
 _p_890_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToInt32_System_Decimal_llvm:
 	.globl _p_890_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToInt32_System_Decimal_llvm
 .private_extern _p_890_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToInt32_System_Decimal_llvm
@@ -17210,7 +17210,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3608]
 br x16
-.word 6922
+.word 6910
 _p_891_plt_System_Private_Xml_System_Xml_XmlConvert_ToInt64_string_llvm:
 	.globl _p_891_plt_System_Private_Xml_System_Xml_XmlConvert_ToInt64_string_llvm
 .private_extern _p_891_plt_System_Private_Xml_System_Xml_XmlConvert_ToInt64_string_llvm
@@ -17221,7 +17221,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3616]
 br x16
-.word 6925
+.word 6913
 _p_892_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToInt64_System_Decimal_llvm:
 	.globl _p_892_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToInt64_System_Decimal_llvm
 .private_extern _p_892_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToInt64_System_Decimal_llvm
@@ -17232,7 +17232,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3624]
 br x16
-.word 6927
+.word 6915
 _p_893_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_893_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_893_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric10Converter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -17243,7 +17243,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3632]
 br x16
-.word 6930
+.word 6918
 _p_894_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_object_llvm:
 	.globl _p_894_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_object_llvm
 .private_extern _p_894_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_object_llvm
@@ -17254,7 +17254,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3640]
 br x16
-.word 6933
+.word 6921
 _p_895_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_int_llvm:
 	.globl _p_895_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_int_llvm
 .private_extern _p_895_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_int_llvm
@@ -17265,7 +17265,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3648]
 br x16
-.word 6936
+.word 6924
 _p_896_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_long_llvm:
 	.globl _p_896_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_long_llvm
 .private_extern _p_896_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_long_llvm
@@ -17276,7 +17276,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3656]
 br x16
-.word 6939
+.word 6927
 _p_897_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToUInt64_System_Decimal_llvm:
 	.globl _p_897_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToUInt64_System_Decimal_llvm
 .private_extern _p_897_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DecimalToUInt64_System_Decimal_llvm
@@ -17287,7 +17287,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3664]
 br x16
-.word 6942
+.word 6930
 _p_898_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int64ToUInt32_long_llvm:
 	.globl _p_898_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int64ToUInt32_long_llvm
 .private_extern _p_898_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int64ToUInt32_long_llvm
@@ -17298,7 +17298,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3672]
 br x16
-.word 6945
+.word 6933
 _p_899_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToUInt16_int_llvm:
 	.globl _p_899_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToUInt16_int_llvm
 .private_extern _p_899_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToUInt16_int_llvm
@@ -17309,7 +17309,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3680]
 br x16
-.word 6948
+.word 6936
 _p_900_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToSByte_int_llvm:
 	.globl _p_900_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToSByte_int_llvm
 .private_extern _p_900_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToSByte_int_llvm
@@ -17320,7 +17320,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3688]
 br x16
-.word 6951
+.word 6939
 _p_901_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToInt16_int_llvm:
 	.globl _p_901_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToInt16_int_llvm
 .private_extern _p_901_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToInt16_int_llvm
@@ -17331,7 +17331,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3696]
 br x16
-.word 6954
+.word 6942
 _p_902_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToByte_int_llvm:
 	.globl _p_902_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToByte_int_llvm
 .private_extern _p_902_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Int32ToByte_int_llvm
@@ -17342,7 +17342,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3704]
 br x16
-.word 6957
+.word 6945
 _p_903_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_string_llvm:
 	.globl _p_903_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_string_llvm
 .private_extern _p_903_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_string_llvm
@@ -17353,7 +17353,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3712]
 br x16
-.word 6960
+.word 6948
 _p_904_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric2Converter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_904_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric2Converter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_904_plt_System_Private_Xml_System_Xml_Schema_XmlNumeric2Converter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -17364,7 +17364,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3720]
 br x16
-.word 6963
+.word 6951
 _p_905_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_double_llvm:
 	.globl _p_905_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_double_llvm
 .private_extern _p_905_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_double_llvm
@@ -17375,7 +17375,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3728]
 br x16
-.word 6966
+.word 6954
 _p_906_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_single_llvm:
 	.globl _p_906_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_single_llvm
 .private_extern _p_906_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_single_llvm
@@ -17386,7 +17386,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3736]
 br x16
-.word 6968
+.word 6956
 _p_907_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_double_llvm:
 	.globl _p_907_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_double_llvm
 .private_extern _p_907_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_double_llvm
@@ -17397,7 +17397,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3744]
 br x16
-.word 6970
+.word 6958
 _p_908_plt_System_Private_Xml_System_Xml_Schema_XmlDateTimeConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_908_plt_System_Private_Xml_System_Xml_Schema_XmlDateTimeConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_908_plt_System_Private_Xml_System_Xml_Schema_XmlDateTimeConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -17408,7 +17408,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3752]
 br x16
-.word 6973
+.word 6961
 _p_909_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeOffsetToDateTime_System_DateTimeOffset_llvm:
 	.globl _p_909_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeOffsetToDateTime_System_DateTimeOffset_llvm
 .private_extern _p_909_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeOffsetToDateTime_System_DateTimeOffset_llvm
@@ -17419,7 +17419,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3760]
 br x16
-.word 6976
+.word 6964
 _p_910_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateTime_string_llvm:
 	.globl _p_910_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateTime_string_llvm
 .private_extern _p_910_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateTime_string_llvm
@@ -17430,7 +17430,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3768]
 br x16
-.word 6979
+.word 6967
 _p_911_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToTime_string_llvm:
 	.globl _p_911_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToTime_string_llvm
 .private_extern _p_911_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToTime_string_llvm
@@ -17441,7 +17441,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3776]
 br x16
-.word 6982
+.word 6970
 _p_912_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDate_string_llvm:
 	.globl _p_912_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDate_string_llvm
 .private_extern _p_912_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDate_string_llvm
@@ -17452,7 +17452,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3784]
 br x16
-.word 6985
+.word 6973
 _p_913_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearMonth_string_llvm:
 	.globl _p_913_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearMonth_string_llvm
 .private_extern _p_913_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearMonth_string_llvm
@@ -17463,7 +17463,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3792]
 br x16
-.word 6988
+.word 6976
 _p_914_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYear_string_llvm:
 	.globl _p_914_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYear_string_llvm
 .private_extern _p_914_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYear_string_llvm
@@ -17474,7 +17474,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3800]
 br x16
-.word 6991
+.word 6979
 _p_915_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthDay_string_llvm:
 	.globl _p_915_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthDay_string_llvm
 .private_extern _p_915_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthDay_string_llvm
@@ -17485,7 +17485,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3808]
 br x16
-.word 6994
+.word 6982
 _p_916_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGDay_string_llvm:
 	.globl _p_916_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGDay_string_llvm
 .private_extern _p_916_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGDay_string_llvm
@@ -17496,7 +17496,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3816]
 br x16
-.word 6997
+.word 6985
 _p_917_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonth_string_llvm:
 	.globl _p_917_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonth_string_llvm
 .private_extern _p_917_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonth_string_llvm
@@ -17507,7 +17507,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3824]
 br x16
-.word 7000
+.word 6988
 _p_918_plt_System_Private_Xml_System_DateTimeOffset__ctor_System_DateTime_llvm:
 	.globl _p_918_plt_System_Private_Xml_System_DateTimeOffset__ctor_System_DateTime_llvm
 .private_extern _p_918_plt_System_Private_Xml_System_DateTimeOffset__ctor_System_DateTime_llvm
@@ -17518,7 +17518,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3832]
 br x16
-.word 7003
+.word 6991
 _p_919_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateTimeOffset_string_llvm:
 	.globl _p_919_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateTimeOffset_string_llvm
 .private_extern _p_919_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateTimeOffset_string_llvm
@@ -17529,7 +17529,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3840]
 br x16
-.word 7008
+.word 6996
 _p_920_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToTimeOffset_string_llvm:
 	.globl _p_920_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToTimeOffset_string_llvm
 .private_extern _p_920_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToTimeOffset_string_llvm
@@ -17540,7 +17540,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3848]
 br x16
-.word 7011
+.word 6999
 _p_921_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateOffset_string_llvm:
 	.globl _p_921_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateOffset_string_llvm
 .private_extern _p_921_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDateOffset_string_llvm
@@ -17551,7 +17551,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3856]
 br x16
-.word 7014
+.word 7002
 _p_922_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearMonthOffset_string_llvm:
 	.globl _p_922_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearMonthOffset_string_llvm
 .private_extern _p_922_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearMonthOffset_string_llvm
@@ -17562,7 +17562,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3864]
 br x16
-.word 7017
+.word 7005
 _p_923_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearOffset_string_llvm:
 	.globl _p_923_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearOffset_string_llvm
 .private_extern _p_923_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGYearOffset_string_llvm
@@ -17573,7 +17573,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3872]
 br x16
-.word 7020
+.word 7008
 _p_924_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthDayOffset_string_llvm:
 	.globl _p_924_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthDayOffset_string_llvm
 .private_extern _p_924_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthDayOffset_string_llvm
@@ -17584,7 +17584,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3880]
 br x16
-.word 7023
+.word 7011
 _p_925_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGDayOffset_string_llvm:
 	.globl _p_925_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGDayOffset_string_llvm
 .private_extern _p_925_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGDayOffset_string_llvm
@@ -17595,7 +17595,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3888]
 br x16
-.word 7026
+.word 7014
 _p_926_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthOffset_string_llvm:
 	.globl _p_926_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthOffset_string_llvm
 .private_extern _p_926_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToGMonthOffset_string_llvm
@@ -17606,7 +17606,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3896]
 br x16
-.word 7029
+.word 7017
 _p_927_plt_System_Private_Xml_System_DateTimeOffset_op_Implicit_System_DateTime_llvm:
 	.globl _p_927_plt_System_Private_Xml_System_DateTimeOffset_op_Implicit_System_DateTime_llvm
 .private_extern _p_927_plt_System_Private_Xml_System_DateTimeOffset_op_Implicit_System_DateTime_llvm
@@ -17617,7 +17617,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3904]
 br x16
-.word 7032
+.word 7020
 _p_928_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeToString_System_DateTime_llvm:
 	.globl _p_928_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeToString_System_DateTime_llvm
 .private_extern _p_928_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeToString_System_DateTime_llvm
@@ -17628,7 +17628,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3912]
 br x16
-.word 7037
+.word 7025
 _p_929_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_TimeToString_System_DateTime_llvm:
 	.globl _p_929_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_TimeToString_System_DateTime_llvm
 .private_extern _p_929_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_TimeToString_System_DateTime_llvm
@@ -17639,7 +17639,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3920]
 br x16
-.word 7040
+.word 7028
 _p_930_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateToString_System_DateTime_llvm:
 	.globl _p_930_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateToString_System_DateTime_llvm
 .private_extern _p_930_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateToString_System_DateTime_llvm
@@ -17650,7 +17650,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3928]
 br x16
-.word 7043
+.word 7031
 _p_931_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearMonthToString_System_DateTime_llvm:
 	.globl _p_931_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearMonthToString_System_DateTime_llvm
 .private_extern _p_931_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearMonthToString_System_DateTime_llvm
@@ -17661,7 +17661,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3936]
 br x16
-.word 7046
+.word 7034
 _p_932_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearToString_System_DateTime_llvm:
 	.globl _p_932_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearToString_System_DateTime_llvm
 .private_extern _p_932_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearToString_System_DateTime_llvm
@@ -17672,7 +17672,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3944]
 br x16
-.word 7049
+.word 7037
 _p_933_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthDayToString_System_DateTime_llvm:
 	.globl _p_933_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthDayToString_System_DateTime_llvm
 .private_extern _p_933_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthDayToString_System_DateTime_llvm
@@ -17683,7 +17683,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3952]
 br x16
-.word 7052
+.word 7040
 _p_934_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GDayToString_System_DateTime_llvm:
 	.globl _p_934_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GDayToString_System_DateTime_llvm
 .private_extern _p_934_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GDayToString_System_DateTime_llvm
@@ -17694,7 +17694,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3960]
 br x16
-.word 7055
+.word 7043
 _p_935_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthToString_System_DateTime_llvm:
 	.globl _p_935_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthToString_System_DateTime_llvm
 .private_extern _p_935_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthToString_System_DateTime_llvm
@@ -17705,7 +17705,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3968]
 br x16
-.word 7058
+.word 7046
 _p_936_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_936_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_936_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateTimeOffsetToString_System_DateTimeOffset_llvm
@@ -17716,7 +17716,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3976]
 br x16
-.word 7061
+.word 7049
 _p_937_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_TimeOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_937_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_TimeOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_937_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_TimeOffsetToString_System_DateTimeOffset_llvm
@@ -17727,7 +17727,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3984]
 br x16
-.word 7064
+.word 7052
 _p_938_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_938_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_938_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DateOffsetToString_System_DateTimeOffset_llvm
@@ -17738,7 +17738,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #3992]
 br x16
-.word 7067
+.word 7055
 _p_939_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearMonthOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_939_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearMonthOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_939_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearMonthOffsetToString_System_DateTimeOffset_llvm
@@ -17749,7 +17749,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4000]
 br x16
-.word 7070
+.word 7058
 _p_940_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_940_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_940_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GYearOffsetToString_System_DateTimeOffset_llvm
@@ -17760,7 +17760,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4008]
 br x16
-.word 7073
+.word 7061
 _p_941_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthDayOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_941_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthDayOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_941_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthDayOffsetToString_System_DateTimeOffset_llvm
@@ -17771,7 +17771,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4016]
 br x16
-.word 7076
+.word 7064
 _p_942_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GDayOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_942_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GDayOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_942_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GDayOffsetToString_System_DateTimeOffset_llvm
@@ -17782,7 +17782,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4024]
 br x16
-.word 7079
+.word 7067
 _p_943_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthOffsetToString_System_DateTimeOffset_llvm:
 	.globl _p_943_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthOffsetToString_System_DateTimeOffset_llvm
 .private_extern _p_943_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_GMonthOffsetToString_System_DateTimeOffset_llvm
@@ -17793,7 +17793,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4032]
 br x16
-.word 7082
+.word 7070
 _p_944_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_System_DateTime_llvm:
 	.globl _p_944_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_System_DateTime_llvm
 .private_extern _p_944_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_System_DateTime_llvm
@@ -17804,7 +17804,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4040]
 br x16
-.word 7085
+.word 7073
 _p_945_plt_System_Private_Xml_System_Xml_Schema_XmlBooleanConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_945_plt_System_Private_Xml_System_Xml_Schema_XmlBooleanConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_945_plt_System_Private_Xml_System_Xml_Schema_XmlBooleanConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -17815,7 +17815,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4048]
 br x16
-.word 7088
+.word 7076
 _p_946_plt_System_Private_Xml_System_Xml_XmlConvert_ToBoolean_string_llvm:
 	.globl _p_946_plt_System_Private_Xml_System_Xml_XmlConvert_ToBoolean_string_llvm
 .private_extern _p_946_plt_System_Private_Xml_System_Xml_XmlConvert_ToBoolean_string_llvm
@@ -17826,7 +17826,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4056]
 br x16
-.word 7091
+.word 7079
 _p_947_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_bool_llvm:
 	.globl _p_947_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_bool_llvm
 .private_extern _p_947_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_bool_llvm
@@ -17837,7 +17837,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4064]
 br x16
-.word 7093
+.word 7081
 _p_948_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_948_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_948_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -17848,7 +17848,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4072]
 br x16
-.word 7096
+.word 7084
 _p_949_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_IsDerivedFrom_System_Type_System_Type_llvm:
 	.globl _p_949_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_IsDerivedFrom_System_Type_System_Type_llvm
 .private_extern _p_949_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_IsDerivedFrom_System_Type_System_Type_llvm
@@ -17859,7 +17859,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4080]
 br x16
-.word 7099
+.word 7087
 _p_950_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_950_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_950_plt_System_Private_Xml_System_Xml_Schema_XmlMiscConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -17870,7 +17870,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+4096
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #4088]
 br x16
-.word 7102
+.word 7090
 _p_951_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_QNameToString_System_Xml_XmlQualifiedName_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_951_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_QNameToString_System_Xml_XmlQualifiedName_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_951_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_QNameToString_System_Xml_XmlQualifiedName_System_Xml_IXmlNamespaceResolver_llvm
@@ -17881,7 +17881,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #0]
 br x16
-.word 7105
+.word 7093
 _p_952_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DurationToString_System_TimeSpan_llvm:
 	.globl _p_952_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DurationToString_System_TimeSpan_llvm
 .private_extern _p_952_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DurationToString_System_TimeSpan_llvm
@@ -17892,7 +17892,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #8]
 br x16
-.word 7108
+.word 7096
 _p_953_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_YearMonthDurationToString_System_TimeSpan_llvm:
 	.globl _p_953_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_YearMonthDurationToString_System_TimeSpan_llvm
 .private_extern _p_953_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_YearMonthDurationToString_System_TimeSpan_llvm
@@ -17903,7 +17903,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #16]
 br x16
-.word 7111
+.word 7099
 _p_954_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DayTimeDurationToString_System_TimeSpan_llvm:
 	.globl _p_954_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DayTimeDurationToString_System_TimeSpan_llvm
 .private_extern _p_954_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_DayTimeDurationToString_System_TimeSpan_llvm
@@ -17914,7 +17914,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #24]
 br x16
-.word 7114
+.word 7102
 _p_955_plt_System_Private_Xml_System_Xml_XmlConvert_ToBinHexString_byte___llvm:
 	.globl _p_955_plt_System_Private_Xml_System_Xml_XmlConvert_ToBinHexString_byte___llvm
 .private_extern _p_955_plt_System_Private_Xml_System_Xml_XmlConvert_ToBinHexString_byte___llvm
@@ -17925,7 +17925,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #32]
 br x16
-.word 7117
+.word 7105
 _p_956_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Base64BinaryToString_byte___llvm:
 	.globl _p_956_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Base64BinaryToString_byte___llvm
 .private_extern _p_956_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_Base64BinaryToString_byte___llvm
@@ -17936,7 +17936,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #40]
 br x16
-.word 7119
+.word 7107
 _p_957_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_string_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_957_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_string_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_957_plt_System_Private_Xml_System_Xml_Schema_XmlAtomicValue__ctor_System_Xml_Schema_XmlSchemaType_string_System_Xml_IXmlNamespaceResolver_llvm
@@ -17947,7 +17947,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #48]
 br x16
-.word 7122
+.word 7110
 _p_958_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDuration_string_llvm:
 	.globl _p_958_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDuration_string_llvm
 .private_extern _p_958_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDuration_string_llvm
@@ -17958,7 +17958,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #56]
 br x16
-.word 7125
+.word 7113
 _p_959_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToYearMonthDuration_string_llvm:
 	.globl _p_959_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToYearMonthDuration_string_llvm
 .private_extern _p_959_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToYearMonthDuration_string_llvm
@@ -17969,7 +17969,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #64]
 br x16
-.word 7128
+.word 7116
 _p_960_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDayTimeDuration_string_llvm:
 	.globl _p_960_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDayTimeDuration_string_llvm
 .private_extern _p_960_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToDayTimeDuration_string_llvm
@@ -17980,7 +17980,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #72]
 br x16
-.word 7131
+.word 7119
 _p_961_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToQName_string_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_961_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToQName_string_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_961_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToQName_string_System_Xml_IXmlNamespaceResolver_llvm
@@ -17991,7 +17991,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #80]
 br x16
-.word 7134
+.word 7122
 _p_962_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToHexBinary_string_llvm:
 	.globl _p_962_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToHexBinary_string_llvm
 .private_extern _p_962_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToHexBinary_string_llvm
@@ -18002,7 +18002,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #88]
 br x16
-.word 7137
+.word 7125
 _p_963_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToBase64Binary_string_llvm:
 	.globl _p_963_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToBase64Binary_string_llvm
 .private_extern _p_963_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_StringToBase64Binary_string_llvm
@@ -18013,7 +18013,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #96]
 br x16
-.word 7140
+.word 7128
 _p_964_plt_System_Private_Xml_System_Xml_Schema_XmlStringConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_964_plt_System_Private_Xml_System_Xml_Schema_XmlStringConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_964_plt_System_Private_Xml_System_Xml_Schema_XmlStringConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -18024,7 +18024,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #104]
 br x16
-.word 7143
+.word 7131
 _p_965_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_get_UntypedAtomicType_llvm:
 	.globl _p_965_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_get_UntypedAtomicType_llvm
 .private_extern _p_965_plt_System_Private_Xml_System_Xml_Schema_DatatypeImplementation_get_UntypedAtomicType_llvm
@@ -18035,7 +18035,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #112]
 br x16
-.word 7146
+.word 7134
 _p_966_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm:
 	.globl _p_966_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
 .private_extern _p_966_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlSchemaType_llvm
@@ -18046,7 +18046,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #120]
 br x16
-.word 7149
+.word 7137
 _p_967_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlBaseConverter_System_Type_System_Type_llvm:
 	.globl _p_967_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlBaseConverter_System_Type_System_Type_llvm
 .private_extern _p_967_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlBaseConverter_System_Type_System_Type_llvm
@@ -18057,7 +18057,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #128]
 br x16
-.word 7152
+.word 7140
 _p_968_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_968_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_968_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -18068,7 +18068,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #136]
 br x16
-.word 7155
+.word 7143
 _p_969_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_UntypedAtomicToDateTime_string_llvm:
 	.globl _p_969_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_UntypedAtomicToDateTime_string_llvm
 .private_extern _p_969_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_UntypedAtomicToDateTime_string_llvm
@@ -18079,7 +18079,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #144]
 br x16
-.word 7158
+.word 7146
 _p_970_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_UntypedAtomicToDateTimeOffset_string_llvm:
 	.globl _p_970_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_UntypedAtomicToDateTimeOffset_string_llvm
 .private_extern _p_970_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter_UntypedAtomicToDateTimeOffset_string_llvm
@@ -18090,7 +18090,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #152]
 br x16
-.word 7161
+.word 7149
 _p_971_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_ulong_llvm:
 	.globl _p_971_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_ulong_llvm
 .private_extern _p_971_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_ulong_llvm
@@ -18101,7 +18101,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #160]
 br x16
-.word 7164
+.word 7152
 _p_972_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_uint_llvm:
 	.globl _p_972_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_uint_llvm
 .private_extern _p_972_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_uint_llvm
@@ -18112,7 +18112,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #168]
 br x16
-.word 7166
+.word 7154
 _p_973_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_uint16_llvm:
 	.globl _p_973_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_uint16_llvm
 .private_extern _p_973_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_uint16_llvm
@@ -18123,7 +18123,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #176]
 br x16
-.word 7168
+.word 7156
 _p_974_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_sbyte_llvm:
 	.globl _p_974_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_sbyte_llvm
 .private_extern _p_974_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_sbyte_llvm
@@ -18134,7 +18134,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #184]
 br x16
-.word 7170
+.word 7158
 _p_975_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_int16_llvm:
 	.globl _p_975_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_int16_llvm
 .private_extern _p_975_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_int16_llvm
@@ -18145,7 +18145,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #192]
 br x16
-.word 7172
+.word 7160
 _p_976_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_byte_llvm:
 	.globl _p_976_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_byte_llvm
 .private_extern _p_976_plt_System_Private_Xml_System_Xml_XmlConvert_ToString_byte_llvm
@@ -18156,7 +18156,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #200]
 br x16
-.word 7174
+.word 7162
 _p_977_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_977_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_977_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -18167,7 +18167,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #208]
 br x16
-.word 7176
+.word 7164
 _p_978_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_SupportsType_System_Type_llvm:
 	.globl _p_978_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_SupportsType_System_Type_llvm
 .private_extern _p_978_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter_SupportsType_System_Type_llvm
@@ -18178,7 +18178,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #216]
 br x16
-.word 7179
+.word 7167
 _p_979_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ChangeListType_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_979_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ChangeListType_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_979_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ChangeListType_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -18189,7 +18189,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #224]
 br x16
-.word 7182
+.word 7170
 _p_980_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter__ctor_llvm:
 	.globl _p_980_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter__ctor_llvm
 .private_extern _p_980_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter__ctor_llvm
@@ -18200,7 +18200,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #232]
 br x16
-.word 7185
+.word 7173
 _p_981_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter__ctor_System_Xml_Schema_XmlUntypedConverter_bool_llvm:
 	.globl _p_981_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter__ctor_System_Xml_Schema_XmlUntypedConverter_bool_llvm
 .private_extern _p_981_plt_System_Private_Xml_System_Xml_Schema_XmlUntypedConverter__ctor_System_Xml_Schema_XmlUntypedConverter_bool_llvm
@@ -18211,7 +18211,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #240]
 br x16
-.word 7188
+.word 7176
 _p_982_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlTypeCode_llvm:
 	.globl _p_982_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlTypeCode_llvm
 .private_extern _p_982_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlTypeCode_llvm
@@ -18222,7 +18222,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #248]
 br x16
-.word 7191
+.word 7179
 _p_983_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_983_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_983_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ChangeTypeWildcardDestination_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -18233,7 +18233,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #256]
 br x16
-.word 7194
+.word 7182
 _p_984_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_984_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_984_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ChangeTypeWildcardSource_object_System_Type_System_Xml_IXmlNamespaceResolver_llvm
@@ -18244,7 +18244,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #264]
 br x16
-.word 7197
+.word 7185
 _p_985_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ToNavigator_System_Xml_XPath_XPathNavigator_llvm:
 	.globl _p_985_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ToNavigator_System_Xml_XPath_XPathNavigator_llvm
 .private_extern _p_985_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter_ToNavigator_System_Xml_XPath_XPathNavigator_llvm
@@ -18255,7 +18255,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #272]
 br x16
-.word 7200
+.word 7188
 _p_986_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter__ctor_System_Xml_Schema_XmlTypeCode_llvm:
 	.globl _p_986_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter__ctor_System_Xml_Schema_XmlTypeCode_llvm
 .private_extern _p_986_plt_System_Private_Xml_System_Xml_Schema_XmlAnyConverter__ctor_System_Xml_Schema_XmlTypeCode_llvm
@@ -18266,7 +18266,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #280]
 br x16
-.word 7203
+.word 7191
 _p_987_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm:
 	.globl _p_987_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm
 .private_extern _p_987_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm
@@ -18277,7 +18277,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #288]
 br x16
-.word 7206
+.word 7194
 _p_988_plt_System_Private_Xml_System_Xml_Schema_XmlAnyListConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm:
 	.globl _p_988_plt_System_Private_Xml_System_Xml_Schema_XmlAnyListConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm
 .private_extern _p_988_plt_System_Private_Xml_System_Xml_Schema_XmlAnyListConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm
@@ -18288,7 +18288,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #296]
 br x16
-.word 7209
+.word 7197
 _p_989_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm:
 	.globl _p_989_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm
 .private_extern _p_989_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlBaseConverter_llvm
@@ -18299,7 +18299,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #304]
 br x16
-.word 7212
+.word 7200
 _p_990_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlBaseConverter_System_Type_System_Type_llvm:
 	.globl _p_990_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlBaseConverter_System_Type_System_Type_llvm
 .private_extern _p_990_plt_System_Private_Xml_System_Xml_Schema_XmlBaseConverter__ctor_System_Xml_Schema_XmlBaseConverter_System_Type_System_Type_llvm
@@ -18310,7 +18310,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #312]
 br x16
-.word 7215
+.word 7203
 _p_991_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_CreateInvalidClrMappingException_System_Type_System_Type_llvm:
 	.globl _p_991_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_CreateInvalidClrMappingException_System_Type_System_Type_llvm
 .private_extern _p_991_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_CreateInvalidClrMappingException_System_Type_System_Type_llvm
@@ -18321,7 +18321,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #320]
 br x16
-.word 7218
+.word 7206
 _p_992_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_IsListType_System_Type_llvm:
 	.globl _p_992_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_IsListType_System_Type_llvm
 .private_extern _p_992_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_IsListType_System_Type_llvm
@@ -18332,7 +18332,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #328]
 br x16
-.word 7221
+.word 7209
 _p_993_plt_System_Private_Xml_System_Type_get_IsArray_llvm:
 	.globl _p_993_plt_System_Private_Xml_System_Type_get_IsArray_llvm
 .private_extern _p_993_plt_System_Private_Xml_System_Type_get_IsArray_llvm
@@ -18343,7 +18343,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #336]
 br x16
-.word 7224
+.word 7212
 _p_994_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToList_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_994_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToList_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_994_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToList_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18354,7 +18354,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #344]
 br x16
-.word 7229
+.word 7217
 _p_995_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XPath_XPathNavigator_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_995_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XPath_XPathNavigator_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_995_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XPath_XPathNavigator_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18365,7 +18365,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #352]
 br x16
-.word 7232
+.word 7220
 _p_996_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XPath_XPathItem_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_996_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XPath_XPathItem_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_996_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XPath_XPathItem_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18376,7 +18376,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 7244
+.word 7232
 _p_997_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XmlQualifiedName_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_997_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XmlQualifiedName_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_997_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_XmlQualifiedName_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18387,7 +18387,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 7256
+.word 7244
 _p_998_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_Schema_XmlAtomicValue_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_998_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_Schema_XmlAtomicValue_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_998_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Xml_Schema_XmlAtomicValue_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18398,7 +18398,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 7268
+.word 7256
 _p_999_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Uri_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_999_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Uri_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_999_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Uri_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18409,7 +18409,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 7280
+.word 7268
 _p_1000_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_ulong_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1000_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_ulong_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1000_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_ulong_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18420,7 +18420,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 7292
+.word 7280
 _p_1001_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_uint_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1001_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_uint_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1001_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_uint_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18431,7 +18431,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 7304
+.word 7292
 _p_1002_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_uint16_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1002_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_uint16_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1002_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_uint16_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18442,7 +18442,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 7316
+.word 7304
 _p_1003_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_TimeSpan_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1003_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_TimeSpan_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1003_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_TimeSpan_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18453,7 +18453,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 7328
+.word 7316
 _p_1004_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_string_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1004_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_string_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1004_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_string_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18464,7 +18464,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 7340
+.word 7328
 _p_1005_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_single_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1005_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_single_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1005_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_single_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18475,7 +18475,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 7352
+.word 7340
 _p_1006_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_sbyte_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1006_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_sbyte_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1006_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_sbyte_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18486,7 +18486,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 7364
+.word 7352
 _p_1007_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_long_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1007_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_long_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1007_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_long_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18497,7 +18497,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 7376
+.word 7364
 _p_1008_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_int_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1008_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_int_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1008_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_int_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18508,7 +18508,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 7388
+.word 7376
 _p_1009_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_int16_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1009_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_int16_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1009_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_int16_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18519,7 +18519,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 7400
+.word 7388
 _p_1010_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_double_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1010_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_double_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1010_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_double_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18530,7 +18530,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 7412
+.word 7400
 _p_1011_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Decimal_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1011_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Decimal_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1011_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_Decimal_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18541,7 +18541,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 7424
+.word 7412
 _p_1012_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_DateTimeOffset_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1012_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_DateTimeOffset_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1012_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_DateTimeOffset_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18552,7 +18552,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 7436
+.word 7424
 _p_1013_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_DateTime_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1013_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_DateTime_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1013_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_System_DateTime_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18563,7 +18563,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 7448
+.word 7436
 _p_1014_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_byte___object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1014_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_byte___object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1014_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_byte___object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18574,7 +18574,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 7460
+.word 7448
 _p_1015_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_byte_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1015_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_byte_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1015_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_byte_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18585,7 +18585,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 7472
+.word 7460
 _p_1016_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_bool_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1016_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_bool_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1016_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_bool_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18596,7 +18596,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 7484
+.word 7472
 _p_1017_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_object_object_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1017_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_object_object_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1017_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ToArray_object_object_System_Xml_IXmlNamespaceResolver_llvm
@@ -18607,7 +18607,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 7496
+.word 7484
 _p_1018_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_StringAsList_string_llvm:
 	.globl _p_1018_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_StringAsList_string_llvm
 .private_extern _p_1018_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_StringAsList_string_llvm
@@ -18618,7 +18618,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 7508
+.word 7496
 _p_1019_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ListAsString_System_Collections_IEnumerable_System_Xml_IXmlNamespaceResolver_llvm:
 	.globl _p_1019_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ListAsString_System_Collections_IEnumerable_System_Xml_IXmlNamespaceResolver_llvm
 .private_extern _p_1019_plt_System_Private_Xml_System_Xml_Schema_XmlListConverter_ListAsString_System_Collections_IEnumerable_System_Xml_IXmlNamespaceResolver_llvm
@@ -18629,7 +18629,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 7511
+.word 7499
 _p_1020_plt_System_Private_Xml__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_1020_plt_System_Private_Xml__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_1020_plt_System_Private_Xml__jit_icall_mini_init_method_rgctx_llvm
@@ -18640,7 +18640,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
-.word 7514
+.word 7502
 _p_1021_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF__ctor_llvm:
 	.globl _p_1021_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF__ctor_llvm
 .private_extern _p_1021_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF__ctor_llvm
@@ -18651,7 +18651,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #560]
 br x16
-.word 7534
+.word 7522
 _p_1022_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_ToArray_llvm:
 	.globl _p_1022_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_ToArray_llvm
 .private_extern _p_1022_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_ToArray_llvm
@@ -18662,7 +18662,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #568]
 br x16
-.word 7549
+.word 7537
 _p_1023_plt_System_Private_Xml_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
 	.globl _p_1023_plt_System_Private_Xml_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
 .private_extern _p_1023_plt_System_Private_Xml_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
@@ -18673,7 +18673,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #576]
 br x16
-.word 7564
+.word 7552
 _p_1024_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_Add_T_REF_llvm:
 	.globl _p_1024_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_Add_T_REF_llvm
 .private_extern _p_1024_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_Add_T_REF_llvm
@@ -18684,7 +18684,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #584]
 br x16
-.word 7572
+.word 7560
 _p_1025_plt_System_Private_Xml_System_Collections_Generic_List_1_object_AddWithResize_object_llvm:
 	.globl _p_1025_plt_System_Private_Xml_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
 .private_extern _p_1025_plt_System_Private_Xml_System_Collections_Generic_List_1_object_AddWithResize_object_llvm
@@ -18695,7 +18695,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #592]
 br x16
-.word 7587
+.word 7575
 _p_1026_plt_System_Private_Xml_System_Collections_Generic_List_1_string__ctor_System_Collections_Generic_IEnumerable_1_string_llvm:
 	.globl _p_1026_plt_System_Private_Xml_System_Collections_Generic_List_1_string__ctor_System_Collections_Generic_IEnumerable_1_string_llvm
 .private_extern _p_1026_plt_System_Private_Xml_System_Collections_Generic_List_1_string__ctor_System_Collections_Generic_IEnumerable_1_string_llvm
@@ -18706,7 +18706,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #600]
 br x16
-.word 7604
+.word 7592
 _p_1027_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse_string_System_Xml_Schema_XsdDateTimeFlags_llvm:
 	.globl _p_1027_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse_string_System_Xml_Schema_XsdDateTimeFlags_llvm
 .private_extern _p_1027_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse_string_System_Xml_Schema_XsdDateTimeFlags_llvm
@@ -18717,7 +18717,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #608]
 br x16
-.word 7615
+.word 7603
 _p_1028_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_InitiateXsdDateTime_System_Xml_Schema_XsdDateTime_Parser_llvm:
 	.globl _p_1028_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_InitiateXsdDateTime_System_Xml_Schema_XsdDateTime_Parser_llvm
 .private_extern _p_1028_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_InitiateXsdDateTime_System_Xml_Schema_XsdDateTime_Parser_llvm
@@ -18728,7 +18728,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #616]
 br x16
-.word 7618
+.word 7606
 _p_1029_plt_System_Private_Xml_System_DateTime__ctor_int_int_int_int_int_int_llvm:
 	.globl _p_1029_plt_System_Private_Xml_System_DateTime__ctor_int_int_int_int_int_int_llvm
 .private_extern _p_1029_plt_System_Private_Xml_System_DateTime__ctor_int_int_int_int_int_int_llvm
@@ -18739,7 +18739,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #624]
 br x16
-.word 7621
+.word 7609
 _p_1030_plt_System_Private_Xml_System_DateTime_AddTicks_long_llvm:
 	.globl _p_1030_plt_System_Private_Xml_System_DateTime_AddTicks_long_llvm
 .private_extern _p_1030_plt_System_Private_Xml_System_DateTime_AddTicks_long_llvm
@@ -18750,7 +18750,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #632]
 br x16
-.word 7626
+.word 7614
 _p_1031_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_Xml_Schema_XsdDateTime_Parser_llvm:
 	.globl _p_1031_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_Xml_Schema_XsdDateTime_Parser_llvm
 .private_extern _p_1031_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime__ctor_System_Xml_Schema_XsdDateTime_Parser_llvm
@@ -18761,7 +18761,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #640]
 br x16
-.word 7631
+.word 7619
 _p_1032_plt_System_Private_Xml_System_TimeZoneInfo_get_Local_llvm:
 	.globl _p_1032_plt_System_Private_Xml_System_TimeZoneInfo_get_Local_llvm
 .private_extern _p_1032_plt_System_Private_Xml_System_TimeZoneInfo_get_Local_llvm
@@ -18772,7 +18772,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #648]
 br x16
-.word 7634
+.word 7622
 _p_1033_plt_System_Private_Xml_System_TimeZoneInfo_GetUtcOffset_System_DateTime_llvm:
 	.globl _p_1033_plt_System_Private_Xml_System_TimeZoneInfo_GetUtcOffset_System_DateTime_llvm
 .private_extern _p_1033_plt_System_Private_Xml_System_TimeZoneInfo_GetUtcOffset_System_DateTime_llvm
@@ -18783,7 +18783,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #656]
 br x16
-.word 7639
+.word 7627
 _p_1034_plt_System_Private_Xml_System_DateTimeOffset_get_DateTime_llvm:
 	.globl _p_1034_plt_System_Private_Xml_System_DateTimeOffset_get_DateTime_llvm
 .private_extern _p_1034_plt_System_Private_Xml_System_DateTimeOffset_get_DateTime_llvm
@@ -18794,7 +18794,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #664]
 br x16
-.word 7644
+.word 7632
 _p_1035_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRange_TimeSpanTooLong_llvm:
 	.globl _p_1035_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRange_TimeSpanTooLong_llvm
 .private_extern _p_1035_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRange_TimeSpanTooLong_llvm
@@ -18805,7 +18805,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #672]
 br x16
-.word 7649
+.word 7637
 _p_1036_plt_System_Private_Xml_System_TimeSpan_Negate_llvm:
 	.globl _p_1036_plt_System_Private_Xml_System_TimeSpan_Negate_llvm
 .private_extern _p_1036_plt_System_Private_Xml_System_TimeSpan_Negate_llvm
@@ -18816,7 +18816,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #680]
 br x16
-.word 7654
+.word 7642
 _p_1037_plt_System_Private_Xml_System_DateTime_get_Year_llvm:
 	.globl _p_1037_plt_System_Private_Xml_System_DateTime_get_Year_llvm
 .private_extern _p_1037_plt_System_Private_Xml_System_DateTime_get_Year_llvm
@@ -18827,7 +18827,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #688]
 br x16
-.word 7659
+.word 7647
 _p_1038_plt_System_Private_Xml_System_DateTime_get_Month_llvm:
 	.globl _p_1038_plt_System_Private_Xml_System_DateTime_get_Month_llvm
 .private_extern _p_1038_plt_System_Private_Xml_System_DateTime_get_Month_llvm
@@ -18838,7 +18838,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #696]
 br x16
-.word 7664
+.word 7652
 _p_1039_plt_System_Private_Xml_System_DateTime_get_Day_llvm:
 	.globl _p_1039_plt_System_Private_Xml_System_DateTime_get_Day_llvm
 .private_extern _p_1039_plt_System_Private_Xml_System_DateTime_get_Day_llvm
@@ -18849,7 +18849,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #704]
 br x16
-.word 7669
+.word 7657
 _p_1040_plt_System_Private_Xml_System_DateTime_get_Now_llvm:
 	.globl _p_1040_plt_System_Private_Xml_System_DateTime_get_Now_llvm
 .private_extern _p_1040_plt_System_Private_Xml_System_DateTime_get_Now_llvm
@@ -18860,7 +18860,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #712]
 br x16
-.word 7674
+.word 7662
 _p_1041_plt_System_Private_Xml_System_DateTime__ctor_int_int_int_llvm:
 	.globl _p_1041_plt_System_Private_Xml_System_DateTime__ctor_int_int_int_llvm
 .private_extern _p_1041_plt_System_Private_Xml_System_DateTime__ctor_int_int_int_llvm
@@ -18871,7 +18871,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #720]
 br x16
-.word 7679
+.word 7667
 _p_1042_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Year_llvm:
 	.globl _p_1042_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Year_llvm
 .private_extern _p_1042_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Year_llvm
@@ -18882,7 +18882,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #728]
 br x16
-.word 7684
+.word 7672
 _p_1043_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Month_llvm:
 	.globl _p_1043_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Month_llvm
 .private_extern _p_1043_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Month_llvm
@@ -18893,7 +18893,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #736]
 br x16
-.word 7687
+.word 7675
 _p_1044_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Day_llvm:
 	.globl _p_1044_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Day_llvm
 .private_extern _p_1044_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_get_Day_llvm
@@ -18904,7 +18904,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #744]
 br x16
-.word 7690
+.word 7678
 _p_1045_plt_System_Private_Xml_System_DateTime_Add_System_TimeSpan_llvm:
 	.globl _p_1045_plt_System_Private_Xml_System_DateTime_Add_System_TimeSpan_llvm
 .private_extern _p_1045_plt_System_Private_Xml_System_DateTime_Add_System_TimeSpan_llvm
@@ -18915,7 +18915,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #752]
 br x16
-.word 7693
+.word 7681
 _p_1046_plt_System_Private_Xml_System_DateTime__ctor_long_System_DateTimeKind_llvm:
 	.globl _p_1046_plt_System_Private_Xml_System_DateTime__ctor_long_System_DateTimeKind_llvm
 .private_extern _p_1046_plt_System_Private_Xml_System_DateTime__ctor_long_System_DateTimeKind_llvm
@@ -18926,7 +18926,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #760]
 br x16
-.word 7698
+.word 7686
 _p_1047_plt_System_Private_Xml_System_DateTime_ToLocalTime_llvm:
 	.globl _p_1047_plt_System_Private_Xml_System_DateTime_ToLocalTime_llvm
 .private_extern _p_1047_plt_System_Private_Xml_System_DateTime_ToLocalTime_llvm
@@ -18937,7 +18937,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #768]
 br x16
-.word 7703
+.word 7691
 _p_1048_plt_System_Private_Xml_System_DateTimeOffset__ctor_System_DateTime_System_TimeSpan_llvm:
 	.globl _p_1048_plt_System_Private_Xml_System_DateTimeOffset__ctor_System_DateTime_System_TimeSpan_llvm
 .private_extern _p_1048_plt_System_Private_Xml_System_DateTimeOffset__ctor_System_DateTime_System_TimeSpan_llvm
@@ -18948,7 +18948,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #776]
 br x16
-.word 7708
+.word 7696
 _p_1049_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_TryFormat_System_Span_1_char_int__llvm:
 	.globl _p_1049_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_TryFormat_System_Span_1_char_int__llvm
 .private_extern _p_1049_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_TryFormat_System_Span_1_char_int__llvm
@@ -18959,7 +18959,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #784]
 br x16
-.word 7713
+.word 7701
 _p_1050_plt_System_Private_Xml_System_Span_1_char_ToString_llvm:
 	.globl _p_1050_plt_System_Private_Xml_System_Span_1_char_ToString_llvm
 .private_extern _p_1050_plt_System_Private_Xml_System_Span_1_char_ToString_llvm
@@ -18970,7 +18970,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #792]
 br x16
-.word 7716
+.word 7704
 _p_1051_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintZone_System_Text_ValueStringBuilder__llvm:
 	.globl _p_1051_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintZone_System_Text_ValueStringBuilder__llvm
 .private_extern _p_1051_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintZone_System_Text_ValueStringBuilder__llvm
@@ -18981,7 +18981,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #800]
 br x16
-.word 7733
+.word 7721
 _p_1052_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintDate_System_Text_ValueStringBuilder__llvm:
 	.globl _p_1052_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintDate_System_Text_ValueStringBuilder__llvm
 .private_extern _p_1052_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintDate_System_Text_ValueStringBuilder__llvm
@@ -18992,7 +18992,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #808]
 br x16
-.word 7736
+.word 7724
 _p_1053_plt_System_Private_Xml_System_Text_ValueStringBuilder_GrowAndAppend_char_llvm:
 	.globl _p_1053_plt_System_Private_Xml_System_Text_ValueStringBuilder_GrowAndAppend_char_llvm
 .private_extern _p_1053_plt_System_Private_Xml_System_Text_ValueStringBuilder_GrowAndAppend_char_llvm
@@ -19003,7 +19003,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #816]
 br x16
-.word 7739
+.word 7727
 _p_1054_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintTime_System_Text_ValueStringBuilder__llvm:
 	.globl _p_1054_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintTime_System_Text_ValueStringBuilder__llvm
 .private_extern _p_1054_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_PrintTime_System_Text_ValueStringBuilder__llvm
@@ -19014,7 +19014,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #824]
 br x16
-.word 7742
+.word 7730
 _p_1055_plt_System_Private_Xml_System_Text_ValueStringBuilder_AppendSpanFormattable_int_int_string_System_IFormatProvider_llvm:
 	.globl _p_1055_plt_System_Private_Xml_System_Text_ValueStringBuilder_AppendSpanFormattable_int_int_string_System_IFormatProvider_llvm
 .private_extern _p_1055_plt_System_Private_Xml_System_Text_ValueStringBuilder_AppendSpanFormattable_int_int_string_System_IFormatProvider_llvm
@@ -19025,7 +19025,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #832]
 br x16
-.word 7745
+.word 7733
 _p_1056_plt_System_Private_Xml_System_Text_ValueStringBuilder_AppendSlow_string_llvm:
 	.globl _p_1056_plt_System_Private_Xml_System_Text_ValueStringBuilder_AppendSlow_string_llvm
 .private_extern _p_1056_plt_System_Private_Xml_System_Text_ValueStringBuilder_AppendSlow_string_llvm
@@ -19036,7 +19036,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #840]
 br x16
-.word 7757
+.word 7745
 _p_1057_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_GetYearMonthDay_int__int__int__llvm:
 	.globl _p_1057_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_GetYearMonthDay_int__int__int__llvm
 .private_extern _p_1057_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_GetYearMonthDay_int__int__int__llvm
@@ -19047,7 +19047,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #848]
 br x16
-.word 7760
+.word 7748
 _p_1058_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_WriteXDigits_System_Span_1_char_int_int_int_llvm:
 	.globl _p_1058_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_WriteXDigits_System_Span_1_char_int_int_int_llvm
 .private_extern _p_1058_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_WriteXDigits_System_Span_1_char_int_int_int_llvm
@@ -19058,7 +19058,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #856]
 br x16
-.word 7763
+.word 7751
 _p_1059_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Write2Digits_System_Span_1_char_int_int_llvm:
 	.globl _p_1059_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Write2Digits_System_Span_1_char_int_int_llvm
 .private_extern _p_1059_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Write2Digits_System_Span_1_char_int_int_llvm
@@ -19069,7 +19069,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #864]
 br x16
-.word 7766
+.word 7754
 _p_1060_plt_System_Private_Xml_System_Text_ValueStringBuilder_Grow_int_llvm:
 	.globl _p_1060_plt_System_Private_Xml_System_Text_ValueStringBuilder_Grow_int_llvm
 .private_extern _p_1060_plt_System_Private_Xml_System_Text_ValueStringBuilder_Grow_int_llvm
@@ -19080,7 +19080,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #872]
 br x16
-.word 7769
+.word 7757
 _p_1061_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse2Dig_int_int__llvm:
 	.globl _p_1061_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse2Dig_int_int__llvm
 .private_extern _p_1061_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse2Dig_int_int__llvm
@@ -19091,7 +19091,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #880]
 br x16
-.word 7772
+.word 7760
 _p_1062_plt_System_Private_Xml_System_DateTime_DaysInMonth_int_int_llvm:
 	.globl _p_1062_plt_System_Private_Xml_System_DateTime_DaysInMonth_int_int_llvm
 .private_extern _p_1062_plt_System_Private_Xml_System_DateTime_DaysInMonth_int_int_llvm
@@ -19102,7 +19102,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #888]
 br x16
-.word 7775
+.word 7763
 _p_1063_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseZoneAndWhitespace_int_llvm:
 	.globl _p_1063_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseZoneAndWhitespace_int_llvm
 .private_extern _p_1063_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseZoneAndWhitespace_int_llvm
@@ -19113,7 +19113,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #896]
 br x16
-.word 7780
+.word 7768
 _p_1064_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse4Dig_int_int__llvm:
 	.globl _p_1064_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse4Dig_int_int__llvm
 .private_extern _p_1064_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_Parse4Dig_int_int__llvm
@@ -19124,7 +19124,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #904]
 br x16
-.word 7783
+.word 7771
 _p_1065_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTimeAndWhitespace_int_llvm:
 	.globl _p_1065_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTimeAndWhitespace_int_llvm
 .private_extern _p_1065_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTimeAndWhitespace_int_llvm
@@ -19135,7 +19135,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #912]
 br x16
-.word 7786
+.word 7774
 _p_1066_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTimeAndZoneAndWhitespace_int_llvm:
 	.globl _p_1066_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTimeAndZoneAndWhitespace_int_llvm
 .private_extern _p_1066_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTimeAndZoneAndWhitespace_int_llvm
@@ -19146,7 +19146,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #920]
 br x16
-.word 7789
+.word 7777
 _p_1067_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseDate_int_llvm:
 	.globl _p_1067_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseDate_int_llvm
 .private_extern _p_1067_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseDate_int_llvm
@@ -19157,7 +19157,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #928]
 br x16
-.word 7792
+.word 7780
 _p_1068_plt_System_Private_Xml_char_IsWhiteSpace_char_llvm:
 	.globl _p_1068_plt_System_Private_Xml_char_IsWhiteSpace_char_llvm
 .private_extern _p_1068_plt_System_Private_Xml_char_IsWhiteSpace_char_llvm
@@ -19168,7 +19168,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #936]
 br x16
-.word 7795
+.word 7783
 _p_1069_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTime_int__llvm:
 	.globl _p_1069_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTime_int__llvm
 .private_extern _p_1069_plt_System_Private_Xml_System_Xml_Schema_XsdDateTime_Parser_ParseTime_int__llvm
@@ -19179,7 +19179,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #944]
 br x16
-.word 7800
+.word 7788
 _p_1070_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_int_int_int_string_llvm:
 	.globl _p_1070_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_int_int_int_string_llvm
 .private_extern _p_1070_plt_System_Private_Xml_System_ArgumentOutOfRangeException_ThrowIfGreaterThan_int_int_int_string_llvm
@@ -19190,7 +19190,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #952]
 br x16
-.word 7803
+.word 7791
 _p_1071_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_bool_int_int_int_int_int_int_int_llvm:
 	.globl _p_1071_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_bool_int_int_int_int_int_int_int_llvm
 .private_extern _p_1071_plt_System_Private_Xml_System_Xml_Schema_XsdDuration__ctor_bool_int_int_int_int_int_int_int_llvm
@@ -19201,7 +19201,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #960]
 br x16
-.word 7815
+.word 7803
 _p_1072_plt_System_Private_Xml__jit_icall___emul_lmul_ovf_un_llvm:
 	.globl _p_1072_plt_System_Private_Xml__jit_icall___emul_lmul_ovf_un_llvm
 .private_extern _p_1072_plt_System_Private_Xml__jit_icall___emul_lmul_ovf_un_llvm
@@ -19212,7 +19212,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #968]
 br x16
-.word 7818
+.word 7806
 _p_1073_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryFormat_System_Span_1_char_int__System_Xml_Schema_XsdDuration_DurationType_llvm:
 	.globl _p_1073_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryFormat_System_Span_1_char_int__System_Xml_Schema_XsdDuration_DurationType_llvm
 .private_extern _p_1073_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryFormat_System_Span_1_char_int__System_Xml_Schema_XsdDuration_DurationType_llvm
@@ -19223,7 +19223,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #976]
 br x16
-.word 7820
+.word 7808
 _p_1074_plt_System_Private_Xml_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm:
 	.globl _p_1074_plt_System_Private_Xml_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm
 .private_extern _p_1074_plt_System_Private_Xml_System_Text_ValueStringBuilder_EnsureCapacity_int_llvm
@@ -19234,7 +19234,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #984]
 br x16
-.word 7823
+.word 7811
 _p_1075_plt_System_Private_Xml_System_Span_1_char_TryCopyTo_System_Span_1_char_llvm:
 	.globl _p_1075_plt_System_Private_Xml_System_Span_1_char_TryCopyTo_System_Span_1_char_llvm
 .private_extern _p_1075_plt_System_Private_Xml_System_Span_1_char_TryCopyTo_System_Span_1_char_llvm
@@ -19245,7 +19245,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #992]
 br x16
-.word 7826
+.word 7814
 _p_1076_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParseDigits_string_int__bool_int__int__llvm:
 	.globl _p_1076_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParseDigits_string_int__bool_int__int__llvm
 .private_extern _p_1076_plt_System_Private_Xml_System_Xml_Schema_XsdDuration_TryParseDigits_string_int__bool_int__int__llvm
@@ -19256,7 +19256,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1000]
 br x16
-.word 7837
+.word 7825
 _p_1077_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentException_DestinationTooShort_llvm:
 	.globl _p_1077_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentException_DestinationTooShort_llvm
 .private_extern _p_1077_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentException_DestinationTooShort_llvm
@@ -19267,7 +19267,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1008]
 br x16
-.word 7840
+.word 7828
 _p_1078_plt_System_Private_Xml_System_Text_RegularExpressions_Regex_ValidateMatchTimeout_System_TimeSpan_llvm:
 	.globl _p_1078_plt_System_Private_Xml_System_Text_RegularExpressions_Regex_ValidateMatchTimeout_System_TimeSpan_llvm
 .private_extern _p_1078_plt_System_Private_Xml_System_Text_RegularExpressions_Regex_ValidateMatchTimeout_System_TimeSpan_llvm
@@ -19278,7 +19278,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1016]
 br x16
-.word 7845
+.word 7833
 _p_1079_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2__ctor_llvm:
 	.globl _p_1079_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2__ctor_llvm
 .private_extern _p_1079_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2__ctor_llvm
@@ -19289,7 +19289,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1024]
 br x16
-.word 7850
+.word 7838
 _p_1080_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2_RunnerFactory_Runner_TryFindNextPossibleStartingPosition_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_1080_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2_RunnerFactory_Runner_TryFindNextPossibleStartingPosition_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_1080_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2_RunnerFactory_Runner_TryFindNextPossibleStartingPosition_System_ReadOnlySpan_1_char_llvm
@@ -19300,7 +19300,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1032]
 br x16
-.word 7853
+.word 7841
 _p_1081_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2_RunnerFactory_Runner_TryMatchAtCurrentPosition_System_ReadOnlySpan_1_char_llvm:
 	.globl _p_1081_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2_RunnerFactory_Runner_TryMatchAtCurrentPosition_System_ReadOnlySpan_1_char_llvm
 .private_extern _p_1081_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__LanguageRegex_2_RunnerFactory_Runner_TryMatchAtCurrentPosition_System_ReadOnlySpan_1_char_llvm
@@ -19311,7 +19311,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1040]
 br x16
-.word 7856
+.word 7844
 _p_1082_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__Utilities__StackPushg__WithResize_2_0_int____int__int_llvm:
 	.globl _p_1082_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__Utilities__StackPushg__WithResize_2_0_int____int__int_llvm
 .private_extern _p_1082_plt_System_Private_Xml_System_Text_RegularExpressions_Generated__RegexGenerator_gF6DD43EEA644F37FBD420BF6C4F76D7CBF00A201A3A5DFAA2DE4DAED4B5EFB477__Utilities__StackPushg__WithResize_2_0_int____int__int_llvm
@@ -19322,7 +19322,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1048]
 br x16
-.word 7859
+.word 7847
 _p_1083_plt_System_Private_Xml_System_Environment_get_TickCount64_llvm:
 	.globl _p_1083_plt_System_Private_Xml_System_Environment_get_TickCount64_llvm
 .private_extern _p_1083_plt_System_Private_Xml_System_Environment_get_TickCount64_llvm
@@ -19333,7 +19333,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1056]
 br x16
-.word 7862
+.word 7850
 _p_1084_plt_System_Private_Xml_System_Text_RegularExpressions_RegexRunner__CheckTimeoutg__ThrowRegexTimeout_25_0_llvm:
 	.globl _p_1084_plt_System_Private_Xml_System_Text_RegularExpressions_RegexRunner__CheckTimeoutg__ThrowRegexTimeout_25_0_llvm
 .private_extern _p_1084_plt_System_Private_Xml_System_Text_RegularExpressions_RegexRunner__CheckTimeoutg__ThrowRegexTimeout_25_0_llvm
@@ -19344,7 +19344,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1064]
 br x16
-.word 7867
+.word 7855
 _p_1085_plt_System_Private_Xml_System_Text_RegularExpressions_RegexRunner_Capture_int_int_int_llvm:
 	.globl _p_1085_plt_System_Private_Xml_System_Text_RegularExpressions_RegexRunner_Capture_int_int_int_llvm
 .private_extern _p_1085_plt_System_Private_Xml_System_Text_RegularExpressions_RegexRunner_Capture_int_int_int_llvm
@@ -19355,7 +19355,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1072]
 br x16
-.word 7872
+.word 7860
 _p_1086_plt_System_Private_Xml_System_AppContext_GetData_string_llvm:
 	.globl _p_1086_plt_System_Private_Xml_System_AppContext_GetData_string_llvm
 .private_extern _p_1086_plt_System_Private_Xml_System_AppContext_GetData_string_llvm
@@ -19366,7 +19366,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1080]
 br x16
-.word 7877
+.word 7865
 _p_1087_plt_System_Private_Xml_System_Array_Resize_int_int____int_llvm:
 	.globl _p_1087_plt_System_Private_Xml_System_Array_Resize_int_int____int_llvm
 .private_extern _p_1087_plt_System_Private_Xml_System_Array_Resize_int_int____int_llvm
@@ -19377,7 +19377,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1088]
 br x16
-.word 7882
+.word 7870
 _p_1088_plt_System_Private_Xml__jit_icall_mono_thread_interruption_checkpoint_llvm:
 	.globl _p_1088_plt_System_Private_Xml__jit_icall_mono_thread_interruption_checkpoint_llvm
 .private_extern _p_1088_plt_System_Private_Xml__jit_icall_mono_thread_interruption_checkpoint_llvm
@@ -19388,7 +19388,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1096]
 br x16
-.word 7894
+.word 7882
 _p_1089_plt_System_Private_Xml_System_Collections_Generic_EnumerableHelpers_ToArray_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Collections_Generic_IEnumerable_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int__llvm:
 	.globl _p_1089_plt_System_Private_Xml_System_Collections_Generic_EnumerableHelpers_ToArray_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Collections_Generic_IEnumerable_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int__llvm
 .private_extern _p_1089_plt_System_Private_Xml_System_Collections_Generic_EnumerableHelpers_ToArray_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Collections_Generic_IEnumerable_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int__llvm
@@ -19399,7 +19399,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1104]
 br x16
-.word 7897
+.word 7885
 _p_1090_plt_System_Private_Xml_System_Array_Clear_System_Array_int_int_llvm:
 	.globl _p_1090_plt_System_Private_Xml_System_Array_Clear_System_Array_int_int_llvm
 .private_extern _p_1090_plt_System_Private_Xml_System_Array_Clear_System_Array_int_int_llvm
@@ -19410,7 +19410,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1112]
 br x16
-.word 7911
+.word 7899
 _p_1091_plt_System_Private_Xml_System_Array_GetLowerBound_int_llvm:
 	.globl _p_1091_plt_System_Private_Xml_System_Array_GetLowerBound_int_llvm
 .private_extern _p_1091_plt_System_Private_Xml_System_Array_GetLowerBound_int_llvm
@@ -19421,7 +19421,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1120]
 br x16
-.word 7916
+.word 7904
 _p_1092_plt_System_Private_Xml_System_ArgumentOutOfRangeException__ctor_string_object_string_llvm:
 	.globl _p_1092_plt_System_Private_Xml_System_ArgumentOutOfRangeException__ctor_string_object_string_llvm
 .private_extern _p_1092_plt_System_Private_Xml_System_ArgumentOutOfRangeException__ctor_string_object_string_llvm
@@ -19432,7 +19432,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1128]
 br x16
-.word 7921
+.word 7909
 _p_1093_plt_System_Private_Xml_System_Array_Reverse_System_Array_int_int_llvm:
 	.globl _p_1093_plt_System_Private_Xml_System_Array_Reverse_System_Array_int_int_llvm
 .private_extern _p_1093_plt_System_Private_Xml_System_Array_Reverse_System_Array_int_int_llvm
@@ -19443,7 +19443,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1136]
 br x16
-.word 7926
+.word 7914
 _p_1094_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext__ctor_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm:
 	.globl _p_1094_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext__ctor_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
 .private_extern _p_1094_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext__ctor_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
@@ -19454,7 +19454,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1144]
 br x16
-.word 7931
+.word 7919
 _p_1095_plt_System_Private_Xml_System_Collections_Generic_EnumerableHelpers_GetEmptyEnumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm:
 	.globl _p_1095_plt_System_Private_Xml_System_Collections_Generic_EnumerableHelpers_GetEmptyEnumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
 .private_extern _p_1095_plt_System_Private_Xml_System_Collections_Generic_EnumerableHelpers_GetEmptyEnumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
@@ -19465,7 +19465,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1152]
 br x16
-.word 7945
+.word 7933
 _p_1096_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_GetEnumerator_llvm:
 	.globl _p_1096_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_GetEnumerator_llvm
 .private_extern _p_1096_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_GetEnumerator_llvm
@@ -19476,7 +19476,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1160]
 br x16
-.word 7959
+.word 7947
 _p_1097_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_ThrowForEmptyStack_llvm:
 	.globl _p_1097_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_ThrowForEmptyStack_llvm
 .private_extern _p_1097_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_ThrowForEmptyStack_llvm
@@ -19487,7 +19487,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1168]
 br x16
-.word 7975
+.word 7963
 _p_1098_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_PushWithResize_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm:
 	.globl _p_1098_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_PushWithResize_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
 .private_extern _p_1098_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_PushWithResize_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_llvm
@@ -19498,7 +19498,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1176]
 br x16
-.word 7991
+.word 7979
 _p_1099_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Grow_int_llvm:
 	.globl _p_1099_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Grow_int_llvm
 .private_extern _p_1099_plt_System_Private_Xml_System_Collections_Generic_Stack_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_Grow_int_llvm
@@ -19509,7 +19509,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1184]
 br x16
-.word 8007
+.word 7995
 _p_1100_plt_System_Private_Xml_System_Array_Resize_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Xml_Schema_SequenceNode_SequenceConstructPosContext____int_llvm:
 	.globl _p_1100_plt_System_Private_Xml_System_Array_Resize_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Xml_Schema_SequenceNode_SequenceConstructPosContext____int_llvm
 .private_extern _p_1100_plt_System_Private_Xml_System_Array_Resize_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Xml_Schema_SequenceNode_SequenceConstructPosContext____int_llvm
@@ -19520,7 +19520,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1192]
 br x16
-.word 8023
+.word 8011
 _p_1101_plt_System_Private_Xml__jit_icall_mono_string_new_wrapper_internal_llvm:
 	.globl _p_1101_plt_System_Private_Xml__jit_icall_mono_string_new_wrapper_internal_llvm
 .private_extern _p_1101_plt_System_Private_Xml__jit_icall_mono_string_new_wrapper_internal_llvm
@@ -19531,7 +19531,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1200]
 br x16
-.word 8038
+.word 8026
 _p_1102_plt_System_Private_Xml__jit_icall_mono_get_addr_compiled_method_llvm:
 	.globl _p_1102_plt_System_Private_Xml__jit_icall_mono_get_addr_compiled_method_llvm
 .private_extern _p_1102_plt_System_Private_Xml__jit_icall_mono_get_addr_compiled_method_llvm
@@ -19542,7 +19542,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1208]
 br x16
-.word 8041
+.word 8029
 _p_1103_plt_System_Private_Xml__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm:
 	.globl _p_1103_plt_System_Private_Xml__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
 .private_extern _p_1103_plt_System_Private_Xml__jit_icall_mono_thread_force_interruption_checkpoint_noraise_llvm
@@ -19553,7 +19553,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1216]
 br x16
-.word 8044
+.word 8032
 _p_1104_plt_System_Private_Xml__jit_icall_mono_string_to_utf8str_llvm:
 	.globl _p_1104_plt_System_Private_Xml__jit_icall_mono_string_to_utf8str_llvm
 .private_extern _p_1104_plt_System_Private_Xml__jit_icall_mono_string_to_utf8str_llvm
@@ -19564,7 +19564,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1224]
 br x16
-.word 8047
+.word 8035
 _p_1105_plt_System_Private_Xml__jit_icall_monoeg_g_free_llvm:
 	.globl _p_1105_plt_System_Private_Xml__jit_icall_monoeg_g_free_llvm
 .private_extern _p_1105_plt_System_Private_Xml__jit_icall_monoeg_g_free_llvm
@@ -19575,7 +19575,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1232]
 br x16
-.word 8050
+.word 8038
 _p_1106_plt_System_Private_Xml__jit_icall_ves_icall_string_new_wrapper_llvm:
 	.globl _p_1106_plt_System_Private_Xml__jit_icall_ves_icall_string_new_wrapper_llvm
 .private_extern _p_1106_plt_System_Private_Xml__jit_icall_ves_icall_string_new_wrapper_llvm
@@ -19586,7 +19586,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1240]
 br x16
-.word 8052
+.word 8040
 _p_1107_plt_System_Private_Xml_System_Threading_ExecutionContext_Capture_llvm:
 	.globl _p_1107_plt_System_Private_Xml_System_Threading_ExecutionContext_Capture_llvm
 .private_extern _p_1107_plt_System_Private_Xml_System_Threading_ExecutionContext_Capture_llvm
@@ -19597,7 +19597,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1248]
 br x16
-.word 8055
+.word 8043
 _p_1108_plt_System_Private_Xml_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_MoveNext_llvm:
 	.globl _p_1108_plt_System_Private_Xml_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_MoveNext_llvm
 .private_extern _p_1108_plt_System_Private_Xml_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_MoveNext_llvm
@@ -19608,7 +19608,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1256]
 br x16
-.word 8060
+.word 8048
 _p_1109_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_IO_Stream_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_MoveNext_System_Threading_Thread_llvm:
 	.globl _p_1109_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_IO_Stream_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_MoveNext_System_Threading_Thread_llvm
 .private_extern _p_1109_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_System_IO_Stream_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_MoveNext_System_Threading_Thread_llvm
@@ -19619,7 +19619,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1264]
 br x16
-.word 8062
+.word 8050
 _p_1110_plt_System_Private_Xml_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm:
 	.globl _p_1110_plt_System_Private_Xml_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
 .private_extern _p_1110_plt_System_Private_Xml_System_Threading_ExecutionContext_RunFromThreadPoolDispatchLoop_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
@@ -19630,7 +19630,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1272]
 br x16
-.word 8077
+.word 8065
 _p_1111_plt_System_Private_Xml_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm:
 	.globl _p_1111_plt_System_Private_Xml_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
 .private_extern _p_1111_plt_System_Private_Xml_System_Threading_ExecutionContext_RunInternal_System_Threading_ExecutionContext_System_Threading_ContextCallback_object_llvm
@@ -19641,7 +19641,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1280]
 br x16
-.word 8082
+.word 8070
 _p_1112_plt_System_Private_Xml_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_MoveNext_llvm:
 	.globl _p_1112_plt_System_Private_Xml_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_MoveNext_llvm
 .private_extern _p_1112_plt_System_Private_Xml_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_MoveNext_llvm
@@ -19652,7 +19652,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1288]
 br x16
-.word 8087
+.word 8075
 _p_1113_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_object_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_MoveNext_System_Threading_Thread_llvm:
 	.globl _p_1113_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_object_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_MoveNext_System_Threading_Thread_llvm
 .private_extern _p_1113_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_AsyncStateMachineBox_1_object_System_Xml_XmlUrlResolver__GetEntityAsyncd__10_MoveNext_System_Threading_Thread_llvm
@@ -19663,7 +19663,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1296]
 br x16
-.word 8090
+.word 8078
 _p_1114_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_AddWithResize_T_REF_llvm:
 	.globl _p_1114_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_AddWithResize_T_REF_llvm
 .private_extern _p_1114_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_AddWithResize_T_REF_llvm
@@ -19674,7 +19674,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1304]
 br x16
-.word 8105
+.word 8093
 _p_1115_plt_System_Private_Xml_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm:
 	.globl _p_1115_plt_System_Private_Xml_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
 .private_extern _p_1115_plt_System_Private_Xml_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr_llvm
@@ -19685,7 +19685,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1312]
 br x16
-.word 8120
+.word 8108
 _p_1116_plt_System_Private_Xml_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm:
 	.globl _p_1116_plt_System_Private_Xml_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
 .private_extern _p_1116_plt_System_Private_Xml_System_ThrowHelper_ThrowNotSupportedException_System_ExceptionResource_llvm
@@ -19696,7 +19696,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1320]
 br x16
-.word 8128
+.word 8116
 _p_1117_plt_System_Private_Xml_System_Array_IndexOf_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Xml_Schema_SequenceNode_SequenceConstructPosContext___System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int_int_llvm:
 	.globl _p_1117_plt_System_Private_Xml_System_Array_IndexOf_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Xml_Schema_SequenceNode_SequenceConstructPosContext___System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int_int_llvm
 .private_extern _p_1117_plt_System_Private_Xml_System_Array_IndexOf_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_System_Xml_Schema_SequenceNode_SequenceConstructPosContext___System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int_int_llvm
@@ -19707,7 +19707,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1328]
 br x16
-.word 8133
+.word 8121
 _p_1118_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_ThrowEnumerationNotStartedOrEnded_llvm:
 	.globl _p_1118_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_ThrowEnumerationNotStartedOrEnded_llvm
 .private_extern _p_1118_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_ThrowEnumerationNotStartedOrEnded_llvm
@@ -19718,7 +19718,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1336]
 br x16
-.word 8148
+.word 8136
 _p_1119_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_get_Current_llvm:
 	.globl _p_1119_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_get_Current_llvm
 .private_extern _p_1119_plt_System_Private_Xml_System_Collections_Generic_Stack_1_Enumerator_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_get_Current_llvm
@@ -19729,7 +19729,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1344]
 br x16
-.word 8162
+.word 8150
 _p_1120_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm:
 	.globl _p_1120_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
 .private_extern _p_1120_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentOutOfRangeException_System_ExceptionArgument_System_ExceptionResource_llvm
@@ -19740,7 +19740,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1352]
 br x16
-.word 8176
+.word 8164
 _p_1121_plt_System_Private_Xml_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm:
 	.globl _p_1121_plt_System_Private_Xml_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm
 .private_extern _p_1121_plt_System_Private_Xml_System_ThrowHelper_ThrowInvalidOperationException_EnumCurrent_int_llvm
@@ -19751,7 +19751,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1360]
 br x16
-.word 8181
+.word 8169
 _p_1122_plt_System_Private_Xml_System_SZGenericArrayEnumerator_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_get_Current_llvm:
 	.globl _p_1122_plt_System_Private_Xml_System_SZGenericArrayEnumerator_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_get_Current_llvm
 .private_extern _p_1122_plt_System_Private_Xml_System_SZGenericArrayEnumerator_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_get_Current_llvm
@@ -19762,7 +19762,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1368]
 br x16
-.word 8186
+.word 8174
 _p_1123_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_Grow_int_llvm:
 	.globl _p_1123_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_Grow_int_llvm
 .private_extern _p_1123_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_Grow_int_llvm
@@ -19773,7 +19773,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1376]
 br x16
-.word 8201
+.word 8189
 _p_1124_plt_System_Private_Xml_System_Collections_Generic_EqualityComparer_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_IndexOf_System_Xml_Schema_SequenceNode_SequenceConstructPosContext___System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int_int_llvm:
 	.globl _p_1124_plt_System_Private_Xml_System_Collections_Generic_EqualityComparer_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_IndexOf_System_Xml_Schema_SequenceNode_SequenceConstructPosContext___System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int_int_llvm
 .private_extern _p_1124_plt_System_Private_Xml_System_Collections_Generic_EqualityComparer_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_IndexOf_System_Xml_Schema_SequenceNode_SequenceConstructPosContext___System_Xml_Schema_SequenceNode_SequenceConstructPosContext_int_int_llvm
@@ -19784,7 +19784,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1384]
 br x16
-.word 8216
+.word 8204
 _p_1125_plt_System_Private_Xml_System_Collections_Generic_EqualityComparer_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_CreateComparer_llvm:
 	.globl _p_1125_plt_System_Private_Xml_System_Collections_Generic_EqualityComparer_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_CreateComparer_llvm
 .private_extern _p_1125_plt_System_Private_Xml_System_Collections_Generic_EqualityComparer_1_System_Xml_Schema_SequenceNode_SequenceConstructPosContext_CreateComparer_llvm
@@ -19795,7 +19795,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1392]
 br x16
-.word 8231
+.word 8219
 _p_1126_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm:
 	.globl _p_1126_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
 .private_extern _p_1126_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_long_System_SpanHelpers_DontNegate_1_long_long__long_int_llvm
@@ -19806,7 +19806,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1400]
 br x16
-.word 8266
+.word 8254
 _p_1127_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm:
 	.globl _p_1127_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
 .private_extern _p_1127_plt_System_Private_Xml_System_SpanHelpers_NonPackedIndexOfValueType_int_System_SpanHelpers_DontNegate_1_int_int__int_int_llvm
@@ -19817,7 +19817,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1408]
 br x16
-.word 8302
+.word 8290
 _p_1128_plt_System_Private_Xml_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm:
 	.globl _p_1128_plt_System_Private_Xml_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm
 .private_extern _p_1128_plt_System_Private_Xml_System_ThrowHelper_ThrowCountArgumentOutOfRange_ArgumentOutOfRange_Count_llvm
@@ -19828,7 +19828,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1416]
 br x16
-.word 8318
+.word 8306
 _p_1129_plt_System_Private_Xml_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm:
 	.globl _p_1129_plt_System_Private_Xml_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm
 .private_extern _p_1129_plt_System_Private_Xml_System_ThrowHelper_ThrowStartIndexArgumentOutOfRange_ArgumentOutOfRange_IndexMustBeLessOrEqual_llvm
@@ -19839,7 +19839,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1424]
 br x16
-.word 8323
+.word 8311
 _p_1130_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_set_Capacity_int_llvm:
 	.globl _p_1130_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_set_Capacity_int_llvm
 .private_extern _p_1130_plt_System_Private_Xml_System_Collections_Generic_List_1_T_REF_set_Capacity_int_llvm
@@ -19850,7 +19850,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1432]
 br x16
-.word 8328
+.word 8316
 _p_1131_plt_System_Private_Xml_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm:
 	.globl _p_1131_plt_System_Private_Xml_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
 .private_extern _p_1131_plt_System_Private_Xml_System_RuntimeType_CreateInstanceForAnotherGenericParameter_System_Type_System_RuntimeType_System_RuntimeType_llvm
@@ -19861,7 +19861,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1440]
 br x16
-.word 8343
+.word 8331
 _p_1132_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm:
 	.globl _p_1132_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
 .private_extern _p_1132_plt_System_Private_Xml_System_ThrowHelper_ThrowArgumentException_System_ExceptionResource_llvm
@@ -19872,7 +19872,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1448]
 br x16
-.word 8348
+.word 8336
 _p_1133_plt_System_Private_Xml_System_Net_Http_HttpClientHandler__ctor_llvm:
 	.globl _p_1133_plt_System_Private_Xml_System_Net_Http_HttpClientHandler__ctor_llvm
 .private_extern _p_1133_plt_System_Private_Xml_System_Net_Http_HttpClientHandler__ctor_llvm
@@ -19883,7 +19883,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1456]
 br x16
-.word 8353
+.word 8341
 _p_1134_plt_System_Private_Xml_System_Net_Http_HttpClient__ctor_System_Net_Http_HttpMessageHandler_llvm:
 	.globl _p_1134_plt_System_Private_Xml_System_Net_Http_HttpClient__ctor_System_Net_Http_HttpMessageHandler_llvm
 .private_extern _p_1134_plt_System_Private_Xml_System_Net_Http_HttpClient__ctor_System_Net_Http_HttpMessageHandler_llvm
@@ -19894,7 +19894,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1464]
 br x16
-.word 8358
+.word 8346
 _p_1135_plt_System_Private_Xml_System_Net_Http_HttpClientHandler_set_Credentials_System_Net_ICredentials_llvm:
 	.globl _p_1135_plt_System_Private_Xml_System_Net_Http_HttpClientHandler_set_Credentials_System_Net_ICredentials_llvm
 .private_extern _p_1135_plt_System_Private_Xml_System_Net_Http_HttpClientHandler_set_Credentials_System_Net_ICredentials_llvm
@@ -19905,7 +19905,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1472]
 br x16
-.word 8363
+.word 8351
 _p_1136_plt_System_Private_Xml_System_Net_Http_HttpClientHandler_set_Proxy_System_Net_IWebProxy_llvm:
 	.globl _p_1136_plt_System_Private_Xml_System_Net_Http_HttpClientHandler_set_Proxy_System_Net_IWebProxy_llvm
 .private_extern _p_1136_plt_System_Private_Xml_System_Net_Http_HttpClientHandler_set_Proxy_System_Net_IWebProxy_llvm
@@ -19916,7 +19916,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1480]
 br x16
-.word 8368
+.word 8356
 _p_1137_plt_System_Private_Xml_System_Net_Http_HttpClient_GetStreamAsync_System_Uri_llvm:
 	.globl _p_1137_plt_System_Private_Xml_System_Net_Http_HttpClient_GetStreamAsync_System_Uri_llvm
 .private_extern _p_1137_plt_System_Private_Xml_System_Net_Http_HttpClient_GetStreamAsync_System_Uri_llvm
@@ -19927,7 +19927,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1488]
 br x16
-.word 8373
+.word 8361
 _p_1138_plt_System_Private_Xml_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_get_IsCompleted_llvm:
 	.globl _p_1138_plt_System_Private_Xml_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_get_IsCompleted_llvm
 .private_extern _p_1138_plt_System_Private_Xml_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_get_IsCompleted_llvm
@@ -19938,7 +19938,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1496]
 br x16
-.word 8378
+.word 8366
 _p_1139_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_GetStateMachineBox_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2__System_Threading_Tasks_Task_1_System_IO_Stream__llvm:
 	.globl _p_1139_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_GetStateMachineBox_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2__System_Threading_Tasks_Task_1_System_IO_Stream__llvm
 .private_extern _p_1139_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_GetStateMachineBox_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2_System_Xml_XmlDownloadManager__GetNonFileStreamAsyncd__2__System_Threading_Tasks_Task_1_System_IO_Stream__llvm
@@ -19949,7 +19949,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1504]
 br x16
-.word 8389
+.word 8377
 _p_1140_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm:
 	.globl _p_1140_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
 .private_extern _p_1140_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream__System_Runtime_CompilerServices_IAsyncStateMachineBox_llvm
@@ -19960,7 +19960,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1512]
 br x16
-.word 8408
+.word 8396
 _p_1141_plt_System_Private_Xml_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_GetResult_llvm:
 	.globl _p_1141_plt_System_Private_Xml_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_GetResult_llvm
 .private_extern _p_1141_plt_System_Private_Xml_System_Runtime_CompilerServices_ConfiguredTaskAwaitable_1_ConfiguredTaskAwaiter_System_IO_Stream_GetResult_llvm
@@ -19971,7 +19971,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1520]
 br x16
-.word 8427
+.word 8415
 _p_1142_plt_System_Private_Xml_System_IO_MemoryStream__ctor_llvm:
 	.globl _p_1142_plt_System_Private_Xml_System_IO_MemoryStream__ctor_llvm
 .private_extern _p_1142_plt_System_Private_Xml_System_IO_MemoryStream__ctor_llvm
@@ -19982,7 +19982,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1528]
 br x16
-.word 8438
+.word 8426
 _p_1143_plt_System_Private_Xml_System_IO_Stream_CopyTo_System_IO_Stream_llvm:
 	.globl _p_1143_plt_System_Private_Xml_System_IO_Stream_CopyTo_System_IO_Stream_llvm
 .private_extern _p_1143_plt_System_Private_Xml_System_IO_Stream_CopyTo_System_IO_Stream_llvm
@@ -19993,7 +19993,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1536]
 br x16
-.word 8443
+.word 8431
 _p_1144_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetException_System_Exception_llvm:
 	.globl _p_1144_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetException_System_Exception_llvm
 .private_extern _p_1144_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetException_System_Exception_llvm
@@ -20004,7 +20004,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1544]
 br x16
-.word 8448
+.word 8436
 _p_1145_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetResult_System_IO_Stream_llvm:
 	.globl _p_1145_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetResult_System_IO_Stream_llvm
 .private_extern _p_1145_plt_System_Private_Xml_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_IO_Stream_SetResult_System_IO_Stream_llvm
@@ -20015,7 +20015,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1552]
 br x16
-.word 8459
+.word 8447
 _p_1146_plt_System_Private_Xml__jit_icall_mono_arch_throw_corlib_exception_llvm:
 	.globl _p_1146_plt_System_Private_Xml__jit_icall_mono_arch_throw_corlib_exception_llvm
 .private_extern _p_1146_plt_System_Private_Xml__jit_icall_mono_arch_throw_corlib_exception_llvm
@@ -20026,7 +20026,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1560]
 br x16
-.word 8470
+.word 8458
 _p_1147_plt_System_Private_Xml_System_Text_Encoding_GetEncoding_string_llvm:
 	.globl _p_1147_plt_System_Private_Xml_System_Text_Encoding_GetEncoding_string_llvm
 .private_extern _p_1147_plt_System_Private_Xml_System_Text_Encoding_GetEncoding_string_llvm
@@ -20037,7 +20037,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1568]
 br x16
-.word 8472
+.word 8460
 _p_1148_plt_System_Private_Xml_System_Xml_XmlQualifiedName_Parse_string_System_Xml_IXmlNamespaceResolver_string__llvm:
 	.globl _p_1148_plt_System_Private_Xml_System_Xml_XmlQualifiedName_Parse_string_System_Xml_IXmlNamespaceResolver_string__llvm
 .private_extern _p_1148_plt_System_Private_Xml_System_Xml_XmlQualifiedName_Parse_string_System_Xml_IXmlNamespaceResolver_string__llvm
@@ -20048,7 +20048,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1576]
 br x16
-.word 8477
+.word 8465
 _p_1149_plt_System_Private_Xml_System_Xml_XmlConvert_ToChar_string_llvm:
 	.globl _p_1149_plt_System_Private_Xml_System_Xml_XmlConvert_ToChar_string_llvm
 .private_extern _p_1149_plt_System_Private_Xml_System_Xml_XmlConvert_ToChar_string_llvm
@@ -20059,7 +20059,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1584]
 br x16
-.word 8480
+.word 8468
 _p_1150_plt_System_Private_Xml_System_Xml_XmlConvert_ToGuid_string_llvm:
 	.globl _p_1150_plt_System_Private_Xml_System_Xml_XmlConvert_ToGuid_string_llvm
 .private_extern _p_1150_plt_System_Private_Xml_System_Xml_XmlConvert_ToGuid_string_llvm
@@ -20070,7 +20070,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1592]
 br x16
-.word 8482
+.word 8470
 _p_1151_plt_System_Private_Xml__jit_icall_mono_object_castclass_unbox_llvm:
 	.globl _p_1151_plt_System_Private_Xml__jit_icall_mono_object_castclass_unbox_llvm
 .private_extern _p_1151_plt_System_Private_Xml__jit_icall_mono_object_castclass_unbox_llvm
@@ -20081,7 +20081,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1600]
 br x16
-.word 8484
+.word 8472
 _p_1152_plt_System_Private_Xml_wrapper_alloc_object_Alloc_intptr_llvm:
 	.globl _p_1152_plt_System_Private_Xml_wrapper_alloc_object_Alloc_intptr_llvm
 .private_extern _p_1152_plt_System_Private_Xml_wrapper_alloc_object_Alloc_intptr_llvm
@@ -20092,7 +20092,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1608]
 br x16
-.word 8487
+.word 8475
 _p_1153_plt_System_Private_Xml_string_op_Implicit_string_llvm:
 	.globl _p_1153_plt_System_Private_Xml_string_op_Implicit_string_llvm
 .private_extern _p_1153_plt_System_Private_Xml_string_op_Implicit_string_llvm
@@ -20103,7 +20103,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1616]
 br x16
-.word 8495
+.word 8483
 _p_1154_plt_System_Private_Xml__jit_icall_mono_gsharedvt_constrained_call_fast_llvm:
 	.globl _p_1154_plt_System_Private_Xml__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
 .private_extern _p_1154_plt_System_Private_Xml__jit_icall_mono_gsharedvt_constrained_call_fast_llvm
@@ -20114,7 +20114,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1624]
 br x16
-.word 8500
+.word 8488
 _p_1155_plt_System_Private_Xml__jit_icall_mono_gsharedvt_constrained_call_llvm:
 	.globl _p_1155_plt_System_Private_Xml__jit_icall_mono_gsharedvt_constrained_call_llvm
 .private_extern _p_1155_plt_System_Private_Xml__jit_icall_mono_gsharedvt_constrained_call_llvm
@@ -20125,7 +20125,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1632]
 br x16
-.word 8503
+.word 8491
 _p_1156_plt_System_Private_Xml_System_Text_ValueStringBuilder_Append_string_llvm:
 	.globl _p_1156_plt_System_Private_Xml_System_Text_ValueStringBuilder_Append_string_llvm
 .private_extern _p_1156_plt_System_Private_Xml_System_Text_ValueStringBuilder_Append_string_llvm
@@ -20136,7 +20136,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1640]
 br x16
-.word 8506
+.word 8494
 _p_1157_plt_System_Private_Xml_System_Threading_Thread_get_CurrentThread_llvm:
 	.globl _p_1157_plt_System_Private_Xml_System_Threading_Thread_get_CurrentThread_llvm
 .private_extern _p_1157_plt_System_Private_Xml_System_Threading_Thread_get_CurrentThread_llvm
@@ -20147,7 +20147,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1648]
 br x16
-.word 8509
+.word 8497
 _p_1158_plt_System_Private_Xml_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm:
 	.globl _p_1158_plt_System_Private_Xml_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm
 .private_extern _p_1158_plt_System_Private_Xml_System_Threading_ExecutionContext_RestoreChangedContextToThread_System_Threading_Thread_System_Threading_ExecutionContext_System_Threading_ExecutionContext_llvm
@@ -20158,7 +20158,7 @@ adrp x16, mono_aot_System_Private_Xml_got@PAGE+8192
 add x16, x16, mono_aot_System_Private_Xml_got@PAGEOFF
 ldr x16, [x16, #1656]
 br x16
-.word 8514
+.word 8502
 plt_end:
 _mono_aot_System_Private_Xmlplt_end:
 	.globl _mono_aot_System_Private_Xmlplt_end

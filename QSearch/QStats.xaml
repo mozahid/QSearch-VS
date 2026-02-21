@@ -3,23 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QSearch.QStats"
              Title="Quranic Stats">
-    <ContentPage.ToolbarItems>
-      <ToolbarItem Clicked="ToolbarItem_Clicked" >
-        <ToolbarItem.IconImageSource>
-          <FontImageSource
-            FontFamily="MaterialIconsOutlined-Regular"
-            Glyph="&#xe5d2;"
-            Color="LightBlue"
-            Size="24"
-              />
-        </ToolbarItem.IconImageSource>
-      </ToolbarItem>
-      </ContentPage.ToolbarItems>
-    <VerticalStackLayout>
-        <Frame HasShadow="True"
-               BorderColor="WhiteSmoke"
+    <VerticalStackLayout Spacing="5">
+        <Border Stroke="Gray" StrokeThickness="2" 
+               StrokeShape="Rectangle 5,5,5,5"
+               BackgroundColor="White"
                Margin="3">
-        <Grid HorizontalOptions="Fill">
+        <Border.Shadow>
+                    <Shadow Brush="Gray"
+                        Offset="20,20"
+                        Radius="40"
+                        Opacity="0.8" />
+        </Border.Shadow>
+        <Grid HorizontalOptions="Fill" BackgroundColor="White">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition  />
@@ -32,7 +27,6 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200" />
                 <ColumnDefinition Width="*" />
-
             </Grid.ColumnDefinitions>
                     <Label
                         Text="Quran Statistics"
@@ -178,6 +172,6 @@
                         >
                     </Label>
                 </Grid>
-        </Frame>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>

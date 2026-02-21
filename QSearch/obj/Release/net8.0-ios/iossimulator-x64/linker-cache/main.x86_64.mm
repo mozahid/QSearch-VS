@@ -5,12 +5,10 @@ static void xamarin_initialize_dotnet ()
 }
 
 extern "C" void xamarin_initialize_dotnet();
-extern "C" void xamarin_create_classes_Microsoft_iOS();
 
 static void xamarin_invoke_registration_methods ()
 {
 	xamarin_initialize_dotnet();
-	xamarin_create_classes_Microsoft_iOS();
 }
 
 #include "xamarin/xamarin.h"

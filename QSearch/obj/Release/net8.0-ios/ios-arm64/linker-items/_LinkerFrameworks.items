@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <_LinkerFrameworks Include="AVFoundation">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="CFNetwork">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
@@ -23,6 +26,9 @@
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreLocation">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="CoreSpotlight">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="CoreText">
@@ -49,7 +55,13 @@
     <_LinkerFrameworks Include="Security">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
+    <_LinkerFrameworks Include="Speech">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
     <_LinkerFrameworks Include="UIKit">
+      <IsWeak>false</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="UserNotifications">
       <IsWeak>false</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="WebKit">
@@ -59,6 +71,9 @@
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="LinkPresentation">
+      <IsWeak>true</IsWeak>
+    </_LinkerFrameworks>
+    <_LinkerFrameworks Include="UniformTypeIdentifiers">
       <IsWeak>true</IsWeak>
     </_LinkerFrameworks>
     <_LinkerFrameworks Include="GSS">

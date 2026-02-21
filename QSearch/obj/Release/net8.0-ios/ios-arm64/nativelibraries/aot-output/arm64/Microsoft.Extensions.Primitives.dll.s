@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "Microsoft.Extensions.Primitives.dll"
 	.asciz ""
 
@@ -558,7 +558,7 @@ ldr x15, [x16, #256]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_24
 .word 0xd2800be0
@@ -704,7 +704,7 @@ bl _p_13
 .word 0xf2a04000
 bl _mono_create_corlib_exception_1
 bl _p_15
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_24
 
@@ -792,7 +792,7 @@ ldr x15, [x16, #256]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_24
 
@@ -1321,7 +1321,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #360]
 br x16
-.word 1632
+.word 1628
 _p_2_plt_Microsoft_Extensions_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm:
 	.globl _p_2_plt_Microsoft_Extensions_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
 .private_extern _p_2_plt_Microsoft_Extensions_Primitives_wrapper_alloc_object_AllocSmall_intptr_intptr_llvm
@@ -1332,7 +1332,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #368]
 br x16
-.word 1635
+.word 1631
 _p_3_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_System_Action__ctor_System_Func_1_Microsoft_Extensions_Primitives_IChangeToken_System_Action_1_System_Action_System_Action_llvm:
 	.globl _p_3_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_System_Action__ctor_System_Func_1_Microsoft_Extensions_Primitives_IChangeToken_System_Action_1_System_Action_System_Action_llvm
 .private_extern _p_3_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_System_Action__ctor_System_Func_1_Microsoft_Extensions_Primitives_IChangeToken_System_Action_1_System_Action_System_Action_llvm
@@ -1343,7 +1343,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #376]
 br x16
-.word 1643
+.word 1639
 _p_4_plt_Microsoft_Extensions_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm:
 	.globl _p_4_plt_Microsoft_Extensions_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
 .private_extern _p_4_plt_Microsoft_Extensions_Primitives__jit_icall_llvm_throw_corlib_exception_abs_trampoline_llvm
@@ -1354,7 +1354,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #384]
 br x16
-.word 1654
+.word 1650
 _p_5_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ThrowHelper_ThrowArgumentNullException_Microsoft_Extensions_Primitives_ExceptionArgument_llvm:
 	.globl _p_5_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ThrowHelper_ThrowArgumentNullException_Microsoft_Extensions_Primitives_ExceptionArgument_llvm
 .private_extern _p_5_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ThrowHelper_ThrowArgumentNullException_Microsoft_Extensions_Primitives_ExceptionArgument_llvm
@@ -1365,7 +1365,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #392]
 br x16
-.word 1657
+.word 1653
 _p_6_plt_Microsoft_Extensions_Primitives__jit_icall_mini_init_method_rgctx_llvm:
 	.globl _p_6_plt_Microsoft_Extensions_Primitives__jit_icall_mini_init_method_rgctx_llvm
 .private_extern _p_6_plt_Microsoft_Extensions_Primitives__jit_icall_mini_init_method_rgctx_llvm
@@ -1376,7 +1376,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #400]
 br x16
-.word 1659
+.word 1655
 _p_7_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF__ctor_System_Func_1_Microsoft_Extensions_Primitives_IChangeToken_System_Action_1_TState_REF_TState_REF_llvm:
 	.globl _p_7_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF__ctor_System_Func_1_Microsoft_Extensions_Primitives_IChangeToken_System_Action_1_TState_REF_TState_REF_llvm
 .private_extern _p_7_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF__ctor_System_Func_1_Microsoft_Extensions_Primitives_IChangeToken_System_Action_1_TState_REF_TState_REF_llvm
@@ -1387,7 +1387,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #408]
 br x16
-.word 1677
+.word 1673
 _p_8_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_RegisterChangeTokenCallback_Microsoft_Extensions_Primitives_IChangeToken_llvm:
 	.globl _p_8_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_RegisterChangeTokenCallback_Microsoft_Extensions_Primitives_IChangeToken_llvm
 .private_extern _p_8_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_RegisterChangeTokenCallback_Microsoft_Extensions_Primitives_IChangeToken_llvm
@@ -1398,7 +1398,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #416]
 br x16
-.word 1691
+.word 1687
 _p_9_plt_Microsoft_Extensions_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm:
 	.globl _p_9_plt_Microsoft_Extensions_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm
 .private_extern _p_9_plt_Microsoft_Extensions_Primitives__jit_icall_ves_icall_thread_finish_async_abort_llvm
@@ -1409,7 +1409,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #424]
 br x16
-.word 1703
+.word 1699
 _p_10_plt_Microsoft_Extensions_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm:
 	.globl _p_10_plt_Microsoft_Extensions_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm
 .private_extern _p_10_plt_Microsoft_Extensions_Primitives__jit_icall_llvm_resume_unwind_trampoline_llvm
@@ -1420,7 +1420,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #432]
 br x16
-.word 1706
+.word 1702
 _p_11_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_SetDisposable_System_IDisposable_llvm:
 	.globl _p_11_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_SetDisposable_System_IDisposable_llvm
 .private_extern _p_11_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_SetDisposable_System_IDisposable_llvm
@@ -1431,7 +1431,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #440]
 br x16
-.word 1709
+.word 1705
 _p_12_plt_Microsoft_Extensions_Primitives__jit_icall_mono_generic_class_init_llvm:
 	.globl _p_12_plt_Microsoft_Extensions_Primitives__jit_icall_mono_generic_class_init_llvm
 .private_extern _p_12_plt_Microsoft_Extensions_Primitives__jit_icall_mono_generic_class_init_llvm
@@ -1442,7 +1442,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #448]
 br x16
-.word 1721
+.word 1717
 _p_13_plt_Microsoft_Extensions_Primitives__jit_icall_mono_helper_ldstr_llvm:
 	.globl _p_13_plt_Microsoft_Extensions_Primitives__jit_icall_mono_helper_ldstr_llvm
 .private_extern _p_13_plt_Microsoft_Extensions_Primitives__jit_icall_mono_helper_ldstr_llvm
@@ -1453,7 +1453,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #456]
 br x16
-.word 1724
+.word 1720
 _p_14_plt_Microsoft_Extensions_Primitives__jit_icall_mono_create_corlib_exception_1_llvm:
 	.globl _p_14_plt_Microsoft_Extensions_Primitives__jit_icall_mono_create_corlib_exception_1_llvm
 .private_extern _p_14_plt_Microsoft_Extensions_Primitives__jit_icall_mono_create_corlib_exception_1_llvm
@@ -1464,7 +1464,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #464]
 br x16
-.word 1727
+.word 1723
 _p_15_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_throw_exception_llvm:
 	.globl _p_15_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_throw_exception_llvm
 .private_extern _p_15_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_throw_exception_llvm
@@ -1475,7 +1475,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #472]
 br x16
-.word 1730
+.word 1726
 _p_16_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1__c_TState_REF__ctor_llvm:
 	.globl _p_16_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1__c_TState_REF__ctor_llvm
 .private_extern _p_16_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1__c_TState_REF__ctor_llvm
@@ -1486,7 +1486,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #480]
 br x16
-.word 1732
+.word 1728
 _p_17_plt_Microsoft_Extensions_Primitives_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm:
 	.globl _p_17_plt_Microsoft_Extensions_Primitives_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
 .private_extern _p_17_plt_Microsoft_Extensions_Primitives_wrapper_castclass_object___castclass_with_cache_object_intptr_intptr_llvm
@@ -1497,7 +1497,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #488]
 br x16
-.word 1744
+.word 1740
 _p_18_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_OnChangeTokenFired_llvm:
 	.globl _p_18_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_OnChangeTokenFired_llvm
 .private_extern _p_18_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ChangeToken_ChangeTokenRegistration_1_TState_REF_OnChangeTokenFired_llvm
@@ -1508,7 +1508,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #496]
 br x16
-.word 1756
+.word 1752
 _p_19_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ThrowHelper_GetArgumentName_Microsoft_Extensions_Primitives_ExceptionArgument_llvm:
 	.globl _p_19_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ThrowHelper_GetArgumentName_Microsoft_Extensions_Primitives_ExceptionArgument_llvm
 .private_extern _p_19_plt_Microsoft_Extensions_Primitives_Microsoft_Extensions_Primitives_ThrowHelper_GetArgumentName_Microsoft_Extensions_Primitives_ExceptionArgument_llvm
@@ -1519,7 +1519,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #504]
 br x16
-.word 1769
+.word 1765
 _p_20_plt_Microsoft_Extensions_Primitives_System_Enum_ToString_llvm:
 	.globl _p_20_plt_Microsoft_Extensions_Primitives_System_Enum_ToString_llvm
 .private_extern _p_20_plt_Microsoft_Extensions_Primitives_System_Enum_ToString_llvm
@@ -1530,7 +1530,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #512]
 br x16
-.word 1771
+.word 1767
 _p_21_plt_Microsoft_Extensions_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm:
 	.globl _p_21_plt_Microsoft_Extensions_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm
 .private_extern _p_21_plt_Microsoft_Extensions_Primitives__jit_icall_mono_thread_interruption_checkpoint_llvm
@@ -1541,7 +1541,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #520]
 br x16
-.word 1776
+.word 1772
 _p_22_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_rethrow_exception_llvm:
 	.globl _p_22_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_rethrow_exception_llvm
 .private_extern _p_22_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_rethrow_exception_llvm
@@ -1552,7 +1552,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #528]
 br x16
-.word 1779
+.word 1775
 _p_23_plt_Microsoft_Extensions_Primitives_wrapper_alloc_object_Alloc_intptr_llvm:
 	.globl _p_23_plt_Microsoft_Extensions_Primitives_wrapper_alloc_object_Alloc_intptr_llvm
 .private_extern _p_23_plt_Microsoft_Extensions_Primitives_wrapper_alloc_object_Alloc_intptr_llvm
@@ -1563,7 +1563,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #536]
 br x16
-.word 1781
+.word 1777
 _p_24_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm:
 	.globl _p_24_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm
 .private_extern _p_24_plt_Microsoft_Extensions_Primitives__jit_icall_mono_arch_throw_corlib_exception_llvm
@@ -1574,7 +1574,7 @@ adrp x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGE+0
 add x16, x16, mono_aot_Microsoft_Extensions_Primitives_got@PAGEOFF
 ldr x16, [x16, #544]
 br x16
-.word 1789
+.word 1785
 plt_end:
 _mono_aot_Microsoft_Extensions_Primitivesplt_end:
 	.globl _mono_aot_Microsoft_Extensions_Primitivesplt_end

@@ -8,13 +8,45 @@
 		<data>
 		pcNU0lDArxK2L9RzLvQgOLn2RC8=
 		</data>
+		<key>AlQalam.ttf</key>
+		<data>
+		q1OotL03Nb47liX+2HvIwK7poDE=
+		</data>
 		<key>AppIcon/appicon.svg</key>
 		<data>
 		v8eHmQTGcK9gZaNZffK9QIWAIq8=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		bO54C/0pJocKLcwsuDNw9Ji3Ssk=
+		J76Gke+93VEmQAEYBXtt/6PGs6I=
+		</data>
+		<key>CommunityToolkit.Maui.Core.aotdata.arm64</key>
+		<data>
+		YuEQU3O/aIeC1kLMbAsbYmjQN1o=
+		</data>
+		<key>CommunityToolkit.Maui.Core.dll</key>
+		<data>
+		Nqd8Mo9HmjdbWY07WoURZALONlw=
+		</data>
+		<key>CommunityToolkit.Maui.aotdata.arm64</key>
+		<data>
+		KXqoJuRxuMuXboYTYZvTWtGUvTk=
+		</data>
+		<key>CommunityToolkit.Maui.dll</key>
+		<data>
+		Wo7xt/Z0XZQlSc3kAJXTcz9RKLA=
+		</data>
+		<key>Fonts/AlQalam.ttf</key>
+		<data>
+		q1OotL03Nb47liX+2HvIwK7poDE=
+		</data>
+		<key>Fonts/IndoPak.ttf</key>
+		<data>
+		kAPos0+BATx6f841/8B7hkJCpd8=
+		</data>
+		<key>Fonts/Lateef-Bold.ttf</key>
+		<data>
+		PPSpUZFjVj/I/djQZJebrlMwF8w=
 		</data>
 		<key>Fonts/MaterialIcons-Regular.ttf</key>
 		<data>
@@ -36,13 +68,25 @@
 		<data>
 		gKBeDLQezREgIn4xLXDLIlOqHEQ=
 		</data>
-		<key>Images/qsearch_header.svg</key>
+		<key>Images/qsearch_hdr.svg</key>
 		<data>
-		NZYc0mmctbUlScv5fGAh8XlYL9w=
+		drTaAgeF+gdEOPvRm2v4H6rafcM=
+		</data>
+		<key>Images/tick_mark.svg</key>
+		<data>
+		2n4GavCYl3H57/mHVBU9m8Rdheg=
+		</data>
+		<key>IndoPak.ttf</key>
+		<data>
+		kAPos0+BATx6f841/8B7hkJCpd8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LrxjztQwu5UQp/br0B7606OFbEg=
+		oSNxxRHtN9FaZPGVCDN7oO/tb08=
+		</data>
+		<key>Lateef-Bold.ttf</key>
+		<data>
+		PPSpUZFjVj/I/djQZJebrlMwF8w=
 		</data>
 		<key>MaterialIcons-Regular.ttf</key>
 		<data>
@@ -54,7 +98,7 @@
 		</data>
 		<key>MauiInfo.plist</key>
 		<data>
-		O3+4kFq/4Trv1IvD3O+Sgluaw/Q=
+		0DNOkLwo72g+hOXRC+0E249kHRw=
 		</data>
 		<key>MauiSplash.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -70,471 +114,471 @@
 		</data>
 		<key>Microsoft.Extensions.Configuration.Abstractions.aotdata.arm64</key>
 		<data>
-		HjB266pNmwkk2PDbD83HCHo5vaI=
+		UGFJJq09d28AiqRBJhjIRs/FABM=
 		</data>
 		<key>Microsoft.Extensions.Configuration.Abstractions.dll</key>
 		<data>
-		nIHJTOLy6ohQtJJenQg96jbfQeU=
+		ebRkdZbIj6vttLc5p2fEY6WVi+0=
 		</data>
 		<key>Microsoft.Extensions.Configuration.aotdata.arm64</key>
 		<data>
-		qZEEU80kdMrcChN49aTeLIzybSc=
+		UuWwnMbFoHcNqUyK11+GCOa8szE=
 		</data>
 		<key>Microsoft.Extensions.Configuration.dll</key>
 		<data>
-		cEM81qHi+L0AZft5IT1n+B3umqg=
+		m7necxnxqLG9crykd7r627TX7No=
 		</data>
 		<key>Microsoft.Extensions.DependencyInjection.Abstractions.aotdata.arm64</key>
 		<data>
-		w2HaGYfpbIb7EKf2vY7hSemE99E=
+		SJTIXeyMWiP6O+GKjM0mE2FjIvY=
 		</data>
 		<key>Microsoft.Extensions.DependencyInjection.Abstractions.dll</key>
 		<data>
-		kq/o7HzMX63WYNqNJZChbmjcozc=
+		s6Zmg5bBtEWEauOWe7grP8vpoCQ=
 		</data>
 		<key>Microsoft.Extensions.DependencyInjection.aotdata.arm64</key>
 		<data>
-		KEbwpWD8U2M1EHhKgTqBqeH7eFY=
+		DrDn5nKQ5QWOx4BiC4nAV0S3yo8=
 		</data>
 		<key>Microsoft.Extensions.DependencyInjection.dll</key>
 		<data>
-		GOumkYi2rrVWNu962LxrcSdx2fc=
+		UUvi28YSEXVIiwaUGFMUF5bAnp8=
 		</data>
 		<key>Microsoft.Extensions.Logging.Abstractions.aotdata.arm64</key>
 		<data>
-		8cqH+4tlr5ATP2JNEY8YKJWfXds=
+		P/qITQuepIdxfXhUg5j5M+L4ZhI=
 		</data>
 		<key>Microsoft.Extensions.Logging.Abstractions.dll</key>
 		<data>
-		n9ZZTOxVXyVaKX0nIHaVe7ryWuE=
+		deB5lA/1SulDYmHRowijSMQ6vk8=
 		</data>
 		<key>Microsoft.Extensions.Logging.aotdata.arm64</key>
 		<data>
-		M5otnlyqygpCKWc2naECbPm3NXU=
+		xLReQ0v7kOC/e1xctr5csLT0Wyw=
 		</data>
 		<key>Microsoft.Extensions.Logging.dll</key>
 		<data>
-		lxh51u3r9yR/rCkI/oz/z1N9ZiE=
+		s71EFUmT12bbSeLyXkC5I0QLtWA=
 		</data>
 		<key>Microsoft.Extensions.Options.aotdata.arm64</key>
 		<data>
-		THPorqNfV1738s4SY75gpAKXvFA=
+		+u0AuShMNymXQ34N7FjcM7IMiM4=
 		</data>
 		<key>Microsoft.Extensions.Options.dll</key>
 		<data>
-		nFfJrwhBv7i3JoH2jcvJFtw08wA=
+		TvcfKij4IKuwZsiE0II89xYnw/o=
 		</data>
 		<key>Microsoft.Extensions.Primitives.aotdata.arm64</key>
 		<data>
-		o8w034scJLz95R0rAeLwfTV/qKc=
+		RcLiCRZ3GBN9g/u4Eefl/fn39kI=
 		</data>
 		<key>Microsoft.Extensions.Primitives.dll</key>
 		<data>
-		IjeaXR9zzWjXlXsZ1ZaBsQ35AQ8=
+		OukP7ija7NZE+pA9ZaZsfcvwmE0=
+		</data>
+		<key>Microsoft.Maui.Controls.Compatibility.aotdata.arm64</key>
+		<data>
+		l42q+wuyCPh53/2hIKO+3w6gJfw=
+		</data>
+		<key>Microsoft.Maui.Controls.Compatibility.dll</key>
+		<data>
+		sJbYUvBGnJtlNauXdGfk5pOU1vo=
 		</data>
 		<key>Microsoft.Maui.Controls.Xaml.aotdata.arm64</key>
 		<data>
-		5VSGwLOsQ69yfb1pUC8WpCemVJ8=
+		YlT9U7vLTfDTKHtjQzLBcdN91xE=
 		</data>
 		<key>Microsoft.Maui.Controls.Xaml.dll</key>
 		<data>
-		YduSRYdD+jlWEwEDO1kNv/pMgHM=
+		H0UA4uefsDYczFMMc2inXjyUDbk=
 		</data>
 		<key>Microsoft.Maui.Controls.aotdata.arm64</key>
 		<data>
-		1IDQS1zH5lyfTseSawkccK76Hcc=
+		bmkIrMCKw+07GAGYF7BU46y61Zw=
 		</data>
 		<key>Microsoft.Maui.Controls.dll</key>
 		<data>
-		FR/D/fVhhnVZ/1Z7X0lbk3XCL0k=
+		cbCtBDx82vAShZpOvLCLrHJnz8I=
 		</data>
 		<key>Microsoft.Maui.Essentials.aotdata.arm64</key>
 		<data>
-		Wct4kCerxFY4xzVddeIwcODMPzw=
+		rqq0ddMrDLB5Lin3nWFDmOGlEKo=
 		</data>
 		<key>Microsoft.Maui.Essentials.dll</key>
 		<data>
-		Vub9RqAvBj+3iWDVGzocoALCsrw=
+		9O7QbMq/rN78oQ6zGnMgEDxUtt8=
 		</data>
 		<key>Microsoft.Maui.Graphics.aotdata.arm64</key>
 		<data>
-		VAWxnZhsDTBOD/T8serG6EM1poo=
+		q6Y0WSl5f9o02f+yQC9Hz6Q6rDs=
 		</data>
 		<key>Microsoft.Maui.Graphics.dll</key>
 		<data>
-		pdQvNV062WzqcwvS8fkbW08sdsY=
+		aYlna8Mo6dkwIcc9GZs8GCYgUg0=
 		</data>
 		<key>Microsoft.Maui.aotdata.arm64</key>
 		<data>
-		JTt1Tp4/GR3sGvpbig+EaK6jfQ0=
+		eUgOgJt8gWDe18cpQfvWfdGrL80=
 		</data>
 		<key>Microsoft.Maui.dll</key>
 		<data>
-		AJaO6GBhCcnRnaSW9fONwm3o/tI=
+		8DrslsMG+CKq4uW6dak5WA3EPIs=
 		</data>
 		<key>Microsoft.iOS.aotdata.arm64</key>
 		<data>
-		Z+0vjjlks8CkE5JEfp5ENTSpm4s=
+		Y9JTI+nQU6gk+FbHwQ5u+3mtPgM=
 		</data>
 		<key>Microsoft.iOS.dll</key>
 		<data>
-		wBRVa890SkyFzA+4LYI9qf/Xxr0=
+		hSQiDmIP+YuylG/aLkVIDW48LB4=
 		</data>
 		<key>NotoNaskhArabic-Regular.ttf</key>
 		<data>
 		HZ2+x3umN70TxuWWkDfJhnkhMGU=
 		</data>
-		<key>OpenSans-Regular.ttf</key>
-		<data>
-		8HvEujr5IK96o1M6r6o5/JIkYVE=
-		</data>
-		<key>OpenSans-Semibold.ttf</key>
-		<data>
-		Go/BMxp0ylCUGfzbuKQ0zteazW4=
-		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
-		<key>Plugin.LatestVersionStore.aotdata.arm64</key>
-		<data>
-		YhnwHPmm8u1a7o7l33qK7Iad9Bs=
-		</data>
-		<key>Plugin.LatestVersionStore.dll</key>
-		<data>
-		DXRfPEPLQamsNT37N/ReEzVzYQM=
-		</data>
 		<key>QSearch.aotdata.arm64</key>
 		<data>
-		oiT9d1hCXuMdYocjZhqIf2GhXx0=
+		PLE7UTpJRwc6jjBAS/5fTQAxxGM=
 		</data>
 		<key>QSearch.dll</key>
 		<data>
-		SUzHMt82ovqO1WoMY73uG21LXYI=
+		Ah7GJQM+KGmH65NHOrp778v2ygA=
 		</data>
 		<key>Raw/quran.sqlite</key>
 		<data>
-		ArCpNNyu4OM/Z6agmm8fQLMfP88=
+		Zl19Wn5I0pouaDl1+yZNTmwktRM=
 		</data>
 		<key>SQLite-net.aotdata.arm64</key>
 		<data>
-		vnhELRoBjpI9tO4H2hpqIzyVnSM=
+		8x8nmYh2icUEUhmwFFNkq9qejQ4=
 		</data>
 		<key>SQLite-net.dll</key>
 		<data>
-		G0xYlJz3i5JsHWNtexieqXmboko=
+		J/eSNyFkLr18sMp8lX0ZDpzSZXk=
 		</data>
 		<key>SQLitePCLRaw.batteries_v2.aotdata.arm64</key>
 		<data>
-		jOZjbZ2P+yVgUtRkKO71uBVb8sI=
+		m9vmYzoFMS2tUNDhAq0tYxs1tA4=
 		</data>
 		<key>SQLitePCLRaw.batteries_v2.dll</key>
 		<data>
-		6F3s/DVSOTbOhlUmrA9trwtdRaI=
+		y+JViZ7LK+FlE8jW5upgA6fiTnY=
 		</data>
 		<key>SQLitePCLRaw.core.aotdata.arm64</key>
 		<data>
-		TztBuNqun1It6haXw0pugwSDiI8=
+		QqzVWO/czKibzYJKRUno325xcxw=
 		</data>
 		<key>SQLitePCLRaw.core.dll</key>
 		<data>
-		+gDd1sypuA20tgCSAQABPUAe5L8=
+		lZ57xWtDwM5cStwzMCwiMiK9hks=
 		</data>
 		<key>SQLitePCLRaw.provider.sqlite3.aotdata.arm64</key>
 		<data>
-		/oG+E80iB+vcw3H8Q7p9Fgsir7I=
+		lg/JrkiDDMKgwX0VffeZaxkk7rY=
 		</data>
 		<key>SQLitePCLRaw.provider.sqlite3.dll</key>
 		<data>
-		RdDrs1+/H3KLW9zmD+wCnzT2YVw=
+		lRZy5zE6i9s1bUko1cPLON9WpgA=
 		</data>
 		<key>System.Collections.Concurrent.aotdata.arm64</key>
 		<data>
-		iaX9XBBKtDoZyn0Cmo9q6qf/i74=
+		/Xu/Jp1WAPyhMSC6s+uW/JAqodQ=
 		</data>
 		<key>System.Collections.Concurrent.dll</key>
 		<data>
-		hrbiC3DrTkf/cH50AyLnAdADGjc=
+		lCKGE+9bigi0M8zZWEB4cyeO91Y=
+		</data>
+		<key>System.Collections.Immutable.aotdata.arm64</key>
+		<data>
+		c736iNbNKC4X6LQlUUaanYnr2Sg=
+		</data>
+		<key>System.Collections.Immutable.dll</key>
+		<data>
+		VmChbDZPWfXdqxxpNH8MvFDJ77U=
 		</data>
 		<key>System.Collections.NonGeneric.aotdata.arm64</key>
 		<data>
-		uCmzsGp8vgBZJ2HuBU3YzFgWYFw=
+		17k0w8KuCqF87X3Vru8woZHl3ik=
 		</data>
 		<key>System.Collections.NonGeneric.dll</key>
 		<data>
-		9nDe0G5NYjooIoUlhuX1o/jUm6o=
+		lM048bKLTTF2VBB+p8SunCrMB1k=
 		</data>
 		<key>System.Collections.Specialized.aotdata.arm64</key>
 		<data>
-		Q09Mz+1rdduZ2nvHCSeW6sEnZd0=
+		hiWByKErFLGLzD31Sei/4QJrx4U=
 		</data>
 		<key>System.Collections.Specialized.dll</key>
 		<data>
-		RSoX7bXCoobS7BLy6X0bimsdqGI=
+		R4lh6RRAUBNFRwsWqo3GdU/3YKg=
 		</data>
 		<key>System.Collections.aotdata.arm64</key>
 		<data>
-		Cc3X+TWId6awW5KDENXgsbBWagQ=
+		YR3VnEUz8/AbZrjbw0KjthqA5qE=
 		</data>
 		<key>System.Collections.dll</key>
 		<data>
-		Gk96RhZ21chvYQO3+BE5tCeWUcY=
+		VXO8hG9PmU+l6QhEZN+3w6KRr/Y=
 		</data>
 		<key>System.ComponentModel.Primitives.aotdata.arm64</key>
 		<data>
-		C20edB2pzYdKHzu3Viu9FPCN0R8=
+		tguBRsENq2c3ovrpXyzDxLWpG2I=
 		</data>
 		<key>System.ComponentModel.Primitives.dll</key>
 		<data>
-		O7+mrAgRSjrTLqFFGeoAjpkhcAc=
+		G00sOU+vjlKlfd4rkm6xcL8FfHY=
 		</data>
 		<key>System.ComponentModel.TypeConverter.aotdata.arm64</key>
 		<data>
-		a661pyuX756Dn4YBdjP5AfAhk2A=
+		WBYbVxLlAZIc+oJMRcJpA8mhonI=
 		</data>
 		<key>System.ComponentModel.TypeConverter.dll</key>
 		<data>
-		U3ke4XYFsYCVWjafdAE9nNOXEXo=
+		RB7gM6rd0C5EzJr53U3Mh85yn3A=
 		</data>
 		<key>System.ComponentModel.aotdata.arm64</key>
 		<data>
-		3mnJyxBvd4bP6Jkbt9+TFtH511w=
+		R1ms6b23nRszaSX9Pbx6Wf420cY=
 		</data>
 		<key>System.ComponentModel.dll</key>
 		<data>
-		/uCjrqENX0MBq7Ltg3y9FA0ga9I=
+		eC9k/kAQI/Bj3XowsVUlE41k3zU=
 		</data>
 		<key>System.Console.aotdata.arm64</key>
 		<data>
-		qoxoFS/jKKECrVpWpdkLMhoEuQ4=
+		8hLYIOmQmQO5uhpD/UjON70eO6k=
 		</data>
 		<key>System.Console.dll</key>
 		<data>
-		p5Co2Y5gqYCTkJ0Ecl1+kyxvCZU=
+		9WJ40GBv/G0HV7zgdYFGr/Ma5Ps=
 		</data>
 		<key>System.Diagnostics.DiagnosticSource.aotdata.arm64</key>
 		<data>
-		0qnG4/ON71q6Y8gzwywjZ89v0h0=
+		Rl+7b0rysLMYg+BWx5Ov9Pf7EJc=
 		</data>
 		<key>System.Diagnostics.DiagnosticSource.dll</key>
 		<data>
-		xY52HficzyaCzt+nhnwNorYEN3Y=
+		NfftM9gu1HQFV5hJj++AFUNGMvY=
 		</data>
 		<key>System.Diagnostics.TraceSource.aotdata.arm64</key>
 		<data>
-		JpAQJF6voMmzTPPD548aankQPxE=
+		EQmETUX4D4ajLohWZ54M54ZKMHw=
 		</data>
 		<key>System.Diagnostics.TraceSource.dll</key>
 		<data>
-		h+5cHAOdHTAK5L2l5Ztc6KInOs4=
+		ncRrkkPfLzl/TrAIMpxNfKy1Qbs=
 		</data>
 		<key>System.Drawing.Primitives.aotdata.arm64</key>
 		<data>
-		TkVxvaxsQrM0X+obNckgyOye75I=
+		EgV7HMxDGdFCm0BOdaHvBmsouWQ=
 		</data>
 		<key>System.Drawing.Primitives.dll</key>
 		<data>
-		/yeU9GmJPcThUwLDxkNzU+CacjM=
+		3uHqbd3QaCRmF00/3bQiF415Vlo=
 		</data>
 		<key>System.Drawing.aotdata.arm64</key>
 		<data>
-		aYIwfHhDQf4Q3/iMHwzFqjqj0jc=
+		Se4ragCCKyX3UWwYlKEFIyPnl9c=
 		</data>
 		<key>System.Drawing.dll</key>
 		<data>
-		l60hnip+Vx9kst42rXsSu2K6GJE=
+		+la3K02qFyYXqI8LVKEtpa8NrPY=
 		</data>
 		<key>System.Linq.Expressions.aotdata.arm64</key>
 		<data>
-		1d05L1KRpUS3b+YSNAaE3k7EzzQ=
+		wAc8uOLi5l0mKIUSeB60Jgn3nXY=
 		</data>
 		<key>System.Linq.Expressions.dll</key>
 		<data>
-		9LXMsSHPiXvFGc4kzlk+ZxlZiOw=
+		WGXjSHD7Dx6CtabeQwkhzCkia7Q=
 		</data>
 		<key>System.Linq.aotdata.arm64</key>
 		<data>
-		wG6M//cT2d+h/BEmSsx/k7H6++8=
+		WEv3LiDjOhdvQxKz5gPxCzeP1Ok=
 		</data>
 		<key>System.Linq.dll</key>
 		<data>
-		6Q0No4WtxW16bdB3kgnpJBDIRQA=
+		bq22HIAHeOPxxnOGo5iJ4d1puls=
 		</data>
 		<key>System.Memory.aotdata.arm64</key>
 		<data>
-		51QIIgPFKHRFEEapOXhiiPBiOEg=
+		N8GCzcKhAu92z2H5F5URJPvj52s=
 		</data>
 		<key>System.Memory.dll</key>
 		<data>
-		Ggm4BiqCKEasrrNw/eZ09Um6tMA=
+		G+RYrhwjaZWad0BRjmgWBQvE7nM=
 		</data>
 		<key>System.Net.Http.aotdata.arm64</key>
 		<data>
-		hUlSuhaMPKy5GCBx0Kj9W2Fv8bI=
+		x4i0Tl/JeE+WwV0kPBlOtMgSScQ=
 		</data>
 		<key>System.Net.Http.dll</key>
 		<data>
-		T/ZuGeB8CUCTSmv09o8yOMcc9F0=
+		QgJypXY7XF4E2CMPrtemP8PZ918=
+		</data>
+		<key>System.Net.Mail.aotdata.arm64</key>
+		<data>
+		JqNSW921R90Ot56e2Y9uhAWPaZY=
+		</data>
+		<key>System.Net.Mail.dll</key>
+		<data>
+		13OKUc6mj74CBAdJOCIvxjnF9So=
 		</data>
 		<key>System.Net.Primitives.aotdata.arm64</key>
 		<data>
-		oHFeoF2u4XSv2WxRADkQjTsibLw=
+		bgRv4wUiowPiXGYpWqCXC/j3WXU=
 		</data>
 		<key>System.Net.Primitives.dll</key>
 		<data>
-		28PgV/p3GLqQXtA72kQAhQu048s=
+		Ihr2Qhs/LdH718ulb32kP/5Z0lg=
 		</data>
 		<key>System.Net.Requests.aotdata.arm64</key>
 		<data>
-		QsbT75Ng631z/pA2BVa58MSpTBw=
+		dloV3YKR6gvy5L7tohSUHUxkBRo=
 		</data>
 		<key>System.Net.Requests.dll</key>
 		<data>
-		hoPXTUTfb6pYK5kPWaOK/SIERy8=
+		jhIMeuszg0w1+njbvWxfrFr6kRk=
 		</data>
 		<key>System.Net.Security.aotdata.arm64</key>
 		<data>
-		W5UTfTuFLRDXc/tXxeEOwZmySD8=
+		Nv2Ep3a8LvB8lwDunAvCWXr1njw=
 		</data>
 		<key>System.Net.Security.dll</key>
 		<data>
-		cnX7M81x1h5zkVxeE3335Yu87Cc=
+		dnmzkrqDdcaEtSm1/BmeQr4PjkM=
 		</data>
 		<key>System.Net.ServicePoint.aotdata.arm64</key>
 		<data>
-		3VtNiNz3EXkqw2Oa5nuCruJQsxc=
+		3cNJVCUY5Ssu3WvZwyQ95Hqy7x8=
 		</data>
 		<key>System.Net.ServicePoint.dll</key>
 		<data>
-		2qsxrUfJ3jJld38EPYsccfmAcMg=
+		6HgN3gb7MlLsXssLjqTdtZ88m+g=
 		</data>
 		<key>System.Numerics.Vectors.aotdata.arm64</key>
 		<data>
-		FTyEiK8kWmPiPKE/oNawAkEk+Ek=
+		DYkhXz7j6g3uKo6GREHG7MoV2Qo=
 		</data>
 		<key>System.Numerics.Vectors.dll</key>
 		<data>
-		pzw84d74cy590IEkD4rX87EBIE8=
+		FH2RD5H09sa9rrVosFOMSv8MhJo=
 		</data>
 		<key>System.ObjectModel.aotdata.arm64</key>
 		<data>
-		8OSCFl6oju24qqtLFloh15wHip8=
+		J1ccAF3B8DUlQ3zlnkaBFF+Wo/A=
 		</data>
 		<key>System.ObjectModel.dll</key>
 		<data>
-		wVpn+04brvm1TXHDu1kw5QqJkbg=
+		pMiKoJkcix80qSetchYw62i/TQg=
 		</data>
 		<key>System.Private.CoreLib.aotdata.arm64</key>
 		<data>
-		KGBGjIAZwC0wRa1iPxYpVD/2HOs=
+		CJIf4UUVRy+/nPPZmIKqQmGg6jk=
 		</data>
 		<key>System.Private.CoreLib.dll</key>
 		<data>
-		dynwxbRjNa9g3b779lRCN3wvJ6M=
+		fWSAtSi+/3MFOSJL/oJ6YbZecdo=
 		</data>
 		<key>System.Private.Uri.aotdata.arm64</key>
 		<data>
-		Of58yc+77USSXZZrKzmVHlE7dqU=
+		iJamXgeW2u2ui2WalVjMkA6ETXI=
 		</data>
 		<key>System.Private.Uri.dll</key>
 		<data>
-		GAOk+fa/z8wIyFxVq84Onf6tjiI=
+		AvWjWYsxOYcOUaxIi8BRV5pNTSs=
 		</data>
 		<key>System.Private.Xml.aotdata.arm64</key>
 		<data>
-		fasUg0L4rRADlJtl1mHw6X6G4Ds=
+		zZWBVkapv9F1EEIRNofSaCLP0r0=
 		</data>
 		<key>System.Private.Xml.dll</key>
 		<data>
-		2lRQEyVm7nMjcqDKmPjY4J+lxvw=
+		KhTS0EmzvwyOPdMSmgq/LLjyyfE=
 		</data>
 		<key>System.Runtime.InteropServices.RuntimeInformation.aotdata.arm64</key>
 		<data>
-		bb4PC608QUDDU+jcL27VmJe/WhA=
+		E5ZA9GmuHCf3Ne//GN7MtyDoufQ=
 		</data>
 		<key>System.Runtime.InteropServices.RuntimeInformation.dll</key>
 		<data>
-		l8Ug76RzwWfw1LVGACYCAiRIz8w=
+		+ZitZBkB5264SbhKnp4Y5Qjacog=
 		</data>
 		<key>System.Runtime.InteropServices.aotdata.arm64</key>
 		<data>
-		ck/xwNs6ke6wVPSibGTZRXEn5iQ=
+		0MJcMtBDkXf/7pDINEA9Cf42294=
 		</data>
 		<key>System.Runtime.InteropServices.dll</key>
 		<data>
-		GCp0+CM71o+FNrzKNhR2/mchErs=
+		nIt25L5B8n+DYe22LtGTb3GoqtE=
 		</data>
 		<key>System.Runtime.Loader.aotdata.arm64</key>
 		<data>
-		VayX45b/xvR/8LgRxUhmr775bww=
+		BuTQdKp1GTFiPUA1kQ7SuEbYYr0=
 		</data>
 		<key>System.Runtime.Loader.dll</key>
 		<data>
-		1fTugP15u8nHVe8g8QklWc9AgUc=
+		1gmL69I5EOg3eSa/1mYadM3BqIg=
 		</data>
 		<key>System.Runtime.aotdata.arm64</key>
 		<data>
-		DAiZE5uF1iwakY5vJB+3ORTrJlU=
+		ZS34IqGgpGQRuc37HzH0hX7jMjw=
 		</data>
 		<key>System.Runtime.dll</key>
 		<data>
-		qC+xnzcL9IxPF1jvbA4Fq0H1dhM=
+		nr95mxwAuBitG56yliQKys68ldM=
 		</data>
 		<key>System.Security.Cryptography.aotdata.arm64</key>
 		<data>
-		B7lZLVXDThbFshpK6kFFSRLp//4=
+		wk/1ezQ5y/rFMxNOLr7wG0/Fh/g=
 		</data>
 		<key>System.Security.Cryptography.dll</key>
 		<data>
-		zt3bErjkp9JPzw9T0PfuzEZuqTU=
+		DCUoZwpSHf0CNt8f1fIteacFKAQ=
 		</data>
 		<key>System.Text.RegularExpressions.aotdata.arm64</key>
 		<data>
-		OmOs57NkhRUfpPBZOdUzFJdXPGs=
+		MWNriQo5Bma7mwhdjCiG7RhND6o=
 		</data>
 		<key>System.Text.RegularExpressions.dll</key>
 		<data>
-		nQFiJU6uCMSoqdx4Y5uxYQ/MCNo=
-		</data>
-		<key>System.Threading.Tasks.aotdata.arm64</key>
-		<data>
-		Zd0NbzpD+cTniTHNQqWRD+gyM4U=
-		</data>
-		<key>System.Threading.Tasks.dll</key>
-		<data>
-		9/zEq4cNB8nvVtrC8V+XWA1rUDk=
+		rMmUkbDoWQGrk0C2VG//suSY4fY=
 		</data>
 		<key>System.Threading.Thread.aotdata.arm64</key>
 		<data>
-		UV93Bxa5bnRz9y9zCyKT1ELkAkI=
+		A2FkqlL/Tf5R5BOXlJv6O+sSVzw=
 		</data>
 		<key>System.Threading.Thread.dll</key>
 		<data>
-		hqlDLNw86UB0i8MMoqyaZMawgxU=
+		F3T6Sk8OlMRJskazMxnUOqDoDYU=
 		</data>
 		<key>System.Threading.aotdata.arm64</key>
 		<data>
-		N9UWpk18LsdM+n4AzzOqXhmr6XY=
+		mlxqNkQN8AnQPA2zJrg311IGmUs=
 		</data>
 		<key>System.Threading.dll</key>
 		<data>
-		DZXej7EVcVrbe5lTjqEXzlABZQo=
+		XZIeXA8XS+yt/qTKB1uF4ce2HNA=
 		</data>
 		<key>System.Xml.ReaderWriter.aotdata.arm64</key>
 		<data>
-		Oop0ySVJUlsFz9pz0K9t1sblVHs=
+		LwlugopwBA+EnI/RfOu8ww/+vnE=
 		</data>
 		<key>System.Xml.ReaderWriter.dll</key>
 		<data>
-		pHQ5pNspAvyNWuCwW7TaSAM1pnY=
+		2DMhXL96/PXOw2yPkFYLLabTPiQ=
 		</data>
 		<key>System.aotdata.arm64</key>
 		<data>
-		rgyFUM1PCaOKXei/a82dTeR7oy0=
+		OobqlssoAJcX4kg7xCfGqL7kYZw=
 		</data>
 		<key>System.dll</key>
 		<data>
-		kzP1xViA0eetp8YgZMzn9/UkbKA=
+		0quYn0bjU3cRz0sybMoYr9c9Wss=
 		</data>
 		<key>about.png</key>
 		<data>
@@ -550,7 +594,7 @@
 		</data>
 		<key>aot-instances.aotdata.arm64</key>
 		<data>
-		I5AlJIJ99IgZjVof2Sg4E8em3qs=
+		LposkuSWUqypDAnnGfJpJcXuFVM=
 		</data>
 		<key>appicon60x60@2x.png</key>
 		<data>
@@ -562,7 +606,7 @@
 		</data>
 		<key>ar/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		YJbG5fG63Tblk/fG7eMWv+XyNcU=
+		wB7PWm/rXQNdYfAYDJOX7BxLLc0=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -570,19 +614,19 @@
 		</data>
 		<key>ca/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		IHkjgAZcq/OIwyM4aswe+tTHFLw=
+		ue0S22BNtk14XKBuXg7LIGYGqdY=
 		</data>
 		<key>cs/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		8mg2GLRRC4S1xbOa2fX05i2cKD8=
+		66hjbsOQWESubC8AW9+X83El3Fc=
 		</data>
 		<key>da/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		4Ikplr3mMmsWDX2qASufQNFeh38=
+		FwuRFQLotybHWS5Xxr3k5KFUFag=
 		</data>
 		<key>de/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		mndKydpmbap/IKBmDMQMp8y8H+g=
+		V24RYozos/am4O6UseeKsOII1UE=
 		</data>
 		<key>dotnet_bot.png</key>
 		<data>
@@ -598,7 +642,7 @@
 		</data>
 		<key>el/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		0vG0le4kc6FOgBATJOd7maCYgmU=
+		sDIdDG8cqwfRridUaDL925nNogY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -606,31 +650,31 @@
 		</data>
 		<key>es/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		cB7O2suD+9QPpWdjPmhFFRGE5w0=
+		HCmdJHReN+9VADQAp5LmqIfMMh8=
 		</data>
 		<key>fi/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		IjRvvd5qo8BWw9HtM+xRZ+x7Rac=
+		+JYhT98uGTySRY7ci/vFQK1+ki0=
 		</data>
 		<key>fr/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		NSsAVrg3yPFR8iDDP6PiGPRoDhY=
+		eIxcc9ipyyzcp3RZjQB1lfnrSXY=
 		</data>
 		<key>he/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		8lZykXeEXahzVxTKJ/i6PZNowp0=
+		M1cJFFVuETBo1zW2H/LuA3d4GxA=
 		</data>
 		<key>hi/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		im8jNnl47NohSCm0brErShl+5P8=
+		9tDzKeMdzChbWxcK4CcTWgdGnck=
 		</data>
 		<key>hr/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		HDM1rBQNnjAlKvbwdc5DVCms/CM=
+		WaVWR1Z6J3d9VcYgef7Pj2r2ZtI=
 		</data>
 		<key>hu/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		8eeDZHnD1l0XDglf/jjUEYXoQjI=
+		dF2phgxmu73TBPPHij/TrLv/oUA=
 		</data>
 		<key>icudt.dat</key>
 		<data>
@@ -638,63 +682,63 @@
 		</data>
 		<key>id/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		AkmygqwZq0BaPQifCNuDCPIOXmc=
+		gfMqWPD5St2MrabDf8trt5JFTj8=
 		</data>
 		<key>it/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		RrsDYzLncTRl/bsqupDtkYc71Yg=
+		B5N1MwE4xXwjpJtE2uAYgwNs76g=
 		</data>
 		<key>ja/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		3Q8DoWDsqufDTMFqLrKDf1v6XIY=
+		mg1QL2rbDsjYVRmgVAlbudZQV4c=
 		</data>
 		<key>ko/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		EsRYCyCS6bj0Gkx4KfgQf/2k0aY=
+		k+kc8RbMzTifXTSZ49sdiNOhnlE=
 		</data>
 		<key>ms/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		ucWslDoxHVu3BP9NRioNog6Vr24=
+		+kjuBnfIVdODU4x1Ns8PnuSt0Rk=
 		</data>
 		<key>nb/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		hew9jgOYQiJWecjFRDxi7XBFZb0=
+		uweOCeBqvrC6tCSkmrnVGz5gW+s=
 		</data>
 		<key>netstandard.aotdata.arm64</key>
 		<data>
-		aa0JAJG2FyfbjMUoySV4Zi295Fc=
+		PPvzvuhjlL0lTdq9LSv8zVtpqXs=
 		</data>
 		<key>netstandard.dll</key>
 		<data>
-		3dha8+HhvSGt2lWxlzj+dTHf8x8=
+		1sojDaOAQhX0lBRDl04Qlgsk2EY=
 		</data>
 		<key>nl/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		uDaCbzZtk5zkm/GeUx8OUO+3oF8=
+		TWU1lQGb0n9E9V6hmnM692iAoYU=
 		</data>
 		<key>pl/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		COmqCK7hotpa/9ItxqpHYudg738=
+		tsjaeVnMU5vOLXUHYL7HLjEB1W0=
 		</data>
 		<key>pt-BR/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		H1a3gQYSHscBjXXyQZvgZ68EiZ4=
+		EsH+1ZT8X9YPKcAOPmgoB1akWAg=
 		</data>
 		<key>pt/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		LfolqIzK9Je1yum0kDif440bWVM=
+		kIG5a9KJRfdTbXAWReVWVuMZAMU=
 		</data>
-		<key>qsearch_header.png</key>
+		<key>qsearch_hdr.png</key>
 		<data>
-		v9MhQUQhwEkKXfivkJ/XKwLUbKs=
+		wzSaGvGn0f/wt5s6CJXACiwggrg=
 		</data>
-		<key>qsearch_header@2x.png</key>
+		<key>qsearch_hdr@2x.png</key>
 		<data>
-		bAauia5/yuPRJ9n3CjYYA6H23Dk=
+		jGBbkN1q/NmLEa+VBughQ7QzDXE=
 		</data>
-		<key>qsearch_header@3x.png</key>
+		<key>qsearch_hdr@3x.png</key>
 		<data>
-		XyqF5Qb9l8Z6C57+pTunADdNFIw=
+		Df5JiAJ0mzhK74FpsUqtGkoPVVs=
 		</data>
 		<key>qssplash_67AEDFF8837EBBC26536CB01A5D3B4531311D239A055CE648FFFC71421718DED.png</key>
 		<data>
@@ -702,23 +746,23 @@
 		</data>
 		<key>qssplash_67AEDFF8837EBBC26536CB01A5D3B4531311D239A055CE648FFFC71421718DED@2x.png</key>
 		<data>
-		FPuuQld/jxXXJGb9FON08j+iM20=
+		IEyAgMbaBNIftgitTn0PFC8kXKU=
 		</data>
 		<key>qssplash_67AEDFF8837EBBC26536CB01A5D3B4531311D239A055CE648FFFC71421718DED@3x.png</key>
 		<data>
-		NgemptiiX0ty5L2cHHK1a0t72Bo=
+		cqszQ2OpxmHVWzJ1VsLCZcUqRfk=
 		</data>
 		<key>quran.sqlite</key>
 		<data>
-		ArCpNNyu4OM/Z6agmm8fQLMfP88=
+		Zl19Wn5I0pouaDl1+yZNTmwktRM=
 		</data>
 		<key>ro/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		r+B4DhWJsC6uWeXEuhOnsgDj4RA=
+		eTACCVS4kNbTqFexbiW5SCogy+Q=
 		</data>
 		<key>ru/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		+7uvWaKFDUYk8IJzkDcTMjlqQoM=
+		j7BPccxhsx41ScTg18+YI+wiDR4=
 		</data>
 		<key>runtimeconfig.bin</key>
 		<data>
@@ -726,39 +770,51 @@
 		</data>
 		<key>sk/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		rptncPbA2S+VvwU338NGC/WzGg4=
+		GhnNLCrnqhpZ0xjzN/Hb98FFbow=
 		</data>
 		<key>sv/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		ib0OK11ke+Gw+K/LNwFdg5H1vPo=
+		rPJrrusjDQSSW+KmfTSPTKrRpVo=
 		</data>
 		<key>th/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		k8E7xTvJ+un04OuO9K5kmMcLcyw=
+		fQO/YulsC758pXKm8S8aovb1ILc=
+		</data>
+		<key>tick_mark.png</key>
+		<data>
+		3AqTPVQ7tUK5bCdImjm4kKdrGpk=
+		</data>
+		<key>tick_mark@2x.png</key>
+		<data>
+		0xhN2YCjelpLY8WregEkeh/q2oo=
+		</data>
+		<key>tick_mark@3x.png</key>
+		<data>
+		/q9YbCc04jv5nB5ENPKAKtbLy9I=
 		</data>
 		<key>tr/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		A7JcyvLFbf2aAuyUuur+KgYouR4=
+		kTcNiC1zufSL2v9mEYy0D8+bhi4=
 		</data>
 		<key>uk/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		uEPH/lefg1XWCoTMJtXLUxebwew=
+		+zJMiHOwWhpeoE0zL5A16MJlRp4=
 		</data>
 		<key>vi/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		EP6eoW7VB7eWY52UR7rvPPos16Q=
+		5zLiLAGpgSmBRxl0KR+sqQe9mV4=
 		</data>
 		<key>zh-HK/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		S6IA+oi5d5b4+wGTILRmt714RO4=
+		IPqvx6ApvPDTJUmK4HwKp4CZftU=
 		</data>
 		<key>zh-Hans/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		l0XrkWgHDBXsNwfL0sjNbPLw3IQ=
+		S9ak41qM6CQ/YFV5cSGIhIFuJ3A=
 		</data>
 		<key>zh-Hant/Microsoft.Maui.Controls.resources.dll</key>
 		<data>
-		ED6MLehttk9ZJvRfEbDkJuR14IY=
+		m7ph1L5Vw/zYllh+BHdr7rXtKBg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -768,6 +824,13 @@
 			<key>hash2</key>
 			<data>
 			zlyIhkJdHeJlh2yoW/Es+pq8xpddhSAnNbqTvrYmJUQ=
+			</data>
+		</dict>
+		<key>AlQalam.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rabHyoJ1/YGlVF+PvbuvsXNMt3+E3ohNQE5DhI0aYj0=
 			</data>
 		</dict>
 		<key>AppIcon/appicon.svg</key>
@@ -781,7 +844,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fl0hbh+O0HaIdpvOOy1ooHzJpoiB/Ez+/5nS1x7CwdU=
+			TU2jxSP3uxSuNY1ya644TR9sXpjwa+XRSQSmCh4KVuw=
+			</data>
+		</dict>
+		<key>CommunityToolkit.Maui.Core.aotdata.arm64</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DvjXMmiVh6hu2/jI3HMbgPJZTmTo6l0KSpAiB+SgwuI=
+			</data>
+		</dict>
+		<key>CommunityToolkit.Maui.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cOUL3xVRbS/ExHyoJWE29b/SAvb3AMfkMupmA5bGv1g=
+			</data>
+		</dict>
+		<key>CommunityToolkit.Maui.aotdata.arm64</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iHs93EhnoAb2jmnsy5FpL8TO6ipwYm/pQxSDznJqFpo=
+			</data>
+		</dict>
+		<key>CommunityToolkit.Maui.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2xp8Qq4XZ0lifo58uXLxJDNnnSMTCvwWrWPhtzYHPpY=
+			</data>
+		</dict>
+		<key>Fonts/AlQalam.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rabHyoJ1/YGlVF+PvbuvsXNMt3+E3ohNQE5DhI0aYj0=
+			</data>
+		</dict>
+		<key>Fonts/IndoPak.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pkY+JONmUUBOnv9S2uJuGOnvBxjrYgY2pmogAmp1xWM=
+			</data>
+		</dict>
+		<key>Fonts/Lateef-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Plm24LFPpj/RTG7pxWortJ8eR2p0zL+4KRI2kBonZUw=
 			</data>
 		</dict>
 		<key>Fonts/MaterialIcons-Regular.ttf</key>
@@ -819,11 +931,32 @@
 			Iy3wTOU+CpCE7j8tnuEbvKahhGX5FQZ9o5a+nlidWM0=
 			</data>
 		</dict>
-		<key>Images/qsearch_header.svg</key>
+		<key>Images/qsearch_hdr.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gzTlMILlcfpApMizm9M6SEGY8gwEp4/Dxbpf+iwjI+A=
+			ChfB8CSZnOtknmED3LNVyVnF5qOxTG+hrb95nOzhEmg=
+			</data>
+		</dict>
+		<key>Images/tick_mark.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OaOFQ9qfBq697zFAoYOu73NsfgZTwqa0LnBWX+hI8gg=
+			</data>
+		</dict>
+		<key>IndoPak.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pkY+JONmUUBOnv9S2uJuGOnvBxjrYgY2pmogAmp1xWM=
+			</data>
+		</dict>
+		<key>Lateef-Bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Plm24LFPpj/RTG7pxWortJ8eR2p0zL+4KRI2kBonZUw=
 			</data>
 		</dict>
 		<key>MaterialIcons-Regular.ttf</key>
@@ -844,7 +977,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M8xDRfdZQ15XAZ2gX2qnGO4Dm8eF8ZmP0OZ1S6kGPxU=
+			KVW+/YNNvtfVLeryupXBWy0loK326UXoyUHiLJrmYao=
 			</data>
 		</dict>
 		<key>MauiSplash.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -872,196 +1005,210 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Hbw/J5Y9UADFFofp4qZuRFrCFikJvAIwPOyYHowhU4=
+			NpjqdglWAzJLwwoxYwxwWh6NX/Zg0DnnMmaMSMZwW2k=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Configuration.Abstractions.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oM5oWz+8Hwu3uJNrAzugdQ6IPSIj/hRsmV5My0vRq/k=
+			NFZ7SMCr29X70iPdePTuUrSQf3wyBd5x+Sud+FByDYQ=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Configuration.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mmkmvPev6Kpsrkh6cvk2HEhh21YDpoF0XfflKn2fO3s=
+			TpGtOwbKe33yP02VpH/X2HAvLh3bs+PfTqh7VO2T7wE=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Configuration.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pMUIEuyi5d0RAj1ox6BQM5ItjoQsll+N8rmwn6u+A90=
+			ECbcjtkRHkq1P5eKXqSWLxhLG+avb3aoItMNSPrJ7PA=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.DependencyInjection.Abstractions.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+LoQAtm+/OaWM1qSnb4fTXj3vMkeIaM61uyoeA5RAo=
+			kqPTPadhbRArKYNe+M0rXLO/n2El8Fi1Y+4wNAj6sGU=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.DependencyInjection.Abstractions.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KDO+5OPyu5ewrGnYxr119e4u7JOAe3pQOiAo0fhcWXc=
+			EwFaHrHBbE9EprlO6Dfh6bh8bUiPLgJGZJblpUkvtwY=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.DependencyInjection.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			f4yQxUWX4veZG+plkoX9BIo53Djy2PaQ7/KU7ez8KKs=
+			XXEcQbmNH2hIJeqXhK9DnVLM+l7svxhFLDCQN0FEGUE=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.DependencyInjection.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nn8DPa3QeYxqNB4hD93egqIVV2vBPnqnbNWhaQp6eXo=
+			LaJiUxH+XKhJ4fNfJDGiQsfMBpHph30PlCpZD2rwVEQ=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Logging.Abstractions.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/3xbJccppe3PrFTYIcHWpJKc7Oeg44X8+6ZOcs0UkCk=
+			W0NnVX0//knaN7I3rtSqQB5Mx92iAqI6mHjmcBIjAQ4=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Logging.Abstractions.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9TJRzJ5MXu5mwvYmhipTpbQO8nf4Ry2/bGxOUENOxeM=
+			s93i1CifwYsSplb+jZITm/C0m1Fs7DV+yclSXGHE4EI=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Logging.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VSA3tY+xY2Lus91HDyW32oYrmbF82az+dwGfh89PhWg=
+			LACOo/eGJgp1nhL6e3LCacyak/iQp73gJr3oaJ8yn/8=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Logging.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vS1wOjJuJlfltQc9Kh3K08l9UiTpOnHFav26rcNNrDQ=
+			XykygUV0EdWGgVn4pURC6MbSMHggBeMMShBBtZIeKl0=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Options.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jIvnwe6WfynKl4C68Kb7yGg5XlIUk/pWU4lDhaI9T3c=
+			FfVdrQc8CHtWLa+7y9HSmoYxr8/OznKqXdLFgv+30sI=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Options.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1odVRIKehAC2bKaDkcJ9ElcRYBFqAiHE1FJDfCz4cMU=
+			JH/RxbeCb4dtXmxnPpBF4yX7CjMbgcAIXHyoEDXkF94=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Primitives.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w4Nqqn0rjJc+hRV8mClpVGirv9FIG1PA+9dFp6edouI=
+			+lYHnCL10BUrRVIyrTesosP/CmU+//xY/vbQ0GtiW5A=
 			</data>
 		</dict>
 		<key>Microsoft.Extensions.Primitives.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/+ooAkcqUkygkyGNfmmm2k2nG+1OUSn3KEndZSR8umY=
+			OhpTYB3JgN4hidjr5KggsNWXqvGLQeGuvbpTNvtWGSM=
+			</data>
+		</dict>
+		<key>Microsoft.Maui.Controls.Compatibility.aotdata.arm64</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kd44CCUTtH+XbHvt1SlD0cOjUZZNkfWk8yej3+O5hLs=
+			</data>
+		</dict>
+		<key>Microsoft.Maui.Controls.Compatibility.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IF3XFnA6NJdxkffm4K9jXa0serFr6Zu4Jtlhrwsu73o=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Controls.Xaml.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dcN4GRzka/wOaMPLGpcGLMETPrJEtHpdBhtV2hwKBaw=
+			8F20nm10NyKInGqO9x5COvKDf7ozuXenZ7b83F5V/vU=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Controls.Xaml.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dS7tp1sUKPkPEp0EBVq+sOyM6suljUNBuogajesopKI=
+			cRLXmUIF5ENOkAtVXQlBE6LCXWgTCHBs4vEiLqySJ7I=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Controls.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0RVZ51WX8XUJ39dvG0iAKKUtEkrYsfDOM/KI+oY3vN0=
+			qXSa8JfmqH2Mb+l7t3gUN+QhriI81auE5n6FDT9V0ao=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Controls.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EmgCxE9h1t4L0hLu1pUg/JGfGYivcgIsutMuCSpOuYE=
+			0AVUNJJT76/nPYh1ip+6a2zngqqNOjVvK676dp9ROug=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Essentials.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2c7LUb+k+QL/j2729AQILI2cj8knd/+l9OD6mAKYe5k=
+			ErKTdcyG58Ji90r1g9tcHO4dKROBUTyLQWQoJ9QME4s=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Essentials.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gOFPoE3vcAjxim8XNXZvusD9wJLq4m5AFSuW+zf83aw=
+			kreB+9jQclW6/6s40GsKHQvMjWqaLx86ExEph53aDqI=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Graphics.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U+Wo2pyZseGngCDg9Qkk0u7fKXvfSzOJTIsTmpH1Txw=
+			pSP/Hn9qYE2D1KcMkEnIqbRXyc1sGSPlxN0EroJKZro=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.Graphics.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BPiGsQp3u/EFMYDx3OWRb1MY5vXcBkeoE0bZKVmVlwk=
+			jLb9HZlWe72XcaeeXqKxLOOJYrrZ3k+Zdd6XXca4f1Y=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6TArrFgh4Z3BDUA10E5FNDp9Mwn5i9UJWOA74box/Q=
+			9IBM0visgqX5pyg1wlWHgQgf4pXJIO7mZ6Rc1uMa6eo=
 			</data>
 		</dict>
 		<key>Microsoft.Maui.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ifetFweEjc8KtSDaliktT7yysnfeL9jsiof3ictkjiQ=
+			Xil+OiQ1246ae4put+L+Km8XnWIuk12HXJYMs7yaStU=
 			</data>
 		</dict>
 		<key>Microsoft.iOS.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aJFi/UKqhvlF5a27WR8uyRm3tX5d3bC/J0wrb8PN7cY=
+			R7UKIdZxCEDDp3uksJMngssAAxKpDTL/mGbeI7SltE8=
 			</data>
 		</dict>
 		<key>Microsoft.iOS.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hKVMJDev3EGEqgxQf2HXMKevddfyAVQOT2WV0iSRgqM=
+			YnYkCdwlFQ4KifAnLik8L6Z61EZBfXFS2NJ+JwUmKhg=
 			</data>
 		</dict>
 		<key>NotoNaskhArabic-Regular.ttf</key>
@@ -1071,613 +1218,599 @@
 			KQce63y2aSqdaAjSEjE6B5njf7CLrofBxe3m35pAzK8=
 			</data>
 		</dict>
-		<key>OpenSans-Regular.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MiLUcZTiFzoRQAO4rhUf9DWdVU9N2vnvY1Nm9mAoAoM=
-			</data>
-		</dict>
-		<key>OpenSans-Semibold.ttf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SSg9S4gTjYiN9IvztYIMNE/V0QSrT77fBYhYYwcaWoo=
-			</data>
-		</dict>
-		<key>Plugin.LatestVersionStore.aotdata.arm64</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qKDazVuK5N/Mu16D0PU2OccZlaDXNbJx8DmZNqAIp9A=
-			</data>
-		</dict>
-		<key>Plugin.LatestVersionStore.dll</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			D1sxMxsj5rPAL6/ddF+qUkZO4ctakSzyIdaZHS/7uZ8=
-			</data>
-		</dict>
 		<key>QSearch.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jewOVnpGcOHk8vUzglEVIEa0GWZMXykYZB228nISHxE=
+			kHkKT79Hn7hVS0tlUSvHbW2ZAY20jtq7fVDiv1338QU=
 			</data>
 		</dict>
 		<key>QSearch.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2GZc9Ff3UOhTqVypFdqI20aSh81KV2Fdbe1AK1nV88=
+			JR/t/FZx3DVNMb7btqW2S6l48dKggX85hOZ84+54hHc=
 			</data>
 		</dict>
 		<key>Raw/quran.sqlite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZTLYhzhhtMIc8/4vMVbkCN/esSfQtqL9G7i8UYZQA0=
+			nz6v6GACT+4mkpKGxSUlZjrFqedLCnYfyDQE5SthX+4=
 			</data>
 		</dict>
 		<key>SQLite-net.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d+jercuSb/1aKMrUb6goRdzvw085vvCf1PiP48jCs68=
+			eE62cXwNDjTRermEZu7mcRUqL4J5X+R2ks8errgehLo=
 			</data>
 		</dict>
 		<key>SQLite-net.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HZds4yBnDtiFz7eghsVnx5xQO2MLyuGOJJjNT+m2CiQ=
+			xixDs2qyHZjeuMV0/FGBweC2v/Ag2i8Mj6pani7hHT4=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.batteries_v2.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0Vw+d2BPCd6zLMt9TNK/wKG0LOHE2wvdI4M/hVhnRDI=
+			otDumqYNl9pIyeT3LhLmtXyoOas37Q4F+eh1FCAl3YY=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.batteries_v2.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gNWdnp5ltXglHZRMRSFZPP6XVTMKFlFVL+gEhZ13O64=
+			73jjDy9GdtL2enc2Pn55Gun7YiVwaAbckS6K/k5e6lE=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.core.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1lZtap4miaob/n0q+qAeOXJOFHXbg0lhWwWTAM5SCNs=
+			HEfO+hURQayXdhLtaJzioQ2yvkn01UsEAUfhwU1aHH4=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.core.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XmLP3HpcERyOJbp4noSyjy+DprSxp8HPXHAsvg3b43A=
+			lTeESn7HuJFOuGPaeOcwrgKIRAkioIUKG3EPMtZYLUA=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.provider.sqlite3.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AqGzzLzrLbfj9WLeRU21x2q4lau0vn35fJKMHjrX6zA=
+			zYC8be9Ex4bljJbFWU4Xutvf5HXKe12x2j57MnQZR5A=
 			</data>
 		</dict>
 		<key>SQLitePCLRaw.provider.sqlite3.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YMyi899PNFmPPmkgb8+9zz+sdBgfKoxHfk6XgBK5Ku0=
+			zcL94pDUWDbfeHvfrCL25995rkRMD6acO/wdS2rLUJ8=
 			</data>
 		</dict>
 		<key>System.Collections.Concurrent.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E+foX4rX4kvElq2WxC6AXgFraAVGGmqdTmuFvrDI8F0=
+			GhO/3DGdGAoixA+hAlvMvBqXNt/y/O1VRgNjPY6lRGc=
 			</data>
 		</dict>
 		<key>System.Collections.Concurrent.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ESZCZfM4w4xYj0mAqLrVPVQ3WPY10PIKBn6XVZceK3c=
+			Sc4q0b+IGeK26cxA3cH8QoeYfnWFPZVlq4efhPcgwt8=
+			</data>
+		</dict>
+		<key>System.Collections.Immutable.aotdata.arm64</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a3nzQg6dp5GDo3FTWJ0UCkMwkVZOisKEzB2qy9G4lvY=
+			</data>
+		</dict>
+		<key>System.Collections.Immutable.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RH+hI+/vEVmKOuEC9ckuOtg9xMwPZojcunpOYoXDgxA=
 			</data>
 		</dict>
 		<key>System.Collections.NonGeneric.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BNERS/IpBM8WofPo/aPlfTlK8cXcxfH9sPrSXWv8Xoc=
+			0TUvphFx4EZOofkHEhyJanuOigtoZsVU07GzuCTPg3o=
 			</data>
 		</dict>
 		<key>System.Collections.NonGeneric.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KKkdqsIlkyLHdQnrnPdpzSzgTi4t6p0v/G4wnOxjLVg=
+			00petonlNsYqOcb36YtTfRj9tKA3KxaJTqlS8YjBlFc=
 			</data>
 		</dict>
 		<key>System.Collections.Specialized.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BRGx+fFY/u/rK2b+gmCJLIC7FSOc0Vja8bPCMFEUOsw=
+			e2Yq7n/VOOSE1TCxpL8i3mMPs0Bug+oWCFWNdT7Se+g=
 			</data>
 		</dict>
 		<key>System.Collections.Specialized.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9SBurp4iUQrYBakTiR/y7dFxZF9/sLWM8BThyHWXGDM=
+			lHoashkxxdbreLJy+DmS5whSNnRfjZf6F9//8u9FMv4=
 			</data>
 		</dict>
 		<key>System.Collections.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XQ65TQW5EdyOkdbuzMGeYTS5Ix5rzkzpjYBt+Voj/pc=
+			E+0ESbKTfAkGaJBLaQiRL1ACrrkssH++y4ZRuifrzro=
 			</data>
 		</dict>
 		<key>System.Collections.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EdMDdehCeZ1mDnnCd1lTco9Y0Qs8zTZ4gs3rXJGP8To=
+			Wxf1PyTB+xGeW1dWy80t488W6zqSmzA2CkPomKraZgs=
 			</data>
 		</dict>
 		<key>System.ComponentModel.Primitives.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KJBZbYKn8ZwWKa+IfXwo/HEsZ/OYq2kTu7NjPrUhDe4=
+			0zxy7QtdTxVz5SnOs8nTi4LQ7BC+rdcDwg1AQEfiR50=
 			</data>
 		</dict>
 		<key>System.ComponentModel.Primitives.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XuO2h958JwDdJe2jpHsSIwcy2BRRTC2FFA6zR/5MRg4=
+			HfohA4bYkrXN5WvkrckBzOtQccPAg843Z3UFOmAemqw=
 			</data>
 		</dict>
 		<key>System.ComponentModel.TypeConverter.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yGA7+TZxQk2fyCa6MJZ95QsV2f7lrIcCJo/Eb2HGA0o=
+			8AYAUBmowL78BzjxOZcHqyjiwsUCeiWvDqnNUPIfGFg=
 			</data>
 		</dict>
 		<key>System.ComponentModel.TypeConverter.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3W79vKyF7yq3GflTA/1ooheroRUyxvuCM0aPmxFCHc=
+			N+o0SPcntBWpDbVJCPhPDe2YaLSggjZHTNofNUT71QA=
 			</data>
 		</dict>
 		<key>System.ComponentModel.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8j46mOSqp0G3sRZJ2y4kQiydWIOzKKzLqkLHY4ATy9M=
+			AYzMD/3nR1sV9GUb+SFZAupTNJLzpWK1KO1ZUvu+aUQ=
 			</data>
 		</dict>
 		<key>System.ComponentModel.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mH5fuGcCLbBx3SE3MzobcOmshW4W/nHu5unN61aJryA=
+			AlFXLicAtym1ENyvz626uGbRBPvefcE98o+YKpqiMBc=
 			</data>
 		</dict>
 		<key>System.Console.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/K++ksij9CpmJiZb1049OugCeqLkrULzZjlwCZvKuEo=
+			O6p85a3r7ht13dLdyinXc9FSyvotNhr9HSMPuaVRNFY=
 			</data>
 		</dict>
 		<key>System.Console.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HIfAAAVa2OyceOAG9306eUwFsYiMSevWoaE7yvlyEhk=
+			CoW3lEIrHP2HGcwWIHOYCcEDjBb/NVBfYEzSmevAoTY=
 			</data>
 		</dict>
 		<key>System.Diagnostics.DiagnosticSource.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ki9aPbkk2G4aa6Z/n/6ZKYomzW3p0CdRS1dI/JqEg74=
+			dbMK7QMp5bSGPVyaObYnjy4ua1lP58KD++vLr36bAlI=
 			</data>
 		</dict>
 		<key>System.Diagnostics.DiagnosticSource.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FAjbBsEN+8wgk5uxYSlLBMfBWcbnwvFaWiB0+rUchfo=
+			US1+T4xnW+b3lk3RuxctJLk02og3nYde4iZbyp6Ld2M=
 			</data>
 		</dict>
 		<key>System.Diagnostics.TraceSource.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dLUeCS5WZ4/oxG59lFE/hMqQw4X3gHnvKZz6OUM1cZw=
+			Mrs6Zs43rgmQoFXqJ63LDvhrgD+cH+NSn7y1hj01g8I=
 			</data>
 		</dict>
 		<key>System.Diagnostics.TraceSource.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NjrOMU6DJAwzuIacnOaGArV4EfAvzXr6aDHalIgMaRc=
+			RF6ev38CG2qZhv9Gfn3zRvBAiEFuSRlMNdDLqRYPCK0=
 			</data>
 		</dict>
 		<key>System.Drawing.Primitives.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zsnGSQSgnReCwkNpKP+sCgjlvGgBCnwkoLqMgCNKJ+k=
+			jvDzzO/MgLkJUWuqf2Uep8Fg9eUi2JQCoJTdwinldb8=
 			</data>
 		</dict>
 		<key>System.Drawing.Primitives.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JeR97g3t0UyDfSMBxen+g0dHJC/+wPukpSgcjPgiWC4=
+			uMN3Spba5xoFt7OroKK1oZ5CnBbmXeU3xnC5O91d5gw=
 			</data>
 		</dict>
 		<key>System.Drawing.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L8vfbF+vY57I/XrfKZ7jFOmZVungw43giBEyb+4nNpw=
+			OQ345h4DrSQpAiw+NeDSPJ7PmIdf2dvQTnKlaYFxugg=
 			</data>
 		</dict>
 		<key>System.Drawing.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YM5bk9u9k7RwGpaTmIFfFWji6MA8uieGrVwr+5gBKJU=
+			+J0kh/WTOU89qGqtEyd316XHmY8jy7Hslr0+bDymOlM=
 			</data>
 		</dict>
 		<key>System.Linq.Expressions.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ii6/zssHckSQhZrHh/eqEZxzyPSSeJtjopsD4wHfA8g=
+			Vlc6XqKvvHdJ/I+w4wRt1b1s30vYuvJ+m0ccsVd4DZQ=
 			</data>
 		</dict>
 		<key>System.Linq.Expressions.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BQWkMbaecJE68RSBi7rfc8JkpbGm63FwqoEMbwlwvqc=
+			Nzc9ajymyXivLCb+XgrwnvMD5K+cQgO5pv7yiw2PL7k=
 			</data>
 		</dict>
 		<key>System.Linq.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			u1shq1kYD9o3R0Egail3KGTK5YOhjtMu2jUXL23l/vU=
+			E+y3vCEFNGa2V1st9T0B5ht3fJ2ZNFTEilgx62K5uKg=
 			</data>
 		</dict>
 		<key>System.Linq.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2zg+qFrAJnovvqfG2jjz9qeEGZVZoYlSNKQ/4rwYIjs=
+			QYIScYFRryMUuboXciJG/nqMfrCd9HzuQ4kpzqQiicA=
 			</data>
 		</dict>
 		<key>System.Memory.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vzz6hq95sE+1k+0zIkOc2+n9zTtjXEdizD0PlFe+b7w=
+			Kae+adpUo5LagrrwtXrPs5gjQOfZAQ6hR95OjYZoCqA=
 			</data>
 		</dict>
 		<key>System.Memory.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0RjXsL5uEoqBEl3tnOH/pVFhOOm1omSheMMHyXra86A=
+			SHNsidPIbPxM05zLeuQ7mtzLijUD/qDWTqNcpo/AcRo=
 			</data>
 		</dict>
 		<key>System.Net.Http.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YlC98TDP1lDWpurl3wMtY5UfUss57kZJjR/r7Kj8gNk=
+			xGzwTMFTZxph/HfhuW8Tu2Ub4Nx6IxT7Z1SJ7HjDt+g=
 			</data>
 		</dict>
 		<key>System.Net.Http.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zGTEkLKafNrz+YareeRjhmTs/HkrW5Q2M1089NLKZ/A=
+			Cq8WMxKqoYdIvb7EEGwn8Mu1TOGzDaKXqQlK6+nEhlA=
+			</data>
+		</dict>
+		<key>System.Net.Mail.aotdata.arm64</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JNjE/qMXVHR3AGXG1c9i0rij23uUGd8kSRT0URzPxfE=
+			</data>
+		</dict>
+		<key>System.Net.Mail.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SnyuXWyQSWIzIjXDdKg9zM4xKkLSiWpmO8wR/JBMHm0=
 			</data>
 		</dict>
 		<key>System.Net.Primitives.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VmHUATPsRzNbnqHRNyN310huuHrQkDCxUpe62Fcg2hk=
+			GUekA1saZlirdeyacWkpFTNQTVpUPyRL3AJRZxCXTTA=
 			</data>
 		</dict>
 		<key>System.Net.Primitives.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rPC8g6OVXD8+gTZ/SCnXO+xp2HczxiitIaqTuHp1AdE=
+			ofKgp/Ac7ypmdxUQNPjkM6vNStrUPqZnyWJE+Xhqnys=
 			</data>
 		</dict>
 		<key>System.Net.Requests.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QYbpkZulr0jzs2dDEXpPbkvlhyXnXKhbVRZWyrgf6Bw=
+			qRpH04YRP8amyi2t2uQkcbjj2Rb3exA5JhBhAEsKQUo=
 			</data>
 		</dict>
 		<key>System.Net.Requests.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RmKAauNMdTLtL7I+zdQWFtFSTxuncouOfs0T16y/qQ=
+			kaIQ1AvxwR36TEIUJbkAksg/z/Ux9W7Kg+7zd/zeGcg=
 			</data>
 		</dict>
 		<key>System.Net.Security.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sxjSP0dCNEYhinkvYyzDrfZzVZny5kh9ozOZKZoo4yY=
+			meUKlVx8J70TBokCrZC3FO+oXQ3ipTmI9Eq2nKrAZUY=
 			</data>
 		</dict>
 		<key>System.Net.Security.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BIY/5G6/ZXJAggqWgA+u1Dd6B1m9y+HD7PgdXRwGKBg=
+			XHfGig4NgTtC9QsjxYhKUhDF7rVv2sJdICWJts/LE+g=
 			</data>
 		</dict>
 		<key>System.Net.ServicePoint.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1iXIT2Ebv6P+ymSV5hH8EQYv9bYRFWwFjTsOpfqhcAE=
+			kOX66D/eb/47IRu25/lAG5JoYu1BjL7FhtMGG4X/5ls=
 			</data>
 		</dict>
 		<key>System.Net.ServicePoint.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oNb4JDEwCiTMFVsg8Ih6g5zHSXIVlz2rLEj5vDx6gBQ=
+			ZiVmyZfGhbrOffLdw05dLO3lPonjLxgU3RJqiR6cJzY=
 			</data>
 		</dict>
 		<key>System.Numerics.Vectors.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYDgekca6EEKiooc0qCPczKuk5O4RB7pwwgNysPOti0=
+			ipCpdi51J/4CrdRUDhmc+aCOTcT9SsjZO+WYsbr8JFk=
 			</data>
 		</dict>
 		<key>System.Numerics.Vectors.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ae0+c+viHFx7A8k2739p2F24+i9CCHlDDg6nOqwAfhI=
+			wFi4WEcHgHIkMP6rVyLqN95N8URpfLn4BYUXX6/wNdU=
 			</data>
 		</dict>
 		<key>System.ObjectModel.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+g3E5AMp/QnbUKK84zrqW6wBi51sSIUsbi8n6OCqoQ=
+			iajz0tBoQFbDpVEsIhLfhycl3w5gNpybLbopF3cGN5s=
 			</data>
 		</dict>
 		<key>System.ObjectModel.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FeDmxH8x6QEmZQ+E+nOT+VYf3pYFM6JF9emlD/irU3w=
+			oqeUFls94Lh/xJLfTHlRuNUFI8b31qmbPI/Sa/X4Qbs=
 			</data>
 		</dict>
 		<key>System.Private.CoreLib.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XQB/TilPOfSAXjAz8Lt+h3TrQXNT7FIOh3m8PNc0GGs=
+			4O08/7gzoCFrBUGQiEc3j5+fsDeST1tUY4ny4lfS/pA=
 			</data>
 		</dict>
 		<key>System.Private.CoreLib.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			88iJI1XNOqq+aouUEXYKpbyBctItEz+WdDd5sXeYWos=
+			3tDrnm/WmPCtsxFsfg/Mb/zlO+fxxaNUETXPmWJE0IE=
 			</data>
 		</dict>
 		<key>System.Private.Uri.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cLeTcOIH0LoK1pNIFuX7sIXm6jnQMcXcIKJRpa+66/I=
+			IIfu56uz1oLFpmUzzqksqYqMvDIHK2TS3DL+sR//8uQ=
 			</data>
 		</dict>
 		<key>System.Private.Uri.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			De0wEAUj9yqeO0itBGyb+rqo2URstgt+amMfB7ZRsa8=
+			llI2q4lVu2UgXdl1I9i5/dA0MHTSbXOY7GqCX9RdAic=
 			</data>
 		</dict>
 		<key>System.Private.Xml.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g1WwlpNbZsZRzeJfyTRIrghMoh9b0PwJWC7PyMXkMyo=
+			eeqWkuh3Zxm6Da1M1z7cgKKiOiYXdQf2/+hA8Ele57Y=
 			</data>
 		</dict>
 		<key>System.Private.Xml.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zzs7einlGXIlko7vLfLr6EkjnxUc/DcaYtIDRwsuCWM=
+			w84xFsV1dGbHgaFnLLSe/xvb6S6/C+kps6E8klwuuLY=
 			</data>
 		</dict>
 		<key>System.Runtime.InteropServices.RuntimeInformation.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+POEYPwYNHqaDtGyGoWmBWiq2k+yO96IyRNzYPWdEdk=
+			FH39UPuWIgntxCpAQdwto/V9EsYZhNtPqDbwr6n/CF4=
 			</data>
 		</dict>
 		<key>System.Runtime.InteropServices.RuntimeInformation.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lAoWVFVC4FkUfrm49IDdXGUhlWr369s8OdGMGQaUq50=
+			FzP/rkNjE87AUZV22PW1aCk/c1drblKUjhzUCW1oWKM=
 			</data>
 		</dict>
 		<key>System.Runtime.InteropServices.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7HY8XH2CsOD41jzwnvusUz9Dx3kTIc9DT85JWTDFidE=
+			65dBQk5vEp5tDpk+Sv794mB5nxZsv+x0IIldcgfKT3s=
 			</data>
 		</dict>
 		<key>System.Runtime.InteropServices.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0toVuxireLehzC1vz+9PJ68VTptvJDfeeM3+5pHJAkE=
+			+DHHO0zufiQlFTHnd0tXwrTLzEhclWWvWd70FQWor0o=
 			</data>
 		</dict>
 		<key>System.Runtime.Loader.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			upvdtRf/Q2dr3AvTTpK16E+eXJ/QsRxjiRA7FgHa9Ho=
+			Dyk34GkXEn02uZx0CtLD3ljCyt9ue2CXR/74NiOVtTE=
 			</data>
 		</dict>
 		<key>System.Runtime.Loader.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mRC7OcTIVG9H9wE8NdH3hmI+Jq3HMBqUbAo4WLv32y8=
+			99afBevLSnb5yRFRohBZNrBADvtGm7AyfPX55it13L8=
 			</data>
 		</dict>
 		<key>System.Runtime.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSyrIjHEW3iit2wBpT9qL7GFWSMSLoWayY3EhbjnCrA=
+			wShBhuKP9wUSgAPqj7l77le6utxkyL32AqzHGrH3K1k=
 			</data>
 		</dict>
 		<key>System.Runtime.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4gBjluZ7g+xtwU3FwSET/m16Gku87mSjXEzGJG6bAis=
+			SE+yqIP2gIUqkB/kUN4gq6CRIF+4nFgAoMRAi6apMXg=
 			</data>
 		</dict>
 		<key>System.Security.Cryptography.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qS9xPAinhnXEns39CZgFXiV2t2ZzVoB8anK+iwto0lk=
+			mL/TkQuvW25F6g3qeV6I8wMSxEBxoIvRyevSMMhXT7I=
 			</data>
 		</dict>
 		<key>System.Security.Cryptography.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzF/Ydb5JIQ36GBrBurnLm2gf7c1qCs304jnO8Gfv7g=
+			QyeLbfbB9yXftCXIRWkbJmBcrYNBCen3R1UQyryUqKs=
 			</data>
 		</dict>
 		<key>System.Text.RegularExpressions.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UsqX1Mlw4bpnT5r0AiJf2FADuxHCy6PCGkDPe6xKycs=
+			ZDB00lzOVL0iaX5jzCeKj6r7TnKjHlaHCG7dzfYUL9g=
 			</data>
 		</dict>
 		<key>System.Text.RegularExpressions.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jtPYxr/rCi5JdAeO2LI7nTOzWog2sw86kl70dIohCEY=
-			</data>
-		</dict>
-		<key>System.Threading.Tasks.aotdata.arm64</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YQO9QDfq15C/0RmnEc6RVLaHZoVVOYCV9UWRiRGC5Ig=
-			</data>
-		</dict>
-		<key>System.Threading.Tasks.dll</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jHBV+G2fSOVOEFVaBKeLKHo5ns3NcmlxPzk7wvoEx8c=
+			lou4Z81oE1Hd0Nd1SsDoq1A0EAZ/YVkPIDh5gtsCkCc=
 			</data>
 		</dict>
 		<key>System.Threading.Thread.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cT5XaxGiUZRJ3qKUxP/eCa2Wd0tF4IqtkrM/yyVNKWo=
+			rTijp/QL1Ty/yTg743sCEPRSjMTxO5NaWBSxoDBAcnw=
 			</data>
 		</dict>
 		<key>System.Threading.Thread.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RMNImsnrk3/Tramq7qPOY/dUEb4KiqPUOnvB2iREumg=
+			4xFvT6jRrCFeuZTcyMguPhhyUmwlVHxr2lQQhBOGt3o=
 			</data>
 		</dict>
 		<key>System.Threading.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			02pTcXneUrUoiHesq+6bY+Ds2lv9h7ZNvYRoVo1OCrw=
+			yHZCn0eAQBvnZjpk97SQ+n7WpslmQ7N7R3DBrJ8pxEk=
 			</data>
 		</dict>
 		<key>System.Threading.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bNSDcXKNlTCBh6pY7aNPyrRf0k3AOBw01pn3zCgEIno=
+			yi6PlfsbTr6kkyDxb587JMiYWVozskm0cAYK6HAdmoo=
 			</data>
 		</dict>
 		<key>System.Xml.ReaderWriter.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Drowy2zfaaFELor4eCASoxhCB6OLxdiGCKH2RIbkpvo=
+			AwpM70q54rSHWbO2chbySEjVI6YmR2lKPUwifjlwiKQ=
 			</data>
 		</dict>
 		<key>System.Xml.ReaderWriter.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BnCi0hBjBbLfih0IDQzaGlit/blOvJCSrDffa4paO5c=
+			62jvcfGDGHxlVdeRDJohAe8RB0ldBlTA6tMzVzUvEKc=
 			</data>
 		</dict>
 		<key>System.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PKg3cC2HlsWfVwTQ/kJNPZ8l/mQUh3uSCI+Vl6LOQm8=
+			yA/IRF3I661uqf6tTGD0DRM83aYtrfwBdt0lSSh1suo=
 			</data>
 		</dict>
 		<key>System.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z8bTFqV0Z9UAgBlJ5JjAepLQMYklIrjjYuodNgFuG/8=
+			JCLZ/LkNUK79jiWGErk8OBo2ygugoAdAYJzKFI9U+p0=
 			</data>
 		</dict>
 		<key>about.png</key>
@@ -1705,7 +1838,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o/eJW2Dgl6k6OqN6G6mWfOnZcbNoT+Sg6BMUT9C3RgI=
+			MMimaiG9OgnLSQOoUqOXrQqWDmgRhVIQJz7QSctNr2U=
 			</data>
 		</dict>
 		<key>appicon60x60@2x.png</key>
@@ -1726,7 +1859,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			miS0JrIaEns5TplL+8A7KERsrIZOeEvooxDBhsO422k=
+			qWUa4CgurBToKknUgKev1fZ5bq7O0T63kw2wxVcQPNo=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -1740,28 +1873,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4dg8S3zvhpX9yKKMGJL3MJHL0ORhTmKoJLp3PSvs3q4=
+			IXqi6XZIzLlx7y1FEEi7H1KaM8E1Er3WazZ4aCuWT5A=
 			</data>
 		</dict>
 		<key>cs/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDFgbnP+Gz8UR4pK+Pn5nkhwZ9udp/EoPHO0/De/A6Y=
+			DycEDJpjL5PmIBXMNI1Hoq3GdbmrcxY/m25ahqiVA+w=
 			</data>
 		</dict>
 		<key>da/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uLhu242ae+9ZwnqXPimkXvyp+K+6cZIbwsfzTlNMzYo=
+			FGoXM+Wzkf6+DKs9pWUjmWX//ba0eSEL28aOtwUBwSY=
 			</data>
 		</dict>
 		<key>de/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tLcj2sXqLxctWS0jxkHa4KS7wyARqK+XbxADGx4PTIk=
+			rhPTwU+EUANDzcR7jK08lmAbJ7HsGHYPDYCFJkR/cxY=
 			</data>
 		</dict>
 		<key>dotnet_bot.png</key>
@@ -1789,7 +1922,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgoPszr/mtCBvR/vQK7iJAeOvJhOWGuacCfFapBpmsk=
+			4iy+xh8lPJCJDSickUsGuA3AmUEaNBLI6SES6HzUCHU=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
@@ -1803,49 +1936,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x3uYhVrZc+vGBISN7Ia45Z6jwp29RdlqobltQU3hvEw=
+			GaWnB2UG5AtRwk39Q4BwzU13Oj6fZy8ylsZRWzCs4T0=
 			</data>
 		</dict>
 		<key>fi/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vM42VUO0Qp3EZBDwZQo15vOdjf/M31eSlITAYfCh8Tc=
+			briZBfkmuxbj28o9W92qbQVteeGmPepZZqeh5mHBCCU=
 			</data>
 		</dict>
 		<key>fr/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ok+QBlGJ0TRlvMTLuGt0IHhDZFAGthiKzzcSjnrHVvY=
+			sORmnOddwXE7rIxMe+abj4nqYglZ9uRlR8I5GcVkT9U=
 			</data>
 		</dict>
 		<key>he/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eJLDHrI+PT6wmYpJ+wz50ISycH4hTKBkDIyKGZ0+L1A=
+			ND/CFpDO5kgAl4n7cV6AEMH1B+uPbvOeIjr5W0XRa6Y=
 			</data>
 		</dict>
 		<key>hi/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TL8V+fw9G6YhNVS0+WRRD6O/b8yIHPGgc/da+rjcTrA=
+			oGuZlungQygZ1JZJ903BYsQJ+2cz28wBRURqB1TqoQ4=
 			</data>
 		</dict>
 		<key>hr/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lc8LPZ7Na0MaJzLfy6Uk2zXjQcyujwJ0lu1rY0CgsL0=
+			g+1e6z5SuNaugJeV41Tz/RkTZLiR3cpobAMC8n+LTnM=
 			</data>
 		</dict>
 		<key>hu/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QD/IuBGwBVjhES2Hvmqrj7xFOhT+VFCl17hvivIu2SA=
+			39Knu8fWA+vjXSeS32RZ30gYzjLaQmY3EuVZa2F1ty8=
 			</data>
 		</dict>
 		<key>icudt.dat</key>
@@ -1859,105 +1992,105 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zvgckiqYHYztHTyih5veYI2wV09CJLXKGqR5YjwPV7c=
+			fzFXsonAyHhJGPYMGrwcPDA4kps/1sLwoLFYzFcay5I=
 			</data>
 		</dict>
 		<key>it/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9T8Xu/t1y/O+PxhDmdIVYsLD2yF6CuHZVKg+dZSMekY=
+			2OzFE7jWV8PMgp6V8DCgbpDEGLqPZb5mI8R0q+pGaU4=
 			</data>
 		</dict>
 		<key>ja/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E3bvg8wEO5VDyOB+ZCA8zWp6Y/xO2hrKi6r6XoOkoB8=
+			ITxRL+HurDpFYa9tJUu9Pjy1MFBDKxnMSnoEZu5pR80=
 			</data>
 		</dict>
 		<key>ko/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n1EGh5v6UbknldNHtwz86dJ2CvJoKD90Vq/zrKl5ZfQ=
+			o7OIi6EcyuUyyjgkbjSQjjhXQOkvZgJUQ84njPrMwPA=
 			</data>
 		</dict>
 		<key>ms/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2WO4Z0vGUFhz/7FZPR40JNH8f1jT9oZoCl77BzgGAo=
+			cEoswYfkhmJwnvq0ysejH7plg2TKY6DPhsVITC5pFCQ=
 			</data>
 		</dict>
 		<key>nb/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AJYLoypFWYnW4iarDErhQu3id4dNnBNJduCDboktlUc=
+			35qpDdKctEWIhDrW/tEbxfaN4rxtbdDvLPcFIiwyb94=
 			</data>
 		</dict>
 		<key>netstandard.aotdata.arm64</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njDXREZjwDlYN0LFunuyd9IuzoflOWJYbOwgIQn+YMs=
+			Cq7/pcCAcgn0YX8aUTJrQG4ZTwtsJf285YIJ7v69MqY=
 			</data>
 		</dict>
 		<key>netstandard.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pyPHdsZo8EpOKNzjeoebozL1QB64FDING5+5TBUm4Hs=
+			fUe9Pjix9ZEk+PREB/Z8lZ/L4la2YqkCYtwqpO+Mnag=
 			</data>
 		</dict>
 		<key>nl/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q04n3hyykLLU6pxS9PsFF5kSNu4wpYxM6c1SEcrZ5e8=
+			wFuj5ZDtDZqMx7i3LoF7kmng/lqQPOy4HDMv8/QB+so=
 			</data>
 		</dict>
 		<key>pl/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xvR3PsyUEUEukSNABsOtHNG5E6DQNiVqVAyMEpfZls0=
+			GBirwyh4sviy4dSv/m6mLEGjDBy2byt1+mRWY9K4xOw=
 			</data>
 		</dict>
 		<key>pt-BR/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3hIkCd0zdHpdq56KhdIHaiYbxQdsv+ivQt1tBtIeSmI=
+			kD8es5FQYSd0qxe8jZT1ZjA5OcLqPZ+KOL5T8H9nwSA=
 			</data>
 		</dict>
 		<key>pt/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b+jcEzt3GrLI18JGJMkVvPPCEQycxd88l1aul/MjLuw=
+			Ip9A+p59gNG+7m/Er1k4Irw47X1ldIc5+EGZAigv3Yk=
 			</data>
 		</dict>
-		<key>qsearch_header.png</key>
+		<key>qsearch_hdr.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			91lq0Cxp2jmVtSfqmEKxRmTpwCAx9jAqZqDjARLWRZk=
+			hIV3DbwscHNSF3EC16HQh6R8QO1E+t17tGqZR+fDCpU=
 			</data>
 		</dict>
-		<key>qsearch_header@2x.png</key>
+		<key>qsearch_hdr@2x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PyHJBdNilHT9Wv81cb0/P1/Qq/OOaxbII4fNMIzypgU=
+			2FDstYcYekoIL1gcRl11/onB3DdVkjox8HxCqWCSyec=
 			</data>
 		</dict>
-		<key>qsearch_header@3x.png</key>
+		<key>qsearch_hdr@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/CjJDaeT8N0V5lSJeu+vJC47fubuWvtiq8z5Tr++NxY=
+			BLr3L9sZ3ZbsCfHhO6jXHfspU/bFl8qLP9Ak/u2rlVk=
 			</data>
 		</dict>
 		<key>qssplash_67AEDFF8837EBBC26536CB01A5D3B4531311D239A055CE648FFFC71421718DED.png</key>
@@ -1971,35 +2104,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oXrBYxUyKEsv703jxppT7Czep7qg59CcUcDfysfJ8k=
+			kHrrjUPcacHhnPb9gfA7aTChpCptEpNKjcrpIzTlkJg=
 			</data>
 		</dict>
 		<key>qssplash_67AEDFF8837EBBC26536CB01A5D3B4531311D239A055CE648FFFC71421718DED@3x.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UhTea5CHwdYAZKRqq+LAZtis++V25RfOKuxH9Ne6trA=
+			b5Q0HoROiN3y4gpIraaJeG8BR6jBdeD7LY5aXHwBKoo=
 			</data>
 		</dict>
 		<key>quran.sqlite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZTLYhzhhtMIc8/4vMVbkCN/esSfQtqL9G7i8UYZQA0=
+			nz6v6GACT+4mkpKGxSUlZjrFqedLCnYfyDQE5SthX+4=
 			</data>
 		</dict>
 		<key>ro/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XGSAKquYM77iDJVkKvhqVAJDZCGw8V1CKlabVCtdobg=
+			vpT3GwH1HuwNcHN6biVQrABncP44Cieb7wBeDynTvVg=
 			</data>
 		</dict>
 		<key>ru/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vBZmt+jwvLEa81RG+v/37G6IId34Q4jc2lSZhB6fV50=
+			n4RHU2Jz7BM5zzi6eae82CiTLA8uDbmesonXHkDHU5w=
 			</data>
 		</dict>
 		<key>runtimeconfig.bin</key>
@@ -2013,63 +2146,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JwXBFvEugHTDssintrif4yIOt/qA8cYgKBwOORXSo8E=
+			fk2fGrIP7Csbb2PgzayQwQGBCdDdoUqoaYkbd2wZjG4=
 			</data>
 		</dict>
 		<key>sv/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JWuEF8RehhhmceQX/zbDZ7RtkdySctxMrEaaxQe7MIQ=
+			P8fWoBmaQW2jcCvZTW3l3oUod7V9NYbACu1qwuW1K6o=
 			</data>
 		</dict>
 		<key>th/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fYuDtyEnRgW9997a2mpoIuYJbCn8Oln6dGVrQLEsNPQ=
+			/UYKvgqDIk43OYsoqaMlG5rFY5oY7SVk3r/ZyJbdnow=
+			</data>
+		</dict>
+		<key>tick_mark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Iulmkalxbj2Ks7EPoRg676dEPRw4RblI5sCAPyauZLw=
+			</data>
+		</dict>
+		<key>tick_mark@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d/VvZ23Zm55EtdzXlqQfjRKzkxMNwF64kRK/A/KHtfI=
+			</data>
+		</dict>
+		<key>tick_mark@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NKKj0PBHLFwqCLD7Nz2yGSxn4clCmn3KPSAmr2G43k0=
 			</data>
 		</dict>
 		<key>tr/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LpaEjuc3099yGf8aNMfEp5ufsDUCVrA7tjHCXFmCwBg=
+			a24LhspQmargQxmTz3UCLtnp7B+TfhKOMrdm96rjgIk=
 			</data>
 		</dict>
 		<key>uk/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uv4+RZog9n8ILfSZWPenVw14zXOAfR+veP2FHsFGV1Q=
+			r0md4FU6GTO35EdZpIFvkTs33QqIYmfVVvnsoQarcVc=
 			</data>
 		</dict>
 		<key>vi/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9cMERwaF/CRF97bnoTFzG2nPmtfliFkD0sSnH0Fjxw0=
+			vHzH3vr1Z737xCOXSLdVRgRk78RjzhWmA0McBXRmwic=
 			</data>
 		</dict>
 		<key>zh-HK/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PywiLQTtiyibhx52Q47gPGFokYPSIGVoNxcuJftmJ8c=
+			/2I7VJF2udYnU9UujFN4bAJXmmLeOJcQLvgIRcwE+wo=
 			</data>
 		</dict>
 		<key>zh-Hans/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tbezw5hg0MSLiQRyXV2N4cdHdnL5XGmO7wRvUyZhdvw=
+			Pe9VZDstGc6ilziTO1LtUJjxlPOSJaZVeTSXExRLiCc=
 			</data>
 		</dict>
 		<key>zh-Hant/Microsoft.Maui.Controls.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MXLeFkCNeEBsYsvAKrnabVlr1xK0IFAfh8J9OZFn8YU=
+			GAJNLKT/I/t4XuxhDS9qkJAzsKUL7vaSxLUE8rDoA58=
 			</data>
 		</dict>
 	</dict>

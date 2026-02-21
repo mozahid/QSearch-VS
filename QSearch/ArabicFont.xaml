@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.ArabicFont"
+             BackgroundColor="#aa000000"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.ModalPresentationStyle="OverFullScreen"
+             NavigationPage.HasBackButton="False"
+             Title="Arabic Font">
+        <VerticalStackLayout BackgroundColor="White" HeightRequest="420">
+                    <Border BackgroundColor="SlateBlue" HorizontalOptions="Fill">
+                        <Label Text="Available fonts"
+                            HorizontalOptions="Center"
+                            TextColor="White"
+                            Background="SlateBlue"
+                            FontAttributes="Bold"
+                            FontSize="Title" />
+                    </Border>
+                    <Border Stroke="Gray" StrokeThickness="1" StrokeShape="Rectangle 5,5,5,5" Margin="10,10"
+                                Padding="5,5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                                <RadioButton Content=" "
+                                        x:Name="radNaksh"
+                                        HeightRequest="64"
+                                        Value="1"
+                                        GroupName="Arabic"
+                                        IsChecked="True"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        CheckedChanged="radFont_CheckedChanged"  />
+                                <Label
+                                    x:Name="Font1"
+                                    Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
+                                    FontFamily="NotoArabic"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    FontSize="Title" />
+                            <RadioButton Content=" "
+                                        x:Name="radLateef"
+                                        HeightRequest="64"
+                                        Value="2"
+                                        GroupName="Arabic"
+                                        Grid.Row="1"
+                                        Grid.Column="0"
+                                        CheckedChanged="radFont_CheckedChanged" />
+                            <Label
+                                    x:Name="Font2"
+                                    Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
+                                    FontFamily="LateefR"
+                                    FontSize="Title"
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    />
+                            <RadioButton Content=" "
+                                x:Name="radAlQalam"
+                                HeightRequest="64"
+                                Value="3"
+                                GroupName="Arabic"
+                                Grid.Row="2"
+                                Grid.Column="0"
+                                CheckedChanged="radFont_CheckedChanged"
+                            />
+                            <Label
+                                x:Name="Font3"
+                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
+                                FontFamily="AlQalam"
+                                Grid.Row="2"
+                                Grid.Column="1"
+                                FontSize="Title">
+                            </Label>
+                            <RadioButton Content=" "
+                                x:Name="radIndoPak"
+                                HeightRequest="64"
+                                Value="4"
+                                GroupName="Arabic"
+                                Grid.Row="3"
+                                Grid.Column="0"
+                                CheckedChanged="radFont_CheckedChanged"
+                            />
+                            <Label
+                                x:Name="Font4"
+                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
+                                FontFamily="IndoPak"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                FontSize="Title">
+                            </Label>
+                        </Grid>
+                    </Border>
+                <FlexLayout HorizontalOptions="Center">
+                        <ImageButton x:Name="btnSelect" BackgroundColor="Teal"  Clicked="btnSelect_Clicked">
+                            <ImageButton.Source>
+                                <FontImageSource
+                                    FontFamily="MaterialIconsOutlined-Regular"
+                                    Glyph="&#xe5ca;"
+                                    Color="White"
+                                    Size="28"                                   
+                                />
+                            </ImageButton.Source>
+                            <ImageButton.Shadow>
+                                    <Shadow Brush="Gray"
+                                        Offset="20,20"
+                                        Radius="40"
+                                        Opacity="0.8" />
+                            </ImageButton.Shadow>
+                        </ImageButton>
+                        <Label Text="    " />
+                        <ImageButton x:Name="btnCancel"  BackgroundColor="LightSalmon" Clicked="btnCancel_Clicked">
+                            <ImageButton.Source>
+                                <FontImageSource
+                                    FontFamily="MaterialIconsOutlined-Regular"
+                                    Glyph="&#xe5cd;"
+                                    Color="Black"
+                                    Size="28"                                   
+                                />
+                            </ImageButton.Source>
+                            <ImageButton.Shadow>
+                                    <Shadow Brush="Gray"
+                                        Offset="20,20"
+                                        Radius="40"
+                                        Opacity="0.8" />
+                            </ImageButton.Shadow>
+                        </ImageButton>
+                </FlexLayout>
+        </VerticalStackLayout>
+</ContentPage>

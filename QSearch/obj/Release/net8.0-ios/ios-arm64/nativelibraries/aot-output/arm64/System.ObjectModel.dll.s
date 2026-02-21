@@ -22,7 +22,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 8.0.8.0 (8.0.824.36612 @Commit: 08338fcaa5c9b9a8190abb99222fed12aaba956c)"
+	.asciz "Mono AOT Compiler 8.0.18.0 (8.0.1825.31117 @Commit: ef853a71052646a42abf17e888ec6d9a69614ad9)"
 	.asciz "System.ObjectModel.dll"
 	.asciz ""
 
@@ -455,7 +455,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -557,7 +557,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -1392,7 +1392,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -1494,7 +1494,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -2194,7 +2194,7 @@ ldr x15, [x16, #456]
 .word 0x910003bf
 .word 0xa8c47bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2800be0
@@ -2385,7 +2385,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -2487,7 +2487,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -2724,7 +2724,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920
@@ -2826,7 +2826,7 @@ ldr x2, [x16, #16]
 .word 0x910003bf
 .word 0xa8c67bfd
 .word 0xd65f03c0
-.word 0xd2801c80
+.word 0xd2801ca0
 .word 0xaa1103e1
 bl _p_77
 .word 0xd2801920

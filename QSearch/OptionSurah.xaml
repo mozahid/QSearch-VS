@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.OptionSurah"
+             Title="Select Surah">
+            <VerticalStackLayout>
+                <Grid Padding="5" BackgroundColor="SlateBlue">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />                        
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Surah Number" TextColor="White" FontAttributes="Bold" WidthRequest="95" Grid.Row="0" Grid.Column="0" />
+                    <Label Text="Chapter/Surah Name" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
+                    <Label Text="Total Verses" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End" />
+                </Grid>
+                <ActivityIndicator 
+                        x:Name="progInd"
+                        IsRunning="False"
+                        IsVisible="False"
+                        Color="Blue"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                />
+                <Border Stroke="Gray" StrokeThickness="1" Margin="5,5" >
+                    <CollectionView x:Name="lstSurah"
+                                BackgroundColor="White"
+                                SelectionMode="Single"
+                                DescendantAdded="lstSurah_DescendantAdded"
+                                SelectionChanged="lstSurah_SelectionChanged"
+                                >
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                       <Grid Padding="5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="auto" />
+                                                    <RowDefinition />
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="95"/>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="100" />
+                                                </Grid.ColumnDefinitions>
+                                                <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup Name="CommonStates">
+                                                    <VisualState Name="Normal"></VisualState>
+                                                    <VisualState Name="Selected">
+                                                        <VisualState.Setters>
+                                                            <Setter Property="BackgroundColor" Value="LightSkyBlue"></Setter>
+                                                        </VisualState.Setters>
+                                                    </VisualState>                                
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                                <Label Grid.Row="0" Grid.Column="0">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding chapter_number}" TextColor="Red" FontAttributes="Bold" />
+                                                            <Span Text="." FontAttributes="Bold" />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Label Grid.Row="0" Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding chapter_name_arabic}" FontAttributes="Bold" TextColor="Black" />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <Label Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span Text="{Binding total_verses}" FontAttributes="Bold" TextColor="Black" />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                                <BoxView Color="LightGray" Grid.Row="1" Grid.ColumnSpan="3"
+                                                            HeightRequest="2"
+                                                            HorizontalOptions="Fill" />                           
+                                            </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Border>
+                <FlexLayout HorizontalOptions="Center">
+                    <ImageButton x:Name="btnSelect" BackgroundColor="Teal"  Clicked="btnSelect_Clicked">
+                            <ImageButton.Source>
+                                <FontImageSource
+                                    FontFamily="MaterialIconsOutlined-Regular"
+                                    Glyph="&#xe5ca;"
+                                    Color="White"
+                                    Size="28"                                   
+                                />
+                            </ImageButton.Source>
+                            <ImageButton.Shadow>
+                                    <Shadow Brush="Gray"
+                                        Offset="20,20"
+                                        Radius="40"
+                                        Opacity="0.8" />
+                            </ImageButton.Shadow>
+                    </ImageButton>
+                </FlexLayout>              
+        </VerticalStackLayout>
+</ContentPage>

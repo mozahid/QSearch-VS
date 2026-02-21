@@ -17,6 +17,8 @@ static void xamarin_invoke_registration_methods ()
 
 extern void *mono_aot_module_aot_instances_info;
 extern void *mono_aot_module_QSearch_info;
+extern void *mono_aot_module_CommunityToolkit_Maui_info;
+extern void *mono_aot_module_CommunityToolkit_Maui_Core_info;
 extern void *mono_aot_module_Microsoft_Extensions_Configuration_info;
 extern void *mono_aot_module_Microsoft_Extensions_Configuration_Abstractions_info;
 extern void *mono_aot_module_Microsoft_Extensions_DependencyInjection_info;
@@ -25,6 +27,7 @@ extern void *mono_aot_module_Microsoft_Extensions_Logging_info;
 extern void *mono_aot_module_Microsoft_Extensions_Logging_Abstractions_info;
 extern void *mono_aot_module_Microsoft_Extensions_Options_info;
 extern void *mono_aot_module_Microsoft_Extensions_Primitives_info;
+extern void *mono_aot_module_Microsoft_Maui_Controls_Compatibility_info;
 extern void *mono_aot_module_Microsoft_Maui_Controls_info;
 extern void *mono_aot_module_Microsoft_Maui_Controls_Xaml_info;
 extern void *mono_aot_module_Microsoft_Maui_info;
@@ -34,8 +37,8 @@ extern void *mono_aot_module_SQLite_net_info;
 extern void *mono_aot_module_SQLitePCLRaw_batteries_v2_info;
 extern void *mono_aot_module_SQLitePCLRaw_core_info;
 extern void *mono_aot_module_SQLitePCLRaw_provider_sqlite3_info;
-extern void *mono_aot_module_Plugin_LatestVersionStore_info;
 extern void *mono_aot_module_System_Collections_Concurrent_info;
+extern void *mono_aot_module_System_Collections_Immutable_info;
 extern void *mono_aot_module_System_Collections_NonGeneric_info;
 extern void *mono_aot_module_System_Collections_Specialized_info;
 extern void *mono_aot_module_System_Collections_info;
@@ -51,6 +54,7 @@ extern void *mono_aot_module_System_Linq_Expressions_info;
 extern void *mono_aot_module_System_Linq_info;
 extern void *mono_aot_module_System_Memory_info;
 extern void *mono_aot_module_System_Net_Http_info;
+extern void *mono_aot_module_System_Net_Mail_info;
 extern void *mono_aot_module_System_Net_Primitives_info;
 extern void *mono_aot_module_System_Net_Requests_info;
 extern void *mono_aot_module_System_Net_Security_info;
@@ -65,7 +69,6 @@ extern void *mono_aot_module_System_Runtime_Loader_info;
 extern void *mono_aot_module_System_Runtime_info;
 extern void *mono_aot_module_System_Security_Cryptography_info;
 extern void *mono_aot_module_System_Text_RegularExpressions_info;
-extern void *mono_aot_module_System_Threading_Tasks_info;
 extern void *mono_aot_module_System_Threading_Thread_info;
 extern void *mono_aot_module_System_Threading_info;
 extern void *mono_aot_module_System_Xml_ReaderWriter_info;
@@ -78,6 +81,8 @@ void xamarin_register_modules_impl ()
 {
 	mono_aot_register_module (mono_aot_module_aot_instances_info);
 	mono_aot_register_module (mono_aot_module_QSearch_info);
+	mono_aot_register_module (mono_aot_module_CommunityToolkit_Maui_info);
+	mono_aot_register_module (mono_aot_module_CommunityToolkit_Maui_Core_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Extensions_Configuration_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Extensions_Configuration_Abstractions_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Extensions_DependencyInjection_info);
@@ -86,6 +91,7 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_Microsoft_Extensions_Logging_Abstractions_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Extensions_Options_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Extensions_Primitives_info);
+	mono_aot_register_module (mono_aot_module_Microsoft_Maui_Controls_Compatibility_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Maui_Controls_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Maui_Controls_Xaml_info);
 	mono_aot_register_module (mono_aot_module_Microsoft_Maui_info);
@@ -95,8 +101,8 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_SQLitePCLRaw_batteries_v2_info);
 	mono_aot_register_module (mono_aot_module_SQLitePCLRaw_core_info);
 	mono_aot_register_module (mono_aot_module_SQLitePCLRaw_provider_sqlite3_info);
-	mono_aot_register_module (mono_aot_module_Plugin_LatestVersionStore_info);
 	mono_aot_register_module (mono_aot_module_System_Collections_Concurrent_info);
+	mono_aot_register_module (mono_aot_module_System_Collections_Immutable_info);
 	mono_aot_register_module (mono_aot_module_System_Collections_NonGeneric_info);
 	mono_aot_register_module (mono_aot_module_System_Collections_Specialized_info);
 	mono_aot_register_module (mono_aot_module_System_Collections_info);
@@ -112,6 +118,7 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_System_Linq_info);
 	mono_aot_register_module (mono_aot_module_System_Memory_info);
 	mono_aot_register_module (mono_aot_module_System_Net_Http_info);
+	mono_aot_register_module (mono_aot_module_System_Net_Mail_info);
 	mono_aot_register_module (mono_aot_module_System_Net_Primitives_info);
 	mono_aot_register_module (mono_aot_module_System_Net_Requests_info);
 	mono_aot_register_module (mono_aot_module_System_Net_Security_info);
@@ -126,7 +133,6 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_System_Runtime_info);
 	mono_aot_register_module (mono_aot_module_System_Security_Cryptography_info);
 	mono_aot_register_module (mono_aot_module_System_Text_RegularExpressions_info);
-	mono_aot_register_module (mono_aot_module_System_Threading_Tasks_info);
 	mono_aot_register_module (mono_aot_module_System_Threading_Thread_info);
 	mono_aot_register_module (mono_aot_module_System_Threading_info);
 	mono_aot_register_module (mono_aot_module_System_Xml_ReaderWriter_info);
@@ -140,6 +146,10 @@ void xamarin_register_modules_impl ()
 void xamarin_register_assemblies_impl ()
 {
 	GCHandle exception_gchandle = INVALID_GCHANDLE;
+	xamarin_open_and_register ("CommunityToolkit.Maui.Core.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
+	xamarin_open_and_register ("Microsoft.Maui.Controls.Compatibility.dll", &exception_gchandle);
+	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Microsoft.Maui.Controls.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 	xamarin_open_and_register ("Microsoft.Maui.dll", &exception_gchandle);

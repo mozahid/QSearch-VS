@@ -4,11 +4,12 @@
 <dict>
   <key>UIAppFonts</key>
   <array>
+	<string>AlQalam.ttf</string>
+	<string>IndoPak.ttf</string>
+	<string>Lateef-Bold.ttf</string>
 	<string>MaterialIcons-Regular.ttf</string>
 	<string>MaterialIconsOutlined-Regular.otf</string>
 	<string>NotoNaskhArabic-Regular.ttf</string>
-	<string>OpenSans-Regular.ttf</string>
-	<string>OpenSans-Semibold.ttf</string>
   </array>
 
 </dict>

@@ -1,1 +1,0 @@
-<layer-list android:opacity="opaque" xmlns:android="http://schemas.android.com/apk/res/android"><item android:drawable="@color/maui_splash_color" /><item android:width="108dp" android:height="108dp" android:gravity="fill"><bitmap android:gravity="center" android:src="@drawable/qssplash" android:mipMap="true" /></item></layer-list>

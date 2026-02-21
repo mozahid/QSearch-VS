@@ -4,15 +4,90 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:QSearch"
-    Shell.FlyoutBehavior="Disabled">
-
+    Shell.FlyoutBehavior="Flyout"
+    Shell.TabBarIsVisible="false"
+    >
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="DarkGreen"
+                  HeightRequest="50">
+                <Image Aspect="AspectFit"
+                       Source="qssplash.png"
+                       Opacity="0.6" />
+            </Grid>            
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <Shell.Resources>   
+        <!--  other code  -->
+        <!--  add style here  -->
+    <Style Class="FlyoutItemLabelStyle" TargetType="Label"> 
+            <Setter Property="FontFamily" Value="Tahoma" />
+            <Setter Property="FontSize"   Value="Medium" />
+            <Setter Property="TextColor" Value="Blue" />
+            <Setter Property="BackgroundColor" Value="Ghostwhite" />
+        </Style>
+    </Shell.Resources>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
+        Title="Search" 
+        ContentTemplate="{DataTemplate local:QSearch}">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe8b6;" />
+        </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+            Title="Bookmarks" Route="Bookmark"
+            ContentTemplate="{DataTemplate local:Bookmark}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe866;" />
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+            Title="Recite Surah"
+            ContentTemplate="{DataTemplate local:OptionSurah}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe8de;" />
+            </ShellContent.Icon>
+        </ShellContent>   
+        <ShellContent
+            Title="Recite Para"
+            ContentTemplate="{DataTemplate local:OptionPara}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xea19;" />
+            </ShellContent.Icon>
+        </ShellContent>    
+        <ShellContent
+            Title="Statistics" Route="Stats"
+            ContentTemplate="{DataTemplate local:QStats}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xef3e;" />
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+        Title="Goto Chapter" Route="OptionGoto"
+        ContentTemplate="{DataTemplate local:OptionGoto}">
+        <ShellContent.Icon>
+            <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xf8ce;" />
+        </ShellContent.Icon>
+        </ShellContent>
+    </FlyoutItem>
+    <MenuFlyoutItem Text="Sujood Verses" Clicked="MenuFlyoutItem_Clicked" >
+        <MenuFlyoutItem.IconImageSource>
+            <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xeab2;" />
+        </MenuFlyoutItem.IconImageSource>
+    </MenuFlyoutItem>
+    <MenuFlyoutItem Text="Prophet Duas" Clicked="MenuFlyoutItem_Clicked1" >
+        <MenuFlyoutItem.IconImageSource>
+            <!-- <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xf5ed;" /> -->
+            <FileImageSource File="folded_hands" />
+        </MenuFlyoutItem.IconImageSource>
+    </MenuFlyoutItem>
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:QSearch}"
-        Route="QSearch" />
-    <ShellContent
-        Title="Surah"
-        ContentTemplate="{DataTemplate local:RSurah}"
-        Route="RSurah" />
+    Title="About" Route="About"
+    ContentTemplate="{DataTemplate local:About}">
+    <ShellContent.Icon>
+        <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe88e;" />
+    </ShellContent.Icon>
+    </ShellContent> 
 </Shell>
 

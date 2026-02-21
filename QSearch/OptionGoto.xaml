@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.OptionGoto"
+             Title="Goto Surah Verse">
+            <VerticalStackLayout>
+            <SearchBar x:Name="srchChapter"
+                        BackgroundColor="WhiteSmoke"
+                        Placeholder="Search chapter number..."
+                        TextColor="Blue"
+                        CancelButtonColor="White"
+                        MaxLength="3"
+                        SearchButtonPressed="srchChapter_SearchButtonPressed"
+                        ReturnType="Search"
+                        TextChanged="srchChapter_TextChanged"
+                   />
+                <ActivityIndicator 
+                        x:Name="progInd"
+                        IsRunning="False"
+                        IsVisible="False"
+                        Color="Blue"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                />
+                <Grid Padding="5" BackgroundColor="SlateBlue">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="100" />                        
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Surah Number" TextColor="White" FontAttributes="Bold" WidthRequest="95" Grid.Row="0" Grid.Column="0" />
+                    <Label Text="Chapter/Surah Name" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
+                    <Label Text="Total Verses" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End" />
+                </Grid>          
+                    <Grid Padding="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                            <RowDefinition Height="auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition  />
+                            <ColumnDefinition />
+                            <ColumnDefinition  />
+                            <ColumnDefinition  />
+                        </Grid.ColumnDefinitions>           
+                            <Border Stroke="LightGray" StrokeThickness="1" Margin="5,5" Grid.Row="0" Grid.ColumnSpan="4" >                           
+                            <CollectionView x:Name="lstSurah"
+                                        BackgroundColor="White"
+                                        SelectionMode="Single"
+                                        DescendantAdded="lstSurah_DescendantAdded"
+                                        SelectionChanged="lstSurah_SelectionChanged1"
+                                        >
+                                <CollectionView.ItemTemplate>
+                                    <DataTemplate>                                       
+                                            <Grid Padding="5">
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="auto" />
+                                                            <RowDefinition />
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="95"/>
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="100" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <VisualStateManager.VisualStateGroups>
+                                                        <VisualStateGroup Name="CommonStates">
+                                                            <VisualState Name="Normal"></VisualState>
+                                                            <VisualState Name="Selected">
+                                                                <VisualState.Setters>
+                                                                    <Setter Property="BackgroundColor" Value="LightSkyBlue"></Setter>
+                                                                </VisualState.Setters>
+                                                            </VisualState>                                
+                                                        </VisualStateGroup>
+                                                    </VisualStateManager.VisualStateGroups>
+                                                        <Label Grid.Row="0" Grid.Column="0">
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                    <Span Text="{Binding chapter_number}" TextColor="Red" FontAttributes="Bold" />
+                                                                    <Span Text="." FontAttributes="Bold" />
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                        </Label>
+                                                        <Label Grid.Row="0" Grid.Column="1">
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                    <Span Text="{Binding chapter_name_arabic}" FontAttributes="Bold" TextColor="Black" />
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                        </Label>
+                                                        <Label Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End">
+                                                            <Label.FormattedText>
+                                                                <FormattedString>
+                                                                    <Span Text="{Binding total_verses}" FontAttributes="Bold" TextColor="Black" />
+                                                                </FormattedString>
+                                                            </Label.FormattedText>
+                                                        </Label>                                                        
+                                                        <BoxView Color="LightGray" Grid.Row="1" Grid.ColumnSpan="3"
+                                                                    HeightRequest="2"
+                                                                    HorizontalOptions="Fill" />                           
+                                                    </Grid>      
+                                    </DataTemplate>
+                                </CollectionView.ItemTemplate>
+                            </CollectionView>
+                            </Border>  
+                            <Label Text="Chapter Verses" FontSize="Medium" TextColor="Blue" FontAttributes="Bold" TextDecorations="Underline" Grid.Row="1" Grid.ColumnSpan="4" />
+                            <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="4" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                                    <Label Text="From: " VerticalOptions="Center"  />
+                                    <Entry x:Name="chapterFrom" MaxLength="3" FontSize="Small" Text="1" TextChanged="chapterFrom_TextChanged" />
+                                    <Label Text="To: " VerticalOptions="Center"  />
+                                    <Entry x:Name="chapterTo" MaxLength="3"  FontSize="Small" Text="1"  TextChanged="chapterTo_TextChanged" />
+                            </HorizontalStackLayout>
+
+                            <FlexLayout HorizontalOptions="Center" Grid.Row="3" Grid.ColumnSpan="4">
+                                    <ImageButton x:Name="btnSelect"  BackgroundColor="Teal" Clicked="btnSelect_Clicked">
+                                            <ImageButton.Source>
+                                                <FontImageSource
+                                                    FontFamily="MaterialIconsOutlined-Regular"
+                                                    Glyph="&#xe5ca;"
+                                                    Color="White"
+                                                    Size="28"                                   
+                                                />
+                                            </ImageButton.Source>
+                                            <ImageButton.Shadow>
+                                                    <Shadow Brush="Gray"
+                                                        Offset="20,20"
+                                                        Radius="40"
+                                                        Opacity="0.8" />
+                                            </ImageButton.Shadow>
+                                    </ImageButton>
+                            </FlexLayout>  
+                    </Grid>
+
+        </VerticalStackLayout>
+</ContentPage>

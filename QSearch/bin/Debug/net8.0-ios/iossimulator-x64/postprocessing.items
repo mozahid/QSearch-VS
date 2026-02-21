@@ -8,9 +8,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>QSearch.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch/obj/Debug/net8.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Volumes/easystore/ProjectQ-Aug-2025/ProjectQ/Q-Search/QSearch/QSearch/obj/Debug/net8.0-ios/iossimulator-x64/mtouch-symbols.list</SymbolFile>
       <DSymName>QSearch.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/MZee/Documents/ProjectQ/Q-Search/QSearch/QSearch</SourceProjectPath>
+      <SourceProjectPath>/Volumes/easystore/ProjectQ-Aug-2025/ProjectQ/Q-Search/QSearch/QSearch</SourceProjectPath>
       <IsXPCService></IsXPCService>
     </_PostProcessingItem>
   </ItemGroup>
