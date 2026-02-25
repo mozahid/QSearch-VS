@@ -18,7 +18,8 @@ public partial class OptionSurah : ContentPage
 		if (selectedSurah != null)
         {
 			var chapter = selectedSurah.chapter_number;
-			await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter}", false);
+			//await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter}", false);
+            await Shell.Current.GoToAsync($"Surah?chapter={chapter}", false);
         }
     }
 

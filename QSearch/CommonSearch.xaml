@@ -168,10 +168,26 @@
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold,Italic"
-                                                TextType="Html"
+                                                TextType="Text">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding title}" TextColor="Blue" BackgroundColor="WhiteSmoke" TextDecorations="Underline" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                                </Label>
+                                            <Label 
+                                                FontSize="Medium"
+                                                FontAttributes="Bold,Italic"
+                                                TextType="Text"
                                                 TextColor="Teal"
-                                                LineBreakMode="WordWrap"
-                                                Text="{Binding tafsir}" />                                            
+                                                Text="{Binding tafsir}" />
+                                            <Label Text="&#10;" />
+                                            <Label 
+                                                FontSize="Small"
+                                                FontAttributes="Italic"
+                                                TextType="Text"
+                                                TextColor="Silver"
+                                                Text="{Binding translation_ref}" />                                                                                        
                                             <Label Text="&#10;" />
                                     </VerticalStackLayout>
                                 </Border> 

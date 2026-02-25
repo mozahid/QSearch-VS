@@ -20,7 +20,8 @@ public partial class OptionPara : ContentPage
 		if (selectedPara != null)
         {
 			var para = selectedPara.para_number;
-			await Shell.Current.GoToAsync($"Wait?pagename=para&pagenumber={para}", false);
+			//await Shell.Current.GoToAsync($"Wait?pagename=para&pagenumber={para}", false);
+            await Shell.Current.GoToAsync($"Para?para={para}", false);
         }
     }
 

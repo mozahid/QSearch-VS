@@ -46,8 +46,8 @@ public partial class Bookmark : ContentPage
         if (selectedBM != null)
         {
 			var chapter = selectedBM.chapter_number;
-			//await Shell.Current.GoToAsync($"Surah?chapter={chapter}",true);
-            await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter}",false);
+			await Shell.Current.GoToAsync($"Surah?chapter={chapter}",true);
+            //await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter}",false);
         }
     }
     private void lstBM_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -116,7 +116,7 @@ namespace QSearch
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <returns></returns>
-        public async Task<List<Verse>> GetProphetDua(string prophet, int chapter, int from, int to, string tafsir)
+        public async Task<List<Verse>> GetProphetDua(string prophet,int chapter, int from, int to,string title, string tafsir)
         {
             Init();
             object[] p = { chapter, from, to };
@@ -126,8 +126,10 @@ namespace QSearch
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
             foreach(Verse v in rset)
             {
-                v.prophet = "Dua of " + prophet + " (AS)";
+                v.prophet = "Dua of " + prophet + (prophet == "Muhammad" ? " (SAW)" : " (AS)");
+                v.title = title;
                 v.tafsir = tafsir;
+                v.translation_ref = "duasofprophets.com";
             }
                 
             return rset;

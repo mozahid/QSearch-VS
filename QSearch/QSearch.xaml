@@ -232,6 +232,7 @@
                                                 FontSize="Large"
                                                 Text="{Binding verse_arabic}" FontFamily="{Binding font}"
                                                 TextType="Html"
+                                                VerticalOptions="Start"
                                                 TextColor="Green">
                                             </Label> 
                                             <FlexLayout JustifyContent="Center">

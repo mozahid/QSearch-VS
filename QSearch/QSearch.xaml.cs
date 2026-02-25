@@ -222,7 +222,8 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                             if (!dB.prepositions.Contains(srch))
                                 v.verse_english = v.verse_english.Replace(srch, "<span style=\"background-color:yellow\">" + srch + "</span>", StringComparison.CurrentCultureIgnoreCase);
                         }
-                        v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                        if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                            v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                     }
                 }
             }
@@ -266,12 +267,15 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                             // highlight only if found //
                             if (found)
                             {
-                                v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>") + "</p>";
+                                v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
+                                if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                    v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                             }
                         }
                         else
                         {
-                            v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                                if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                    v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                         }
                     }
                 }
