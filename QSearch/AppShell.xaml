@@ -4,16 +4,45 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:QSearch"
-    Shell.FlyoutBehavior="Flyout"
-    Shell.TabBarIsVisible="false"
-    >
+    Shell.FlyoutBehavior="Flyout" 
+    Shell.TabBarIsVisible="false">
+    <Shell.FlyoutBackdrop>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="Silver"
+                          Offset="0.1" />
+            <GradientStop Color="SeaGreen"
+                          Offset="0.6" />
+            <GradientStop Color="Green"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </Shell.FlyoutBackdrop>
     <Shell.FlyoutHeaderTemplate>
         <DataTemplate>
-            <Grid BackgroundColor="DarkGreen"
-                  HeightRequest="50">
+            <Grid HeightRequest="50" BackgroundColor="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*" />                     
+                    </Grid.ColumnDefinitions>
                 <Image Aspect="AspectFit"
                        Source="qssplash.png"
-                       Opacity="0.6" />
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       Opacity="0.8" />
+                <Label
+                    FontSize="Large"
+                    Text="Quran Search"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalTextAlignment="Start"
+                    VerticalOptions="Center"
+                    Padding="5"
+                    BackgroundColor="White"
+                    >
+                </Label>
             </Grid>            
         </DataTemplate>
     </Shell.FlyoutHeaderTemplate>
@@ -57,37 +86,65 @@
             </ShellContent.Icon>
         </ShellContent>    
         <ShellContent
-            Title="Statistics" Route="Stats"
+            Title="Statistics"
             ContentTemplate="{DataTemplate local:QStats}">
             <ShellContent.Icon>
                 <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xef3e;" />
             </ShellContent.Icon>
         </ShellContent>
         <ShellContent
-        Title="Goto Chapter" Route="OptionGoto"
+        Title="Goto Chapter"
         ContentTemplate="{DataTemplate local:OptionGoto}">
-        <ShellContent.Icon>
-            <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xf8ce;" />
-        </ShellContent.Icon>
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xf8ce;" />
+            </ShellContent.Icon>
         </ShellContent>
+        <ShellContent
+            Title="Sujood Verses">
+            <ShellContent.ContentTemplate>
+                <DataTemplate>
+                    <local:CommonSearch Item="Sujood" />
+                </DataTemplate>
+            </ShellContent.ContentTemplate>
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xeab2;" />
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+            Title="Prophet's Duas">
+            <ShellContent.ContentTemplate>
+                <DataTemplate>
+                    <local:CommonSearch Item="Dua" />
+                </DataTemplate>
+            </ShellContent.ContentTemplate>
+            <ShellContent.Icon>
+                <FileImageSource File="folded_hands.png" />
+            </ShellContent.Icon>
+        </ShellContent>
+        <ShellContent
+            Title="About" Route="About"
+            ContentTemplate="{DataTemplate local:About}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe88e;" />
+            </ShellContent.Icon>
+        </ShellContent> 
+        <!-- <ShellContent
+            Title="Test" Route="Test"
+            ContentTemplate="{DataTemplate local:Test}">
+            <ShellContent.Icon>
+                <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe88e;" />
+            </ShellContent.Icon>
+        </ShellContent>  -->
     </FlyoutItem>
-    <MenuFlyoutItem Text="Sujood Verses" Clicked="MenuFlyoutItem_Clicked" >
+</Shell>
+    <!-- <MenuFlyoutItem x:Name="mnuSujood" Text="Sujood Verses" Clicked="MenuFlyoutItem_Clicked" >
         <MenuFlyoutItem.IconImageSource>
             <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xeab2;" />
         </MenuFlyoutItem.IconImageSource>
     </MenuFlyoutItem>
-    <MenuFlyoutItem Text="Prophet Duas" Clicked="MenuFlyoutItem_Clicked1" >
+    <MenuFlyoutItem x:Name="mnuProphet" Text="Prophet Duas" Clicked="MenuFlyoutItem_Clicked1" >
         <MenuFlyoutItem.IconImageSource>
-            <!-- <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xf5ed;" /> -->
-            <FileImageSource File="folded_hands" />
+            <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xf5ed;" /> 
+            <FileImageSource File="folded_hands.png" />
         </MenuFlyoutItem.IconImageSource>
-    </MenuFlyoutItem>
-    <ShellContent
-    Title="About" Route="About"
-    ContentTemplate="{DataTemplate local:About}">
-    <ShellContent.Icon>
-        <FontImageSource FontFamily="MaterialIconsOutlined-Regular" Size="24" Color="DarkRed" Glyph="&#xe88e;" />
-    </ShellContent.Icon>
-    </ShellContent> 
-</Shell>
-
+    </MenuFlyoutItem> -->

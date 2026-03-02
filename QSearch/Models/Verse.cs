@@ -21,7 +21,8 @@
         public string font { get; set; }
         // for storing sujood mark ///
         public string verse_arabic_end { get; set;}
-        public string prophet   {get;set;}
+        public string prophet {get;set;}
+        public string title {get;set;}
         public string tafsir {get;set; }
         public string translation_ref {get;set;}
     }

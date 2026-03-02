@@ -1,4 +1,6 @@
-﻿namespace QSearch;
+﻿
+
+namespace QSearch;
 
 public partial class App : Application
 {
@@ -17,6 +19,8 @@ public partial class App : Application
         InitializeComponent();
         var MainPage = Application.Current.Windows.FirstOrDefault()?.Page;
         Task.Run(async () => { await CopyFileToAppDataDirectory("quran.sqlite"); });
+        Application.Current.UserAppTheme = AppTheme.Light;
+        
     }
 
     protected override Window CreateWindow(IActivationState? activationState)

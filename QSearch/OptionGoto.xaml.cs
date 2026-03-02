@@ -13,15 +13,15 @@ public partial class OptionGoto : ContentPage
      int selectedChapter = 1;
 	 int verse_count = 1;
 
-	public OptionGoto(QuranDB qdb)
-	{
-		InitializeComponent();
-		dB = qdb;
-		progress = new Progress(progInd);
-		srchChapter.Keyboard = Keyboard.Numeric;
-		chapterFrom.Keyboard = Keyboard.Numeric;
-		chapterTo.Keyboard = Keyboard.Numeric;
-	}
+    public OptionGoto(QuranDB qdb)
+    {
+        InitializeComponent();
+        dB = qdb;
+        progress = new Progress(progInd);
+        srchChapter.Keyboard = Keyboard.Numeric;
+        chapterFrom.Keyboard = Keyboard.Numeric;
+        chapterTo.Keyboard = Keyboard.Numeric;
+    }
 
     private void lstSurah_DescendantAdded(object sender, ElementEventArgs e)
     {
@@ -49,9 +49,9 @@ public partial class OptionGoto : ContentPage
         {
             lstSurah.HeightRequest = screenHeight - 350;
         }
+        await Task.Delay(50);
         surahs = await dB.GetSurahList();
 		lstSurah.ItemsSource = surahs;
-        Application.Current.UserAppTheme = AppTheme.Light;
     }
 	/// <summary>
     /// on search bar button press

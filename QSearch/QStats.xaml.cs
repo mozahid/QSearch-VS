@@ -1,12 +1,8 @@
-﻿using System.Threading.Tasks;
-using QSearch.Models;
-namespace QSearch;
+﻿namespace QSearch;
 
 public partial class QStats : ContentPage
 {
     QuranDB dB;
-    OptionsData ret = new OptionsData();
-
     public QStats(QuranDB qdb)
     {
         InitializeComponent();

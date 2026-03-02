@@ -99,7 +99,7 @@
                         VerticalScrollBarVisibility="Always" >
                             <CollectionView.GroupHeaderTemplate>
                                 <DataTemplate>
-                                <Grid HorizontalOptions="Fill" HeightRequest="90">
+                                <Grid HorizontalOptions="Fill">
                                     <Grid.RowDefinitions>
                                         <RowDefinition />
                                         <RowDefinition />
@@ -116,8 +116,9 @@
                                             Grid.ColumnSpan="3"
                                             Grid.RowSpan="3"
                                             Opacity="0.8"
-                                            Source="qs_hdr4"
-                                            Aspect="Fill" />
+                                            Source="qs_hdr4.png"
+                                            Aspect="Fill"
+                                            HeightRequest="90" />
                                     <Border
                                         Grid.Row="0"
                                         Grid.RowSpan="3"

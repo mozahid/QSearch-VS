@@ -129,7 +129,7 @@
                                                             Opacity="0.8" />
                                             </Border.Shadow>
                                         <VerticalStackLayout>
-                                        <Grid HorizontalOptions="Fill" RowSpacing="1" HeightRequest="90">
+                                        <Grid HorizontalOptions="Fill" RowSpacing="1">
                                             <Grid.RowDefinitions>
                                                 <RowDefinition />
                                                 <RowDefinition />
@@ -146,8 +146,9 @@
                                                 Grid.ColumnSpan="3"
                                                 Grid.RowSpan="3"
                                                 Opacity="0.8"
-                                                Source="qs_hdr4"
-                                                Aspect="Fill" />
+                                                Source="qs_hdr4.png"
+                                                Aspect="Fill"
+                                                HeightRequest="95" />
                                                 <Label
                                                     FontSize="Small"
                                                     TextColor="SlateBlue"
@@ -232,7 +233,10 @@
                                                 FontSize="Large"
                                                 Text="{Binding verse_arabic}" FontFamily="{Binding font}"
                                                 TextType="Html"
-                                                TextColor="Green">
+                                                VerticalOptions="Start"
+                                                HorizontalOptions="End"
+                                                HorizontalTextAlignment="End"
+                                                >
                                             </Label> 
                                             <FlexLayout JustifyContent="Center">
                                                 <Label

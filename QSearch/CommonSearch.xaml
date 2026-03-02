@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QSearch.CommonSearch"
+             xmlns:local="clr-namespace:QSearch"
              Title="CommonSearch">
     <VerticalStackLayout>
         <ActivityIndicator 
@@ -34,8 +35,9 @@
                                                             Opacity="0.8" />
                                             </Border.Shadow>
                                         <VerticalStackLayout>
-                                        <Grid HorizontalOptions="Fill" RowSpacing="1" HeightRequest="90">
+                                        <Grid HorizontalOptions="Fill" RowSpacing="1">
                                             <Grid.RowDefinitions>
+                                                <RowDefinition />
                                                 <RowDefinition />
                                                 <RowDefinition />
                                                 <RowDefinition />
@@ -48,18 +50,18 @@
                                             <Image
                                                 Grid.Row="0"
                                                 Grid.Column="0"
-                                                Grid.RowSpan="3"
+                                                Grid.RowSpan="4"
                                                 Grid.ColumnSpan="3"
-                                                Source="qs_hdr4"
-                                                Aspect="Fill" />
+                                                Source="qs_hdr4.png"
+                                                Aspect="Fill"
+                                                HeightRequest="{Binding number}" />
                                                 <Label
                                                     FontSize="Small"
                                                     TextColor="SlateBlue"
                                                     HorizontalOptions="Start"
-                                                    VerticalOptions="Center"
                                                     Grid.Row="0"
                                                     Grid.Column="0"
-                                                    Padding="5,10,0,0" >
+                                                    Padding="5,15,0,0" >
                                                     <Label.FormattedText>     
                                                         <FormattedString>
                                                             <Span Text="{Binding para_name}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
@@ -75,10 +77,9 @@
                                                     TextColor="SlateBlue"
                                                     FontAttributes="Bold"
                                                     HorizontalOptions="End"
-                                                    VerticalOptions="Center"
                                                     Grid.Row="0"
                                                     Grid.Column="2"
-                                                    Padding="0,10,5,0"
+                                                    Padding="0,15,5,0"
                                                     >
                                                     <Label.FormattedText>
                                                         <FormattedString>
@@ -95,18 +96,32 @@
                                                     Grid.Row="1"
                                                     Grid.Column="0"
                                                     Grid.ColumnSpan="3"
-                                                    HorizontalOptions="Center" >
-                                                    <Label.FormattedText>
+                                                    HorizontalOptions="Center" 
+                                                    VerticalOptions="Center" >
+                                                        <Label.FormattedText>
                                                             <FormattedString>
-                                                                <Span Text="{Binding chapter_name_arabic}" FontAttributes="Bold" FontSize="Large" />
+                                                                <Span Text="{Binding chapter_name_arabic}" FontAttributes="Bold" FontSize="Title" />
                                                             </FormattedString>    
                                                         </Label.FormattedText>
                                                     </Label>
                                                     <Label 
-                                                        FontSize="Small"
-                                                        FontFamily="NotoArabic"
-                                                        TextColor="SlateBlue"
+                                                        FontSize="Medium"
+                                                        FontAttributes="Bold"
+                                                        FontFamily="Tahoma"
                                                         Grid.Row="2"
+                                                        Grid.Column="0"
+                                                        Grid.ColumnSpan="3"
+                                                        HorizontalOptions="Center">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="{Binding prophet}" TextColor="White" BackgroundColor="Green"/>
+                                                            </FormattedString>    
+                                                        </Label.FormattedText>
+                                                    </Label> 
+                                                    <Label 
+                                                        FontSize="Small"
+                                                        TextColor="SlateBlue"
+                                                        Grid.Row="3"
                                                         Grid.Column="0"
                                                         HorizontalOptions="Start"
                                                         Margin="5,0,0,0"
@@ -116,24 +131,10 @@
                                                                 <Span Text="{Binding chapter_name_english}" BackgroundColor="WhiteSmoke"/>
                                                             </FormattedString>    
                                                         </Label.FormattedText>
-                                                    </Label>
-                                                    <Label 
-                                                        FontSize="Medium"
-                                                        FontAttributes="Bold"
-                                                        FontFamily="Tahoma"
-                                                        Grid.Row="2"
-                                                        Grid.Column="1"
-                                                        HorizontalOptions="Center"
-                                                        Margin="0,3,0,3">
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="{Binding prophet}" TextColor="White" BackgroundColor="Green"/>
-                                                            </FormattedString>    
-                                                        </Label.FormattedText>
-                                                    </Label>                                                    
+                                                    </Label>                                                
                                                     <Label
                                                             HorizontalOptions="End"
-                                                            Grid.Row="2"
+                                                            Grid.Row="3"
                                                             Grid.Column="2"
                                                             Padding="0,0,10,0"
                                                             >
@@ -143,7 +144,7 @@
                                                                         <Span Text="{Binding chapter_number}" FontSize="Small" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
                                                                 </FormattedString>
                                                             </Label.FormattedText>
-                                                    </Label>
+                                                    </Label>   
                                             </Grid>
                                             <Label
                                                 FontAttributes="Bold"
@@ -152,7 +153,7 @@
                                                 >
                                                 <Label.FormattedText>
                                                     <FormattedString>
-                                                        <Span Text="{Binding verse_arabic}" FontFamily="{Binding font}" TextColor="Maroon" FontSize="Large" />
+                                                        <Span Text="{Binding verse_arabic}" FontFamily="{Binding font}" TextColor="Green" FontSize="Large" />
                                                         <Span Text="{Binding verse_arabic_end}" TextColor="White" FontSize="Title" BackgroundColor="Red" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
@@ -168,10 +169,26 @@
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold,Italic"
-                                                TextType="Html"
+                                                TextType="Text">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding title}" TextColor="Blue" BackgroundColor="WhiteSmoke" TextDecorations="Underline" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                                </Label>
+                                            <Label 
+                                                FontSize="Medium"
+                                                FontAttributes="Bold,Italic"
+                                                TextType="Text"
                                                 TextColor="Teal"
-                                                LineBreakMode="WordWrap"
-                                                Text="{Binding tafsir}" />                                            
+                                                Text="{Binding tafsir}" />
+                                            <Label Text="&#10;" />
+                                            <Label 
+                                                FontSize="Small"
+                                                FontAttributes="Italic"
+                                                TextType="Text"
+                                                TextColor="Silver"
+                                                Text="{Binding translation_ref}" />                                                                                        
                                             <Label Text="&#10;" />
                                     </VerticalStackLayout>
                                 </Border> 
