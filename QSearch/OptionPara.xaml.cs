@@ -20,7 +20,6 @@ public partial class OptionPara : ContentPage
 		if (selectedPara != null)
         {
 			var para = selectedPara.para_number;
-			//await Shell.Current.GoToAsync($"Wait?pagename=para&pagenumber={para}", false);
             await Shell.Current.GoToAsync($"Para?para={para}", false);
         }
     }
@@ -45,6 +44,5 @@ public partial class OptionPara : ContentPage
   		List<Para> para_list = await dB.GetParaList();
         lstPara.ItemsSource = para_list;
 		lstPara.HeightRequest = screenHeight - 220;
-        Application.Current.UserAppTheme = AppTheme.Light;
     }
 }

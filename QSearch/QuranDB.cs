@@ -129,7 +129,7 @@ namespace QSearch
                 v.prophet = "Dua of " + prophet + (prophet == "Muhammad" ? " (SAW)" : " (AS)");
                 v.title = title;
                 v.tafsir = tafsir;
-                v.translation_ref = "duasofprophets.com";
+                v.translation_ref = prophet == "Muhammad" ? "" : "duasofprophets.com";
             }
                 
             return rset;

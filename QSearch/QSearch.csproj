@@ -52,7 +52,7 @@
   		<EnablePackageSigning>true</EnablePackageSigning>
   		<CreatePackage>true</CreatePackage>
 	  	<CodesignKey>Apple Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
-	  	<CodesignProvision>Automatic</CodesignProvision>
+	  	<CodesignProvision>MZee MacOS Catalyst Distribution</CodesignProvision>
 	  	<EnablePackageSigning>true</EnablePackageSigning>
 		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
 		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
@@ -160,7 +160,6 @@
 	  <BundleResource Include="Resources\Raw\quran.sqlite" />
 	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
 	  <BundleResource Include="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
-	  <BundleResource Include="Resources\Images\tick_mark.svg" />
 	  <BundleResource Include="Resources\Images\tick_mark1.svg" />
 	  <BundleResource Include="Resources\Fonts\IndoPak.ttf" />
 	  <BundleResource Include="Resources\Fonts\Lateef-Bold.ttf" />

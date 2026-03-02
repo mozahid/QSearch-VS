@@ -2,14 +2,13 @@ using System.Web;
 namespace QSearch;
 
 [QueryProperty(nameof(item), "item")]
-public partial class CommonSearch : ContentPage, IQueryAttributable
+public partial class CommonSearch : ContentPage
 {
 	public string item{get;set;}
 	 QuranDB dB;
 	 List<Verse> Verses = new List<Verse>();
     Progress progress;
-	string[,] duas = new string[35,6] {{"Adam","7","23","23", 
-									  "Dua for Forgiveness","When Adam (AS) and Hawwa (AS) disobeyed Allah by eating from the forbidden tree, they immediately repented with this heartfelt dua, showing humility, remorse, and recognition of Allah’s mercy."},
+	string[,] duas = new string[45,6] {{"Adam","7","23","23","Dua for Forgiveness","When Adam (AS) and Hawwa (AS) disobeyed Allah by eating from the forbidden tree, they immediately repented with this heartfelt dua, showing humility, remorse, and recognition of Allah’s mercy."},
 									  {"Nuh","11","41","41","Dua for Traveling","When Nuh (AS) boarded the ship."},
 									  {"Nuh","11","47","47","Dua for Forgiveness","After asking Allah about saving his son from the flood, Allah reminded Nuh (AS) that his son was not among the righteous. Nuh (AS) immediately sought forgiveness, showing submission and repentance."},
 									  {"Nuh","23","26","26","Dua for Adversity","After tirelessly calling his people to Allah for centuries, Prophet Nuh (AS) faced persistent rejection, ridicule, and denial from his community. In this moment of despair, he turned to Allah alone for support and vindication, showing that true help comes only from the Creator when human efforts are exhausted."},
@@ -43,36 +42,126 @@ public partial class CommonSearch : ContentPage, IQueryAttributable
 									  {"Musa","7","155","155","Dua for Protection, Forgiveness and Mercy","This dua was made by Prophet Musa (AS) in regards to his people, the Israelites, after they had repeatedly disobeyed Allah, even after receiving His signs and guidance. When they suffered from a series of calamities as a result of their transgressions, Musa (AS) interceded on their behalf, pleading for Allah’s forgiveness and mercy."},
 									  {"Dawood","2","250","250","Dua for Patience and Victory","This du'a was recited by the faithful soldiers of King Talut (Saul) as they stood before the battle against Jalut (Goliath)and his forces. The army had been greatly reduced in number due to a divine test, and only the most sincere believers remained.\n Soon after this dua was made, Prophet Dawud (AS) — then a young man in the army — stepped forward to challenge Jalut (Goliath) and slew him by Allah’s will. This marked his rise as a divinely favored leader and prophet."},
 									  {"Suleman","27","19","19","Dua for Gratitude","This dua was made by Prophet Sulaiman (AS) after witnessing an extraordinary event: he understood the speech of an ant warning its colony to avoid harm from his approaching army. This incident reminded him of Allah’s immense favors—the gift of understanding animals, prophetic wisdom, and kingship."},
-									  {"Suleman","38","35","35","Dua for Power and Wealth","This dua was made by Prophet Sulaiman (AS) after he was tested and repented to Allah for an earlier shortcoming. Some narrations mention he became momentarily distracted from his worship due to his love of fine horses, and he turned to Allah seeking forgiveness.\n In this powerful moment, Prophet Sulaiman (AS) asked Allah not only for forgiveness, but also for a unique and unmatched kingdom, one that no one else would ever possess after him."}};
+									  {"Suleman","38","35","35","Dua for Power and Wealth","This dua was made by Prophet Sulaiman (AS) after he was tested and repented to Allah for an earlier shortcoming. Some narrations mention he became momentarily distracted from his worship due to his love of fine horses, and he turned to Allah seeking forgiveness.\n In this powerful moment, Prophet Sulaiman (AS) asked Allah not only for forgiveness, but also for a unique and unmatched kingdom, one that no one else would ever possess after him."},
+									  {"Younus","21","87","87","Dua for Forgiveness","This heartfelt dua was made by Prophet Yunus (AS) while he was in the belly of the great fish. He had left his people prematurely, frustrated by their rejection of his message, and boarded a ship. When a storm hit, he was thrown overboard and swallowed by the fish as a consequence of his action.\nInside the darkness—of the sea, the night, and the creature—Prophet Yunus sincerely repented, recognizing his mistake."},
+									  {"Zakariya","21","89","89","Dua for a Heir","This dua was made by Prophet Zakariya (AS) during his old age. He and his wife were childless, and he longed for a righteous heir to continue the legacy of prophethood and guide the Children of Israel. Despite his advanced age and his wife's barrenness, he turned to Allah with sincere hope and humility, recognizing that Allah alone has the power to grant life."},
+									  {"Zakariya","3","38","38","Dua for Pious Offspring","This heartfelt prayer was made by Prophet Zakariya (AS) when he saw Maryam (AS) receiving provisions (fresh fruits) from Allah in her sanctuary without anyone bringing them. This sign deeply moved him and inspired hope in Allah’s unlimited mercy and power.\nDespite his old age and his wife’s barrenness, Zakariya (AS) turned to Allah with full trust, asking not just for a child, but for a righteous and blessed offspring."},
+									  {"Isa","3","114","114","Dua for Provision","This dua was made by Prophet Isa (AS)at the request of his disciples, who asked for a miraculous table spread with food from the heavens as a sign of reassurance and divine support.\n Prophet Isa (AS) made this dua, asking Allah to send down the table as a sign, a source of celebration, and sustenance for all – both those present and those to come."},
+									  {"Muhammad","2","201","201","Dua for Goodness",""},
+									  {"Muhammad","3","173","173","Dua of Trust","It was famously recited by the prophet Muhammad (SAW) like his grandfather Ibrahim(AS)."},
+									  {"Muhammad","20","114","114","Dua for Increased Knowledge",""},
+									  {"Muhammad","23","118","118","Dua for Forgiveness",""},
+									  {"Muhammad","113","1","1","Dua for Protection from Evil","When prophet Muhammad(SAW) was afflicted with magic, this was revealed to neautralize sorcery."},
+									  {"Muhammad","114","1","1","Dua for Protection from Evil","When prophet Muhammad(SAW) was afflicted with magic, this was revealed to neautralize sorcery."}};
+	public CommonSearch()
+	{
+		InitializeComponent();
+		progress = new Progress(progInd);
+	}
 	public CommonSearch(QuranDB qdb)
 	{
 		InitializeComponent();
 		dB = qdb;
 		progress = new Progress(progInd);
+	}   
+	public static readonly BindableProperty ItemProperty = 
+	BindableProperty.Create("Item", typeof(string), typeof(CommonSearch));
 
+	public string Item
+	{
+		get => (string)GetValue(ItemProperty);
+		set => SetValue(ItemProperty, value);
 	}
-	    public async void ApplyQueryAttributes(IDictionary<string, object> query)
+	//     public async void ApplyQueryAttributes(IDictionary<string, object> query)
+    // {
+    //     string item = HttpUtility.UrlDecode(query["item"].ToString());
+	// 	progress.ShowProgress();
+    //     await Task.Delay(50);
+	// 	switch(item)
+	// 	{
+	// 		case "Sujood":
+	// 			this.Title = "Sujood Verses";
+	// 			Verses = await dB.GetSujoodVerses();
+	// 			foreach (var _v in Verses)
+	// 			{
+	// 				_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
+	// 				_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
+	// 				_v.verse_arabic_end = "۩";
+	// 				// height of header //
+	// 				_v.number = 120;
+	// 			}
+	// 		break;
+	// 		default:
+	// 			this.Title = "Prophet Duas in the Quran";
+	// 			progress.ShowProgress();
+	// 			int _vcount = 0;
+	// 			for(int p=0; p < duas.GetLength(0); p++)
+	// 			{
+	// 				var v = await dB.GetProphetDua(duas[p,0], Convert.ToInt32(duas[p,1]), Convert.ToInt32(duas[p, 2]), Convert.ToInt32(duas[p, 3]), duas[p,4], duas[p,5]);
+	// 				_vcount = 1;
+	// 				foreach(var _v in v)
+	// 				{
+	// 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
+	// 					// height of header //
+	// 					_v.number = 125;
+	// 					if (_v.verse_arabic.Contains("۩"))
+	// 					{
+	// 						_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
+	// 						_v.verse_arabic_end = "۩";
+	// 					}
+	// 					// combine multiple verses as one unit
+	// 					if (v.Count > 1)
+	// 					{
+	// 					    if (_vcount == 1) Verses.Add(_v);
+	// 						else
+	// 						{
+	// 							Verses[Verses.Count - 1].verse_arabic += "\n" + _v.verse_arabic;
+	// 							Verses[Verses.Count - 1].verse_english += "\n" + _v.verse_english;
+	// 							Verses[Verses.Count - 1].verse_arabic_end +=  _v.verse_arabic_end;
+	// 						}
+	// 						_vcount++;
+	// 					}
+	// 					else 
+	// 						Verses.Add(_v);
+	// 				}
+	// 			}
+	// 		break;
+	// 	}
+	// 	lstView.ItemsSource = Verses;
+	// 	progress.HideProgress();
+    // }
+	/// <summary>
+	/// when the form loads
+	/// </summary>
+    protected override async void OnAppearing()
     {
-        string item = HttpUtility.UrlDecode(query["item"].ToString());
-        
-		switch(item)
+        base.OnAppearing();
+		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
+        lstView.IsVisible = true;
+        lstView.HeightRequest = screenHeight - 200;
+		progress.ShowProgress();
+		if (Item == "Sujood")
 		{
-			case "Sujood":
+				await Task.Delay(100);
 				this.Title = "Sujood Verses";
-				progress.ShowProgress();
+				dB = new QuranDB();
 				Verses = await dB.GetSujoodVerses();
 				foreach (var _v in Verses)
 				{
 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 					_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 					_v.verse_arabic_end = "۩";
-				}
-				lstView.ItemsSource = Verses;
-				progress.HideProgress();
-			break;
-			default:
+					// height of header //
+					_v.number = 120;
+				}	
+				lstView.HeightRequest = screenHeight - 150;
+		}
+		else
+		{
+				await Task.Delay(25);
 				this.Title = "Prophet Duas in the Quran";
-				progress.ShowProgress();
+				dB = new QuranDB();
+
 				int _vcount = 0;
 				for(int p=0; p < duas.GetLength(0); p++)
 				{
@@ -81,7 +170,8 @@ public partial class CommonSearch : ContentPage, IQueryAttributable
 					foreach(var _v in v)
 					{
 						_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-
+						// height of header //
+						_v.number = 125;
 						if (_v.verse_arabic.Contains("۩"))
 						{
 							_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
@@ -103,19 +193,8 @@ public partial class CommonSearch : ContentPage, IQueryAttributable
 							Verses.Add(_v);
 					}
 				}
-				lstView.ItemsSource = Verses;
-				progress.HideProgress();
-			break;
 		}
-    }
-	/// <summary>
-	/// when the form loads
-	/// </summary>
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
-		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
-        lstView.IsVisible = true;
-        lstView.HeightRequest = screenHeight - 200;
+		lstView.ItemsSource = Verses;
+		progress.HideProgress();
     }
 }

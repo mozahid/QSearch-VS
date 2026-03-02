@@ -18,7 +18,6 @@ public partial class OptionSurah : ContentPage
 		if (selectedSurah != null)
         {
 			var chapter = selectedSurah.chapter_number;
-			//await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter}", false);
             await Shell.Current.GoToAsync($"Surah?chapter={chapter}", false);
         }
     }
@@ -38,12 +37,11 @@ public partial class OptionSurah : ContentPage
         base.OnAppearing();
 		List<Surah> s = lstSurah.ItemsSource as List<Surah>;
 		if (s != null && s.Count > 0) progress.HideProgress();
-		progress.ShowProgress();
+		if (lstSurah.ItemsSource == null) progress.ShowProgress();
 		 double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         List<Surah> surahs = await dB.GetSurahList();
 		lstSurah.ItemsSource = surahs;
 		lstSurah.HeightRequest = screenHeight - 220;
-        Application.Current.UserAppTheme = AppTheme.Light;
     }
 
 }

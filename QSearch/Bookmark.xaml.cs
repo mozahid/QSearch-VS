@@ -34,7 +34,6 @@ public partial class Bookmark : ContentPage
         lstBM.ItemsSource = _bm;
         if (_bm.Count == 0) btnSelect.IsEnabled = false;
         else btnSelect.IsEnabled = true;
-        Application.Current.UserAppTheme = AppTheme.Light;
     }
     /// <summary>
     /// to select the bookmark
@@ -47,7 +46,6 @@ public partial class Bookmark : ContentPage
         {
 			var chapter = selectedBM.chapter_number;
 			await Shell.Current.GoToAsync($"Surah?chapter={chapter}",true);
-            //await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter}",false);
         }
     }
     private void lstBM_SelectionChanged(object sender, SelectionChangedEventArgs e)

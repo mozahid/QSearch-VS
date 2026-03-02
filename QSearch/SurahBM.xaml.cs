@@ -39,7 +39,6 @@ public partial class SurahBM : ContentPage
         }
         lstBM.ItemsSource = _bm;
         if (_bm.Count == 0) btnSelect.IsEnabled = false;
-        Application.Current.UserAppTheme = AppTheme.Light;
     }
     protected override async void OnDisappearing()
     {

@@ -102,6 +102,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             return;
         }
         imgNotes.IsVisible = false;
+        await Task.Delay(50);
         progress.ShowProgress();
 
         Verses = new List<Verse>();
@@ -232,7 +233,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 // multiple words //
                 for (int i = 0; i < words.Length; i++)
                 {
-                    srch = words[i];
+                    srch = words[i].Trim();
                     foreach (Verse v in Verses)
                     {
                         var loc = v.verse_arabic_clean.IndexOf(srch);
@@ -254,14 +255,16 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                     continue;
                                 }
                                 var w_normal = normalize(w);
-                                if (w_normal.TrimEnd() == srch) found = true;
+                                if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
+                                {
+                                    found = true;
+                                }
                                 else
                                 {
                                     w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
                                     w_normal = normalize(w);
-                                    if (w_normal.TrimEnd() == srch)
-                                        found = true;
-                                   else loc += 1;
+                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) found = true;
+                                    else loc += 1;
                                 }
                             }
                             // highlight only if found //
