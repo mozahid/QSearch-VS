@@ -20,10 +20,10 @@
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.3.0</ApplicationDisplayVersion>
-		<ApplicationVersion>15.3.0</ApplicationVersion>
+		<ApplicationDisplayVersion>6.3.1</ApplicationDisplayVersion>
+		<ApplicationVersion>15.3.1</ApplicationVersion>
 		<!-- Android Only-->
-		<AndroidVersionCode>33</AndroidVersionCode>
+		<AndroidVersionCode>35</AndroidVersionCode>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>

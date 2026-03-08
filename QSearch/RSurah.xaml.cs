@@ -239,7 +239,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
         if (chapter_no > 1)
         {
             chapter_no -= 1;
-            await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter_no}", false);
+            await Shell.Current.GoToAsync($"Surah?chapter={chapter_no}", false);
         }
     }
     /// <summary>
@@ -252,7 +252,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
         if (chapter_no < 114)
         {
             chapter_no += 1;
-            await Shell.Current.GoToAsync($"Wait?pagename=surah&pagenumber={chapter_no}", false);
+            await Shell.Current.GoToAsync($"Surah?chapter={chapter_no}", false);
         }
     }
 }
