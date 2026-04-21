@@ -19,6 +19,7 @@ public static class MauiProgram
                 fonts.AddFont("Lateef-Bold.ttf", "LateefR");
                 fonts.AddFont("IndoPak.ttf", "IndoPak");
                 fonts.AddFont("AlQalam.ttf", "AlQalam");
+                fonts.AddFont("OpenSansRegular.ttf", "OpenSansRegular");
             })
         .UseSentry(options => {
       // The DSN is the only required setting.
