@@ -243,6 +243,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[0]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[0]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[0]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[0]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -259,6 +260,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[1]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[1]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[1]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[1]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -275,6 +277,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[2]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[2]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[2]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[2]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -291,6 +294,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[3]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[3]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[3]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[3]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -307,6 +311,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[4]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[4]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[4]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[4]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -323,6 +328,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[5]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[5]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[5]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[5]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -339,6 +345,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[6]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[6]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[6]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[6]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -355,6 +362,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[7]}" TextColor="White" BackgroundColor="Red"  />
                                                         <Span Text="{Binding verse_arabic_lines_number[7]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[7]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[7]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -371,6 +379,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[8]}" TextColor="White"  BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[8]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[8]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[8]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -387,6 +396,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[9]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[9]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[9]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[9]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -403,6 +413,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[10]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[10]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[10]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[10]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -419,6 +430,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[11]}" TextColor="White" BackgroundColor="Red"  />
                                                         <Span Text="{Binding verse_arabic_lines_number[11]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[11]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[11]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -435,6 +447,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[12]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[12]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[12]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[12]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -451,6 +464,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[13]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[13]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[13]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[13]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -467,6 +481,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[14]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[14]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[14]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[14]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -483,6 +498,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[15]}" TextColor="White"  BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[15]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[15]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[15]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -499,6 +515,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[16]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[16]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[16]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[16]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -515,6 +532,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[17]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[17]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[17]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[17]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -531,6 +549,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[18]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[18]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[18]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[18]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -547,6 +566,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[19]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[19]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[19]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[19]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -563,6 +583,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[20]}" TextColor="White"  BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[20]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[20]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[20]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -579,6 +600,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[21]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[21]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[21]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[21]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -595,6 +617,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[22]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[22]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[22]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[22]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -611,6 +634,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[23]}" TextColor="White" BackgroundColor="Red"  />
                                                         <Span Text="{Binding verse_arabic_lines_number[23]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[23]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[23]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
@@ -627,6 +651,7 @@
                                                         <Span Text="{Binding verse_arabic_line_end[24]}" TextColor="White" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[24]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_english_lines[24]}" FontFamily="Tahoma" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding english_ref_lines[24]}" FontSize="Micro" TextColor="SkyBlue" />
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>

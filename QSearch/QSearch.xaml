@@ -272,7 +272,12 @@
                                                 TextType="Html"
                                                 LineBreakMode="WordWrap"
                                                 Text="{Binding verse_english}" />
-                                            <Label Text="&#10;" />
+                                            <Label Text="&#10;" />                                                
+                                            <Label
+                                                FontSize="Micro"
+                                                TextColor="SkyBlue"
+                                                HorizontalTextAlignment="Center"
+                                                Text="{Binding english_ref}" />
                                     </VerticalStackLayout>
                                 </Border> 
                         </DataTemplate>

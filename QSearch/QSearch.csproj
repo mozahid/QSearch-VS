@@ -157,7 +157,6 @@
 	  <BundleResource Include="Resources\Fonts\Tahoma.ttf" />
 	  <BundleResource Include="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <BundleResource Include="Resources\Fonts\MaterialIconsOutlined-Regular.otf" />
-	  <BundleResource Include="Resources\Raw\quran.sqlite" />
 	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
 	  <BundleResource Include="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
 	  <BundleResource Include="Resources\Images\tick_mark1.svg" />

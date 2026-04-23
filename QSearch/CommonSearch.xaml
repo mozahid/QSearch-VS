@@ -166,6 +166,12 @@
                                                 LineBreakMode="WordWrap"
                                                 Margin="0,0,0,3"
                                                 Text="{Binding verse_english}" />
+                                            <!-- <Label Text="&#10;" /> -->
+                                            <Label
+                                                FontSize="Micro"
+                                                TextColor="SkyBlue"
+                                                HorizontalTextAlignment="Center"
+                                                Text="{Binding english_ref}" />
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold,Italic"
@@ -182,14 +188,12 @@
                                                 TextType="Text"
                                                 TextColor="Teal"
                                                 Text="{Binding tafsir}" />
-                                            <Label Text="&#10;" />
                                             <Label 
                                                 FontSize="Small"
                                                 FontAttributes="Italic"
                                                 TextType="Text"
                                                 TextColor="Silver"
-                                                Text="{Binding translation_ref}" />                                                                                        
-                                            <Label Text="&#10;" />
+                                                Text="{Binding translation_ref}" /> 
                                     </VerticalStackLayout>
                                 </Border> 
                         </DataTemplate>

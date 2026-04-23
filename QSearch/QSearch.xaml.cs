@@ -103,8 +103,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             return;
         }
         imgNotes.IsVisible = false;
-        await Task.Delay(50);
+        lstView.ItemsSource = null;
         progress.ShowProgress();
+        await Task.Delay(50);
 
         Verses = new List<Verse>();
         string[] words = txt.Text.Trim().Split(' ');
@@ -171,7 +172,6 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 Verses = await dB.GetArabicVerseAsync(words);
             }
         }
-
         result.IsVisible = false;
         // databinding the listview //
         foreach (var _v in Verses)
@@ -194,10 +194,10 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             result.IsVisible = true;
             total.Text = Verses.Count.ToString();
             lstView.HeightRequest = screenHeight - 250;
-            if (lstView.IsLoaded)
-            {
-                lstView.ScrollTo(0, position: ScrollToPosition.Start, animate: false);
-            }
+            // if (lstView.IsLoaded)
+            // {
+            //     lstView.ScrollTo(0, position: ScrollToPosition.Start, animate: false);
+            // }
             if (IsEnglish)
             {
                 for (int i = 0; i < words.Length; i++)

@@ -151,6 +151,8 @@ public partial class CommonSearch : ContentPage
 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 					_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 					_v.verse_arabic_end = "۩";
+					_v.tafsir = "";
+					_v.translation_ref = "";
 					// height of header //
 					_v.number = 120;
 				}	
