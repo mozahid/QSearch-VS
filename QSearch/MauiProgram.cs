@@ -20,6 +20,7 @@ public static class MauiProgram
                 fonts.AddFont("IndoPak.ttf", "IndoPak");
                 fonts.AddFont("AlQalam.ttf", "AlQalam");
                 fonts.AddFont("OpenSansRegular.ttf", "OpenSansRegular");
+                fonts.AddFont("MeQuran.ttf", "MeQuran");
             })
         .UseSentry(options => {
       // The DSN is the only required setting.
@@ -33,7 +34,7 @@ public static class MauiProgram
                     options.DiagnosticLevel = SentryLevel.Error;
                     options.SendDefaultPii = true;
     // This option is recommended. It enables Sentry's "Release Health" feature.
-                    options.AutoSessionTracking = true;
+                    options.AutoSessionTracking = false;
     // Enabling this option is recommended for client applications only. It ensures all threads use the same global scope.
                     options.IsGlobalModeEnabled = false;
     // Example sample rate for your transactions: captures 10% of transactions

@@ -131,6 +131,7 @@
                         <CollectionView.GroupHeaderTemplate>
                             <DataTemplate>
                             <Grid HorizontalOptions="Fill"
+                                  HeightRequest="90"
                                   >
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
@@ -149,8 +150,7 @@
                                         Grid.RowSpan="3"
                                         Opacity="0.8"
                                         Source="qs_hdr4.png"
-                                        Aspect="Fill"
-                                        HeightRequest="90" />
+                                        Aspect="Fill" />
                                 <Border
                                     Grid.Row="0"
                                     Grid.RowSpan="3"
@@ -833,4 +833,5 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView> -->
     </VerticalStackLayout>
+    
 </ContentPage>

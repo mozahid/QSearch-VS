@@ -16,7 +16,8 @@
         </Border.Shadow>
         <Grid HorizontalOptions="Fill" BackgroundColor="White">
             <Grid.RowDefinitions>
-                <RowDefinition />
+                <RowDefinition  />
+                <RowDefinition  />
                 <RowDefinition  />
                 <RowDefinition  />
                 <RowDefinition  />
@@ -168,6 +169,27 @@
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center"
                         Grid.Row="6"
+                        Grid.Column="1"
+                        >
+                    </Label>
+                    <Label
+                        Text="Total Quranic Words"
+                        TextColor="Gray"
+                        FontSize="Medium"
+                        Grid.Row="7"
+                        Grid.Column="0"
+                        Padding="5"
+                        HeightRequest="45"
+                        >
+                    </Label>
+                    <Label
+                        x:Name="lTotalWords"
+                        TextColor="SteelBlue"
+                        FontAttributes="Bold"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="7"
                         Grid.Column="1"
                         >
                     </Label>

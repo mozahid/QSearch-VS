@@ -140,6 +140,29 @@ namespace QSearch
   
         }
         /// <summary>
+        /// Sakina verses for tranquility and mental peace
+        /// </summary>
+        ///     
+        /// <returns></returns>
+        public async Task<List<Verse>> GetSakinaVerses(string header, int chapter, int from, int to, string title, string tafsir)
+        {
+            Init();
+            object[] p = { chapter, from, to };
+            string query = "SELECT verses.*, QSearch.verse_english, QSearch.english_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number ";
+            query += "WHERE verses.chapter_number = ? and verses.verse_number between ? and ? ";
+
+            List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
+            foreach(Verse v in rset)
+            {
+                v.prophet = header;
+                v.title = title;
+                v.tafsir = tafsir;
+            }
+                
+            return rset;
+  
+        }
+        /// <summary>
         /// multiple word search in english translation, excluding prepositions
         /// </summary>
         /// <param name="srch"></param>
@@ -360,6 +383,19 @@ namespace QSearch
 
             var _t = await QDB.QueryScalarsAsync<int>(query, p);
             return _t.Count();
+        }
+        /// <summary>
+        /// total words in the quran, excluding prepositions
+        /// </summary>
+        /// <returns></returns>
+        public async Task<int> GetTotalWords()
+        {
+            Init();
+            object[] p = { };
+            string query = "SELECT SUM(total_words_arabic) FROM verses ";
+
+            var _t = await QDB.ExecuteScalarAsync<int>(query, p);
+            return _t;
         }
         ///////////////// QURAN STATISTICS/////////////////////
 

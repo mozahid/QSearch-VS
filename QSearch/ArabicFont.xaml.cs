@@ -26,6 +26,9 @@ public partial class ArabicFont : ContentPage
             case "IndoPak":
                 radIndoPak.IsChecked = true;
                 break;
+            case "MeQuran":
+                radMeQuran.IsChecked = true;
+                break;
         }
         _taskCompletionSource = new TaskCompletionSource<OptionsData>();
         ReturnValue = new OptionsData();
@@ -85,11 +88,12 @@ public partial class ArabicFont : ContentPage
             Font2.BackgroundColor = Colors.Transparent;
             Font3.BackgroundColor = Colors.Transparent;
             Font4.BackgroundColor = Colors.Transparent;
+            Font5.BackgroundColor = Colors.Transparent;
             radNaksh.BackgroundColor = Colors.Transparent;
             radLateef.BackgroundColor = Colors.Transparent;
             radAlQalam.BackgroundColor = Colors.Transparent;
             radIndoPak.BackgroundColor = Colors.Transparent;
-            
+            radMeQuran.BackgroundColor = Colors.Transparent;
             switch (rad.Value)
             {
                 case "1":
@@ -111,6 +115,11 @@ public partial class ArabicFont : ContentPage
                     _font = "IndoPak";
                     radIndoPak.BackgroundColor = Colors.LightSkyBlue;
                     Font4.BackgroundColor = Colors.LightSkyBlue;
+                    break;
+                case "5":
+                    _font = "MeQuran";
+                    radMeQuran.BackgroundColor = Colors.LightSkyBlue;
+                    Font5.BackgroundColor = Colors.LightSkyBlue;
                     break;
             }
         }

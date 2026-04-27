@@ -7,7 +7,7 @@
              ios:Page.ModalPresentationStyle="OverFullScreen"
              NavigationPage.HasBackButton="False"
              Title="Arabic Font">
-        <VerticalStackLayout BackgroundColor="White" HeightRequest="420">
+        <VerticalStackLayout BackgroundColor="White" HeightRequest="440">
                     <Border BackgroundColor="SlateBlue" HorizontalOptions="Fill">
                         <Label Text="Available fonts"
                             HorizontalOptions="Center"
@@ -20,6 +20,7 @@
                                 Padding="5,5">
                         <Grid>
                             <Grid.RowDefinitions>
+                                <RowDefinition />
                                 <RowDefinition />
                                 <RowDefinition />
                                 <RowDefinition />
@@ -95,6 +96,21 @@
                                 Grid.Column="1"
                                 FontSize="Title">
                             </Label>
+                            <RadioButton Content=" "
+                                x:Name="radMeQuran"
+                                HeightRequest="64"
+                                Value="5"
+                                GroupName="Arabic"
+                                Grid.Row="4"
+                                Grid.Column="0"
+                                CheckedChanged="radFont_CheckedChanged" />
+                            <Label
+                                x:Name="Font5"
+                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
+                                FontFamily="MeQuran"
+                                Grid.Row="4"
+                                Grid.Column="1"
+                                FontSize="Title" />
                         </Grid>
                     </Border>
                 <FlexLayout HorizontalOptions="Center">
