@@ -53,6 +53,12 @@ public partial class CommonSearch : ContentPage
 									  {"Muhammad","23","118","118","Dua for Forgiveness",""},
 									  {"Muhammad","113","1","1","Dua for Protection from Evil","When prophet Muhammad(SAW) was afflicted with magic, this was revealed to neautralize sorcery."},
 									  {"Muhammad","114","1","1","Dua for Protection from Evil","When prophet Muhammad(SAW) was afflicted with magic, this was revealed to neautralize sorcery."}};
+	string[,] sakina = new string[6,6] {{"Sakina Verse 1","2","248","248","Background","The people of Israel were looking for a king and asked their prophet, Samuel to appoint one for them. Samuel told them the sign would be that Ark of the Covenant would come to them. When the Ark came, it was a sign of Allah’s tranquility (sakina) descending upon them, and they were filled with awe and reverence for Allah."},
+										{"Sakina Verse 2","9","26","26","Background","When the Muslims were besieged in the Battle of Badr, they were outnumbered and outmatched by the Quraysh army. In this moment of extreme danger, Allah sent down sakina (tranquility) to calm their hearts and strengthen their resolve. This divine tranquility gave them the courage and confidence to face their enemies, leading to a decisive victory despite the odds."},
+										{"Sakina Verse 3","9","40","40","Background","When the prophet was migrating from Makkah to Madinah, he and his companion Abu Bakr were pursued by the Quraysh. They took refuge in a cave, and the Quraysh searched for them relentlessly. In this moment of extreme danger, Allah sent down sakina (tranquility) to calm the prophet’s heart and protect him from harm. The Quraysh were unable to find them, and the prophet was able to safely complete his migration."},
+										{"Sakina Verse 4","48","4","4","Background","This verse was revealed around the time of the Treaty of Hudaybiyyah, a tense moment where Muslims faced uncertainty, yet divine peace allowed them to maintain steadiness and obedience."},
+										{"Sakina Verse 5","48","18","18","Background","This refers to the oath of loyalty taken by 1,400 Muslims to stand by the Prophet (PBUH) when rumors suggested that Uthman ibn Affan had been killed in Mecca. This moment of tension was met with divine tranquility, allowing the Muslims to remain calm and united in their support for the Prophet (PBUH) during a critical time."},
+										{"Sakina Verse 6","48","26","26","Background","The disbelievers (Quraysh) acted out of 'pagan pride' refusing to allow Muslims to perform Umrah, breaking ancient Arab traditions to save face, despite knowing the Muslims were in the right. God sent calm into the hearts of the believers. This enabled them to remain patient, disciplined, and obedient to the Prophet instead of attacking, despite being prepared to fight."}};
 	public CommonSearch()
 	{
 		InitializeComponent();
@@ -72,67 +78,6 @@ public partial class CommonSearch : ContentPage
 		get => (string)GetValue(ItemProperty);
 		set => SetValue(ItemProperty, value);
 	}
-	//     public async void ApplyQueryAttributes(IDictionary<string, object> query)
-    // {
-    //     string item = HttpUtility.UrlDecode(query["item"].ToString());
-	// 	progress.ShowProgress();
-    //     await Task.Delay(50);
-	// 	switch(item)
-	// 	{
-	// 		case "Sujood":
-	// 			this.Title = "Sujood Verses";
-	// 			Verses = await dB.GetSujoodVerses();
-	// 			foreach (var _v in Verses)
-	// 			{
-	// 				_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-	// 				_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
-	// 				_v.verse_arabic_end = "۩";
-	// 				// height of header //
-	// 				_v.number = 120;
-	// 			}
-	// 		break;
-	// 		default:
-	// 			this.Title = "Prophet Duas in the Quran";
-	// 			progress.ShowProgress();
-	// 			int _vcount = 0;
-	// 			for(int p=0; p < duas.GetLength(0); p++)
-	// 			{
-	// 				var v = await dB.GetProphetDua(duas[p,0], Convert.ToInt32(duas[p,1]), Convert.ToInt32(duas[p, 2]), Convert.ToInt32(duas[p, 3]), duas[p,4], duas[p,5]);
-	// 				_vcount = 1;
-	// 				foreach(var _v in v)
-	// 				{
-	// 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-	// 					// height of header //
-	// 					_v.number = 125;
-	// 					if (_v.verse_arabic.Contains("۩"))
-	// 					{
-	// 						_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
-	// 						_v.verse_arabic_end = "۩";
-	// 					}
-	// 					// combine multiple verses as one unit
-	// 					if (v.Count > 1)
-	// 					{
-	// 					    if (_vcount == 1) Verses.Add(_v);
-	// 						else
-	// 						{
-	// 							Verses[Verses.Count - 1].verse_arabic += "\n" + _v.verse_arabic;
-	// 							Verses[Verses.Count - 1].verse_english += "\n" + _v.verse_english;
-	// 							Verses[Verses.Count - 1].verse_arabic_end +=  _v.verse_arabic_end;
-	// 						}
-	// 						_vcount++;
-	// 					}
-	// 					else 
-	// 						Verses.Add(_v);
-	// 				}
-	// 			}
-	// 		break;
-	// 	}
-	// 	lstView.ItemsSource = Verses;
-	// 	progress.HideProgress();
-    // }
-	/// <summary>
-	/// when the form loads
-	/// </summary>
     protected override async void OnAppearing()
     {
         base.OnAppearing();
@@ -144,6 +89,7 @@ public partial class CommonSearch : ContentPage
 		{
 				await Task.Delay(100);
 				this.Title = "Sujood Verses";
+				lblPreface.Text = "These verses are the ones where the Prophet Muhammad (SAW) and believers prostrated in worship to Allah. They are moments of deep humility, submission, and connection with the Divine, often revealed in response to profound events or messages.";
 				dB = new QuranDB();
 				Verses = await dB.GetSujoodVerses();
 				foreach (var _v in Verses)
@@ -151,17 +97,21 @@ public partial class CommonSearch : ContentPage
 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 					_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 					_v.verse_arabic_end = "۩";
+					_v.tafsir = "";
+					_v.translation_ref = "";
 					// height of header //
 					_v.number = 120;
 				}	
 				lstView.HeightRequest = screenHeight - 150;
 		}
-		else
+
+		else if (Item == "Dua")
 		{
 				await Task.Delay(25);
 				this.Title = "Prophet Duas in the Quran";
+				lblPreface.Text = "These are the duas (supplications) made by the Prophets mentioned in the Quran. They cover a wide range of themes, including seeking forgiveness, asking for guidance, protection from harm, and expressing gratitude. Each dua reflects the unique circumstances and challenges faced by the Prophets, as well as their deep connection with Allah." ;
 				dB = new QuranDB();
-
+				Verses = new List<Verse>();
 				int _vcount = 0;
 				for(int p=0; p < duas.GetLength(0); p++)
 				{
@@ -193,6 +143,28 @@ public partial class CommonSearch : ContentPage
 							Verses.Add(_v);
 					}
 				}
+		}
+		else if (Item == "Sakina")
+		{
+				await Task.Delay(25);
+				this.Title = "Tranquility Verses(Sakina)";
+				lblPreface.Text = "These verses are the ones where Allah sent down tranquility (sakina) to calm the hearts of the believers during moments of extreme danger, tension, or uncertainty. They are powerful reminders of Allah’s support and presence in times of trial, showing that true peace and strength come from reliance on the Creator. Recite all of them after obligatory prayers to receive the benefits of sakina in your life.";	
+				dB = new QuranDB();
+				Verses = new List<Verse>();
+				for(int p=0; p < sakina.GetLength(0); p++)
+				{
+
+					var v = await dB.GetSakinaVerses(sakina[p,0], Convert.ToInt32(sakina[p,1]), Convert.ToInt32(sakina[p, 2]), Convert.ToInt32(sakina[p, 3]), sakina[p,4], sakina[p,5]);
+					foreach (var _v in v)
+					{
+						_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
+						_v.translation_ref = "";
+						// height of header //
+						_v.number = 120;
+						Verses.Add(_v);
+					}	
+				}
+				lstView.HeightRequest = screenHeight - 150;
 		}
 		lstView.ItemsSource = Verses;
 		progress.HideProgress();

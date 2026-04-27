@@ -20,10 +20,10 @@
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.3.0</ApplicationDisplayVersion>
-		<ApplicationVersion>15.3.0</ApplicationVersion>
+		<ApplicationDisplayVersion>6.3.3</ApplicationDisplayVersion>
+		<ApplicationVersion>15.3.3</ApplicationVersion>
 		<!-- Android Only-->
-		<AndroidVersionCode>33</AndroidVersionCode>
+		<AndroidVersionCode>37</AndroidVersionCode>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
@@ -157,7 +157,6 @@
 	  <BundleResource Include="Resources\Fonts\Tahoma.ttf" />
 	  <BundleResource Include="Resources\Fonts\MaterialIcons-Regular.ttf" />
 	  <BundleResource Include="Resources\Fonts\MaterialIconsOutlined-Regular.otf" />
-	  <BundleResource Include="Resources\Raw\quran.sqlite" />
 	  <BundleResource Include="Resources\AppIcon\appicon.svg" />
 	  <BundleResource Include="Resources\Fonts\NotoNaskhArabic-Regular.ttf" />
 	  <BundleResource Include="Resources\Images\tick_mark1.svg" />
@@ -167,7 +166,6 @@
 	  <BundleResource Include="Resources\Images\qsearch_hdr4.svg" />
 	</ItemGroup>
 	<ItemGroup>
-	  <MauiFont Remove="Resources\Fonts\Tahoma.ttf" />
 	  <MauiFont Remove="Resources\Fonts\AlQuran-IndoPak-by-QuranWBW.v.4.2.2-WL.ttf" />
 	</ItemGroup>
 	<ItemGroup>

@@ -121,6 +121,16 @@
                 <FileImageSource File="folded_hands.png" />
             </ShellContent.Icon>
         </ShellContent>
+        <ShellContent Title="Tranquility Verses (Sakina)">
+            <ShellContent.ContentTemplate>
+                <DataTemplate>
+                    <local:CommonSearch Item="Sakina" />
+                </DataTemplate>
+            </ShellContent.ContentTemplate>
+            <ShellContent.Icon>
+                <FileImageSource File="relax.png" />
+            </ShellContent.Icon>
+        </ShellContent>
         <ShellContent
             Title="About" Route="About"
             ContentTemplate="{DataTemplate local:About}">

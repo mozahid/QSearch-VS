@@ -13,11 +13,37 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
             />
+            <Border Stroke="LightGray"
+                    StrokeThickness="2"
+                    Padding="5">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Border.Background>
+                    <!-- StartPoint defaults to (0,0)      
+                        Endpoint defaults to (1,1) -->
+                    <LinearGradientBrush>
+                        <GradientStop Color="whitesmoke"
+                                    Offset="0.1" />
+                        <GradientStop Color="lightskyblue"
+                                    Offset="1.0" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label
+                    x:Name="lblPreface"
+                    Text=""
+                    FontSize="Medium"
+                    FontAttributes="Bold,Italic"
+                    TextColor="Teal" />
+            </Border>
            <CollectionView
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
                     VerticalScrollBarVisibility="Always" >
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" />
+                    </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                         <DataTemplate>
                                     <Border
@@ -166,6 +192,12 @@
                                                 LineBreakMode="WordWrap"
                                                 Margin="0,0,0,3"
                                                 Text="{Binding verse_english}" />
+                                            <!-- <Label Text="&#10;" /> -->
+                                            <Label
+                                                FontSize="Micro"
+                                                TextColor="SkyBlue"
+                                                HorizontalTextAlignment="Center"
+                                                Text="{Binding english_ref}" />
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold,Italic"
@@ -182,14 +214,12 @@
                                                 TextType="Text"
                                                 TextColor="Teal"
                                                 Text="{Binding tafsir}" />
-                                            <Label Text="&#10;" />
                                             <Label 
                                                 FontSize="Small"
                                                 FontAttributes="Italic"
                                                 TextType="Text"
                                                 TextColor="Silver"
-                                                Text="{Binding translation_ref}" />                                                                                        
-                                            <Label Text="&#10;" />
+                                                Text="{Binding translation_ref}" /> 
                                     </VerticalStackLayout>
                                 </Border> 
                         </DataTemplate>

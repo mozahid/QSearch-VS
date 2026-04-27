@@ -95,6 +95,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         Entry txt = (Entry)sender;
         var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         bool IsEnglish = true;
+        int wordcount = 0;
 
         if (txt.Text.Length == 0)
         {
@@ -102,8 +103,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             return;
         }
         imgNotes.IsVisible = false;
-        await Task.Delay(50);
+        lstView.ItemsSource = null;
         progress.ShowProgress();
+        await Task.Delay(50);
 
         Verses = new List<Verse>();
         string[] words = txt.Text.Trim().Split(' ');
@@ -170,7 +172,6 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 Verses = await dB.GetArabicVerseAsync(words);
             }
         }
-
         result.IsVisible = false;
         // databinding the listview //
         foreach (var _v in Verses)
@@ -193,6 +194,10 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             result.IsVisible = true;
             total.Text = Verses.Count.ToString();
             lstView.HeightRequest = screenHeight - 250;
+            // if (lstView.IsLoaded)
+            // {
+            //     lstView.ScrollTo(0, position: ScrollToPosition.Start, animate: false);
+            // }
             if (IsEnglish)
             {
                 for (int i = 0; i < words.Length; i++)
@@ -241,6 +246,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                         if (loc >= 0)
                         {
                             bool found = false;
+                            //while ((loc + srch.Length * 2) < v.verse_arabic.Length)
                             while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
                             {
                                 w = v.verse_arabic.Substring(loc, srch.Length * 2);
@@ -258,12 +264,45 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                 if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
                                 {
                                     found = true;
+                                    if (words.Length == 1) 
+                                     {
+                                        wordcount++;
+                                        loc += srch.Length;
+                                        while ((loc + srch.Length * 2) < v.verse_arabic.Length)
+                                        {
+                                            var w_next = v.verse_arabic.Substring(loc, srch.Length * 2);
+                                            w_normal = normalize(w_next);
+                                            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
+                                            {
+                                                wordcount++;
+                                            }
+                                            loc += 1;
+                                        }
+                                     }
                                 }
                                 else
                                 {
                                     w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
                                     w_normal = normalize(w);
-                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) found = true;
+                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
+                                    {
+                                        found = true;
+                                        if (words.Length == 1) 
+                                        {
+                                            wordcount++;
+                                            loc += srch.Length;
+                                            while ((loc + srch.Length * 2 + 1) < v.verse_arabic.Length)
+                                            {
+                                                var w_next = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                                w_normal = normalize(w_next);
+                                                if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
+                                                {
+                                                    wordcount++;
+                                                }
+                                                loc += 1;
+                                            }
+                                        }
+                                    }
                                     else loc += 1;
                                 }
                             }
@@ -273,6 +312,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                 v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
                                 if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
                                     v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                                found = false;
                             }
                         }
                         else
@@ -285,6 +325,20 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             }
         }
         txt.SelectionLength = txt.Text.Length;
+        if (words.Length == 1)
+        {
+            if (!IsEnglish)
+            {
+                lblWords.IsVisible = true;
+                totalWords.IsVisible = true;
+                totalWords.Text = wordcount.ToString();
+            }
+        }
+        else
+        {
+            lblWords.IsVisible = false;
+            totalWords.IsVisible = false;
+        }
         progress.HideProgress();
     }
     
