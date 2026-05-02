@@ -1,10 +1,8 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
 		<RootNamespace>QSearch</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -13,87 +11,43 @@
 
 		<!-- Display name -->
 		<ApplicationTitle>QSearch</ApplicationTitle>
-
-
 		<!-- App Identifier -->
 		<ApplicationId>com.mohdzed.qsearch</ApplicationId>
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.3.3</ApplicationDisplayVersion>
-		<ApplicationVersion>15.3.3</ApplicationVersion>
-		<!-- Android Only-->
-		<AndroidVersionCode>37</AndroidVersionCode>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
-		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
-		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>-->
+		<ApplicationDisplayVersion>2</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</SupportedOSPlatformVersion>
+		<GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+		<AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+		<AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+		<AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+		<AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+		<GenerateTestArtifacts>True</GenerateTestArtifacts>
+		<GenerateTemporaryStoreCertificate>True</GenerateTemporaryStoreCertificate>
+		<HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.19041.0</TargetPlatformMinVersion>
+		<PackageCertificateThumbprint>0879B5054AF3AE7C2F403DD0E50F8A61735B1A22</PackageCertificateThumbprint>
+		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>-->
 	</PropertyGroup>
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 	  <DebugType>portable</DebugType>
 	  <Optimize>false</Optimize>
 	  <WarningLevel>4</WarningLevel>
-	  <RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm64;android-arm;android-x64;android-x86</RuntimeIdentifiers>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-ios|AnyCPU'">
-	  <CreatePackage>false</CreatePackage>
-	  <CodesignKey>iPhone Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
-	  <CodesignProvision>Automatic</CodesignProvision>
-	  <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
-	  <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
-	   <MtouchOptimizePNGs>true</MtouchOptimizePNGs>
-	   <MtouchInterpreter>all</MtouchInterpreter>
+	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows' and '$(Configuration)' == 'Release'">
+		<WindowsPackageType>MSIX</WindowsPackageType>
+		<AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-maccatalyst|AnyCPU'">
-	  	<MtouchLink>SdkOnly</MtouchLink>
-		<EnableCodeSigning>True</EnableCodeSigning>
-  		<EnablePackageSigning>true</EnablePackageSigning>
-  		<CreatePackage>true</CreatePackage>
-	  	<CodesignKey>Apple Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
-	  	<CodesignProvision>MZee MacOS Catalyst Distribution</CodesignProvision>
-	  	<EnablePackageSigning>true</EnablePackageSigning>
-		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
-		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
+	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows' and '$(RuntimeIdentifierOverride)' != ''">
+		<RuntimeIdentifier>$(RuntimeIdentifierOverride)</RuntimeIdentifier>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-ios|AnyCPU'">
-		<EnableCodeSigning>true</EnableCodeSigning>
-		<CodesignRequireProvisioningProfile>true</CodesignRequireProvisioningProfile>
-		<DisableCodesignVerification>true</DisableCodesignVerification>
+	<PropertyGroup>
+		<ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<Nullable>enable</Nullable>
 	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
-	  <AndroidSigningKeyStore>/Users/MZee/Library/Developer/Xamarin/Keystore/MyQSearch/MyQSearch.keystore</AndroidSigningKeyStore>
-	  <AndroidSigningKeyAlias>myqsearch</AndroidSigningKeyAlias>
-	  <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
-	  <RunAOTCompilation>true</RunAOTCompilation> 
-	  <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-	  <PublishTrimmed>true</PublishTrimmed>
-	  <StripDebugSymbols>true</StripDebugSymbols>
-	  <Optimize>true</Optimize>
-	  <AndroidLinkMode>SdkOnly</AndroidLinkMode> 
-	  <AndroidLinkTool>r8</AndroidLinkTool>
-	  <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
-	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
-	  <RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm64;android-arm;android-x64;android-x86</RuntimeIdentifiers>
-	</PropertyGroup>
-	<!-- <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-maccatalyst'">
-	<ApplicationTitle>Your App Name</ApplicationTitle>
-	<RuntimeIdentifier>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifier>
-	</PropertyGroup> -->
-
-	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModelSavedState" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common.Java8" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.ViewModel.Ktx" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime.Ktx" Version="2.9.4" />
-	  <PackageReference Include="Xamarin.AndroidX.SavedState.SavedState.Ktx" Version="1.3.3" />
-	</ItemGroup>
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\tick_mark.svg" />
 	</ItemGroup>
@@ -107,14 +61,14 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Maui" Version="13.0.0" />
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-		<PackageReference Include="Sentry.Maui" Version="5.16.2" />
-		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="14.1.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7" />
+		<PackageReference Include="Sentry.Maui" Version="6.4.1" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.10.196-beta" />
 		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.11" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.10" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.10" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.51" />
 
 	</ItemGroup>
 
