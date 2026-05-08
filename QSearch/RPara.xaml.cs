@@ -1,5 +1,8 @@
 ﻿using System.Text.RegularExpressions;
 using System.Web;
+using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui.Extensions;
 namespace QSearch;
 
 [QueryProperty(nameof(para), "para")]
@@ -96,8 +99,8 @@ public partial class RPara : ContentPage, IQueryAttributable
             surah.font = Preferences.Default.Get<string>("Font", "NotoArabic");
             surah.verse_arabic_lines[_lines] = item.verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(item.verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);
             if (showTrans) {
-                surah.verse_english_lines[_lines] = "\n" + item.verse_english;
-                surah.english_ref_lines[_lines] = "\n" + item.english_ref;
+                surah.verse_translation_lines[_lines] = "\n" + item.verse_english;
+                surah.translation_ref_lines[_lines] = "\n" + item.english_ref;
             }
             surah.verse_arabic_lines_number[_lines] = "[" + Regex.Match(item.verse_arabic, @"\d+").Value + "]";
             surah.verse_arabic_line_end[_lines] = item.verse_arabic.Contains("۩") ? "۩" : string.Empty;
@@ -145,6 +148,27 @@ public partial class RPara : ContentPage, IQueryAttributable
     /// <param name="e"></param>
     async void showTranslation_Clicked(object sender, EventArgs e)
     {
+        var popup = new TranslationOption();
+
+        // The type parameter must match the type returned from the popup.
+        IPopupResult<Int16> popupResult = await this.ShowPopupAsync<Int16>(popup, new PopupOptions
+                {
+                    PageOverlayColor = Colors.DarkSlateGray.WithAlpha(0.6f)
+                }, CancellationToken.None);
+
+        if (popupResult.WasDismissedByTappingOutsideOfPopup)
+        {
+            return;
+        }
+        switch (popupResult.Result)
+        {
+            case 1:
+                // English translation was tapped
+                break;
+            case 2:
+                // Urdu translation was tapped
+                break;
+        }
         if (showTrans)
         {
             showTrans = false;

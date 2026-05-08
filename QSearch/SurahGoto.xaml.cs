@@ -66,8 +66,8 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             surah.verse_arabic_lines[_lines] = item.verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(item.verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);
             if (showTrans) 
             {
-                surah.verse_english_lines[_lines] = "\n" + item.verse_english;
-                surah.english_ref_lines[_lines] = "\n" + item.english_ref;
+                surah.verse_translation_lines[_lines] = "\n" + item.verse_english;
+                surah.translation_ref_lines[_lines] = "\n" + item.english_ref;
             }
             surah.verse_arabic_lines_number[_lines] = "[" + Regex.Match(item.verse_arabic, @"\d+").Value + "]";
             surah.verse_arabic_line_end[_lines] = item.verse_arabic.Contains("۩") ? "۩" : string.Empty;

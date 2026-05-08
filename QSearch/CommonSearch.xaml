@@ -11,8 +11,7 @@
                     IsVisible="False"
                     Color="Blue"
                     HorizontalOptions="Center"
-                    VerticalOptions="Center"
-            />
+                    VerticalOptions="Center" />
             <Border Stroke="LightGray"
                     StrokeThickness="2"
                     Padding="5">
@@ -36,11 +35,20 @@
                     FontAttributes="Bold,Italic"
                     TextColor="Teal" />
             </Border>
-           <CollectionView
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <CollectionView 
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
-                    VerticalScrollBarVisibility="Always" >
+                    VerticalScrollBarVisibility="Always"
+                    Grid.Row="0"
+                    Grid.Column="0">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Vertical" />
                     </CollectionView.ItemsLayout>
@@ -192,7 +200,6 @@
                                                 LineBreakMode="WordWrap"
                                                 Margin="0,0,0,3"
                                                 Text="{Binding verse_english}" />
-                                            <!-- <Label Text="&#10;" /> -->
                                             <Label
                                                 FontSize="Micro"
                                                 TextColor="SkyBlue"
@@ -225,5 +232,6 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
+            </Grid>
     </VerticalStackLayout>
 </ContentPage>

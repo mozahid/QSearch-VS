@@ -13,6 +13,7 @@
         public string verse_arabic { get; set; }
         public string verse_english { get; set; }
         public string verse_arabic_clean { get; set; }
+        public string verse_urdu { get; set; }
         public string chapter_name_arabic { get; set; }
         public string chapter_name_english { get; set; }
         public string class_arabic { get; set; }
@@ -27,6 +28,8 @@
         public string translation_ref {get;set;}
         public string english_ref {get;set;}
         public string urdu_ref {get;set;}
+        public bool showEnglish { get; set; }
+        public bool showUrdu { get; set; }
     }
     /// <summary>
     /// picking the surah
@@ -58,11 +61,14 @@
 
         public string verse_english { get; set; }
         public string english_ref { get; set; }
+        public string verse_urdu { get; set; }
+        public string urdu_ref { get; set; }
+
         public string[] verse_arabic_lines { get; set; } = new string[25];
-        public string[] verse_english_lines { get; set; } = new string[25];
+        public string[] verse_translation_lines { get; set; } = new string[25];
         public string[] verse_arabic_lines_number { get; set; } = new string[25];
         public string[] verse_arabic_line_end { get; set; } = new string[25];
-        public string[] english_ref_lines { get; set; } = new string[25];
+        public string[] translation_ref_lines { get; set; } = new string[25];
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
         public string class_arabic { get; set; }

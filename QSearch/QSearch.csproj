@@ -20,10 +20,10 @@
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.3.3</ApplicationDisplayVersion>
-		<ApplicationVersion>15.3.3</ApplicationVersion>
+		<ApplicationDisplayVersion>6.4.0</ApplicationDisplayVersion>
+		<ApplicationVersion>16.0.0</ApplicationVersion>
 		<!-- Android Only-->
-		<AndroidVersionCode>37</AndroidVersionCode>
+		<AndroidVersionCode>38</AndroidVersionCode>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
@@ -39,7 +39,6 @@
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
-	  <CodesignKey>iPhone Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
 	  <CodesignProvision>Automatic</CodesignProvision>
 	  <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
 	  <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
@@ -51,8 +50,8 @@
 		<EnableCodeSigning>True</EnableCodeSigning>
   		<EnablePackageSigning>true</EnablePackageSigning>
   		<CreatePackage>true</CreatePackage>
-	  	<CodesignKey>Apple Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
-	  	<CodesignProvision>MZee MacOS Catalyst Distribution</CodesignProvision>
+	  	<CodesignKey>Mac OS Distribution: Muhammad Zahid (NTMXQ4647V)</CodesignKey>
+	  	<CodesignProvision>Mac OS Distribution</CodesignProvision>
 	  	<EnablePackageSigning>true</EnablePackageSigning>
 		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
 		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
@@ -163,7 +162,6 @@
 	  <BundleResource Include="Resources\Fonts\IndoPak.ttf" />
 	  <BundleResource Include="Resources\Fonts\Lateef-Bold.ttf" />
 	  <BundleResource Include="Resources\Fonts\AlQalam.ttf" />
-	  <BundleResource Include="Resources\Images\qsearch_hdr4.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiFont Remove="Resources\Fonts\AlQuran-IndoPak-by-QuranWBW.v.4.2.2-WL.ttf" />

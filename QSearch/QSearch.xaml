@@ -63,6 +63,24 @@
                             Opacity="0.8" />
                 </ImageButton.Shadow>
             </ImageButton>
+            <ImageButton x:Name="showTranslation"
+                    BackgroundColor="LightGreen"
+                    ToolTipProperties.Text="Show translation" Clicked="showTranslation_Clicked">
+                    <ImageButton.Source>
+                            <FontImageSource
+                                FontFamily="MaterialIconsOutlined-Regular"
+                                Color="Black"
+                                Glyph="&#xe894;"
+                                Size="28"
+                            />                         
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>
         </HorizontalStackLayout>
         <BoxView Color="LightGray"
                     HeightRequest="2"
@@ -120,14 +138,22 @@
                     IsVisible="False"
                     Color="Blue"
                     HorizontalOptions="Center"
-                    VerticalOptions="Center"
-            />
-            <CollectionView
+                    VerticalOptions="Center" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+           <CollectionView
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
                     Scrolled="lstView_Scrolled"
-                    VerticalScrollBarVisibility="Always" >
+                    VerticalScrollBarVisibility="Always"
+                    Grid.Row="0"
+                    Grid.Column="0">
                         <CollectionView.ItemTemplate>
                         <DataTemplate>
                                     <Border
@@ -271,18 +297,39 @@
                                                 TextColor="Black"
                                                 TextType="Html"
                                                 LineBreakMode="WordWrap"
+                                                IsVisible="{Binding showEnglish}"
                                                 Text="{Binding verse_english}" />
-                                            <Label Text="&#10;" />                                                
                                             <Label
                                                 FontSize="Micro"
                                                 TextColor="SkyBlue"
                                                 HorizontalTextAlignment="Center"
+                                                IsVisible="{Binding showEnglish}"
                                                 Text="{Binding english_ref}" />
+                                            <Label 
+                                                FontSize="Medium"
+                                                FontAttributes="Bold"
+                                                TextColor="Black"
+                                                TextType="Html"
+                                                FontFamily="Urdu"
+                                                LineBreakMode="WordWrap"
+                                                IsVisible="{Binding showUrdu}"
+                                                Text="{Binding verse_urdu}" />
+                                                
+                                            <!-- <Label Text="&#10;" />  -->
+
+                                            <Label
+                                                FontSize="Micro"
+                                                TextColor="SkyBlue"
+                                                HorizontalTextAlignment="Center"
+                                                FontFamily="Urdu"
+                                                IsVisible="{Binding showUrdu}"
+                                                Text="{Binding urdu_ref}" />
                                     </VerticalStackLayout>
                                 </Border> 
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
+            </Grid>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

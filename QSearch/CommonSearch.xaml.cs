@@ -83,10 +83,11 @@ public partial class CommonSearch : ContentPage
         base.OnAppearing();
 		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         lstView.IsVisible = true;
-        lstView.HeightRequest = screenHeight - 200;
+        lstView.HeightRequest = screenHeight - 300;
 		progress.ShowProgress();
-		if (Item == "Sujood")
+		switch (Item)
 		{
+			case "Sujood":
 				await Task.Delay(100);
 				this.Title = "Sujood Verses";
 				lblPreface.Text = "These verses are the ones where the Prophet Muhammad (SAW) and believers prostrated in worship to Allah. They are moments of deep humility, submission, and connection with the Divine, often revealed in response to profound events or messages.";
@@ -101,12 +102,9 @@ public partial class CommonSearch : ContentPage
 					_v.translation_ref = "";
 					// height of header //
 					_v.number = 120;
-				}	
-				lstView.HeightRequest = screenHeight - 150;
-		}
-
-		else if (Item == "Dua")
-		{
+				}
+				break;
+			case "Dua":
 				await Task.Delay(25);
 				this.Title = "Prophet Duas in the Quran";
 				lblPreface.Text = "These are the duas (supplications) made by the Prophets mentioned in the Quran. They cover a wide range of themes, including seeking forgiveness, asking for guidance, protection from harm, and expressing gratitude. Each dua reflects the unique circumstances and challenges faced by the Prophets, as well as their deep connection with Allah." ;
@@ -143,9 +141,8 @@ public partial class CommonSearch : ContentPage
 							Verses.Add(_v);
 					}
 				}
-		}
-		else if (Item == "Sakina")
-		{
+				break;
+			case "Sakina":
 				await Task.Delay(25);
 				this.Title = "Tranquility Verses(Sakina)";
 				lblPreface.Text = "These verses are the ones where Allah sent down tranquility (sakina) to calm the hearts of the believers during moments of extreme danger, tension, or uncertainty. They are powerful reminders of Allah’s support and presence in times of trial, showing that true peace and strength come from reliance on the Creator. Recite all of them after obligatory prayers to receive the benefits of sakina in your life.";	
@@ -164,7 +161,7 @@ public partial class CommonSearch : ContentPage
 						Verses.Add(_v);
 					}	
 				}
-				lstView.HeightRequest = screenHeight - 150;
+				break;
 		}
 		lstView.ItemsSource = Verses;
 		progress.HideProgress();

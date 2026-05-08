@@ -22,11 +22,12 @@ public partial class App : Application
         Application.Current.UserAppTheme = AppTheme.Light;
         
     }
-
+#nullable enable
     protected override Window CreateWindow(IActivationState? activationState)
     {
         return new Window(new AppShell());
     }
+#nullable disable
     /// <summary>
     /// on startup
     /// </summary>

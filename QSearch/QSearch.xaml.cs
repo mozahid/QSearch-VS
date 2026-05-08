@@ -3,10 +3,14 @@ using QSearch.Models;
 using Application = Microsoft.Maui.Controls.Application;
 using System.Text.RegularExpressions;
 using SQLitePCL;
+using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui.Extensions;
+using CommunityToolkit.Maui;
 
 #if ANDROID
 using Android.Views;
 #endif
+
 namespace QSearch;
 public partial class QSearch : ContentPage, IOnPageKeyDown
 {
@@ -17,7 +21,10 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
     private int firstItem = 0;
     Progress progress;
     List<Verse> Verses = new List<Verse>();
-
+    /// <summary>
+    /// by default show English translation only
+    /// </summary>
+    public int selectedLanguage = 1;
     /// <summary>
     /// check latest version
     /// </summary>
@@ -94,7 +101,6 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
     {
         Entry txt = (Entry)sender;
         var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
-        bool IsEnglish = true;
         int wordcount = 0;
 
         if (txt.Text.Length == 0)
@@ -111,7 +117,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         string[] words = txt.Text.Trim().Split(' ');
         // if not any english alpah //
         string pattern = "^[a-zA-Z\"!]*$";
-        Regex rg = new Regex(pattern);
+        // Regex rg = new Regex(pattern);
+        Regex rg;
+
         // smart quotes to double quotes //
         if (words[0].IndexOf('\u201c') > -1)
         {
@@ -122,55 +130,63 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             words[0] = words[0].Replace('\u201d', '"');
         }
         var srch = "";
-        if (rg.IsMatch(words[0]))
+        string currentLanguage = "en";
+#if MACCATALYST
+        LangDetection lang = new LangDetection(txt.Text);
+        currentLanguage = lang.LanguageDetected;
+#else
+        currentLanguage = new LangDetection().LanguageDetected;
+#endif
+        switch(currentLanguage)
         {
-            // use english //""
-            pattern = "\"";
-            rg = new Regex(pattern);
-            if (words.Length == 1)
-            {
-                srch = words[0];
-                if (rg.IsMatch(srch))
+            case "en":
+                pattern = "\"";
+                rg = new Regex(pattern);
+                if (words.Length == 1)
                 {
-                    srch = words[0].Replace("\"", "");
-                    Verses = await dB.GetVerseExactAsync(srch);
+                    srch = words[0];
+                    if (rg.IsMatch(srch))
+                    {
+                        srch = words[0].Replace("\"", "");
+                        Verses = await dB.GetVerseExactAsync(srch);
+                    }
+                    else
+                    {
+                        Verses = await dB.GetVerseAsync(srch);
+                    }
                 }
                 else
                 {
-                    Verses = await dB.GetVerseAsync(srch);
+                    // multiple words, use OR query //
+                    for (int i = 0; i < words.Length; i++)
+                    {
+                        if (rg.IsMatch(words[i]))
+                        {
+                            words[i] = words[i].Replace("\"", "");
+                        }
+                    }
+                    Verses = await dB.GetVerseAsync(words);
                 }
-            }
-            else
-            {
-                // multiple words, use OR query //
-                for (int i = 0; i < words.Length; i++)
+                break;
+            case "ar":
+                if (words.Length == 1)
                 {
-                    if (rg.IsMatch(words[i]))
+                    srch = words[0];
+                    Verses = await dB.GetArabicVerseAsync(srch);
+                }
+                else
+                {
+                    // multiple words, use OR query //
+                    for (int i = 0; i < words.Length; i++)
                     {
                         words[i] = words[i].Replace("\"", "");
                     }
+                    Verses = await dB.GetArabicVerseAsync(words);
                 }
-                Verses = await dB.GetVerseAsync(words);
-            }
-        }
-        else
-        {
-            IsEnglish = false;
-            // arabic search //
-            if (words.Length == 1)
-            {
-                srch = words[0];
-                Verses = await dB.GetArabicVerseAsync(srch);
-            }
-            else
-            {
-                // multiple words, use OR query //
-                for (int i = 0; i < words.Length; i++)
-                {
-                    words[i] = words[i].Replace("\"", "");
-                }
-                Verses = await dB.GetArabicVerseAsync(words);
-            }
+                break;
+            default:
+                pattern = "^[a-zA-Z\"!]*$";
+                break;
         }
         result.IsVisible = false;
         // databinding the listview //
@@ -181,6 +197,22 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             {
                 _v.verse_arabic = _v.verse_arabic.Replace("۩", "");
                 _v.verse_arabic_end = "۩ (Sujood)";    
+            }
+            ///show translation based on user selection //
+            switch(selectedLanguage)
+            {
+                case 1:
+                    _v.showEnglish = true;
+                    _v.showUrdu = false;
+                    break;
+                case 2:
+                    _v.showUrdu = true;
+                    _v.showEnglish = false;
+                    break;
+                default:
+                    _v.showEnglish = true;
+                    _v.showUrdu = false;
+                    break;
             }
         }
         lstView.ItemsSource = Verses;
@@ -194,106 +226,79 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             result.IsVisible = true;
             total.Text = Verses.Count.ToString();
             lstView.HeightRequest = screenHeight - 250;
-            // if (lstView.IsLoaded)
-            // {
-            //     lstView.ScrollTo(0, position: ScrollToPosition.Start, animate: false);
-            // }
-            if (IsEnglish)
+
+            switch(currentLanguage)
             {
-                for (int i = 0; i < words.Length; i++)
-                {
-                    srch = words[i].Replace("\"", "");
-                    foreach (Verse v in Verses)
+                case "en":
+                    for (int i = 0; i < words.Length; i++)
                     {
-                        if (words[i].Contains("\""))
+                        srch = words[i].Replace("\"", "");
+                        foreach (Verse v in Verses)
                         {
-                            // we want to search exact word and highlight that only //
-                            if (!dB.prepositions.Contains(srch))
+                            if (words[i].Contains("\""))
                             {
-                                int exactWordIndex = v.verse_english.IndexOf(srch, 0, StringComparison.OrdinalIgnoreCase);
-                                if (exactWordIndex > 0)
+                                // we want to search exact word and highlight that only //
+                                if (!dB.prepositions.Contains(srch))
                                 {
-                                    string exactWord = v.verse_english.Substring(exactWordIndex, srch.Length);
-                                    v.verse_english = v.verse_english.Replace(" " + srch + " ", "<span style=\"background-color:yellow\">" + " " + exactWord + " " + "</span>", StringComparison.CurrentCultureIgnoreCase);
-                                    v.verse_english = v.verse_english.Replace(" " + srch + ".", "<span style=\"background-color:yellow\">" + " " + exactWord + "." + "</span>", StringComparison.CurrentCultureIgnoreCase);
-                                    v.verse_english = v.verse_english.Replace(" " + srch + "!", "<span style=\"background-color:yellow\">" + " " + exactWord + "!" + "</span>", StringComparison.CurrentCultureIgnoreCase);
-                                    v.verse_english = v.verse_english.Replace(" " + srch + ",", "<span style=\"background-color:yellow\">" + " " + exactWord + "," + "</span>", StringComparison.CurrentCultureIgnoreCase);
+                                    int exactWordIndex = v.verse_english.IndexOf(srch, 0, StringComparison.OrdinalIgnoreCase);
+                                    if (exactWordIndex > 0)
+                                    {
+                                        string exactWord = v.verse_english.Substring(exactWordIndex, srch.Length);
+                                        v.verse_english = v.verse_english.Replace(" " + srch + " ", "<span style=\"background-color:yellow\">" + " " + exactWord + " " + "</span>", StringComparison.CurrentCultureIgnoreCase);
+                                        v.verse_english = v.verse_english.Replace(" " + srch + ".", "<span style=\"background-color:yellow\">" + " " + exactWord + "." + "</span>", StringComparison.CurrentCultureIgnoreCase);
+                                        v.verse_english = v.verse_english.Replace(" " + srch + "!", "<span style=\"background-color:yellow\">" + " " + exactWord + "!" + "</span>", StringComparison.CurrentCultureIgnoreCase);
+                                        v.verse_english = v.verse_english.Replace(" " + srch + ",", "<span style=\"background-color:yellow\">" + " " + exactWord + "," + "</span>", StringComparison.CurrentCultureIgnoreCase);
+                                    }
+                                    else
+                                        v.verse_english = v.verse_english.Replace(" " + srch + " ", "<span style=\"background-color:yellow\">" + " " + srch + "." + "</span>", StringComparison.CurrentCultureIgnoreCase);
                                 }
-                                else
-                                    v.verse_english = v.verse_english.Replace(" " + srch + " ", "<span style=\"background-color:yellow\">" + " " + srch + "." + "</span>", StringComparison.CurrentCultureIgnoreCase);
                             }
-                        }
-                        else
-                        {
-                            if (!dB.prepositions.Contains(srch))
-                                v.verse_english = v.verse_english.Replace(srch, "<span style=\"background-color:yellow\">" + srch + "</span>", StringComparison.CurrentCultureIgnoreCase);
-                        }
-                        if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
-                            v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
-                    }
-                }
-            }
-            else
-            {
-                // multiple words //
-                for (int i = 0; i < words.Length; i++)
-                {
-                    srch = words[i].Trim();
-                    foreach (Verse v in Verses)
-                    {
-                        var loc = v.verse_arabic_clean.IndexOf(srch);
-                        var w = "";
-                        if (loc >= 0)
-                        {
-                            bool found = false;
-                            //while ((loc + srch.Length * 2) < v.verse_arabic.Length)
-                            while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
+                            else
                             {
-                                w = v.verse_arabic.Substring(loc, srch.Length * 2);
-                                if (w.StartsWith("<span style=\"background-color:yellow\""))
+                                if (!dB.prepositions.Contains(srch))
+                                    v.verse_english = v.verse_english.Replace(srch, "<span style=\"background-color:yellow\">" + srch + "</span>", StringComparison.CurrentCultureIgnoreCase);
+                            }
+                            if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                        }
+                    }
+                    break;
+                case "ar":
+                // multiple words //
+                    for (int i = 0; i < words.Length; i++)
+                    {
+                        srch = words[i].Trim();
+                        foreach (Verse v in Verses)
+                        {
+                            var loc = v.verse_arabic_clean.IndexOf(srch);
+                            var w = "";
+                            if (loc >= 0)
+                            {
+                                bool found = false;
+                                while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
                                 {
-                                    loc += 38;
-                                    continue;
-                                }
-                                else if (w.StartsWith("</span>"))
-                                {
-                                    loc += 7;
-                                    continue;
-                                }
-                                var w_normal = normalize(w);
-                                if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
-                                {
-                                    found = true;
-                                    if (words.Length == 1) 
-                                     {
-                                        wordcount++;
-                                        loc += srch.Length;
-                                        while ((loc + srch.Length * 2) < v.verse_arabic.Length)
-                                        {
-                                            var w_next = v.verse_arabic.Substring(loc, srch.Length * 2);
-                                            w_normal = normalize(w_next);
-                                            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
-                                            {
-                                                wordcount++;
-                                            }
-                                            loc += 1;
-                                        }
-                                     }
-                                }
-                                else
-                                {
-                                    w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
-                                    w_normal = normalize(w);
-                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
+                                    w = v.verse_arabic.Substring(loc, srch.Length * 2);
+                                    if (w.StartsWith("<span style=\"background-color:yellow\""))
+                                    {
+                                        loc += 38;
+                                        continue;
+                                    }
+                                    else if (w.StartsWith("</span>"))
+                                    {
+                                        loc += 7;
+                                        continue;
+                                    }
+                                    var w_normal = normalize(w);
+                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
                                     {
                                         found = true;
                                         if (words.Length == 1) 
                                         {
                                             wordcount++;
                                             loc += srch.Length;
-                                            while ((loc + srch.Length * 2 + 1) < v.verse_arabic.Length)
+                                            while ((loc + srch.Length * 2) < v.verse_arabic.Length)
                                             {
-                                                var w_next = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                                var w_next = v.verse_arabic.Substring(loc, srch.Length * 2);
                                                 w_normal = normalize(w_next);
                                                 if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
                                                 {
@@ -303,41 +308,64 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                             }
                                         }
                                     }
-                                    else loc += 1;
+                                    else
+                                    {
+                                        w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                        w_normal = normalize(w);
+                                        if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
+                                        {
+                                            found = true;
+                                            if (words.Length == 1) 
+                                            {
+                                                wordcount++;
+                                                loc += srch.Length;
+                                                while ((loc + srch.Length * 2 + 1) < v.verse_arabic.Length)
+                                                {
+                                                    var w_next = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                                    w_normal = normalize(w_next);
+                                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
+                                                    {
+                                                        wordcount++;
+                                                    }
+                                                    loc += 1;
+                                                }
+                                            }
+                                        }
+                                        else loc += 1;
+                                    }
+                                }
+                                // highlight only if found //
+                                if (found)
+                                {
+                                    v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
+                                    if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                        v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                                    found = false;
                                 }
                             }
-                            // highlight only if found //
-                            if (found)
+                            else
                             {
-                                v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
-                                if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
-                                    v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
-                                found = false;
+                                    if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                        v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                             }
                         }
-                        else
-                        {
-                                if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
-                                    v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
-                        }
                     }
-                }
+                    break;
+                default:
+                    break;
             }
         }
         txt.SelectionLength = txt.Text.Length;
+        lblWords.IsVisible = false;
+        totalWords.IsVisible = false;
         if (words.Length == 1)
         {
-            if (!IsEnglish)
+            if (currentLanguage == "ar")
             {
                 lblWords.IsVisible = true;
                 totalWords.IsVisible = true;
                 totalWords.Text = wordcount.ToString();
             }
-        }
-        else
-        {
-            lblWords.IsVisible = false;
-            totalWords.IsVisible = false;
         }
         progress.HideProgress();
     }
@@ -457,7 +485,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 lstView.ItemsSource = null;
                 progress.ShowProgress();
                 lstView.ItemsSource = Verses;
-                lstView.ScrollTo(firstItem);
+                lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
                 progress.HideProgress();
             }
         }
@@ -471,5 +499,61 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
     {
         firstItem = e.CenterItemIndex;
         
+    }
+    /// <summary>
+    /// show translation option
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void showTranslation_Clicked(object sender, EventArgs e)
+    {
+        var popup = new TranslationOption();
+
+        // The type parameter must match the type returned from the popup.
+        IPopupResult<Int16> popupResult = await this.ShowPopupAsync<Int16>(popup, new PopupOptions
+                {
+                    PageOverlayColor = Colors.DarkSlateGray.WithAlpha(0.6f)
+                }, CancellationToken.None);
+
+        if (popupResult.WasDismissedByTappingOutsideOfPopup)
+        {
+            return;
+        }
+        Verses = lstView.ItemsSource as List<Verse>;
+        switch (popupResult.Result)
+        {
+            case 1:
+                // English translation was tapped
+                if (Verses != null)
+                {
+                    foreach (var _v in Verses)
+                    {
+                        _v.showEnglish = true;
+                        _v.showUrdu = false;
+                    }
+                }
+                selectedLanguage = 1;
+                break;
+            case 2:
+                // Urdu translation was tapped
+                if (Verses != null)
+                {
+                    foreach (var _v in Verses)
+                    {
+                        _v.showUrdu = true;
+                        _v.showEnglish = false;
+                    }
+                }   
+                selectedLanguage = 2;
+                break;
+        }
+        if (Verses != null)
+        {
+            lstView.ItemsSource = null;
+            progress.ShowProgress();
+            lstView.ItemsSource = Verses;
+            lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+            progress.HideProgress();
+        }
     }
 }
