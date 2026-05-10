@@ -1,4 +1,7 @@
-using System.Web;
+using CommunityToolkit.Maui;
+using CommunityToolkit.Maui.Core;
+using CommunityToolkit.Maui.Extensions;
+
 namespace QSearch;
 
 [QueryProperty(nameof(item), "item")]
@@ -8,67 +11,19 @@ public partial class CommonSearch : ContentPage
 	 QuranDB dB;
 	 List<Verse> Verses = new List<Verse>();
     Progress progress;
-	string[,] duas = new string[45,6] {{"Adam","7","23","23","Dua for Forgiveness","When Adam (AS) and Hawwa (AS) disobeyed Allah by eating from the forbidden tree, they immediately repented with this heartfelt dua, showing humility, remorse, and recognition of Allah’s mercy."},
-									  {"Nuh","11","41","41","Dua for Traveling","When Nuh (AS) boarded the ship."},
-									  {"Nuh","11","47","47","Dua for Forgiveness","After asking Allah about saving his son from the flood, Allah reminded Nuh (AS) that his son was not among the righteous. Nuh (AS) immediately sought forgiveness, showing submission and repentance."},
-									  {"Nuh","23","26","26","Dua for Adversity","After tirelessly calling his people to Allah for centuries, Prophet Nuh (AS) faced persistent rejection, ridicule, and denial from his community. In this moment of despair, he turned to Allah alone for support and vindication, showing that true help comes only from the Creator when human efforts are exhausted."},
-									  {"Nuh","23","29","29","Dua for Traveling","After the flood, when the ark settled and the waters began to recede, Prophet Nuh (AS) made this dua, asking Allah for a safe and blessed place to disembark. It reflects gratitude, humility, and reliance on Allah after deliverance from a great trial."},
-									  {"Nuh","54","10","10","Dua for Help","When the opposition of his people became overwhelming, Nuh (AS) turned to Allah, admitting his weakness and asking for divine help. This dua reflects total reliance on Allah’s power when human means were exhausted."},
-									  {"Nuh","71","28","28","Dua for Forgiveness","After warning his people and being rejected, Nuh (AS) turned to Allah, asking for forgiveness for himself and the believers, showing the importance of including others in one’s prayers."},
-									  {"Ibrahim","2","126","126","Dua for Security and Prosperity","Concerned for the sustenance of his family and community in the barren valley of Makkah, Ibrahim (AS) made dua and sought both worldly protection and provision for its land and people. A powerful dua that Allah answered as today Makkah has peace, stability and prosperity, especially when compared to its barren days during the times of Prophet Ibrahim (AS)."},
-									  {"Ibrahim","2","127","127","Dua for Acceptance of Act","This dua was made by Prophet Ibrahim (AS) and his son Prophet Isma’il (AS) while raising the Ka'bah’s foundations by Allah’s command. Even in this moment of immense spiritual significance, they remained humble and prayerful."},
-									  {"Ibrahim","2","128","128","Dua for Humble Submission","This dua follows immediately after Prophet Ibrahim (AS) and Prophet Isma’il (AS) began constructing the Ka'bah. While performing this sacred task, they turned to Allah not only for acceptance but for continued guidance and spiritual legacy."},
-									  {"Ibrahim","3","173","173","Dua for Protection","This was said by Prophet Ibrahim (AS) when he was thrown into the fire by his people. Despite the extreme danger, he placed complete trust in Allah’s power and protection."},
-									  {"Ibrahim","14","35","35","Dua for Prosperity","When Prophet Ibrahim (AS) returned to Makkah and found it an established, prosperous city, he prayed for its security and, more importantly, for protection from idol worship for himself and his children. His dua reflects foresight: recognizing that prosperity often leads people to arrogance, forgetfulness of Allah, and deviation from faith."},
-									  {"Ibrahim","14","40","40","Dua for Steadfastness","In this heartfelt prayer, Prophet Ibrahim (AS) asked Allah for three profound blessings: to remain steadfast in establishing salah, that his offspring also uphold salah, and that his duas be accepted."},
-									  {"Ibrahim","14","41","41","Dua for Forgiveness","Prophet Ibrahim (AS) sought Allah’s mercy for himself, his parents, and all believers, teaching that one’s concern in dua should extend beyond personal needs to the wider community or Ummah of believers."},
-									  {"Ibrahim","26","83","85","Dua for Wisdom and Knowledge","This supplication of Prophet Ibrahim (AS) shows his concern for both his life and legacy. He asked Allah for wisdom and knowledge, to be counted among the righteous, to be remembered with honor by future generations, and ultimately to be granted Paradise. "},
-									  {"Ibrahim","37","100","100","Dua for a Righteous Offspring",""},
-									  {"Ibrahim","60","4","5","Dua for Faith","These verses highlight Prophet Ibrahim (AS) and his followers as exemplars of unwavering faith in the midst of a society immersed in idolatry."},
-									  {"Lut","26","169","169","Dua for Protection","This dua is made by Prophet Lut (AS) during a moment of heightened desperation and danger. He had been warning his people against their persistent immoral acts and rebellion against Allah, but they continued to reject his message and even threatened to expel him."},
-									  {"Lut","29","30","30","Dua for Help against Evil","This dua is made by Prophet Lut (AS) as he faced extreme rejection, mockery, and moral corruption from the people of his town."},
-									  {"Yaqub","12","86","86","Dua to Deal with Grief","This dua was spoken by Prophet Yaqub (AS) after enduring years of grief over the loss of his beloved son, Yusuf (AS). Despite the passage of time and deep sorrow, he maintains faith in Allah, choosing to express his pain only to Him. In the end, Allah answered the dua and exceeded Prophet Yaqub’s expectations. "},
-									  {"Yousuf","12","33","33","Dua to Avoid Sin","This dua is made by Prophet Yusuf (AS) when he is being relentlessly tempted by the wife of the Egyptian minister (and other women) who tried to seduce him. Despite his physical beauty and isolation, he chooses to uphold his chastity and obedience to Allah over giving in to sin."},
-									  {"Yousuf","12","101","101","Dua for Protection, to die as a Muslim","This dua is made by Prophet Yusuf (AS) at the height of his success and authority in Egypt. After enduring years of hardship—being betrayed by his brothers, sold into slavery, wrongfully imprisoned—he was finally reunited with his family and recognized for his wisdom and leadership. Yet, instead of basking in worldly success, he turns to Allah with humility:"},
-									  {"Ayub","21","83","83","Dua for Suffering & Illness","This heartfelt dua was made by Prophet Ayyub (AS) after experiencing long years of intense suffering. He lost his wealth, health, and children, yet he remained patient and unwavering in his faith."},
-									  {"Shoaib","7","89","89","Dua for Protection","This dua is made by Prophet Shuaib (AS) during his mission to the people of Madyan, who were corrupt in trade and denied his message. After reasoning with them extensively, the people threatened to expel him and his followers unless they returned to their old ways."},
-									  {"Shoaib","11","88","88","Dua for Success and Guidance","This statement comes from Prophet Shuaib (AS) as he addresses his people, the people of Madyan, who were known for dishonest business practices and arrogance. After calling them to righteousness and fair dealings, he was mocked and rejected."},
-									  {"Musa","20","25","28","Dua for Confidence","These verses capture the dua of Prophet Musa (AS) when he was commanded by Allah to confront Pharaoh, one of the most powerful and oppressive rulers of his time. Musa (AS) expressed humility and concern over the magnitude of the mission, especially given his speech difficulty."},
-									  {"Musa","28","16","16","Dua for Forgiveness","This dua was made by Prophet Musa (AS) after he inadvertently struck an Egyptian man while trying to stop a fight between him and an Israelite. The man died as a result, and Musa (AS) recognized that he had made a grave mistake. Fearing the consequences of his actions, he immediately turned to Allah in repentance."},
-									  {"Musa","28","21","21","Dua for Protection from Evil","This dua was made by Prophet Musa (AS) after he fled from Egypt to escape the wrath of Pharaoh’s soldiers. Having accidentally killed an Egyptian man while trying to stop a fight, Musa (AS) feared retribution and decided to leave the city. As he traveled, he sought refuge in a new land, and this dua was a plea for protection from the unjust and oppressive people."},
-									  {"Musa","28","24","24","Dua for Goodness","After fleeing Egypt, exhausted and alone as a fugitive on the run in Madyan, Prophet Musa (AS) saw two women struggling at a well. He helped them — expecting nothing in return. Then, whilst under a tree, he made a simple, heartfelt dua to Allah — with no demands, no specifics. Allah answered that dua and gave Prophet Musa (AS) more than he asked for: Food, a home, marriage and family, a job and eventually prophethood."},
-									  {"Musa","7","151","151","Dua for Forgiveness and Mercy","This dua was made by Prophet Musa (AS) after the Israelites worshiped the golden calf in his absence. Prophet Harun (AS) had tried to restrain the people but was overpowered and ignored. When Musa (AS) returned and witnessed the transgression, he became angry but later turned to Allah with humility and sought forgiveness—not only for himself but also for his brother, Prophet Harun (AS)."},
-									  {"Musa","7","126","126","Dua for Patience and to Die as a Muslim","This dua was made by the magicians of Pharaoh's court after they witnessed the truth of Prophet Musa’s (AS) message and believed in Allah. Despite Pharaoh’s threats to crucify them for abandoning their loyalty to him, they remained resolute in faith, eventually dying as faithful martyrs."},
-									  {"Musa","7","155","155","Dua for Protection, Forgiveness and Mercy","This dua was made by Prophet Musa (AS) in regards to his people, the Israelites, after they had repeatedly disobeyed Allah, even after receiving His signs and guidance. When they suffered from a series of calamities as a result of their transgressions, Musa (AS) interceded on their behalf, pleading for Allah’s forgiveness and mercy."},
-									  {"Dawood","2","250","250","Dua for Patience and Victory","This du'a was recited by the faithful soldiers of King Talut (Saul) as they stood before the battle against Jalut (Goliath)and his forces. The army had been greatly reduced in number due to a divine test, and only the most sincere believers remained.\n Soon after this dua was made, Prophet Dawud (AS) — then a young man in the army — stepped forward to challenge Jalut (Goliath) and slew him by Allah’s will. This marked his rise as a divinely favored leader and prophet."},
-									  {"Suleman","27","19","19","Dua for Gratitude","This dua was made by Prophet Sulaiman (AS) after witnessing an extraordinary event: he understood the speech of an ant warning its colony to avoid harm from his approaching army. This incident reminded him of Allah’s immense favors—the gift of understanding animals, prophetic wisdom, and kingship."},
-									  {"Suleman","38","35","35","Dua for Power and Wealth","This dua was made by Prophet Sulaiman (AS) after he was tested and repented to Allah for an earlier shortcoming. Some narrations mention he became momentarily distracted from his worship due to his love of fine horses, and he turned to Allah seeking forgiveness.\n In this powerful moment, Prophet Sulaiman (AS) asked Allah not only for forgiveness, but also for a unique and unmatched kingdom, one that no one else would ever possess after him."},
-									  {"Younus","21","87","87","Dua for Forgiveness","This heartfelt dua was made by Prophet Yunus (AS) while he was in the belly of the great fish. He had left his people prematurely, frustrated by their rejection of his message, and boarded a ship. When a storm hit, he was thrown overboard and swallowed by the fish as a consequence of his action.\nInside the darkness—of the sea, the night, and the creature—Prophet Yunus sincerely repented, recognizing his mistake."},
-									  {"Zakariya","21","89","89","Dua for a Heir","This dua was made by Prophet Zakariya (AS) during his old age. He and his wife were childless, and he longed for a righteous heir to continue the legacy of prophethood and guide the Children of Israel. Despite his advanced age and his wife's barrenness, he turned to Allah with sincere hope and humility, recognizing that Allah alone has the power to grant life."},
-									  {"Zakariya","3","38","38","Dua for Pious Offspring","This heartfelt prayer was made by Prophet Zakariya (AS) when he saw Maryam (AS) receiving provisions (fresh fruits) from Allah in her sanctuary without anyone bringing them. This sign deeply moved him and inspired hope in Allah’s unlimited mercy and power.\nDespite his old age and his wife’s barrenness, Zakariya (AS) turned to Allah with full trust, asking not just for a child, but for a righteous and blessed offspring."},
-									  {"Isa","3","114","114","Dua for Provision","This dua was made by Prophet Isa (AS)at the request of his disciples, who asked for a miraculous table spread with food from the heavens as a sign of reassurance and divine support.\n Prophet Isa (AS) made this dua, asking Allah to send down the table as a sign, a source of celebration, and sustenance for all – both those present and those to come."},
-									  {"Muhammad","2","201","201","Dua for Goodness",""},
-									  {"Muhammad","3","173","173","Dua of Trust","It was famously recited by the prophet Muhammad (SAW) like his grandfather Ibrahim(AS)."},
-									  {"Muhammad","20","114","114","Dua for Increased Knowledge",""},
-									  {"Muhammad","23","118","118","Dua for Forgiveness",""},
-									  {"Muhammad","113","1","1","Dua for Protection from Evil","When prophet Muhammad(SAW) was afflicted with magic, this was revealed to neautralize sorcery."},
-									  {"Muhammad","114","1","1","Dua for Protection from Evil","When prophet Muhammad(SAW) was afflicted with magic, this was revealed to neautralize sorcery."}};
-	string[,] sakina = new string[6,6] {{"Sakina Verse 1","2","248","248","Background","The people of Israel were looking for a king and asked their prophet, Samuel to appoint one for them. Samuel told them the sign would be that Ark of the Covenant would come to them. When the Ark came, it was a sign of Allah’s tranquility (sakina) descending upon them, and they were filled with awe and reverence for Allah."},
-										{"Sakina Verse 2","9","26","26","Background","When the Muslims were besieged in the Battle of Badr, they were outnumbered and outmatched by the Quraysh army. In this moment of extreme danger, Allah sent down sakina (tranquility) to calm their hearts and strengthen their resolve. This divine tranquility gave them the courage and confidence to face their enemies, leading to a decisive victory despite the odds."},
-										{"Sakina Verse 3","9","40","40","Background","When the prophet was migrating from Makkah to Madinah, he and his companion Abu Bakr were pursued by the Quraysh. They took refuge in a cave, and the Quraysh searched for them relentlessly. In this moment of extreme danger, Allah sent down sakina (tranquility) to calm the prophet’s heart and protect him from harm. The Quraysh were unable to find them, and the prophet was able to safely complete his migration."},
-										{"Sakina Verse 4","48","4","4","Background","This verse was revealed around the time of the Treaty of Hudaybiyyah, a tense moment where Muslims faced uncertainty, yet divine peace allowed them to maintain steadiness and obedience."},
-										{"Sakina Verse 5","48","18","18","Background","This refers to the oath of loyalty taken by 1,400 Muslims to stand by the Prophet (PBUH) when rumors suggested that Uthman ibn Affan had been killed in Mecca. This moment of tension was met with divine tranquility, allowing the Muslims to remain calm and united in their support for the Prophet (PBUH) during a critical time."},
-										{"Sakina Verse 6","48","26","26","Background","The disbelievers (Quraysh) acted out of 'pagan pride' refusing to allow Muslims to perform Umrah, breaking ancient Arab traditions to save face, despite knowing the Muslims were in the right. God sent calm into the hearts of the believers. This enabled them to remain patient, disciplined, and obedient to the Prophet instead of attacking, despite being prepared to fight."}};
+	public int selectedLanguage = 1;
 	public CommonSearch()
 	{
 		InitializeComponent();
 		progress = new Progress(progInd);
+		this.Loaded += 	Form_Loaded;
 	}
 	public CommonSearch(QuranDB qdb)
 	{
 		InitializeComponent();
 		dB = qdb;
 		progress = new Progress(progInd);
+		this.Loaded += 	Form_Loaded;
 	}   
 	public static readonly BindableProperty ItemProperty = 
 	BindableProperty.Create("Item", typeof(string), typeof(CommonSearch));
@@ -78,17 +33,22 @@ public partial class CommonSearch : ContentPage
 		get => (string)GetValue(ItemProperty);
 		set => SetValue(ItemProperty, value);
 	}
-    protected override async void OnAppearing()
+    private async void Form_Loaded(object sender, EventArgs e)
     {
-        base.OnAppearing();
+        await DisplayVerses();
+    } 
+	private async Task DisplayVerses()
+	{
 		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         lstView.IsVisible = true;
         lstView.HeightRequest = screenHeight - 300;
 		progress.ShowProgress();
+		List<Verse> v = new List<Verse>();
+		Verses = new List<Verse>();
 		switch (Item)
 		{
 			case "Sujood":
-				await Task.Delay(100);
+				await Task.Delay(25);
 				this.Title = "Sujood Verses";
 				lblPreface.Text = "These verses are the ones where the Prophet Muhammad (SAW) and believers prostrated in worship to Allah. They are moments of deep humility, submission, and connection with the Divine, often revealed in response to profound events or messages.";
 				dB = new QuranDB();
@@ -98,28 +58,58 @@ public partial class CommonSearch : ContentPage
 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 					_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 					_v.verse_arabic_end = "۩";
+					switch(selectedLanguage)
+					{
+						case 1:
+							_v.translation = _v.verse_english;
+							_v.translation_ref = _v.english_ref;
+							_v.font_translation = "Tahoma";
+							_v.translation_alignment = TextAlignment.Start;
+							break;
+						case 2:
+							_v.translation = _v.verse_urdu;
+							_v.translation_ref = _v.urdu_ref;
+							_v.font_translation = "Urdu";
+							_v.translation_alignment = TextAlignment.End;
+							break;
+						default:
+							_v.translation = _v.verse_english;
+							_v.translation_ref = _v.english_ref;
+							_v.font_translation = "Tahoma";
+							_v.translation_alignment = TextAlignment.Start;
+							break;
+					}
 					_v.tafsir = "";
-					_v.translation_ref = "";
+					//_v.translation_ref = "";
 					// height of header //
 					_v.number = 120;
 				}
 				break;
 			case "Dua":
 				await Task.Delay(25);
+	
 				this.Title = "Prophet Duas in the Quran";
 				lblPreface.Text = "These are the duas (supplications) made by the Prophets mentioned in the Quran. They cover a wide range of themes, including seeking forgiveness, asking for guidance, protection from harm, and expressing gratitude. Each dua reflects the unique circumstances and challenges faced by the Prophets, as well as their deep connection with Allah." ;
 				dB = new QuranDB();
-				Verses = new List<Verse>();
+				var _duas = await dB.GetVerseRef("Dua");
 				int _vcount = 0;
-				for(int p=0; p < duas.GetLength(0); p++)
+				foreach(var dua in _duas)
 				{
-					var v = await dB.GetProphetDua(duas[p,0], Convert.ToInt32(duas[p,1]), Convert.ToInt32(duas[p, 2]), Convert.ToInt32(duas[p, 3]), duas[p,4], duas[p,5]);
+					switch(selectedLanguage)
+					{
+						case 1:
+							v = await dB.GetProphetDua(dua.title, dua.chapter_number, dua.verse_start, dua.verse_end, dua.background_title, dua.context_english, selectedLanguage);
+							break;
+						case 2:
+							v = await dB.GetProphetDua(dua.title, dua.chapter_number, dua.verse_start, dua.verse_end, dua.background_title, dua.context_urdu, selectedLanguage);
+							break;
+					}
 					_vcount = 1;
 					foreach(var _v in v)
 					{
 						_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 						// height of header //
-						_v.number = 125;
+						_v.number = 120;
 						if (_v.verse_arabic.Contains("۩"))
 						{
 							_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
@@ -134,11 +124,46 @@ public partial class CommonSearch : ContentPage
 								Verses[Verses.Count - 1].verse_arabic += "\n" + _v.verse_arabic;
 								Verses[Verses.Count - 1].verse_english += "\n" + _v.verse_english;
 								Verses[Verses.Count - 1].verse_arabic_end +=  _v.verse_arabic_end;
+								switch(selectedLanguage)
+								{
+									case 1:
+										Verses[Verses.Count - 1].translation += "\n" + _v.verse_english;
+										Verses[Verses.Count - 1].translation_ref += "\n" + _v.english_ref;
+
+										break;
+									case 2:
+										Verses[Verses.Count - 1].translation += "\n" + _v.verse_urdu.Trim();
+										Verses[Verses.Count - 1].translation_ref += "\n" + _v.urdu_ref;
+
+										break;
+									default:
+										Verses[Verses.Count - 1].translation += "\n" + _v.verse_english;
+										Verses[Verses.Count - 1].translation_ref += "\n" + _v.english_ref;
+
+										break;
+								}
 							}
 							_vcount++;
 						}
 						else 
+						{
 							Verses.Add(_v);
+						}
+						switch(selectedLanguage)
+						{
+							case 1:
+								Verses[Verses.Count - 1].translation_alignment = TextAlignment.Start;
+								Verses[Verses.Count - 1].font_translation = "Tahoma";
+								break;
+							case 2:
+								Verses[Verses.Count - 1].translation_alignment = TextAlignment.End;
+								Verses[Verses.Count - 1].font_translation = "Urdu";
+								break;
+							default:
+								Verses[Verses.Count - 1].translation_alignment = TextAlignment.Start;
+								Verses[Verses.Count - 1].font_translation = "Tahoma";
+								break;
+						}
 					}
 				}
 				break;
@@ -147,15 +172,44 @@ public partial class CommonSearch : ContentPage
 				this.Title = "Tranquility Verses(Sakina)";
 				lblPreface.Text = "These verses are the ones where Allah sent down tranquility (sakina) to calm the hearts of the believers during moments of extreme danger, tension, or uncertainty. They are powerful reminders of Allah’s support and presence in times of trial, showing that true peace and strength come from reliance on the Creator. Recite all of them after obligatory prayers to receive the benefits of sakina in your life.";	
 				dB = new QuranDB();
-				Verses = new List<Verse>();
-				for(int p=0; p < sakina.GetLength(0); p++)
+				var _sakina = await dB.GetVerseRef("Sakina");
+				foreach(var sakina in _sakina)
 				{
-
-					var v = await dB.GetSakinaVerses(sakina[p,0], Convert.ToInt32(sakina[p,1]), Convert.ToInt32(sakina[p, 2]), Convert.ToInt32(sakina[p, 3]), sakina[p,4], sakina[p,5]);
+					switch(selectedLanguage)
+					{
+						case 1:
+							v = await dB.GetSakinaVerses(sakina.title, sakina.chapter_number, sakina.verse_start, sakina.verse_end, sakina.background_title, sakina.context_english);
+						break;
+						case 2:
+							v = await dB.GetSakinaVerses(sakina.title, sakina.chapter_number, sakina.verse_start, sakina.verse_end, sakina.background_title, sakina.context_urdu);
+						break;
+					}
+					
 					foreach (var _v in v)
 					{
 						_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 						_v.translation_ref = "";
+						switch(selectedLanguage)
+						{
+							case 1:
+								_v.translation = _v.verse_english;
+								_v.translation_ref = _v.english_ref;
+								_v.font_translation = "Tahoma";
+								_v.translation_alignment = TextAlignment.Start;
+								break;
+							case 2:
+								_v.translation = _v.verse_urdu;
+								_v.translation_ref = _v.urdu_ref;
+								_v.font_translation = "Urdu";
+								_v.translation_alignment = TextAlignment.End;
+								break;
+							default:
+								_v.translation = _v.verse_english;
+								_v.translation_ref = _v.english_ref;
+								_v.font_translation = "Tahoma";
+								_v.translation_alignment = TextAlignment.Start;
+								break;
+						}
 						// height of header //
 						_v.number = 120;
 						Verses.Add(_v);
@@ -165,5 +219,37 @@ public partial class CommonSearch : ContentPage
 		}
 		lstView.ItemsSource = Verses;
 		progress.HideProgress();
-    }
+	}
+	/// <summary>
+	/// show translation options popup
+	/// </summary>
+	/// <param name="sender"></param>
+	/// <param name="e"></param>
+    private async void showTranslation_Clicked(object sender, EventArgs e)
+	{
+		var popup = new TranslationOption();
+
+        // The type parameter must match the type returned from the popup.
+        IPopupResult<Int16> popupResult = await this.ShowPopupAsync<Int16>(popup, new PopupOptions
+                {
+                    PageOverlayColor = Colors.DarkSlateGray.WithAlpha(0.6f)
+                }, CancellationToken.None);
+
+        if (popupResult.WasDismissedByTappingOutsideOfPopup)
+        {
+            return;
+        }
+        switch (popupResult.Result)
+        {
+            case 1:
+                // English translation was tapped
+                selectedLanguage = 1;
+                break;
+            case 2:
+                // Urdu translation was tapped
+                selectedLanguage = 2;
+                break;
+        }
+		await DisplayVerses();
+	}
 }

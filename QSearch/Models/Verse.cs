@@ -22,14 +22,34 @@
         public string font { get; set; }
         // for storing sujood mark ///
         public string verse_arabic_end { get; set;}
-        public string prophet {get;set;}
+        /// <summary>
+        /// used for duas of prophets and other duas, to store the name of the prophet or the dua
+        /// </summary>
+        public string header {get;set;}
         public string title {get;set;}
         public string tafsir {get;set; }
+        public string translation {get;set;}
         public string translation_ref {get;set;}
+        public string font_translation { get; set; } = "Tahoma";
+        public Microsoft.Maui.TextAlignment translation_alignment {get;set;} = 0;
         public string english_ref {get;set;}
         public string urdu_ref {get;set;}
         public bool showEnglish { get; set; }
         public bool showUrdu { get; set; }
+    }
+    /// <summary>
+    /// used in duas and sakinah verses, to store the reference of the verse, and the context of the verse in english, urdu and arabic
+    /// </summary>
+    public class Verse_Ref
+    {
+        public int chapter_number { get; set; }
+        public int verse_start { get; set; }
+        public int verse_end { get; set; }
+        public string title { get; set; }
+        public string background_title { get; set; }
+        public string context_english { get; set; }
+        public string context_urdu { get; set; }    
+        public string context_arabic { get; set; }
     }
     /// <summary>
     /// picking the surah
@@ -75,6 +95,7 @@
         public int total_verses { get; set; }
         public int total_verses_para { get; set; }
         public string font { get; set; }
+        public string font_translation{ get; set; } = "Tahoma";
         public string[] showLine { get; set; } = new string[25];
     }
     /// <summary>

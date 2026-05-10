@@ -5,13 +5,6 @@
              xmlns:local="clr-namespace:QSearch"
              Title="CommonSearch">
     <VerticalStackLayout>
-        <ActivityIndicator 
-                    x:Name="progInd"
-                    IsRunning="False"
-                    IsVisible="False"
-                    Color="Blue"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center" />
             <Border Stroke="LightGray"
                     StrokeThickness="2"
                     Padding="5">
@@ -33,22 +26,41 @@
                     Text=""
                     FontSize="Medium"
                     FontAttributes="Bold,Italic"
-                    TextColor="Teal" />
+                    TextColor="Teal" />             
             </Border>
+            <FlexLayout HorizontalOptions="Center" Direction="Column">
+                <ImageButton x:Name="showTranslation"
+                        BackgroundColor="LightGreen"
+                        ToolTipProperties.Text="Show translation" Clicked="showTranslation_Clicked">
+                        <ImageButton.Source>
+                                <FontImageSource
+                                    FontFamily="MaterialIconsOutlined-Regular"
+                                    Color="Black"
+                                    Glyph="&#xe894;"
+                                    Size="28"
+                                />                         
+                        </ImageButton.Source>
+                        <ImageButton.Shadow>
+                            <Shadow Brush="Gray"
+                                Offset="20,20"
+                                Radius="40"
+                                Opacity="0.8" />
+                        </ImageButton.Shadow>
+                </ImageButton>
+                <ActivityIndicator 
+                            x:Name="progInd"
+                            IsRunning="False"
+                            IsVisible="False"
+                            Color="Blue"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />     
+            </FlexLayout>
             <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
                 <CollectionView 
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
-                    VerticalScrollBarVisibility="Always"
-                    Grid.Row="0"
-                    Grid.Column="0">
+                    VerticalScrollBarVisibility="Always">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Vertical" />
                     </CollectionView.ItemsLayout>
@@ -148,7 +160,7 @@
                                                         HorizontalOptions="Center">
                                                         <Label.FormattedText>
                                                             <FormattedString>
-                                                                <Span Text="{Binding prophet}" TextColor="White" BackgroundColor="Green"/>
+                                                                <Span Text="{Binding header}" TextColor="White" BackgroundColor="Green"/>
                                                             </FormattedString>    
                                                         </Label.FormattedText>
                                                     </Label> 
@@ -183,7 +195,7 @@
                                             <Label
                                                 FontAttributes="Bold"
                                                 HorizontalTextAlignment="End"
-                                                Margin="0,0,0,1"
+                                                Margin="1,1,0,1"
                                                 >
                                                 <Label.FormattedText>
                                                     <FormattedString>
@@ -193,22 +205,30 @@
                                                 </Label.FormattedText>
                                             </Label>
                                             <Label 
-                                                FontSize="Medium"
-                                                FontAttributes="Bold"
-                                                TextColor="Black"
-                                                TextType="Text"
-                                                LineBreakMode="WordWrap"
-                                                Margin="0,0,0,3"
-                                                Text="{Binding verse_english}" />
-                                            <Label
+                                                    FontSize="Medium"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
+                                                    HorizontalOptions="Fill"
+                                                    HorizontalTextAlignment="{Binding translation_alignment}"
+                                                    Margin="1,0,1,1" >
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                            <Span  Text="{Binding translation}"
+                                                                    FontFamily="{Binding font_translation}"
+                                                                    />
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                                </Label>
+                                            <Label 
                                                 FontSize="Micro"
-                                                TextColor="SkyBlue"
-                                                HorizontalTextAlignment="Center"
-                                                Text="{Binding english_ref}" />
+                                                FontAttributes="Italic"
+                                                TextColor="Silver"
+                                                Text="{Binding translation_ref}"
+                                                FontFamily="{Binding font_translation}"
+                                                HorizontalTextAlignment="Center" /> 
                                             <Label 
                                                 FontSize="Medium"
-                                                FontAttributes="Bold,Italic"
-                                                TextType="Text">
+                                                FontAttributes="Bold,Italic">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding title}" TextColor="Blue" BackgroundColor="WhiteSmoke" TextDecorations="Underline" />
@@ -218,15 +238,11 @@
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold,Italic"
-                                                TextType="Text"
                                                 TextColor="Teal"
-                                                Text="{Binding tafsir}" />
-                                            <Label 
-                                                FontSize="Small"
-                                                FontAttributes="Italic"
-                                                TextType="Text"
-                                                TextColor="Silver"
-                                                Text="{Binding translation_ref}" /> 
+                                                Text="{Binding tafsir}"
+                                                FontFamily="{Binding font_translation}"
+                                                HorizontalOptions="Fill"
+                                                HorizontalTextAlignment="{Binding translation_alignment}" />
                                     </VerticalStackLayout>
                                 </Border> 
                         </DataTemplate>

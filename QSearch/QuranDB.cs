@@ -90,12 +90,25 @@ namespace QSearch
         public async Task<List<Verse>> GetArabicVerseAsync(string srch)
         {
             Init();
-            //var b = System.Text.Encoding.Default.GetBytes(srch);
-            //object[] p = { "*" + srch + "*"};
-            //List<Verse> rset = await QDB.QueryAsync<Verse>("SELECT * FROM verses WHERE verse_arabic_clean GLOB ?", p);
             // use full text search
             object[] p = {"*" + srch + "*"};
             string query = "with QS as (SELECT number, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM QSearch WHERE verse_arabic_clean GLOB ?) ";
+            query += "SELECT verses.*, verse_english, verse_arabic_clean, english_ref, verse_urdu, urdu_ref FROM verses inner join QS on verses.number = CAST(QS.number AS INTEGER) ORDER BY verses.number";
+            List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
+
+            return rset;
+        }
+        /// <summary>
+        /// Urdu search for a verse by a search string
+        /// </summary>
+        /// <param name="srch"></param>
+        /// <returns></returns>
+        public async Task<List<Verse>> GetUrduVerseAsync(string srch)
+        {
+            Init();
+            // use full text search
+            object[] p = {"*" + srch + "*"};
+            string query = "with QS as (SELECT number, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM QSearch WHERE verse_urdu GLOB ?) ";
             query += "SELECT verses.*, verse_english, verse_arabic_clean, english_ref, verse_urdu, urdu_ref FROM verses inner join QS on verses.number = CAST(QS.number AS INTEGER) ORDER BY verses.number";
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
 
@@ -114,13 +127,28 @@ namespace QSearch
             return rset;
         }
         /// <summary>
+        /// used for duas, sakina verses
+        /// </summary>
+        /// <param name="ref_type"></param>
+        /// <returns></returns>
+        public async Task<List<Verse_Ref>> GetVerseRef(string ref_type)
+        {
+            Init();
+            object[] p = { ref_type};
+
+            string query = "SELECT * from verse_ref WHERE ref_type = ? ";
+            query += "ORDER BY id, chapter_number, verse_start";
+            List<Verse_Ref> rset = await QDB.QueryAsync<Verse_Ref>(query, p);
+            return rset;
+        }
+        /// <summary>
         /// Prophet dua in a given chapter 
         /// </summary>
         /// <param name="chapter"></param>
         /// <param name="from"></param>
         /// <param name="to"></param>
         /// <returns></returns>
-        public async Task<List<Verse>> GetProphetDua(string prophet,int chapter, int from, int to,string title, string tafsir)
+        public async Task<List<Verse>> GetProphetDua(string prophet,int chapter, int from, int to,string title, string tafsir, int selectedLanguage)
         {
             Init();
             object[] p = { chapter, from, to };
@@ -130,10 +158,23 @@ namespace QSearch
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
             foreach(Verse v in rset)
             {
-                v.prophet = "Dua of " + prophet + (prophet == "Muhammad" ? " (SAW)" : " (AS)");
+                v.header = "Dua of " + prophet + (prophet == "Muhammad" ? " (SAW)" : " (AS)");
                 v.title = title;
+                switch(selectedLanguage)
+                {
+                    case 1:
+                        v.translation = v.verse_english;
+                        v.translation_ref = v.english_ref;
+                        v.font_translation = "Tahoma";
+                        break;
+                    case 2:
+                        v.translation = v.verse_urdu;
+                        v.translation_ref = v.urdu_ref;
+                        v.font_translation = "Urdu";
+                        break;  
+                }
                 v.tafsir = tafsir;
-                v.translation_ref = prophet == "Muhammad" ? "" : "duasofprophets.com";
+                //v.translation_ref = prophet == "Muhammad" ? "" : "duasofprophets.com";
             }
                 
             return rset;
@@ -154,7 +195,7 @@ namespace QSearch
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
             foreach(Verse v in rset)
             {
-                v.prophet = header;
+                v.header = header;
                 v.title = title;
                 v.tafsir = tafsir;
             }
@@ -205,6 +246,23 @@ namespace QSearch
             object[] p = new object[1];
             p[0] = "";
             string query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number WHERE verses.number in (SELECT number FROM QSearch WHERE verse_arabic_clean match ?) ";
+            for (int i=0; i < srch.Length; i++)
+                p[0] += srch[i] + " "; 
+            List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
+            return rset;
+        }
+        /// <summary>
+        /// multiple word search in urdu translation
+        /// </summary>
+        /// <param name="srch"></param>
+        /// <returns></returns>
+        public async Task<List<Verse>> GetUrduVerseAsync(string[] srch)
+        {
+            Init();
+            //  search FTS //
+            object[] p = new object[1];
+            p[0] = "";
+            string query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number WHERE verses.number in (SELECT number FROM QSearch WHERE verse_urdu match ?) ";
             for (int i=0; i < srch.Length; i++)
                 p[0] += srch[i] + " "; 
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);

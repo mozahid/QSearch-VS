@@ -99,7 +99,6 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiImage Include="Resources\Images\*" />
-
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
@@ -162,6 +161,7 @@
 	  <BundleResource Include="Resources\Fonts\IndoPak.ttf" />
 	  <BundleResource Include="Resources\Fonts\Lateef-Bold.ttf" />
 	  <BundleResource Include="Resources\Fonts\AlQalam.ttf" />
+	  <BundleResource Include="Resources\Fonts\NotoNastaliqUrdu-VariableFont_wght.ttf" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiFont Remove="Resources\Fonts\AlQuran-IndoPak-by-QuranWBW.v.4.2.2-WL.ttf" />

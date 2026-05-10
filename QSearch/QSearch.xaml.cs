@@ -6,6 +6,8 @@ using SQLitePCL;
 using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Extensions;
 using CommunityToolkit.Maui;
+using System;
+using Microsoft.Maui.Devices;
 
 #if ANDROID
 using Android.Views;
@@ -167,6 +169,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                     }
                     Verses = await dB.GetVerseAsync(words);
                 }
+                selectedLanguage = 1;
                 break;
             case "ar":
                 if (words.Length == 1)
@@ -184,8 +187,26 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                     Verses = await dB.GetArabicVerseAsync(words);
                 }
                 break;
+            case "ur":
+                if (words.Length == 1)
+                {
+                    srch = words[0];
+                    Verses = await dB.GetUrduVerseAsync(srch);
+                }
+                else
+                {
+                    // multiple words, use OR query //
+                    for (int i = 0; i < words.Length; i++)
+                    {
+                        words[i] = words[i].Replace("\"", "");
+                    }
+                    Verses = await dB.GetUrduVerseAsync(words);
+                }
+                selectedLanguage = 2;
+                break;
             default:
                 pattern = "^[a-zA-Z\"!]*$";
+                selectedLanguage = 1;
                 break;
         }
         result.IsVisible = false;
@@ -260,6 +281,8 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                             }
                             if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
                                 v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                            if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
+                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";
                         }
                     }
                     break;
@@ -351,6 +374,23 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                         }
                     }
                     break;
+                case "ur":
+                    for (int i = 0; i < words.Length; i++)
+                    {
+                        srch = words[i].Trim();
+                        foreach (Verse v in Verses)
+                        {
+                            if (v.verse_urdu.IndexOf(srch) >= 0)
+                            {
+                                v.verse_urdu = v.verse_urdu.Replace(srch, "<span style=\"background-color:yellow\"> " + srch + " </span>", StringComparison.CurrentCultureIgnoreCase);
+                            }
+                            if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
+                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";
+                            if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                        }
+                    }
+                     break;
                 default:
                     break;
             }
@@ -485,7 +525,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 lstView.ItemsSource = null;
                 progress.ShowProgress();
                 lstView.ItemsSource = Verses;
-                lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+#if IOS || MACCATALYST
+        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+#endif
                 progress.HideProgress();
             }
         }
@@ -552,7 +594,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             lstView.ItemsSource = null;
             progress.ShowProgress();
             lstView.ItemsSource = Verses;
-            lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+#if IOS || MACCATALYST
+        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+#endif
             progress.HideProgress();
         }
     }

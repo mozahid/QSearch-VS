@@ -14,11 +14,12 @@ public partial class RSurah : ContentPage, IQueryAttributable
     //Options opt;
     OptionsData ret = new OptionsData();
     public List<GroupedSurah> groupedSurah { get; private set; } = new List<GroupedSurah>();
+    List<ReciteSurah> surahs = new List<ReciteSurah>();
     Boolean showTrans = false;
     int firstItem = 0;
     Progress progress;
     public int chapter {get; set;}
-
+    public int selectedLanguage = 1;
      public async void ApplyQueryAttributes(IDictionary<string, object> query)
     {
         chapter = Convert.ToInt32(HttpUtility.UrlDecode(query["chapter"].ToString()));
@@ -43,7 +44,11 @@ public partial class RSurah : ContentPage, IQueryAttributable
                 btnForward.BackgroundColor = Colors.LightSkyBlue;
                 break;
         }           
-        if (groupedSurah.Count == 0) await LinesByLines();
+        if (groupedSurah.Count == 0) 
+        {
+            surahs = await dB.GetSurahByNumber(chapter_no);
+            await LinesByLines();
+        }
     }
     //used by GoToAsync //
     public RSurah(QuranDB qdb)
@@ -51,6 +56,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
 		InitializeComponent();
         dB = qdb;
         progress = new Progress(progInd);
+        lstView.ItemsSource = null;
     }
     protected override void OnAppearing()
     {
@@ -65,11 +71,10 @@ public partial class RSurah : ContentPage, IQueryAttributable
     private async Task LinesByLines()
     {
         progress.ShowProgress();
-        await Task.Yield();
-        List<ReciteSurah> surahs = new List<ReciteSurah>();
+        await Task.Delay(75);
+        
         ReciteSurah surah = new ReciteSurah();
         for (int i = 0; i < 25; i++) surah.showLine[i] = "false";
-        surahs = await dB.GetSurahByNumber(chapter_no);
         int _lines = 0;
         int _pg = 1;
 
@@ -85,8 +90,24 @@ public partial class RSurah : ContentPage, IQueryAttributable
             surah.verse_arabic_lines[_lines] = item.verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(item.verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);
             if (showTrans) 
             {
-                surah.verse_translation_lines[_lines] = "\n" + item.verse_english;
-                surah.translation_ref_lines[_lines] = "\n" + item.english_ref;
+                switch(selectedLanguage)
+                {
+                    case 1:
+                        surah.verse_translation_lines[_lines] = "\n" + item.verse_english;
+                        surah.translation_ref_lines[_lines] = "\n" + item.english_ref;
+                        surah.font_translation = "Tahoma";
+                        break;
+                    case 2:
+                        surah.verse_translation_lines[_lines] = "\n" + item.verse_urdu;
+                        surah.translation_ref_lines[_lines] = "\n" + item.urdu_ref;
+                        surah.font_translation = "Urdu";
+                        break;
+                }
+            }
+            else
+            {
+                surah.verse_translation_lines[_lines] = string.Empty;
+                surah.translation_ref_lines[_lines] = string.Empty;
             }
             surah.verse_arabic_lines_number[_lines] = "[" + Regex.Match(item.verse_arabic, @"\d+").Value + "]";
             surah.verse_arabic_line_end[_lines] = item.verse_arabic.Contains("۩") ? "۩" : string.Empty;
@@ -183,35 +204,38 @@ public partial class RSurah : ContentPage, IQueryAttributable
                 {
                     PageOverlayColor = Colors.DarkSlateGray.WithAlpha(0.6f)
                 }, CancellationToken.None);
-
-        if (popupResult.WasDismissedByTappingOutsideOfPopup)
-        {
-            return;
-        }
         switch (popupResult.Result)
         {
             case 1:
                 // English translation was tapped
+                showTrans = true;
+                selectedLanguage = 1;
                 break;
             case 2:
                 // Urdu translation was tapped
+                showTrans = true;
+                selectedLanguage = 2;
+                break;
+            default:
+                showTrans = false;
                 break;
         }
         if (showTrans)
         {
-            showTrans = false;
             FontImageSource fi = showTranslation.Source as FontImageSource;
-            fi.Color = Colors.Black;
+            fi.Color = Colors.Green;
         }
         else
         {
-            showTrans = true;
             FontImageSource fi = showTranslation.Source as FontImageSource;
-            fi.Color = Colors.Green;
+            fi.Color = Colors.Black;
         }
         groupedSurah.Clear();
         lstView.ItemsSource = null;
         await LinesByLines();
+#if IOS
+        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+#endif
     }
     /// <summary>
     /// font change
@@ -241,7 +265,9 @@ public partial class RSurah : ContentPage, IQueryAttributable
             }
             lstView.ItemsSource = groupedSurah;
             await Task.Yield();
-            lstView.ScrollTo(firstItem);
+#if IOS
+        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
+#endif
             progress.HideProgress();
         }
     }
