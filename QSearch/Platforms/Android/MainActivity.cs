@@ -30,6 +30,7 @@ public class MainActivity : MauiAppCompatActivity
     {
         base.OnCreate(savedInstanceState);
     }
+#nullable enable
     // protected override void OnCreate(Bundle? savedInstanceState)
     // {
     //     base.OnCreate(savedInstanceState);

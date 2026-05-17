@@ -233,9 +233,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
         groupedSurah.Clear();
         lstView.ItemsSource = null;
         await LinesByLines();
-#if IOS
-        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
-#endif
+        Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center));
     }
     /// <summary>
     /// font change
@@ -265,9 +263,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
             }
             lstView.ItemsSource = groupedSurah;
             await Task.Yield();
-#if IOS
-        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
-#endif
+            Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center));
             progress.HideProgress();
         }
     }
@@ -278,7 +274,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
     /// <param name="e"></param>
     private void lstView_Scrolled(object sender, ItemsViewScrolledEventArgs e)
     {
-        firstItem = e.FirstVisibleItemIndex;
+        firstItem = e.CenterItemIndex;
     }
     /// <summary>
     /// back button pressed

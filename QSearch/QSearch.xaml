@@ -139,28 +139,20 @@
                     Color="Blue"
                     HorizontalOptions="Center"
                     VerticalOptions="Center" />
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
            <CollectionView
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
                     Scrolled="lstView_Scrolled"
-                    VerticalScrollBarVisibility="Always"
-                    Grid.Row="0"
-                    Grid.Column="0">
+                    VerticalScrollBarVisibility="Always">
                         <CollectionView.ItemTemplate>
                         <DataTemplate>
-                                    <Border
+                                        <!-- <VerticalStackLayout> -->
+                                    <Grid HorizontalOptions="Fill" RowSpacing="1">
+                                    <!-- <Border
                                         Background="White"
                                         Stroke="LightGray"
-                                        StrokeThickness="1"
-                                            >
+                                        StrokeThickness="1">
                                             <Border.StrokeShape>
                                                 <RoundRectangle CornerRadius="5,5,5,5"/>
                                             </Border.StrokeShape>
@@ -169,10 +161,13 @@
                                                             Offset="20,20"
                                                             Radius="40"
                                                             Opacity="0.8" />
-                                            </Border.Shadow>
-                                        <VerticalStackLayout>
-                                        <Grid HorizontalOptions="Fill" RowSpacing="1">
+                                            </Border.Shadow> -->
                                             <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
                                                 <RowDefinition />
                                                 <RowDefinition />
                                                 <RowDefinition />
@@ -248,8 +243,7 @@
                                                         Grid.Row="2"
                                                         Grid.Column="0"
                                                         HorizontalOptions="Start"
-                                                        Margin="5,0,0,0"
-                                                    >
+                                                        Padding="5,0,0,0">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="{Binding chapter_name_english}" BackgroundColor="WhiteSmoke"/>
@@ -269,8 +263,18 @@
                                                                 </FormattedString>
                                                             </Label.FormattedText>
                                                     </Label>
-                                            </Grid>
-                                            <Label
+                                            <Grid   Grid.Row="3" 
+                                                    Grid.Column="0" 
+                                                    Grid.ColumnSpan="3">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="20" />
+                                                    <RowDefinition Height="2" />
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <Label
                                                 FontAttributes="Bold"
                                                 FontSize="Large"
                                                 Text="{Binding verse_arabic}" FontFamily="{Binding font}"
@@ -278,19 +282,20 @@
                                                 VerticalOptions="Start"
                                                 HorizontalOptions="End"
                                                 HorizontalTextAlignment="End"
-                                                >
-                                            </Label> 
-                                            <FlexLayout JustifyContent="Center">
+                                                Grid.Row="0">
+                                                </Label> 
                                                 <Label
                                                     Text="{Binding verse_arabic_end}" 
                                                     TextColor="White" 
-                                                    FontSize="Large" 
-                                                    BackgroundColor="Red"
-                                                />
-                                            </FlexLayout>
-                                            <BoxView Color="LightGray"
-                                                HeightRequest="2"
-                                                HorizontalOptions="Fill" />
+                                                    FontSize="Medium"
+                                                    HorizontalOptions="Center"
+                                                    VerticalOptions="Start"
+                                                    BackgroundColor="Red" 
+                                                    Grid.Row="1"/>
+                                                <BoxView Color="LightGray"
+                                                    HorizontalOptions="Fill"
+                                                    Grid.Row="2" />
+                                            </Grid>
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold"
@@ -298,13 +303,15 @@
                                                 TextType="Html"
                                                 LineBreakMode="WordWrap"
                                                 IsVisible="{Binding showEnglish}"
-                                                Text="{Binding verse_english}" />
+                                                Text="{Binding verse_english}"
+                                                Grid.Row="4" Grid.ColumnSpan="3" />
                                             <Label
                                                 FontSize="Micro"
                                                 TextColor="SkyBlue"
                                                 HorizontalTextAlignment="Center"
                                                 IsVisible="{Binding showEnglish}"
-                                                Text="{Binding english_ref}" />
+                                                Text="{Binding english_ref}"
+                                                Grid.Row="5" Grid.ColumnSpan="3" />
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold"
@@ -313,23 +320,21 @@
                                                 FontFamily="Urdu"
                                                 HorizontalTextAlignment="End"
                                                 IsVisible="{Binding showUrdu}"
-                                                Text="{Binding verse_urdu}" />
-                                                
-                                            <!-- <Label Text="&#10;" />  -->
-
+                                                Text="{Binding verse_urdu}"
+                                                Grid.Row="6" Grid.ColumnSpan="3" />
                                             <Label
                                                 FontSize="Micro"
                                                 TextColor="SkyBlue"
                                                 HorizontalTextAlignment="Center"
                                                 FontFamily="Urdu"
                                                 IsVisible="{Binding showUrdu}"
-                                                Text="{Binding urdu_ref}" />
-                                    </VerticalStackLayout>
-                                </Border> 
+                                                Text="{Binding urdu_ref}"
+                                                Grid.Row="7" Grid.ColumnSpan="3" />
+                                        </Grid>
+                                <!-- </Border>  -->
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-            </Grid>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

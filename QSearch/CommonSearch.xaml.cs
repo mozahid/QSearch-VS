@@ -12,6 +12,7 @@ public partial class CommonSearch : ContentPage
 	 List<Verse> Verses = new List<Verse>();
     Progress progress;
 	public int selectedLanguage = 1;
+	 private int firstItem = 0;
 	public CommonSearch()
 	{
 		InitializeComponent();
@@ -251,5 +252,11 @@ public partial class CommonSearch : ContentPage
                 break;
         }
 		await DisplayVerses();
+		Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center, animate: true));
+	}
+
+    private void lstView_Scrolled(object sender, ItemsViewScrolledEventArgs e)
+	{
+		firstItem = e.CenterItemIndex;
 	}
 }

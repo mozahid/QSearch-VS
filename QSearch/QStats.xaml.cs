@@ -24,5 +24,6 @@ public partial class QStats : ContentPage
         lTotalMakki.Text = Convert.ToString(await dB.GetTotalMakki());
         lTotalMadni.Text = Convert.ToString(await dB.GetTotalMadni());
         lTotalWords.Text = Convert.ToString(await dB.GetTotalWords());
+        lTotalRuku.Text = Convert.ToString(await dB.GetTotalRuku());
     }
 }

@@ -60,6 +60,7 @@
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
+                    Scrolled="lstView_Scrolled"
                     VerticalScrollBarVisibility="Always">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Vertical" />
@@ -170,7 +171,7 @@
                                                         Grid.Row="3"
                                                         Grid.Column="0"
                                                         HorizontalOptions="Start"
-                                                        Margin="5,0,0,0"
+                                                        Padding="5,0,0,0"
                                                     >
                                                         <Label.FormattedText>
                                                             <FormattedString>
@@ -195,7 +196,7 @@
                                             <Label
                                                 FontAttributes="Bold"
                                                 HorizontalTextAlignment="End"
-                                                Margin="1,1,0,1"
+                                                Padding="1,1,0,1"
                                                 >
                                                 <Label.FormattedText>
                                                     <FormattedString>

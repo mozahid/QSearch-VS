@@ -443,6 +443,20 @@ namespace QSearch
             var _t = await QDB.ExecuteScalarAsync<int>(query, p);
             return _t;
         }
+        /// <summary>
+        /// Total Ruku which are cycles
+        /// </summary>
+        /// <returns></returns>
+        public async Task<int> GetTotalRuku()
+        {
+            Init();
+            object[] p = { };
+            string query = "SELECT SUM(ruku_count) FROM verse_stat ";
+
+            var _t = await QDB.ExecuteScalarAsync<int>(query, p);
+            return _t;
+        }
+
         ///////////////// QURAN STATISTICS/////////////////////
 
     }

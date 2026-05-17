@@ -219,7 +219,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 _v.verse_arabic = _v.verse_arabic.Replace("۩", "");
                 _v.verse_arabic_end = "۩ (Sujood)";    
             }
-            ///show translation based on user selection //
+            // show translation based on user selection //
             switch(selectedLanguage)
             {
                 case 1:
@@ -281,8 +281,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                             }
                             if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
                                 v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                            //// if we need to show urdu translation, on clicking the language, right align it//
                             if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
-                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";
+                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
                         }
                     }
                     break;
@@ -298,9 +299,10 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                             if (loc >= 0)
                             {
                                 bool found = false;
+                                loc = 0;
                                 while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
                                 {
-                                    w = v.verse_arabic.Substring(loc, srch.Length * 2);
+                                    w = v.verse_arabic.Substring(loc, srch.Length + (srch.Length) / 2);
                                     if (w.StartsWith("<span style=\"background-color:yellow\""))
                                     {
                                         loc += 38;
@@ -318,59 +320,51 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                         if (words.Length == 1) 
                                         {
                                             wordcount++;
-                                            loc += srch.Length;
-                                            while ((loc + srch.Length * 2) < v.verse_arabic.Length)
-                                            {
-                                                var w_next = v.verse_arabic.Substring(loc, srch.Length * 2);
-                                                w_normal = normalize(w_next);
-                                                if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
-                                                {
-                                                    wordcount++;
-                                                }
-                                                loc += 1;
-                                            }
+                                            CountWords(srch, v, loc, ref wordcount, srch.Length + (srch.Length) / 2);
                                         }
                                     }
                                     else
                                     {
-                                        w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                        w = v.verse_arabic.Substring(loc, srch.Length * 2);
                                         w_normal = normalize(w);
                                         if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
-                                        {
+                                        {                                            
                                             found = true;
                                             if (words.Length == 1) 
                                             {
                                                 wordcount++;
-                                                loc += srch.Length;
-                                                while ((loc + srch.Length * 2 + 1) < v.verse_arabic.Length)
+                                                CountWords(srch, v, loc, ref wordcount, srch.Length * 2);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                            w_normal = normalize(w);
+                                            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
+                                            {
+                                                found = true;
+                                                if (words.Length == 1) 
                                                 {
-                                                    var w_next = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
-                                                    w_normal = normalize(w_next);
-                                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
-                                                    {
-                                                        wordcount++;
-                                                    }
-                                                    loc += 1;
+                                                    wordcount++;
+                                                    CountWords(srch, v, loc, ref wordcount, srch.Length * 2 + 1);
                                                 }
                                             }
                                         }
-                                        else loc += 1;
+                                        loc += 1;
                                     }
                                 }
                                 // highlight only if found //
                                 if (found)
                                 {
                                     v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
-                                    if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
-                                        v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                                     found = false;
                                 }
                             }
-                            else
-                            {
-                                    if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                            if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
                                         v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
-                            }
+                            //// if we need to show urdu translation, on clicking the language, right align it//
+                            if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
+                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
                         }
                     }
                     break;
@@ -385,9 +379,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                 v.verse_urdu = v.verse_urdu.Replace(srch, "<span style=\"background-color:yellow\"> " + srch + " </span>", StringComparison.CurrentCultureIgnoreCase);
                             }
                             if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
-                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";
-                            if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
-                                v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
                         }
                     }
                      break;
@@ -409,7 +401,27 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         }
         progress.HideProgress();
     }
-    
+    /// <summary>
+    /// cound words found if one arabic word is entered
+    /// </summary>
+    /// <param name="srch"></param>
+    /// <param name="v"></param>
+    /// <param name="loc"></param>
+    /// <param name="wordcount"></param>
+    private void CountWords(string srch, Verse v, int loc, ref int wordcount, int wordLength)
+    {
+        loc += srch.Length;
+        while ((loc + wordLength) < v.verse_arabic.Length)
+        {
+            var w_next = v.verse_arabic.Substring(loc, wordLength);
+            var w_normal = normalize(w_next);
+            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
+            {
+                wordcount++;
+            }
+            loc += 1;
+        }
+    }
     /// <summary>
     ///  for Arabic words highlighting
     /// </summary>
@@ -525,9 +537,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                 lstView.ItemsSource = null;
                 progress.ShowProgress();
                 lstView.ItemsSource = Verses;
-#if IOS || MACCATALYST
-        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
-#endif
+                Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center, animate: true));
                 progress.HideProgress();
             }
         }
@@ -594,9 +604,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             lstView.ItemsSource = null;
             progress.ShowProgress();
             lstView.ItemsSource = Verses;
-#if IOS || MACCATALYST
-        lstView.ScrollTo(firstItem, position: ScrollToPosition.MakeVisible);
-#endif
+            Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center, animate: true));
             progress.HideProgress();
         }
     }
