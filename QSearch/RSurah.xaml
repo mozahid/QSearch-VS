@@ -125,7 +125,6 @@
                     x:Name="lstView"            
                     HorizontalOptions="Center"
                     Margin="5"
-                    Scrolled="lstView_Scrolled"
                     IsGrouped="True"
                     VerticalScrollBarVisibility="Always" >
                         <CollectionView.GroupHeaderTemplate>
@@ -687,7 +686,7 @@
                                 </Border>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
-                </CollectionView>                   
+                </CollectionView>
             </Grid>          
                  <!-- <CollectionView
                     x:Name="lstViewAndroid"            

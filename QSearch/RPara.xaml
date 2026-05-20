@@ -95,7 +95,6 @@
                         HorizontalOptions="Center"
                         Margin="5"
                         IsGrouped="True"
-                        Scrolled="lstView_Scrolled"
                         VerticalScrollBarVisibility="Always" >
                             <CollectionView.GroupHeaderTemplate>
                                 <DataTemplate>

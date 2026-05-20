@@ -112,8 +112,6 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         }
         imgNotes.IsVisible = false;
         lstView.ItemsSource = null;
-        progress.ShowProgress();
-        await Task.Delay(50);
 
         Verses = new List<Verse>();
         string[] words = txt.Text.Trim().Split(' ');
@@ -139,6 +137,19 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
 #else
         currentLanguage = new LangDetection().LanguageDetected;
 #endif
+        if (currentLanguage == "en" && selectedLanguage != 1)
+        {
+            await DisplayAlertAsync("Q-Search", "Please choose English translation for search!", "Ok");
+            return;
+        }
+        else if (currentLanguage == "ur" && selectedLanguage != 2)
+        {
+            await DisplayAlertAsync("Q-Search", "Please choose Urdu translation for search!", "Ok");
+            return;
+        }
+        
+        progress.ShowProgress();
+        await Task.Delay(50);
         switch(currentLanguage)
         {
             case "en":
@@ -299,10 +310,12 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                             if (loc >= 0)
                             {
                                 bool found = false;
+                                int word_tashkeel_length = 0;
                                 loc = 0;
                                 while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
                                 {
-                                    w = v.verse_arabic.Substring(loc, srch.Length + (srch.Length) / 2);
+                                    word_tashkeel_length = srch.Length / 2;
+                                    w = v.verse_arabic.Substring(loc, srch.Length + word_tashkeel_length);
                                     if (w.StartsWith("<span style=\"background-color:yellow\""))
                                     {
                                         loc += 38;
@@ -314,20 +327,22 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                         continue;
                                     }
                                     var w_normal = normalize(w);
-                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch))
+                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
+                                            || (w_normal.TrimEnd() == srch))
                                     {
                                         found = true;
                                         if (words.Length == 1) 
                                         {
                                             wordcount++;
-                                            CountWords(srch, v, loc, ref wordcount, srch.Length + (srch.Length) / 2);
+                                            CountWords(srch, v, loc, ref wordcount, srch.Length + word_tashkeel_length);
                                         }
                                     }
                                     else
                                     {
                                         w = v.verse_arabic.Substring(loc, srch.Length * 2);
                                         w_normal = normalize(w);
-                                        if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
+                                        if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
+                                             || (w_normal.TrimEnd() == srch))
                                         {                                            
                                             found = true;
                                             if (words.Length == 1) 
@@ -340,7 +355,8 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                         {
                                             w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
                                             w_normal = normalize(w);
-                                            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)) 
+                                            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
+                                                 || (w_normal.TrimEnd() == srch))
                                             {
                                                 found = true;
                                                 if (words.Length == 1) 

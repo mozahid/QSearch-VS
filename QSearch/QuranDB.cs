@@ -1,7 +1,5 @@
-﻿using System;
+﻿
 using SQLite;
-using System.Data;
-using System.Security.Cryptography.X509Certificates;
 
 namespace QSearch
 {
@@ -13,8 +11,14 @@ namespace QSearch
 		{
             if (QDB is not null)
                 return;
-
             QDB = new SQLiteAsyncConnection(DBConstants.DatabasePath, DBConstants.Flags);
+            // var options = new SQLiteConnectionString(DBConstants.DatabasePath, true, "S@la@m", postKeyAction: c => 
+            //     {
+            //         c.Execute("PRAGMA cipher_compatibility = 3");
+            //         c.Execute("PRAGMA cipher_page_size = 4096");
+            //     }
+            // );
+            //QDB = new SQLiteAsyncConnection(options);
         }
         /// <summary>
         ///  re-init the DB connection
@@ -26,6 +30,13 @@ namespace QSearch
                 return QDB;
 
             QDB = new SQLiteAsyncConnection(DBConstants.DatabasePath, DBConstants.Flags);
+            // var options = new SQLiteConnectionString(DBConstants.DatabasePath, true, "S@la@m", postKeyAction: c => 
+            //     {
+            //         c.Execute("PRAGMA cipher_compatibility = 3");
+            //         c.Execute("PRAGMA cipher_page_size = 4096");
+            //     }
+            // );
+            //QDB = new SQLiteAsyncConnection(options);
             return QDB;
         }
         /// <summary>
@@ -247,7 +258,21 @@ namespace QSearch
             p[0] = "";
             string query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number WHERE verses.number in (SELECT number FROM QSearch WHERE verse_arabic_clean match ?) ";
             for (int i=0; i < srch.Length; i++)
-                p[0] += srch[i] + " "; 
+            {
+                p[0] += srch[i] + " ";
+            }
+            // if search for all words in a multiple words ////
+            // object[] p = new object[srch.Length];
+            // p[0] = "";
+            // string query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number WHERE verses.number in (SELECT number FROM QSearch WHERE  ";
+            // for (int i=0; i < srch.Length; i++)
+            // {
+            //     query += "verse_arabic_clean match ? ";
+            //     p[i] = srch[i];
+            //     if (i < srch.Length - 1)
+            //         query += "OR ";
+            // }
+            // query += ") ";
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
             return rset;
         }

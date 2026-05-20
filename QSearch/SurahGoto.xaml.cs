@@ -190,7 +190,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
         groupedSurah.Clear();
         lstView.ItemsSource = null;
         await LinesByLines();
-        Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center));
+        Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
     }
     /// <summary>
     /// font change
@@ -218,7 +218,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
                     r.font = Preferences.Default.Get<string>("Font", "NotoArabic");
             }
             lstView.ItemsSource = groupedSurah;
-            Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center));
+            Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
             progress.HideProgress();
             await Task.Yield();
         }
@@ -230,6 +230,6 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
     /// <param name="e"></param>
     private void lstView_Scrolled(object sender, ItemsViewScrolledEventArgs e)
     {
-        firstItem = e.CenterItemIndex;
+        firstItem = e.FirstVisibleItemIndex;
     }
 }

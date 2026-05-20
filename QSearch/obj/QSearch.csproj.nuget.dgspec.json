@@ -80,7 +80,7 @@
             },
             "SQLitePCLRaw.bundle_e_sqlite3": {
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[3.0.3, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
@@ -460,7 +460,7 @@
             },
             "SQLitePCLRaw.bundle_e_sqlite3": {
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[3.0.3, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
@@ -800,7 +800,7 @@
             },
             "SQLitePCLRaw.bundle_e_sqlite3": {
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[3.0.3, )"
             },
             "SQLitePCLRaw.bundle_green": {
               "target": "Package",
