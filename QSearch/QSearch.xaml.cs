@@ -395,7 +395,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                 v.verse_urdu = v.verse_urdu.Replace(srch, "<span style=\"background-color:yellow\"> " + srch + " </span>", StringComparison.CurrentCultureIgnoreCase);
                             }
                             if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
-                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
+                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>"; 
+                            if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                         }
                     }
                      break;
@@ -583,7 +585,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                     PageOverlayColor = Colors.DarkSlateGray.WithAlpha(0.6f)
                 }, CancellationToken.None);
 
-        if (popupResult.WasDismissedByTappingOutsideOfPopup)
+        if (popupResult == null || popupResult.WasDismissedByTappingOutsideOfPopup)
         {
             return;
         }

@@ -192,7 +192,7 @@
                                     <Label.FormattedText>
                                         <FormattedString>
                                             <Span Text="{Binding chapter_class}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" ></Span>
-                                        </FormattedString>
+                                        </FormattedString> 
                                     </Label.FormattedText>
                                 </Label>
                                 <Label

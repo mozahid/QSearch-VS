@@ -204,6 +204,10 @@ public partial class RSurah : ContentPage, IQueryAttributable
                 {
                     PageOverlayColor = Colors.DarkSlateGray.WithAlpha(0.6f)
                 }, CancellationToken.None);
+        if (popupResult == null || popupResult.WasDismissedByTappingOutsideOfPopup)
+        {
+            return;
+        }
         switch (popupResult.Result)
         {
             case 1:
