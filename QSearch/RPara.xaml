@@ -101,7 +101,7 @@
                                 <Grid HorizontalOptions="Fill">
                                     <Grid.RowDefinitions>
                                         <RowDefinition />
-                                        <RowDefinition />
+                                        <RowDefinition Height="*" />
                                         <RowDefinition />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
@@ -109,7 +109,26 @@
                                         <ColumnDefinition />
                                         <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
-                                    <Image
+                                    <Border
+                                        HorizontalOptions="Fill"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="3" 
+                                        Grid.Column="0" 
+                                        Grid.ColumnSpan="3">
+                                        <Border.Background>
+                                            <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
+                                                <GradientStop Color="GhostWhite" Offset="0.0" />
+                                                <GradientStop Color="LightGreen" Offset="1.0" />
+                                            </RadialGradientBrush>
+                                        </Border.Background>
+                                        <Border.Shadow>
+                                            <Shadow Brush="Gray"
+                                                Offset="20,0"
+                                                Radius="40"
+                                                Opacity="0.8" />
+                                        </Border.Shadow>    
+                                    </Border>
+                                    <!-- <Image
                                             Grid.Row="0"
                                             Grid.Column="0"
                                             Grid.ColumnSpan="3"
@@ -117,18 +136,7 @@
                                             Opacity="0.8"
                                             Source="qs_hdr4.png"
                                             Aspect="Fill"
-                                            HeightRequest="90" />
-                                    <Border
-                                        Grid.Row="0"
-                                        Grid.RowSpan="3"
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="3"
-                                        Stroke="Beige"
-                                        StrokeThickness="3">
-                                        <Border.StrokeShape>
-                                            <RoundRectangle CornerRadius="5,5,5,5"/>
-                                        </Border.StrokeShape>
-                                    </Border>
+                                            HeightRequest="90" /> -->
                                     <Label
                                         FontFamily="Tahoma"
                                         FontSize="Small"
@@ -141,9 +149,9 @@
                                         Padding="5,10,0,0">
                                     <Label.FormattedText>     
                                         <FormattedString>
-                                            <Span Text="{Binding para_name}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                            <Span Text="{Binding para_name}" FontAttributes="Bold" />
                                             <Span Text="(" />
-                                            <Span Text="{Binding para_no}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                            <Span Text="{Binding para_no}" FontAttributes="Bold" />
                                             <Span Text=")" />
                                         </FormattedString>
                                     </Label.FormattedText>
@@ -159,7 +167,7 @@
                                         Padding="0,10,5,0">
                                         <Label.FormattedText>
                                             <FormattedString>
-                                                <Span Text="{Binding chapter_class}" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                <Span Text="{Binding chapter_class}" FontAttributes="Bold" />
                                             </FormattedString>
                                         </Label.FormattedText>
                                     </Label>
@@ -191,7 +199,7 @@
                                         <Label.FormattedText>
                                             <FormattedString>
                                                     <Span Text="page # - " FontSize="Micro" />
-                                                    <Span Text="{Binding page_no}" FontSize="Small" FontAttributes="Bold" BackgroundColor="WhiteSmoke" />
+                                                    <Span Text="{Binding page_no}" FontSize="Small" FontAttributes="Bold" />
                                             </FormattedString>
                                         </Label.FormattedText>
 
@@ -205,7 +213,7 @@
                                             <Label.FormattedText>
                                                 <FormattedString>
                                                     <Span Text="Total lines - " FontSize="Micro" />
-                                                    <Span Text="{Binding total_verses_para}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" BackgroundColor="WhiteSmoke" />
+                                                    <Span Text="{Binding total_verses_para}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
                                                 </FormattedString>
                                             </Label.FormattedText>
                                         </Label>
@@ -228,14 +236,45 @@
                                                         Radius="40"
                                                         Opacity="0.8" />
                                         </Border.Shadow>
-                                        <VerticalStackLayout Margin="1,0,1,1">
-                                            <Label
+                                    <Grid Padding="5" HorizontalOptions="Fill">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label
                                                 FontAttributes="Bold"
                                                 FontSize="Title"
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[0]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="0">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[0]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -252,7 +291,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[1]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[1]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -269,7 +309,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[2]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="2">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[2]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -286,7 +327,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[3]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="3">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[3]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -303,7 +345,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[4]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="4">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[4]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -320,7 +363,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[5]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="5">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[5]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -337,7 +381,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[6]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="6">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[6]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -354,7 +399,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[7]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="7">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[7]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -371,7 +417,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[8]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="8">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[8]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -388,7 +435,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[9]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="9">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[9]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -405,7 +453,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[10]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="10">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[10]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -422,7 +471,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[11]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="11">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[11]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -439,7 +489,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[12]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="12">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[12]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -456,7 +507,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[13]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="13">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[13]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -473,7 +525,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[14]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="14">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[14]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -490,7 +543,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[15]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="15">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[15]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -507,7 +561,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[16]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="16">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[16]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -524,7 +579,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[17]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="17">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[17]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -541,7 +597,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[18]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="18">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[18]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -558,7 +615,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[19]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="19">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[19]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -575,7 +633,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[20]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="20">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[20]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -592,7 +651,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[21]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="21">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[21]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -609,7 +669,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[22]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="22">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[22]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -626,7 +687,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[23]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="23">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[23]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -643,7 +705,8 @@
                                                 FontFamily="NotoArabic"
                                                 TextType="Text"
                                                 IsVisible ="{Binding showLine[24]}"
-                                                HorizontalTextAlignment="End">
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="24">
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[24]}" FontFamily="{Binding font} " TextColor="Black"></Span>
@@ -654,7 +717,7 @@
                                                     </FormattedString>
                                                 </Label.FormattedText>
                                             </Label>
-                                        </VerticalStackLayout>
+                                        </Grid>
                                     </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>

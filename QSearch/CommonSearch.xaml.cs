@@ -42,17 +42,22 @@ public partial class CommonSearch : ContentPage
 	{
 		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         lstView.IsVisible = true;
-        lstView.HeightRequest = screenHeight - 300;
+		if (screenHeight > 1000)
+        	lstView.HeightRequest = screenHeight - 300; 
+		else
+			lstView.HeightRequest = screenHeight - 400;
 		progress.ShowProgress();
 		List<Verse> v = new List<Verse>();
 		Verses = new List<Verse>();
+		await Task.Delay(25);
+		dB = new QuranDB();
 		switch (Item)
 		{
 			case "Sujood":
-				await Task.Delay(25);
+
 				this.Title = "Sujood Verses";
 				lblPreface.Text = "These verses are the ones where the Prophet Muhammad (SAW) and believers prostrated in worship to Allah. They are moments of deep humility, submission, and connection with the Divine, often revealed in response to profound events or messages.";
-				dB = new QuranDB();
+
 				Verses = await dB.GetSujoodVerses();
 				foreach (var _v in Verses)
 				{
@@ -83,15 +88,13 @@ public partial class CommonSearch : ContentPage
 					_v.tafsir = "";
 					//_v.translation_ref = "";
 					// height of header //
-					_v.number = 120;
+					_v.number = 110;
 				}
 				break;
 			case "Dua":
-				await Task.Delay(25);
 	
 				this.Title = "Prophet Duas in the Quran";
 				lblPreface.Text = "These are the duas (supplications) made by the Prophets mentioned in the Quran. They cover a wide range of themes, including seeking forgiveness, asking for guidance, protection from harm, and expressing gratitude. Each dua reflects the unique circumstances and challenges faced by the Prophets, as well as their deep connection with Allah." ;
-				dB = new QuranDB();
 				var _duas = await dB.GetVerseRef("Dua");
 				int _vcount = 0;
 				foreach(var dua in _duas)
@@ -110,7 +113,7 @@ public partial class CommonSearch : ContentPage
 					{
 						_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 						// height of header //
-						_v.number = 120;
+						_v.number = 124;
 						if (_v.verse_arabic.Contains("۩"))
 						{
 							_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
@@ -169,10 +172,8 @@ public partial class CommonSearch : ContentPage
 				}
 				break;
 			case "Sakina":
-				await Task.Delay(25);
 				this.Title = "Tranquility Verses(Sakina)";
 				lblPreface.Text = "These verses are the ones where Allah sent down tranquility (sakina) to calm the hearts of the believers during moments of extreme danger, tension, or uncertainty. They are powerful reminders of Allah’s support and presence in times of trial, showing that true peace and strength come from reliance on the Creator. Recite all of them after obligatory prayers to receive the benefits of sakina in your life.";	
-				dB = new QuranDB();
 				var _sakina = await dB.GetVerseRef("Sakina");
 				foreach(var sakina in _sakina)
 				{
@@ -212,7 +213,7 @@ public partial class CommonSearch : ContentPage
 								break;
 						}
 						// height of header //
-						_v.number = 120;
+						_v.number = 124;
 						Verses.Add(_v);
 					}	
 				}
@@ -252,11 +253,24 @@ public partial class CommonSearch : ContentPage
                 break;
         }
 		await DisplayVerses();
-		Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center, animate: true));
+		//Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem, position: ScrollToPosition.Center, animate: true));
 	}
 
-    private void lstView_Scrolled(object sender, ItemsViewScrolledEventArgs e)
+    private async void btnFont_Clicked(object sender, EventArgs e)
 	{
-		firstItem = e.CenterItemIndex;
+		ArabicFont fn = new ArabicFont();
+
+        #if MACCATALYST
+            await Navigation.PushAsync(fn);
+        #else
+            await Navigation.PushModalAsync(fn);
+        #endif
+
+        await fn.PopupDismissedTask;
+        if (fn.ReturnValue.optionSelection == 0)
+        {
+			await DisplayVerses();
+            progress.HideProgress();
+        }
 	}
 }
