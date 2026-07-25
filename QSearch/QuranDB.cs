@@ -483,7 +483,16 @@ namespace QSearch
         }
 
         ///////////////// QURAN STATISTICS/////////////////////
-
+        /// <!--Get Asma Husana-->
+        /// <returns></returns>
+        public async Task<List<Asma>> GetAsmaHusana()
+        {
+            Init();
+            object[] p = { };
+            string query = "SELECT * FROM asma ORDER BY number";
+            List<Asma> rset = await QDB.QueryAsync<Asma>(query, p);
+            return rset;    
+        }
     }
 }
 

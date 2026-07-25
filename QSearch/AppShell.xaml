@@ -131,6 +131,12 @@
                 <FileImageSource File="relax.png" />
             </ShellContent.Icon>
         </ShellContent>
+        <ShellContent Title="99 Names of Allah"
+            ContentTemplate="{DataTemplate local:AsmaHusana}">
+            <ShellContent.Icon>
+                <FileImageSource File="asmahusna.png" />
+            </ShellContent.Icon>
+        </ShellContent>
         <ShellContent
             Title="About" Route="About"
             ContentTemplate="{DataTemplate local:About}">

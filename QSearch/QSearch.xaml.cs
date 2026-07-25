@@ -300,89 +300,81 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                     break;
                 case "ar":
                 // multiple words //
-                    for (int i = 0; i < words.Length; i++)
-                    {
-                        srch = words[i].Trim();
                         foreach (Verse v in Verses)
                         {
-                            var loc = v.verse_arabic_clean.IndexOf(srch);
-                            var w = "";
-                            if (loc >= 0)
+                           for (int i = 0; i < words.Length; i++)
                             {
-                                bool found = false;
-                                int word_tashkeel_length = 0;
-                                loc = 0;
-                                while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
+                                srch = words[i].Trim();
+                                var loc = v.verse_arabic_clean.IndexOf(srch);
+                                var w = "";
+                                if (loc >= 0)
                                 {
-                                    word_tashkeel_length = srch.Length / 2;
-                                    w = v.verse_arabic.Substring(loc, srch.Length + word_tashkeel_length);
-                                    if (w.StartsWith("<span style=\"background-color:yellow\""))
+                                    bool found = false;
+                                    while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
                                     {
-                                        loc += 38;
-                                        continue;
-                                    }
-                                    else if (w.StartsWith("</span>"))
-                                    {
-                                        loc += 7;
-                                        continue;
-                                    }
-                                    var w_normal = normalize(w);
-                                    if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
-                                            || (w_normal.TrimEnd() == srch))
-                                    {
-                                        found = true;
-                                        if (words.Length == 1) 
+                                        w = v.verse_arabic.Substring(loc, srch.Length + srch.Length / 2);
+                                        if (w.Trim().StartsWith("<span style=\"background-color:yellow\"")
+                                            ||
+                                            w.Trim().StartsWith("<sp"))
                                         {
-                                            wordcount++;
-                                            CountWords(srch, v, loc, ref wordcount, srch.Length + word_tashkeel_length);
+                                            loc += 38;
+                                            continue;
                                         }
-                                    }
-                                    else
-                                    {
-                                        w = v.verse_arabic.Substring(loc, srch.Length * 2);
-                                        w_normal = normalize(w);
-                                        if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
-                                             || (w_normal.TrimEnd() == srch))
-                                        {                                            
+                                        else if (w.Trim().StartsWith("<p style")
+                                                ||
+                                                w.Trim().StartsWith("<p"))
+                                        {
+                                            loc += 30;
+                                            continue;
+                                        }
+                                        else if (w.Trim().StartsWith("</p"))
+                                        {
+                                            loc += 4;
+                                            continue;
+                                        }
+                                        else if (w.Trim().StartsWith("</sp"))
+                                        {
+                                            loc += 6;
+                                            continue;
+                                        }
+                                        if (foundWord(srch, v.verse_arabic.Substring(loc, srch.Length + srch.Length / 2), 
+                                                      v, words.Length, ref wordcount, loc, srch.Length + srch.Length / 2))
                                             found = true;
-                                            if (words.Length == 1) 
-                                            {
-                                                wordcount++;
-                                                CountWords(srch, v, loc, ref wordcount, srch.Length * 2);
-                                            }
-                                        }
-                                        else
-                                        {
-                                            w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
-                                            w_normal = normalize(w);
-                                            if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
-                                                 || (w_normal.TrimEnd() == srch))
+                                        else if (foundWord(srch, v.verse_arabic.Substring(loc, srch.Length + Convert.ToInt32(srch.Length / 1.5)), 
+                                                            v, words.Length, ref wordcount, loc, srch.Length + Convert.ToInt32(srch.Length / 1.5)))
                                             {
                                                 found = true;
-                                                if (words.Length == 1) 
-                                                {
-                                                    wordcount++;
-                                                    CountWords(srch, v, loc, ref wordcount, srch.Length * 2 + 1);
-                                                }
+                                                w = v.verse_arabic.Substring(loc, srch.Length + Convert.ToInt32(srch.Length / 1.5));
                                             }
-                                        }
+                                        else if (foundWord(srch, v.verse_arabic.Substring(loc, srch.Length * 2), 
+                                                            v, words.Length, ref wordcount, loc, srch.Length * 2))
+                                            {
+                                                found = true;
+                                                w = v.verse_arabic.Substring(loc, srch.Length * 2);
+                                            }
+                                        else if (foundWord(srch, v.verse_arabic.Substring(loc, srch.Length * 2 + 1), 
+                                                            v, words.Length, ref wordcount, loc, srch.Length * 2 + 1))
+                                            {
+                                                found = true;
+                                                w = v.verse_arabic.Substring(loc, srch.Length * 2 + 1);
+                                            }
+
                                         loc += 1;
                                     }
-                                }
-                                // highlight only if found //
-                                if (found)
-                                {
-                                    v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
-                                    found = false;
+                                    // highlight only if found //
+                                    if (found)
+                                    {
+                                        v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
+                                        found = false;
+                                    }
+                                    if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
+                                    v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
+                                    //// if we need to show urdu translation, on clicking the language, right align it//
+                                    if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
+                                        v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
                                 }
                             }
-                            if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
-                                        v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
-                            //// if we need to show urdu translation, on clicking the language, right align it//
-                            if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
-                                v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
                         }
-                    }
                     break;
                 case "ur":
                     for (int i = 0; i < words.Length; i++)
@@ -418,6 +410,32 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             }
         }
         progress.HideProgress();
+    }
+    /// <summary>
+    /// search words with different lengths due to tashkeel, tatweel etc. and count them
+    /// </summary>
+    /// <param name="srch"></param>
+    /// <param name="w"></param>
+    /// <param name="v"></param>
+    /// <param name="words_length"></param>
+    /// <param name="wordcount"></param>
+    /// <param name="loc"></param>
+    /// <param name="wordLength"></param>
+    /// <returns></returns>
+    private bool foundWord(string srch, string w, Verse v, int words_length, ref int wordcount, int loc, int wordLength)
+    {
+        string w_normal = normalize(w);
+        if ((w_normal.TrimStart() == srch + " ") || (w_normal.TrimStart() == srch)
+                || (w_normal.TrimEnd() == srch))
+        {                                            
+            if (words_length == 1) 
+            {
+                wordcount++;
+                CountWords(srch, v, loc, ref wordcount, wordLength);
+            }
+            return true;
+        }
+        return false;
     }
     /// <summary>
     /// cound words found if one arabic word is entered
