@@ -1,3 +1,4 @@
+
 namespace QSearch;
 
 public partial class AsmaHusana : ContentPage
@@ -14,12 +15,19 @@ public partial class AsmaHusana : ContentPage
 	{
 		var asmaList = await dB.GetAsmaHusana();
 		double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
+		double screenWidth = DeviceDisplay.MainDisplayInfo.Width / DeviceDisplay.MainDisplayInfo.Density;
 		foreach (var asma in asmaList)
 		{
-			asma.size_arabic = screenHeight <= 400 ? 375 : 425;
+			asma.size_arabic = screenHeight <= 400 ? 375 : screenWidth - 100;
+			asma.size_font = Math.Floor(screenWidth / 3.5);
 			asma.font_arabic = "IndoPak";
 		}
+		myGrid.WidthRequest = screenWidth - 100;
+#if ANDROID
+		myGrid.HeightRequest = screenHeight - 125;
+#else
 		myGrid.HeightRequest = screenHeight - 100;
+#endif
 		myCollectionView.ItemsSource = asmaList;
 		myCollectionView.ScrollTo(0, animate: true);
 	}

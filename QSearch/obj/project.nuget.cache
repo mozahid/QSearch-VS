@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "knQalJKZeuE=",
+  "dgSpecHash": "YPMkGG0aExY=",
   "success": true,
   "projectFilePath": "/Volumes/easystore/ProjectQ-Aug-2025-VSCode/ProjectQ/Q-Search/QSearch/QSearch/QSearch.csproj",
   "expectedPackageFiles": [
@@ -160,10 +160,6 @@
       "libraryId": "SQLitePCLRaw.lib.e_sqlite3",
       "targetGraphs": [
         "net10.0-maccatalyst26.1",
-        "net10.0-maccatalyst26.1/android-arm",
-        "net10.0-maccatalyst26.1/android-arm64",
-        "net10.0-maccatalyst26.1/android-x64",
-        "net10.0-maccatalyst26.1/android-x86",
         "net10.0-maccatalyst26.1/iossimulator-x64"
       ]
     },
@@ -177,10 +173,6 @@
       "libraryId": "SQLitePCLRaw.lib.e_sqlite3.android",
       "targetGraphs": [
         "net10.0-android36.0",
-        "net10.0-android36.0/android-arm",
-        "net10.0-android36.0/android-arm64",
-        "net10.0-android36.0/android-x64",
-        "net10.0-android36.0/android-x86",
         "net10.0-android36.0/iossimulator-x64"
       ]
     }

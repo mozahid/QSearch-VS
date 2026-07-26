@@ -51,7 +51,7 @@
                                     FontAttributes="Bold"
                                     HeightRequest="{Binding size_arabic}"
                                     WidthRequest="{Binding size_arabic}"
-                                    FontSize="150"
+                                    FontSize="{Binding size_font}"
                                     Padding="5"
                                     Grid.Row="1">
                                     <Label.Shadow>
