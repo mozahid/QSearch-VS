@@ -134,7 +134,7 @@
         <ShellContent Title="99 Names of Allah"
             ContentTemplate="{DataTemplate local:AsmaHusana}">
             <ShellContent.Icon>
-                <FileImageSource File="asmahusna.png" />
+                <FileImageSource File="asma_99.png" />
             </ShellContent.Icon>
         </ShellContent>
         <ShellContent

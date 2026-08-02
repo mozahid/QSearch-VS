@@ -29,6 +29,9 @@ public partial class ArabicFont : ContentPage
             case "MeQuran":
                 radMeQuran.IsChecked = true;
                 break;
+            case "Hafs":
+                radHafsQuran.IsChecked = true;
+                break;
         }
         _taskCompletionSource = new TaskCompletionSource<OptionsData>();
         ReturnValue = new OptionsData();
@@ -94,6 +97,7 @@ public partial class ArabicFont : ContentPage
             radAlQalam.BackgroundColor = Colors.Transparent;
             radIndoPak.BackgroundColor = Colors.Transparent;
             radMeQuran.BackgroundColor = Colors.Transparent;
+            radHafsQuran.BackgroundColor = Colors.Transparent;
             switch (rad.Value)
             {
                 case "1":
@@ -120,6 +124,11 @@ public partial class ArabicFont : ContentPage
                     _font = "MeQuran";
                     radMeQuran.BackgroundColor = Colors.LightSkyBlue;
                     Font5.BackgroundColor = Colors.LightSkyBlue;
+                    break;
+                case "6":
+                    _font = "Hafs";
+                    radHafsQuran.BackgroundColor = Colors.LightSkyBlue;
+                    Font6.BackgroundColor = Colors.LightSkyBlue;
                     break;
             }
         }

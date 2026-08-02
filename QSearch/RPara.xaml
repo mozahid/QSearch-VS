@@ -17,8 +17,15 @@
         </ToolbarItem.IconImageSource>
       </ToolbarItem>
       </ContentPage.ToolbarItems>
-            <VerticalStackLayout Spacing="5">
-                    <FlexLayout HorizontalOptions="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                 <FlexLayout 
+                        HorizontalOptions="Center"
+                        VerticalOptions="Start"
+                        Grid.Row="0">
                         <ImageButton x:Name="showTranslation"
                             BackgroundColor="LightGreen"
                             ToolTipProperties.Text="Show translation" Clicked="showTranslation_Clicked">
@@ -83,7 +90,9 @@
                             </ImageButton.Shadow>
                         </ImageButton>  
                     </FlexLayout>
-                <Grid IsVisible="{Binding IsBusy}" BackgroundColor="Transparent">
+                    <Grid IsVisible="{Binding IsBusy}" 
+                        BackgroundColor="Transparent"
+                        Grid.Row="1">
                         <ActivityIndicator x:Name="progInd"
                             IsRunning="{Binding IsBusy}"
                             Color="Blue"
@@ -721,8 +730,10 @@
                                     </Border>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
-                    </CollectionView>                       
+                    </CollectionView>
                 </Grid>
+            </Grid>
+</ContentPage>
                  <!-- <CollectionView
                     x:Name="lstViewAndroid"
                     DescendantAdded="lstView_DescendantAdded"
@@ -879,5 +890,3 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView> -->
-            </VerticalStackLayout>
-</ContentPage>

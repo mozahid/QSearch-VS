@@ -20,10 +20,10 @@
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.4.2</ApplicationDisplayVersion>
-		<ApplicationVersion>16.1.0</ApplicationVersion>
+		<ApplicationDisplayVersion>6.5.0</ApplicationDisplayVersion>
+		<ApplicationVersion>17.0.0</ApplicationVersion>
 		<!-- Android Only-->
-		<AndroidVersionCode>41</AndroidVersionCode>
+		<AndroidVersionCode>42</AndroidVersionCode>
 		<UseMaterial3>true</UseMaterial3>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
@@ -49,8 +49,14 @@
 	  <CodesignProvision>Automatic</CodesignProvision>
 	  <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
 	  <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
-	   <MtouchOptimizePNGs>true</MtouchOptimizePNGs>
-	   <MtouchInterpreter>all</MtouchInterpreter>
+	  <MtouchOptimizePNGs>true</MtouchOptimizePNGs>
+	  <MtouchInterpreter>all</MtouchInterpreter>
+	  <MtouchLink>SdkOnly</MtouchLink>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-maccatalyst|AnyCPU'">
+		<DisableCodesignVerification>true</DisableCodesignVerification>
+		<ValidateXcodeVersion>false</ValidateXcodeVersion>
+		<MtouchLink>SdkOnly</MtouchLink>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-maccatalyst|AnyCPU'">
 	  	<MtouchLink>SdkOnly</MtouchLink>
@@ -67,6 +73,8 @@
 		<EnableCodeSigning>true</EnableCodeSigning>
 		<CodesignRequireProvisioningProfile>true</CodesignRequireProvisioningProfile>
 		<DisableCodesignVerification>true</DisableCodesignVerification>
+		<ValidateXcodeVersion>false</ValidateXcodeVersion>
+		<MtouchLink>SdkOnly</MtouchLink>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
 	  <AndroidSigningKeyStore>/Users/MZee/Library/Developer/Xamarin/Keystore/MyQSearch/MyQSearch.keystore</AndroidSigningKeyStore>

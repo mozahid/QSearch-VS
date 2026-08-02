@@ -137,17 +137,18 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
 #else
         currentLanguage = new LangDetection().LanguageDetected;
 #endif
-        if (currentLanguage == "en" && selectedLanguage != 1)
-        {
-            await DisplayAlertAsync("Q-Search", "Please choose English translation for search!", "Ok");
-            return;
-        }
-        else if (currentLanguage == "ur" && selectedLanguage != 2)
-        {
-            await DisplayAlertAsync("Q-Search", "Please choose Urdu translation for search!", "Ok");
-            return;
-        }
+        // if (currentLanguage == "en" && selectedLanguage != 1)
+        // {
+        //     await DisplayAlertAsync("Q-Search", "Please choose English translation for search!", "Ok");
+        //     return;
+        // }
+        // else if (currentLanguage == "ur" && selectedLanguage != 2)
+        // {
+        //     await DisplayAlertAsync("Q-Search", "Please choose Urdu translation for search!", "Ok");
+        //     return;
+        // }
         
+        selectedLanguage = currentLanguage == "en" ? 1 : 2;
         progress.ShowProgress();
         await Task.Delay(50);
         switch(currentLanguage)

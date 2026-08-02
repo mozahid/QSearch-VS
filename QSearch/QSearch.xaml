@@ -7,7 +7,17 @@
              NavigationPage.HasBackButton="False"
              Title="Q-Search" SafeAreaEdges="Container"
              >
-    <VerticalStackLayout Spacing="5">
+    <Grid VerticalOptions="Start" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
         <Label 
             Text="Welcome to Quran Search!"
             VerticalOptions="Center" 
@@ -16,17 +26,16 @@
             FontSize = "24"
             FontFamily="Tahoma"
             LineBreakMode="NoWrap"
-            />
+            Grid.Row="0" />
         <HorizontalStackLayout
-            HorizontalOptions="Center"  >
+            VerticalOptions="Start"
+            HorizontalOptions="Center" 
+            Grid.Row="1" >
             <Label
              Text="Search:"
              FontFamily="Tahoma"
              FontSize="Default"
-             VerticalOptions="Center"
-             Padding="5"
-                >
-            </Label>
+             Padding="5" />
             <Entry
                 x:Name="txtSearch"
                 Placeholder="Your search word(s)"
@@ -43,9 +52,7 @@
                 VerticalOptions="Center"
                 MaxLength="25"
                 FontSize="Medium"
-                Text=""
-                >
-            </Entry>
+                Text="" />
             <ImageButton x:Name="showTranslation"
                     BackgroundColor="LightGreen"
                     ToolTipProperties.Text="Show translation" Clicked="showTranslation_Clicked">
@@ -84,12 +91,14 @@
         </HorizontalStackLayout>
         <BoxView Color="LightGray"
                     HeightRequest="2"
-                    HorizontalOptions="Fill" />
+                    HorizontalOptions="Fill"
+                    Grid.Row="2" />
         <HorizontalStackLayout
                         x:Name="result"
                         IsVisible="false"
                         BackgroundColor="GhostWhite"
-                        HorizontalOptions="Center">
+                        HorizontalOptions="Center"
+                        Grid.Row="3">
                 <HorizontalStackLayout.Shadow>
                     <Shadow Brush="Gray"
                         Offset="20,20"
@@ -126,12 +135,11 @@
                         VerticalOptions="Center"
                         Margin="25,0,0,0" />
         </HorizontalStackLayout>
-         <Grid BackgroundColor="Transparent">
+         <Grid BackgroundColor="Transparent" Grid.Row="4" >
              <Image x:Name="imgNotes" IsVisible="True" 
                 Aspect="AspectFit"
-                Source="qnote.png"
                 VerticalOptions="Start"
-                />           
+                Source="qnote.png" />           
             <ActivityIndicator 
                     x:Name="progInd"
                     IsRunning="False"
@@ -139,7 +147,7 @@
                     Color="Blue"
                     HorizontalOptions="Center"
                     VerticalOptions="Center" />
-           <CollectionView
+            <CollectionView
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
@@ -183,15 +191,6 @@
                                                         Opacity="0.8" />
                                                 </Border.Shadow>    
                                             </Border>
-                                            <!-- <Image
-                                                Grid.Row="0"
-                                                Grid.Column="0"
-                                                Grid.ColumnSpan="3"
-                                                Grid.RowSpan="3"
-                                                Opacity="0.8"
-                                                Source="qs_hdr4.png"
-                                                Aspect="Fill"
-                                                HeightRequest="95" /> -->
                                                 <Label
                                                     FontSize="Small"
                                                     TextColor="SlateBlue"
@@ -355,5 +354,5 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
         </Grid>
-    </VerticalStackLayout>
+    </Grid>
 </ContentPage>

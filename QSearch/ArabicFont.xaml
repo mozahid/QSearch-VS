@@ -7,7 +7,7 @@
              ios:Page.ModalPresentationStyle="OverFullScreen"
              NavigationPage.HasBackButton="False"
              Title="Arabic Font">
-        <VerticalStackLayout BackgroundColor="White" HeightRequest="450">
+        <VerticalStackLayout BackgroundColor="White" HeightRequest="500">
                     <Border BackgroundColor="SlateBlue" HorizontalOptions="Fill">
                         <Label Text="Available fonts"
                             HorizontalOptions="Center"
@@ -16,10 +16,21 @@
                             FontAttributes="Bold"
                             FontSize="Title" />
                     </Border>
-                    <Border Stroke="Gray" StrokeThickness="1" StrokeShape="Rectangle 5,5,5,5" Margin="10,10"
-                                Padding="5,5">
+                    <Border Stroke="Gray"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 12,12,12,12"
+                            Margin="10,10"
+                            Padding="5,5"
+                            BackgroundColor="White">
+                        <Border.Shadow>
+                            <Shadow Brush="LightGray"
+                                    Offset="0,4"
+                                    Radius="10"
+                                    Opacity="0.45" />
+                        </Border.Shadow>
                         <Grid>
                             <Grid.RowDefinitions>
+                                <RowDefinition />
                                 <RowDefinition />
                                 <RowDefinition />
                                 <RowDefinition />
@@ -111,6 +122,21 @@
                                 Grid.Row="4"
                                 Grid.Column="1"
                                 FontSize="Title" />
+                            <RadioButton Content=" "
+                                x:Name="radHafsQuran"
+                                HeightRequest="64"
+                                Value="6"
+                                GroupName="Arabic"
+                                Grid.Row="5"
+                                Grid.Column="0"
+                                CheckedChanged="radFont_CheckedChanged" />                           
+                             <Label
+                                x:Name="Font6"
+                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
+                                FontFamily="Hafs"
+                                Grid.Row="5"
+                                Grid.Column="1"
+                                FontSize="Title" />                               
                         </Grid>
                     </Border>
                 <FlexLayout HorizontalOptions="Center">

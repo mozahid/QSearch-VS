@@ -22,6 +22,7 @@ public static class MauiProgram
                 fonts.AddFont("OpenSansRegular.ttf", "OpenSansRegular");
                 fonts.AddFont("MeQuran.ttf", "MeQuran");
                 fonts.AddFont("NotoNastaliqUrdu-VariableFont_wght.ttf", "Urdu");
+                fonts.AddFont("hafs.ttf", "Hafs");
             })
         .UseSentry(options => {
       // The DSN is the only required setting.
