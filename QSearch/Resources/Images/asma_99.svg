@@ -1,2 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><defs><style>.a{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}</style></defs><circle class="a" cx="24" cy="24" r="21.5"/><circle class="a" cx="17.52" cy="21.62" r="4.76"/><path class="a" d="M13.28,29.38a4.35,4.35,0,0,0,3.88,1.76h.36a4.75,4.75,0,0,0,4.76-4.76V21.62"/><circle class="a" cx="30.48" cy="21.62" r="4.76"/><path class="a" d="M26.25,29.38a4.35,4.35,0,0,0,3.88,1.76h.35a4.74,4.74,0,0,0,4.76-4.76V21.62"/></svg>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#4f7a28" transform="matrix(1, 0, 0, 1, 0, 0)" stroke="#4f7a28" stroke-width="2.4">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<defs>
+<style>.a{fill:none;stroke:#669c35;stroke-linecap:round;stroke-linejoin:round;}</style>
+</defs>
+<circle class="a" cx="24" cy="24" r="21.5"/>
+<circle class="a" cx="17.52" cy="21.62" r="4.76"/>
+<path class="a" d="M13.28,29.38a4.35,4.35,0,0,0,3.88,1.76h.36a4.75,4.75,0,0,0,4.76-4.76V21.62"/>
+<circle class="a" cx="30.48" cy="21.62" r="4.76"/>
+<path class="a" d="M26.25,29.38a4.35,4.35,0,0,0,3.88,1.76h.35a4.74,4.74,0,0,0,4.76-4.76V21.62"/>
+</g>
+</svg>

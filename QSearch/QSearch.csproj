@@ -32,12 +32,6 @@
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>-->
 	</PropertyGroup>
-	<!-- <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-	  <DebugType>portable</DebugType>
-	  <Optimize>false</Optimize>
-	  <WarningLevel>4</WarningLevel>
-	  <RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm64;android-arm;android-x64;android-x86</RuntimeIdentifiers>
-	</PropertyGroup> -->
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|net10.0-android|AnyCPU' ">
 	  <DebugType>portable</DebugType>
 	  <Optimize>false</Optimize>
@@ -52,10 +46,18 @@
 	  <MtouchOptimizePNGs>true</MtouchOptimizePNGs>
 	  <MtouchInterpreter>all</MtouchInterpreter>
 	  <MtouchLink>SdkOnly</MtouchLink>
+	  <PublishTrimmed>true</PublishTrimmed>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-ios|AnyCPU'">
+		<EnableCodeSigning>true</EnableCodeSigning>
+		<CodesignRequireProvisioningProfile>true</CodesignRequireProvisioningProfile>
+		<DisableCodesignVerification>true</DisableCodesignVerification>
+		<MtouchLink>SdkOnly</MtouchLink>
+		<PublishTrimmed>true</PublishTrimmed>
+		<RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-maccatalyst|AnyCPU'">
 		<DisableCodesignVerification>true</DisableCodesignVerification>
-		<ValidateXcodeVersion>false</ValidateXcodeVersion>
 		<MtouchLink>SdkOnly</MtouchLink>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-maccatalyst|AnyCPU'">
@@ -68,13 +70,6 @@
 	  	<EnablePackageSigning>true</EnablePackageSigning>
 		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
 		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net10.0-ios|AnyCPU'">
-		<EnableCodeSigning>true</EnableCodeSigning>
-		<CodesignRequireProvisioningProfile>true</CodesignRequireProvisioningProfile>
-		<DisableCodesignVerification>true</DisableCodesignVerification>
-		<ValidateXcodeVersion>false</ValidateXcodeVersion>
-		<MtouchLink>SdkOnly</MtouchLink>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
 	  <AndroidSigningKeyStore>/Users/MZee/Library/Developer/Xamarin/Keystore/MyQSearch/MyQSearch.keystore</AndroidSigningKeyStore>
@@ -125,9 +120,8 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.10" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.10" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
-		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.3" />
+		<PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="3.0.2" />
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.11" />
-
 	</ItemGroup>
 
 	<ItemGroup>
