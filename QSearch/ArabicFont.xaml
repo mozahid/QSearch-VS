@@ -7,7 +7,7 @@
              ios:Page.ModalPresentationStyle="OverFullScreen"
              NavigationPage.HasBackButton="False"
              Title="Arabic Font">
-        <VerticalStackLayout BackgroundColor="White" HeightRequest="500">
+        <VerticalStackLayout BackgroundColor="White" HeightRequest="525">
                     <Border BackgroundColor="SlateBlue" HorizontalOptions="Fill">
                         <Label Text="Available fonts"
                             HorizontalOptions="Center"

@@ -2,7 +2,22 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "dotnet: debug",
+      "label": "android tablet",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "-t:Run",
+        "-f",
+        "net10.0-android",
+        "-p:Configuration=Debug",
+        "-p:AdbTarget=-s P10V04011625093326"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+        {
+      "label": "android simulator",
       "type": "shell",
       "command": "dotnet",
       "args": [

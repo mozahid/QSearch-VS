@@ -5,17 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET MAUI",
+            "name": ".NET MAUI - iOS",
             "type": "maui",
             "request": "launch",
             "preLaunchTask": "maui: Build"
         },
 
         {
-            "name": ".NET MAUI - Android",
+            "name": ".NET MAUI - Android Tablet",
             "type": "maui",
             "request": "launch",
-            "preLaunchTask": "dotnet: debug"
+            "preLaunchTask": "android tablet"
+        },
+        {
+            "name": ".NET MAUI - Android Simulator",
+            "type": "maui",
+            "request": "launch",
+            "preLaunchTask": "android simulator"
         }
     ]
 }

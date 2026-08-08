@@ -31,39 +31,6 @@ public class MainActivity : MauiAppCompatActivity
         base.OnCreate(savedInstanceState);
     }
 #nullable enable
-    // protected override void OnCreate(Bundle? savedInstanceState)
-    // {
-    //     base.OnCreate(savedInstanceState);
-    //     var decorView = Window.DecorView;
-    //     if (Build.VERSION.SdkInt >= BuildVersionCodes.R)
-    //     {
-    //         Window.SetDecorFitsSystemWindows(false);
-    //         decorView.SetOnApplyWindowInsetsListener(new InsetsListener());
-    //     }
-    //     else
-    //     {
-    //         ViewCompat.SetOnApplyWindowInsetsListener(decorView, new InsetsListenerLowerAPI());
-    //     }
-    // }
-    
-    // public class InsetsListenerLowerAPI : Java.Lang.Object, 
-    // AndroidX.Core.View.IOnApplyWindowInsetsListener
-    // {
-    //     public WindowInsetsCompat OnApplyWindowInsets(Android.Views.View v, WindowInsetsCompat insets)
-    //     {
-    //         var gestureInsets = insets.GetInsets(WindowInsetsCompat.Type.SystemGestures());
-    //         v.SetPadding(gestureInsets.Left, gestureInsets.Top, gestureInsets.Right, gestureInsets.Bottom);
-    //         return WindowInsetsCompat.Consumed;
-    //     }
-    // }
-    // private class InsetsListener : Java.Lang.Object, Android.Views.View.IOnApplyWindowInsetsListener
-    // {
-    //     public WindowInsets OnApplyWindowInsets(Android.Views.View v, WindowInsets insets)
-    //     {
-    //         var sysBars = insets.GetInsetsIgnoringVisibility(WindowInsets.Type.SystemBars());
-    //         v.SetPadding(sysBars.Left, sysBars.Top, sysBars.Right, sysBars.Bottom);
-    //         return WindowInsets.Consumed;
-    //     }
-    // }
+
 }
 

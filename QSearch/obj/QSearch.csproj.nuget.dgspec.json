@@ -84,11 +84,7 @@
             },
             "SQLitePCLRaw.bundle_e_sqlite3": {
               "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "SQLitePCLRaw.bundle_green": {
-              "target": "Package",
-              "version": "[2.1.11, )"
+              "version": "[3.0.5, )"
             },
             "Sentry.Maui": {
               "target": "Package",
@@ -136,7 +132,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.9.172, )"
+              "version": "[1.11.285, )"
             }
           },
           "imports": [
@@ -471,11 +467,7 @@
             },
             "SQLitePCLRaw.bundle_e_sqlite3": {
               "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "SQLitePCLRaw.bundle_green": {
-              "target": "Package",
-              "version": "[2.1.11, )"
+              "version": "[3.0.5, )"
             },
             "Sentry.Maui": {
               "target": "Package",
@@ -483,7 +475,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.9.172, )"
+              "version": "[1.11.285, )"
             }
           },
           "imports": [
@@ -818,11 +810,7 @@
             },
             "SQLitePCLRaw.bundle_e_sqlite3": {
               "target": "Package",
-              "version": "[3.0.2, )"
-            },
-            "SQLitePCLRaw.bundle_green": {
-              "target": "Package",
-              "version": "[2.1.11, )"
+              "version": "[3.0.5, )"
             },
             "Sentry.Maui": {
               "target": "Package",
@@ -830,7 +818,7 @@
             },
             "sqlite-net-pcl": {
               "target": "Package",
-              "version": "[1.9.172, )"
+              "version": "[1.11.285, )"
             }
           },
           "imports": [

@@ -3,87 +3,98 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="QSearch.AsmaHusana"
              Title="AsmaHusana">
-            <Grid x:Name="myGrid" Margin="5">
+
+            <Grid x:Name="myGrid">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" />
+                    <RowDefinition  />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <!-- CollectionView -->
                 <CollectionView x:Name="myCollectionView"
-                                SelectionMode="Single">
+                                SelectionMode="None"
+                                Grid.Row="0">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Horizontal"
                                         SnapPointsType="MandatorySingle"
-                                        SnapPointsAlignment="Center" />
+                                        SnapPointsAlignment="Center"
+                                          />
                     </CollectionView.ItemsLayout>
-
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="auto" />
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="auto" />
-                                    <RowDefinition Height="auto" />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />  
-                                </Grid.ColumnDefinitions>
-                            <Label  Text="{Binding number}" 
-                                    HorizontalOptions="Start"
-                                    HorizontalTextAlignment="Center"
-                                    FontAttributes="Bold"
-                                    BackgroundColor="Blue"
-                                    TextColor="White"
-                                    Margin="5,0,0,0"
-                                    HeightRequest="30"
-                                    WidthRequest="30"
-                                    FontSize="14"
-                                    Padding="5"
-                                    Grid.Row="0" />
-                            <Label  Text="{Binding name}" 
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center"
-                                    TextColor="Goldenrod"
-                                    FontFamily="{Binding font_arabic}"
-                                    FontAttributes="Bold"
-                                    HeightRequest="{Binding size_arabic}"
-                                    WidthRequest="{Binding size_arabic}"
-                                    FontSize="{Binding size_font}"
-                                    Padding="5"
-                                    Grid.Row="1">
-                                    <Label.Shadow>
-                                            <Shadow Brush="LightGray"
-                                                    Offset="10,10"
-                                                    Radius="5"
-                                                    Opacity="0.5" />
-                                        </Label.Shadow>
-                            </Label>
-                            <Label  Text="{Binding english_meaning}" 
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center"
-                                    VerticalOptions="End"
-                                    FontAttributes="Bold"
-                                    Padding="5"
-                                    FontSize="16"
-                                    Grid.Row="2" />
-                            <Label  Text="{Binding urdu_meaning}"
-                                    FontFamily="Urdu"
-                                    HorizontalTextAlignment="Center"
-                                    VerticalTextAlignment="Center"
-                                    VerticalOptions="End"
-                                    FontAttributes="Bold"
-                                    Padding="5"
-                                    FontSize="16"
-                                    Grid.Row="3" />
-                            </Grid>
+                                <VerticalStackLayout>
+                                    <Label  
+                                        Text="{Binding name}" 
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Start"
+                                        TextColor="Goldenrod"
+                                        FontFamily="{Binding font_arabic}"
+                                        FontAttributes="Bold"
+                                        FontSize="{Binding size_font}"
+                                        WidthRequest="{Binding size_arabic}"
+                                        Padding="3">
+                                            <Label.Shadow>
+                                                <Shadow Brush="LightGray"
+                                                        Offset="10,10"
+                                                        Radius="5"
+                                                        Opacity="0.5" />
+                                            </Label.Shadow>
+                                    </Label>
+                                    <Grid  
+                                        HorizontalOptions="Center" 
+                                        VerticalOptions="Center">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="*" />  
+                                        </Grid.ColumnDefinitions>
+                                        <Label  Text="{Binding number}" 
+                                                HorizontalTextAlignment="Center"
+                                                VerticalTextAlignment="Center"
+                                                FontAttributes="Bold"
+                                                BackgroundColor="Gray"
+                                                TextColor="White"
+                                                HeightRequest="30"
+                                                WidthRequest="30"
+                                                Padding="5"
+                                                FontSize="16"
+                                                Grid.Column="0">
+                                                <Label.Shadow>
+                                                        <Shadow Brush="LightGray"
+                                                                Offset="10,10"
+                                                                Radius="5"
+                                                                Opacity="0.5" />
+                                                </Label.Shadow>
+                                        </Label>
+                                        <Label  Text="{Binding english_meaning}" 
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontAttributes="Bold"
+                                            Padding="5"
+                                            FontSize="16"
+                                            Grid.Column="1" />
+                                        <Label  Text="{Binding urdu_meaning}"
+                                            FontFamily="Urdu"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center"
+                                            FontAttributes="Bold"
+                                            Padding="5"
+                                            FontSize="16"
+                                            Grid.Column="2"/>
+                                    </Grid>
+                                </VerticalStackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
 
                 <!-- Navigation Buttons -->
-                <HorizontalStackLayout Grid.Row="1" Spacing="10" HorizontalOptions="Center" Margin="10">
+                <HorizontalStackLayout 
+                    Grid.Row="1" 
+                    Spacing="10" 
+                    HorizontalOptions="Center" >
                     <ImageButton BackgroundColor="OliveDrab"
                             Clicked="OnBackClicked">
                         <ImageButton.Source>

@@ -12,7 +12,6 @@ public partial class CommonSearch : ContentPage
 	 List<Verse> Verses = new List<Verse>();
     Progress progress;
 	public int selectedLanguage = 1;
-	 private int firstItem = 0;
 	public CommonSearch()
 	{
 		InitializeComponent();
@@ -42,10 +41,10 @@ public partial class CommonSearch : ContentPage
 	{
 		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         lstView.IsVisible = true;
-		if (screenHeight > 1000)
-        	lstView.HeightRequest = screenHeight - 300; 
-		else
-			lstView.HeightRequest = screenHeight - 400;
+		// if (screenHeight > 1000)
+        // 	lstView.HeightRequest = screenHeight - 300; 
+		// else
+		// 	lstView.HeightRequest = screenHeight - 400;
 		progress.ShowProgress();
 		List<Verse> v = new List<Verse>();
 		Verses = new List<Verse>();

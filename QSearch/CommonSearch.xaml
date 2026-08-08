@@ -7,7 +7,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -37,7 +37,11 @@
                     FontAttributes="Bold,Italic"
                     TextColor="Teal" />             
             </Border>
-            <FlexLayout  HorizontalOptions="Center" Grid.Row="1">
+            <FlexLayout  
+                HorizontalOptions="Center" 
+                VerticalOptions="Start"
+                HeightRequest="45"
+                Grid.Row="1">
                 <ImageButton x:Name="showTranslation"
                         BackgroundColor="LightGreen"
                         WidthRequest="40"
@@ -75,9 +79,12 @@
                         Radius="40"
                         Opacity="0.8" />
                 </ImageButton.Shadow>
-            </ImageButton>
+                </ImageButton>
             </FlexLayout>
-            <Grid x:Name="gridMain" HorizontalOptions="Fill" Grid.Row="2">
+            <Grid x:Name="gridMain" 
+                HorizontalOptions="Fill" 
+                VerticalOptions="Start"
+                Grid.Row="2">
                 <ActivityIndicator 
                     x:Name="progInd"
                     IsRunning="False"
@@ -89,6 +96,7 @@
                     x:Name="lstView"
                     HorizontalOptions="Center"
                     Margin="3"
+                    RemainingItemsThreshold="10"
                     VerticalScrollBarVisibility="Always">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Vertical" />
