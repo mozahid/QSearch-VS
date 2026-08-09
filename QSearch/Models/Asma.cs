@@ -6,8 +6,10 @@ namespace QSearch
     {
         public int number { get; set; }
         public string name { get; set; }
-        public double size_arabic { get; set; }
+        public double size_arabic_width { get; set; }
+        public double size_arabic_height { get; set; }
         public double size_font { get; set; }
+        public double size_font_meaning { get; set; }
         public string font_arabic { get; set; }
         public string english_meaning { get; set; }
         public string urdu_meaning { get; set; }

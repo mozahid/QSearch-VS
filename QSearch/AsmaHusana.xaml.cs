@@ -17,16 +17,21 @@ public partial class AsmaHusana : ContentPage
 			double screenWidth = DeviceDisplay.MainDisplayInfo.Width / DeviceDisplay.MainDisplayInfo.Density;
 			foreach (var asma in asmaList)
 			{
-				asma.size_arabic = screenWidth <= 400 ? 375 : screenWidth - 5;
-				asma.size_font = Math.Floor(screenWidth / 3.6);
+				asma.size_arabic_width = screenWidth <= 400 ? 375 : screenWidth - 5;
+				asma.size_arabic_height = (screenHeight - 100) * 0.80;
+
+#if ANDROID
+				asma.size_font = Math.Floor(screenWidth / 3.5);
+				asma.size_font_meaning = Math.Floor(screenWidth / 32);
+#elif MACCATALYST
+				asma.size_font = Math.Floor(screenWidth / 8.5);
+				asma.size_font_meaning = Math.Floor(screenWidth / 70);
+#else
+				asma.size_font = Math.Floor(screenWidth / 4.2);
+				asma.size_font_meaning = Math.Floor(screenWidth / 35);
+#endif
 				asma.font_arabic = "IndoPak";
 			}
-			//myGrid.WidthRequest = screenWidth - 5;
-		#if ANDROID
-			myGrid.HeightRequest = screenHeight - 100;
-		#else
-			//myGrid.HeightRequest = screenHeight - 75;
-		#endif
 			myCollectionView.ItemsSource = asmaList;
 			myCollectionView.ScrollTo(0, animate: true);
 		};

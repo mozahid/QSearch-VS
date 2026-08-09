@@ -92,7 +92,11 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
     }
     private void QSearch_Loaded(object sender, EventArgs e)
     {
-        txtSearch.Focus();
+        if (txtSearch.Handler?.MauiContext != null)
+        {
+            txtSearch.Focus();
+        }
+        srchOption.SelectedIndex = 0;
     }
     /// <summary>
     /// The search click button
@@ -195,7 +199,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                     {
                         words[i] = words[i].Replace("\"", "");
                     }
-                    Verses = await dB.GetArabicVerseAsync(words);
+                    Verses = await dB.GetArabicVerseAsync(words,srchOption.SelectedItem.ToString());
                 }
                 break;
             case "ur":
@@ -370,8 +374,9 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                     if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))
                                     v.verse_arabic = "<p style=\"text-align:right;\">" + v.verse_arabic + "</p>";
                                     //// if we need to show urdu translation, on clicking the language, right align it//
-                                    if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
-                                        v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
+                                    if (v.verse_urdu != null)
+                                        if (!v.verse_urdu.Contains("<p style=\"text-align:right;\">"))
+                                            v.verse_urdu = "<p style=\"text-align:right;\">" + v.verse_urdu + "</p>";  
                                 }
                             }
                         }

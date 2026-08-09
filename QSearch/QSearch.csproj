@@ -20,8 +20,8 @@
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.5.1</ApplicationDisplayVersion>
-		<ApplicationVersion>17.1.0</ApplicationVersion>
+		<ApplicationDisplayVersion>6.6.0</ApplicationDisplayVersion>
+		<ApplicationVersion>24.0.0</ApplicationVersion>
 		<!-- Android Only-->
 		<AndroidVersionCode>43</AndroidVersionCode>
 		<UseMaterial3>true</UseMaterial3>

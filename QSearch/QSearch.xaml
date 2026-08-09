@@ -31,11 +31,6 @@
             VerticalOptions="Start"
             HorizontalOptions="Center" 
             Grid.Row="1" >
-            <Label
-             Text="Search:"
-             FontFamily="Tahoma"
-             FontSize="Default"
-             Padding="5" />
             <Entry
                 x:Name="txtSearch"
                 Placeholder="Your search word(s)"
@@ -88,6 +83,32 @@
                             Opacity="0.8" />
                 </ImageButton.Shadow>
             </ImageButton>
+            <Border
+                BackgroundColor="LightGray"
+                StrokeShape="RoundRectangle 6"
+                StrokeThickness="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                >
+                <Border.Shadow>
+                    <Shadow Brush="Gray"
+                        Offset="20,20"
+                        Radius="40"
+                        Opacity="0.8" />
+                </Border.Shadow>
+                <Picker
+                    x:Name="srchOption"
+                    FontSize="Medium"
+                    WidthRequest="120"
+                    SelectedIndex="0">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Single</x:String>
+                            <x:String>Multiple</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Border>
         </HorizontalStackLayout>
         <BoxView Color="LightGray"
                     HeightRequest="2"

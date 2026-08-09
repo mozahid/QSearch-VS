@@ -250,21 +250,36 @@ namespace QSearch
         /// </summary>
         /// <param name="srch"></param>
         /// <returns></returns>
-         public async Task<List<Verse>> GetArabicVerseAsync(string[] srch)
+         public async Task<List<Verse>> GetArabicVerseAsync(string[] srch, string option)
         {
             Init();
-            // if search for all words in a multiple words ////
-            object[] p = new object[srch.Length];
-            p[0] = "";
-            string query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number WHERE verses.number in (SELECT number FROM QSearch WHERE  ";
-            for (int i=0; i < srch.Length; i++)
+            object[] p = new object[1];
+            string query = String.Empty;
+            switch(option)
             {
-                query += "verse_arabic_clean match ? ";
-                p[i] = srch[i];
-                if (i < srch.Length - 1)
-                    query += "OR ";
+                case "Single":
+                        p[0] = "";
+                        query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on verses.number = QSearch.number WHERE QSearch.verse_arabic_clean match ? ";
+                        for (int i=0; i < srch.Length; i++)
+                            p[0] += srch[i] + " "; 
+                        break;
+                case "Multiple":
+                        // if search for all words in a multiple words ////
+                        p = new object[srch.Length];
+                        p[0] = "";
+                        query = "SELECT verses.*, verse_english, verse_arabic_clean, english_ref,verse_urdu,urdu_ref FROM verses inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number WHERE verses.number in (SELECT number FROM QSearch WHERE  ";
+                        for (int i=0; i < srch.Length; i++)
+                        {
+                            query += "verse_arabic_clean match ? ";
+                            p[i] = srch[i];
+                            if (i < srch.Length - 1)
+                                query += "OR ";
+                        }
+                        query += ") ";
+                    break;
+                default:
+                    break;
             }
-            query += ") ";
             List<Verse> rset = await QDB.QueryAsync<Verse>(query, p);
             return rset;
         }
