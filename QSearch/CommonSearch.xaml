@@ -196,6 +196,33 @@
                                                             </FormattedString>    
                                                         </Label.FormattedText>
                                                     </Label>
+                                                    <Grid
+                                                        VerticalOptions="Start"
+                                                        HorizontalOptions="Start"
+                                                        Grid.Row="1"
+                                                        Grid.Column="0"
+                                                        >
+                                                        <Label Text="{Binding verse_arabic_number}"
+                                                            Padding="3"
+                                                            FontSize="Micro"
+                                                            VerticalOptions="Center"
+                                                            HorizontalOptions="Center" />
+                                                        <Image 
+                                                            Source="quranic_border_4.png"
+                                                            Aspect="AspectFill"
+                                                            HeightRequest="50"
+                                                            WidthRequest="50" />
+                                                    </Grid>
+                                                    <Label
+                                                        Text="{Binding verse_arabic_end}" 
+                                                        Grid.Row="1"
+                                                        IsVisible="{Binding showSujood}"
+                                                        Margin="20,0,0,0"
+                                                        TextColor="Red" 
+                                                        FontSize="Large"
+                                                        FontAttributes="Bold"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Center" />
                                                     <Label 
                                                             FontSize="Medium"
                                                             FontAttributes="Bold"
@@ -259,7 +286,6 @@
                                                     <Label.FormattedText>
                                                         <FormattedString>
                                                             <Span Text="{Binding verse_arabic}" FontFamily="{Binding font}" TextColor="Green" FontSize="Large" />
-                                                            <Span Text="{Binding verse_arabic_end}" TextColor="White" FontSize="Title" BackgroundColor="Red" />
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>

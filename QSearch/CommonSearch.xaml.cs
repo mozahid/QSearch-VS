@@ -1,6 +1,7 @@
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Extensions;
+using System.Text.RegularExpressions;
 
 namespace QSearch;
 
@@ -45,6 +46,7 @@ public partial class CommonSearch : ContentPage
         // 	lstView.HeightRequest = screenHeight - 300; 
 		// else
 		// 	lstView.HeightRequest = screenHeight - 400;
+		string integer_pattern = @"\d+";
 		progress.ShowProgress();
 		List<Verse> v = new List<Verse>();
 		Verses = new List<Verse>();
@@ -63,6 +65,15 @@ public partial class CommonSearch : ContentPage
 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 					_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 					_v.verse_arabic_end = "۩";
+					_v.showSujood = true;
+					///remove integer numbers
+					string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+					{
+						string number = match.Value;
+						_v.verse_arabic_number = Convert.ToInt32(number);
+						//_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
+						return number;
+					});
 					switch(selectedLanguage)
 					{
 						case 1:
@@ -85,9 +96,8 @@ public partial class CommonSearch : ContentPage
 							break;
 					}
 					_v.tafsir = "";
-					//_v.translation_ref = "";
-					// height of header //
 					_v.number = 110;
+
 				}
 				break;
 			case "Dua":
@@ -117,7 +127,16 @@ public partial class CommonSearch : ContentPage
 						{
 							_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 							_v.verse_arabic_end = "۩";
+							_v.showSujood = true;
 						}
+						///remove integer numbers
+						string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+						{
+							string number = match.Value;
+							_v.verse_arabic_number = Convert.ToInt32(number);
+							//_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
+							return number;
+						});
 						// combine multiple verses as one unit
 						if (v.Count > 1)
 						{
@@ -190,6 +209,15 @@ public partial class CommonSearch : ContentPage
 					{
 						_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 						_v.translation_ref = "";
+						_v.showSujood = false;
+						///remove integer numbers
+						string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+						{
+							string number = match.Value;
+							_v.verse_arabic_number = Convert.ToInt32(number);
+							//_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
+							return number;
+						});
 						switch(selectedLanguage)
 						{
 							case 1:
@@ -228,7 +256,7 @@ public partial class CommonSearch : ContentPage
 	/// <param name="e"></param>
     private async void showTranslation_Clicked(object sender, EventArgs e)
 	{
-		var popup = new TranslationOption();
+		var popup = new TranslationOption("COMMON");
 
         // The type parameter must match the type returned from the popup.
         IPopupResult<Int16> popupResult = await this.ShowPopupAsync<Int16>(popup, new PopupOptions

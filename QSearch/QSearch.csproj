@@ -20,10 +20,10 @@
 		<ApplicationIdGuid>739d3cd0-12fe-4bd6-8400-216055e3842d</ApplicationIdGuid>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>6.6.0</ApplicationDisplayVersion>
-		<ApplicationVersion>24.0.0</ApplicationVersion>
+		<ApplicationDisplayVersion>6.7.0</ApplicationDisplayVersion>
+		<ApplicationVersion>25.0.0</ApplicationVersion>
 		<!-- Android Only-->
-		<AndroidVersionCode>43</AndroidVersionCode>
+		<AndroidVersionCode>45</AndroidVersionCode>
 		<UseMaterial3>true</UseMaterial3>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>

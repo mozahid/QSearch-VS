@@ -108,6 +108,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         Entry txt = (Entry)sender;
         var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         int wordcount = 0;
+        string integer_pattern = @"\d+";
 
         if (txt.Text.Length == 0)
         {
@@ -232,8 +233,18 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
             if (_v.verse_arabic.Contains("۩"))
             {
                 _v.verse_arabic = _v.verse_arabic.Replace("۩", "");
-                _v.verse_arabic_end = "۩ (Sujood)";    
+                _v.verse_arabic_end = "۩";
+                _v.showSujood = true;
             }
+            else _v.showSujood = false;
+            ///remove integer numbers
+            string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+            {
+                string number = match.Value;
+                _v.verse_arabic_number = Convert.ToInt32(number);
+                //_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
+                return number;
+            });
             // show translation based on user selection //
             switch(selectedLanguage)
             {
@@ -271,6 +282,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                         srch = words[i].Replace("\"", "");
                         foreach (Verse v in Verses)
                         {
+
                             if (words[i].Contains("\""))
                             {
                                 // we want to search exact word and highlight that only //
@@ -600,7 +612,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
     /// <param name="e"></param>
     private async void showTranslation_Clicked(object sender, EventArgs e)
     {
-        var popup = new TranslationOption();
+        var popup = new TranslationOption("QSEARCH");
 
         // The type parameter must match the type returned from the popup.
         IPopupResult<Int16> popupResult = await this.ShowPopupAsync<Int16>(popup, new PopupOptions

@@ -28,10 +28,11 @@ public class LangDetection
         if (subtype != null)
         {
     #if ANDROID24_0_OR_GREATER
-                languageDetected = subtype.LanguageTag.Substring(0, 2); // Example: "en-US", "fr-FR"
+                var langTag = subtype.LanguageTag;
     #else
-                languageDetected = subtype.Locale.Substring(0, 2); // Deprecated but works: "en_US"    
+                var langTag = subtype.Locale;    
     #endif
+                languageDetected = langTag.Substring(0, 2);
         }
     }
 #endif

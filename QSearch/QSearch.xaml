@@ -98,8 +98,8 @@
                 </Border.Shadow>
                 <Picker
                     x:Name="srchOption"
-                    FontSize="Medium"
-                    WidthRequest="120"
+                    FontSize="Small"
+                    WidthRequest="100"
                     SelectedIndex="0">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
@@ -187,6 +187,7 @@
                                                 <RowDefinition />
                                                 <RowDefinition />
                                                 <RowDefinition />
+                                                <RowDefinition />
                                             </Grid.RowDefinitions>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition />
@@ -262,6 +263,33 @@
                                                             </FormattedString>    
                                                         </Label.FormattedText>
                                                     </Label>
+                                                    <Grid
+                                                        VerticalOptions="Start"
+                                                        HorizontalOptions="Start"
+                                                        Grid.Row="1"
+                                                        Grid.Column="0"
+                                                        >
+                                                        <Label Text="{Binding verse_arabic_number}"
+                                                            Padding="3"
+                                                            FontSize="Micro"
+                                                            VerticalOptions="Center"
+                                                            HorizontalOptions="Center" />
+                                                        <Image 
+                                                            Source="quranic_border_4.png"
+                                                            Aspect="AspectFill"
+                                                            HeightRequest="50"
+                                                            WidthRequest="50" />
+                                                    </Grid>
+                                                    <Label
+                                                        Text="{Binding verse_arabic_end}" 
+                                                        Grid.Row="1"
+                                                        IsVisible="{Binding showSujood}"
+                                                        Padding="3"
+                                                        TextColor="Red" 
+                                                        FontSize="Large"
+                                                        FontAttributes="Bold"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Center" />
                                                     <Label 
                                                         FontSize="Small"
                                                         FontFamily="NotoArabic"
@@ -289,52 +317,36 @@
                                                                 </FormattedString>
                                                             </Label.FormattedText>
                                                     </Label>
-                                                <Grid Grid.Row="3" 
-                                                    Grid.Column="0" 
-                                                    Grid.ColumnSpan="3">
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="Auto" />
-                                                    <RowDefinition Height="20" />
-                                                    <RowDefinition Height="2" />
-                                                </Grid.RowDefinitions>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="*" />
-                                                </Grid.ColumnDefinitions>
-                                                <Label
-                                                    FontAttributes="Bold"
-                                                    FontSize="Large"
-                                                    Text="{Binding verse_arabic}" FontFamily="{Binding font}"
-                                                    TextType="Html"
-                                                    VerticalOptions="Start"
-                                                    HorizontalOptions="End"
-                                                    HorizontalTextAlignment="End"
-                                                    Grid.Row="0">
-                                                    </Label> 
-                                                    <Label
-                                                        Text="{Binding verse_arabic_end}" 
-                                                        TextColor="White" 
-                                                        FontSize="Medium"
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Start"
-                                                        BackgroundColor="Red" 
-                                                        Grid.Row="1"/>
-                                                    <BoxView Color="LightGray"
-                                                        HorizontalOptions="Fill"
-                                                        Grid.Row="2" />
-                                            </Grid>
                                             <Border
                                                 HorizontalOptions="Fill"
                                                 Grid.Row="3"
-                                                Grid.RowSpan="5" 
+                                                Grid.RowSpan="6" 
                                                 Grid.Column="0" 
                                                 Grid.ColumnSpan="3">
                                                 <Border.Shadow>
-                                                    <Shadow Brush="Gray"
-                                                        Offset="10,10"
-                                                        Radius="20"
-                                                        Opacity="0.8" />
+                                                    <Shadow Brush="LightGray"
+                                                        Offset="5,5"
+                                                        Radius="10"
+                                                        Opacity="1.0" />
                                                 </Border.Shadow>    
                                             </Border>
+                                            <Label
+                                                FontAttributes="Bold"
+                                                FontSize="Large"
+                                                Text="{Binding verse_arabic}" 
+                                                FontFamily="{Binding font}"
+                                                TextType="Html"
+                                                VerticalOptions="Start"
+                                                HorizontalOptions="End"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="3"
+                                                Grid.ColumnSpan="3">
+                                            </Label> 
+                                            <BoxView Color="LightGray"
+                                                HorizontalOptions="Fill"
+                                                HeightRequest="2"
+                                                Grid.Row="4"
+                                                Grid.ColumnSpan="3" />
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold"
@@ -343,14 +355,14 @@
                                                 LineBreakMode="WordWrap"
                                                 IsVisible="{Binding showEnglish}"
                                                 Text="{Binding verse_english}"
-                                                Grid.Row="4" Grid.ColumnSpan="3" />
+                                                Grid.Row="5" Grid.ColumnSpan="3" />
                                             <Label
                                                 FontSize="Micro"
                                                 TextColor="SkyBlue"
                                                 HorizontalTextAlignment="Center"
                                                 IsVisible="{Binding showEnglish}"
                                                 Text="{Binding english_ref}"
-                                                Grid.Row="5" Grid.ColumnSpan="3" />
+                                                Grid.Row="6" Grid.ColumnSpan="3" />
                                             <Label 
                                                 FontSize="Medium"
                                                 FontAttributes="Bold"
@@ -360,7 +372,7 @@
                                                 HorizontalTextAlignment="End"
                                                 IsVisible="{Binding showUrdu}"
                                                 Text="{Binding verse_urdu}"
-                                                Grid.Row="6" Grid.ColumnSpan="3" />
+                                                Grid.Row="7" Grid.ColumnSpan="3" />
                                             <Label
                                                 FontSize="Micro"
                                                 TextColor="SkyBlue"
@@ -368,7 +380,7 @@
                                                 FontFamily="Urdu"
                                                 IsVisible="{Binding showUrdu}"
                                                 Text="{Binding urdu_ref}"
-                                                Grid.Row="7" Grid.ColumnSpan="3" />
+                                                Grid.Row="8" Grid.ColumnSpan="3" />
                                         </Grid>
                                 <!-- </Border>  -->
                         </DataTemplate>

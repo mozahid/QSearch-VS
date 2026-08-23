@@ -1,4 +1,5 @@
-﻿namespace QSearch
+﻿
+namespace QSearch
 {
     /// <summary>
     /// quranic verse model
@@ -22,6 +23,7 @@
         public string font { get; set; }
         // for storing sujood mark ///
         public string verse_arabic_end { get; set;}
+        public int verse_arabic_number  {get;set;}
         /// <summary>
         /// used for duas of prophets and other duas, to store the name of the prophet or the dua
         /// </summary>
@@ -36,6 +38,7 @@
         public string urdu_ref {get;set;}
         public bool showEnglish { get; set; }
         public bool showUrdu { get; set; }
+        public bool showSujood {get;set;} 
     }
     /// <summary>
     /// used in duas and sakinah verses, to store the reference of the verse, and the context of the verse in english, urdu and arabic
@@ -89,6 +92,7 @@
         public string[] verse_arabic_lines_number { get; set; } = new string[25];
         public string[] verse_arabic_line_end { get; set; } = new string[25];
         public string[] translation_ref_lines { get; set; } = new string[25];
+
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
         public string class_arabic { get; set; }
@@ -97,6 +101,7 @@
         public string font { get; set; }
         public string font_translation{ get; set; } = "Tahoma";
         public string[] showLine { get; set; } = new string[25];
+        public string showSeparator {get;set;} = "false";
     }
     /// <summary>
     /// Class for grouping by surahs for a para

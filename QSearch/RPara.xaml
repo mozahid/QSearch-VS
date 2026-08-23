@@ -70,7 +70,7 @@
                                 <ImageButton.Shadow>
                                     <Shadow Brush="Gray"
                                         Offset="20,20"
-                                        Radius="40"
+                                        Radius="20"
                                         Opacity="0.8" />
                                 </ImageButton.Shadow>
                             </ImageButton>  
@@ -133,7 +133,7 @@
                                         <Border.Shadow>
                                             <Shadow Brush="Gray"
                                                 Offset="20,0"
-                                                Radius="40"
+                                                Radius="20"
                                                 Opacity="0.8" />
                                         </Border.Shadow>    
                                     </Border>
@@ -231,7 +231,1557 @@
                             </CollectionView.GroupHeaderTemplate>
                             <CollectionView.ItemTemplate>
                             <DataTemplate>
-                                    <Border
+                                <Border
+                                   BackgroundColor="White"
+                                   Stroke="LightGray"
+                                   StrokeThickness="1"
+                                    >
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="5,5,5,5"/>
+                                    </Border.StrokeShape>
+                                    <Border.Shadow>
+                                                <Shadow Brush="Gray"
+                                                    Offset="20,20"
+                                                    Radius="20"
+                                                    Opacity="0.8" />
+                                    </Border.Shadow>
+                                    <Grid HorizontalOptions="Fill">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[0]}"
+                                            Grid.Row="0">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[0]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[0]}" TextColor="White"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[0]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[0]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[0]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[1]}"
+                                            Grid.Row="1">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[1]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[1]}" TextColor="Red"  />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[1]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[1]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[1]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[2]}"
+                                            Grid.Row="2">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[2]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[2]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[2]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[2]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[2]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[3]}"
+                                            Grid.Row="3">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[3]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[3]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[3]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[3]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[3]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[4]}"
+                                            Grid.Row="4">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[4]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[4]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[4]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[4]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[4]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                        <Grid 
+                                            IsVisible ="{Binding showLine[5]}"
+                                            Grid.Row="5">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[5]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[5]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[5]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[5]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[5]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[6]}"
+                                            Grid.Row="6">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[6]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[6]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[6]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[6]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[6]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[7]}"
+                                            Grid.Row="7">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[7]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[7]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[7]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[7]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[7]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[8]}"
+                                            Grid.Row="8">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[8]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[8]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[8]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[8]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[8]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[9]}"
+                                            Grid.Row="9">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[9]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[9]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[9]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[9]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[9]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[10]}"
+                                            Grid.Row="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[10]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[10]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[10]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[10]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[10]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[11]}"
+                                            Grid.Row="11">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[11]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[11]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[11]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[11]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[11]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[12]}"
+                                            Grid.Row="12">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[12]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[12]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[12]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[12]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[12]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[13]}"
+                                            Grid.Row="13">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[13]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[13]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[13]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[13]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[13]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[14]}"
+                                            Grid.Row="14">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[14]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[14]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[14]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[14]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[14]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[15]}"
+                                            Grid.Row="15">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[15]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[15]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[15]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[15]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[15]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[16]}"
+                                            Grid.Row="16">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[16]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[16]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[16]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[16]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[16]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[17]}"
+                                            Grid.Row="17">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[17]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[17]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[17]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[17]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[17]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[18]}"
+                                            Grid.Row="18">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[18]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[18]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[18]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[18]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[18]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[19]}"
+                                            Grid.Row="19">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[19]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[19]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[19]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[19]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[19]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[20]}"
+                                            Grid.Row="20">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[20]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[20]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[20]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[20]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[20]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[21]}"
+                                            Grid.Row="21">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[21]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[21]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[21]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[21]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[21]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[22]}"
+                                            Grid.Row="22">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[22]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[22]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[22]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[22]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[22]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[23]}"
+                                            Grid.Row="23">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[23]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[23]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[23]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[23]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[23]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                        </Grid>
+                                       <Grid 
+                                            IsVisible ="{Binding showLine[24]}"
+                                            Grid.Row="24">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="34" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label 
+                                                HorizontalTextAlignment="End"
+                                                HorizontalOptions="End" 
+                                                FontSize="Title"
+                                                Margin="1,0,1,0"
+                                                Grid.Row="0"
+                                                Grid.Column="1">
+                                                    <Label.FormattedText>
+                                                        <FormattedString>
+                                                                <Span Text="{Binding verse_arabic_lines[24]}" FontFamily="{Binding font}" TextColor="Black"></Span>
+                                                                <Span Text="{Binding verse_arabic_line_end[24]}" TextColor="Red"   />                                                           
+                                                        </FormattedString>
+                                                    </Label.FormattedText>
+                                            </Label>
+                                            <Grid
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                HorizontalOptions="Start"
+                                                VerticalOptions="End">
+                                                <Image Source="quranic_border_4.png"
+                                                    Aspect="AspectFit" />
+                                                <Label 
+                                                    Text="{Binding verse_arabic_lines_number[24]}"
+                                                    HorizontalTextAlignment="Center"
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Green"
+                                                    FontSize="Micro" />
+                                            </Grid>
+                                            <Label
+                                                TextType="Text"
+                                                HorizontalTextAlignment="End"
+                                                Grid.Row="1"
+                                                Grid.ColumnSpan="2">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding verse_translation_lines[24]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
+                                                        <Span Text="{Binding translation_ref_lines[24]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
+                                                    </FormattedString>
+                                                </Label.FormattedText>    
+                                            </Label> 
+                                            <BoxView
+                                                IsVisible="{Binding showSeparator}"
+                                                Grid.Row="2"
+                                                Grid.ColumnSpan="2"
+                                                HeightRequest="1"
+                                                Color="#e2f0fe"
+                                                HorizontalOptions="Fill" />
+                                            </Grid>
+                                       </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </Grid>
+            </Grid>
+</ContentPage>
+                                    <!-- <Border
                                     Background="White"
                                     Stroke="LightGray"
                                     StrokeThickness="1"
@@ -287,7 +1837,7 @@
                                                 <Label.FormattedText>
                                                     <FormattedString>
                                                         <Span Text="{Binding verse_arabic_lines[0]}" FontFamily="{Binding font} " TextColor="Black"></Span>
-                                                        <Span Text="{Binding verse_arabic_line_end[0]}" TextColor="White" BackgroundColor="Red" />
+                                                        <Span Text="{Binding verse_arabic_line_end[0]}" TextColor="Red" BackgroundColor="Red" />
                                                         <Span Text="{Binding verse_arabic_lines_number[0]}" TextColor="Green" FontSize="Small" />
                                                         <Span Text="{Binding verse_translation_lines[0]}" FontFamily="{Binding font_translation}" FontSize="Small" TextColor="Gray"></Span>
                                                         <Span Text="{Binding translation_ref_lines[0]}" FontFamily="{Binding font_translation}" FontSize="Micro" TextColor="SkyBlue" />
@@ -727,13 +2277,9 @@
                                                 </Label.FormattedText>
                                             </Label>
                                         </Grid>
-                                    </Border>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </Grid>
-            </Grid>
-</ContentPage>
+                                    </Border> -->
+
+
                  <!-- <CollectionView
                     x:Name="lstViewAndroid"
                     DescendantAdded="lstView_DescendantAdded"
