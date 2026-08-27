@@ -38,7 +38,7 @@
                 Completed="txtSearch_Completed"
                 TextChanged="txtSearch_TextChanged"
                 HeightRequest="48"
-                WidthRequest="250"
+                WidthRequest="300"
                 Keyboard="Plain"            
                 IsSpellCheckEnabled="False"
                 IsTextPredictionEnabled="False"
@@ -170,7 +170,6 @@
                     VerticalOptions="Center" />
             <CollectionView
                     x:Name="lstView"
-                    HorizontalOptions="Center"
                     Margin="3"
                     Scrolled="lstView_Scrolled"
                     VerticalScrollBarVisibility="Always">
@@ -342,9 +341,10 @@
                                                 Grid.Row="3"
                                                 Grid.ColumnSpan="3">
                                             </Label> 
-                                            <BoxView Color="LightGray"
+                                            <BoxView 
+                                                Color="LightGray"
                                                 HorizontalOptions="Fill"
-                                                HeightRequest="2"
+                                                HeightRequest="1"
                                                 Grid.Row="4"
                                                 Grid.ColumnSpan="3" />
                                             <Label 

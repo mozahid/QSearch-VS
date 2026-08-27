@@ -19,6 +19,21 @@
       </ContentPage.ToolbarItems>
     <VerticalStackLayout Spacing="5">
             <FlexLayout HorizontalOptions="Center">
+                <ImageButton x:Name="btnLine" BackgroundColor="PaleGoldenrod" Clicked="btnLine_Clicked">
+                    <ImageButton.Source>
+                        <FontImageSource
+                            FontFamily="MaterialIconsOutlined-Regular"
+                            Color="Black"
+                            Glyph="&#xe8ee;"
+                            Size="28" />
+                    </ImageButton.Source>
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>
                 <ImageButton x:Name="openBM"
                          BackgroundColor="LightSkyBlue"
                          ToolTipProperties.Text="Open bookmarks" Clicked="openBM_Clicked">
@@ -68,7 +83,7 @@
                             Radius="40"
                             Opacity="0.8" />
                     </ImageButton.Shadow>
-                </ImageButton>       
+                </ImageButton>
             </FlexLayout>
             <Grid IsVisible="{Binding IsBusy}"  BackgroundColor="Transparent">
                 <ActivityIndicator x:Name="progInd"
@@ -78,15 +93,14 @@
                         VerticalOptions="Center"
                     />
                     <CollectionView
-                    x:Name="lstView"            
-                    HorizontalOptions="Center"
-                    Margin="5"
-                    IsGrouped="True"
-                    VerticalScrollBarVisibility="Always" >
+                        x:Name="lstView"            
+                        Margin="5"
+                        IsGrouped="True"
+                        RemainingItemsThreshold="2"
+                        VerticalScrollBarVisibility="Always" >
                         <CollectionView.GroupHeaderTemplate>
                             <DataTemplate>
-                            <Grid HorizontalOptions="Fill"
-                                  >
+                                <Grid HorizontalOptions="Fill">
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
                                     <RowDefinition Height="*" />
@@ -116,15 +130,6 @@
                                             Opacity="0.8" />
                                     </Border.Shadow>    
                                 </Border>
-                                <!-- <Image
-                                        Grid.Row="0"
-                                        Grid.Column="0"
-                                        Grid.ColumnSpan="3"
-                                        Grid.RowSpan="3"
-                                        Opacity="0.8"
-                                        Source="qs_hdr4.png"
-                                        Aspect="Fill"
-                                        HeightRequest="90" /> -->
                                 <Label
                                     FontFamily="Tahoma"
                                     FontSize="Small"
@@ -218,7 +223,7 @@
                                                     Radius="20"
                                                     Opacity="0.8" />
                                     </Border.Shadow>
-                                    <Grid Padding="5" HorizontalOptions="Fill">
+                                    <Grid Padding="5">
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
@@ -303,7 +308,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -363,7 +368,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -423,7 +428,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -483,7 +488,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -543,7 +548,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                         <Grid 
@@ -603,7 +608,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -663,7 +668,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -723,7 +728,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -783,7 +788,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -843,7 +848,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -903,7 +908,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -963,7 +968,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1023,7 +1028,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1083,7 +1088,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1143,7 +1148,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1203,7 +1208,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1263,7 +1268,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1323,7 +1328,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1383,7 +1388,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1443,7 +1448,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1503,7 +1508,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1563,7 +1568,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1623,7 +1628,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1683,7 +1688,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                         </Grid>
                                        <Grid 
@@ -1743,7 +1748,7 @@
                                                 Grid.Row="2"
                                                 Grid.ColumnSpan="2"
                                                 HeightRequest="1"
-                                                Color="#e2f0fe"
+                                                Color="Silver"
                                                 HorizontalOptions="Fill" />
                                             </Grid>
                                        </Grid>

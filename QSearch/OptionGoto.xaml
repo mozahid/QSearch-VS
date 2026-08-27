@@ -7,10 +7,10 @@
         <VerticalStackLayout>
             <SearchBar x:Name="srchChapter"
                         BackgroundColor="WhiteSmoke"
-                        Placeholder="Search chapter number..."
+                        Placeholder="Search chapter number/chapter name..."
                         TextColor="Blue"
                         CancelButtonColor="White"
-                        MaxLength="3"
+                        Keyboard="Text"
                         SearchButtonPressed="srchChapter_SearchButtonPressed"
                         ReturnType="Search"
                         TextChanged="srchChapter_TextChanged"

@@ -73,7 +73,6 @@ public partial class RSurah : ContentPage, IQueryAttributable
         progress.ShowProgress();
         await Task.Delay(75);
         
-        double screenWidth = DeviceDisplay.MainDisplayInfo.Width / DeviceDisplay.MainDisplayInfo.Density;
         ReciteSurah surah = new ReciteSurah();
         for (int i = 0; i < 25; i++)
         {

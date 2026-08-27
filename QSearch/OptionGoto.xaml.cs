@@ -61,9 +61,24 @@ public partial class OptionGoto : ContentPage
     private void srchChapter_SearchButtonPressed(object sender, EventArgs e)
     {
         SearchBar bar = (SearchBar) sender;
-		int result = Convert.ToInt32(bar.Text);
-		var _list = surahs.Where(s => s.chapter_number == result).ToList();
-		lstSurah.ItemsSource = _list;
+        bool isNumeric = int.TryParse(bar.Text, out int numericQuery);
+        if (isNumeric)
+        {
+            int result = Convert.ToInt32(bar.Text);
+            var _list = surahs.Where(s => s.chapter_number == result).ToList();
+            lstSurah.ItemsSource = _list;
+        }
+        else if (bar.Text.Length > 0)
+        {
+            var matchingSurahs = surahs.Where(p =>
+                p.chapter_name_english.ToLower().Contains(bar.Text) ||
+                p.chapter_name_arabic.Contains(bar.Text)).ToList();
+            lstSurah.ItemsSource = matchingSurahs;
+        }
+        else
+        {
+            lstSurah.ItemsSource = surahs;
+        }
     }
 	/// <summary>
     /// on clearing
@@ -73,10 +88,33 @@ public partial class OptionGoto : ContentPage
     private void srchChapter_TextChanged(object sender, TextChangedEventArgs e)
     {
         SearchBar bar = (SearchBar) sender;
-		if (bar.Text.Length == 0)
+		if (bar.Text.Length > 0)
 		{
 			lstSurah.ItemsSource = surahs;
 		}
+    }
+        private void FilterList(string query)
+    {
+        // If query is empty, restore full list
+        if (string.IsNullOrWhiteSpace(query))
+        {
+            lstSurah.ItemsSource = surahs;
+            return;
+        }
+
+        string cleanQuery = query.Trim().ToLower();
+
+        // Check if input is a valid number
+        bool isNumeric = int.TryParse(cleanQuery, out int numericQuery);
+
+        var matchingSurahs = surahs.Where(p =>
+            p.chapter_name_english.ToLower().Contains(cleanQuery) ||
+            p.chapter_name_arabic.Contains(query) ||    
+            (isNumeric && p.chapter_number == numericQuery)       
+        ).ToList();
+
+        // Update the visible UI collection
+        lstSurah.ItemsSource = matchingSurahs;
     }
     /// <summary>
     /// show surah verses

@@ -24,6 +24,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
 	public int chapterFrom{get;set;}
 	public int chapterTo{get;set;}
     public int selectedLanguage = 1;
+    public bool showSeparator = false;
 	public SurahGoto(QuranDB qdb)
 	{
 		InitializeComponent();
@@ -94,7 +95,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             {
                 surah.verse_translation_lines[_lines] = string.Empty;
                 surah.translation_ref_lines[_lines] = string.Empty;
-                surah.showSeparator = "false";
+                surah.showSeparator = showSeparator ? "true" : "false";
             }
             surah.verse_arabic_lines_number[_lines] = Regex.Match(item.verse_arabic, @"\d+").Value;
             surah.verse_arabic_line_end[_lines] = item.verse_arabic.Contains("۩") ? "۩" : string.Empty;
@@ -120,6 +121,9 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             groupedSurah.Add(new GroupedSurah(surah.chapter_name_arabic, _pg, surahContent));
         }
         this.Title = surah.chapter_name_arabic + " " + chapterTo.ToString() + " - " + chapterFrom.ToString();
+        //List<GroupedSurah> grp = new List<GroupedSurah>();
+        //grp.Add(groupedSurah[0]);
+        //lstView.ItemsSource = grp;
         lstView.ItemsSource = groupedSurah;
         progress.HideProgress();
         }
@@ -237,5 +241,33 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
     private void lstView_Scrolled(object sender, ItemsViewScrolledEventArgs e)
     {
         firstItem = e.FirstVisibleItemIndex;
+    }
+    /// <summary>
+    /// Turn on / off lines
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void btnLine_Clicked(object sender, EventArgs e)
+    {
+        lstView.ItemsSource = null;
+        showSeparator = !showSeparator;
+        if (showSeparator)
+        {
+            FontImageSource fi = btnLine.Source as FontImageSource;
+            fi.Color = Colors.Green;
+        }
+        else
+        {
+            FontImageSource fi = btnLine.Source as FontImageSource;
+            fi.Color = Colors.Black;
+        }
+        foreach (var s in groupedSurah)
+        {
+            List<ReciteSurah> reciteSurahs = s;
+            foreach (var r in reciteSurahs)
+                r.showSeparator = showSeparator ? "true" : "false";
+        }
+        lstView.ItemsSource = groupedSurah;
+        Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
     }
 }
