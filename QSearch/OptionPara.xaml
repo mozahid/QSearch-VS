@@ -6,7 +6,7 @@
              Title="Select Para">
     <VerticalStackLayout>
                <HorizontalStackLayout BackgroundColor="SlateBlue">
-                    <Label Text="Para Number" TextColor="White" FontAttributes="Bold" WidthRequest="95" />
+                    <Label Text="Para #" TextColor="White" FontAttributes="Bold" WidthRequest="95" />
                     <Label Text="Para/Juz Name" TextColor="White" FontAttributes="Bold" />
                 </HorizontalStackLayout>              
                 <ActivityIndicator 
@@ -17,7 +17,10 @@
                         HorizontalOptions="Center"
                         VerticalOptions="Center"
                 />
-                <Border Stroke="Gray" StrokeThickness="1" Margin="5,5" >
+                <Border Stroke="LightGray" 
+                    StrokeShape="RoundRectangle 10,10"
+                    StrokeThickness="1" 
+                    Margin="5,5" >
                     <CollectionView x:Name="lstPara"
                                 BackgroundColor="White"
                                 SelectionMode="Single"
@@ -61,7 +64,7 @@
                                                     </Label.FormattedText>
                                                 </Label>
                                                 <BoxView Color="LightGray" Grid.Row="1" Grid.ColumnSpan="2"
-                                                            HeightRequest="2"
+                                                            HeightRequest="1"
                                                             HorizontalOptions="Fill" />                           
                                             </Grid>
                             </DataTemplate>

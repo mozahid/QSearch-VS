@@ -37,8 +37,7 @@
                 PlaceholderColor="SlateBlue"
                 Completed="txtSearch_Completed"
                 TextChanged="txtSearch_TextChanged"
-                HeightRequest="48"
-                WidthRequest="300"
+                WidthRequest="275"
                 Keyboard="Plain"            
                 IsSpellCheckEnabled="False"
                 IsTextPredictionEnabled="False"
@@ -114,30 +113,31 @@
                     HeightRequest="2"
                     HorizontalOptions="Fill"
                     Grid.Row="2" />
-        <HorizontalStackLayout
-                        x:Name="result"
-                        IsVisible="false"
-                        BackgroundColor="GhostWhite"
-                        HorizontalOptions="Center"
-                        Grid.Row="3">
-                <HorizontalStackLayout.Shadow>
-                    <Shadow Brush="Gray"
-                        Offset="20,20"
-                        Radius="40"
-                        Opacity="0.8" />
-                </HorizontalStackLayout.Shadow>
+        <FlexLayout
+            x:Name="result"
+            IsVisible="false"
+            Direction="Row"
+            JustifyContent="Center"
+            AlignItems="Center"
+            HorizontalOptions="Fill"
+            VerticalOptions="Center"
+            Padding="3"
+            Grid.Row="3">
+            <FlexLayout.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#E5E5E5" Offset="0.0" />
+                    <GradientStop Color="White" Offset="0.5" />
+                    <GradientStop Color="#E5E5E5" Offset="1.0" />
+                </LinearGradientBrush>
+            </FlexLayout.Background>
                 <Label 
                         FontSize="Default"
                         TextColor="Blue"
                         Text="Total Verses:"
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"
                         Margin="5,0,0,0" />
                 <Label x:Name="total"
-                        FontSize="Large"
+                        FontSize="Medium"
                         FontAttributes="Bold"
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"
                         Margin="25,0,0,0" />
                 <Label 
                         x:Name="lblWords"
@@ -145,17 +145,13 @@
                         FontSize="Default"
                         TextColor="Blue"
                         Text="Word Occurrences:"
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"
                         Margin="5,0,0,0" />
                 <Label x:Name="totalWords"
                         IsVisible="False"
-                        FontSize="Large"
+                        FontSize="Medium"
                         FontAttributes="Bold"
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"
                         Margin="25,0,0,0" />
-        </HorizontalStackLayout>
+        </FlexLayout>
          <Grid BackgroundColor="Transparent" Grid.Row="4" >
              <Image x:Name="imgNotes" IsVisible="True" 
                 Aspect="AspectFit"

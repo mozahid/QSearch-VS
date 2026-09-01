@@ -1,7 +1,9 @@
 namespace QSearch;
-        
+using Microsoft.Maui.Controls;
+
 public partial class TranslationOption
 {
+    private bool isClosing;
     public TranslationOption(string source)
     {
         var english = new ImageButton { Source = "us.png", Aspect= Aspect.Fill, BackgroundColor = Colors.GhostWhite, HeightRequest = 30, WidthRequest = 100, HorizontalOptions= LayoutOptions.Center, VerticalOptions= LayoutOptions.Center, Shadow = new Shadow { Opacity = 0.5f, Offset = new Point(5, 5), Radius = 10 } };
@@ -48,19 +50,43 @@ public partial class TranslationOption
 #nullable enable
     async void OnEnglishButtonClicked(object? sender, EventArgs e)
     {
-        await CloseAsync(1);
+        //await CloseAsync(1);
+        await ClosePopupSafe(1);
     }
-    
     async void OnUrduButtonClicked(object? sender, EventArgs e)
     {
 
-        await CloseAsync(2);
+        //await CloseAsync(2);
+        await ClosePopupSafe(2);
     }
-
     async void OnNoTranslationClicked(object? sender, EventArgs e)
     {
 
-        await CloseAsync(3);
+        //await CloseAsync(3);
+        await ClosePopupSafe(3);
+    }
+    /// <summary>
+    /// thread safe closing the pop up
+    /// </summary>
+    /// <param name="val"></param>
+    /// <returns></returns>
+    public async Task ClosePopupSafe(short val)
+    {
+        if (isClosing) return;
+        isClosing = true;
+
+        try
+        {
+            await this.CloseAsync(val);
+        }
+        catch (Exception)
+        {
+            // Suppress or log since the popup is already closed
+        }
+        finally
+        {
+            isClosing = false;
+        }
     }
 #nullable disable
 }

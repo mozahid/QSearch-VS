@@ -72,7 +72,28 @@ namespace QSearch
         public int para_number { get; set; }
         public string para_name { get; set; }
     }
+    /// <summary>
+    /// used to retrieve verse for any surah or para
+    /// </summary>
+    public class QuranicVerse
+    {
+        public int number {get;set;}
+        public int para_number { get; set; }
+        public string para_name { get; set; }
+        public string verse_arabic { get; set; }
 
+        public string verse_english { get; set; }
+        public string english_ref { get; set; }
+        public string verse_urdu { get; set; }
+        public string urdu_ref { get; set; }
+
+        public int chapter_number { get; set; }
+        public string chapter_name_arabic { get; set; }
+        public string class_arabic { get; set; }
+        public int total_verses { get; set; }
+        public int total_verses_para { get; set; }
+
+    }
     /// <summary>
     /// a class to return a surah
     /// </summary>
@@ -86,7 +107,7 @@ namespace QSearch
         public string english_ref { get; set; }
         public string verse_urdu { get; set; }
         public string urdu_ref { get; set; }
-
+        public int[] verse_number {get;set;} = new int[25];
         public string[] verse_arabic_lines { get; set; } = new string[25];
         public string[] verse_translation_lines { get; set; } = new string[25];
         public string[] verse_arabic_lines_number { get; set; } = new string[25];

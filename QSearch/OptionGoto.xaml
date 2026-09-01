@@ -32,7 +32,10 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="100" />                        
                     </Grid.ColumnDefinitions>
-                    <Label Text="Surah Number" TextColor="White" FontAttributes="Bold" WidthRequest="95" Grid.Row="0" Grid.Column="0" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Page_Tapped" />
+                    </Grid.GestureRecognizers>
+                    <Label Text="Surah #" TextColor="White" FontAttributes="Bold" WidthRequest="95" Grid.Row="0" Grid.Column="0" />
                     <Label Text="Chapter/Surah Name" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
                     <Label Text="Total Verses" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End" />
                 </Grid>          
@@ -49,7 +52,11 @@
                             <ColumnDefinition  />
                             <ColumnDefinition  />
                         </Grid.ColumnDefinitions>           
-                            <Border Stroke="LightGray" StrokeThickness="1" Margin="5,5" Grid.Row="0" Grid.ColumnSpan="4" >                           
+                            <Border Stroke="LightGray" 
+                                StrokeThickness="1" 
+                                StrokeShape="RoundRectangle 10,10"
+                                Margin="5,5" Grid.Row="0" 
+                                Grid.ColumnSpan="4" >                           
                             <CollectionView x:Name="lstSurah"
                                         BackgroundColor="White"
                                         SelectionMode="Single"
@@ -101,14 +108,14 @@
                                                             </Label.FormattedText>
                                                         </Label>                                                        
                                                         <BoxView Color="LightGray" Grid.Row="1" Grid.ColumnSpan="3"
-                                                                    HeightRequest="2"
+                                                                    HeightRequest="1"
                                                                     HorizontalOptions="Fill" />                           
                                                     </Grid>      
                                     </DataTemplate>
                                 </CollectionView.ItemTemplate>
                             </CollectionView>
                             </Border>  
-                            <Label Text="Chapter Verses" FontSize="Medium" TextColor="Blue" FontAttributes="Bold" TextDecorations="Underline" Grid.Row="1" Grid.ColumnSpan="4" />
+                            <Label Text="Chapter Verses" FontSize="Small" TextColor="Blue" FontAttributes="Bold" TextDecorations="Underline" Grid.Row="1" Grid.ColumnSpan="4" />
                             <HorizontalStackLayout Grid.Row="2" Grid.ColumnSpan="4" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
                                     <Label Text="From: " VerticalOptions="Center"  />
                                     <Entry x:Name="chapterFrom" MaxLength="3" FontSize="Small" Text="1" TextChanged="chapterFrom_TextChanged" />
@@ -123,7 +130,7 @@
                                                     FontFamily="MaterialIconsOutlined-Regular"
                                                     Glyph="&#xe5ca;"
                                                     Color="White"
-                                                    Size="28"                                   
+                                                    Size="24"                                   
                                                 />
                                             </ImageButton.Source>
                                             <ImageButton.Shadow>

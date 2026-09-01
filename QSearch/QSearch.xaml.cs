@@ -99,6 +99,15 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         srchOption.SelectedIndex = 0;
     }
     /// <summary>
+    /// disable hardware back button
+    /// </summary>
+    /// <returns></returns>
+    protected override bool OnBackButtonPressed()
+    {
+    return true;
+    }
+
+    /// <summary>
     /// The search click button
     /// </summary>
     /// <param name="sender"></param>

@@ -5,6 +5,24 @@
              SafeAreaEdges="Container"
              Title="Select Surah">
             <VerticalStackLayout>
+            <SearchBar x:Name="srchChapter"
+                        BackgroundColor="WhiteSmoke"
+                        Placeholder="Search chapter number/chapter name..."
+                        TextColor="Blue"
+                        CancelButtonColor="White"
+                        Keyboard="Text"
+                        SearchButtonPressed="srchChapter_SearchButtonPressed"
+                        ReturnType="Search"
+                        TextChanged="srchChapter_TextChanged"
+                   />
+                <ActivityIndicator 
+                        x:Name="progInd"
+                        IsRunning="False"
+                        IsVisible="False"
+                        Color="Blue"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                />
                 <Grid Padding="5" BackgroundColor="SlateBlue">
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -14,19 +32,17 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="100" />                        
                     </Grid.ColumnDefinitions>
-                    <Label Text="Surah Number" TextColor="White" FontAttributes="Bold" WidthRequest="95" Grid.Row="0" Grid.Column="0" />
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Page_Tapped" />   
+                    </Grid.GestureRecognizers>
+                    <Label Text="Surah #" TextColor="White" FontAttributes="Bold" WidthRequest="95" Grid.Row="0" Grid.Column="0" />
                     <Label Text="Chapter/Surah Name" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" />
                     <Label Text="Total Verses" TextColor="White" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End" />
                 </Grid>
-                <ActivityIndicator 
-                        x:Name="progInd"
-                        IsRunning="False"
-                        IsVisible="False"
-                        Color="Blue"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                />
-                <Border Stroke="Gray" StrokeThickness="1" Margin="5,5" >
+                <Border Stroke="LightGray" 
+                    StrokeShape="RoundRectangle 10,10"
+                    StrokeThickness="1" 
+                    Margin="5,5" >
                     <CollectionView x:Name="lstSurah"
                                 BackgroundColor="White"
                                 SelectionMode="Single"
@@ -78,7 +94,7 @@
                                                     </Label.FormattedText>
                                                 </Label>
                                                 <BoxView Color="LightGray" Grid.Row="1" Grid.ColumnSpan="3"
-                                                            HeightRequest="2"
+                                                            HeightRequest="1"
                                                             HorizontalOptions="Fill" />                           
                                             </Grid>
                             </DataTemplate>

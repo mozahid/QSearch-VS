@@ -6,6 +6,7 @@ public partial class OptionSurah : ContentPage
 	 QuranDB dB;
 	 Surah selectedSurah = null;
 	 Progress progress;
+     List<Surah> surahs;
 	public OptionSurah(QuranDB qdb)
 	{
 		InitializeComponent();
@@ -21,10 +22,15 @@ public partial class OptionSurah : ContentPage
             await Shell.Current.GoToAsync($"Surah?chapter={chapter}", false);
         }
     }
+    private void Page_Tapped(Object sender, EventArgs e)
+    {
+        srchChapter.Unfocus();
+    }
 
     private void lstSurah_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         selectedSurah = e.CurrentSelection.FirstOrDefault() as Surah;
+        srchChapter.Unfocus();
     }
 	//hide progress //
     private void lstSurah_DescendantAdded(object sender, ElementEventArgs e)
@@ -38,10 +44,80 @@ public partial class OptionSurah : ContentPage
 		List<Surah> s = lstSurah.ItemsSource as List<Surah>;
 		if (s != null && s.Count > 0) progress.HideProgress();
 		if (lstSurah.ItemsSource == null) progress.ShowProgress();
-		 double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
-        List<Surah> surahs = await dB.GetSurahList();
+        surahs = await dB.GetSurahList();
 		lstSurah.ItemsSource = surahs;
-		lstSurah.HeightRequest = screenHeight - 220;
+		double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
+         if (screenHeight <= 400)
+        {
+            lstSurah.HeightRequest = screenHeight - 100;
+        }
+        else
+        {
+            lstSurah.HeightRequest = screenHeight - 300;
+        }
+        await Task.Delay(10);
     }
+	/// <summary>
+    /// on search bar button press
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void srchChapter_SearchButtonPressed(object sender, EventArgs e)
+    {
+        SearchBar bar = (SearchBar) sender;
+        bool isNumeric = int.TryParse(bar.Text, out int numericQuery);
+        if (isNumeric)
+        {
+            int result = Convert.ToInt32(bar.Text);
+            var _list = surahs.Where(s => s.chapter_number == result).ToList();
+            lstSurah.ItemsSource = _list;
+        }
+        else if (bar.Text.Length > 0)
+        {
+            var matchingSurahs = surahs.Where(p =>
+                p.chapter_name_english.ToLower().Contains(bar.Text) ||
+                p.chapter_name_arabic.Contains(bar.Text)).ToList();
+            lstSurah.ItemsSource = matchingSurahs;
+        }
+        else
+        {
+            lstSurah.ItemsSource = surahs;
+        }
+    }
+	/// <summary>
+    /// on clearing
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void srchChapter_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        SearchBar bar = (SearchBar) sender;
+		if (bar.Text.Length > 0)
+		{
+			lstSurah.ItemsSource = surahs;
+		}
+    }
+        private void FilterList(string query)
+    {
+        // If query is empty, restore full list
+        if (string.IsNullOrWhiteSpace(query))
+        {
+            lstSurah.ItemsSource = surahs;
+            return;
+        }
 
+        string cleanQuery = query.Trim().ToLower();
+
+        // Check if input is a valid number
+        bool isNumeric = int.TryParse(cleanQuery, out int numericQuery);
+
+        var matchingSurahs = surahs.Where(p =>
+            p.chapter_name_english.ToLower().Contains(cleanQuery) ||
+            p.chapter_name_arabic.Contains(query) ||    
+            (isNumeric && p.chapter_number == numericQuery)       
+        ).ToList();
+
+        // Update the visible UI collection
+        lstSurah.ItemsSource = matchingSurahs;
+    }
 }

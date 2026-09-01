@@ -12,32 +12,18 @@ public partial class OptionGoto : ContentPage
 	 List<Surah> surahs;
      int selectedChapter = 1;
 	 int verse_count = 1;
-
     public OptionGoto(QuranDB qdb)
     {
         InitializeComponent();
         dB = qdb;
         progress = new Progress(progInd);
-        srchChapter.Keyboard = Keyboard.Numeric;
         chapterFrom.Keyboard = Keyboard.Numeric;
         chapterTo.Keyboard = Keyboard.Numeric;
+        Loaded += Option_Loaded;
     }
-
-    private void lstSurah_DescendantAdded(object sender, ElementEventArgs e)
+    private async void Option_Loaded(Object sender, EventArgs e)
     {
-       progress.HideProgress(); 
-    }
-    private async void lstSurah_SelectionChanged1(object sender, SelectionChangedEventArgs e)
-    {
-        selectedSurah = e.CurrentSelection.FirstOrDefault() as Surah;
-		verse_count = await dB.GetSurahVerseCount(selectedSurah.chapter_number);
-		chapterTo.Text =  verse_count.ToString();
-        selectedChapter = selectedSurah.chapter_number;
-    }
-	    protected override async void OnAppearing()
-    {
-        base.OnAppearing();
-		List<Surah> s = lstSurah.ItemsSource as List<Surah>;
+        List<Surah> s = lstSurah.ItemsSource as List<Surah>;
 		if (s != null && s.Count > 0) progress.HideProgress();
         		progress.ShowProgress();
 		 double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
@@ -49,9 +35,25 @@ public partial class OptionGoto : ContentPage
         {
             lstSurah.HeightRequest = screenHeight - 350;
         }
-        await Task.Delay(50);
+        await Task.Delay(10);
         surahs = await dB.GetSurahList();
 		lstSurah.ItemsSource = surahs;
+    }
+    private void Page_Tapped(Object sender, EventArgs e)
+    {
+        srchChapter.Unfocus();
+    }
+    private void lstSurah_DescendantAdded(object sender, ElementEventArgs e)
+    {
+       progress.HideProgress(); 
+    }
+    private async void lstSurah_SelectionChanged1(object sender, SelectionChangedEventArgs e)
+    {
+        selectedSurah = e.CurrentSelection.FirstOrDefault() as Surah;
+		verse_count = await dB.GetSurahVerseCount(selectedSurah.chapter_number);
+		chapterTo.Text =  verse_count.ToString();
+        selectedChapter = selectedSurah.chapter_number;
+        srchChapter.Unfocus();
     }
 	/// <summary>
     /// on search bar button press

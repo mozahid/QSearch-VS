@@ -1128,25 +1128,7 @@
         }
       },
       "runtimes": {
-        "android-arm": {
-          "#import": []
-        },
-        "android-arm64": {
-          "#import": []
-        },
-        "android-x64": {
-          "#import": []
-        },
-        "android-x86": {
-          "#import": []
-        },
-        "ios-arm64": {
-          "#import": []
-        },
-        "maccatalyst-arm64": {
-          "#import": []
-        },
-        "maccatalyst-x64": {
+        "iossimulator-x64": {
           "#import": []
         }
       }

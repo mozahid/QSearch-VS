@@ -94,7 +94,7 @@
                     />
                     <CollectionView
                         x:Name="lstView"            
-                        Margin="5"
+                        Margin="3"
                         IsGrouped="True"
                         RemainingItemsThreshold="2"
                         VerticalScrollBarVisibility="Always" >
@@ -288,11 +288,13 @@
                                                     Text="{Binding verse_arabic_lines_number[0]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -348,11 +350,13 @@
                                                     Text="{Binding verse_arabic_lines_number[1]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -408,11 +412,13 @@
                                                     Text="{Binding verse_arabic_lines_number[2]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -468,11 +474,13 @@
                                                     Text="{Binding verse_arabic_lines_number[3]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -528,11 +536,13 @@
                                                     Text="{Binding verse_arabic_lines_number[4]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -588,11 +598,13 @@
                                                     Text="{Binding verse_arabic_lines_number[5]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -648,11 +660,13 @@
                                                     Text="{Binding verse_arabic_lines_number[6]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -708,11 +722,13 @@
                                                     Text="{Binding verse_arabic_lines_number[7]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -768,11 +784,13 @@
                                                     Text="{Binding verse_arabic_lines_number[8]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -828,11 +846,13 @@
                                                     Text="{Binding verse_arabic_lines_number[9]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -888,11 +908,13 @@
                                                     Text="{Binding verse_arabic_lines_number[10]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -948,11 +970,13 @@
                                                     Text="{Binding verse_arabic_lines_number[11]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1008,11 +1032,13 @@
                                                     Text="{Binding verse_arabic_lines_number[12]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1068,11 +1094,13 @@
                                                     Text="{Binding verse_arabic_lines_number[13]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1128,11 +1156,13 @@
                                                     Text="{Binding verse_arabic_lines_number[14]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1188,11 +1218,13 @@
                                                     Text="{Binding verse_arabic_lines_number[15]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1248,11 +1280,13 @@
                                                     Text="{Binding verse_arabic_lines_number[16]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1308,11 +1342,13 @@
                                                     Text="{Binding verse_arabic_lines_number[17]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1368,11 +1404,13 @@
                                                     Text="{Binding verse_arabic_lines_number[18]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1428,11 +1466,13 @@
                                                     Text="{Binding verse_arabic_lines_number[19]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1488,11 +1528,13 @@
                                                     Text="{Binding verse_arabic_lines_number[20]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1548,11 +1590,13 @@
                                                     Text="{Binding verse_arabic_lines_number[21]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1608,11 +1652,13 @@
                                                     Text="{Binding verse_arabic_lines_number[22]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1668,11 +1714,13 @@
                                                     Text="{Binding verse_arabic_lines_number[23]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">
@@ -1728,11 +1776,13 @@
                                                     Text="{Binding verse_arabic_lines_number[24]}"
                                                     HorizontalTextAlignment="Center"
                                                     VerticalTextAlignment="Center"
-                                                    TextColor="Green"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"
                                                     FontSize="Micro" />
                                             </Grid>
                                             <Label
                                                 TextType="Text"
+                                                IsVisible="{Binding showTrans}"
                                                 HorizontalTextAlignment="End"
                                                 Grid.Row="1"
                                                 Grid.ColumnSpan="2">

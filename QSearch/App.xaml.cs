@@ -25,7 +25,17 @@ public partial class App : Application
 #nullable enable
     protected override Window CreateWindow(IActivationState? activationState)
     {
-        return new Window(new AppShell());
+        //return new Window(new AppShell());
+        var window = new Window(new AppShell());
+
+        window.Destroying += Window_Destroying;
+
+        return window;
+    }
+    private void Window_Destroying(object? sender, EventArgs e)
+    {
+        System.Diagnostics.Debug.WriteLine(
+            "========== WINDOW DESTROYING ==========");
     }
 #nullable disable
     /// <summary>
@@ -72,6 +82,5 @@ public partial class App : Application
         using FileStream outputStream = File.Create(targetFile);
         await inputStream.CopyToAsync(outputStream);
     }
-
 }
 

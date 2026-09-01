@@ -37,7 +37,9 @@ public class LangDetection
     }
 #endif
 #if IOS 
+#pragma warning disable CA1422
     languageDetected = UITextInputMode.CurrentInputMode?.PrimaryLanguage.Substring(0, 2) ?? "en";
+#pragma warning restore CA1422
 #endif
     }
 

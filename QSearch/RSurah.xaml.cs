@@ -14,12 +14,13 @@ public partial class RSurah : ContentPage, IQueryAttributable
     //Options opt;
     OptionsData ret = new OptionsData();
     public List<GroupedSurah> groupedSurah { get; private set; } = new List<GroupedSurah>();
-    List<ReciteSurah> surahs = new List<ReciteSurah>();
-    Boolean showTrans = false;
+    List<QuranicVerse> surahs = new List<QuranicVerse>();
+    public bool showTrans = false;
     int firstItem = 0;
     Progress progress;
     public int chapter {get; set;}
     public int selectedLanguage = 1;
+    public bool showSeparator = false;
      public async void ApplyQueryAttributes(IDictionary<string, object> query)
     {
         chapter = Convert.ToInt32(HttpUtility.UrlDecode(query["chapter"].ToString()));
@@ -71,7 +72,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
     private async Task LinesByLines()
     {
         progress.ShowProgress();
-        await Task.Delay(75);
+        await Task.Delay(10);
         
         ReciteSurah surah = new ReciteSurah();
         for (int i = 0; i < 25; i++)
@@ -80,7 +81,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
         }
         int _lines = 0;
         int _pg = 1;
-        foreach (ReciteSurah item in surahs)
+        foreach (QuranicVerse item in surahs)
         {
             surah.para_number = item.para_number;
             surah.para_name = item.para_name;
@@ -89,7 +90,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
             surah.class_arabic = item.class_arabic;
             surah.total_verses = item.total_verses;
             surah.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-
+            surah.verse_number[_lines] = item.number;
             surah.verse_arabic_lines[_lines] = item.verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(item.verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);        
             if (showTrans) 
             {
@@ -112,7 +113,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
             {
                 surah.verse_translation_lines[_lines] = string.Empty;
                 surah.translation_ref_lines[_lines] = string.Empty;
-                surah.showSeparator = "false";
+                surah.showSeparator = showSeparator ? "true" : "false";
             }
             surah.verse_arabic_lines_number[_lines] = Regex.Match(item.verse_arabic, @"\d+").Value;
             surah.verse_arabic_line_end[_lines] = item.verse_arabic.Contains("۩") ? "۩" : string.Empty;
@@ -230,6 +231,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
                 break;
             default:
                 showTrans = false;
+                selectedLanguage = 3;
                 break;
         }
         if (showTrans)
@@ -242,10 +244,47 @@ public partial class RSurah : ContentPage, IQueryAttributable
             FontImageSource fi = showTranslation.Source as FontImageSource;
             fi.Color = Colors.Black;
         }
-        groupedSurah.Clear();
+        //groupedSurah.Clear();
         lstView.ItemsSource = null;
-        await LinesByLines();
+        progress.ShowProgress();
+        await Task.Delay(5);
+        foreach (var s in groupedSurah)
+        {
+            List<ReciteSurah> reciteSurahs = s;
+            foreach (var r in reciteSurahs)
+            {
+                for (int l=0; l < 25; l++)
+                {
+                    if (r.showLine[l] == "true")
+                    {
+                        QuranicVerse _q = surahs.Where(v => v.number == r.verse_number[l]).FirstOrDefault();
+                        switch(selectedLanguage)
+                        {
+                            case 1:
+                                r.verse_translation_lines[l] = _q.verse_english;
+                                r.translation_ref_lines[l] = "\n" + _q.english_ref;
+                                r.font_translation = "Tahoma";
+                                break;
+                            case 2:
+                                r.verse_translation_lines[l] = _q.verse_urdu;
+                                r.translation_ref_lines[l] = "\n" + _q.urdu_ref;
+                                r.font_translation = "Urdu";
+                                break;
+                            default:
+                                r.verse_translation_lines[l] = string.Empty;
+                                r.translation_ref_lines[l] = string.Empty;
+                                break;
+                        }
+                        r.showSeparator = showSeparator?"true":"false";
+                    }
+                }
+            }
+        }
+        lstView.ItemsSource = groupedSurah;
+
+        //await LinesByLines();
         Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
+        progress.HideProgress();
     }
     /// <summary>
     /// font change
@@ -313,5 +352,36 @@ public partial class RSurah : ContentPage, IQueryAttributable
             chapter_no += 1;
             await Shell.Current.GoToAsync($"Surah?chapter={chapter_no}", false);
         }
+    }
+    /// <summary>
+    /// Show lines
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void btnLine_Clicked(object sender, EventArgs e)
+    {
+        lstView.ItemsSource = null;
+        await Task.Delay(5);
+        progress.ShowProgress();
+        showSeparator = !showSeparator;
+        if (showSeparator)
+        {
+            FontImageSource fi = btnLine.Source as FontImageSource;
+            fi.Color = Colors.Green;
+        }
+        else
+        {
+            FontImageSource fi = btnLine.Source as FontImageSource;
+            fi.Color = Colors.Black;
+        }
+        foreach (var s in groupedSurah)
+        {
+            List<ReciteSurah> reciteSurahs = s;
+            foreach (var r in reciteSurahs)
+                r.showSeparator = showSeparator ? "true" : "false";
+        }
+        lstView.ItemsSource = groupedSurah;
+        progress.HideProgress();
+        Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
     }
 }
