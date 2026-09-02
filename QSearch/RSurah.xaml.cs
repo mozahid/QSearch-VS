@@ -361,6 +361,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
     private async void btnLine_Clicked(object sender, EventArgs e)
     {
         lstView.ItemsSource = null;
+        btnLine.IsEnabled = false;
         await Task.Delay(5);
         progress.ShowProgress();
         showSeparator = !showSeparator;
@@ -381,7 +382,8 @@ public partial class RSurah : ContentPage, IQueryAttributable
                 r.showSeparator = showSeparator ? "true" : "false";
         }
         lstView.ItemsSource = groupedSurah;
+        await Task.Yield();
+        btnLine.IsEnabled = true;
         progress.HideProgress();
-        Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
     }
 }

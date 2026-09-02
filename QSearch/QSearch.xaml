@@ -124,15 +124,20 @@
             Padding="3"
             Grid.Row="3">
             <FlexLayout.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                    <GradientStop Color="#E5E5E5" Offset="0.0" />
-                    <GradientStop Color="White" Offset="0.5" />
-                    <GradientStop Color="#E5E5E5" Offset="1.0" />
-                </LinearGradientBrush>
+                <RadialGradientBrush
+                    Center="0.5,0.5"
+                    Radius="0.8">
+
+                        <GradientStop Color="White" Offset="0.0" />
+                        <GradientStop Color="White" Offset="0.45" />
+                        <GradientStop Color="#D8D8D8" Offset="0.75" />
+                        <GradientStop Color="#999999" Offset="1.0" />
+
+                </RadialGradientBrush>
             </FlexLayout.Background>
                 <Label 
-                        FontSize="Default"
-                        TextColor="Blue"
+                        FontSize="Small"
+                        TextColor="Gray"
                         Text="Total Verses:"
                         Margin="5,0,0,0" />
                 <Label x:Name="total"
@@ -142,8 +147,8 @@
                 <Label 
                         x:Name="lblWords"
                         IsVisible="False"
-                        FontSize="Default"
-                        TextColor="Blue"
+                        FontSize="Small"    
+                        TextColor="Gray"
                         Text="Word Occurrences:"
                         Margin="5,0,0,0" />
                 <Label x:Name="totalWords"
