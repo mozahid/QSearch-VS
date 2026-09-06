@@ -70,6 +70,7 @@
 	  	<EnablePackageSigning>true</EnablePackageSigning>
 		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
 		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
+		<RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
 	  <AndroidSigningKeyStore>/Users/MZee/Library/Developer/Xamarin/Keystore/MyQSearch/MyQSearch.keystore</AndroidSigningKeyStore>

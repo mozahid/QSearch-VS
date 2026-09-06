@@ -325,46 +325,70 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                     break;
                 case "ar":
                 // multiple words //
+                        HashSet<string> foundWords =  new(StringComparer.OrdinalIgnoreCase)
+                        {
+                            "<sp",
+                            "<spa",
+                            "<span",
+                            "<span ",
+                            "<span s",
+                            "<span sty",
+                            "<span styl",
+                            "<span style",
+                            "<span style="
+                        };
                         foreach (Verse v in Verses)
                         {
                            for (int i = 0; i < words.Length; i++)
                             {
                                 srch = words[i].Trim();
-                                var loc = v.verse_arabic_clean.IndexOf(srch);
-                                var w = "";
+                                int loc=0;
+                                string w="";
+                                if (v.verse_arabic.Contains("</span>")
+                                    && srchOption.SelectedItem.Equals("Single"))
+                                {
+                                    loc = v.verse_arabic.LastIndexOf("</span>") + 7;
+                                }
+                                else
+                                {
+                                    loc = v.verse_arabic_clean.IndexOf(srch);
+                                }
                                 if (loc >= 0)
                                 {
                                     bool found = false;
                                     while (!found && (loc + srch.Length * 2) < v.verse_arabic.Length)
                                     {
                                         w = v.verse_arabic.Substring(loc, srch.Length + srch.Length / 2);
-                                        if (w.Trim().StartsWith("<span style=\"background-color:yellow\"")
-                                            ||
-                                            w.Trim().StartsWith("<sp"))
+                                        if (foundWords.Contains(w.Trim().ToLower()))
                                         {
-                                            loc += 38;
+                                            loc += 39;
                                             continue;
                                         }
                                         else if (w.Trim().StartsWith("<p style")
                                                 ||
+                                                w.Trim().StartsWith("<p st")
+                                                ||
                                                 w.Trim().StartsWith("<p"))
                                         {
-                                            loc += 30;
+                                            loc += 31;
                                             continue;
                                         }
                                         else if (w.Trim().StartsWith("</p"))
                                         {
-                                            loc += 4;
+                                            loc += 7;
                                             continue;
                                         }
                                         else if (w.Trim().StartsWith("</sp"))
                                         {
-                                            loc += 6;
+                                            loc += 7;
                                             continue;
                                         }
                                         if (foundWord(srch, v.verse_arabic.Substring(loc, srch.Length + srch.Length / 2), 
                                                       v, words.Length, ref wordcount, loc, srch.Length + srch.Length / 2))
-                                            found = true;
+                                            {
+                                                found = true;
+                                                w = v.verse_arabic.Substring(loc, srch.Length + srch.Length / 2);
+                                            }
                                         else if (foundWord(srch, v.verse_arabic.Substring(loc, srch.Length + Convert.ToInt32(srch.Length / 1.5)), 
                                                             v, words.Length, ref wordcount, loc, srch.Length + Convert.ToInt32(srch.Length / 1.5)))
                                             {
@@ -389,7 +413,23 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                     // highlight only if found //
                                     if (found)
                                     {
-                                        v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>");
+                                        v.verse_arabic = v.verse_arabic.Replace(w, "<span style=\"background-color:yellow\">" + w + "</span>"); 
+                                        if (srchOption.SelectedItem.Equals("Single"))
+                                        {
+                                            /// remove extra highlights for single occurrence
+                                           var loc2 = v.verse_arabic.IndexOf(w);
+                                           if (loc2 >= 0 && loc2 < loc)
+                                           {
+                                               loc2 = v.verse_arabic.IndexOf("<span style=\"background-color:yellow\">" + w + "</span>");
+                                                while (loc2 >= 0 && loc2 < loc)
+                                                {
+                                                    v.verse_arabic = v.verse_arabic.Remove(loc2,38); 
+                                                    loc2 = v.verse_arabic.IndexOf("</span>");
+                                                    v.verse_arabic = v.verse_arabic.Remove(loc2, 7); // remove "</span>"
+                                                    loc2 = v.verse_arabic.IndexOf("<span style=\"background-color:yellow\">" + w + "</span>");
+                                                }
+                                           }
+                                        }
                                         found = false;
                                     }
                                     if (!v.verse_arabic.Contains("<p style=\"text-align:right;\">"))

@@ -33,7 +33,7 @@
             Grid.Row="1" >
             <Entry
                 x:Name="txtSearch"
-                Placeholder="Your search word(s)"
+                Placeholder="Your search word(s). 50 words."
                 PlaceholderColor="SlateBlue"
                 Completed="txtSearch_Completed"
                 TextChanged="txtSearch_TextChanged"
@@ -44,7 +44,7 @@
                 ClearButtonVisibility="WhileEditing"
                 ReturnType="Search"
                 VerticalOptions="Center"
-                MaxLength="25"
+                MaxLength="50"
                 FontSize="Medium"
                 Text="" />
             <ImageButton x:Name="showTranslation"
