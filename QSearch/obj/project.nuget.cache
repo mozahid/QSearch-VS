@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vvBIPzP6TuE=",
+  "dgSpecHash": "XMd/luqRAsI=",
   "success": true,
   "projectFilePath": "/Volumes/easystore/ProjectQ-Aug-2025-VSCode/ProjectQ/Q-Search/QSearch/QSearch/QSearch.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
     "/Users/MZee/.nuget/packages/microsoft.maui.essentials/10.0.10/microsoft.maui.essentials.10.0.10.nupkg.sha512",
     "/Users/MZee/.nuget/packages/microsoft.maui.graphics/10.0.10/microsoft.maui.graphics.10.0.10.nupkg.sha512",
     "/Users/MZee/.nuget/packages/microsoft.maui.resizetizer/10.0.10/microsoft.maui.resizetizer.10.0.10.nupkg.sha512",
-    "/Users/MZee/.nuget/packages/microsoft.net.illink.tasks/10.0.10/microsoft.net.illink.tasks.10.0.10.nupkg.sha512",
+    "/Users/MZee/.nuget/packages/microsoft.net.illink.tasks/10.0.12/microsoft.net.illink.tasks.10.0.12.nupkg.sha512",
     "/Users/MZee/.nuget/packages/sentry/5.16.2/sentry.5.16.2.nupkg.sha512",
     "/Users/MZee/.nuget/packages/sentry.android.assemblyreader/5.16.2/sentry.android.assemblyreader.5.16.2.nupkg.sha512",
     "/Users/MZee/.nuget/packages/sentry.bindings.android/5.16.2/sentry.bindings.android.5.16.2.nupkg.sha512",
@@ -145,9 +145,9 @@
     "/Users/MZee/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.10.2.1/xamarin.kotlinx.coroutines.core.jvm.1.10.2.1.nupkg.sha512",
     "/Users/MZee/.nuget/packages/xamarin.kotlinx.serialization.core/1.9.0.1/xamarin.kotlinx.serialization.core.1.9.0.1.nupkg.sha512",
     "/Users/MZee/.nuget/packages/xamarin.kotlinx.serialization.core.jvm/1.9.0.1/xamarin.kotlinx.serialization.core.jvm.1.9.0.1.nupkg.sha512",
-    "/Users/MZee/.nuget/packages/microsoft.netcore.app.ref/10.0.6/microsoft.netcore.app.ref.10.0.6.nupkg.sha512",
-    "/Users/MZee/.nuget/packages/microsoft.netcore.app.ref/10.0.6/microsoft.netcore.app.ref.10.0.6.nupkg.sha512",
-    "/Users/MZee/.nuget/packages/microsoft.netcore.app.ref/10.0.6/microsoft.netcore.app.ref.10.0.6.nupkg.sha512"
+    "/Users/MZee/.nuget/packages/microsoft.netcore.app.ref/10.0.8/microsoft.netcore.app.ref.10.0.8.nupkg.sha512",
+    "/Users/MZee/.nuget/packages/microsoft.netcore.app.ref/10.0.8/microsoft.netcore.app.ref.10.0.8.nupkg.sha512",
+    "/Users/MZee/.nuget/packages/microsoft.netcore.app.ref/10.0.8/microsoft.netcore.app.ref.10.0.8.nupkg.sha512"
   ],
   "logs": []
 }

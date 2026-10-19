@@ -21,13 +21,13 @@
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>6.8.2</ApplicationDisplayVersion>
-		<ApplicationVersion>26.0.2</ApplicationVersion>
+		<ApplicationVersion>26.0.4</ApplicationVersion>
 		<!-- Android Only-->
 		<AndroidVersionCode>46</AndroidVersionCode>
 		<UseMaterial3>true</UseMaterial3>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">26.0</SupportedOSPlatformVersion>
 		<!--<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>-->
@@ -70,8 +70,18 @@
 	  	<EnablePackageSigning>true</EnablePackageSigning>
 		<PackageSigningKey>3rd Party Mac Developer Installer: Muhammad Zahid (NTMXQ4647V)</PackageSigningKey>
 		<CodesignEntitlements>Platforms\MacCatalyst\Entitlements.plist</CodesignEntitlements>
-		<RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers>
+		<RuntimeIdentifiers>maccatalyst-arm64</RuntimeIdentifiers>
+    	<RuntimeIdentifier>maccatalyst-arm64</RuntimeIdentifier>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-maccatalyst'
+                      and '$(RuntimeIdentifier)' == 'maccatalyst-arm64'
+                      and '$(Configuration)' == 'Release'">
+		<MtouchInterpreter>-all,MyAssembly</MtouchInterpreter>
+	</PropertyGroup>
+	<Target Name="ClearQuarantineAttributes" BeforeTargets="_CodesignAppBundle" Condition="'$(TargetFramework)' == 'net10.0-maccatalyst' ">
+		<Exec Command="xattr -rd com.apple.quarantine &quot;$(AppBundleDir)&quot; || true" />
+	</Target>
+
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net10.0-android|AnyCPU'">
 	  <AndroidSigningKeyStore>/Users/MZee/Library/Developer/Xamarin/Keystore/MyQSearch/MyQSearch.keystore</AndroidSigningKeyStore>
 	  <AndroidSigningKeyAlias>myqsearch</AndroidSigningKeyAlias>

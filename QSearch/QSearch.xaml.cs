@@ -344,6 +344,8 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
                                 srch = words[i].Trim();
                                 int loc=0;
                                 string w="";
+                                if (srch.Length == 0) continue;
+                                
                                 if (v.verse_arabic.Contains("</span>")
                                     && srchOption.SelectedItem.Equals("Single"))
                                 {
