@@ -15,6 +15,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
     OptionsData ret = new OptionsData();
     public List<GroupedSurah> groupedSurah { get; private set; } = new List<GroupedSurah>();
     List<QuranicVerse> surahs = new List<QuranicVerse>();
+    Surah surah_info = new Surah();
     public bool showTrans = false;
     int firstItem = 0;
     Progress progress;
@@ -47,7 +48,14 @@ public partial class RSurah : ContentPage, IQueryAttributable
         }           
         if (groupedSurah.Count == 0) 
         {
+            surah_info = await dB.GetSurahInfo(chapter_no);
             surahs = await dB.GetSurahByNumber(chapter_no);
+            surah_info.para_name = surahs[0].para_name;
+            surah_info.para_number = surahs[0].para_number;
+            this.Title = "Recite Surah - " + surah_info.chapter_name_arabic;
+            this.BindingContext = surah_info;
+            progress.ShowProgress();
+            await Task.Delay(10);
             await LinesByLines();
         }
     }
@@ -73,78 +81,89 @@ public partial class RSurah : ContentPage, IQueryAttributable
     {
         progress.ShowProgress();
         await Task.Delay(10);
-        
-        ReciteSurah surah = new ReciteSurah();
-        for (int i = 0; i < 25; i++)
+
+        ReciteSurah _reciteSurah = new()
         {
-            surah.showLine[i] = "false";
-        }
-        int _lines = 0;
-        int _pg = 1;
-        foreach (QuranicVerse item in surahs)
+            showSeparator = "true",
+            verse_arabic_lines = new string[surahs.Count],
+            verse_translation_lines = new string[surahs.Count],
+            translation_ref_lines = new string[surahs.Count],
+            ruku_lines = new bool[surahs.Count],
+            sujood_lines = new bool[surahs.Count],
+            verse_number = new int[surahs.Count]
+        };
+        for (int i = 0; i < surahs.Count; i++)
         {
-            surah.para_number = item.para_number;
-            surah.para_name = item.para_name;
-            surah.chapter_number = item.chapter_number;
-            surah.chapter_name_arabic = item.chapter_name_arabic;
-            surah.class_arabic = item.class_arabic;
-            surah.total_verses = item.total_verses;
-            surah.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-            surah.verse_number[_lines] = item.number;
-            surah.verse_arabic_lines[_lines] = item.verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(item.verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);        
-            if (showTrans) 
-            {
-                switch(selectedLanguage)
-                {
-                    case 1:
-                        surah.verse_translation_lines[_lines] = item.verse_english;
-                        surah.translation_ref_lines[_lines] = "\n" + item.english_ref;
-                        surah.font_translation = "Tahoma";
-                        break;
-                    case 2:
-                        surah.verse_translation_lines[_lines] = item.verse_urdu;
-                        surah.translation_ref_lines[_lines] = "\n" + item.urdu_ref;
-                        surah.font_translation = "Urdu";
-                        break;
-                }
-                surah.showSeparator = "true";
-            }
-            else
-            {
-                surah.verse_translation_lines[_lines] = string.Empty;
-                surah.translation_ref_lines[_lines] = string.Empty;
-                surah.showSeparator = showSeparator ? "true" : "false";
-            }
-            surah.verse_arabic_lines_number[_lines] = Regex.Match(item.verse_arabic, @"\d+").Value;
-            surah.verse_arabic_line_end[_lines] = item.verse_arabic.Contains("۩") ? "۩" : string.Empty;
-            surah.showLine[_lines] = "true";
-            _lines++;
-            if (_lines == 25)
-            {
-                // now break it up in 25 lines //
-                List<ReciteSurah> surahContent = new List<ReciteSurah>();
-                surahContent.Add(surah);
-                groupedSurah.Add(new GroupedSurah(surah.chapter_name_arabic, _pg, surahContent));
-                _lines = 0;
-                _pg++;
-                surah = new ReciteSurah();
-                for (int i = 0; i < 25; i++)
-                {
-                    surah.showLine[i] = "false"; 
-                }
-            }
+            _reciteSurah.verse_arabic_lines[i] = surahs[i].verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(surahs[i].verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);
+            _reciteSurah.verse_number[i] = surahs[i].verse_number;
+            _reciteSurah.verse_translation_lines[i] = surahs[i].verse_english;
+            _reciteSurah.translation_ref_lines[i] = surahs[i].english_ref;
+            _reciteSurah.ruku_lines[i] = surahs[i].ruku;
+            _reciteSurah.sujood_lines[i] = surahs[i].sujood;
         }
-        // any left over lines //
-        if (_lines > 0)
-        {
-            List<ReciteSurah> surahContent = new List<ReciteSurah>();
-            surahContent.Add(surah);
-            groupedSurah.Add(new GroupedSurah(surah.chapter_name_arabic, _pg, surahContent));
-        }
-        this.Title = "Recite Surah - " + surah.chapter_name_arabic;
-        lstView.ItemsSource = groupedSurah;
+        lstView.ItemsSource = new[] { _reciteSurah };
+        lstView.ItemTemplate = new DataTemplate(CreateVerseGrid);
         progress.HideProgress();
+    }
+   private Grid CreateVerseGrid()
+    {
+		int gridRow = 0;
+        var grid = new Grid
+        {
+            RowSpacing = 3,
+            ColumnDefinitions = { new ColumnDefinition { Width = GridLength.Star } },
+        };
+
+        for (var rowIndex = 0; rowIndex < surahs.Count; rowIndex++)
+        {
+            grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+			grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+			grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+
+            var verseTextView = new VerseTextView
+            {
+                FontName = "Qalam",
+                FontSize = 28,
+                HorizontalOptions = LayoutOptions.Fill,
+                FlowDirection = FlowDirection.RightToLeft,
+                VerticalOptions = LayoutOptions.Start,
+                VerseImage = "quranic_border_4.png"
+            };
+            verseTextView.SetBinding(VerseTextView.VerseTextProperty, $"verse_arabic_lines[{rowIndex}]", BindingMode.OneWay);
+            verseTextView.SetBinding(VerseTextView.VerseNumberProperty, $"verse_number[{rowIndex}]", BindingMode.OneWay);
+            verseTextView.SetBinding(VerseTextView.RukuProperty, $"ruku_lines[{rowIndex}]", BindingMode.OneWay);
+            verseTextView.SetBinding(VerseTextView.SujoodProperty, $"sujood_lines[{rowIndex}]", BindingMode.OneWay);
+            Grid.SetRow(verseTextView, gridRow++);
+            grid.Children.Add(verseTextView);
+
+            var translationLabel = new Label
+            {
+                HorizontalTextAlignment = TextAlignment.End,
+                TextColor = Colors.Gray,
+                FontSize = 16.0,
+                FontFamily = "Tahoma"
+            };
+            translationLabel.SetBinding(Label.TextProperty, $"verse_translation_lines[{rowIndex}]", BindingMode.OneWay);
+            Grid.SetRow(translationLabel, gridRow++);
+            grid.Children.Add(translationLabel);
+
+            if (rowIndex < surahs.Count - 1)
+            {
+                var separator = new BoxView
+                {
+                    HeightRequest = 1,
+                    Color = Colors.Silver,
+                    HorizontalOptions = LayoutOptions.Fill
+                };
+                separator.SetBinding(BoxView.IsVisibleProperty, "showSeparator", BindingMode.OneWay);
+                Grid.SetRow(separator, gridRow++);
+                grid.Children.Add(separator);
+            }
         }
+
+        return grid;
+    }
+
     /// <summary>
     /// tool bar options clicked
     /// </summary>

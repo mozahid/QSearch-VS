@@ -89,7 +89,7 @@
                                                 <Label Grid.Row="0" Grid.Column="2" HorizontalTextAlignment="End">
                                                     <Label.FormattedText>
                                                         <FormattedString>
-                                                            <Span Text="{Binding total_verses}" FontAttributes="Bold" TextColor="Black" />
+                                                            <Span Text="{Binding verse_count}" FontAttributes="Bold" TextColor="Black" />
                                                         </FormattedString>
                                                     </Label.FormattedText>
                                                 </Label>

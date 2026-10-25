@@ -308,7 +308,7 @@ namespace QSearch
         {
             Init();
             object[] p = { };
-            List<Surah> surahs = await QDB.QueryAsync<Surah>("SELECT chapter_number, chapter_name_arabic, chapter_name_english, total_verses FROM verses GROUP BY chapter_number, chapter_name_arabic, chapter_name_english, total_verses ORDER BY chapter_number", p);
+            List<Surah> surahs = await QDB.QueryAsync<Surah>("SELECT chapter_number, chapter_name_arabic, chapter_name_english, verse_count FROM verse_stat ORDER BY chapter_number", p);
             foreach(var s in surahs)
             {
                 s.chapter_name_arabic = s.chapter_name_arabic + " (" + s.chapter_name_english + ")";
@@ -337,7 +337,19 @@ namespace QSearch
             Init();
             object[] p = { chapter_number};
             return await QDB.ExecuteScalarAsync<int>("SELECT total_verses FROM verses WHERE chapter_number = ?", p);
-        }                                  
+        }     
+        /// <summary>
+        /// get surah info for a given chapter number
+        /// </summary>
+        /// <param name="chapter_number"></param>
+        /// <returns></returns>
+        public async Task<Surah> GetSurahInfo(int chapter_number)
+        {
+            Init();
+            object[] p = { chapter_number};
+            List<Surah> surah_info = await QDB.QueryAsync<Surah>("SELECT * FROM verse_stat WHERE chapter_number = ?", p);
+            return surah_info.FirstOrDefault();
+        }                             
         /// <summary>
         /// search a a surah by number
         /// </summary>
@@ -347,11 +359,11 @@ namespace QSearch
         {
             Init();
             object[] p = { chapter_number };
-            string query = "SELECT verses.para_number, verses.para_name, verses.number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref FROM verses ";
+            string query = "SELECT verses.para_number, verses.para_name, verses.verse_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref,verses.ruku,verses.sujood FROM verses ";
             query += "inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number ";
             query += "WHERE verses.chapter_number = ? ";
-            query += "GROUP BY verses.para_number, verses.para_name, verses.chapter_name_arabic, verses.number, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref ";
-            query += "ORDER BY verses.para_number, verses.number";
+            query += "GROUP BY verses.para_number, verses.para_name, verses.chapter_name_arabic, verses.verse_number, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref,verses.ruku,verses.sujood ";
+            query += "ORDER BY verses.para_number, verses.verse_number";
 
             List<QuranicVerse> rset = await QDB.QueryAsync<QuranicVerse>(query, p);
             return rset;
@@ -367,11 +379,11 @@ namespace QSearch
         {
             Init();
             object[] p = { chapter_number, From, To };
-            string query = "SELECT verses.para_number, verses.para_name, verses.number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref FROM verses ";
+            string query = "SELECT verses.para_number, verses.para_name, verses.verse_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref,verses.ruku,verses.sujood FROM verses ";
             query += "inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number ";
             query += "WHERE verses.chapter_number = ? and verses.verse_number between ? and ? ";
-            query += "GROUP BY verses.para_number, verses.para_name, verses.number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref ";
-            query += "ORDER BY verses.para_number, verses.number";
+            query += "GROUP BY verses.para_number, verses.para_name, verses.verse_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, verses.chapter_number, QSearch.english_ref,QSearch.urdu_ref,verses.ruku,verses.sujood ";
+            query += "ORDER BY verses.para_number, verses.verse_number";
 
             List<QuranicVerse> rset = await QDB.QueryAsync<QuranicVerse>(query, p);
             return rset;
@@ -385,11 +397,11 @@ namespace QSearch
         {
             Init();
             object[] p = { para_number };
-            string query = "SELECT verses.para_number, verses.para_name, verses.number, verses.chapter_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, QSearch.english_ref,QSearch.urdu_ref FROM verses ";
+            string query = "SELECT verses.para_number, verses.para_name, verses.verse_number, verses.chapter_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, QSearch.english_ref,QSearch.urdu_ref,verses.ruku,verses.sujood FROM verses ";
             query += "inner join QSearch on CAST(QSearch.number AS INTEGER) = verses.number ";
             query += "WHERE verses.para_number = ? ";
-            query += "GROUP BY verses.para_number, verses.para_name, verses.number, verses.chapter_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, QSearch.english_ref,QSearch.urdu_ref ";
-            query += "ORDER BY verses.number, verses.para_number, verses.chapter_number";
+            query += "GROUP BY verses.para_number, verses.para_name, verses.verse_number, verses.chapter_number, verses.chapter_name_arabic, verses.verse_arabic, QSearch.verse_english, QSearch.verse_urdu, verses.class_arabic, verses.total_verses, QSearch.english_ref,QSearch.urdu_ref,verses.ruku,verses.sujood ";
+            query += "ORDER BY verses.verse_number, verses.para_number, verses.chapter_number";
 
             List<QuranicVerse> rset = await QDB.QueryAsync<QuranicVerse>(query, p);
             return rset;

@@ -2,7 +2,7 @@
 namespace QSearch
 {
     /// <summary>
-    /// quranic verse model
+    /// Used in Search page and also Duas and Sakinah pages, to store the verse and its translation, tafsir, reference and other details
     /// </summary>
     public class Verse
     {
@@ -62,7 +62,15 @@ namespace QSearch
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
         public string chapter_name_english { get; set; }
-        public int total_verses {get;set;}
+        public string para_name { get; set; }
+        public int para_number { get; set; }
+        public int verse_count {get;set;}
+        public string class_arabic { get; set; }
+        public string class_english { get; set; }
+        public int revelation_order {get;set;}
+        public int ruku_count {get;set;}
+        public int sujood_count {get;set;}
+        public int total_words {get;set;}
     }
     /// <summary>
     /// picking the para
@@ -80,47 +88,54 @@ namespace QSearch
         public int number {get;set;}
         public int para_number { get; set; }
         public string para_name { get; set; }
-        public string verse_arabic { get; set; }
-
-        public string verse_english { get; set; }
-        public string english_ref { get; set; }
-        public string verse_urdu { get; set; }
-        public string urdu_ref { get; set; }
-
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
+        public string chapter_name_english { get; set; }
+        public int verse_number { get; set; }
+        public string verse_arabic { get; set; }
+        public string verse_english { get; set; }
+        public string verse_urdu { get; set; }
+        public bool ruku { get; set; }
+        public bool sujood { get; set; }
+        public string english_ref { get; set; }
+
+        public string urdu_ref { get; set; }
+
         public string class_arabic { get; set; }
+        public string class_english { get; set; }
         public int total_verses { get; set; }
         public int total_verses_para { get; set; }
+        public int total_words_arabic { get; set; }
 
     }
     /// <summary>
-    /// a class to return a surah
+    /// used as model for reciting the surah, to store the verse and its translation, tafsir, reference and other details
+    /// also in para recitation, to store the surah and its verses in a para
     /// </summary>
     public class ReciteSurah
     {
         public int para_number { get; set; }
         public string para_name { get; set; }
-        public string verse_arabic { get; set; }
-
-        public string verse_english { get; set; }
-        public string english_ref { get; set; }
-        public string verse_urdu { get; set; }
-        public string urdu_ref { get; set; }
-        public int[] verse_number {get;set;} = new int[25];
-        public string[] verse_arabic_lines { get; set; } = new string[25];
-        public string[] verse_translation_lines { get; set; } = new string[25];
-        public string[] verse_arabic_lines_number { get; set; } = new string[25];
-        public string[] verse_arabic_line_end { get; set; } = new string[25];
-        public string[] translation_ref_lines { get; set; } = new string[25];
-
+        public int[] verse_number {get;set;}
+        public string[] verse_arabic_lines { get; set; }
+        public string[] verse_translation_lines { get; set; }
+        public string[] verse_arabic_lines_number { get; set; }
+        public string[] verse_arabic_line_end { get; set; }
+        public string[] translation_ref_lines { get; set; }
+        public bool[] ruku_lines { get; set; }
+        public bool[] sujood_lines { get; set; }
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
+        public string chapter_name_english { get; set; }
         public string class_arabic { get; set; }
         public int total_verses { get; set; }
         public int total_verses_para { get; set; }
         public string font { get; set; }
         public string font_translation{ get; set; } = "Tahoma";
+
+        /// <summary>
+        /// -------------REDUNDANT WILL BE REMOVED
+        /// </summary>
         public string[] showLine { get; set; } = new string[25];
         public string showSeparator {get;set;} = "false";
     }

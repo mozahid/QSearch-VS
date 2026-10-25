@@ -49,6 +49,15 @@ public static class MauiProgram
 
         //builder.Services.AddTransient<QSearch>();
 		builder.Services.AddSingleton<QuranDB>();
+#if ANDROID
+		builder.Services.AddSingleton<IArabicTextLayout, global::QSearch.Platforms.Android.ArabicTextLayout>();
+#elif IOS
+		builder.Services.AddSingleton<IArabicTextLayout, global::QSearch.Platforms.iOS.ArabicTextLayout>();
+#elif MACCATALYST
+		builder.Services.AddSingleton<IArabicTextLayout, global::QSearch.Platforms.MacCatalyst.ArabicTextLayout>();
+#elif WINDOWS
+		builder.Services.AddSingleton<IArabicTextLayout, global::QSearch.Platforms.Windows.ArabicTextLayout>();
+#endif
 		return builder.Build();
 	}
 }
