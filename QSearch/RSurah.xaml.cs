@@ -72,7 +72,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
         base.OnAppearing();
         var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         lstView.IsVisible = true;
-        lstView.HeightRequest = screenHeight - 200;
+        lstView.HeightRequest = screenHeight - 260;
     }
     /// <summary>
     /// Lines by Lines
@@ -122,7 +122,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
 
             var verseTextView = new VerseTextView
             {
-                FontName = "Qalam",
+                FontName = Preferences.Default.Get<string>("Font", "NotoArabic"),
                 FontSize = 28,
                 HorizontalOptions = LayoutOptions.Fill,
                 FlowDirection = FlowDirection.RightToLeft,

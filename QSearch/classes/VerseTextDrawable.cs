@@ -318,14 +318,18 @@ internal static class FontFamilyNameResolver
         "IndoPak" => "AlQuran IndoPak by QuranWBW",
         "MeQuran" => "me_quran",
         "Uthmani" => "KFGQPC HAFS UthmanicScript",
+        "hafs" => "KFGQPC HAFS UthmanicScript",
         "Lateef" => "Lateef",
+        "NotoArabic" => "Arabic UI Text Medium",
         _ => fontName.Trim()
 #else
         "Qalam" => "Al-Majeed-Quranic-Font",
         "IndoPak" => "AlQuranIndoPakbyQuranWBW",
         "MeQuran" => "me_quran",
         "Uthmani" => "KFGQPCHAFSUthmanicScript-Regula",
+        "hafs" => "KFGQPCHAFSUthmanicScript-Regula",
         "Lateef" => "Lateef-Bold",
+         "NotoArabic" => "ArabicUIText-Medium",
         _ => fontName.Trim()
 #endif
     };
