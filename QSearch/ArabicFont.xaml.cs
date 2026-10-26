@@ -29,7 +29,7 @@ public partial class ArabicFont : ContentPage
             case "MeQuran":
                 radMeQuran.IsChecked = true;
                 break;
-            case "Hafs":
+            case "Uthmani":
                 radHafsQuran.IsChecked = true;
                 break;
         }
@@ -92,6 +92,7 @@ public partial class ArabicFont : ContentPage
             Font3.BackgroundColor = Colors.Transparent;
             Font4.BackgroundColor = Colors.Transparent;
             Font5.BackgroundColor = Colors.Transparent;
+            Font6.BackgroundColor = Colors.Transparent;
             radNaksh.BackgroundColor = Colors.Transparent;
             radLateef.BackgroundColor = Colors.Transparent;
             radAlQalam.BackgroundColor = Colors.Transparent;
@@ -126,7 +127,7 @@ public partial class ArabicFont : ContentPage
                     Font5.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "6":
-                    _font = "Hafs";
+                    _font = "Uthmani";
                     radHafsQuran.BackgroundColor = Colors.LightSkyBlue;
                     Font6.BackgroundColor = Colors.LightSkyBlue;
                     break;

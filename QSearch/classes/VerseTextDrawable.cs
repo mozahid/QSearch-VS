@@ -129,6 +129,9 @@ public class VerseTextDrawable : IDrawable
 #if IOS || MACCATALYST || WINDOWS
             switch (_control.FontName)
             {
+                case "NotoArabic":
+                    currentY = (lineCount > 1) ? currentY - lh / 4 : currentY - 8;
+                    break;
                 case "Qalam":
                     currentY = (lineCount > 1) ? currentY - lh / 4 : currentY - 8;
                     break;
@@ -186,6 +189,7 @@ public class VerseTextDrawable : IDrawable
             badgeX = width - 35;
         }
         else if (badgeX > 24) badgeX -= 24;
+        else badgeX = 10;
         if (_verseImage is not null)
         {
             canvas.DrawImage(
@@ -220,13 +224,14 @@ public class VerseTextDrawable : IDrawable
         /// if ruku or sujood is true, draw the respective image
         if (_control.Ruku && _rukuImage is not null)
         {
-            badgeX -= 40;
+            badgeX -= 25;
             if (badgeX <= 10) 
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
             }
             else if (badgeX > 24) badgeX -= 24;
+            else badgeX = 10;
             canvas.SaveState();
 
             canvas.DrawImage(
@@ -239,13 +244,14 @@ public class VerseTextDrawable : IDrawable
         }
         if (_control.Sujood && _sujudImage is not null)
         {
-            badgeX -= 40;
+            badgeX -= 25;
             if (badgeX <= 10) 
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
             }
             else if (badgeX > 24) badgeX -= 24;
+            else badgeX = 10;
             canvas.SaveState();
 
             canvas.DrawImage(

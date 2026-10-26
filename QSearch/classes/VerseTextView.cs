@@ -211,6 +211,10 @@ public class VerseTextView : GraphicsView
         double height = lineHeight * lineCount;
 #if IOS || MACCATALYST || WINDOWS
         height += rowSpacing * Math.Max(0, lineCount + 1);
+        if (FontName == "MeQuran")
+        {
+            height += 16;
+        }
 #elif ANDROID
         height += rowSpacing * Math.Max(0, lineCount);
 #endif
