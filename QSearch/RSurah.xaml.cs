@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.ComponentModel;
+using System.Text.RegularExpressions;
 using System.Web;
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Core;
@@ -13,7 +14,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
     int chapter_no = 0;
     //Options opt;
     OptionsData ret = new OptionsData();
-    public List<GroupedSurah> groupedSurah { get; private set; } = new List<GroupedSurah>();
+    Grid surahGrid = null;
     List<QuranicVerse> surahs = new List<QuranicVerse>();
     Surah surah_info = new Surah();
     public bool showTrans = false;
@@ -46,7 +47,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
                 btnForward.BackgroundColor = Colors.LightSkyBlue;
                 break;
         }           
-        if (groupedSurah.Count == 0) 
+        if (surahGrid == null)
         {
             surah_info = await dB.GetSurahInfo(chapter_no);
             surahs = await dB.GetSurahByNumber(chapter_no);
@@ -90,14 +91,36 @@ public partial class RSurah : ContentPage, IQueryAttributable
             translation_ref_lines = new string[surahs.Count],
             ruku_lines = new bool[surahs.Count],
             sujood_lines = new bool[surahs.Count],
-            verse_number = new int[surahs.Count]
+            verse_number = new int[surahs.Count],
         };
         for (int i = 0; i < surahs.Count; i++)
         {
             _reciteSurah.verse_arabic_lines[i] = surahs[i].verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(surahs[i].verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);
             _reciteSurah.verse_number[i] = surahs[i].verse_number;
-            _reciteSurah.verse_translation_lines[i] = surahs[i].verse_english;
-            _reciteSurah.translation_ref_lines[i] = surahs[i].english_ref;
+            if (showTrans)
+            {
+                switch(selectedLanguage)
+                {
+                    case 1:
+                        _reciteSurah.verse_translation_lines[i] = surahs[i].verse_english;
+                        _reciteSurah.translation_ref_lines[i] = surahs[i].english_ref;
+                        break;
+                    case 2:
+                        _reciteSurah.verse_translation_lines[i] = surahs[i].verse_urdu;
+                        _reciteSurah.translation_ref_lines[i] = surahs[i].urdu_ref; 
+                        break;
+                    default:
+                        _reciteSurah.verse_translation_lines[i] = surahs[i].verse_english;
+                        _reciteSurah.translation_ref_lines[i] = surahs[i].english_ref;
+                        break;
+                }
+            }
+            else
+            {
+                _reciteSurah.verse_translation_lines[i] = string.Empty;
+                _reciteSurah.translation_ref_lines[i] = string.Empty;
+            }
+
             _reciteSurah.ruku_lines[i] = surahs[i].ruku;
             _reciteSurah.sujood_lines[i] = surahs[i].sujood;
         }
@@ -108,7 +131,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
    private Grid CreateVerseGrid()
     {
 		int gridRow = 0;
-        var grid = new Grid
+        surahGrid = new Grid
         {
             RowSpacing = 3,
             ColumnDefinitions = { new ColumnDefinition { Width = GridLength.Star } },
@@ -116,9 +139,10 @@ public partial class RSurah : ContentPage, IQueryAttributable
 
         for (var rowIndex = 0; rowIndex < surahs.Count; rowIndex++)
         {
-            grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
-			grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
-			grid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+            surahGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+			surahGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+			surahGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
+            surahGrid.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto});
 
             var verseTextView = new VerseTextView
             {
@@ -134,7 +158,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
             verseTextView.SetBinding(VerseTextView.RukuProperty, $"ruku_lines[{rowIndex}]", BindingMode.OneWay);
             verseTextView.SetBinding(VerseTextView.SujoodProperty, $"sujood_lines[{rowIndex}]", BindingMode.OneWay);
             Grid.SetRow(verseTextView, gridRow++);
-            grid.Children.Add(verseTextView);
+            surahGrid.Children.Add(verseTextView);
 
             var translationLabel = new Label
             {
@@ -145,23 +169,43 @@ public partial class RSurah : ContentPage, IQueryAttributable
             };
             translationLabel.SetBinding(Label.TextProperty, $"verse_translation_lines[{rowIndex}]", BindingMode.OneWay);
             Grid.SetRow(translationLabel, gridRow++);
-            grid.Children.Add(translationLabel);
-
-            if (rowIndex < surahs.Count - 1)
+            surahGrid.Children.Add(translationLabel);
+            var refLabel = new Label
             {
-                var separator = new BoxView
-                {
-                    HeightRequest = 1,
-                    Color = Colors.Silver,
-                    HorizontalOptions = LayoutOptions.Fill
-                };
-                separator.SetBinding(BoxView.IsVisibleProperty, "showSeparator", BindingMode.OneWay);
-                Grid.SetRow(separator, gridRow++);
-                grid.Children.Add(separator);
-            }
+                HorizontalTextAlignment = TextAlignment.End,
+                TextColor = Colors.LightSteelBlue,
+                FontSize = 10.0,
+            };
+            refLabel.SetBinding(Label.TextProperty, $"translation_ref_lines[{rowIndex}]", BindingMode.OneWay);
+            Grid.SetRow(refLabel, gridRow++);
+            surahGrid.Children.Add(refLabel);
+            if (showTrans)
+            {
+               switch(selectedLanguage)
+               {
+                   case 1:
+                        translationLabel.FontFamily = "Tahoma";
+                        refLabel.FontFamily = "Tahoma";
+                       break;
+                   case 2:
+                       translationLabel.FontFamily = "Urdu";
+                       refLabel.FontFamily = "Urdu";
+                       break;
+               }
+            }   
+            //// show separator between verses
+            var separator = new BoxView
+            {
+                HeightRequest = 1,
+                Color = Colors.Silver,
+                HorizontalOptions = LayoutOptions.Fill,
+                IsVisible = showSeparator
+            };
+            Grid.SetRow(separator, gridRow++);
+            surahGrid.Children.Add(separator);
         }
 
-        return grid;
+        return surahGrid;
     }
 
     /// <summary>
@@ -197,8 +241,6 @@ public partial class RSurah : ContentPage, IQueryAttributable
             Preferences.Default.Set<string>("SURAH_NO_" + chapter_no.ToString(), chapter_no.ToString());
             FontImageSource fi = bmSurah.Source as FontImageSource;
             fi.Color = Colors.Green;
-            //bmSurah.ImageSource = "tick_mark1.png";
-            //bmSurah.ContentLayout = new Button.ButtonContentLayout(Button.ButtonContentLayout.ImagePosition.Right, 5);
         }
     }
     /// <summary>
@@ -267,41 +309,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
         lstView.ItemsSource = null;
         progress.ShowProgress();
         await Task.Delay(5);
-        foreach (var s in groupedSurah)
-        {
-            List<ReciteSurah> reciteSurahs = s;
-            foreach (var r in reciteSurahs)
-            {
-                for (int l=0; l < 25; l++)
-                {
-                    if (r.showLine[l] == "true")
-                    {
-                        QuranicVerse _q = surahs.Where(v => v.number == r.verse_number[l]).FirstOrDefault();
-                        switch(selectedLanguage)
-                        {
-                            case 1:
-                                r.verse_translation_lines[l] = _q.verse_english;
-                                r.translation_ref_lines[l] = "\n" + _q.english_ref;
-                                r.font_translation = "Tahoma";
-                                break;
-                            case 2:
-                                r.verse_translation_lines[l] = _q.verse_urdu;
-                                r.translation_ref_lines[l] = "\n" + _q.urdu_ref;
-                                r.font_translation = "Urdu";
-                                break;
-                            default:
-                                r.verse_translation_lines[l] = string.Empty;
-                                r.translation_ref_lines[l] = string.Empty;
-                                break;
-                        }
-                        r.showSeparator = showSeparator?"true":"false";
-                    }
-                }
-            }
-        }
-        lstView.ItemsSource = groupedSurah;
-
-        //await LinesByLines();
+        await LinesByLines();
         Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
         progress.HideProgress();
     }
@@ -323,16 +331,15 @@ public partial class RSurah : ContentPage, IQueryAttributable
         await fn.PopupDismissedTask;
         if (fn.ReturnValue.optionSelection == 0)
         {
-            lstView.ItemsSource = null;
+            //lstView.ItemsSource = null;
             progress.ShowProgress();
-            foreach (var s in groupedSurah)
-            {
-                List<ReciteSurah> reciteSurahs = s;
-                foreach (var r in reciteSurahs)
-                    r.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-            }
-            lstView.ItemsSource = groupedSurah;
             await Task.Yield();
+            //await LinesByLines();
+            for(int nRow=0; nRow < surahGrid.Children.Count; nRow += 4)
+            {
+                var child = surahGrid.Children[nRow] as VerseTextView;
+                child.FontName = Preferences.Default.Get<string>("Font", "NotoArabic");
+            }
             Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
             progress.HideProgress();
         }
@@ -379,7 +386,7 @@ public partial class RSurah : ContentPage, IQueryAttributable
     /// <param name="e"></param>
     private async void btnLine_Clicked(object sender, EventArgs e)
     {
-        lstView.ItemsSource = null;
+        //lstView.ItemsSource = null;
         btnLine.IsEnabled = false;
         await Task.Delay(5);
         progress.ShowProgress();
@@ -394,14 +401,16 @@ public partial class RSurah : ContentPage, IQueryAttributable
             FontImageSource fi = btnLine.Source as FontImageSource;
             fi.Color = Colors.Black;
         }
-        foreach (var s in groupedSurah)
-        {
-            List<ReciteSurah> reciteSurahs = s;
-            foreach (var r in reciteSurahs)
-                r.showSeparator = showSeparator ? "true" : "false";
-        }
-        lstView.ItemsSource = groupedSurah;
+        //await LinesByLines();
         await Task.Yield();
+        for(int nRow=0; nRow < surahGrid.Children.Count; nRow += 4)
+        {
+            if ((nRow + 3) <= surahGrid.Children.Count - 1)
+            {
+                var child = surahGrid.Children[nRow + 3] as BoxView;
+                child.IsVisible = showSeparator; 
+            }
+        }
         btnLine.IsEnabled = true;
         progress.HideProgress();
     }

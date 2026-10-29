@@ -17,10 +17,10 @@ public partial class ArabicFont : ContentPage
             case "NotoArabic":
                 radNaksh.IsChecked = true;
                 break;
-            case "LateefR":
+            case "Lateef":
                 radLateef.IsChecked = true;
                 break;
-            case "AlQalam":
+            case "Qalam":
                 radAlQalam.IsChecked = true;
                 break;
             case "IndoPak":
@@ -107,12 +107,12 @@ public partial class ArabicFont : ContentPage
                     Font1.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "2":
-                    _font = "LateefR";
+                    _font = "Lateef";
                     radLateef.BackgroundColor = Colors.LightSkyBlue;
                     Font2.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "3":
-                    _font = "AlQalam";
+                    _font = "Qalam";
                     radAlQalam.BackgroundColor = Colors.LightSkyBlue;
                     Font3.BackgroundColor = Colors.LightSkyBlue;
                     break;

@@ -16,9 +16,9 @@ public static class MauiProgram
                 fonts.AddFont("MaterialIconsOutlined-Regular.otf", "MaterialIconsOutlined-Regular");
                 fonts.AddFont("MaterialIcons-Regular.ttf", "MaterialIcons-Regular");
                 fonts.AddFont("NotoNaskhArabic-Regular.ttf", "NotoArabic");
-                fonts.AddFont("Lateef-Bold.ttf", "LateefR");
+                fonts.AddFont("Lateef-Bold.ttf", "Lateef");
                 fonts.AddFont("IndoPak.ttf", "IndoPak");
-                fonts.AddFont("AlQalam.ttf", "AlQalam");
+                fonts.AddFont("AlQalam.ttf", "Qalam");
                 fonts.AddFont("OpenSansRegular.ttf", "OpenSansRegular");
                 fonts.AddFont("MeQuran.ttf", "MeQuran");
                 fonts.AddFont("NotoNastaliqUrdu-VariableFont_wght.ttf", "Urdu");

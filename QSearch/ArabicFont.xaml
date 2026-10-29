@@ -30,12 +30,12 @@
                         </Border.Shadow>
                         <Grid>
                             <Grid.RowDefinitions>
-                                <RowDefinition />
-                                <RowDefinition />
-                                <RowDefinition />
-                                <RowDefinition />
-                                <RowDefinition />
-                                <RowDefinition />
+                                <RowDefinition Height="64" />
+                                <RowDefinition Height="64" />
+                                <RowDefinition Height="64" />
+                                <RowDefinition Height="64" />
+                                <RowDefinition Height="64" />
+                                <RowDefinition Height="64" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
@@ -43,12 +43,12 @@
                             </Grid.ColumnDefinitions>
                                 <RadioButton Content=" "
                                         x:Name="radNaksh"
-                                        HeightRequest="64"
                                         Value="1"
                                         GroupName="Arabic"
                                         IsChecked="True"
                                         Grid.Row="0"
                                         Grid.Column="0"
+                                        VerticalOptions="Center"
                                         CheckedChanged="radFont_CheckedChanged"  />
                                 <Label
                                     x:Name="Font1"
@@ -56,30 +56,32 @@
                                     FontFamily="NotoArabic"
                                     Grid.Row="0"
                                     Grid.Column="1"
+                                    VerticalOptions="Center"
                                     FontSize="Title" />
                             <RadioButton Content=" "
                                         x:Name="radLateef"
-                                        HeightRequest="64"
                                         Value="2"
                                         GroupName="Arabic"
                                         Grid.Row="1"
                                         Grid.Column="0"
+                                        VerticalOptions="Center"
                                         CheckedChanged="radFont_CheckedChanged" />
                             <Label
                                     x:Name="Font2"
                                     Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                    FontFamily="LateefR"
+                                    FontFamily="Lateef"
                                     FontSize="Title"
                                     Grid.Row="1"
                                     Grid.Column="1"
+                                    VerticalOptions="Center"
                                     />
                             <RadioButton Content=" "
                                 x:Name="radAlQalam"
-                                HeightRequest="64"
                                 Value="3"
                                 GroupName="Arabic"
                                 Grid.Row="2"
                                 Grid.Column="0"
+                                VerticalOptions="Center"
                                 CheckedChanged="radFont_CheckedChanged"
                             />
                             <Label
@@ -88,15 +90,16 @@
                                 FontFamily="AlQalam"
                                 Grid.Row="2"
                                 Grid.Column="1"
-                                FontSize="Title">
+                                FontSize="Title"
+                                VerticalOptions="Center">
                             </Label>
                             <RadioButton Content=" "
                                 x:Name="radIndoPak"
-                                HeightRequest="64"
                                 Value="4"
                                 GroupName="Arabic"
                                 Grid.Row="3"
                                 Grid.Column="0"
+                                VerticalOptions="Center"
                                 CheckedChanged="radFont_CheckedChanged"
                             />
                             <Label
@@ -105,15 +108,16 @@
                                 FontFamily="IndoPak"
                                 Grid.Row="3"
                                 Grid.Column="1"
-                                FontSize="Title">
+                                FontSize="Title"
+                                VerticalOptions="Center">
                             </Label>
                             <RadioButton Content=" "
                                 x:Name="radMeQuran"
-                                HeightRequest="64"
                                 Value="5"
                                 GroupName="Arabic"
                                 Grid.Row="4"
                                 Grid.Column="0"
+                                VerticalOptions="Center"
                                 CheckedChanged="radFont_CheckedChanged" />
                             <Label
                                 x:Name="Font5"
@@ -121,14 +125,15 @@
                                 FontFamily="MeQuran"
                                 Grid.Row="4"
                                 Grid.Column="1"
-                                FontSize="Title" />
+                                FontSize="Title"
+                                VerticalOptions="Center" />
                             <RadioButton Content=" "
                                 x:Name="radHafsQuran"
-                                HeightRequest="64"
                                 Value="6"
                                 GroupName="Arabic"
                                 Grid.Row="5"
                                 Grid.Column="0"
+                                VerticalOptions="Center"
                                 CheckedChanged="radFont_CheckedChanged" />                           
                              <Label
                                 x:Name="Font6"
@@ -136,7 +141,8 @@
                                 FontFamily="Uthmani"
                                 Grid.Row="5"
                                 Grid.Column="1"
-                                FontSize="Title" />                               
+                                FontSize="Title"
+                                VerticalOptions="Center" />                               
                         </Grid>
                     </Border>
                 <FlexLayout HorizontalOptions="Center">

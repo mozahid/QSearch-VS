@@ -195,25 +195,30 @@ public class VerseTextView : GraphicsView
             rowSpacing = result.RowSpacing;
             lineCount = Math.Max(1, result.LineCount);
 
-            switch(FontName)
-            {
-                case "IndoPak":
-                        rowSpacing = 12;
-                        break;
-                case "Qalam":
-                        rowSpacing = 8;
-                    break;
-                case "MeQuran":
-                        rowSpacing = 16;
-                        break;
-            }            
+            // switch(FontName)
+            // {
+            //     case "IndoPak":
+            //             rowSpacing = 12;
+            //             break;
+            //     case "Qalam":
+            //             rowSpacing = 8;
+            //         break;
+            //     case "MeQuran":
+            //             rowSpacing = 16;
+            //             break;
+            // }            
         }
         double height = lineHeight * lineCount;
 #if IOS || MACCATALYST || WINDOWS
         height += rowSpacing * Math.Max(0, lineCount + 1);
-        if (FontName == "MeQuran")
+        switch(FontName)
         {
-            height += 16;
+            case "Lateef":
+                    height += 32;
+                break;
+            case "MeQuran":
+                    height += 12;
+                    break;
         }
 #elif ANDROID
         height += rowSpacing * Math.Max(0, lineCount);
