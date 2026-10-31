@@ -22,6 +22,12 @@
             "type": "maui",
             "request": "launch",
             "preLaunchTask": "android simulator"
-        }
+        },
+        {
+                "name": ".NET MAUI",
+                "type": "maui",
+                "request": "launch",
+                "preLaunchTask": "maui: Build"
+        }        
     ]
 }

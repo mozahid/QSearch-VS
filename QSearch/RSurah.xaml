@@ -137,6 +137,7 @@
             </ImageButton>  
             </FlexLayout>
             <Grid 
+                x:Name="grdHeader"
                 Grid.Row="1"
                 HorizontalOptions="Fill">
                 <Grid.RowDefinitions>
@@ -259,8 +260,21 @@
             <CollectionView
                 x:Name="lstView"
                 Margin="3"
-                VerticalScrollBarVisibility="Default" >
-
+                VerticalScrollBarVisibility="Default"
+                ItemSizingStrategy="MeasureAllItems" >
+                <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border BackgroundColor="White"
+                            Stroke="LightGray"
+                            StrokeThickness="1"
+                            Padding="8"
+                            Margin="0,0,0,8">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="5" />
+                        </Border.StrokeShape>
+                    </Border>
+                </DataTemplate>
+                </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>                     
     </Grid>

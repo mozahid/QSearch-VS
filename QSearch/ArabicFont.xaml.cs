@@ -16,21 +16,27 @@ public partial class ArabicFont : ContentPage
         {
             case "NotoArabic":
                 radNaksh.IsChecked = true;
+                Font1.BackgroundColor = Colors.LightSkyBlue;
                 break;
             case "Lateef":
                 radLateef.IsChecked = true;
+                Font2.BackgroundColor = Colors.LightSkyBlue;
                 break;
             case "Qalam":
                 radAlQalam.IsChecked = true;
+                Font3.BackgroundColor = Colors.LightSkyBlue;
                 break;
             case "IndoPak":
                 radIndoPak.IsChecked = true;
+                Font4.BackgroundColor = Colors.LightSkyBlue;
                 break;
             case "MeQuran":
                 radMeQuran.IsChecked = true;
+                Font5.BackgroundColor = Colors.LightSkyBlue;
                 break;
             case "Uthmani":
                 radHafsQuran.IsChecked = true;
+                Font6.BackgroundColor = Colors.LightSkyBlue;
                 break;
         }
         _taskCompletionSource = new TaskCompletionSource<OptionsData>();
@@ -93,42 +99,42 @@ public partial class ArabicFont : ContentPage
             Font4.BackgroundColor = Colors.Transparent;
             Font5.BackgroundColor = Colors.Transparent;
             Font6.BackgroundColor = Colors.Transparent;
-            radNaksh.BackgroundColor = Colors.Transparent;
-            radLateef.BackgroundColor = Colors.Transparent;
-            radAlQalam.BackgroundColor = Colors.Transparent;
-            radIndoPak.BackgroundColor = Colors.Transparent;
-            radMeQuran.BackgroundColor = Colors.Transparent;
-            radHafsQuran.BackgroundColor = Colors.Transparent;
+            // radNaksh.BackgroundColor = Colors.Transparent;
+            // radLateef.BackgroundColor = Colors.Transparent;
+            // radAlQalam.BackgroundColor = Colors.Transparent;
+            // radIndoPak.BackgroundColor = Colors.Transparent;
+            // radMeQuran.BackgroundColor = Colors.Transparent;
+            // radHafsQuran.BackgroundColor = Colors.Transparent;
             switch (rad.Value)
             {
                 case "1":
                     _font = "NotoArabic";
-                    radNaksh.BackgroundColor = Colors.LightSkyBlue;           
+            
                     Font1.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "2":
                     _font = "Lateef";
-                    radLateef.BackgroundColor = Colors.LightSkyBlue;
+                    // radLateef.BackgroundColor = Colors.LightSkyBlue;
                     Font2.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "3":
                     _font = "Qalam";
-                    radAlQalam.BackgroundColor = Colors.LightSkyBlue;
+                    // radAlQalam.BackgroundColor = Colors.LightSkyBlue;
                     Font3.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "4":
                     _font = "IndoPak";
-                    radIndoPak.BackgroundColor = Colors.LightSkyBlue;
+                    // radIndoPak.BackgroundColor = Colors.LightSkyBlue;
                     Font4.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "5":
                     _font = "MeQuran";
-                    radMeQuran.BackgroundColor = Colors.LightSkyBlue;
+                    // radMeQuran.BackgroundColor = Colors.LightSkyBlue;
                     Font5.BackgroundColor = Colors.LightSkyBlue;
                     break;
                 case "6":
                     _font = "Uthmani";
-                    radHafsQuran.BackgroundColor = Colors.LightSkyBlue;
+                    // radHafsQuran.BackgroundColor = Colors.LightSkyBlue;
                     Font6.BackgroundColor = Colors.LightSkyBlue;
                     break;
             }

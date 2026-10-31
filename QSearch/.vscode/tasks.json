@@ -32,6 +32,14 @@
       ],
       "group": "build",
       "problemMatcher": []
-    }
+    },
+    {
+			"type": "dotnet",
+			"task": "build ${file}",
+			"file": "${file}",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "dotnet: build ${file}"
+		}
   ]
 }

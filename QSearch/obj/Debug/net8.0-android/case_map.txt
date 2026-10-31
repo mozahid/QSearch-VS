@@ -1,2 +1,0 @@
-raw/aboutassets;raw/AboutAssets
-raw/quran;raw/quran

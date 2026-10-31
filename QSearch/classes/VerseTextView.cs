@@ -12,6 +12,8 @@ public class VerseTextView : GraphicsView
 {
     private IArabicTextLayout? _arabicTextLayout;
     private IFontRegistrar? _fontRegistrar;
+    private double _drawnContentWidth = double.NaN;
+    private double _drawnContentHeight;
         public static readonly BindableProperty VerseTextProperty =
         BindableProperty.Create(
             nameof(VerseText),
@@ -153,6 +155,8 @@ public class VerseTextView : GraphicsView
         _arabicTextLayout = Handler?.MauiContext?.Services.GetService<IArabicTextLayout>();
         _fontRegistrar = Handler?.MauiContext?.Services.GetService<IFontRegistrar>();
  
+        _drawnContentWidth = double.NaN;
+        _drawnContentHeight = 0;
         SetDrawable();
         InvalidateMeasure();
     }
@@ -177,6 +181,12 @@ public class VerseTextView : GraphicsView
         if (double.IsInfinity(width) || width <= 0)
             width = 300;
 
+        if (!double.IsNaN(_drawnContentWidth) &&
+            Math.Abs(width - _drawnContentWidth) > 0.5)
+        {
+            _drawnContentWidth = double.NaN;
+            _drawnContentHeight = 0;
+        }
         double lineHeight = FontSize * 1.8;
         double rowSpacing = 8;
         int lineCount = 1;
@@ -193,36 +203,43 @@ public class VerseTextView : GraphicsView
                 lineHeight = result.LineHeight;
 
             rowSpacing = result.RowSpacing;
-            lineCount = Math.Max(1, result.LineCount);
-
-            // switch(FontName)
-            // {
-            //     case "IndoPak":
-            //             rowSpacing = 12;
-            //             break;
-            //     case "Qalam":
-            //             rowSpacing = 8;
-            //         break;
-            //     case "MeQuran":
-            //             rowSpacing = 16;
-            //             break;
-            // }            
+            lineCount = Math.Max(1, result.LineCount);         
         }
         double height = lineHeight * lineCount;
 #if IOS || MACCATALYST || WINDOWS
         height += rowSpacing * Math.Max(0, lineCount + 1);
-        switch(FontName)
-        {
-            case "Lateef":
-                    height += 32;
-                break;
-            case "MeQuran":
-                    height += 12;
-                    break;
-        }
+        // switch(FontName)
+        // {
+        //     case "Lateef":
+        //     case "Qalam":
+        //     case "IndoPak":
+        //             height += 32;
+        //         break;
+        //     case "MeQuran":
+        //             height += 12;
+        //             break;
+        //     case "Uthmani":
+        //             height += 28;
+        //             break;
+        // }
 #elif ANDROID
-        height += rowSpacing * Math.Max(0, lineCount);
+        height += rowSpacing * Math.Max(0, lineCount + 2);
+        // switch(FontName)
+        // {
+        //     case "NotoArabic":
+        //             height += 16;
+        //             break;
+        //     case "MeQuran":
+        //             height += 12;
+        //             break;
+        // }   
 #endif
+
+        if (!double.IsNaN(_drawnContentWidth) &&
+            Math.Abs(width - _drawnContentWidth) <= 0.5)
+        {
+            height = Math.Max(height, _drawnContentHeight);
+        }
         return new Size(width, height);
     }
 
@@ -232,7 +249,8 @@ public class VerseTextView : GraphicsView
         object newValue)
     {
         var control = (VerseTextView)bindable;
-
+        control._drawnContentWidth = double.NaN;
+        control._drawnContentHeight = 0;
         control.SetDrawable();
         control.InvalidateMeasure();
         control.Invalidate();
@@ -240,9 +258,44 @@ public class VerseTextView : GraphicsView
 
     private void SetDrawable()
     {
+        if (Drawable is VerseTextDrawable previousDrawable)
+            previousDrawable.RequiredHeightChanged -= OnRequiredHeightChanged;
+
+        var drawable = new VerseTextDrawable(this, _arabicTextLayout, _fontRegistrar);
+        drawable.RequiredHeightChanged += OnRequiredHeightChanged;
         Drawable = new VerseTextDrawable(this, _arabicTextLayout, _fontRegistrar);
     }
-    internal string? ResolveRegisteredFont(string? fontFamily)
+    
+    /// <summary>
+    /// height change event
+    /// </summary>
+    /// <param name="drawable"></param>
+    /// <param name="width"></param>
+    /// <param name="height"></param>
+    private void OnRequiredHeightChanged(
+        VerseTextDrawable drawable,
+        double width,
+        double height)
+    {
+        if (!ReferenceEquals(Drawable, drawable) ||
+            width <= 0 ||
+            height <= 0)
+        {
+            return;
+        }
+
+        if (!double.IsNaN(_drawnContentWidth) &&
+            Math.Abs(width - _drawnContentWidth) <= 0.5 &&
+            Math.Abs(height - _drawnContentHeight) <= 0.5)
+        {
+            return;
+        }
+
+        _drawnContentWidth = width;
+        _drawnContentHeight = height;
+        InvalidateMeasure();
+    }
+        internal string? ResolveRegisteredFont(string? fontFamily)
     {
         if (string.IsNullOrWhiteSpace(fontFamily))
             return null;

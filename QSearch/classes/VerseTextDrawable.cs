@@ -16,6 +16,11 @@ public class VerseTextDrawable : IDrawable
     private readonly IImage? _rukuImage;
     private readonly IImage? _sujudImage;
 
+    private double _lastReportedWidth = double.NaN;
+    private double _lastReportedHeight = double.NaN;
+
+    public event Action<VerseTextDrawable, double, double>? RequiredHeightChanged;
+
     public VerseTextDrawable(
         VerseTextView control,
         IArabicTextLayout? arabicTextLayout,
@@ -57,8 +62,9 @@ public class VerseTextDrawable : IDrawable
 
             return PlatformImage.FromStream(stream);
         }
-        catch
+        catch (Exception ex)
         {
+            var e = ex;
             return null;
         }
     }
@@ -123,6 +129,8 @@ public class VerseTextDrawable : IDrawable
             ref lastLine,
             ref lastLineX,
             ref currentY);
+
+            double requiredHeight = Math.Max(0, currentY + lineHeight);
 //// verse graphics adjustment using rowspacing parameter
         if (result is not null)
         {
@@ -154,19 +162,41 @@ public class VerseTextDrawable : IDrawable
                 case "Lateef":
                     currentY = currentY - 8;
                     break;
+                case "NotoArabic":
+                    currentY = currentY - 12;
+                    break;
             }
 #endif
-            DrawLastLine(
-                canvas,
-                lastLine,
-                width,
-                lastLineX, 
-                currentY,
-                lineCount,
-                lineHeight);
+
+            requiredHeight = Math.Max(
+                requiredHeight,
+                                DrawLastLine(
+                                    canvas,
+                                    lastLine,
+                                    width,
+                                    lastLineX, 
+                                    currentY,
+                                    lineCount,
+                                    lineHeight));
         }
+        ReportRequiredHeight(width, requiredHeight);
     }
-    private void DrawLastLine(
+
+    private void ReportRequiredHeight(double width, double height)
+    {
+        if (Math.Abs(width - _lastReportedWidth) <= 0.5 &&
+            Math.Abs(height - _lastReportedHeight) <= 0.5)
+        {
+            return;
+        }
+
+        _lastReportedWidth = width;
+        _lastReportedHeight = height;
+
+        MainThread.BeginInvokeOnMainThread(
+            () => RequiredHeightChanged?.Invoke(this, width, height));
+    }
+    private double DrawLastLine(
         ICanvas canvas,
         string text,
         float width,
@@ -174,19 +204,17 @@ public class VerseTextDrawable : IDrawable
         float y,
         int lineCount = 1,
         float lineHeight = 0)
-    {
-        var font = CreateFont();
-        var textSize = canvas.GetStringSize(
-            text,
-            font,
-            Convert.ToInt32(_control.FontSize));
+    {   
         float badgeX = Math.Max(0, x);
         float badgeY = y + lineHeight / 2;
+        double requiredHeight = Math.Max(0, y + lineHeight);
+
         // next line
         if (badgeX <= 10) 
         {
             badgeY += lineHeight;
             badgeX = width - 35;
+            requiredHeight = Math.Max(requiredHeight, badgeY + 34);
         }
         else if (badgeX > 24) badgeX -= 24;
         else badgeX = 10;
@@ -229,6 +257,7 @@ public class VerseTextDrawable : IDrawable
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
+                requiredHeight = Math.Max(requiredHeight, badgeY + 40);
             }
             else if (badgeX > 24) badgeX -= 24;
             else badgeX = 10;
@@ -249,6 +278,7 @@ public class VerseTextDrawable : IDrawable
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
+                requiredHeight = Math.Max(requiredHeight, badgeY + 40);
             }
             else if (badgeX > 24) badgeX -= 24;
             else badgeX = 10;
@@ -263,6 +293,7 @@ public class VerseTextDrawable : IDrawable
             canvas.RestoreState();
 
         }       
+        return requiredHeight;
     }
     private void DrawVerseGraphic(
         ICanvas canvas,
