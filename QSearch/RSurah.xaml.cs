@@ -322,20 +322,30 @@ public partial class RSurah : ContentPage, IQueryAttributable
                         case 1:
                             childTranslation.Text = surahs[n].verse_english;
                             childTranslation.FontFamily= "Tahoma";
+                            childTranslation.IsVisible = true;
                             childRef.Text = surahs[n].english_ref;
                             childRef.FontFamily = "Tahoma";
+                            childRef.IsVisible = true;
                             break;
                         case 2:
                             childTranslation.Text = surahs[n].verse_urdu;
                             childTranslation.FontFamily= "Urdu";
+                            childTranslation.IsVisible = true;
                             childRef.Text = surahs[n].urdu_ref;
                             childRef.FontFamily = "Urdu";
+                            childRef.IsVisible = true;
+                            break;
+                        default:
+                            childTranslation.IsVisible = false;
+                            childRef.IsVisible = false;
                             break;
                     }
                     break;
                 case false:
                     childTranslation.Text = string.Empty;
                     childRef.Text = string.Empty;
+                    childTranslation.IsVisible = false;
+                    childRef.IsVisible = false;
                     break;
             }
             n++;
