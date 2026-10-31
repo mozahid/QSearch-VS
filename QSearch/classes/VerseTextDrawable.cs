@@ -213,7 +213,6 @@ public class VerseTextDrawable : IDrawable
         {
             badgeY += lineHeight;
             badgeX = width - 35;
-            requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
         }
         else if (badgeX > 24) badgeX -= 24;
         else badgeX = 10;
@@ -256,7 +255,6 @@ public class VerseTextDrawable : IDrawable
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
-                requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
             }
             else if (badgeX > 24) badgeX -= 24;
             else badgeX = 10;
@@ -277,7 +275,7 @@ public class VerseTextDrawable : IDrawable
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
-                requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
+               
             }
             else if (badgeX > 24) badgeX -= 24;
             else badgeX = 10;
@@ -292,6 +290,7 @@ public class VerseTextDrawable : IDrawable
             canvas.RestoreState();
 
         }       
+        requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
         return requiredHeight;
     }
     private void DrawVerseGraphic(
