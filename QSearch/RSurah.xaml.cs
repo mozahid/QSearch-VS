@@ -147,11 +147,11 @@ public partial class RSurah : ContentPage, IQueryAttributable
             var verseTextView = new VerseTextView
             {
                 FontName = Preferences.Default.Get<string>("Font", "NotoArabic"),
-                FontSize = 28,
+                FontSize = 32,
                 HorizontalOptions = LayoutOptions.Fill,
                 FlowDirection = FlowDirection.RightToLeft,
                 VerticalOptions = LayoutOptions.Start,
-                VerseImage = "quranic_border_4.png",
+                VerseImage = "quranic_border_4_raw.png",
             };
             verseTextView.SetBinding(VerseTextView.VerseTextProperty, $"verse_arabic_lines[{rowIndex}]", BindingMode.OneWay);
             verseTextView.SetBinding(VerseTextView.VerseNumberProperty, $"verse_number[{rowIndex}]", BindingMode.OneWay);

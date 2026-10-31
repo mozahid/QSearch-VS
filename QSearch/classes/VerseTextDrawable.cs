@@ -131,14 +131,14 @@ public class VerseTextDrawable : IDrawable
             ref currentY);
 
             double requiredHeight = Math.Max(0, currentY + lineHeight);
-//// verse graphics adjustment using rowspacing parameter
+//// verse graphics adjustment bring in line with the last line of text
         if (result is not null)
         {
 #if IOS || MACCATALYST || WINDOWS
             switch (_control.FontName)
             {
                 case "NotoArabic":
-                    currentY = (lineCount > 1) ? currentY - lh / 4 : currentY - 8;
+                    currentY = (lineCount > 1) ? currentY - lh / 2 : currentY - 16;
                     break;
                 case "Qalam":
                     currentY = (lineCount > 1) ? currentY - lh / 4 : currentY - 8;
@@ -167,7 +167,6 @@ public class VerseTextDrawable : IDrawable
                     break;
             }
 #endif
-
             requiredHeight = Math.Max(
                 requiredHeight,
                                 DrawLastLine(
@@ -214,7 +213,7 @@ public class VerseTextDrawable : IDrawable
         {
             badgeY += lineHeight;
             badgeX = width - 35;
-            requiredHeight = Math.Max(requiredHeight, badgeY + 34);
+            requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
         }
         else if (badgeX > 24) badgeX -= 24;
         else badgeX = 10;
@@ -257,7 +256,7 @@ public class VerseTextDrawable : IDrawable
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
-                requiredHeight = Math.Max(requiredHeight, badgeY + 40);
+                requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
             }
             else if (badgeX > 24) badgeX -= 24;
             else badgeX = 10;
@@ -278,7 +277,7 @@ public class VerseTextDrawable : IDrawable
             {
                 badgeY += lineHeight;
                 badgeX = width - 35;
-                requiredHeight = Math.Max(requiredHeight, badgeY + 40);
+                requiredHeight = Math.Max(requiredHeight, badgeY + lineHeight);
             }
             else if (badgeX > 24) badgeX -= 24;
             else badgeX = 10;

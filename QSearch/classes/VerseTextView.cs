@@ -206,35 +206,6 @@ public class VerseTextView : GraphicsView
             lineCount = Math.Max(1, result.LineCount);         
         }
         double height = lineHeight * lineCount;
-#if IOS || MACCATALYST || WINDOWS
-        height += rowSpacing * Math.Max(0, lineCount + 1);
-        // switch(FontName)
-        // {
-        //     case "Lateef":
-        //     case "Qalam":
-        //     case "IndoPak":
-        //             height += 32;
-        //         break;
-        //     case "MeQuran":
-        //             height += 12;
-        //             break;
-        //     case "Uthmani":
-        //             height += 28;
-        //             break;
-        // }
-#elif ANDROID
-        height += rowSpacing * Math.Max(0, lineCount + 2);
-        // switch(FontName)
-        // {
-        //     case "NotoArabic":
-        //             height += 16;
-        //             break;
-        //     case "MeQuran":
-        //             height += 12;
-        //             break;
-        // }   
-#endif
-
         if (!double.IsNaN(_drawnContentWidth) &&
             Math.Abs(width - _drawnContentWidth) <= 0.5)
         {
@@ -263,7 +234,7 @@ public class VerseTextView : GraphicsView
 
         var drawable = new VerseTextDrawable(this, _arabicTextLayout, _fontRegistrar);
         drawable.RequiredHeightChanged += OnRequiredHeightChanged;
-        Drawable = new VerseTextDrawable(this, _arabicTextLayout, _fontRegistrar);
+        Drawable = drawable;
     }
     
     /// <summary>
