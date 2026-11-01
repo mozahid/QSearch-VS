@@ -124,8 +124,10 @@ public partial class RSurah : ContentPage, IQueryAttributable
             _reciteSurah.ruku_lines[i] = surahs[i].ruku;
             _reciteSurah.sujood_lines[i] = surahs[i].sujood;
         }
-        lstView.ItemsSource = new[] { _reciteSurah };
+
         lstView.ItemTemplate = new DataTemplate(CreateVerseGrid);
+        lstView.ItemsSource = new[] { _reciteSurah };
+
         progress.HideProgress();
     }
    private Grid CreateVerseGrid()

@@ -112,8 +112,44 @@ namespace QSearch
     /// used as model for reciting the surah, to store the verse and its translation, tafsir, reference and other details
     /// also in para recitation, to store the surah and its verses in a para
     /// </summary>
-    public class ReciteSurah
+    public class ReciteSurah : System.ComponentModel.INotifyPropertyChanged
     {
+        private bool _isTranslationVisible;
+        private bool _isSeparatorVisible;
+
+        public event System.ComponentModel.PropertyChangedEventHandler? PropertyChanged;
+
+        public bool isTranslationVisible
+        {
+            get => _isTranslationVisible;
+            set
+            {
+                if (_isTranslationVisible == value)
+                    return;
+
+                _isTranslationVisible = value;
+                NotifyBindingsChanged(nameof(isTranslationVisible));
+            }
+        }
+
+        public bool isSeparatorVisible
+        {
+            get => _isSeparatorVisible;
+            set
+            {
+                if (_isSeparatorVisible == value)
+                    return;
+
+                _isSeparatorVisible = value;
+                NotifyBindingsChanged(nameof(isSeparatorVisible));
+            }
+        }
+
+        public void NotifyBindingsChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+        }
+
         public int para_number { get; set; }
         public string para_name { get; set; }
         public int[] verse_number {get;set;}
@@ -163,6 +199,23 @@ namespace QSearch
             chapter_class = surahs[0].class_arabic;
             total_verses = surahs[0].total_verses;
             total_verses_para = surahs[0].total_verses_para;
+        }
+    }
+
+        public class GroupedVerse : List<ReciteSurah>
+    {
+        public int chapter_number{ get; set; }
+
+        public string chapter_name{get;set;}
+        public int para_no { get; set; }
+        public string para_name { get; set; }
+        public GroupedVerse(string name, List<ReciteSurah> surahs)
+            : base(surahs)
+        {
+            chapter_name = name;
+            chapter_number = surahs[0].chapter_number;
+            para_no = surahs[0].para_number;
+            para_name = surahs[0].para_name;
         }
     }
 }

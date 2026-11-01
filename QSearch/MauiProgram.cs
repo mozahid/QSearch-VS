@@ -1,5 +1,8 @@
 ﻿using Microsoft.Extensions.Logging;
 using CommunityToolkit.Maui;
+#if MAUI_DEVFLOW
+using Microsoft.Maui.DevFlow.Agent;
+#endif
 namespace QSearch;
 
 public static class MauiProgram
@@ -46,6 +49,9 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+#if MAUI_DEVFLOW
+        builder.AddMauiDevFlowAgent();
+#endif
 
         //builder.Services.AddTransient<QSearch>();
 		builder.Services.AddSingleton<QuranDB>();
@@ -61,4 +67,3 @@ public static class MauiProgram
 		return builder.Build();
 	}
 }
-
