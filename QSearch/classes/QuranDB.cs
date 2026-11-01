@@ -336,7 +336,7 @@ namespace QSearch
         {
             Init();
             object[] p = { chapter_number};
-            return await QDB.ExecuteScalarAsync<int>("SELECT total_verses FROM verses WHERE chapter_number = ?", p);
+            return await QDB.ExecuteScalarAsync<int>("SELECT verse_count FROM verse_stat WHERE chapter_number = ?", p);
         }     
         /// <summary>
         /// get surah info for a given chapter number

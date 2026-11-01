@@ -160,6 +160,8 @@ namespace QSearch
         public string[] translation_ref_lines { get; set; }
         public bool[] ruku_lines { get; set; }
         public bool[] sujood_lines { get; set; }
+        public bool[] translationLineVisible { get; set; } = new bool[25];
+        public bool[] separatorLineVisible { get; set; } = new bool[25];
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
         public string chapter_name_english { get; set; }

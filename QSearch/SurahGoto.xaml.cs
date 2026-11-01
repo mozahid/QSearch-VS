@@ -71,8 +71,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
         progress.ShowProgress();
         await Task.Delay(10);
 
-        ReciteSurah surah = new ReciteSurah();
-        for (int i = 0; i < 25; i++) surah.showLine[i] = "false";
+        ReciteSurah surah = CreateReciteSurah();
         
         int _lines = 0;
         int _pg = 1;
@@ -86,20 +85,24 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             surah.class_arabic = item.class_arabic;
             surah.total_verses = item.total_verses;
             surah.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-            surah.verse_number[_lines] = item.number;
+            surah.verse_number[_lines] = item.verse_number;
             surah.verse_arabic_lines[_lines] = item.verse_arabic.Replace("[", string.Empty).Replace("]", string.Empty).Replace(Regex.Match(item.verse_arabic, @"\d+").Value.ToString(), string.Empty).Replace("۩", string.Empty);
+            surah.ruku_lines[_lines] = item.ruku;
+            surah.sujood_lines[_lines] = item.sujood;
+            surah.isSeparatorVisible = showSeparator;
+            surah.isTranslationVisible = showTrans;
             if (showTrans) 
             {
                 switch(selectedLanguage)
                 {
                     case 1:
                         surah.verse_translation_lines[_lines] = item.verse_english;
-                        surah.translation_ref_lines[_lines] = "\n" + item.english_ref;
+                        surah.translation_ref_lines[_lines] = item.english_ref;
                         surah.font_translation = "Tahoma";
                         break;
                     case 2:
                         surah.verse_translation_lines[_lines] = item.verse_urdu;
-                        surah.translation_ref_lines[_lines] = "\n" + item.urdu_ref;
+                        surah.translation_ref_lines[_lines] = item.urdu_ref;
                         surah.font_translation = "Urdu";
                         break;
                 }
@@ -123,8 +126,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
                 groupedSurah.Add(new GroupedSurah(surah.chapter_name_arabic, _pg, surahContent));
                 _lines = 0;
                 _pg++;
-                surah = new ReciteSurah();
-                for (int i = 0; i < 25; i++) surah.showLine[i] = "false";
+                surah = CreateReciteSurah();
             }
         }
         // any left over lines //
@@ -134,13 +136,87 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             surahContent.Add(surah);
             groupedSurah.Add(new GroupedSurah(surah.chapter_name_arabic, _pg, surahContent));
         }
-        this.Title = surah.chapter_name_arabic + " " + chapterTo.ToString() + " - " + chapterFrom.ToString();
+        if (surahs.Count > 0)
+            this.Title = surahs[^1].chapter_name_arabic + " " + chapterTo + " - " + chapterFrom;
         //List<GroupedSurah> grp = new List<GroupedSurah>();
         //grp.Add(groupedSurah[0]);
         //lstView.ItemsSource = grp;
         lstView.ItemsSource = groupedSurah;
+        UpdateGroupedTranslations();
         progress.HideProgress();
         }
+
+    private ReciteSurah CreateReciteSurah()
+    {
+        var surah = new ReciteSurah
+        {
+            verse_number = new int[25],
+            verse_arabic_lines = new string[25],
+            verse_translation_lines = new string[25],
+            verse_arabic_lines_number = new string[25],
+            verse_arabic_line_end = new string[25],
+            translation_ref_lines = new string[25],
+            ruku_lines = new bool[25],
+            sujood_lines = new bool[25],
+            translationLineVisible = new bool[25],
+            separatorLineVisible = new bool[25],
+            font = Preferences.Default.Get<string>("Font", "NotoArabic"),
+            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma",
+            isTranslationVisible = showTrans && selectedLanguage is 1 or 2,
+            isSeparatorVisible = showSeparator
+        };
+
+        Array.Fill(surah.showLine, "false");
+        return surah;
+    }
+
+    private void UpdateGroupedTranslations()
+    {
+        int verseIndex = 0;
+        foreach (var group in groupedSurah)
+        {
+            foreach (var reciteSurah in group)
+            {
+                for (int lineIndex = 0; lineIndex < reciteSurah.showLine.Length; lineIndex++)
+                {
+                    bool lineIsVisible = reciteSurah.showLine[lineIndex] == "true";
+                    reciteSurah.translationLineVisible[lineIndex] =
+                        lineIsVisible && showTrans && selectedLanguage is 1 or 2;
+                    reciteSurah.separatorLineVisible[lineIndex] =
+                        lineIsVisible && showSeparator;
+                    if (!lineIsVisible)
+                        continue;
+
+                    var verse = surahs[verseIndex++];
+                    reciteSurah.verse_translation_lines[lineIndex] = !showTrans
+                        ? string.Empty
+                        : selectedLanguage switch
+                        {
+                            1 => verse.verse_english,
+                            2 => verse.verse_urdu,
+                            _ => string.Empty
+                        };
+                    reciteSurah.translation_ref_lines[lineIndex] = !showTrans
+                        ? string.Empty
+                        : selectedLanguage switch
+                        {
+                            1 => verse.english_ref,
+                            2 => verse.urdu_ref,
+                            _ => string.Empty
+                        };
+                }
+
+                reciteSurah.font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma";
+                reciteSurah.isTranslationVisible = showTrans && selectedLanguage is 1 or 2;
+                reciteSurah.isSeparatorVisible = showSeparator;
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.translationLineVisible));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.separatorLineVisible));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.verse_translation_lines));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.translation_ref_lines));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.font_translation));
+            }
+        }
+    }
     /// <summary>
     /// tool bar options clicked
     /// </summary>
@@ -212,45 +288,9 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             FontImageSource fi = showTranslation.Source as FontImageSource;
             fi.Color = Colors.Black;
         }
-        //groupedSurah.Clear();
-        lstView.ItemsSource = null;
         await Task.Delay(5);
         progress.ShowProgress();
-        foreach (var s in groupedSurah)
-        {
-            List<ReciteSurah> reciteSurahs = s;
-            foreach (var r in reciteSurahs)
-            {
-                for (int l=0; l < 25; l++)
-                {
-                    if (r.showLine[l] == "true")
-                    {
-                        QuranicVerse _q = surahs.Where(v => v.number == r.verse_number[l]).FirstOrDefault();
-                        switch(selectedLanguage)
-                        {
-                            case 1:
-                                r.verse_translation_lines[l] = _q.verse_english;
-                                r.translation_ref_lines[l] = "\n" + _q.english_ref;
-                                r.font_translation = "Tahoma";
-                                break;
-                            case 2:
-                                r.verse_translation_lines[l] = _q.verse_urdu;
-                                r.translation_ref_lines[l] = "\n" + _q.urdu_ref;
-                                r.font_translation = "Urdu";
-                                break;
-                            default:
-                                r.verse_translation_lines[l] = string.Empty;
-                                r.translation_ref_lines[l] = string.Empty;
-                                break;
-                        }
-                        r.showSeparator = showSeparator?"true":"false";
-                    }
-                }
-            }
-        }
-        lstView.ItemsSource = groupedSurah;
-
-        //await LinesByLines();
+        UpdateGroupedTranslations();
         Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
         progress.HideProgress();
     }
@@ -270,16 +310,14 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
         await fn.PopupDismissedTask;
         if (fn.ReturnValue.optionSelection == 0)
         {
-            lstView.ItemsSource = null;
             progress.ShowProgress();
             await Task.Yield();
-            foreach (var s in groupedSurah)
+            var font = Preferences.Default.Get<string>("Font", "NotoArabic");
+            foreach (var r in groupedSurah.SelectMany(group => group))
             {
-                List<ReciteSurah> reciteSurahs = s;
-                foreach (var r in reciteSurahs)
-                    r.font = Preferences.Default.Get<string>("Font", "NotoArabic");
+                r.font = font;
+                r.NotifyBindingsChanged(nameof(ReciteSurah.font));
             }
-            lstView.ItemsSource = groupedSurah;
             Dispatcher.Dispatch(() => lstView.ScrollTo(firstItem));
             progress.HideProgress();
             await Task.Yield();
@@ -301,7 +339,6 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
     /// <param name="e"></param>
     private async void btnLine_Clicked(object sender, EventArgs e)
     {
-        lstView.ItemsSource = null;
         btnLine.IsEnabled = false;
         await Task.Delay(5);
         progress.ShowProgress();
@@ -316,13 +353,7 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             FontImageSource fi = btnLine.Source as FontImageSource;
             fi.Color = Colors.Black;
         }
-        foreach (var s in groupedSurah)
-        {
-            List<ReciteSurah> reciteSurahs = s;
-            foreach (var r in reciteSurahs)
-                r.showSeparator = showSeparator ? "true" : "false";
-        }
-        lstView.ItemsSource = groupedSurah;
+        UpdateGroupedTranslations();
         await Task.Yield();
         btnLine.IsEnabled = true;
         progress.HideProgress();
