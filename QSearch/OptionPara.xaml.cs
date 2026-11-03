@@ -13,6 +13,16 @@ public partial class OptionPara : ContentPage
 		InitializeComponent();
 		dB = qdb;
 		progress = new Progress(progInd);
+        this.Loaded += async (s, e) =>
+        {
+            List<Para> p = lstPara.ItemsSource as List<Para>;
+            if (p != null && p.Count > 0) progress.HideProgress();
+            if (lstPara.ItemsSource == null) progress.ShowProgress();
+            double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
+            List<Para> para_list = await dB.GetParaList();
+            lstPara.ItemsSource = para_list;
+            lstPara.HeightRequest = screenHeight - 220;
+        };
 	}
 
     private async void btnSelect_Clicked(object sender, EventArgs e)
@@ -37,12 +47,5 @@ public partial class OptionPara : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-		List<Para> p = lstPara.ItemsSource as List<Para>;
-		if (p != null && p.Count > 0) progress.HideProgress();
-	    if (lstPara.ItemsSource == null) progress.ShowProgress();
-		double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
-  		List<Para> para_list = await dB.GetParaList();
-        lstPara.ItemsSource = para_list;
-		lstPara.HeightRequest = screenHeight - 220;
     }
 }

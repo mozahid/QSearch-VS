@@ -268,11 +268,12 @@
                                                         Grid.Column="0"
                                                         ColumnSpacing="5">
                                                         <Grid.ColumnDefinitions>
-                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="Auto" />
                                                             <ColumnDefinition Width="Auto" />
                                                             <ColumnDefinition Width="Auto" />
                                                         </Grid.ColumnDefinitions>
                                                         <Grid
+                                                            Grid.Column="0"
                                                             VerticalOptions="Start"
                                                             HorizontalOptions="Start">
                                                             <Label Text="{Binding verse_number}"

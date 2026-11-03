@@ -12,6 +12,25 @@ public partial class OptionSurah : ContentPage
 		InitializeComponent();
 		dB = qdb;
 		progress = new Progress(progInd);
+        this.Loaded += async (s, e) =>
+        {
+            srchChapter.Focus();
+            List<Surah> _s = lstSurah.ItemsSource as List<Surah>;
+            if (_s != null && _s.Count > 0) progress.HideProgress();
+            if (lstSurah.ItemsSource == null) progress.ShowProgress();
+            surahs = await dB.GetSurahList();
+            lstSurah.ItemsSource = surahs;
+            double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
+            if (screenHeight <= 400)
+            {
+                lstSurah.HeightRequest = screenHeight - 100;
+            }
+            else
+            {
+                lstSurah.HeightRequest = screenHeight - 300;
+            }
+            await Task.Delay(10);
+        };
 	}
 
     private async void btnSelect_Clicked(object sender, EventArgs e)
@@ -41,21 +60,7 @@ public partial class OptionSurah : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-		List<Surah> s = lstSurah.ItemsSource as List<Surah>;
-		if (s != null && s.Count > 0) progress.HideProgress();
-		if (lstSurah.ItemsSource == null) progress.ShowProgress();
-        surahs = await dB.GetSurahList();
-		lstSurah.ItemsSource = surahs;
-		double screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
-         if (screenHeight <= 400)
-        {
-            lstSurah.HeightRequest = screenHeight - 100;
-        }
-        else
-        {
-            lstSurah.HeightRequest = screenHeight - 300;
-        }
-        await Task.Delay(10);
+
     }
 	/// <summary>
     /// on search bar button press

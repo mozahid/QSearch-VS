@@ -140,9 +140,6 @@ public class VerseTextView : GraphicsView
         FlowDirection = FlowDirection.RightToLeft;
 #endif
     }
-
-
-
     protected override void OnHandlerChanged()
     {
         base.OnHandlerChanged();
@@ -157,14 +154,13 @@ public class VerseTextView : GraphicsView
  
         _drawnContentWidth = double.NaN;
         _drawnContentHeight = 0;
-        SetDrawable();
+        //SetDrawable();
         InvalidateMeasure();
     }
 
     protected override void OnSizeAllocated(double width, double height)
     {
         base.OnSizeAllocated(width, height);
-
         SetDrawable();
         Invalidate();
     }
@@ -222,7 +218,7 @@ public class VerseTextView : GraphicsView
         var control = (VerseTextView)bindable;
         control._drawnContentWidth = double.NaN;
         control._drawnContentHeight = 0;
-        control.SetDrawable();
+        //control.SetDrawable();
         control.InvalidateMeasure();
         control.Invalidate();
     }

@@ -1,4 +1,5 @@
-using System;
+#nullable enable
+using System.Collections.Concurrent;
 
 namespace QSearch;
 
@@ -20,6 +21,9 @@ public class VerseTextDrawable : IDrawable
     private double _lastReportedHeight = double.NaN;
 
     public event Action<VerseTextDrawable, double, double>? RequiredHeightChanged;
+
+    private static readonly ConcurrentDictionary<string, Lazy<IImage?>> ImageCache =
+    new(StringComparer.OrdinalIgnoreCase);
 
     public VerseTextDrawable(
         VerseTextView control,
@@ -45,29 +49,46 @@ public class VerseTextDrawable : IDrawable
         if (string.IsNullOrWhiteSpace(filename))
             return null;
 
-        var candidate = filename;
-        if (candidate.EndsWith(".svg", StringComparison.OrdinalIgnoreCase))
-        {
-            candidate = Path.ChangeExtension(candidate, ".png");
-        }
+        var assetName = filename.EndsWith(".svg", StringComparison.OrdinalIgnoreCase)
+            ? Path.ChangeExtension(filename, ".png")
+            : filename;
 
         try
         {
-            using var stream = FileSystem.OpenAppPackageFileAsync(candidate)
-                .GetAwaiter()
-                .GetResult();
+            // using var stream = FileSystem.OpenAppPackageFileAsync(candidate)
+            //     .GetAwaiter()
+            //     .GetResult();
 
-            if (stream is null)
-                return null;
+            // if (stream is null)
+            //     return null;
 
-            return PlatformImage.FromStream(stream);
+            // return PlatformImage.FromStream(stream);
+            return ImageCache.GetOrAdd(
+                assetName,
+                static name => new Lazy<IImage?>(
+                    () => LoadImage(name),
+                    LazyThreadSafetyMode.ExecutionAndPublication))
+                .Value;
         }
-        catch (Exception ex)
+        catch
         {
-            var e = ex;
             return null;
         }
     }
+    /// <summary>
+    /// load image from app package, return null if not found
+    /// </summary>
+    /// <param name="assetName"></param>
+    /// <returns></returns>
+    private static IImage? LoadImage(string assetName)
+    {
+        using var stream = FileSystem.OpenAppPackageFileAsync(assetName)
+            .GetAwaiter()
+            .GetResult();
+
+        return PlatformImage.FromStream(stream);
+    }
+
     public void Draw(ICanvas canvas, RectF dirtyRect)
     {
         if (string.IsNullOrWhiteSpace(_control.VerseText))

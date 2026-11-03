@@ -208,7 +208,7 @@
                     Padding="0,0,5,5">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Chapter/Para lines - " FontSize="Micro" />
+                                <Span Text="Surah/Para lines - " FontSize="Micro" />
                                 <Span Text="{Binding verse_count}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
                                 <Span Text="/" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
                                 <Span Text="{Binding para_lines}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
