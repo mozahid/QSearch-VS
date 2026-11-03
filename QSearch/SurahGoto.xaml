@@ -236,7 +236,7 @@
                                                                 Sujood="{Binding sujood_lines[0]}" />
                                             <Label Grid.Row="1" Text="{Binding verse_translation_lines[0]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="2" Text="{Binding translation_ref_lines[0]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="3" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="3" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[0]}" />
 
                                             <local:VerseTextView Grid.Row="4"
                                                                 FontName="{Binding font}"
@@ -251,7 +251,7 @@
                                                                 Sujood="{Binding sujood_lines[1]}" />
                                             <Label Grid.Row="5" Text="{Binding verse_translation_lines[1]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="6" Text="{Binding translation_ref_lines[1]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="7" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="7" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[1]}" />
 
                                             <local:VerseTextView Grid.Row="8"
                                                                 FontName="{Binding font}"
@@ -266,7 +266,7 @@
                                                                 Sujood="{Binding sujood_lines[2]}" />
                                             <Label Grid.Row="9" Text="{Binding verse_translation_lines[2]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="10" Text="{Binding translation_ref_lines[2]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="11" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="11" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[2]}" />
 
                                             <local:VerseTextView Grid.Row="12"
                                                                 FontName="{Binding font}"
@@ -281,7 +281,7 @@
                                                                 Sujood="{Binding sujood_lines[3]}" />
                                             <Label Grid.Row="13" Text="{Binding verse_translation_lines[3]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="14" Text="{Binding translation_ref_lines[3]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="15" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="15" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[3]}" />
 
                                             <local:VerseTextView Grid.Row="16"
                                                                 FontName="{Binding font}"
@@ -296,7 +296,7 @@
                                                                 Sujood="{Binding sujood_lines[4]}" />
                                             <Label Grid.Row="17" Text="{Binding verse_translation_lines[4]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="18" Text="{Binding translation_ref_lines[4]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="19" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="19" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[4]}" />
 
                                             <local:VerseTextView Grid.Row="20"
                                                                 FontName="{Binding font}"
@@ -311,7 +311,7 @@
                                                                 Sujood="{Binding sujood_lines[5]}" />
                                             <Label Grid.Row="21" Text="{Binding verse_translation_lines[5]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="22" Text="{Binding translation_ref_lines[5]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="23" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="23" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[5]}" />
 
                                             <local:VerseTextView Grid.Row="24"
                                                                 FontName="{Binding font}"
@@ -326,7 +326,7 @@
                                                                 Sujood="{Binding sujood_lines[6]}" />
                                             <Label Grid.Row="25" Text="{Binding verse_translation_lines[6]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="26" Text="{Binding translation_ref_lines[6]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="27" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="27" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[6]}" />
 
                                             <local:VerseTextView Grid.Row="28"
                                                                 FontName="{Binding font}"
@@ -341,7 +341,7 @@
                                                                 Sujood="{Binding sujood_lines[7]}" />
                                             <Label Grid.Row="29" Text="{Binding verse_translation_lines[7]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="30" Text="{Binding translation_ref_lines[7]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="31" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="31" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[7]}" />
 
                                             <local:VerseTextView Grid.Row="32"
                                                                 FontName="{Binding font}"
@@ -356,7 +356,7 @@
                                                                 Sujood="{Binding sujood_lines[8]}" />
                                             <Label Grid.Row="33" Text="{Binding verse_translation_lines[8]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="34" Text="{Binding translation_ref_lines[8]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="35" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="35" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[8]}" />
 
                                             <local:VerseTextView Grid.Row="36"
                                                                 FontName="{Binding font}"
@@ -371,7 +371,7 @@
                                                                 Sujood="{Binding sujood_lines[9]}" />
                                             <Label Grid.Row="37" Text="{Binding verse_translation_lines[9]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
                                             <Label Grid.Row="38" Text="{Binding translation_ref_lines[9]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
-                                            <BoxView Grid.Row="39" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                            <BoxView Grid.Row="39" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding showLine[9]}" />
                                         </Grid>
                                     </Border>
                                 </DataTemplate>

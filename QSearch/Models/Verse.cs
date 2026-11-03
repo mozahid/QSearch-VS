@@ -135,7 +135,6 @@ namespace QSearch
     public class ReciteSurah : System.ComponentModel.INotifyPropertyChanged
     {
         private bool _isTranslationVisible;
-        private bool _isSeparatorVisible;
 
         public event System.ComponentModel.PropertyChangedEventHandler? PropertyChanged;
 
@@ -152,18 +151,18 @@ namespace QSearch
             }
         }
 
-        public bool isSeparatorVisible
-        {
-            get => _isSeparatorVisible;
-            set
-            {
-                if (_isSeparatorVisible == value)
-                    return;
+        // public bool isSeparatorVisible
+        // {
+        //     get => _isSeparatorVisible;
+        //     set
+        //     {
+        //         if (_isSeparatorVisible == value)
+        //             return;
 
-                _isSeparatorVisible = value;
-                NotifyBindingsChanged(nameof(isSeparatorVisible));
-            }
-        }
+        //         _isSeparatorVisible = value;
+        //         NotifyBindingsChanged(nameof(isSeparatorVisible));
+        //     }
+        // }
 
         public void NotifyBindingsChanged(string propertyName)
         {
@@ -180,8 +179,6 @@ namespace QSearch
         public string[] translation_ref_lines { get; set; }
         public bool[] ruku_lines { get; set; }
         public bool[] sujood_lines { get; set; }
-        public bool[] translationLineVisible { get; set; } = new bool[25];
-        public bool[] separatorLineVisible { get; set; } = new bool[25];
         public int chapter_number { get; set; }
         public string chapter_name_arabic { get; set; }
         public string chapter_name_english { get; set; }
@@ -190,12 +187,7 @@ namespace QSearch
         public int total_verses_para { get; set; }
         public string font { get; set; }
         public string font_translation{ get; set; } = "Tahoma";
-
-        /// <summary>
-        /// -------------REDUNDANT WILL BE REMOVED
-        /// </summary>
-        public string[] showLine { get; set; } = new string[25];
-        public string showSeparator {get;set;} = "false";
+        public bool[] showLine { get; set;}
     }
     /// <summary>
     /// Class for grouping by surahs for a para

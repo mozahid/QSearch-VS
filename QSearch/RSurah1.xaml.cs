@@ -85,16 +85,15 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
 
         ReciteSurah _reciteSurah = new()
         {
-            showSeparator = "true",
             font = Preferences.Default.Get<string>("Font", "NotoArabic"),
             isTranslationVisible = showTrans,
-            isSeparatorVisible = showSeparator,
             verse_arabic_lines = new string[10],
             verse_translation_lines = new string[10],
             translation_ref_lines = new string[10],
             ruku_lines = new bool[10],
             sujood_lines = new bool[10],
-            verse_number = new int[10]
+            verse_number = new int[10],
+            showLine = new bool[10]
         };
         for (int i = 0; i < surahs.Count; i++)
         {
@@ -103,16 +102,15 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
                 groupedVerse.Add(new GroupedVerse(surahs[i].chapter_name_english, new List<ReciteSurah> { _reciteSurah }));
                 _reciteSurah = new()
                         {
-                            showSeparator = "true",
                             font = Preferences.Default.Get<string>("Font", "NotoArabic"),
                             isTranslationVisible = showTrans,
-                            isSeparatorVisible = showSeparator,
                             verse_arabic_lines = new string[10],
                             verse_translation_lines = new string[10],
                             translation_ref_lines = new string[10],
                             ruku_lines = new bool[10],
                             sujood_lines = new bool[10],
-                            verse_number = new int[10]
+                            verse_number = new int[10],
+                            showLine = new bool[10]
                         };              
                 groupedVerseCount = 0;
             }
@@ -144,6 +142,7 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
 
             _reciteSurah.ruku_lines[groupedVerseCount] = surahs[i].ruku;
             _reciteSurah.sujood_lines[groupedVerseCount] = surahs[i].sujood;
+            _reciteSurah.showLine[groupedVerseCount] = showSeparator;
             groupedVerseCount++;
         }
         /// if verse count is less than 10, then add to the group ////
@@ -386,7 +385,12 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
         await Task.Yield();
         foreach (var reciteSurah in groupedVerse.SelectMany(group => group))
         {
-            reciteSurah.isSeparatorVisible = showSeparator;
+            for (int i = 0; i < reciteSurah.showLine.Length; i++)
+            {
+               if(reciteSurah.verse_arabic_lines[i] != null && 
+               reciteSurah.verse_arabic_lines[i].Length > 0) reciteSurah.showLine[i] = showSeparator ? true : false;
+            }
+            reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.showLine));
         }
         btnLine.IsEnabled = true;
         progress.HideProgress();

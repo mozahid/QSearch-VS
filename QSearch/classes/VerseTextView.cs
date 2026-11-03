@@ -220,7 +220,7 @@ public class VerseTextView : GraphicsView
         control._drawnContentHeight = 0;
         //control.SetDrawable();
         control.InvalidateMeasure();
-        control.Invalidate();
+        //control.Invalidate();
     }
 
     private void SetDrawable()
