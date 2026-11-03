@@ -140,21 +140,13 @@
                                                         Opacity="0.8" />
                                                 </Border.Shadow>    
                                             </Border>
-                                            <!-- <Image
-                                                Grid.Row="0"
-                                                Grid.Column="0"
-                                                Grid.RowSpan="4"
-                                                Grid.ColumnSpan="3"
-                                                Source="qs_hdr4.png"
-                                                Aspect="Fill"
-                                                HeightRequest="{Binding number}" /> -->
                                                 <Label
                                                     FontSize="Small"
                                                     TextColor="SlateBlue"
                                                     HorizontalOptions="Start"
                                                     Grid.Row="0"
                                                     Grid.Column="0"
-                                                    Padding="5,15,0,0" >
+                                                    Padding="5,10,0,0">
                                                     <Label.FormattedText>     
                                                         <FormattedString>
                                                             <Span Text="{Binding para_name}" FontAttributes="Bold" />
@@ -172,7 +164,7 @@
                                                     HorizontalOptions="End"
                                                     Grid.Row="0"
                                                     Grid.Column="2"
-                                                    Padding="0,15,5,0">
+                                                    Padding="0,10,5,0">
                                                     <Label.FormattedText>
                                                         <FormattedString>
                                                             <Span Text="{Binding class_arabic}" FontAttributes="Bold" />
@@ -202,7 +194,7 @@
                                                         Grid.Row="1"
                                                         Grid.Column="0"
                                                         >
-                                                        <Label Text="{Binding verse_arabic_number}"
+                                                        <Label Text="{Binding verse_number}"
                                                             Padding="3"
                                                             FontSize="Micro"
                                                             VerticalOptions="Center"
@@ -213,29 +205,28 @@
                                                             HeightRequest="50"
                                                             WidthRequest="50" />
                                                     </Grid>
-                                                    <Label
-                                                        Text="{Binding verse_arabic_end}" 
+                                                    <Image
                                                         Grid.Row="1"
-                                                        IsVisible="{Binding showSujood}"
-                                                        Margin="20,0,0,0"
-                                                        TextColor="Red" 
-                                                        FontSize="Large"
-                                                        FontAttributes="Bold"
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Center" />
+                                                        Grid.Column="0"
+                                                        Source="sujud_ui.png"
+                                                        Aspect="AspectFill"
+                                                        HeightRequest="30"
+                                                        WidthRequest="30"
+                                                        Margin="50,0,0,0"
+                                                        IsVisible="{Binding showSujood}" />
                                                     <Label 
-                                                            FontSize="Medium"
-                                                            FontAttributes="Bold"
-                                                            FontFamily="Tahoma"
-                                                            Grid.Row="2"
-                                                            Grid.Column="0"
-                                                            Grid.ColumnSpan="3"
-                                                            HorizontalOptions="Center">
-                                                            <Label.FormattedText>
-                                                                <FormattedString>
-                                                                    <Span Text="{Binding header}" TextColor="Black" />
-                                                                </FormattedString>    
-                                                            </Label.FormattedText>
+                                                        FontSize="Medium"
+                                                        FontAttributes="Bold"
+                                                        FontFamily="Tahoma"
+                                                        Grid.Row="2"
+                                                        Grid.Column="0"
+                                                        Grid.ColumnSpan="3"
+                                                        HorizontalOptions="Center">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                <Span Text="{Binding header}" TextColor="Black" />
+                                                            </FormattedString>    
+                                                        </Label.FormattedText>
                                                     </Label> 
                                                     <Label 
                                                         FontSize="Small"
@@ -243,7 +234,8 @@
                                                         Grid.Row="3"
                                                         Grid.Column="0"
                                                         HorizontalOptions="Start"
-                                                        Padding="5,0,0,0" >
+                                                        VerticalOptions="Start"
+                                                        Padding="5,0,0,5">
                                                         <Label.FormattedText>
                                                             <FormattedString>
                                                                 <Span Text="{Binding chapter_name_english}"/>
@@ -251,17 +243,18 @@
                                                         </Label.FormattedText>
                                                     </Label>                                                
                                                     <Label
-                                                            HorizontalOptions="End"
-                                                            Grid.Row="3"
-                                                            Grid.Column="2"
-                                                            Padding="0,0,10,0"
-                                                            >
-                                                            <Label.FormattedText>
-                                                                <FormattedString>
-                                                                        <Span Text="Chapter # - " FontSize="Micro" />
-                                                                        <Span Text="{Binding chapter_number}" FontSize="Small" FontAttributes="Bold" />
-                                                                </FormattedString>
-                                                            </Label.FormattedText>
+                                                        TextColor="SlateBlue"
+                                                        Grid.Row="3"
+                                                        Grid.Column="2"
+                                                        HorizontalOptions="End"
+                                                        VerticalOptions="Start"
+                                                        Margin="0,0,5,10">
+                                                        <Label.FormattedText>
+                                                            <FormattedString>
+                                                                    <Span Text="Chapter # - " FontSize="Micro" />
+                                                                    <Span Text="{Binding chapter_number}" FontSize="Small" FontAttributes="Bold" />
+                                                            </FormattedString>
+                                                        </Label.FormattedText>
                                                     </Label>
                                                 <Border
                                                     HorizontalOptions="Fill"

@@ -23,7 +23,11 @@ namespace QSearch
         public string font { get; set; }
         // for storing sujood mark ///
         public string verse_arabic_end { get; set;}
-        public int verse_arabic_number  {get;set;}
+        // public int verse_arabic_number  {get;set;}
+        public int verse_number{get;set;}
+
+        public int sujood {get;set;}
+        public int ruku {get;set;}
         /// <summary>
         /// used for duas of prophets and other duas, to store the name of the prophet or the dua
         /// </summary>
@@ -39,6 +43,7 @@ namespace QSearch
         public bool showEnglish { get; set; }
         public bool showUrdu { get; set; }
         public bool showSujood {get;set;} 
+        public bool showRuku {get;set;}
     }
     /// <summary>
     /// used in duas and sakinah verses, to store the reference of the verse, and the context of the verse in english, urdu and arabic
@@ -71,14 +76,29 @@ namespace QSearch
         public int ruku_count {get;set;}
         public int sujood_count {get;set;}
         public int total_words {get;set;}
+        public int para_lines{get;set;}
     }
     /// <summary>
     /// picking the para
     /// </summary>
+
     public class Para
     {
-        public int para_number { get; set; }
-        public string para_name { get; set; }
+        public int para_number {get;set;}
+        public string para_name {get;set;}
+        public List<Surah> surah_list {get;set;}
+        public int total_lines {get;set;}
+        
+    }
+
+    public class Para_Surah
+    {
+        public int para_number {get;set;}
+        public string para_name {get;set;}
+        public int chapter_number {get;set;}
+        public string chapter_name_arabic {get;set;}
+        public string class_arabic {get;set;}
+        public int verse_count {get;set;}
     }
     /// <summary>
     /// used to retrieve verse for any surah or para

@@ -117,7 +117,7 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         Entry txt = (Entry)sender;
         var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         int wordcount = 0;
-        string integer_pattern = @"\d+";
+        //string integer_pattern = @"\d+";
 
         if (txt.Text.Length == 0)
         {
@@ -239,21 +239,8 @@ public partial class QSearch : ContentPage, IOnPageKeyDown
         foreach (var _v in Verses)
         {
             _v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
-            if (_v.verse_arabic.Contains("۩"))
-            {
-                _v.verse_arabic = _v.verse_arabic.Replace("۩", "");
-                _v.verse_arabic_end = "۩";
-                _v.showSujood = true;
-            }
-            else _v.showSujood = false;
-            ///remove integer numbers
-            string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
-            {
-                string number = match.Value;
-                _v.verse_arabic_number = Convert.ToInt32(number);
-                //_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
-                return number;
-            });
+            _v.showSujood = _v.sujood == 1? true: false;
+            _v.showRuku = _v.ruku == 1 ? true: false;
             // show translation based on user selection //
             switch(selectedLanguage)
             {

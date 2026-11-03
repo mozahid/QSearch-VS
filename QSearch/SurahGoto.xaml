@@ -17,7 +17,7 @@
         </ToolbarItem.IconImageSource>
       </ToolbarItem>
       </ContentPage.ToolbarItems>
-    <Grid RowDefinitions="Auto,*">
+    <Grid RowDefinitions="Auto,Auto,*">
             <FlexLayout Grid.Row="0" HorizontalOptions="Center">
                 <ImageButton x:Name="btnLine" BackgroundColor="PaleGoldenrod" Clicked="btnLine_Clicked">
                     <ImageButton.Source>
@@ -25,7 +25,7 @@
                             FontFamily="MaterialIconsOutlined-Regular"
                             Color="Black"
                             Glyph="&#xe8ee;"
-                            Size="28" />
+                            Size="24" />
                     </ImageButton.Source>
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
@@ -41,7 +41,7 @@
                             <FontImageSource
                             FontFamily="MaterialIconsOutlined-Regular"
                             Glyph="&#xe98b;"
-                            Size="28"
+                            Size="24"
                             />                        
                     </ImageButton.Source>
                     <ImageButton.Shadow>
@@ -59,7 +59,7 @@
                                 FontFamily="MaterialIconsOutlined-Regular"
                                 Color="Black"
                                 Glyph="&#xe894;"
-                                Size="28"
+                                Size="24"
                             />                         
                     </ImageButton.Source>
                     <ImageButton.Shadow>
@@ -74,8 +74,7 @@
                             <FontImageSource
                             FontFamily="MaterialIconsOutlined-Regular"
                             Glyph="&#xe167;"
-                            Size="28"
-                            />
+                            Size="24" />
                     </ImageButton.Source>
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
@@ -85,7 +84,117 @@
                     </ImageButton.Shadow>
                 </ImageButton>
             </FlexLayout>
-            <Grid Grid.Row="1" Background="Transparent">
+            <Grid 
+                x:Name="grdHeader"
+                Grid.Row="1"
+                HorizontalOptions="Fill">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="*" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Border
+                    HorizontalOptions="Fill"
+                    Grid.Row="0"
+                    Grid.RowSpan="3" 
+                    Grid.Column="0" 
+                    Grid.ColumnSpan="3">
+                    <Border.Background>
+                        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
+                            <GradientStop Color="GhostWhite" Offset="0.0" />
+                            <GradientStop Color="LightGreen" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Border.Background>
+                    <Border.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,0"
+                            Radius="20"
+                            Opacity="0.8" />
+                    </Border.Shadow>    
+                </Border>
+                <Label
+                    FontFamily="Tahoma"
+                    FontSize="Small"
+                    TextColor="SlateBlue"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Padding="5,10,0,0">
+                <Label.FormattedText>     
+                    <FormattedString>
+                        <Span Text="{Binding para_name}" FontAttributes="Bold" />
+                        <Span Text="(" />
+                        <Span Text="{Binding para_number}" FontAttributes="Bold" />
+                        <Span Text=")" />
+                    </FormattedString>
+                </Label.FormattedText>
+                </Label>
+                <Label
+                    FontFamily="NotoArabic"
+                    FontSize="Small"
+                    TextColor="SlateBlue"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Padding="0,10,5,0">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding class_arabic}" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label
+                    FontFamily="NotoArabic"
+                    TextColor="Goldenrod"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="3"
+                    >
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding chapter_name_arabic}" FontSize="Title" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label
+                    FontFamily="Tahoma"
+                    HorizontalOptions="Start"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Padding="5,0,5,5">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Chapter #: " FontSize="Micro" />
+                                <Span Text="{Binding chapter_number}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                </Label>               
+                <Label
+                    FontFamily="Tahoma"
+                    HorizontalOptions="End"
+                    Grid.Row="2"
+                    Grid.Column="2"
+                    Padding="0,0,5,5">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Chapter lines - " FontSize="Micro" />
+                                <Span Text="{Binding verse_count}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                </Label>
+            </Grid>
+            <Grid 
+                Grid.Row="2" Background="Transparent">
                 <ActivityIndicator x:Name="progInd"
                         IsRunning="{Binding IsBusy}"
                         Color="Blue"
@@ -99,224 +208,173 @@
                         RemainingItemsThreshold="2"
                         VerticalScrollBarVisibility="Always" >
                         <CollectionView.GroupHeaderTemplate>
-                            <DataTemplate>
-                                <Grid HorizontalOptions="Fill">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition />
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition />
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition />
-                                    <ColumnDefinition />
-                                    <ColumnDefinition />
-                                </Grid.ColumnDefinitions>
-                                <Border
-                                    HorizontalOptions="Fill"
-                                    Grid.Row="0"
-                                    Grid.RowSpan="3" 
-                                    Grid.Column="0" 
-                                    Grid.ColumnSpan="3">
-                                    <Border.Background>
-                                        <RadialGradientBrush Center="0.5,0.5" Radius="0.5">
-                                            <GradientStop Color="GhostWhite" Offset="0.0" />
-                                            <GradientStop Color="LightGreen" Offset="1.0" />
-                                        </RadialGradientBrush>
-                                    </Border.Background>
-                                    <Border.Shadow>
-                                        <Shadow Brush="Gray"
-                                            Offset="20,0"
-                                            Radius="20"
-                                            Opacity="0.8" />
-                                    </Border.Shadow>    
-                                </Border>
-                                <Label
-                                    FontFamily="Tahoma"
-                                    FontSize="Small"
-                                    TextColor="SlateBlue"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Center"
-                                    Grid.Row="0"
-                                    Grid.Column="0"
-                                    Grid.ColumnSpan="2"
-                                    Padding="5,10,0,0">
-                                 <Label.FormattedText>     
-                                    <FormattedString>
-                                        <Span Text="{Binding para_name}" FontAttributes="Bold" />
-                                        <Span Text="(" />
-                                        <Span Text="{Binding para_no}" FontAttributes="Bold"  />
-                                        <Span Text=")" />
-                                    </FormattedString>
-                                 </Label.FormattedText>
-                                 </Label>
-                                <Label
-                                     FontFamily="NotoArabic"
-                                    FontSize="Small"
-                                    TextColor="SlateBlue"
-                                    HorizontalOptions="End"
-                                    VerticalOptions="Center"
-                                    Grid.Row="0"
-                                    Grid.Column="2"
-                                    Padding="0,10,5,0">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="{Binding chapter_class}" FontAttributes="Bold"></Span>
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label
-                                    FontFamily="NotoArabic"
-                                    TextColor="Goldenrod"
-                                    HorizontalOptions="Center"
-                                    VerticalOptions="Center"
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    Grid.ColumnSpan="3"
-                                    >
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                            <Span Text="{Binding chapter_name}" FontSize="Large" FontAttributes="Bold" />
-                                        </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>
-                                <Label
-                                        HorizontalOptions="Start"
-                                        Grid.Row="2"
-                                        Grid.Column="0"
-                                        Padding="10,0,0,0"
-                                        >
-                                        <Label.FormattedText>
-                                            <FormattedString>
-                                                    <Span Text="Chapter # - " FontSize="Micro" />
-                                                    <Span Text="{Binding chapter_number}" TextColor="SlateBlue" FontSize="Small" FontAttributes="Bold" />
-                                            </FormattedString>
-                                        </Label.FormattedText>
-                                </Label>                                                                      
-                                <Label
-                                    HorizontalOptions="End"
-                                    Grid.Row="2"
-                                    Grid.Column="2"
-                                    Padding="0,0,10,0">
-                                    <Label.FormattedText>
-                                        <FormattedString>
-                                                <Span Text="Total lines - " FontSize="Micro" />
-                                                <Span Text="{Binding total_verses}" TextColor="SlateBlue" FontSize="Small" FontAttributes="Bold"  />
-                                         </FormattedString>
-                                    </Label.FormattedText>
-                                </Label>                            
-                                </Grid>
-                            </DataTemplate>
+                          <DataTemplate />
                         </CollectionView.GroupHeaderTemplate>
-                                                <CollectionView.ItemTemplate>
+                        <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="local:ReciteSurah">
-                                <Border Background="White" Stroke="LightGray" StrokeThickness="1" Padding="8" Margin="0,0,0,8">
-                                    <Border.StrokeShape>
-                                        <RoundRectangle CornerRadius="5" />
-                                    </Border.StrokeShape>
-                                    <Grid RowSpacing="3" ColumnDefinitions="*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
-                                        <local:VerseTextView Grid.Row="0" IsVisible="{Binding showLine[0]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[0]}" VerseNumber="{Binding verse_number[0]}" Ruku="{Binding ruku_lines[0]}" Sujood="{Binding sujood_lines[0]}" />
-                                        <Label Grid.Row="1" IsVisible="{Binding translationLineVisible[0]}" Text="{Binding verse_translation_lines[0]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="2" IsVisible="{Binding translationLineVisible[0]}" Text="{Binding translation_ref_lines[0]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="3" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="4" IsVisible="{Binding showLine[1]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[1]}" VerseNumber="{Binding verse_number[1]}" Ruku="{Binding ruku_lines[1]}" Sujood="{Binding sujood_lines[1]}" />
-                                        <Label Grid.Row="5" IsVisible="{Binding translationLineVisible[1]}" Text="{Binding verse_translation_lines[1]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="6" IsVisible="{Binding translationLineVisible[1]}" Text="{Binding translation_ref_lines[1]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="7" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="8" IsVisible="{Binding showLine[2]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[2]}" VerseNumber="{Binding verse_number[2]}" Ruku="{Binding ruku_lines[2]}" Sujood="{Binding sujood_lines[2]}" />
-                                        <Label Grid.Row="9" IsVisible="{Binding translationLineVisible[2]}" Text="{Binding verse_translation_lines[2]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="10" IsVisible="{Binding translationLineVisible[2]}" Text="{Binding translation_ref_lines[2]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="11" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="12" IsVisible="{Binding showLine[3]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[3]}" VerseNumber="{Binding verse_number[3]}" Ruku="{Binding ruku_lines[3]}" Sujood="{Binding sujood_lines[3]}" />
-                                        <Label Grid.Row="13" IsVisible="{Binding translationLineVisible[3]}" Text="{Binding verse_translation_lines[3]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="14" IsVisible="{Binding translationLineVisible[3]}" Text="{Binding translation_ref_lines[3]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="15" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="16" IsVisible="{Binding showLine[4]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[4]}" VerseNumber="{Binding verse_number[4]}" Ruku="{Binding ruku_lines[4]}" Sujood="{Binding sujood_lines[4]}" />
-                                        <Label Grid.Row="17" IsVisible="{Binding translationLineVisible[4]}" Text="{Binding verse_translation_lines[4]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="18" IsVisible="{Binding translationLineVisible[4]}" Text="{Binding translation_ref_lines[4]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="19" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="20" IsVisible="{Binding showLine[5]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[5]}" VerseNumber="{Binding verse_number[5]}" Ruku="{Binding ruku_lines[5]}" Sujood="{Binding sujood_lines[5]}" />
-                                        <Label Grid.Row="21" IsVisible="{Binding translationLineVisible[5]}" Text="{Binding verse_translation_lines[5]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="22" IsVisible="{Binding translationLineVisible[5]}" Text="{Binding translation_ref_lines[5]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="23" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="24" IsVisible="{Binding showLine[6]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[6]}" VerseNumber="{Binding verse_number[6]}" Ruku="{Binding ruku_lines[6]}" Sujood="{Binding sujood_lines[6]}" />
-                                        <Label Grid.Row="25" IsVisible="{Binding translationLineVisible[6]}" Text="{Binding verse_translation_lines[6]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="26" IsVisible="{Binding translationLineVisible[6]}" Text="{Binding translation_ref_lines[6]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="27" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="28" IsVisible="{Binding showLine[7]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[7]}" VerseNumber="{Binding verse_number[7]}" Ruku="{Binding ruku_lines[7]}" Sujood="{Binding sujood_lines[7]}" />
-                                        <Label Grid.Row="29" IsVisible="{Binding translationLineVisible[7]}" Text="{Binding verse_translation_lines[7]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="30" IsVisible="{Binding translationLineVisible[7]}" Text="{Binding translation_ref_lines[7]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="31" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="32" IsVisible="{Binding showLine[8]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[8]}" VerseNumber="{Binding verse_number[8]}" Ruku="{Binding ruku_lines[8]}" Sujood="{Binding sujood_lines[8]}" />
-                                        <Label Grid.Row="33" IsVisible="{Binding translationLineVisible[8]}" Text="{Binding verse_translation_lines[8]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="34" IsVisible="{Binding translationLineVisible[8]}" Text="{Binding translation_ref_lines[8]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="35" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="36" IsVisible="{Binding showLine[9]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[9]}" VerseNumber="{Binding verse_number[9]}" Ruku="{Binding ruku_lines[9]}" Sujood="{Binding sujood_lines[9]}" />
-                                        <Label Grid.Row="37" IsVisible="{Binding translationLineVisible[9]}" Text="{Binding verse_translation_lines[9]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="38" IsVisible="{Binding translationLineVisible[9]}" Text="{Binding translation_ref_lines[9]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="39" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="40" IsVisible="{Binding showLine[10]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[10]}" VerseNumber="{Binding verse_number[10]}" Ruku="{Binding ruku_lines[10]}" Sujood="{Binding sujood_lines[10]}" />
-                                        <Label Grid.Row="41" IsVisible="{Binding translationLineVisible[10]}" Text="{Binding verse_translation_lines[10]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="42" IsVisible="{Binding translationLineVisible[10]}" Text="{Binding translation_ref_lines[10]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="43" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="44" IsVisible="{Binding showLine[11]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[11]}" VerseNumber="{Binding verse_number[11]}" Ruku="{Binding ruku_lines[11]}" Sujood="{Binding sujood_lines[11]}" />
-                                        <Label Grid.Row="45" IsVisible="{Binding translationLineVisible[11]}" Text="{Binding verse_translation_lines[11]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="46" IsVisible="{Binding translationLineVisible[11]}" Text="{Binding translation_ref_lines[11]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="47" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="48" IsVisible="{Binding showLine[12]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[12]}" VerseNumber="{Binding verse_number[12]}" Ruku="{Binding ruku_lines[12]}" Sujood="{Binding sujood_lines[12]}" />
-                                        <Label Grid.Row="49" IsVisible="{Binding translationLineVisible[12]}" Text="{Binding verse_translation_lines[12]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="50" IsVisible="{Binding translationLineVisible[12]}" Text="{Binding translation_ref_lines[12]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="51" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="52" IsVisible="{Binding showLine[13]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[13]}" VerseNumber="{Binding verse_number[13]}" Ruku="{Binding ruku_lines[13]}" Sujood="{Binding sujood_lines[13]}" />
-                                        <Label Grid.Row="53" IsVisible="{Binding translationLineVisible[13]}" Text="{Binding verse_translation_lines[13]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="54" IsVisible="{Binding translationLineVisible[13]}" Text="{Binding translation_ref_lines[13]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="55" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="56" IsVisible="{Binding showLine[14]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[14]}" VerseNumber="{Binding verse_number[14]}" Ruku="{Binding ruku_lines[14]}" Sujood="{Binding sujood_lines[14]}" />
-                                        <Label Grid.Row="57" IsVisible="{Binding translationLineVisible[14]}" Text="{Binding verse_translation_lines[14]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="58" IsVisible="{Binding translationLineVisible[14]}" Text="{Binding translation_ref_lines[14]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="59" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="60" IsVisible="{Binding showLine[15]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[15]}" VerseNumber="{Binding verse_number[15]}" Ruku="{Binding ruku_lines[15]}" Sujood="{Binding sujood_lines[15]}" />
-                                        <Label Grid.Row="61" IsVisible="{Binding translationLineVisible[15]}" Text="{Binding verse_translation_lines[15]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="62" IsVisible="{Binding translationLineVisible[15]}" Text="{Binding translation_ref_lines[15]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="63" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="64" IsVisible="{Binding showLine[16]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[16]}" VerseNumber="{Binding verse_number[16]}" Ruku="{Binding ruku_lines[16]}" Sujood="{Binding sujood_lines[16]}" />
-                                        <Label Grid.Row="65" IsVisible="{Binding translationLineVisible[16]}" Text="{Binding verse_translation_lines[16]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="66" IsVisible="{Binding translationLineVisible[16]}" Text="{Binding translation_ref_lines[16]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="67" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="68" IsVisible="{Binding showLine[17]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[17]}" VerseNumber="{Binding verse_number[17]}" Ruku="{Binding ruku_lines[17]}" Sujood="{Binding sujood_lines[17]}" />
-                                        <Label Grid.Row="69" IsVisible="{Binding translationLineVisible[17]}" Text="{Binding verse_translation_lines[17]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="70" IsVisible="{Binding translationLineVisible[17]}" Text="{Binding translation_ref_lines[17]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="71" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="72" IsVisible="{Binding showLine[18]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[18]}" VerseNumber="{Binding verse_number[18]}" Ruku="{Binding ruku_lines[18]}" Sujood="{Binding sujood_lines[18]}" />
-                                        <Label Grid.Row="73" IsVisible="{Binding translationLineVisible[18]}" Text="{Binding verse_translation_lines[18]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="74" IsVisible="{Binding translationLineVisible[18]}" Text="{Binding translation_ref_lines[18]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="75" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="76" IsVisible="{Binding showLine[19]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[19]}" VerseNumber="{Binding verse_number[19]}" Ruku="{Binding ruku_lines[19]}" Sujood="{Binding sujood_lines[19]}" />
-                                        <Label Grid.Row="77" IsVisible="{Binding translationLineVisible[19]}" Text="{Binding verse_translation_lines[19]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="78" IsVisible="{Binding translationLineVisible[19]}" Text="{Binding translation_ref_lines[19]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="79" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="80" IsVisible="{Binding showLine[20]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[20]}" VerseNumber="{Binding verse_number[20]}" Ruku="{Binding ruku_lines[20]}" Sujood="{Binding sujood_lines[20]}" />
-                                        <Label Grid.Row="81" IsVisible="{Binding translationLineVisible[20]}" Text="{Binding verse_translation_lines[20]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="82" IsVisible="{Binding translationLineVisible[20]}" Text="{Binding translation_ref_lines[20]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="83" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="84" IsVisible="{Binding showLine[21]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[21]}" VerseNumber="{Binding verse_number[21]}" Ruku="{Binding ruku_lines[21]}" Sujood="{Binding sujood_lines[21]}" />
-                                        <Label Grid.Row="85" IsVisible="{Binding translationLineVisible[21]}" Text="{Binding verse_translation_lines[21]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="86" IsVisible="{Binding translationLineVisible[21]}" Text="{Binding translation_ref_lines[21]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="87" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="88" IsVisible="{Binding showLine[22]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[22]}" VerseNumber="{Binding verse_number[22]}" Ruku="{Binding ruku_lines[22]}" Sujood="{Binding sujood_lines[22]}" />
-                                        <Label Grid.Row="89" IsVisible="{Binding translationLineVisible[22]}" Text="{Binding verse_translation_lines[22]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="90" IsVisible="{Binding translationLineVisible[22]}" Text="{Binding translation_ref_lines[22]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="91" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="92" IsVisible="{Binding showLine[23]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[23]}" VerseNumber="{Binding verse_number[23]}" Ruku="{Binding ruku_lines[23]}" Sujood="{Binding sujood_lines[23]}" />
-                                        <Label Grid.Row="93" IsVisible="{Binding translationLineVisible[23]}" Text="{Binding verse_translation_lines[23]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="94" IsVisible="{Binding translationLineVisible[23]}" Text="{Binding translation_ref_lines[23]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="95" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                        <local:VerseTextView Grid.Row="96" IsVisible="{Binding showLine[24]}" FontName="{Binding font}" FontSize="32" HorizontalOptions="Fill" FlowDirection="RightToLeft" VerticalOptions="Start" VerseImage="quranic_border_4_raw.png" VerseText="{Binding verse_arabic_lines[24]}" VerseNumber="{Binding verse_number[24]}" Ruku="{Binding ruku_lines[24]}" Sujood="{Binding sujood_lines[24]}" />
-                                        <Label Grid.Row="97" IsVisible="{Binding translationLineVisible[24]}" Text="{Binding verse_translation_lines[24]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" />
-                                        <Label Grid.Row="98" IsVisible="{Binding translationLineVisible[24]}" Text="{Binding translation_ref_lines[24]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" />
-                                        <BoxView Grid.Row="99" IsVisible="{Binding separatorLineVisible[0]}" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" />
-                                    </Grid>
-                                </Border>
-                            </DataTemplate>
+                                    <Border Background="White"
+                                            Stroke="LightGray"
+                                            StrokeThickness="1"
+                                            Padding="8"
+                                            Margin="0,0,0,8">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="5" />
+                                        </Border.StrokeShape>
+                                        <Grid RowSpacing="3"
+                                            ColumnDefinitions="*"
+                                            RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                                            <local:VerseTextView Grid.Row="0"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[0]}"
+                                                                VerseNumber="{Binding verse_number[0]}"
+                                                                Ruku="{Binding ruku_lines[0]}"
+                                                                Sujood="{Binding sujood_lines[0]}" />
+                                            <Label Grid.Row="1" Text="{Binding verse_translation_lines[0]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="2" Text="{Binding translation_ref_lines[0]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="3" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="4"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[1]}"
+                                                                VerseNumber="{Binding verse_number[1]}"
+                                                                Ruku="{Binding ruku_lines[1]}"
+                                                                Sujood="{Binding sujood_lines[1]}" />
+                                            <Label Grid.Row="5" Text="{Binding verse_translation_lines[1]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="6" Text="{Binding translation_ref_lines[1]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="7" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="8"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[2]}"
+                                                                VerseNumber="{Binding verse_number[2]}"
+                                                                Ruku="{Binding ruku_lines[2]}"
+                                                                Sujood="{Binding sujood_lines[2]}" />
+                                            <Label Grid.Row="9" Text="{Binding verse_translation_lines[2]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="10" Text="{Binding translation_ref_lines[2]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="11" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="12"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[3]}"
+                                                                VerseNumber="{Binding verse_number[3]}"
+                                                                Ruku="{Binding ruku_lines[3]}"
+                                                                Sujood="{Binding sujood_lines[3]}" />
+                                            <Label Grid.Row="13" Text="{Binding verse_translation_lines[3]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="14" Text="{Binding translation_ref_lines[3]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="15" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="16"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[4]}"
+                                                                VerseNumber="{Binding verse_number[4]}"
+                                                                Ruku="{Binding ruku_lines[4]}"
+                                                                Sujood="{Binding sujood_lines[4]}" />
+                                            <Label Grid.Row="17" Text="{Binding verse_translation_lines[4]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="18" Text="{Binding translation_ref_lines[4]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="19" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="20"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[5]}"
+                                                                VerseNumber="{Binding verse_number[5]}"
+                                                                Ruku="{Binding ruku_lines[5]}"
+                                                                Sujood="{Binding sujood_lines[5]}" />
+                                            <Label Grid.Row="21" Text="{Binding verse_translation_lines[5]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="22" Text="{Binding translation_ref_lines[5]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="23" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="24"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[6]}"
+                                                                VerseNumber="{Binding verse_number[6]}"
+                                                                Ruku="{Binding ruku_lines[6]}"
+                                                                Sujood="{Binding sujood_lines[6]}" />
+                                            <Label Grid.Row="25" Text="{Binding verse_translation_lines[6]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="26" Text="{Binding translation_ref_lines[6]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="27" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="28"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[7]}"
+                                                                VerseNumber="{Binding verse_number[7]}"
+                                                                Ruku="{Binding ruku_lines[7]}"
+                                                                Sujood="{Binding sujood_lines[7]}" />
+                                            <Label Grid.Row="29" Text="{Binding verse_translation_lines[7]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="30" Text="{Binding translation_ref_lines[7]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="31" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="32"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[8]}"
+                                                                VerseNumber="{Binding verse_number[8]}"
+                                                                Ruku="{Binding ruku_lines[8]}"
+                                                                Sujood="{Binding sujood_lines[8]}" />
+                                            <Label Grid.Row="33" Text="{Binding verse_translation_lines[8]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="34" Text="{Binding translation_ref_lines[8]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="35" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+
+                                            <local:VerseTextView Grid.Row="36"
+                                                                FontName="{Binding font}"
+                                                                FontSize="32"
+                                                                HorizontalOptions="Fill"
+                                                                FlowDirection="RightToLeft"
+                                                                VerticalOptions="Start"
+                                                                VerseImage="quranic_border_4_raw.png"
+                                                                VerseText="{Binding verse_arabic_lines[9]}"
+                                                                VerseNumber="{Binding verse_number[9]}"
+                                                                Ruku="{Binding ruku_lines[9]}"
+                                                                Sujood="{Binding sujood_lines[9]}" />
+                                            <Label Grid.Row="37" Text="{Binding verse_translation_lines[9]}" HorizontalTextAlignment="End" TextColor="Gray" FontSize="16" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <Label Grid.Row="38" Text="{Binding translation_ref_lines[9]}" HorizontalTextAlignment="End" TextColor="LightSteelBlue" FontSize="10" FontFamily="{Binding font_translation}" IsVisible="{Binding isTranslationVisible}" />
+                                            <BoxView Grid.Row="39" HeightRequest="1" Color="Silver" HorizontalOptions="Fill" IsVisible="{Binding isSeparatorVisible}" />
+                                        </Grid>
+                                    </Border>
+                                </DataTemplate>
                         </CollectionView.ItemTemplate>
                 </CollectionView>          
             </Grid>          

@@ -9,7 +9,7 @@ public partial class AppShell : Shell
         Application.Current.UserAppTheme = AppTheme.Light;
         Routing.RegisterRoute("Search", typeof(QSearch));
         Routing.RegisterRoute("Surah", typeof(RSurah1));
-        Routing.RegisterRoute("Para", typeof(RPara));
+        Routing.RegisterRoute("Para", typeof(RPara1));
         Routing.RegisterRoute("Stats", typeof(QStats));
         Routing.RegisterRoute("About", typeof(About));
         Routing.RegisterRoute("SurahGoto",typeof(SurahGoto));

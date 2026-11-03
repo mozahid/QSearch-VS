@@ -32,7 +32,7 @@
                             FontFamily="MaterialIconsOutlined-Regular"
                             Color="Black"
                             Glyph="&#xe8ee;"
-                            Size="28" />
+                            Size="24" />
                     </ImageButton.Source>
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
@@ -45,7 +45,11 @@
                         BackgroundColor="LightGoldenrodYellow"
                         ToolTipProperties.Text="Bookmark this surah" Clicked="bmSurah_Clicked">
                     <ImageButton.Source>
-                        <FontImageSource Glyph="&#xe866;" Color="Black" FontFamily="MaterialIconsOutlined-Regular" Size="28">
+                        <FontImageSource 
+                            Glyph="&#xe866;" 
+                            Color="Black" 
+                            FontFamily="MaterialIconsOutlined-Regular" 
+                            Size="24">
                         </FontImageSource>
                     </ImageButton.Source>
                     <ImageButton.Shadow>
@@ -62,7 +66,7 @@
                             <FontImageSource
                             FontFamily="MaterialIconsOutlined-Regular"
                             Glyph="&#xe98b;"
-                            Size="28"
+                            Size="24"
                             />                        
                     </ImageButton.Source>
                     <ImageButton.Shadow>
@@ -80,8 +84,7 @@
                                 FontFamily="MaterialIconsOutlined-Regular"
                                 Color="Black"
                                 Glyph="&#xe894;"
-                                Size="28"
-                            />                         
+                                Size="24" />                         
                     </ImageButton.Source>
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
@@ -95,8 +98,7 @@
                             <FontImageSource
                             FontFamily="MaterialIconsOutlined-Regular"
                             Glyph="&#xe167;"
-                            Size="28"
-                            />
+                            Size="24" />
                     </ImageButton.Source>
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
@@ -110,8 +112,7 @@
                             <FontImageSource
                             FontFamily="MaterialIconsOutlined-Regular"
                             Glyph="&#xe5e0;"
-                            Size="28"
-                            />
+                            Size="24" />
                     </ImageButton.Source>
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
@@ -125,8 +126,7 @@
                         <FontImageSource
                         FontFamily="MaterialIconsOutlined-Regular"
                         Glyph="&#xe5e1;"
-                        Size="28"
-                        />
+                        Size="24" />
                 </ImageButton.Source>
                 <ImageButton.Shadow>
                     <Shadow Brush="Gray"
@@ -239,7 +239,7 @@
                     Padding="0,0,5,5">
                         <Label.FormattedText>
                             <FormattedString>
-                                <Span Text="Total lines - " FontSize="Micro" />
+                                <Span Text="Chapter lines - " FontSize="Micro" />
                                 <Span Text="{Binding verse_count}" FontSize="Small" FontAttributes="Bold" TextColor="OrangeRed" />
                             </FormattedString>
                         </Label.FormattedText>
@@ -254,9 +254,7 @@
                     IsRunning="{Binding IsBusy}"
                     Color="Blue"
                     HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                />
-
+                    VerticalOptions="Center" />
             <CollectionView
                 x:Name="lstView"
                 Margin="3"
@@ -264,7 +262,8 @@
                 ItemSizingStrategy="MeasureAllItems"
                 IsGrouped="True" >
                 <CollectionView.GroupHeaderTemplate>
-                    <DataTemplate />
+                    <DataTemplate>
+                    </DataTemplate>
                 </CollectionView.GroupHeaderTemplate>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="local:ReciteSurah">

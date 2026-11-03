@@ -42,11 +42,7 @@ public partial class CommonSearch : ContentPage
 	{
 		var screenHeight = DeviceDisplay.MainDisplayInfo.Height / DeviceDisplay.MainDisplayInfo.Density;
         lstView.IsVisible = true;
-		// if (screenHeight > 1000)
-        // 	lstView.HeightRequest = screenHeight - 300; 
-		// else
-		// 	lstView.HeightRequest = screenHeight - 400;
-		string integer_pattern = @"\d+";
+		// string integer_pattern = @"\d+";
 		progress.ShowProgress();
 		List<Verse> v = new List<Verse>();
 		Verses = new List<Verse>();
@@ -60,20 +56,21 @@ public partial class CommonSearch : ContentPage
 				lblPreface.Text = "These verses are the ones where the Prophet Muhammad (SAW) and believers prostrated in worship to Allah. They are moments of deep humility, submission, and connection with the Divine, often revealed in response to profound events or messages.";
 
 				Verses = await dB.GetSujoodVerses();
+				int n = 1;
 				foreach (var _v in Verses)
 				{
 					_v.font = Preferences.Default.Get<string>("Font", "NotoArabic");
 					_v.verse_arabic = _v.verse_arabic.Replace("۩", "");
 					_v.verse_arabic_end = "۩";
 					_v.showSujood = true;
+					_v.header = $"Sujood # {n}";
 					///remove integer numbers
-					string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
-					{
-						string number = match.Value;
-						_v.verse_arabic_number = Convert.ToInt32(number);
-						//_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
-						return number;
-					});
+					// string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+					// {
+					// 	string number = match.Value;
+					// 	_v.verse_arabic_number = Convert.ToInt32(number);
+					// 	return number;
+					// });
 					switch(selectedLanguage)
 					{
 						case 1:
@@ -96,8 +93,8 @@ public partial class CommonSearch : ContentPage
 							break;
 					}
 					_v.tafsir = "";
-					_v.number = 110;
-
+					_v.number = 124;
+					n++;
 				}
 				break;
 			case "Dua":
@@ -130,13 +127,12 @@ public partial class CommonSearch : ContentPage
 							_v.showSujood = true;
 						}
 						///remove integer numbers
-						string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
-						{
-							string number = match.Value;
-							_v.verse_arabic_number = Convert.ToInt32(number);
-							//_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
-							return number;
-						});
+						// string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+						// {
+						// 	string number = match.Value;
+						// 	_v.verse_arabic_number = Convert.ToInt32(number);
+						// 	return number;
+						// });
 						// combine multiple verses as one unit
 						if (v.Count > 1)
 						{
@@ -211,13 +207,12 @@ public partial class CommonSearch : ContentPage
 						_v.translation_ref = "";
 						_v.showSujood = false;
 						///remove integer numbers
-						string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
-						{
-							string number = match.Value;
-							_v.verse_arabic_number = Convert.ToInt32(number);
-							//_v.verse_arabic = _v.verse_arabic.Replace("[" + number + "]","");
-							return number;
-						});
+						// string result = Regex.Replace(_v.verse_arabic, integer_pattern, match => 
+						// {
+						// 	string number = match.Value;
+						// 	_v.verse_arabic_number = Convert.ToInt32(number);
+						// 	return number;
+						// });
 						switch(selectedLanguage)
 						{
 							case 1:

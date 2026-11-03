@@ -55,7 +55,7 @@
                                 FontFamily="MaterialIconsOutlined-Regular"
                                 Color="Black"
                                 Glyph="&#xe894;"
-                                Size="28"
+                                Size="24"
                             />                         
                     </ImageButton.Source>
                     <ImageButton.Shadow>
@@ -72,7 +72,7 @@
                         FontFamily="MaterialIconsOutlined-Regular"
                         Glyph="&#xe167;"
                         Color="White"
-                        Size="28"
+                        Size="24"
                         />
                 </ImageButton.Source>
                 <ImageButton.Shadow>
@@ -264,32 +264,43 @@
                                                         </Label.FormattedText>
                                                     </Label>
                                                     <Grid
-                                                        VerticalOptions="Start"
-                                                        HorizontalOptions="Start"
                                                         Grid.Row="1"
                                                         Grid.Column="0"
-                                                        >
-                                                        <Label Text="{Binding verse_arabic_number}"
-                                                            Padding="3"
-                                                            FontSize="Micro"
-                                                            VerticalOptions="Center"
-                                                            HorizontalOptions="Center" />
-                                                        <Image 
-                                                            Source="quranic_border_4.png"
+                                                        ColumnSpacing="5">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Grid
+                                                            VerticalOptions="Start"
+                                                            HorizontalOptions="Start">
+                                                            <Label Text="{Binding verse_number}"
+                                                                Padding="3"
+                                                                FontSize="Micro"
+                                                                VerticalOptions="Center"
+                                                                HorizontalOptions="Center" />
+                                                            <Image 
+                                                                Source="quranic_border_4.png"
+                                                                Aspect="AspectFill"
+                                                                HeightRequest="50"
+                                                                WidthRequest="50" />
+                                                        </Grid>                                                       
+                                                        <Image
+                                                            Grid.Column="1"
+                                                            Source="sujud_ui.png"
                                                             Aspect="AspectFill"
-                                                            HeightRequest="50"
-                                                            WidthRequest="50" />
+                                                            HeightRequest="30"
+                                                            WidthRequest="30"
+                                                            IsVisible="{Binding showSujood}" />
+                                                        <Image
+                                                            Grid.Column="2"
+                                                            Source="ruku_ui.png"
+                                                            Aspect="AspectFill"
+                                                            HeightRequest="30"
+                                                            WidthRequest="30"
+                                                            IsVisible="{Binding showRuku}" />   
                                                     </Grid>
-                                                    <Label
-                                                        Text="{Binding verse_arabic_end}" 
-                                                        Grid.Row="1"
-                                                        IsVisible="{Binding showSujood}"
-                                                        Padding="3"
-                                                        TextColor="Red" 
-                                                        FontSize="Large"
-                                                        FontAttributes="Bold"
-                                                        HorizontalOptions="Center"
-                                                        VerticalOptions="Center" />
                                                     <Label 
                                                         FontSize="Small"
                                                         FontFamily="NotoArabic"
