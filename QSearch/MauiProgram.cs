@@ -35,7 +35,7 @@ public static class MauiProgram
                     // Debug messages are written to stdout with Console.Writeline,
                     // and are viewable in your IDE's debug console or with 'adb logcat', etc.
                     // This option is not recommended when deploying your application.
-                    //options.Debug = true;
+                    options.Debug = true;
                     options.DiagnosticLevel = SentryLevel.Error;
                     options.SendDefaultPii = true;
     // This option is recommended. It enables Sentry's "Release Health" feature.

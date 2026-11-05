@@ -263,6 +263,12 @@
                 IsGrouped="True" >
                 <CollectionView.GroupHeaderTemplate>
                     <DataTemplate>
+                        <Grid
+                            HeightRequest="0"
+                            MinimumHeightRequest="0"
+                            Margin="0"
+                            Padding="0"
+                            />
                     </DataTemplate>
                 </CollectionView.GroupHeaderTemplate>
                 <CollectionView.ItemTemplate>
