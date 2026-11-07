@@ -259,7 +259,7 @@
                 Margin="3"
                 VerticalScrollBarVisibility="Default"
                 ItemSizingStrategy="MeasureAllItems"
-                RemainingItemsThreshold="1"
+                RemainingItemsThreshold="5"
                 RemainingItemsThresholdReached="lstView_RemainingItemsThresholdReached"
                 ItemsSource="{Binding Items}">
                 <CollectionView.ItemTemplate>

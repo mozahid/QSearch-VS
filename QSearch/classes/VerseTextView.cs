@@ -154,16 +154,16 @@ public class VerseTextView : GraphicsView
  
         _drawnContentWidth = double.NaN;
         _drawnContentHeight = 0;
-        //SetDrawable();
-        InvalidateMeasure();
+        SetDrawable();
+        //InvalidateMeasure();
     }
 
-    protected override void OnSizeAllocated(double width, double height)
-    {
-        base.OnSizeAllocated(width, height);
-        SetDrawable();
-        Invalidate();
-    }
+    // protected override void OnSizeAllocated(double width, double height)
+    // {
+    //     base.OnSizeAllocated(width, height);
+    //     SetDrawable();
+    //     //Invalidate();
+    // }
 
     protected override Size MeasureOverride(
         double widthConstraint,
@@ -184,7 +184,7 @@ public class VerseTextView : GraphicsView
             _drawnContentHeight = 0;
         }
         double lineHeight = FontSize * 1.8;
-        double rowSpacing = 8;
+        //double rowSpacing = 8;
         int lineCount = 1;
 
         if (_arabicTextLayout is not null && !string.IsNullOrWhiteSpace(VerseText))
@@ -198,7 +198,7 @@ public class VerseTextView : GraphicsView
             if (result.LineHeight > 0)
                 lineHeight = result.LineHeight;
 
-            rowSpacing = result.RowSpacing;
+            //double rowSpacing = result.RowSpacing;
             lineCount = Math.Max(1, result.LineCount);         
         }
         double height = lineHeight * lineCount;
@@ -219,8 +219,8 @@ public class VerseTextView : GraphicsView
         control._drawnContentWidth = double.NaN;
         control._drawnContentHeight = 0;
         //control.SetDrawable();
-        control.InvalidateMeasure();
-        //control.Invalidate();
+        //control.InvalidateMeasure();
+        control.Invalidate();
     }
 
     private void SetDrawable()
