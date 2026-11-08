@@ -208,7 +208,17 @@
                         RemainingItemsThreshold="2"
                         VerticalScrollBarVisibility="Always" >
                         <CollectionView.GroupHeaderTemplate>
-                          <DataTemplate />
+                          <DataTemplate>
+                                <Grid
+                                    HeightRequest="50"
+                                    MinimumHeightRequest="0"
+                                    Margin="0"
+                                    Padding="0">
+                                    <Image
+                                        Source="quranic_divider.png"
+                                        Aspect="AspectFit" />
+                                </Grid>
+                          </DataTemplate>
                         </CollectionView.GroupHeaderTemplate>
                         <CollectionView.ItemTemplate>
                             <DataTemplate x:DataType="local:ReciteSurah">

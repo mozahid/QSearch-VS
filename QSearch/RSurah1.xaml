@@ -26,6 +26,19 @@
         <FlexLayout 
                 HorizontalOptions="Center"
                 Grid.Row="0">
+                <ImageButton x:Name="btnOption"
+                    Source="otheropt.png"
+                    HeightRequest="48"
+                    WidthRequest="48"
+                    Aspect="AspectFit"
+                    BorderColor="LightGray">
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton>               
                 <ImageButton x:Name="btnLine" BackgroundColor="PaleGoldenrod" Clicked="btnLine_Clicked">
                     <ImageButton.Source>
                         <FontImageSource
@@ -264,11 +277,14 @@
                 <CollectionView.GroupHeaderTemplate>
                     <DataTemplate>
                         <Grid
-                            HeightRequest="0"
                             MinimumHeightRequest="0"
                             Margin="0"
-                            Padding="0"
-                            />
+                            Padding="0">
+                            <Image
+                                Source="quranic_divider.png"
+                                HeightRequest="40"
+                                Aspect="AspectFit" />
+                        </Grid>
                     </DataTemplate>
                 </CollectionView.GroupHeaderTemplate>
                 <CollectionView.ItemTemplate>
