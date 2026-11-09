@@ -1,7 +1,5 @@
 ﻿using Foundation;
-using Microsoft.Maui.Handlers;
 using SQLitePCL;
-using UIKit;
 
 namespace QSearch;
 
