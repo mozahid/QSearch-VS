@@ -27,11 +27,12 @@
                 HorizontalOptions="Center"
                 Grid.Row="0">
                 <ImageButton x:Name="btnOption"
-                    Source="otheropt.png"
+                    Source="miscopt.png"
                     HeightRequest="48"
                     WidthRequest="48"
-                    Aspect="AspectFit"
-                    BorderColor="LightGray">
+                    BorderColor="Silver"
+                    BorderWidth="1"
+                    Aspect="AspectFit">
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
                             Offset="20,20"
