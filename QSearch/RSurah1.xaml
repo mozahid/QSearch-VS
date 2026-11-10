@@ -31,8 +31,10 @@
                     HeightRequest="48"
                     WidthRequest="48"
                     BorderColor="Silver"
-                    BorderWidth="1"
-                    Aspect="AspectFit">
+                    BackgroundColor="White"
+                    BorderWidth="2"
+                    Aspect="AspectFit"
+                    Clicked="btnOption_Clicked">
                     <ImageButton.Shadow>
                         <Shadow Brush="Gray"
                             Offset="20,20"

@@ -395,4 +395,24 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
         btnLine.IsEnabled = true;
         progress.HideProgress();
     }
+    /// <summary>
+    /// size and color of the font
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void btnOption_Clicked(object sender, EventArgs e)
+    {
+        MiscOption opt = new MiscOption();
+        #if MACCATALYST
+            Navigation.PushAsync(opt);
+        #else
+            Navigation.PushModalAsync(opt);
+        #endif
+        await opt.PopupDismissedTask;
+        if (opt.ReturnValue.optionSelection == 0)
+        {
+            progress.ShowProgress();
+            await Task.Yield();
+        }
+    }
 }

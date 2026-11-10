@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QSearch.MiscOption"
+             BackgroundColor="#aa000000"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.ModalPresentationStyle="OverFullScreen"
+             NavigationPage.HasBackButton="False"
+             Title="Miscellaneous Options">
+    <VerticalStackLayout BackgroundColor="White" HeightRequest="400">
+        <Label 
+            Text="Arabic Verse Colors"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                Margin="0,20,0,10" />
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="Center" Margin="0,0,0,20">
+                <RadioButton GroupName="Colors"
+                            x:Name="radBlack"
+                            IsChecked="True">
+                    <RadioButton.ControlTemplate>
+                        <ControlTemplate>
+                            <Border BackgroundColor="Black"
+                                    WidthRequest="35"
+                                    HeightRequest="35"
+                                    Stroke="Black"
+                                    StrokeThickness="1"
+                                    StrokeShape="RoundRectangle 4">
+                                <Label Text="✓"
+                                    TextColor="White"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    IsVisible="{TemplateBinding IsChecked}" />
+                            </Border>
+                        </ControlTemplate>
+                    </RadioButton.ControlTemplate>
+                </RadioButton>
+
+                <RadioButton GroupName="Colors" x:Name="radGreen">
+                    <RadioButton.ControlTemplate>
+                        <ControlTemplate>
+                            <Border BackgroundColor="Green"
+                                    WidthRequest="35"
+                                    HeightRequest="35"
+                                    Stroke="Black"
+                                    StrokeThickness="1"
+                                    StrokeShape="RoundRectangle 4">
+                                <Label Text="✓"
+                                    TextColor="White"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    IsVisible="{TemplateBinding IsChecked}" />
+                                    
+                                    </Border>
+                        </ControlTemplate>
+                    </RadioButton.ControlTemplate>
+                </RadioButton>
+
+                <RadioButton GroupName="Colors" x:Name="radBlue">
+                    <RadioButton.ControlTemplate>
+                        <ControlTemplate>
+                            <Border BackgroundColor="Blue"
+                                    WidthRequest="35"
+                                    HeightRequest="35"
+                                    Stroke="Black"
+                                    StrokeThickness="1"
+                                    StrokeShape="RoundRectangle 4">
+                                <Label Text="✓"
+                                    TextColor="White"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    IsVisible="{TemplateBinding IsChecked}" />
+                                    </Border>
+                        </ControlTemplate>
+                    </RadioButton.ControlTemplate>
+                </RadioButton>
+
+                <RadioButton GroupName="Colors" x:Name="radYellow">
+                    <RadioButton.ControlTemplate>
+                        <ControlTemplate>
+                            <Border BackgroundColor="Goldenrod"
+                                    WidthRequest="35"
+                                    HeightRequest="35"
+                                    Stroke="Black"
+                                    StrokeThickness="1"
+                                    StrokeShape="RoundRectangle 4">
+                                <Label Text="✓"
+                                    TextColor="White"
+                                    FontSize="20"
+                                    HorizontalOptions="Center"
+                                    VerticalOptions="Center"
+                                    IsVisible="{TemplateBinding IsChecked}" />
+                            </Border>
+                        </ControlTemplate>
+                    </RadioButton.ControlTemplate>
+                </RadioButton>
+    </HorizontalStackLayout>
+    <Label 
+        Text="Arabic Verse Size"
+        FontSize="24"
+        FontAttributes="Bold"
+        HorizontalOptions="Center"
+        Margin="0,20,0,10" />
+
+    <Grid 
+        WidthRequest="200"
+        RowDefinitions="Auto,Auto"
+        ColumnDefinitions="*,*,*">
+        <Slider x:Name="sizeSlider"
+                Minimum="28"
+                Maximum="36"
+                Value="28"
+                Grid.Row="0"
+                Grid.ColumnSpan="3"
+                MinimumTrackColor="Blue"
+                MaximumTrackColor="LightGray"
+                ThumbColor="DarkBlue"
+                HorizontalOptions="Center"
+                ValueChanged="sizeSlider_ValueChanged" />
+        <Label Text="Regular"
+               HorizontalTextAlignment="Start"
+               Grid.Row="1"
+               Grid.Column="0" />
+
+        <Label Text="Medium"
+               HorizontalTextAlignment="Center"
+               Grid.Row="1"
+               Grid.Column="1" />
+
+        <Label Text="Large"
+               HorizontalTextAlignment="End"
+               Grid.Row="1"
+               Grid.Column="2" />
+    </Grid>
+    <FlexLayout 
+        HorizontalOptions="Center" 
+        VerticalOptions="End" 
+        Margin="0,40,0,10">
+            <ImageButton x:Name="btnSelect" BackgroundColor="Teal"  Clicked="btnSelect_Clicked">
+                <ImageButton.Source>
+                    <FontImageSource
+                        FontFamily="MaterialIconsOutlined-Regular"
+                        Glyph="&#xe5ca;"
+                        Color="White"
+                        Size="28"                                   
+                    />
+                </ImageButton.Source>
+                <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                </ImageButton.Shadow>
+            </ImageButton>
+            <Label Text="    " />
+            <ImageButton x:Name="btnCancel"  BackgroundColor="LightSalmon" Clicked="btnCancel_Clicked">
+                <ImageButton.Source>
+                    <FontImageSource
+                        FontFamily="MaterialIconsOutlined-Regular"
+                        Glyph="&#xe5cd;"
+                        Color="Black"
+                        Size="28"                                   
+                    />
+                </ImageButton.Source>
+                <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                </ImageButton.Shadow>
+            </ImageButton>
+    </FlexLayout>
+    </VerticalStackLayout>
+</ContentPage>
