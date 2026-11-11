@@ -11,6 +11,25 @@ public partial class MiscOption : ContentPage
 		InitializeComponent();
         _taskCompletionSource = new TaskCompletionSource<OptionsData>();
         ReturnValue = new OptionsData { option = "" };
+		//retrieve the saved font size and color from preferences and set the slider and radio buttons accordingly
+		Color savedColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black"));
+		if (savedColor == Colors.Black)
+		{
+			radBlack.IsChecked = true;
+		}
+		else if (savedColor == Colors.Green)
+		{
+			radGreen.IsChecked = true;
+		}
+		else if (savedColor == Colors.Blue)
+		{
+			radBlue.IsChecked = true;
+		}
+		else if (savedColor == Colors.Goldenrod)
+		{
+			radYellow.IsChecked = true;
+		}
+		sizeSlider.Value = Preferences.Default.Get<int>("FontSize", 32);
 	}
 
 	    protected override void OnAppearing()
@@ -36,22 +55,27 @@ public partial class MiscOption : ContentPage
     {
         ReturnValue.optionSelection = 0;
         ReturnValue.option = "";
-        #if MACCATALYST
-            await Navigation.PopAsync();
-        #else
-             await Navigation.PopModalAsync(false);
-        #endif
-    }
+		ReturnValue.optionColor = radBlack.IsChecked ? nameof(Colors.Black) :
+						radGreen.IsChecked ? nameof(Colors.Green) :
+						radBlue.IsChecked ? nameof(Colors.Blue) :
+						radYellow.IsChecked ? nameof(Colors.Goldenrod) : nameof(Colors.Black);
+		ReturnValue.fontSize = (int)sizeSlider.Value;
+		#if MACCATALYST
+			await Navigation.PopAsync();
+		#else
+			 await Navigation.PopModalAsync(false);
+		#endif
+	}
 
-    async void btnCancel_Clicked(System.Object sender, System.EventArgs e)
-    {
-        ReturnValue.optionSelection = -1;   
-        #if MACCATALYST
-            await Navigation.PopAsync();
-        #else
-            await Navigation.PopModalAsync(false);
-        #endif
-    }
+	async void btnCancel_Clicked(System.Object sender, System.EventArgs e)
+	{
+		ReturnValue.optionSelection = -1;   
+		#if MACCATALYST
+			await Navigation.PopAsync();
+		#else
+			await Navigation.PopModalAsync(false);
+		#endif
+	}
 	/// <summary>
 	/// slider value changed event handler to round the value to the nearest multiple of 4 and clamp it within the slider's minimum and maximum range.
 	/// </summary>

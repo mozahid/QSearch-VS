@@ -91,7 +91,9 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             ruku_lines = new bool[10],
             sujood_lines = new bool[10],
             verse_number = new int[10],
-            showLine = new bool[10]
+            showLine = new bool[10],
+            fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
+            fontSize = Preferences.Default.Get<int>("FontSize", 28)
         };
         for (int i = 0; i < surahs.Count; i++)
         {
@@ -108,7 +110,9 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
                             ruku_lines = new bool[10],
                             sujood_lines = new bool[10],
                             verse_number = new int[10],
-                            showLine = new bool[10]
+                            showLine = new bool[10],
+                            fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
+                            fontSize = Preferences.Default.Get<int>("FontSize", 28) 
                         };              
                 groupedVerseCount = 0;
             }

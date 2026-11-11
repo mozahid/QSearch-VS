@@ -14,7 +14,7 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
     //Options opt;
     OptionsData ret = new OptionsData();
     List<QuranicVerse> surahs = new List<QuranicVerse>();
-    List<GroupedVerse> groupedVerse = new List<GroupedVerse>();
+    readonly List<GroupedVerse> groupedVerse = new List<GroupedVerse>();
     Surah surah_info = new Surah();
     public bool showTrans = false;
     int firstItem = 0;
@@ -55,6 +55,10 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
             this.Title = "Recite Surah - " + surah_info.chapter_name_arabic;
             grdHeader.BindingContext = surah_info;
             progress.ShowProgress();
+
+            ret.fontSize = Preferences.Default.Get<int>("FontSize", 28); 
+            ret.optionColor = Preferences.Default.Get<string>("FontColor", "Black");
+
             await Task.Delay(10);
             await LinesByLines();
         }
@@ -93,7 +97,9 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
             ruku_lines = new bool[10],
             sujood_lines = new bool[10],
             verse_number = new int[10],
-            showLine = new bool[10]
+            showLine = new bool[10],
+            fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
+            fontSize = Preferences.Default.Get<int>("FontSize", 28)
         };
         for (int i = 0; i < surahs.Count; i++)
         {
@@ -110,7 +116,9 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
                             ruku_lines = new bool[10],
                             sujood_lines = new bool[10],
                             verse_number = new int[10],
-                            showLine = new bool[10]
+                            showLine = new bool[10],
+                            fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
+                            fontSize = Preferences.Default.Get<int>("FontSize", 28)
                         };              
                 groupedVerseCount = 0;
             }
@@ -411,8 +419,17 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
         await opt.PopupDismissedTask;
         if (opt.ReturnValue.optionSelection == 0)
         {
-            progress.ShowProgress();
             await Task.Yield();
+            foreach (var reciteSurah in groupedVerse.SelectMany(group => group))
+            {
+                reciteSurah.fontColor = Color.Parse(opt.ReturnValue.optionColor);
+                reciteSurah.fontSize = opt.ReturnValue.fontSize;
+                Preferences.Default.Set<string>("FontColor", opt.ReturnValue.optionColor);
+                Preferences.Default.Set<int>("FontSize", opt.ReturnValue.fontSize);
+
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.fontColor));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.fontSize));
+            }
         }
     }
 }

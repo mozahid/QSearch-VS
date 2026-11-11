@@ -151,19 +151,6 @@ namespace QSearch
             }
         }
 
-        // public bool isSeparatorVisible
-        // {
-        //     get => _isSeparatorVisible;
-        //     set
-        //     {
-        //         if (_isSeparatorVisible == value)
-        //             return;
-
-        //         _isSeparatorVisible = value;
-        //         NotifyBindingsChanged(nameof(isSeparatorVisible));
-        //     }
-        // }
-
         public void NotifyBindingsChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
@@ -188,6 +175,9 @@ namespace QSearch
         public string font { get; set; }
         public string font_translation{ get; set; } = "Tahoma";
         public bool[] showLine { get; set;}
+        public Color fontColor { get; set; } = Colors.Black;
+        public int fontSize { get; set; } = 28;
+
     }
     /// <summary>
     /// Class for grouping by surahs for a para
