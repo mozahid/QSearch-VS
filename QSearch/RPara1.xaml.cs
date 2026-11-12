@@ -3,21 +3,22 @@ using System.Web;
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Extensions;
-using SQLitePCL;
+using QSearch.Models;
 namespace QSearch;
 
 [QueryProperty(nameof(para), "para")]
 public partial class RPara1 : ContentPage, IQueryAttributable
 {
-    QuranDB dB;
+    readonly QuranDB dB;
     int para_no = 0;
-    List<QuranicVerse> surahs = new List<QuranicVerse>();
-    List<GroupedVerse> groupedVerse = new List<GroupedVerse>();
-    Surah surah_info = new Surah();
-    Para para_info = new Para();
+    List<QuranicVerse> surahs = new();
+    readonly List<GroupedVerse> groupedVerse = new();
+    Surah surah_info = new();
+    Para para_info = new();
+    OptionsData ret = new();
     public bool showTrans = false;
     int firstItem = 0;
-    Progress progress;
+    readonly Progress progress;
     public int para {get; set;}
     public int selectedLanguage = 1;
     public bool showSeparator = false;
@@ -52,10 +53,21 @@ public partial class RPara1 : ContentPage, IQueryAttributable
             para_info = await dB.GetParaInfo(para_no);
             current_chapter_number = para_info.surah_list.First().chapter_number;
             surahs = await dB.GetSurahByParaNumber(para_no, current_chapter_number);
-            btnNextSurah.Text= para_info.surah_list.Where(_s => _s.chapter_number == (current_chapter_number + 1)).First().chapter_name_arabic;
+            btnNextSurah.Text= para_info.surah_list.Where(_s => _s.chapter_number == (current_chapter_number + 1)).FirstOrDefault()?.chapter_name_arabic;
+            if (current_chapter_number == para_info.surah_list.Max(_s => _s.chapter_number))
+            {
+                btnNextSurah.IsEnabled = false;
+                btnNextSurah.Text = "";
+            }
+            else
+            {
+                btnNextSurah.IsEnabled = true;
+            }
             btnBackSurah.IsEnabled = false;
             this.Title = "Recite Para - " + surah_info.para_name;
-            await RefreshSurah();
+            ret.fontSize = Preferences.Default.Get<int>("FontSize", 28); 
+            ret.optionColor = Preferences.Default.Get<string>("FontColor", "Black");
+            MainThread.BeginInvokeOnMainThread(async () =>  await RefreshSurah());
         }   
     }
 
@@ -86,7 +98,10 @@ public partial class RPara1 : ContentPage, IQueryAttributable
             ruku_lines = new bool[10],
             sujood_lines = new bool[10],
             verse_number = new int[10],
-            showLine = new bool[10]
+            showLine = new bool[10],
+            fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
+            fontSize = Preferences.Default.Get<int>("FontSize", 28),
+            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma"
         };
         for (int i = 0; i < surahs.Count; i++)
         {
@@ -103,7 +118,10 @@ public partial class RPara1 : ContentPage, IQueryAttributable
                             ruku_lines = new bool[10],
                             sujood_lines = new bool[10],
                             verse_number = new int[10],
-                            showLine = new bool[10]
+                            showLine = new bool[10],
+                            fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
+                            fontSize = Preferences.Default.Get<int>("FontSize", 28),
+                            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma"
                         };              
                 groupedVerseCount = 0;
             }
@@ -414,5 +432,34 @@ public partial class RPara1 : ContentPage, IQueryAttributable
         groupedVerse.Clear();
         lstView.ItemsSource = null;
         await LinesByLines();
+    }    
+    /// <summary>
+    /// slider value changed event handler to round the value to the nearest multiple of 4 and clamp it within the slider's minimum and maximum range.
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void btnOption_Clicked(object sender, EventArgs e)
+    {
+        MiscOption opt = new();
+        #if MACCATALYST
+            await Navigation.PushAsync(opt);
+        #else
+            await Navigation.PushModalAsync(opt);
+        #endif
+        await opt.PopupDismissedTask;
+        if (opt.ReturnValue.optionSelection == 0)
+        {
+            await Task.Yield();
+            foreach (var reciteSurah in groupedVerse.SelectMany(group => group))
+            {
+                reciteSurah.fontColor = Color.Parse(opt.ReturnValue.optionColor);
+                reciteSurah.fontSize = opt.ReturnValue.fontSize;
+                Preferences.Default.Set<string>("FontColor", opt.ReturnValue.optionColor);
+                Preferences.Default.Set<int>("FontSize", opt.ReturnValue.fontSize);
+
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.fontColor));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.fontSize));
+            }
+        }  
     }
 }

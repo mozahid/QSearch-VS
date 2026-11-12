@@ -12,15 +12,15 @@ namespace QSearch;
 [QueryProperty(nameof(chapterTo), "chapterTo")]
 public partial class SurahGoto : ContentPage, IQueryAttributable
 {
-	QuranDB dB;
+    readonly QuranDB dB;
     int chapter_no = 0;
     List<GroupedVerse> groupedVerse = new List<GroupedVerse>();
-    Surah surah_info = new Surah();
+    Surah surah_info = new();
     List<QuranicVerse> surahs = new List<QuranicVerse>();
     public bool showTrans = false;
     int firstItem = 0;
-    Progress progress;
-	OptionsData ret = new OptionsData();
+    readonly Progress progress;
+    OptionsData ret = new();
     public int chapter {get; set;}
 	public int chapterFrom{get;set;}
 	public int chapterTo{get;set;}
@@ -40,6 +40,8 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
         chapter_no = chapter;
         if (groupedVerse.Count == 0) 
         {
+            ret.fontSize = Preferences.Default.Get<int>("FontSize", 28); 
+            ret.optionColor = Preferences.Default.Get<string>("FontColor", "Black");
              MainThread.BeginInvokeOnMainThread(async () => await LoadDataAsync());
         }
     }
@@ -93,7 +95,8 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
             verse_number = new int[10],
             showLine = new bool[10],
             fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
-            fontSize = Preferences.Default.Get<int>("FontSize", 28)
+            fontSize = Preferences.Default.Get<int>("FontSize", 28),
+            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma"
         };
         for (int i = 0; i < surahs.Count; i++)
         {
@@ -112,7 +115,8 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
                             verse_number = new int[10],
                             showLine = new bool[10],
                             fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
-                            fontSize = Preferences.Default.Get<int>("FontSize", 28) 
+                            fontSize = Preferences.Default.Get<int>("FontSize", 28),
+                            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma"
                         };              
                 groupedVerseCount = 0;
             }
@@ -362,5 +366,34 @@ public partial class SurahGoto : ContentPage, IQueryAttributable
         }
         btnLine.IsEnabled = true;
         progress.HideProgress();
+    }
+    /// <summary>
+    /// option button clicked to change font size and color
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private async void btnOption_Clicked(object sender, EventArgs e)
+    {
+        MiscOption opt = new();
+        #if MACCATALYST
+            await Navigation.PushAsync(opt);
+        #else
+            await Navigation.PushModalAsync(opt);
+        #endif
+        await opt.PopupDismissedTask;
+        if (opt.ReturnValue.optionSelection == 0)
+        {
+            await Task.Yield();
+            foreach (var reciteSurah in groupedVerse.SelectMany(group => group))
+            {
+                reciteSurah.fontColor = Color.Parse(opt.ReturnValue.optionColor);
+                reciteSurah.fontSize = opt.ReturnValue.fontSize;
+                Preferences.Default.Set<string>("FontColor", opt.ReturnValue.optionColor);
+                Preferences.Default.Set<int>("FontSize", opt.ReturnValue.fontSize);
+
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.fontColor));
+                reciteSurah.NotifyBindingsChanged(nameof(ReciteSurah.fontSize));
+            }
+        }
     }
 }

@@ -19,7 +19,25 @@
       </ContentPage.ToolbarItems>
     <Grid RowDefinitions="Auto,Auto,*">
             <FlexLayout Grid.Row="0" HorizontalOptions="Center">
-                <ImageButton x:Name="btnLine" BackgroundColor="PaleGoldenrod" Clicked="btnLine_Clicked">
+                <ImageButton x:Name="btnOption"
+                    Source="miscopt.png"
+                    HeightRequest="48"
+                    WidthRequest="48"
+                    BorderColor="Silver"
+                    BackgroundColor="White"
+                    BorderWidth="2"
+                    Aspect="AspectFit"
+                    Clicked="btnOption_Clicked">
+                    <ImageButton.Shadow>
+                        <Shadow Brush="Gray"
+                            Offset="20,20"
+                            Radius="40"
+                            Opacity="0.8" />
+                    </ImageButton.Shadow>
+                </ImageButton> 
+                <ImageButton x:Name="btnLine" 
+                    BackgroundColor="PaleGoldenrod" 
+                    Clicked="btnLine_Clicked">
                     <ImageButton.Source>
                         <FontImageSource
                             FontFamily="MaterialIconsOutlined-Regular"
@@ -235,7 +253,8 @@
                                             RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
                                             <local:VerseTextView Grid.Row="0"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -250,7 +269,8 @@
 
                                             <local:VerseTextView Grid.Row="4"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -265,7 +285,8 @@
 
                                             <local:VerseTextView Grid.Row="8"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -280,7 +301,8 @@
 
                                             <local:VerseTextView Grid.Row="12"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -295,7 +317,8 @@
 
                                             <local:VerseTextView Grid.Row="16"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -310,7 +333,8 @@
 
                                             <local:VerseTextView Grid.Row="20"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -325,7 +349,8 @@
 
                                             <local:VerseTextView Grid.Row="24"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -340,7 +365,8 @@
 
                                             <local:VerseTextView Grid.Row="28"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -355,7 +381,8 @@
 
                                             <local:VerseTextView Grid.Row="32"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"
@@ -370,7 +397,8 @@
 
                                             <local:VerseTextView Grid.Row="36"
                                                                 FontName="{Binding font}"
-                                                                FontSize="32"
+                                                                FontSize="{Binding fontSize}"
+                                                                TextColor="{Binding fontColor}"
                                                                 HorizontalOptions="Fill"
                                                                 FlowDirection="RightToLeft"
                                                                 VerticalOptions="Start"

@@ -18,7 +18,7 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
     Surah surah_info = new Surah();
     public bool showTrans = false;
     int firstItem = 0;
-    Progress progress;
+    readonly Progress progress;
     public int chapter {get; set;}
     public int selectedLanguage = 1;
     public bool showSeparator = false;
@@ -58,9 +58,7 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
 
             ret.fontSize = Preferences.Default.Get<int>("FontSize", 28); 
             ret.optionColor = Preferences.Default.Get<string>("FontColor", "Black");
-
-            await Task.Delay(10);
-            await LinesByLines();
+            MainThread.BeginInvokeOnMainThread(async () => await LinesByLines());
         }
     }
     //used by GoToAsync //
@@ -99,7 +97,8 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
             verse_number = new int[10],
             showLine = new bool[10],
             fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
-            fontSize = Preferences.Default.Get<int>("FontSize", 28)
+            fontSize = Preferences.Default.Get<int>("FontSize", 28),
+            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma"
         };
         for (int i = 0; i < surahs.Count; i++)
         {
@@ -118,7 +117,8 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
                             verse_number = new int[10],
                             showLine = new bool[10],
                             fontColor = Color.Parse(Preferences.Default.Get<string>("FontColor", "Black")),
-                            fontSize = Preferences.Default.Get<int>("FontSize", 28)
+                            fontSize = Preferences.Default.Get<int>("FontSize", 28),
+                            font_translation = selectedLanguage == 2 ? "Urdu" : "Tahoma"
                         };              
                 groupedVerseCount = 0;
             }
@@ -410,11 +410,11 @@ public partial class RSurah1 : ContentPage, IQueryAttributable
     /// <param name="e"></param>
     private async void btnOption_Clicked(object sender, EventArgs e)
     {
-        MiscOption opt = new MiscOption();
+        MiscOption opt = new();
         #if MACCATALYST
-            Navigation.PushAsync(opt);
+            await Navigation.PushAsync(opt);
         #else
-            Navigation.PushModalAsync(opt);
+            await Navigation.PushModalAsync(opt);
         #endif
         await opt.PopupDismissedTask;
         if (opt.ReturnValue.optionSelection == 0)

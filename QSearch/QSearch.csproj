@@ -97,6 +97,9 @@
 	  <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
 	  <RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm64;android-arm;android-x64;android-x86</RuntimeIdentifiers>
 	</PropertyGroup>
+	<PropertyGroup>
+		<NoWarn>$(NoWarn);IDE1006</NoWarn>
+	</PropertyGroup>
 	<!-- <PropertyGroup Condition="'$(TargetFramework)'=='net8.0-maccatalyst'">
 	<ApplicationTitle>Your App Name</ApplicationTitle>
 	<RuntimeIdentifier>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifier>
