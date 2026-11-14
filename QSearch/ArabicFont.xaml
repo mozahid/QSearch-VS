@@ -7,7 +7,61 @@
              ios:Page.ModalPresentationStyle="OverFullScreen"
              NavigationPage.HasBackButton="False"
              Title="Arabic Font">
-        <VerticalStackLayout BackgroundColor="White" HeightRequest="575" >
+    <ContentPage.Resources>
+        <ControlTemplate x:Key="ArabicFontRadioTemplate">
+            <Border Background="White"
+                    Stroke="Silver"
+                    StrokeThickness="1"
+                    StrokeShape="RoundRectangle 8"
+                    Padding="10,4">
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CheckedStates">
+                            <VisualState x:Name="Checked">
+                                <VisualState.Setters>
+                                    <Setter Property="Background" Value="LightSkyBlue" />
+                                    <Setter Property="Stroke" Value="DeepSkyBlue" />
+                                    <Setter TargetName="checkDot" Property="Opacity" Value="1" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Unchecked">
+                                <VisualState.Setters>
+                                    <Setter Property="Background" Value="White" />
+                                    <Setter Property="Stroke" Value="Silver" />
+                                    <Setter TargetName="checkDot" Property="Opacity" Value="0" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </VisualStateManager.VisualStateGroups>
+                <Grid ColumnDefinitions="24,*"
+                      ColumnSpacing="10">
+                    <Grid WidthRequest="20"
+                          HeightRequest="20"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center">
+                        <Ellipse Stroke="DeepSkyBlue"
+                                 StrokeThickness="2"
+                                 Fill="White" />
+                        <Ellipse x:Name="checkDot"
+                                 WidthRequest="10"
+                                 HeightRequest="10"
+                                 Fill="DeepSkyBlue"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 Opacity="0" />
+                    </Grid>
+                    <ContentPresenter Grid.Column="1"
+                                      VerticalOptions="Center" />
+                </Grid>
+            </Border>
+        </ControlTemplate>
+        <Style TargetType="RadioButton">
+            <Setter Property="ControlTemplate"
+                    Value="{StaticResource ArabicFontRadioTemplate}" />
+        </Style>
+    </ContentPage.Resources>
+        <VerticalStackLayout BackgroundColor="White" HeightRequest="550" >
                     <Label 
                         Text="Arabic Fonts"
                             FontSize="20"
@@ -26,8 +80,7 @@
                                     Radius="10"
                                     Opacity="0.45" />
                         </Border.Shadow>
-                        <Grid RowSpacing="1" 
-                              WidthRequest="400">
+                        <Grid RowSpacing="1">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="*" />
@@ -47,7 +100,6 @@
                                          HorizontalOptions="Fill"
                                          VerticalOptions="Fill"
                                          Padding="10,3"
-                                         BackgroundColor="Transparent"
                                          CheckedChanged="radFont_CheckedChanged">
                                 <RadioButton.Content>
                                     <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
@@ -55,11 +107,6 @@
                                            FontSize="Title"
                                            VerticalOptions="Center" />
                                 </RadioButton.Content>
-                                <RadioButton.Triggers>
-                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
-                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
-                                    </Trigger>
-                                </RadioButton.Triggers>
                             </RadioButton>
                             <RadioButton x:Name="radLateef"
                                          Value="2"
@@ -68,7 +115,6 @@
                                          HorizontalOptions="Fill"
                                          VerticalOptions="Fill"
                                          Padding="10,3"
-                                         BackgroundColor="Transparent"
                                          CheckedChanged="radFont_CheckedChanged">
                                 <RadioButton.Content>
                                     <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
@@ -76,11 +122,6 @@
                                            FontSize="Title"
                                            VerticalOptions="Center" />
                                 </RadioButton.Content>
-                                <RadioButton.Triggers>
-                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
-                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
-                                    </Trigger>
-                                </RadioButton.Triggers>
                             </RadioButton>
                             <RadioButton x:Name="radAlQalam"
                                          Value="3"
@@ -89,7 +130,6 @@
                                          HorizontalOptions="Fill"
                                          VerticalOptions="Fill"
                                          Padding="10,3"
-                                         BackgroundColor="Transparent"
                                          CheckedChanged="radFont_CheckedChanged">
                                 <RadioButton.Content>
                                     <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
@@ -97,11 +137,6 @@
                                            FontSize="Title"
                                            VerticalOptions="Center" />
                                 </RadioButton.Content>
-                                <RadioButton.Triggers>
-                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
-                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
-                                    </Trigger>
-                                </RadioButton.Triggers>
                             </RadioButton>
                             <RadioButton x:Name="radIndoPak"
                                          Value="4"
@@ -110,7 +145,6 @@
                                          HorizontalOptions="Fill"
                                          VerticalOptions="Fill"
                                          Padding="10,3"
-                                         BackgroundColor="Transparent"
                                          CheckedChanged="radFont_CheckedChanged">
                                 <RadioButton.Content>
                                     <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
@@ -118,11 +152,6 @@
                                            FontSize="Title"
                                            VerticalOptions="Center" />
                                 </RadioButton.Content>
-                                <RadioButton.Triggers>
-                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
-                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
-                                    </Trigger>
-                                </RadioButton.Triggers>
                             </RadioButton>
                             <RadioButton x:Name="radMeQuran"
                                          Value="5"
@@ -131,7 +160,6 @@
                                          HorizontalOptions="Fill"
                                          VerticalOptions="Fill"
                                          Padding="10,3"
-                                         BackgroundColor="Transparent"
                                          CheckedChanged="radFont_CheckedChanged">
                                 <RadioButton.Content>
                                     <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
@@ -139,11 +167,6 @@
                                            FontSize="Title"
                                            VerticalOptions="Center" />
                                 </RadioButton.Content>
-                                <RadioButton.Triggers>
-                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
-                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
-                                    </Trigger>
-                                </RadioButton.Triggers>
                             </RadioButton>
                             <RadioButton x:Name="radHafsQuran"
                                          Value="6"
@@ -152,7 +175,6 @@
                                          HorizontalOptions="Fill"
                                          VerticalOptions="Fill"
                                          Padding="10,3"
-                                         BackgroundColor="Transparent"
                                          CheckedChanged="radFont_CheckedChanged">
                                 <RadioButton.Content>
                                     <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
@@ -160,11 +182,6 @@
                                            FontSize="Title"
                                            VerticalOptions="Center" />
                                 </RadioButton.Content>
-                                <RadioButton.Triggers>
-                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
-                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
-                                    </Trigger>
-                                </RadioButton.Triggers>
                             </RadioButton>
                         </Grid>
                     </Border>
