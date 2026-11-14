@@ -7,15 +7,13 @@
              ios:Page.ModalPresentationStyle="OverFullScreen"
              NavigationPage.HasBackButton="False"
              Title="Arabic Font">
-        <VerticalStackLayout BackgroundColor="White" HeightRequest="525">
-                    <Border BackgroundColor="SlateBlue" HorizontalOptions="Fill">
-                        <Label Text="Available fonts"
-                            HorizontalOptions="Center"
-                            TextColor="White"
-                            Background="SlateBlue"
+        <VerticalStackLayout BackgroundColor="White" HeightRequest="575" >
+                    <Label 
+                        Text="Arabic Fonts"
+                            FontSize="20"
                             FontAttributes="Bold"
-                            FontSize="Title" />
-                    </Border>
+                            HorizontalOptions="Center"
+                            Margin="0,20,0,10" />
                     <Border Stroke="Gray"
                             StrokeThickness="1"
                             StrokeShape="RoundRectangle 12,12,12,12"
@@ -28,121 +26,146 @@
                                     Radius="10"
                                     Opacity="0.45" />
                         </Border.Shadow>
-                        <Grid>
+                        <Grid RowSpacing="1" 
+                              WidthRequest="400">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="64" />
-                                <RowDefinition Height="64" />
-                                <RowDefinition Height="64" />
-                                <RowDefinition Height="64" />
-                                <RowDefinition Height="64" />
-                                <RowDefinition Height="64" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                                <RadioButton Content=" "
-                                        x:Name="radNaksh"
-                                        Value="1"
-                                        GroupName="Arabic"
-                                        IsChecked="True"
-                                        Grid.Row="0"
-                                        Grid.Column="0"
-                                        VerticalOptions="Center"
-                                        CheckedChanged="radFont_CheckedChanged"  />
-                                <Label
-                                    x:Name="Font1"
-                                    Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                    FontFamily="NotoArabic"
-                                    Grid.Row="0"
-                                    Grid.Column="1"
-                                    VerticalOptions="Center"
-                                    FontSize="Title" />
-                            <RadioButton Content=" "
-                                        x:Name="radLateef"
-                                        Value="2"
-                                        GroupName="Arabic"
-                                        Grid.Row="1"
-                                        Grid.Column="0"
-                                        VerticalOptions="Center"
-                                        CheckedChanged="radFont_CheckedChanged" />
-                            <Label
-                                    x:Name="Font2"
-                                    Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                    FontFamily="Lateef"
-                                    FontSize="Title"
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    VerticalOptions="Center"
-                                    />
-                            <RadioButton Content=" "
-                                x:Name="radAlQalam"
-                                Value="3"
-                                GroupName="Arabic"
-                                Grid.Row="2"
-                                Grid.Column="0"
-                                VerticalOptions="Center"
-                                CheckedChanged="radFont_CheckedChanged"
-                            />
-                            <Label
-                                x:Name="Font3"
-                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                FontFamily="AlQalam"
-                                Grid.Row="2"
-                                Grid.Column="1"
-                                FontSize="Title"
-                                VerticalOptions="Center">
-                            </Label>
-                            <RadioButton Content=" "
-                                x:Name="radIndoPak"
-                                Value="4"
-                                GroupName="Arabic"
-                                Grid.Row="3"
-                                Grid.Column="0"
-                                VerticalOptions="Center"
-                                CheckedChanged="radFont_CheckedChanged"
-                            />
-                            <Label
-                                x:Name="Font4"
-                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                FontFamily="IndoPak"
-                                Grid.Row="3"
-                                Grid.Column="1"
-                                FontSize="Title"
-                                VerticalOptions="Center">
-                            </Label>
-                            <RadioButton Content=" "
-                                x:Name="radMeQuran"
-                                Value="5"
-                                GroupName="Arabic"
-                                Grid.Row="4"
-                                Grid.Column="0"
-                                VerticalOptions="Center"
-                                CheckedChanged="radFont_CheckedChanged" />
-                            <Label
-                                x:Name="Font5"
-                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                FontFamily="MeQuran"
-                                Grid.Row="4"
-                                Grid.Column="1"
-                                FontSize="Title"
-                                VerticalOptions="Center" />
-                            <RadioButton Content=" "
-                                x:Name="radHafsQuran"
-                                Value="6"
-                                GroupName="Arabic"
-                                Grid.Row="5"
-                                Grid.Column="0"
-                                VerticalOptions="Center"
-                                CheckedChanged="radFont_CheckedChanged" />                           
-                             <Label
-                                x:Name="Font6"
-                                Text=" قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ "
-                                FontFamily="Uthmani"
-                                Grid.Row="5"
-                                Grid.Column="1"
-                                FontSize="Title"
-                                VerticalOptions="Center" />                               
+                            <RadioButton x:Name="radNaksh"
+                                         Value="1"
+                                         GroupName="Arabic"
+                                         IsChecked="True"
+                                         Grid.Row="0"
+                                         HorizontalOptions="Fill"
+                                         VerticalOptions="Fill"
+                                         Padding="10,3"
+                                         BackgroundColor="Transparent"
+                                         CheckedChanged="radFont_CheckedChanged">
+                                <RadioButton.Content>
+                                    <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
+                                           FontFamily="NotoArabic"
+                                           FontSize="Title"
+                                           VerticalOptions="Center" />
+                                </RadioButton.Content>
+                                <RadioButton.Triggers>
+                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                                    </Trigger>
+                                </RadioButton.Triggers>
+                            </RadioButton>
+                            <RadioButton x:Name="radLateef"
+                                         Value="2"
+                                         GroupName="Arabic"
+                                         Grid.Row="1"
+                                         HorizontalOptions="Fill"
+                                         VerticalOptions="Fill"
+                                         Padding="10,3"
+                                         BackgroundColor="Transparent"
+                                         CheckedChanged="radFont_CheckedChanged">
+                                <RadioButton.Content>
+                                    <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
+                                           FontFamily="Lateef"
+                                           FontSize="Title"
+                                           VerticalOptions="Center" />
+                                </RadioButton.Content>
+                                <RadioButton.Triggers>
+                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                                    </Trigger>
+                                </RadioButton.Triggers>
+                            </RadioButton>
+                            <RadioButton x:Name="radAlQalam"
+                                         Value="3"
+                                         GroupName="Arabic"
+                                         Grid.Row="2"
+                                         HorizontalOptions="Fill"
+                                         VerticalOptions="Fill"
+                                         Padding="10,3"
+                                         BackgroundColor="Transparent"
+                                         CheckedChanged="radFont_CheckedChanged">
+                                <RadioButton.Content>
+                                    <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
+                                           FontFamily="AlQalam"
+                                           FontSize="Title"
+                                           VerticalOptions="Center" />
+                                </RadioButton.Content>
+                                <RadioButton.Triggers>
+                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                                    </Trigger>
+                                </RadioButton.Triggers>
+                            </RadioButton>
+                            <RadioButton x:Name="radIndoPak"
+                                         Value="4"
+                                         GroupName="Arabic"
+                                         Grid.Row="3"
+                                         HorizontalOptions="Fill"
+                                         VerticalOptions="Fill"
+                                         Padding="10,3"
+                                         BackgroundColor="Transparent"
+                                         CheckedChanged="radFont_CheckedChanged">
+                                <RadioButton.Content>
+                                    <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
+                                           FontFamily="IndoPak"
+                                           FontSize="Title"
+                                           VerticalOptions="Center" />
+                                </RadioButton.Content>
+                                <RadioButton.Triggers>
+                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                                    </Trigger>
+                                </RadioButton.Triggers>
+                            </RadioButton>
+                            <RadioButton x:Name="radMeQuran"
+                                         Value="5"
+                                         GroupName="Arabic"
+                                         Grid.Row="4"
+                                         HorizontalOptions="Fill"
+                                         VerticalOptions="Fill"
+                                         Padding="10,3"
+                                         BackgroundColor="Transparent"
+                                         CheckedChanged="radFont_CheckedChanged">
+                                <RadioButton.Content>
+                                    <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
+                                           FontFamily="MeQuran"
+                                           FontSize="Title"
+                                           VerticalOptions="Center" />
+                                </RadioButton.Content>
+                                <RadioButton.Triggers>
+                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                                    </Trigger>
+                                </RadioButton.Triggers>
+                            </RadioButton>
+                            <RadioButton x:Name="radHafsQuran"
+                                         Value="6"
+                                         GroupName="Arabic"
+                                         Grid.Row="5"
+                                         HorizontalOptions="Fill"
+                                         VerticalOptions="Fill"
+                                         Padding="10,3"
+                                         BackgroundColor="Transparent"
+                                         CheckedChanged="radFont_CheckedChanged">
+                                <RadioButton.Content>
+                                    <Label Text="قَالَ يَا آدَمُ أَنْبِئْهُمْ بِأَسْمَائِهِمْ"
+                                           FontFamily="Uthmani"
+                                           FontSize="Title"
+                                           VerticalOptions="Center" />
+                                </RadioButton.Content>
+                                <RadioButton.Triggers>
+                                    <Trigger TargetType="RadioButton" Property="IsChecked" Value="True">
+                                        <Setter Property="BackgroundColor" Value="LightSkyBlue" />
+                                    </Trigger>
+                                </RadioButton.Triggers>
+                            </RadioButton>
                         </Grid>
                     </Border>
                 <FlexLayout HorizontalOptions="Center">
@@ -152,7 +175,7 @@
                                     FontFamily="MaterialIconsOutlined-Regular"
                                     Glyph="&#xe5ca;"
                                     Color="White"
-                                    Size="28"                                   
+                                    Size="16"                                   
                                 />
                             </ImageButton.Source>
                             <ImageButton.Shadow>
@@ -169,7 +192,7 @@
                                     FontFamily="MaterialIconsOutlined-Regular"
                                     Glyph="&#xe5cd;"
                                     Color="Black"
-                                    Size="28"                                   
+                                    Size="16"                                   
                                 />
                             </ImageButton.Source>
                             <ImageButton.Shadow>

@@ -119,6 +119,7 @@
                 MaximumTrackColor="LightGray"
                 ThumbColor="DarkBlue"
                 HorizontalOptions="Center"
+                WidthRequest="200"
                 ValueChanged="sizeSlider_ValueChanged" />
         <Label Text="Regular"
                HorizontalTextAlignment="Start"
